@@ -1,30 +1,20 @@
 
-# Contributing
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+# <a name="contributing"></a>Katkıda bulunma
+Bu proje, katkı ve önerilere açıktır.  Çoğu durumda, sağladığınız katkıyı kullanmamız için bize hak tanıma hakkına sahip olduğunuzu ve bu hakkı bize tanıdığınızı bildiren bir Katkıda Bulunan Lisans Sözleşmesi’ni (CLA) kabul etmeniz gerekir. Ayrıntılar için https://cla.microsoft.com adresini ziyaret edin.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Bir çekme isteği gönderdiğinizde, CLA robotu bir CLA sağlamanız gerekip gerekmediğini otomatik olarak belirler ve çekme isteğini uygun şekilde donatır (örn. etiket, açıklama). Robot tarafından sağlanan yönergeleri izlemeniz yeterlidir. Bu işlemi, CLA’mızı kullanarak tüm depolarda yalnızca bir kere yapmanız gerekir.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Bu proje, [Microsoft Açık Kaynak Kullanım Kuralları](https://opensource.microsoft.com/codeofconduct/)’na tabidir.
+Daha fazla bilgi edinmek için [Kullanım Kuralları hakkında SSS](https://opensource.microsoft.com/codeofconduct/faq/) bölümüne bakın veya diğer sorularınızla yorumlarınız için [opencode@microsoft.com](mailto:opencode@microsoft.com) ile iletişim kurun.
 
-# Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE.md) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE.md) file.
+# <a name="legal-notices"></a>Yasal Uyarılar
+Microsoft ve tüm katkıda bulunanlar, size [Creative Commons Attribution 4.0 Uluslararası Genel Lisansı](https://creativecommons.org/licenses/by/4.0/legalcode) (bkz. [LICENSE](LICENSE.md) dosyası) kapsamında bu depodaki Microsoft belgelerine ve diğer içeriklere yönelik bir lisansın yanı sıra [MIT Lisansı](https://opensource.org/licenses/MIT) (bkz. [LICENSE-CODE](LICENSE-CODE.md) dosyası) kapsamında depodaki tüm kodlara yönelik bir lisans sağlar.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Belgelerde sözü geçen Microsoft, Windows, Microsoft Azure ve/veya diğer Microsoft ürünleri, ABD’de ve/veya diğer ülkelerde Microsoft’un ticari ya da tescilli ticari markaları olabilir.
+Bu projeye yönelik lisanslar ile Microsoft adları, logoları ya da ticari markalarından herhangi birini kullanma hakkı tanınmaz.
+Microsoft'un genel ticari marka yönergeleri şu adreste bulunabilir: http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Gizlilik bilgileri şu adreste bulunabilir: https://privacy.microsoft.com/en-us/
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft ve tüm katkıda bulunanlar, ilgili telif hakları, patentleri veya ticari markaları kapsamında; dolaylı olarak, hukuki engel yoluyla veya başka bir şekilde sağlanan diğer tüm haklarını saklı tutar.
 
