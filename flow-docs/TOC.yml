@@ -1,0 +1,138 @@
+- name: Kullanmaya başlama
+  items:
+    - name: Kullanmaya başlama
+      href: getting-started.md
+    - name: Kaydolma
+      href: sign-up-sign-in.md
+    - name: Şablondan akış oluşturma
+      href: get-started-logic-template.md
+    - name: Sıfırdan akış oluşturma
+      href: get-started-logic-flow.md
+    - name: Takım akışı oluşturma
+      href: create-team-flows.md
+    - name: Ortamlara genel bakış
+      href: environments-overview-maker.md
+    - name: Sık sorulan sorular
+      href: frequently-asked-questions.md
+- name: Akış derleme
+  items:
+    - name: Eylem ekleme
+      href: multi-step-logic-flow.md
+    - name: Koşul ekleme
+      href: add-condition.md
+    - name: Akışı bir zamanlamaya göre çalıştırma
+      href: run-scheduled-tasks.md
+    - name: Akışı e-posta ile tetikleme
+      href: email-triggers.md
+    - name: Öğe listesini işleme alma
+      href: apply-to-each.md
+    - name: Veri işlemlerini kullanma
+      href: data-operations.md
+    - name: Verileri filtreleme ve kopyalama
+      href: odata-filters.md
+    - name: Dynamics 365 ile bir akış oluşturma
+      href: connection-dynamics365.md
+    - name: Common Data Service’e veri ekleme
+      href: common-data-model-intro.md
+    - name: Akış izleme
+      href: see-a-flow-run.md
+    - name: Şablon yayımlama
+      href: publish-a-template.md
+    - name: Akışla ilgili sorunları giderme
+      href: fix-flow-failures.md
+- name: Onay akışları oluşturun
+  items:
+    - name: Tek onaylar
+      href: modern-approvals.md
+    - name: Sıralı onaylar
+      href: sequential-modern-approvals.md
+    - name: Paralel onaylar
+      href: parallel-modern-approvals.md
+    - name: Tümleşik onaylar
+      href: common-data-model-approve.md
+- name: Mobil uygulamayı kullanma
+  items:
+    - name: Akış oluşturma
+      href: mobile-create-flow.md
+    - name: Düğme akışı oluşturma
+      href: introduction-to-button-flows.md
+    - name: Tetikleyici belirteçleri ile düğme akışı oluşturma
+      href: introduction-to-button-trigger-tokens.md
+    - name: Kullanıcı girişli bir düğme akışı oluşturma
+      href: button-flow-with-user-input-tokens.md
+    - name: Düğmeyi paylaşma
+      href: share-buttons.md
+    - name: Akış etkinliğini izleme
+      href: mobile-monitor-activity.md
+    - name: Akışlarınızı yönetme
+      href: mobile-manage-flows.md
+- name: Fiziksel cihazları kullanma
+  items:
+    - name: Flic kullanma
+      href: flic-button-flows.md
+    - name: Bttn kullanma
+      href: bttn-button-flows.md
+- name: Bağlantılar
+  items:
+    - name: Kullanılabilir bağlantılar
+      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
+    - name: Bağlantıları yönetme
+      href: add-manage-connections.md
+    - name: Ağ geçitlerini yönetme
+      href: gateway-manage.md
+    - name: Ağ geçitlerini anlama
+      href: gateway-reference.md
+- name: 'Geliştirme: kurumsal geliştiriciler'
+  items:
+    - name: Kurumsal geliştiriciler için Microsoft Flow
+      href: dev-enterprise-intro.md
+    - name: Özel bağlayıcıları kaydetme ve kullanma
+      href: register-custom-api.md
+    - name: Özel bağlayıcıyı Postman ile açıklama
+      href: postman-collection.md
+    - name: Özel bağlayıcılar için OpenAPI uzantıları
+      href: customapi-how-to-swagger.md
+    - name: Azure Active Directory’yi özel bağlayıcıyla kullanma
+      href: customapi-azure-resource-manager-tutorial.md
+    - name: Web API’si için özel bağlayıcı oluşturma
+      href: customapi-web-api-tutorial.md
+    - name: Web kancası kullanarak akış tetikleme
+      href: customapi-webhooks.md
+- name: 'Geliştirme: iş ortakları ve ISV''ler'
+  items:
+    - name: Microsoft iş ortakları ve ISV’ler için Microsoft Flow
+      href: dev-isv-partner-intro.md
+    - name: API bağlayıcılarını onaylamaya genel bakış
+      href: api-connector-overview.md
+    - name: Onay için API bağlayıcıları geliştirme
+      href: api-connector-dev.md
+    - name: API bağlayıcılarını onaya gönderme
+      href: api-connector-submission.md
+    - name: API bağlayıcılarını onaylamayla ilgili SSS
+      href: api-connector-faq.md
+    - name: Web siteleri ve diğer teknolojiler ile tümleştirme
+      href: embed-flow-dev.md
+    - name: Müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
+      href: dev-appsource-test-drive.md
+- name: Yönetim
+  items:
+    - name: Kuruluşunuzda akışlarla ilgili soru-cevap
+      href: organization-q-and-a.md
+    - name: Fiyatlandırma
+      href: billing-questions.md
+    - name: Yönetim merkezine giriş
+      href: admin-center-introduction.md
+    - name: Ortamları yönetme
+      href: environments-overview-admin.md
+    - name: Veri kaybını önlemeye yardımcı olan bir ilke ayarlama
+      href: prevent-data-loss.md
+    - name: Veri gruplarına giriş
+      href: introduction-to-data-groups.md
+- name: Başvuru
+  items:
+    - name: Bölgelere genel bakış
+      href: regions-overview.md
+    - name: Limitler ve yapılandırma
+      href: limits-and-config.md
+    - name: Sürüm notları
+      href: release-notes.md
