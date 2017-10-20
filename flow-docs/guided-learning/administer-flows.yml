@@ -1,0 +1,33 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Akışları yönetme
+metadata:
+  title: Akışları yönetme | Microsoft Flow
+  description: Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin.
+  audience: Business User
+  level: Beginner
+  displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.topic: get-started-article
+  ms.date: 10/04/2017
+  ms.author: deonhe
+items:
+  - durationInMinutes: 1
+    content: |
+      Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin.
+  - title: Akışları yönetmek için ortamları kullanma
+    durationInMinutes: 8
+    content: |
+      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+
+      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+  - title: Veri kaybı önleme ilkelerini kullanma
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+  - content: |
+      Microsoft Flow Destekli Öğrenme’nin **Akışları yönetme** bölümünü tamamladınız.

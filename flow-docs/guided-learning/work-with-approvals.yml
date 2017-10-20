@@ -1,0 +1,35 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Onaylarla çalışma
+metadata:
+  title: Onaylarla çalışma | Microsoft Flow
+  description: Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: administer-flows
+  nextTutorialTitle: Administer flows
+  displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.topic: get-started-article
+  ms.date: 10/04/2017
+  ms.author: deonhe
+items:
+  - durationInMinutes: 1
+    content: |
+      Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.
+  - title: Bir onay isteği oluşturma
+    durationInMinutes: 4
+    content: |
+      > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+
+      [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
+  - title: Bir onay isteğini onaylama
+    durationInMinutes: 7
+    content: |
+      > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+      [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
+  - content: |
+      Microsoft Flow Destekli Öğrenme’nin **Onaylarla çalışma** bölümünü tamamladınız.
