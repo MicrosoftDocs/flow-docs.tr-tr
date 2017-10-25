@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -19,7 +20,9 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+         "**/includes/media/**"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,7 +32,11 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-MSFlow",      
+      "breadcrumb_path":"breadcrumb/toc.yml",
+       "searchScope": ["Flow"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "flow"
