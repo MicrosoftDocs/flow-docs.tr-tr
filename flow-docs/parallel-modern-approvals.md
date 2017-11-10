@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/24/2017
 ms.author: deonhe
 ms.openlocfilehash: b4d11da19db97ce94df3e3d5237f6c90b3514269
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Microsoft Flow ile paralel onay iş akışları oluşturma
 Paralel onay iş akışında, fatura, satınalma siparişleri, tatil istekleri gibi konuların onaylanması için birden fazla kişi gereklidir. Her birinin onayı diğer tüm onaylayanlardan bağımsızdır.

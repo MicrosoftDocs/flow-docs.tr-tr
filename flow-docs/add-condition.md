@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/17/2017
 ms.author: stepsic
 ms.openlocfilehash: 135b3509a9412f7674a1e9cb2ada86ebd2bb9f4f
-ms.sourcegitcommit: 122870842a07183ab3b90e07d99b60d822d6c5ae
+ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="add-a-condition-to-a-flow"></a>Akışa koşul ekleme
 

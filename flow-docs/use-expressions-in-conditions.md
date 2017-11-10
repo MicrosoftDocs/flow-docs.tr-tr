@@ -26,10 +26,10 @@ ms.workload: na
 ms.date: 08/01/2017
 ms.author: deonhe
 ms.openlocfilehash: a833abf7cb43e6d8a1c67b0f4160c90a4b24545a
-ms.sourcegitcommit: 122870842a07183ab3b90e07d99b60d822d6c5ae
+ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Koşullarda ifadeleri kullanarak birden çok değeri denetleme
 Bu kılavuzda, **Gelişmiş mod**’da ifadeleri ve **Koşulları** kullanarak birden çok değeri nasıl karşılaştırabileceğinizi öğreneceksiniz.

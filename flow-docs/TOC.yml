@@ -30,6 +30,8 @@
       href: data-operations.md
     - name: Verileri filtreleme ve kopyalama
       href: odata-filters.md
+    - name: Koşullarda ifadeleri kullanma
+      href: use-expressions-in-conditions.md
     - name: Dynamics 365 ile bir akış oluşturma
       href: connection-dynamics365.md
     - name: Common Data Service’e veri ekleme

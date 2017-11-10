@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/14/2017
 ms.author: stepsic
 ms.openlocfilehash: eaeaf62da694daf7f8e6d876c3d225337fdbe592
-ms.sourcegitcommit: 122870842a07183ab3b90e07d99b60d822d6c5ae
+ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="run-flows-on-a-schedule"></a>Akışları bir zamanlamaya göre çalıştırma
 Bir veya daha fazla görevi gerçekleştiren (örneğin e-postayla rapor gönderme) bir akış oluşturma:

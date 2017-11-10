@@ -45,7 +45,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
             title: Düğmeler hakkında bilgi edinin
-          - href: 'https://flow.microsoft.com/blog/automation-for-recruiters'
+          - href: 'https://aka.ms/flowoftheweek'
             html: <p>Haftanın akışından ilham alın</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
