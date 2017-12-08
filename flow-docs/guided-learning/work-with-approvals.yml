@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Onaylarla çalışma
+title: "Onaylarla çalışma"
 metadata:
-  title: Onaylarla çalışma | Microsoft Flow
-  description: Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.
+  title: "Onaylarla çalışma | Microsoft Flow"
+  description: "Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin."
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
-  nextTutorialTitle: Akışları yönetme
+  nextTutorialTitle: "Akışları yönetme"
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -16,20 +15,25 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.
-  - title: Bir onay isteği oluşturma
-    durationInMinutes: 4
-    content: |
-      > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+- durationInMinutes: 1
+  content: "Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.\n"
+  ms.openlocfilehash: 1967e986e5bf7a9ffceb13578b41710869d8e890
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 11/07/2017
+- title: "Bir onay isteği oluşturma"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
 
-      [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
-  - title: Bir onay isteğini onaylama
-    durationInMinutes: 7
-    content: |
-      > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
 
-      [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-  - content: |
-      Microsoft Flow Destekli Öğrenme’nin **Onaylarla çalışma** bölümünü tamamladınız.
+    [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
+- title: "Bir onay isteğini onaylama"
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+
+    [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
+- content: "Microsoft Flow Destekli Öğrenme’nin **Onaylarla çalışma** bölümünü tamamladınız.\0"

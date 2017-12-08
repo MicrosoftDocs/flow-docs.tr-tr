@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Akışları yönetme
+title: "Akışları yönetme"
 metadata:
-  title: Akışları yönetme | Microsoft Flow
-  description: Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin.
+  title: "Akışları yönetme | Microsoft Flow"
+  description: "Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin."
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -14,20 +13,25 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin.
-  - title: Akışları yönetmek için ortamları kullanma
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+- durationInMinutes: 1
+  content: "Veri kaynakları ve akışları yönetmek için ortamları ve veri koruma ilkeleri kullanma hakkında bilgi edinin.\n"
+  ms.openlocfilehash: 52eb25087beb258481be25a560c84093d025021a
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 11/07/2017
+- title: "Akışları yönetmek için ortamları kullanma"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
 
-      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
-  - title: Veri kaybı önleme ilkelerini kullanma
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
-      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-  - content: |
-      Microsoft Flow Destekli Öğrenme’nin **Akışları yönetme** bölümünü tamamladınız.
+    [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+- title: "Veri kaybı önleme ilkelerini kullanma"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+
+    [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+- content: "Microsoft Flow Destekli Öğrenme’nin **Akışları yönetme** bölümünü tamamladınız.\0"

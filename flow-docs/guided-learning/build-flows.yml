@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Akışlar derleme
+title: "Akışlar derleme"
 metadata:
-  title: Akışlar derleme | Microsoft Flow
-  description: Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın.
+  title: "Akışlar derleme | Microsoft Flow"
+  description: "Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın."
   audience: Business User
   level: Beginner
   nextTutorialHref: work-with-approvals
-  nextTutorialTitle: Onaylarla çalışma
+  nextTutorialTitle: "Onaylarla çalışma"
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -16,50 +15,60 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın.
-  - title: Düğme akışı oluşturma
-    durationInMinutes: 11
-    content: |
-      > [!Video https://www.youtube.com/embed/s8ozmlVRV-Q?rel=0]
+- durationInMinutes: 1
+  content: "Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın.\n"
+  ms.openlocfilehash: 5270eb0254bc42e504eeda8b25c141915d3b823f
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 11/07/2017
+- title: "Düğme akışı oluşturma"
+  durationInMinutes: 11
+  content: >
+    > [!Video https://www.youtube.com/embed/s8ozmlVRV-Q?rel=0]
 
-      [!INCLUDE [learning-create-button-flow](../includes/learning-create-button-flow.md)]
-  - title: Bildirim alma
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/VEHKGLY0hq4?rel=0]
 
-      [!INCLUDE [learning-get-notifications](../includes/learning-get-notifications.md)]
-  - title: Dosyaları kopyalama
-    durationInMinutes: 4
-    content: |
-      > [!Video https://www.youtube.com/embed/liL0IWNcRcc?rel=0]
+    [!INCLUDE [learning-create-button-flow](../includes/learning-create-button-flow.md)]
+- title: Bildirim alma
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/VEHKGLY0hq4?rel=0]
 
-      [!INCLUDE [learning-copy-files](../includes/learning-copy-files.md)]
-  - title: Veri toplama
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/U54cdN0tXEI?rel=0]
 
-      [!INCLUDE [learning-collect-data](../includes/learning-collect-data.md)]
-  - title: Bir akıştan tweet gönderme
-    durationInMinutes: 15
-    content: |
-      > [!Video https://www.youtube.com/embed/y1iDal8XPAo?rel=0]
+    [!INCLUDE [learning-get-notifications](../includes/learning-get-notifications.md)]
+- title: "Dosyaları kopyalama"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/liL0IWNcRcc?rel=0]
 
-      [!INCLUDE [learning-push-notifications](../includes/learning-push-notifications.md)]
-  - title: Zamanlanan akışlar oluşturma
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/hh4nmS_M8Co?rel=0]
 
-      [!INCLUDE [learning-recurrence](../includes/learning-recurrence.md)]
-  - title: Belgeleri dönüştürme ve depolama
-    durationInMinutes: 14
-    content: |
-      > [!Video https://www.youtube.com/embed/ukRhuJGC9A0?rel=0]
+    [!INCLUDE [learning-copy-files](../includes/learning-copy-files.md)]
+- title: Veri toplama
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/U54cdN0tXEI?rel=0]
 
-      [!INCLUDE [learning-create-pdf](../includes/learning-create-pdf.md)]
-  - content: |
-      Microsoft Flow Destekli Öğrenme’nin **Akışlar derleme** bölümünü tamamladınız.
+
+    [!INCLUDE [learning-collect-data](../includes/learning-collect-data.md)]
+- title: "Bir akıştan tweet gönderme"
+  durationInMinutes: 15
+  content: >
+    > [!Video https://www.youtube.com/embed/y1iDal8XPAo?rel=0]
+
+
+    [!INCLUDE [learning-push-notifications](../includes/learning-push-notifications.md)]
+- title: "Zamanlanan akışlar oluşturma"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/hh4nmS_M8Co?rel=0]
+
+
+    [!INCLUDE [learning-recurrence](../includes/learning-recurrence.md)]
+- title: "Belgeleri dönüştürme ve depolama"
+  durationInMinutes: 14
+  content: >
+    > [!Video https://www.youtube.com/embed/ukRhuJGC9A0?rel=0]
+
+
+    [!INCLUDE [learning-create-pdf](../includes/learning-create-pdf.md)]
+- content: "Microsoft Flow Destekli Öğrenme’nin **Akışlar derleme** bölümünü tamamladınız.\0"

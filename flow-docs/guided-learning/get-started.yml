@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: Kullanmaya Başlama
+title: "Kullanmaya Başlama"
 metadata:
-  title: Kullanmaya Başlama | Microsoft Flow
-  description: 'Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. Kendi kendinize ilerlediğiniz bu çevrimiçi kursta, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır.'
+  title: "Kullanmaya Başlama | Microsoft Flow"
+  description: "Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. Kendi kendinize ilerlediğiniz bu çevrimiçi kursta, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır."
   audience: Business User
   level: Beginner
   nextTutorialHref: build-flows
-  nextTutorialTitle: Akış derleme
+  nextTutorialTitle: "Akış derleme"
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -16,26 +15,32 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. Kendi kendinize ilerlediğiniz bu çevrimiçi kursta, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır.
-  - title: Microsoft Flow temel kavramlarını anlama
-    durationInMinutes: 14
-    content: |
-      > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
+- durationInMinutes: 1
+  content: "Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. Kendi kendinize ilerlediğiniz bu çevrimiçi kursta, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır.\n"
+  ms.openlocfilehash: 7b5bcbbe1a53feb773b940aae32b295cec5feba8
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 11/07/2017
+- title: "Microsoft Flow temel kavramlarını anlama"
+  durationInMinutes: 14
+  content: >
+    > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
 
-      [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
-  - title: Şablondan akış oluşturma
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
-  - title: Microsoft Flow mobil uygulamasını kullanma
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+    [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
+- title: "Şablondan akış oluşturma"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-  - content: |
-      Microsoft Flow Destekli Öğrenme’nin **Kullanmaya başlama** bölümünü tamamladınız.
+
+    [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
+- title: "Microsoft Flow mobil uygulamasını kullanma"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+
+
+    [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
+- content: "Microsoft Flow Destekli Öğrenme’nin **Kullanmaya başlama** bölümünü tamamladınız.\0"
