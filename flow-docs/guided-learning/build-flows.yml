@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: "Akışlar derleme"
 metadata:
   title: "Akışlar derleme | Microsoft Flow"
@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: work-with-approvals
-  nextTutorialTitle: "Onaylarla çalışma"
+  nextTutorialTitle: Work with approvals
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -14,14 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-items:
-- durationInMinutes: 1
-  content: "Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın.\n"
-  ms.openlocfilehash: 5270eb0254bc42e504eeda8b25c141915d3b823f
-  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.openlocfilehash: 6653c723ba9c3dfce8c953b86e3b54d5226cd258
+  ms.sourcegitcommit: 9057be8df53d1c763fbf5ecd0d23cd1daf42c471
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 11/07/2017
+  ms.lasthandoff: 12/08/2017
+items:
+- durationInMinutes: 1
+  content: >
+    Learn how to build flows that copy and collect data, as well as flows that send notifications. Run your flows based on a schedule or on-demand from a button.
 - title: "Düğme akışı oluşturma"
   durationInMinutes: 11
   content: >
@@ -71,4 +72,4 @@ items:
 
 
     [!INCLUDE [learning-create-pdf](../includes/learning-create-pdf.md)]
-- content: "Microsoft Flow Destekli Öğrenme’nin **Akışlar derleme** bölümünü tamamladınız.\0"
+- content: "You've completed the **Build flows** section of Microsoft Flow Guided Learning.\0"
