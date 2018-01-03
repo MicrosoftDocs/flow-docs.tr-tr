@@ -1,8 +1,8 @@
 1. Arama kutusuna **SharePoint** yazın.
    
-    ![SharePoint tetikleyicilerini arayın](includes/media/modern-approvals/search-for-sharepoint.png)
+    ![SharePoint tetikleyicilerini arayın](media/modern-approvals/search-for-sharepoint.png)
 2. **SharePoint - Yeni bir öğe oluşturulduğunda** tetikleyicisini bulun ve seçin.
    
-    ![Sharepoint tetikleyicisini seçin](includes/media/modern-approvals/select-sharepoint-new-item.png)
+    ![Sharepoint tetikleyicisini seçin](media/modern-approvals/select-sharepoint-new-item.png)
 3. Akışınızın yeni öğeleri izlediği SharePoint listesine ait **Site Adresi** ve **Liste Adı** bilgilerini girin.
 
