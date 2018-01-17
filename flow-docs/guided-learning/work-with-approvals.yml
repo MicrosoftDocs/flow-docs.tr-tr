@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
-  nextTutorialTitle: Administer flows
+  nextTutorialTitle: "Akışları yönetme"
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -15,14 +15,13 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
   ms.openlocfilehash: 8a67950c176d779f8f6745757af526b07afd5fa0
-  ms.sourcegitcommit: 9057be8df53d1c763fbf5ecd0d23cd1daf42c471
+  ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 12/08/2017
+  ms.lasthandoff: 01/17/2018
 items:
 - durationInMinutes: 1
-  content: >
-    Learn how to manage the approval of documents and processes in Microsoft Flow.
+  content: "Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.\n"
 - title: "Bir onay isteği oluşturma"
   durationInMinutes: 4
   content: >
@@ -37,4 +36,4 @@ items:
 
 
     [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-- content: "You've completed the **Work with approvals** section of Microsoft Flow Guided Learning.\0"
+- content: "Microsoft Flow Destekli Öğrenme’nin **Onaylarla çalışma** bölümünü tamamladınız.\0"
