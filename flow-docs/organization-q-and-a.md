@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: 6a05153864e37682ece83d8e5d90fa43a3ad01e1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
+ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda Flow ile ilgili soru-cevap
 Bu konu başlığında, kuruluşunuzdaki kullanıcıların Flow’u nasıl kullanacağı ve Flow hizmetini nasıl denetleyeceğiniz açıklanmıştır.
@@ -101,12 +101,12 @@ Kuruluşunuzdaki bir kullanıcı için Flow lisansının kaldırılması, bu kul
 Bunun varsayılan olarak yalnızca Flow kutucuğunu kaldıracağını unutmayın. Kullanıcı bireysel olarak Microsoft Flow kullanmayı seçebilir.
 
 ### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Neden Office 365 kiracımda Microsoft Flow için 10.000 lisans görüntülendi?
-Dünyadaki herhangi biri, Microsoft Flow Planı 1 veya 2’yi 90 gün boyunca deneyebilir ve bu deneme lisansları kiracınızdaki yeni Flow kullanıcıları için mevcut kapasiteyi gösterir. Bu lisanslar için herhangi bir ücret alınmaz. Özellikle, Office 365 yönetici portalında Flow için 10.000 (deneme) lisansı kapasitesi görmenizin iki olası nedeni vardır:
+Dileyen herkes Microsoft Flow Planı 1 veya 2’yi 90 gün boyunca deneyebilir ve bu deneme lisansları kiracınızdaki yeni Flow kullanıcıları için mevcut kapasiteyi gösterir. Bu lisanslar için herhangi bir ücret alınmaz. Özellikle, Office 365 yönetici portalında Flow için 10.000 (deneme) lisansı kapasitesi görmenizin iki olası nedeni vardır:
 
 1. Kiracınızdaki en az bir kullanıcı Nisan 2016 ile Ekim 2016 arasında gerçekleşen Flow genel önizlemesine katıldıysa "Microsoft PowerApps ve Mantık akışları" olarak etiketlenen 10.000 lisans görürsünüz
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Kiracınızdaki en az bir kullanıcı [Kullanıcılar PowerApps için nasıl kaydolabilir?](#how-do-users-sign-up-for-powerapps) bölümünde özetlenen deneme kaydı **Seçenek 1**’i kullanarak bir Flow Planı 2 için kaydolduysa "Microsoft Power Apps & Flow" olarak etiketlenen 10.000 lisans görürsünüz
+2. Kiracınızdaki en az bir kullanıcı [Kullanıcılar PowerApps için nasıl kaydolabilir?](#how-do-people-sign-up-for-flow) bölümünde özetlenen deneme kaydı **Seçenek 1**’i kullanarak bir Flow Planı 2 için kaydolduysa "Microsoft Power Apps & Flow" olarak etiketlenen 10.000 lisans görürsünüz
    
     ![](./media/organization-q-and-a/licenses1.png)
 
