@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 09/19/2017
 ms.author: sunayv
 ms.openlocfilehash: b8fdc04c16701c876d84e9761a48093fa5fb195c
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="openapi-extensions-for-custom-connectors-in-microsoft-flow"></a>Microsoft Flow’da özel bağlayıcılar için OpenAPI uzantıları
 ## <a name="introduction"></a>Giriş

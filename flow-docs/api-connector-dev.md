@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/06/2017
 ms.author: astay
 ms.openlocfilehash: 8731e8a90a62bac4a05068386d23d2449952860b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="develop-an-api-connector-microsoft-flow"></a>API bağlayıcısı oluşturma (Microsoft Flow)
 Bağlayıcı oluşturma işlemi çeşitli adımlar içerir. Başlamak için, [Microsoft Flow](https://flow.microsoft.com/)’da sayfanın sağ üst kısmındaki **Ayarlar** düğmesine (dişli simgesi) tıklayın veya dokunun. Ardından **Özel Bağlayıcılar**’a tıklayın veya dokunun.
