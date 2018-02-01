@@ -84,34 +84,12 @@
       href: gateway-manage.md
     - name: Ağ geçitlerini anlama
       href: gateway-reference.md
-- name: 'Geliştirme: kurumsal geliştiriciler'
+- name: Microsoft Flow için Geliştirme
   items:
-    - name: Kurumsal geliştiriciler için Microsoft Flow
+    - name: 'Kurumsal geliştiriciler, iş ortakları ve ISV’ler için Microsoft Flow'
       href: dev-enterprise-intro.md
-    - name: Özel bağlayıcıları kaydetme ve kullanma
+    - name: Özel bağlayıcılar derleme ve onaylama
       href: register-custom-api.md
-    - name: Özel bağlayıcıyı Postman ile açıklama
-      href: postman-collection.md
-    - name: Özel bağlayıcılar için OpenAPI uzantıları
-      href: customapi-how-to-swagger.md
-    - name: Azure Active Directory’yi özel bağlayıcıyla kullanma
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: Web API’si için özel bağlayıcı oluşturma
-      href: customapi-web-api-tutorial.md
-    - name: Web kancası kullanarak akış tetikleme
-      href: customapi-webhooks.md
-- name: 'Geliştirme: iş ortakları ve ISV''ler'
-  items:
-    - name: Microsoft iş ortakları ve ISV’ler için Microsoft Flow
-      href: dev-isv-partner-intro.md
-    - name: API bağlayıcılarını onaylamaya genel bakış
-      href: api-connector-overview.md
-    - name: Onay için API bağlayıcıları geliştirme
-      href: api-connector-dev.md
-    - name: API bağlayıcılarını onaya gönderme
-      href: api-connector-submission.md
-    - name: API bağlayıcılarını onaylamayla ilgili SSS
-      href: api-connector-faq.md
     - name: Web siteleri ve diğer teknolojiler ile tümleştirme
       href: embed-flow-dev.md
     - name: Müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
