@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/19/2017
 ms.author: astay
 ms.openlocfilehash: 1715700fa6a94bb35733865556a2c9be0ba3ce9f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="api-connector-faq-microsoft-flow"></a>API bağlayıcısı hakkında SSS (Microsoft Flow)
 ## <a name="requirements"></a>Gereksinimler
