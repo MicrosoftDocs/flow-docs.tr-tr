@@ -13,15 +13,15 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
-ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
+ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
+ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/05/2018
 ---
-# <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow'da limitler ve yapılandırma
+# <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow’da limitler ve yapılandırma
 Bu konu, akışlara yönelik geçerli limitler ve yapılandırma ayrıntılarıyla ilgili bilgi içerir.
 
 ## <a name="request-limits"></a>İstek limitleri
@@ -35,7 +35,7 @@ Bunlar tek bir giden isteğe yönelik limitlerdir.
 ### <a name="message-size"></a>İleti boyutu
 | Ad | Limit | Notlar |
 | --- | --- | --- |
-| İleti boyutu |100 MB |API'lerden bazıları 100 MB'ın tamamını desteklenmez. |
+| İleti boyutu |100 MB |API’lerden bazıları 100 MB’ın tamamını desteklenmez. |
 | İfade değerlendirme limiti |131.072 karakter |`@concat()`, `@base64()`, `string` bu sınırı aşamaz. |
 
 ### <a name="retry-policy"></a>Yeniden deneme ilkesi
@@ -48,7 +48,7 @@ Bunlar tek bir akış çalıştırmasına yönelik limitlerdir.
 
 | Ad | Limit | Notlar |
 | --- | --- | --- |
-| Çalıştırma süresi |30 gün |Onaylar gibi bekleyen adımları olan iş akışlarını içerir. Bekleyen adımlar 30 gün sonra Zaman Aşımına uğrar. |
+| Çalıştırma süresi |30 gün |Onaylar gibi bekleyen adımları olan iş akışlarını içerir. 30 gün geçtikten sonra bekleyen adımlar zaman aşımına uğrar. Zaman aşımına uğrayan onaylar, onay merkezinden kaldırılır. Birisi zaman aşımına uğramış bir isteği onaylamaya çalışırsa bir hata iletisi alır. |
 | Depolama bekletme |30 gün |Bu, çalıştırma başlangıç saatinden itibaren hesaplanır. |
 | En az yinelenme aralığı |1 dakika | |
 | En fazla yinelenme aralığı |500 gün | |
@@ -75,10 +75,10 @@ Bunlar tek bir akışa yönelik limitlerdir.
 | `description` uzunluk limiti |256 | |
 
 ## <a name="sharepoint-limits"></a>SharePoint limitleri
-Microsoft SharePoint'i Microsoft Flow ve PowerApps ile nasıl kullanabileceğinize ilişkin [sınırlamalar](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) bulunur.
+Microsoft SharePoint’i Microsoft Flow ve PowerApps ile nasıl kullanabileceğinize ilişkin [sınırlamalar](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) bulunur.
 
 ## <a name="ip-address-configuration"></a>IP adresi yapılandırması
-Microsoft Flow isteklerinin hangi IP adresinden gönderileceği, akışı içeren [ortamın](environments-overview-admin.md) bulunduğu [bölgeye](regions-overview.md) bağlıdır. Şu anda akış senaryoları için kullanılabilir FQDN'ler yayımlanmamaktadır.
+Microsoft Flow isteklerinin hangi IP adresinden gönderileceği, akışı içeren [ortamın](environments-overview-admin.md) bulunduğu [bölgeye](regions-overview.md) bağlıdır. Şu anda akış senaryoları için kullanılabilir FQDN’ler yayımlanmamaktadır.
 
 ### <a name="logic-app-service"></a>Logic App Hizmeti
 Bir akıştan yapılan çağrılar doğrudan Azure Logic Apps hizmetine gider. Bu çağrılara örnek olarak HTTP ya da HTTP + OpenAPI verilebilir. Bu çağrılar aşağıdaki IP adreslerinden gelir:
@@ -94,7 +94,7 @@ Bir akıştan yapılan çağrılar doğrudan Azure Logic Apps hizmetine gider. B
 | Amerika Birleşik Devletleri |137.135.106.54, 40.117.99.79, 40.117.100.228, 13.92.98.111, 40.121.91.41, 40.114.82.191, 52.160.90.237, 138.91.188.137, 13.91.252.184, 52.160.92.112, 40.118.244.241, 40.118.241.243 |
 
 ### <a name="services"></a>Hizmetler
-Akış üzerinden bağlanan bir API'den (örneğin, SQP API veya SharePoint API) yapılan çağrılar aşağıda belirtilen IP adresinden gelir:
+Akış üzerinden bağlanan bir API’den (örneğin, SQP API veya SharePoint API) yapılan çağrılar aşağıda belirtilen IP adresinden gelir:
 
 | Bölge | Giden IP |
 | --- | --- |
@@ -107,7 +107,7 @@ Akış üzerinden bağlanan bir API'den (örneğin, SQP API veya SharePoint API)
 | Amerika Birleşik Devletleri |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | Amerika Birleşik Devletleri (Erken Erişim) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-Örneğin, Azure SQL veritabanınızın IP adreslerini güvenilir listeye eklemeniz gerekiyorsa bu adresleri kullanmanız gerekir.
+Örneğin, Azure SQL veritabanınızın IP adreslerini yetkilendirmeniz gerekiyorsa bu adresleri kullanmanız gerekir.
 
 Aşağıdaki tabloda, Microsoft Flow'un bağlandığı hizmetler listelenmiştir. Ağınızda bu hizmetlerden hiçbirinin engellenmediğinden emin olun.
 
