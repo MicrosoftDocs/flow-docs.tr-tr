@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2017
 ms.author: deonhe
-ms.openlocfilehash: 0e0309793cfcb45ca7ee72910803a4abc27d2f26
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 6b152f0ec85558889970db2784fe8c2dcbf526ed
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Herkesin onaylamasını gerektiren bir onay akışı oluşturma
 Bu kılavuzda, bir izin isteğinin onaylanması için herkesin (atanan tüm onaylayanların) kabul etmesi gereken, ancak herhangi bir onaylayanın tüm isteği reddedebileceği bir onay iş akışı oluşturma açıklanmaktadır.
@@ -28,12 +28,12 @@ Bu onay iş akışı türü, izin isteğinin onaylanması için kişinin yöneti
 
 ## <a name="prerequisites"></a>Önkoşullar
 * [Microsoft Flow](https://flow.microsoft.com), Office 365 Outlook ve Office 365 Kullanıcıları erişimi.
-* Bir SharePoint Online [listesi](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
+* Bir SharePoint Online [listesi](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
   
     Bu kılavuzda izin istekleri için bir SharePoint Online listesini önceden oluşturduğunuz varsayılır. SharePoint listenizin nasıl görünebileceği hakkında ayrıntılı bir örnek için [paralel onaylar](parallel-modern-approvals.md) kılavuzuna bakın.
 * Akış oluşturma hakkındaki temel bilgileri edinme.
   
-    [Eylemler, tetikleyiciler](multi-step-logic-flow.md#add-another-action) ve [koşulları](add-a-condition.md) nasıl ekleyeceğinizi gözden geçirebilirsiniz. Aşağıdaki adımlarda bu eylemleri nasıl gerçekleştireceğinizi bildiğiniz varsayılmaktadır.
+    [Eylemler, tetikleyiciler](multi-step-logic-flow.md#add-another-action) ve [koşulları](add-condition.md) nasıl ekleyeceğinizi gözden geçirebilirsiniz. Aşağıdaki adımlarda bu eylemleri nasıl gerçekleştireceğinizi bildiğiniz varsayılmaktadır.
 
 > [!NOTE]
 > Bu kılavuzda SharePoint Online ve Office 365 Outlook uygulamalarını kullanacağız. Ancak dilerseniz Zendesk, Salesforce, Gmail ya da Microsoft Flow’un desteklediği [150’den fazla hizmetten birini](https://flow.microsoft.com/connectors/) de kullanabilirsiniz.

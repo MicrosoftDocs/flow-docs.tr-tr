@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: mblythe
-ms.openlocfilehash: 3e6a6e0e369f8d89dcf834b4225dfd5aa4758dd7
-ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+ms.openlocfilehash: d8886f0828ca3b8ccf7ae1ce9c46f6e9b8fcc766
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Kurumsal geliştiriciler, ISV’ler ve iş ortakları için Microsoft Flow
 
@@ -51,7 +51,7 @@ Bir Microsoft iş ortağı veya Bağımsız Yazılım Satıcısı (ISV) olarak �
 
 ### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. API’lerinize bağlanma VEYA müşterilerin API’lerinize bağlanmasını mümkün kılma
 
-Bir ISV olarak genellikle müşterilerin akışlarınız aracılığıyla erişmesini istediğiniz özel verileriniz olur. Özel bir bağlayıcı üzerinden tüm verilerinizi erişime açabilirsiniz. [Daha fazla bilgi](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+Bir ISV olarak genellikle müşterilerin akışlarınız aracılığıyla erişmesini istediğiniz özel verileriniz olur. Özel bir bağlayıcı üzerinden tüm verilerinizi erişime açabilirsiniz. [Daha fazla bilgi](https://docs.microsoft.com/connectors/custom-connectors/)
 
 Oluşturduğunuz bir bağlayıcı müşterilerinizin kullanımına sunmanın iki yolu vardır:
 - Bağlayıcı, REST API’ler veya PowerShell aracılığıyla müşterinin kiracısına dağıtılabilir.
@@ -77,7 +77,7 @@ Son kullanıcıların otomatik olarak kullanabilecekleri akışlara erişebilmes
 
 Müşterilerinizin zaten Office 365 veya Dynamics 365 lisansı varsa, bu lisanslar kullanıcıların Azure AD’de oturum açmak için kullandığı kimliklerle ilişkilendirilir ve sizin başka bir lisanslama işlemi yapmanız gerekmez. Bununla birlikte, müşterileriniz Office 365 veya Dynamics 365 kullanmıyorsa Microsoft Flow için müşterileriniz adına kullanım hakları edinmeniz ve uygulamanızdaki ekli bileşenlerden yararlanabilmeleri için lisanslı olmalarını sağlamanız gerekir.
 
-Müşterileriniz adına lisans edinebilmeniz için [Microsoft Bulut Çözümü Sağlayıcısı](https://partner.microsoft.com/en-US/cloud-solution-provider) programını sunuyoruz. Microsoft Flow için plan ve özellik ayrıntılarını öğrenmek üzere göz atmanız gereken iki farklı [fiyatlandırma planı](https://flow.microsoft.com/pricing/) sunulmaktadır.
+Müşterileriniz adına lisans edinebilmeniz için [Microsoft Bulut Çözümü Sağlayıcısı](https://partner.microsoft.com/cloud-solution-provider) programını sunuyoruz. Microsoft Flow için plan ve özellik ayrıntılarını öğrenmek üzere göz atmanız gereken iki farklı [fiyatlandırma planı](https://flow.microsoft.com/pricing/) sunulmaktadır.
 
 ### <a name="7-list-on-appsource"></a>7. AppSource’ta listeleme
 

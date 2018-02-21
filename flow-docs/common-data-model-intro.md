@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: a63ccacb1e6d9bd63d5a11a8db6ea01a9fc37333
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Common Data Service’ı kullanan bir akış oluşturma
 [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/)'ı kullanan bir akış oluşturarak iş verilerinin birleşik bir görünümünü elde edin ve operasyonel verimliliği artırın. İyi biçimlendirilmiş standart iş varlıkları (ör. Satış, Satın Alma, Müşteri Hizmetleri ve Üretkenlik) oluşturan bu güvenli iş veritabanını kuruluşunuzda dağıtın. Kuruluş verilerinizi, dış veri kaynaklarından (örneğin, Microsoft Excel ve Salesforce) daha fazla avantaj sunan bir veya daha fazla [özel varlıkta](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/) depolayın.
@@ -37,7 +37,7 @@ ms.lasthandoff: 10/15/2017
 
 * [Microsoft Flow](https://flow.microsoft.com)’a ve [PowerApps](https://web.powerapps.com)'e kaydolun.
   
-    Bir sorunla karşılaşırsanız [Microsoft Flow](sign-up-sign-in.md)'un ve [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/)'in sahip olduğunuz hesap türünü desteklediğini ve kuruluşunuzun, kaydolma işlemini engellemediğini doğrulayın.
+    Bir sorunla karşılaşırsanız [Microsoft Flow](sign-up-sign-in.md)'un ve [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/)'in sahip olduğunuz hesap türünü desteklediğini ve kuruluşunuzun, kaydolma işlemini engellemediğini doğrulayın.
 * Common Data Service'ı daha önce kullanmadıysanız [powerapps.com](https://web.powerapps.com/#/entities)'daki **Varlıklar** sekmesini açın ve ardından **Veritabanımı oluştur**'a tıklayın veya dokunun.
 
 ## <a name="sign-in-to-your-environment"></a>Ortamınızda oturum açma

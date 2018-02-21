@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 37b53fa50afdc6865c5ba905957405f0e4b67520
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Microsoft Flow ile verileri filtreleme ve kopyalama
 Bu kılavuzda, bir kaynağı yeni veya değiştirilen öğeler için izleyen ve bu değişiklikleri bir hedefe kopyalayan bir akış oluşturmayı öğreneceksiniz. Kullanıcılarınız verileri bir konuma giriyorsa ancak takımınızın bu verilere farklı bir konumda veya biçimde ihtiyacı varsa, buna benzer bir akış oluşturabilirsiniz.
 
-Bu kılavuz verileri bir Microsoft SharePoint [listesinden](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kaynak) bir [Azure SQL Veritabanı](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) tablosuna (hedef) kopyalar ancak verileri Microsoft Flow tarafından desteklenen [150’nin üzerinde hizmet](https://flow.microsoft.com/connectors/) arasında kopyalayabilirsiniz.
+Bu kılavuz verileri bir Microsoft SharePoint [listesinden](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (kaynak) bir [Azure SQL Veritabanı](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) tablosuna (hedef) kopyalar ancak verileri Microsoft Flow tarafından desteklenen [150’nin üzerinde hizmet](https://flow.microsoft.com/connectors/) arasında kopyalayabilirsiniz.
 
 > [!IMPORTANT]
 > İki yönlü eşitleme desteklenmediğinden, hedefte yaptığınız değişiklikler kaynağa kopyalanmaz. İki yönlü eşitleme ayarlamayı denerseniz, değişikliklerin kaynak ve hedef arasında gönderildiği sonsuz bir döngü oluşturursunuz.
@@ -35,7 +35,7 @@ Bu kılavuz verileri bir Microsoft SharePoint [listesinden](https://support.offi
 * Bir veri kaynağına ve hedefe erişiminiz olmalıdır. Bu kılavuz, kaynak ve hedef oluşturma adımlarını içermez.
 * [Microsoft Flow](https://flow.microsoft.com)’a erişiminiz olmalıdır.
 * Verilerinizin depolanma şekli hakkında temel bilgilere sahip olma.
-* Akış oluşturma hakkındaki temel bilgileri edinme. [Eylemler, tetikleyiciler](multi-step-logic-flow.md#add-another-action) ve [koşulları](add-a-condition.md) nasıl ekleyeceğinizi gözden geçirebilirsiniz. Aşağıdaki adımlarda bu eylemleri nasıl gerçekleştireceğinizi bildiğiniz varsayılmaktadır.
+* Akış oluşturma hakkındaki temel bilgileri edinme. [Eylemler, tetikleyiciler](multi-step-logic-flow.md#add-another-action) ve [koşulları](add-condition.md) nasıl ekleyeceğinizi gözden geçirebilirsiniz. Aşağıdaki adımlarda bu eylemleri nasıl gerçekleştireceğinizi bildiğiniz varsayılmaktadır.
 
 > [!TIP]
 > Kaynak ve hedefteki tüm sütun adlarının eşleşmesi gerekmez ancak bir öğe eklediğinizde veya güncelleştirdiğinizde tüm *gerekli* sütunlar için veri sağlamanız gerekir. Microsoft Flow gerekli alanları sizin için belirler.
