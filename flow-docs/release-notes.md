@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/2018
+ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 8bdfafff5fbf3a5491809063e92607cd8e10167c
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
+ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -44,6 +44,30 @@ ms.lasthandoff: 01/03/2018
 3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+### <a name="release-2018-02-09"></a>Sürüm 2018-02-09
+
+- **Ağ Geçidi Yüksek Kullanılabilirliği** - Tek tek makineler kapandığında bağlantıların açık kalmasını sağlamak için şirket içi veri ağ geçitlerinin yüksek kullanılabilirlik özelliğine sahip kümelerini oluşturun.
+- **Her birine uygula geliştirildi** - Flow Plan 1 veya Flow Plan 2 ile tek bir çalıştırmada 100.000’e kadar öğe çalıştırın ve Her birine uygula döngüleriyle paralel olarak 50 eylem gerçekleştirin. 
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each/).
+
+### <a name="release-2018-01-29"></a>Sürüm 2018-01-29
+
+- **Microsoft Teams’de Flow** - Teams’den akış oluşturup bu akışları yönetebilir, aldığınız ve gönderdiğiniz onayları gözden geçirebilir ve doğrudan Teams masaüstü uygulamasının içinden veya teams.microsoft.com adresinden akış başlatabilirsiniz - [buradan daha fazla bilgi edinebilirsiniz](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
+- **Paylaşılan düzenleme bildirimleri** - Sahip olduğunuz bir akış bir iş arkadaşınız tarafından her değiştirildiğinde, hangi akışı kimin değiştirdiği konusunda bilgi sağlayan bir e-posta bildirimi alırsınız.
+- **Yeni ifadeler** - Biri URL'leri ayrıştırmaya, diğeri JSON nesneleriyle çalışmaya yönelik iki yeni ifade kümesi eklendi.
+- **Üç yeni bağlayıcı** - Bu hafta, Plumsail SP ve Plumsail Forms adlı iki yeni Plumsail bağlayıcısının yanı sıra bir kintone bağlayıcısı sunuldu.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/shared-notifications-and-expressions/).
+
+### <a name="release-2018-01-17"></a>Sürüm 2018-01-17
+
+- **Office 365 profil bilgileri** - Office 365 Kullanıcıları bağlayıcısına kullanıcı profilleri ve fotoğraflarla çalışan yeni eylemler ekledik.
+- **Dize değişkenlerine ekleme** - Döngülerin içindeki dizelere ekleme yaparak tablolar veya başka listeler oluşturabilirsiniz.
+- **Infobip bağlayıcısı** - Infobip, sesli aramalar ve SMS geldiğinde tetiklenme dahil olmak üzere kurumsal düzeyde iletişim imkanı sağlayan bir hizmettir.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/o365-profile-infobip/).
 
 ### <a name="release-2017-12-20"></a>Sürüm 2017-12-20
 

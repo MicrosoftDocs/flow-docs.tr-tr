@@ -10,16 +10,16 @@ editor:
 tags: 
 ms.service: flow
 ms.devlang: na
-ms.topic: article
+ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 06b0198ffa75a3de673460dc13037205f58ad515
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Microsoft Flow için şirket içi veri ağ geçitlerini anlama
 Şirket içi veri ağ geçidini Microsoft Flow ile kullanarak Microsoft SQL Server gibi şirket içi veri kaynaklarınızla güvenli bağlantılar kurun.
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/15/2017
 ### <a name="prerequisites"></a>Önkoşullar
 Minimum:
 
-* [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)
 * Windows 7'nin veya Windows Server 2008 R2'nin 64 bit sürümü (veya sonraki bir sürüm)
 
 Önerilen:
@@ -49,7 +49,7 @@ Dikkat edilmesi gereken noktalar:
 > 
 > 
 
-1. [Yükleyiciyi indirin](http://go.microsoft.com/fwlink/?LinkID=820931) ve çalıştırın.
+1. [Yükleyiciyi indirin](https://go.microsoft.com/fwlink/?LinkID=820931) ve çalıştırın.
    
     ![Yükleyiciyi çalıştırma](./media/gateway-reference/run-installer.png)
 2. Yükleme sihirbazının ilk ekranında, dizüstü bilgisayara ağ geçidi eklemeyle ilgili anımsatıcıyı kabul etmek için **İleri**’yi seçin.
@@ -81,18 +81,25 @@ Dikkat edilmesi gereken noktalar:
 Ağ geçidi, bir Windows hizmeti olarak çalışır ve diğer tüm Windows hizmetlerinde olduğu gibi, bir ağ geçidini başlatmanın ve durdurmanın birden fazla yolu vardır. Örneğin, ağ geçidinin çalıştırıldığı makinede yükseltilmiş izinlere sahip bir komut istemi açabilir ve şu komutlardan birini çalıştırabilirsiniz:
 
 * Hizmeti durdurmak için şu komutu çalıştırın:
-  
-    ````net stop PBIEgwService````
+
+```batchfile
+    net stop PBIEgwService
+```
+
 * Hizmeti başlatmak için şu komutu çalıştırın:
-  
-    ````net start PBIEgwService````
+
+```batchfile
+    net start PBIEgwService
+```
 
 ## <a name="configure-a-firewall-or-proxy"></a>Güvenlik duvarını veya ara sunucuyu yapılandırma
 Ağ geçidiniz için ara sunucu bilgisi sağlama hakkında bilgi edinmek için bkz.[Ara sunucu ayarlarını yapılandırma](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/).
 
 Bir PowerShell isteminden aşağıdaki komutu çalıştırarak, güvenlik duvarınız veya ara sunucunuzun bağlantıları engelleyip engellemediğini doğrulayabilirsiniz. Bu komut, Azure Service Bus bağlantısını test eder. Bu komut, yalnızca ağ bağlantısını test eder; bulut sunucu hizmetini veya ağ geçidini etkilemez. Makinenizin İnternet’e bağlı olup olmadığını belirlemenize yardımcı olur.
 
-````Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350````
+```powershell
+Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+```
 
 Sonuçlar aşağıdaki çıkıştaki gibi görünmelidir. **TcpTestSucceeded** değeri *true* değilse bir güvenlik duvarı tarafından engelleniyor olabilirsiniz.
 
@@ -157,7 +164,7 @@ Bu, şirket içi veri kaynaklarına bağlanmak için kullandığınız hesap vey
 **Cevap:** Hayır. Ağ geçidi, Azure Service Bus'a yönelik giden bağlantıları kullanır.
 
 **Soru:** Giden bağlantıları engellersem ne olur? Neyi açmam gerekir?
-**Cevap:** Ağ geçidinin kullandığı [bağlantı noktalarına](gateway-reference.md#ports) ve konaklara göz atın.
+**Cevap:** Ağ geçidinin kullandığı [bağlantı noktalarına](gateway-reference.md#configure-ports) ve konaklara göz atın.
 
 **Soru:** Ağ geçidinin, veri kaynağıyla aynı makineye yüklenmesi gerekir mi?
 **Cevap:** Hayır. Ağ geçidi, sağlanan bağlantı bilgilerini kullanarak veri kaynağına bağlanır. Bu bağlamda ağ geçitlerini, bir istemci uygulama gibi düşünebilirsiniz. Ağ geçidinin, yalnızca sağlanan sunucu adına bağlanabiliyor olması gerekir.
