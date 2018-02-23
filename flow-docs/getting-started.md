@@ -13,76 +13,81 @@ ms.devlang: na
 ms.topic: hero-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/27/2017
+ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 4ed27b114819146f38a58e4f781a8372be9f60a1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
+ms.sourcegitcommit: 95e9c124868ce09d961b5776c957b051fd621b88
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/20/2018
 ---
-# <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama
+# <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama #
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Hoş Geldiniz! Microsoft Flow; dosyaları eşitlemek, bildirimler almak, veri toplamak ve daha fazlası için sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturmanıza yardımcı olan bir üründür.
+Hoş Geldiniz! Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve daha fazlasını yapmanıza yardımcı olan bir hizmettir.
 
-İlk adım olarak [kaydolmanız gerekir](sign-up-sign-in.md). Zaten bir Microsoft hesabınız varsa doğrudan tabletinizde, masaüstü bilgisayarınızda ve hatta telefonunuzda [oturum açabilirsiniz](https://flow.microsoft.com/signin).
+İlk adım olarak [kaydolmanız](sign-up-sign-in.md) gerekir. Zaten bir Microsoft Flow hesabınız varsa tabletinizde, masaüstü bilgisayarınızda ve hatta telefonunuzda [oturum açabilirsiniz](https://flow.microsoft.com/signin).
 
-## <a name="check-out-the-home-page"></a>Giriş sayfasına göz atın
-Microsoft Flow’un [giriş sayfasında](https://flow.microsoft.com), [çok çeşitli şablonlar keşfedebilir](https://flow.microsoft.com/templates) ve Microsoft Flow’un bazı temel özellikleri hakkında bilgi edinebilirsiniz. Microsoft Flow ile neler yapabileceğiniz ve Microsoft Flow'un işinizi ve hayatınızı nasıl kolaylaştırabileceği hakkında hızlı bir fikir edinebilirsiniz.
+## <a name="check-out-the-start-page"></a>Başlangıç sayfasını gözden geçirin ##
 
-![Flow giriş sayfası](./media/getting-started/flowhome1.png)
+Microsoft Flow’un [başlangıç sayfasında](https://flow.microsoft.com), [çok çeşitli şablonları keşfedebilir](https://flow.microsoft.com/templates) ve Microsoft Flow’un bazı temel özellikleri hakkında bilgi edinebilirsiniz. Microsoft Flow ile neler yapabileceğiniz ve Microsoft Flow'un işinizi ve hayatınızı nasıl kolaylaştırabileceği hakkında hızlı bir fikir edinebilirsiniz.
 
-![Flow giriş sayfası](./media/getting-started/flowhome2.png)
+Microsoft Flow ile yapabilecekleriniz:
 
-![Flow giriş sayfası](./media/getting-started/flowhome3.png)
+- Kolayca şablonları ve hizmetleri arama.
 
-Her şablon, özel bir amaç (örneğin, patronunuzdan e-posta geldiğinde size kısa mesaj gönderme, Twitter’daki potansiyel müşterileri Dynamics 365'e ekleme veya dosyalarınızı yedekleme) için tasarlanır. Bu şablonlar, buz dağının yalnızca görünen kısmı olup tam olarak ihtiyaç duyduğunuz işlemlere göre özelleştirilmiş akışlar oluşturmanız için size ilham vermek amacıyla tasarlanmıştır.
+    ![Akış başlangıç sayfası 1](./media/getting-started/flowhome1.png)
 
-## <a name="create-your-first-flow"></a>İlk akışınızı oluşturma
-Sizin için yararlı olabilecek bir akış şablonu bulmanız gerekir. Örneğin, [**E-postayla günlük anımsatıcılar alma**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) oldukça basit bir şablondur.
+- En popüler hizmetler arasından seçim yapma.
 
-![Akış şablonları](./media/getting-started/template-details.png)
+    ![Akış başlangıç sayfası 2](./media/getting-started/flowhome2.png)
 
-Bu şablonun kullanımı çok kolaydır: İlk olarak **Devam**’ı seçin.
+- Her akışa yönelik bir genel bakışı görüntüleme.
 
-![Bağlantı oluşturma](./media/getting-started/create-connection.png)
+    ![Akış başlangıç sayfası 3](./media/getting-started/flowhome3.png)
 
-Şimdi, günlük anımsatıcının gönderileceği e-posta adreslerini girin. Ardından, anımsatıcı iletisini girin. Son olarak, **Akış oluştur**'u seçin ve ardından akışınızın beklendiği gibi çalıştığını doğrulayın.
+Her şablon belirli bir amaç için tasarlanmıştır. Örneğin, patronunuzdan e-posta geldiğinde size kısa mesaj göndermeye, Twitter’daki potansiyel müşterileri Dynamics 365’e eklemeye veya dosyalarınızı yedeklemeye yönelik şablonlar vardır. Bu şablonlar buz dağının görünen ucudur. Bunlar tam da ihtiyaç duyduğunuz süreçler için özelleştirilmiş akışlar oluşturmanız amacıyla ilham vermek için tasarlanmıştır.
 
-![Bağlantı oluşturma](./media/getting-started/configure-email-details.png)
+## <a name="create-your-first-flow"></a>İlk akışınızı oluşturma ##
 
-Not: Akışı tetikleyen koşulları ve bu olayın sonucunda oluşan eylemi keşfedebilirsiniz. Akışı kendinize göre özelleştirmek için ayarlarla oynayabilir, hatta eylem ekleyip silebilirsiniz. (veya yalnızca **Bitti**’yi seçin).
+1. Sizin için kullanışlı olan bir şablon seçin. Örneğin, [**E-postayla günlük anımsatıcılar alın**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) basit bir şablondur:
 
-Diğer şablonları keşfedebilir ve[bu eğiticiyi izleyerek](get-started-logic-template.md) şablonlardan daha fazla akış oluşturma hakkında ayrıntılı bilgi edinebilirsiniz.
+    ![günlük anımsatıcı şablonu](./media/getting-started/template-details.png)
 
-## <a name="get-creative"></a>Yaratıcı olun
-Artık bir akışın neler yapabileceğine dair biraz fikriniz olduğuna ve akış ile ilgili deneyim edindiğinize göre, şu veri kaynaklarını ve diğerlerini temel alarak [sıfırdan bir akış oluşturun](get-started-logic-flow.md):
+1. **Devam**’ı seçin.
 
-* Dropbox, OneDrive veya Google Drive gibi bir bulut depolama hesabında Excel dosyası
-* Google sayfası
-* SharePoint listesi
-* Özel varlıklar içeren Salesforce veya Microsoft Dynamics 365
-* SQL Azure tablosu
-* [Microsoft Common Data Service](common-data-model-intro.md)
+    ![Bağlantı oluşturma](./media/getting-started/create-connection.png)
+
+1. Günlük anımsatıcının gönderileceği e-posta adreslerini girin. Ardından, anımsatıcı iletisini girin. Son olarak, **Akış oluştur**'u seçin ve ardından akışınızın beklendiği gibi çalıştığını doğrulayın.
+
+    ![Bağlantı için kimlik bilgilerini sağlayın](./media/getting-started/configure-email-details.png)
+
+    > [!NOTE]
+    > Akışı tetikleyen koşulları ve bu olayın sonucunda oluşan eylemi keşfedebilirsiniz. Akışı kendinize göre özelleştirmek için ayarlarla oynayabilirsiniz. Hatta eylemler ekleyebilir veya silebilirsiniz.
+
+1. **Bitti**’yi seçin.
+
+Şablonlardan akışlar oluşturma hakkında daha fazla bilgi edinmek için [bu öğreticiyi izleyin](get-started-logic-template.md).
+
+## <a name="get-creative"></a>Yaratıcı olun ##
+
+Bir şablondan ilk akışınızı oluşturduğunuza göre, [sıfırdan kendi akışlarınızı oluşturmak](get-started-logic-flow.md) için Microsoft Flow’un desteklediği [150’den fazla veri kaynağından](https://flow.microsoft.com/connectors/) herhangi birini kullanabilirsiniz.
 
 ![Akış oluşturma](./media/getting-started/build-a-flow.png)
 
-Sıfırdan oluştururken, aklınızdaki tüm akışı doğrudan ekrana aktarabilirsiniz. Ayrıca şu konu başlıklarında yer alanlar dahil olmak üzere farklı yaklaşımları da araştırabilirsiniz:
+Sıfırdan bir akış oluşturduğunuzda, iş akışının tamamını denetlersiniz. Başlamanız için birkaç fikir:
 
-* [Çok adımlı akışlar](multi-step-logic-flow.md)
-* [Görevleri bir zamanlamaya göre çalıştırma](run-tasks-on-a-schedule.md)
-* [Bir onay akışı oluşturma](wait-for-approvals.md)
-* [Akışı çalıştırılırken izleme](see-a-flow-run.md)
-* [Şablon yayımlama](publish-a-template.md)
+- [Çok adımlı akışlar](multi-step-logic-flow.md).
+- [Görevleri bir zamanlamaya göre çalıştırma](run-scheduled-tasks.md).
+- [Bir onay akışı oluşturma](wait-for-approvals.md).
+- [Akışı çalıştırılırken izleme](see-a-flow-run.md).
+- [Şablon yayımlama](publish-a-template.md).
 
-## <a name="use-the-mobile-app"></a>Mobil uygulamayı kullanma
-Mobil cihazınıza Microsoft Flow mobil uygulamasının [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) sürümünü indirerek şunları yapabilirsiniz:
+## <a name="use-the-mobile-app"></a>Mobil uygulamayı kullanma ##
 
-* [akış etkinliğini izleme](mobile-monitor-activity.md) (örneğin, akışın başarılı ve başarısız olduğu zamanların yanı sıra her bir akışın en son çalıştırılma zamanı)
-* [her bir akışı yönetme](mobile-manage-flows.md) (örneğin, akışı etkinleştirme, devre dışı bırakma ve akışa ilişkin olay ve eylemleri görüntüleme)
-* [bir şablondan akış oluşturma](mobile-create-flow.md) (örneğin, belirttiğiniz bir gönderenden posta aldığınızda anında iletme bildirimi almanızı sağlayan şablon)
+[Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını indirin. Bu uygulama ile [akış etkinliğini izleyebilir](mobile-monitor-activity.md), [akışlarınızı yönetebilir](mobile-manage-flows.md) ve [şablonlardan akışlar oluşturabilirsiniz](mobile-create-flow.md).
 
-## <a name="questions-ideas-were-here-to-help"></a>Sorularınız mı var? Fikirleriniz mi var? Size yardımcı olmak için buradayız
-Microsoft Flow ile yapabileceklerinizi görmek için heyecanlanıyoruz ve mükemmel bir deneyim yaşadığınızdan emin olmak istiyoruz. Daha fazla yardım almak için buradaki ayrıntılı öğreticilere göz atın. Sorularınızı sormak ve fikirlerinizi paylaşmak için [topluluğumuza katılın](http://go.microsoft.com/fwlink/?LinkID=787467). Herhangi bir sorunla karşılaşırsanız [destek ekibi ile iletişime geçin](http://go.microsoft.com/fwlink/?LinkID=787479).
+## <a name="were-here-to-help"></a>Size yardımcı olmak için buradayız ##
 
+Microsoft Flow ile yapabileceklerinizi görmek için heyecanlanıyoruz ve mükemmel bir deneyim yaşadığınızdan emin olmak istiyoruz. Sorularınızı sormak ve fikirlerinizi paylaşmak için [destekli öğrenim](https://flow.microsoft.com/guided-learning/) öğreticilerimize göz atın ve [topluluğumuza katılın](http://go.microsoft.com/fwlink/?LinkID=787467). Herhangi bir sorunla karşılaşırsanız [destek ekibi ile iletişime geçin](http://go.microsoft.com/fwlink/?LinkID=787479).
