@@ -50,6 +50,8 @@
       href: sequential-modern-approvals.md
     - name: Paralel onaylar
       href: parallel-modern-approvals.md
+    - name: Herkes onaylamalıdır
+      href: all-assigned-must-approve.md
     - name: Tümleşik onaylar
       href: common-data-model-approve.md
 - name: Mobil uygulamayı kullanma
