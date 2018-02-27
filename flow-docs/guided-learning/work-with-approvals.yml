@@ -12,13 +12,13 @@ metadata:
   manager: anneta
   ms.service: flow
   ms.topic: get-started-article
-  ms.date: 10/04/2017
+  ms.date: 02/22/2018
   ms.author: deonhe
-  ms.openlocfilehash: 8a67950c176d779f8f6745757af526b07afd5fa0
-  ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+  ms.openlocfilehash: b3b77f073464ae15eaf3ca49ce6664ed5d03cfe8
+  ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 02/27/2018
 items:
 - durationInMinutes: 1
   content: "Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.\n"
