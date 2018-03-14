@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: fe05ce536b61887f52ea4e297457c71ead3e8bfd
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
+ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Microsoft Flow ile bir onay iş akışını oluşturma ve test etme
-Microsoft Flow ile SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress gibi çeşitli hizmetlerdeki belge veya işlemlerin onaylanmasını yönetebilirsiniz.
+Microsoft Flow ile SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress gibi çeşitli hizmetlerdeki belge ya da işlemlerin onaylanmasını yönetebilirsiniz.
 
 Onay iş akışı oluşturmak için **Onaylar - Onay başlat** eylemini herhangi bir akışa ekleyin. Bu eylem eklendikten sonra, akışınız belge veya işlemlerin onay süreçlerini yönetebilir. Örneğin faturaları, iş emirlerini veya satış tekliflerini onaylayan belge onay akışları oluşturabilirsiniz. Ayrıca tatil isteklerini, fazla mesaileri veya seyahat planlarını onaylamak üzere işlem onayı akışları da oluşturabilirsiniz.
 
-Onaylayanlar, istekleri e-posta gelen kutularından, Microsoft Flow web sitesindeki [onay merkezinden](https://flow.microsoft.com/manage/approvals/received/) veya Microsoft Flow uygulamasından yönetebilir.
+Onaylayanlar istekleri e-posta gelen kutularından, Microsoft Flow web sitesindeki [onay merkezinden](https://flow.microsoft.com/manage/approvals/received/) veya Microsoft Flow uygulamasından yanıtlayabilir.
 
 ## <a name="create-an-approval-flow"></a>Bir onay akışı oluşturma
 Oluşturup test edeceğimiz akış, aşağıda genel hatlarıyla sunulmuştur:
@@ -126,7 +126,6 @@ Akışınızı oluşturup test ettikten sonra diğer kişilere nasıl kullanıla
 
 ## <a name="learn-more"></a>Daha fazla bilgi
 * [Bekleyen onay isteklerini](approve-reject-requests.md) görüntüleme ve yönetme
-* [Sıralı onay iş akışları](sequential-modern-approvals.md) oluşturun.
+* [Sıralı onay akışları](sequential-modern-approvals.md) oluşturun.
 * [Paralel onay iş akışları](parallel-modern-approvals.md) oluşturun.
 * [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını yükleyin.
-
