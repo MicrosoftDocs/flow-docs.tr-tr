@@ -1,13 +1,13 @@
 ---
-title: "Sık sorulan sorular | Microsoft Docs"
-description: "Microsoft Flow hakkında sıkça sorulan birkaç sorunun cevabı"
-services: 
+title: Sık sorulan sorular | Microsoft Docs
+description: Microsoft Flow hakkında sıkça sorulan birkaç sorunun cevabı
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 5b8deda5f22bcc1fa7cfa37a0d4244f26c2004a4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
+ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
@@ -99,10 +99,21 @@ Microsoft Flow, 50 akışla birlikte teslim edilir. Daha fazla gerekirse isteyeb
 * [Blog](https://flow.microsoft.com)
 * [YouTube kanalı](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Konu başlığı](getting-started.md)
-* [Topluluk](http://powerusers.microsoft.com)
+* [Topluluk](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Microsoft Flow mobil uygulaması hangi işletim sistemlerini destekler?
 Microsoft Flow mobil uygulaması [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows)’da kullanılabilir.
+
+### <a name="can-flows-be-turned-off-or-disabled"></a>Akışlar kapatılabilir veya devre dışı bırakılabilir mi?
+
+Evet, her akışın, istekleri işlemesini durdurmanızı sağlayan bir açma/kapatma düğmesi vardır.
+
+Akışınızın geri açıldığında nasıl yanıt vereceğini anlamak için aşağıdaki tabloya bakın.
+
+Tetikleyici türü|Açıklama
+-------|--------
+**Yineleme** tetikleyicisi gibi yoklama|Akış tekrar açıldığında, işlenmeyen/beklemedeki tüm olaylar işlenir.
+Web kancası|Akış tekrar açıldığında yalnızca akış açıldıktan sonra oluşturulan yeni olayları işler.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Microsoft Flow hangi bölgeleri ve dilleri destekler?
 Microsoft Flow 42 dilde ve [altı bölgede](regions-overview.md) kullanılabilir.
