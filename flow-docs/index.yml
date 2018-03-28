@@ -1,0 +1,105 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Flow Belgeleri
+metadata:
+  title: 'Microsoft Flow belgeleri, videoları, başvurusu ve daha fazlası'
+  description: 'Buradaki kaynakları kullanarak akış oluşturmaya, paylaşmaya ve yönetmeye başlayın. Basit bir düğme ile çalışmaya başlayabilir veya kendi onay akışlarınızı oluşturabilirsiniz.'
+  author: MSFTMan
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: flow
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 10/18/2017
+  ms.author: deonhe
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Buradaki kaynakları kullanarak akış oluşturmaya, paylaşmaya ve yönetmeye başlayın. Basit bir düğme ile çalışmaya başlayabilir veya kendi onay akışlarınızı oluşturabilirsiniz.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: guided-learning/index
+            html: <p>Kılavuzlu Öğrenme turuna katılın</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Tura katılın
+          - href: getting-started
+            html: <p>Microsoft Flow’a genel bakış</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Kullanmaya Başlama
+          - href: mobile-create-flow
+            html: <p>Herhangi bir mobil cihazda akış oluşturma</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_mobileapp.svg'
+            title: Mobil uygulamayı tanıma
+          - href: introduction-to-button-flows
+            html: <p>2 dakikada düğme akışı oluşturma</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
+            title: Düğmeler hakkında bilgi edinin
+          - href: 'https://aka.ms/flowoftheweek'
+            html: <p>Haftanın akışından ilham alın</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
+            title: Haftanın akışı
+          - href: 'https://flow.microsoft.com/support/'
+            html: <p>Yardım ve destek alın</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+            title: Size yardımcı olmak için buradayız
+  - title: Adım Adım Öğreticiler
+    items:
+      - type: paragraph
+        text: Farklı türde akışlar oluşturmayı öğrenin.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: get-started-logic-template
+            title: Şablondan akış oluşturma
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+          - href: get-started-logic-flow
+            title: Sıfırdan akış oluşturma
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+          - href: modern-approvals
+            title: Onay akışları oluşturun
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_tasks.svg'
+          - href: share-buttons
+            title: Başkalarının düğmelerinizi kullanmasına izin verin
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+          - href: create-team-flows
+            title: Akışlarınızın sahipliğini paylaşma
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_configure-teams.svg'
+          - href: fix-flow-failures
+            title: Akışlarla ilgili sorunları giderme
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_investigate.svg'
+  - title: Microsoft Flow’a videolu genel bakış
+    items:
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>'
+  - title: Gelişmiş Öğreticiler
+    items:
+      - type: paragraph
+        text: 'İfadeleri kullanma, REST API, özel bağlayıcılar oluşturma ve daha fazlası hakkında bilgi edinin...'
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="environments-overview-admin">Bir kuruluş için Microsoft Flow’u yönetme</a>
+          - html: '<a href="https://flow.microsoft.com/blog/call-flow-restapi/">Akışlarınızla REST API''lerini kullanmayı öğrenme</a>'
+          - html: <a href="customapi-web-api-tutorial">Özel bağlayıcı oluşturma</a>
+          - html: '<a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Logic Apps ile akışlarınızı genişletme</a>'
