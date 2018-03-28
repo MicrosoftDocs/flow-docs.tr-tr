@@ -1,13 +1,13 @@
 ---
-title: "Sürüm notları | Microsoft Docs"
-description: "Microsoft Flow sürümlerinde sık karşılaşılan sorunlar ve yenilikler"
-services: 
+title: Sürüm notları | Microsoft Docs
+description: Microsoft Flow sürümlerinde sık karşılaşılan sorunlar ve yenilikler
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
-ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
+ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
+ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -391,7 +391,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 ### <a name="release-2016-11-23"></a>Sürüm 23.11.2016
 * **Flow’da Power BI uyarı desteği** - Power BI veri uyarılarından akışları tetikleyerek bilgileri eyleme dönüştürün.
 * **Mobil uygulama geliştirmeleri** - .Sunulmakta olan şablonlardan akış oluşturma deneyimine ek olarak, sıfırdan akış oluşturma özelliği eklendi. Ayrıca akış çalıştırmalarını görüntüleme performansı iyileştirildi.
-* **Sekiz yeni hizmet** - Azure Resource Manager, Azure Kuyrukları, Chatter, Disqus, Azure DocumentDB, Bilişsel Hizmetler Yüz Tanıma API’si, HipChat ve Wordpress hizmetlerine bağlanabilirsiniz.
+* **Sekiz yeni hizmet** - Azure Resource Manager, Azure Kuyrukları, Chatter, Disqus, Azure Cosmos DB, Bilişsel Hizmetler Yüz Tanıma API’si, HipChat ve Wordpress hizmetlerine bağlanabilirsiniz.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/).
 
