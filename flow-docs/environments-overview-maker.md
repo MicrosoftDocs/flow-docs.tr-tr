@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Flow ortamları hakkında bilgi edinin | Microsoft Docs"
-description: "Akışlarınıza yalıtım uygulamak için ortamları kullanmayı öğrenin"
-services: 
+title: Microsoft Flow ortamları hakkında bilgi edinin | Microsoft Docs
+description: Akışlarınıza yalıtım uygulamak için ortamları kullanmayı öğrenin
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-an-environment"></a>Ortam seçme
 
@@ -73,7 +73,7 @@ Ortamlar arasında geçiş yapmak için aşağıdaki adımları izleyin:
 Akış oluşturduğunuz için akışı ve kaynaklarını ekleyeceğiniz ortamı seçmeniz gerekir.
 
 > [!NOTE]
-Akışı yanlış bir ortamda oluşturduysanız silip doğru ortamda tekrar oluşturmanız gerekir.
+> Akışı yanlış bir ortamda oluşturduysanız silip doğru ortamda tekrar oluşturmanız gerekir.
 
 Akışlarınızın barındırılacağı ortamı seçerken aşağıdaki unsurları göz önünde bulundurun:
 
@@ -82,7 +82,7 @@ Akışlarınızın barındırılacağı ortamı seçerken aşağıdaki unsurlar�
 * İçindeki kaynakları düzenleyebileceğiniz tüm ortamları görürsünüz. Ancak yöneticinizden sizi akış oluşturmak istediğiniz tüm ortamlara üretici olarak eklemesini istemeniz gerekir.
 
 > [!NOTE]
-Varsayılan ortamda akış oluşturmak için herhangi bir ek izne ihtiyacınız yoktur.
+> Varsayılan ortamda akış oluşturmak için herhangi bir ek izne ihtiyacınız yoktur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

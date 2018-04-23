@@ -1,6 +1,7 @@
 [Microsoft Flow](https://flow.microsoft.com)’da iş akışları oluşturmak için kullanılabilen [hizmetler](https://flow.microsoft.com/services) her geçen gün arttığından SharePoint veya Salesforce gibi kurumsal hizmetlerde depolanan gizli veya kritik iş verilerini korumanız gerekebilir. Kuruluşunuzun, gizli iş verilerinin Twitter ve Facebook gibi tüketici hizmetlerine yayımlanmadığından emin olmak için bir ilke oluşturması gerekebilir. Microsoft Flow sayesinde, kullanıcılarınız akış oluşturduğunda iş verilerinizin hangi tüketici hizmetleriyle paylaşılacağını sıkı bir şekilde denetlemek için kolayca **veri kaybı önleme** (DLP) ilkeleri oluşturabilirsiniz.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Bilmeniz gereken terimler:
+
 | Terim | Açıklama |
 | --- | --- |
 | **DLP** |Bu, veri kaybı önleme teriminin kısaltmasıdır. **Hizmetler** arasında veri paylaşımını yönetmek için DLP ilkesi oluşturursunuz. |

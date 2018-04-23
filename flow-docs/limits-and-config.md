@@ -1,13 +1,13 @@
 ---
-title: "Limitler ve yapılandırma | Microsoft Docs"
-description: "Limitler ve yapılandırma"
-services: 
+title: Limitler ve yapılandırma | Microsoft Docs
+description: Limitler ve yapılandırma
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
-ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+ms.openlocfilehash: ee1ab187a4c5404ad0f0dd81d1894ddc8b1014b8
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow’da limitler ve yapılandırma
 Bu konu, akışlara yönelik geçerli limitler ve yapılandırma ayrıntılarıyla ilgili bilgi içerir.
@@ -28,17 +28,20 @@ Bu konu, akışlara yönelik geçerli limitler ve yapılandırma ayrıntılarıy
 Bunlar tek bir giden isteğe yönelik limitlerdir.
 
 ### <a name="timeout"></a>Zaman aşımı
+
 | Ad | Limit |
 | --- | --- |
 | İstek Zaman Aşımı |120 Saniye |
 
 ### <a name="message-size"></a>İleti boyutu
+
 | Ad | Limit | Notlar |
 | --- | --- | --- |
 | İleti boyutu |100 MB |API’lerden bazıları 100 MB’ın tamamını desteklenmez. |
 | İfade değerlendirme limiti |131.072 karakter |`@concat()`, `@base64()`, `string` bu sınırı aşamaz. |
 
 ### <a name="retry-policy"></a>Yeniden deneme ilkesi
+
 | Ad | Limit |
 | --- | --- |
 | Yeniden deneme sayısı |4 |

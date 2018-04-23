@@ -1,23 +1,23 @@
 ---
-title: "Koşullu ifadeler kullanma | Microsoft Docs"
-description: "Aşağıdaki gibi gelişmiş ifadeler kullanma "
-"\"and\"\",": 
-"\"\"or\"\",": 
-"\"\"empty\"\",": 
-"\"\"less\"\"": 
-and: 
-"\"\"greater\"\"": 
-with: 
-microsoft: 
-flow: 
-conditions.": 
-services: 
+title: Koşullu ifadeler kullanma | Microsoft Docs
+description: 'Aşağıdaki gibi gelişmiş ifadeler kullanma '
+"\"and\"\",": ''
+"\"\"or\"\",": ''
+"\"\"empty\"\",": ''
+"\"\"less\"\"": ''
+and: ''
+"\"\"greater\"\"": ''
+with: ''
+microsoft: ''
+flow: ''
+conditions.": ''
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -25,11 +25,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/01/2017
 ms.author: deonhe
-ms.openlocfilehash: a833abf7cb43e6d8a1c67b0f4160c90a4b24545a
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.openlocfilehash: 3a089735cc2d8c9144e18a2765b549b528470d1e
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Koşullarda ifadeleri kullanarak birden çok değeri denetleme
 Bu kılavuzda, **Gelişmiş mod**’da ifadeleri ve **Koşulları** kullanarak birden çok değeri nasıl karşılaştırabileceğinizi öğreneceksiniz.
@@ -74,71 +74,71 @@ Akışı oluşturalım.
 
 ### <a name="start-with-a-blank-flow"></a>Boş bir akışla başlayın
 1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
-   
+
     ![Oturum açın](includes/media/modern-approvals/sign-in.png)
 2. **Akışlarım** sekmesini seçin.
-   
+
     ![Akışlarım sekmesini seçin](includes/media/modern-approvals/select-my-flows.png)
 3. **Boş akış oluştur**’u seçin.
-   
+
     ![Boş akış oluştur](includes/media/modern-approvals/blank-template.png)
 
 ### <a name="add-a-trigger-to-your-flow"></a>Akışınıza bir tetikleyici ekleyin
 1. **Zamanlama** sözcüğünü arayın ve sonra **Zamanlama - Yinelenme** tetikleyicisini seçin
-   
+
     ![zamanlama tetikleyicisi](includes/media/schedule-trigger/schedule-trigger.png)
 2. Zamanlamayı günde bir kez çalışacak biçimde ayarlayın.
-   
+
     ![zamanlamayı ayarlama](includes/media/schedule-trigger/set-schedule.png)
 
 ### <a name="select-the-spreadsheet-and-get-all-rows"></a>Elektronik tabloyu seçin ve tüm satırları alın
 1. **Yeni adım** > **Eylem ekle** seçeneğini belirleyin.
-   
+
     ![Yeni adım](includes/media/new-step/action.png)
 2. **Satırlar** sözcüğünü arayın ve sonra **Excel - Satırları al**’ı seçin.
-   
+
     Not: Kullanmakta olduğunuz elektronik tabloya karşılık gelen "satırları al" eylemini seçin. Örneğin, Google E-Tablolar’ı kullanıyorsanız **Google E-Tablolar - Satırları al**’ı seçin.
-   
+
     ![Satırları al](includes/media/new-step/get-excel-rows.png)
 3. **Dosya adı** kutusunda klasör simgesini seçin, verilerinizi içeren elektronik tabloya göz atın ve tabloyu seçin.
-   
+
     ![elektronik tabloyu seçme](includes/media/new-step/select-spreadsheet.png)
 4. **Tablo adı** listesinden verilerinizi içeren tabloyu seçin.
-   
+
     ![tabloyu seçme](includes/media/new-step/select-table.png)
 
 ### <a name="check-the-status-column-of-each-row"></a>Her satırın durum sütununu denetleyin
 1. **Yeni adım** > **Diğer** > **“Her birine uygula” ekle**’yi seçin.
-   
+
     ![tabloyu seçme](includes/media/new-step/apply-to-each.png)
 2. **Değer** belirtecini **Önceki adımlardan bir çıkış seçin** kutusuna ekleyin.
-   
+
     ![tabloyu seçme](includes/media/apply-to-each/add-value-token.png)
 3. **Koşul ekle** > **Gelişmiş modda düzenle**’yi seçin.
 4. Aşağıdaki **or** ifadesini ekleyin. Bu **or** ifadesi, tablodaki her satırın değerini denetler (satır, bir ifadede erişildiğinde öğe olarak bilinir). **Durum** sütunundaki değerin *tamamlandı* **veya** *gereksiz* olması durumunda, **or** ifadesi "true" olarak değerlendirilir.
-   
+
     **or** ifadesi burada gösterildiği gibi görünür:
-   
+
     ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
-   
+
     **Koşul** kartınız şu resme benzer şekilde görünür:
-   
+
     ![or ifadesi görüntüsü](./media/use-expressions-in-conditions/or-expression.png)
 
 ### <a name="delete-matching-rows-from-the-spreadsheet"></a>Eşleşen satırları elektronik tablodan silme
 1. Koşulun **EVET İSE, HİÇBİR ŞEY YAPMA** dalında **Eylem ekle**'yi seçin.
 2. **Satırı sil** ifadesini arayın ve sonra **Excel - Satır sil**’i seçin.
-   
+
     ![satırı sil resmi](includes/media/new-step/select-delete-excel-row.png)
 3. **Dosya adı** kutusunda, silmek istediğiniz verileri içeren elektronik tablo dosyasını arayın ve seçin.
 4. **Tablo adı** listesinde, verilerinizi içeren tabloyu seçin.
 5. **Satır kimliği** kutusuna **Satır kimliği** belirtecini girin.
-   
+
     ![elektronik tablo dosyası](includes/media/new-step/delete-excel-row.png)
 
 ### <a name="name-the-flow-and-save-it"></a>Akışı adlandırın ve kaydedin
 1. Akışınıza bir ad verin ve sonra **Akış oluştur** düğmesini seçin.
-   
+
     ![akışınızı kaydedin](./media/use-expressions-in-conditions/name-and-save.png)
 
 ### <a name="run-the-flow-with-the-or-expression"></a>Akışı or ifadesiyle çalıştırma
@@ -201,10 +201,11 @@ Elektronik tablo şöyle görünür:
 
 Doğrulanması gereken iki koşul olduğundan, **and** ifadesinin yanı sıra **less** ifadesini kullanın:
 
-| Doğrulanacak koşul | kullanılacak ifade | Örnek |
-| --- | --- | --- |
-| Tutarın tamamı ödendi mi? |greater |@greater(item()?['Tutar'], item()?['Ödenen']) |
-| Son tarihe bir günden kısa süre mi kaldı? |less |@less(item()?['SonTarih'], addDays(utcNow(),1)) |
+
+|          Doğrulanacak koşul          | kullanılacak ifade |                    Örnek                     |
+|-----------------------------------------|-------------------|------------------------------------------------|
+|   Tutarın tamamı ödendi mi?    |      greater      |   @greater(item()?['Tutar'], item()?['Ödenen'])    |
+| Son tarihe bir günden kısa süre mi kaldı? |       less        | @less(item()?['SonTarih'], addDays(utcNow(),1)) |
 
 ## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Bir and ifadesinde greater ve less ifadelerini birleştirme
 Ödemesi gereken tutarın altında ödeme yapan çalışanları belirlemek için **greater** ifadesini kullanın ve geçerli tarih ile son ödeme tarihi arasındaki sürenin bir günden kısa olup olmadığını belirlemek **less** ifadesini kullanın. Daha sonra, **E-posta gönder** eylemini kullanarak son tarihe bir günden kısa süre kalmasına rağmen tutarın tamamını ödememiş kişilere iyi niyetli bir anımsatma e-postası gönderebilirsiniz.

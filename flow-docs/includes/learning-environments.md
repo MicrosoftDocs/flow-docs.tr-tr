@@ -2,6 +2,7 @@
 Ortam, Common Data Service üzerinde uygulamalar, akışlar ve iş verileri depolamak, yönetmek ve paylaşmak için kullanılan sanal bir alandır. Ortamlar coğrafi olarak konumlandırıldığından bir ortamın veritabanında depolanan tüm uygulama ve veriler de coğrafi olarak konumlandırılır.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Bilmeniz gereken terimler:
+
 | **Terim** | **Açıklama** |
 | --- | --- |
 | **Yönetim merkezi** |Yönetim merkezi tüm ortamlarınızı ve veri kaybı önleme ilkelerini yönetmek için kullanılan [Web portalıdır](https://admin.flow.microsoft.com). |

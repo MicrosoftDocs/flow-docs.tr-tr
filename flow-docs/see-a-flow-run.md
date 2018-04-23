@@ -1,13 +1,13 @@
 ---
-title: "Akış çalıştırmasını izleme | Microsoft Docs"
-description: "Bir akışın beklediğiniz gibi davrandığını doğrulamak için her bir adıma ilişkin giriş ve çıkışları görüntüleyin."
-services: 
+title: Akış çalıştırmasını izleme | Microsoft Docs
+description: Bir akışın beklediğiniz gibi davrandığını doğrulamak için her bir adıma ilişkin giriş ve çıkışları görüntüleyin.
+services: ''
 suite: flow
 documentationcenter: na
 author: merwanhade
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
 ms.author: mhade
-ms.openlocfilehash: 74fd0ab6273a8033749739159c70875d43a98123
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 224bc75a1025d024af236536f4325d2c577e248c
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="watch-your-flows-in-action"></a>Akışlarınızı çalışırken izleme
 

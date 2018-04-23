@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Microsoft Flow’daki ortamları kullanma
 
@@ -79,18 +79,20 @@ Yöneticiler, ortamlar oluşturup yönetmek için yönetim merkezini kullanır. 
 ## <a name="create-an-environment"></a>Ortam oluşturma
 
 1. [Microsoft Flow yönetim merkezinde](https://admin.flow.microsoft.com) **Ortamlar**’ı seçin. Tüm mevcut ortamları şurada görürsünüz: ![Ortamlar](./media/environments-overview-admin/environments-list.png)
-1. **Yeni ortam**’ı seçip gerekli bilgileri sağlayın:
+2. **Yeni ortam**’ı seçip gerekli bilgileri sağlayın:
 
-   | Özellik | Açıklama |
-   | --- | --- |
-   | Ortam Adı |Ortamınızın adını (`Human Resources` veya `Europe flows` gibi) girin. |
-   | Bölge |Ortamınızın barındırılacağı konumu seçin. En iyi performans için kullanıcılarınıza en yakın bölgeyi kullanın.|
-   |Ortam Türü | Lisansınızı temel alarak bir ortam türü seçin: Üretim veya Deneme.| 
+
+   |     Özellik     |                                                 Açıklama                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Ortam Adı |              Ortamınızın adını (`Human Resources` veya `Europe flows` gibi) girin.              |
+   |      Bölge      | Ortamınızın barındırılacağı konumu seçin. En iyi performans için kullanıcılarınıza en yakın bölgeyi kullanın. |
+   | Ortam Türü |                  Lisansınızı temel alarak bir ortam türü seçin: Üretim veya Deneme.                   |
+
      ![ortam ayarları](./media/environments-overview-admin/new-environment-dialog.png)
-1. **Ortam oluştur** seçeneğine tıklayın.
-1. Artık **Veritabanı oluşturma** veya **Atlama** seçeneklerine sahipsiniz.
-1. **Veritabanı Oluştur** seçeneğini belirlerseniz Veritabanı için **Para Birimi** ve **Dil** seçeneği belirlemek üzere bildirim alırsınız. Ayrıca dağıtılan örnek uygulamaları ve verileri almayı da seçebilirsiniz.
-   
+3. **Ortam oluştur** seçeneğine tıklayın.
+4. Artık **Veritabanı oluşturma** veya **Atlama** seçeneklerine sahipsiniz.
+5. **Veritabanı Oluştur** seçeneğini belirlerseniz Veritabanı için **Para Birimi** ve **Dil** seçeneği belirlemek üzere bildirim alırsınız. Ayrıca dağıtılan örnek uygulamaları ve verileri almayı da seçebilirsiniz.
+
    ![veritabanı yapılandırma ayarları](./media/environments-overview-admin/create-database-dialog2.png)
 
 
