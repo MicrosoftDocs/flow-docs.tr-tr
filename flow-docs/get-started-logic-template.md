@@ -1,13 +1,13 @@
 ---
-title: "Şablondan akış oluşturma | Microsoft Docs"
-description: "Çeşitli yerleşik şablonlardan birini kullanarak akış oluşturun."
-services: 
+title: Şablondan akış oluşturma | Microsoft Docs
+description: Çeşitli yerleşik şablonlardan birini kullanarak akış oluşturun.
+services: ''
 suite: flow
 documentationcenter: na
 author: aftowen
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-ms.openlocfilehash: 876723b62274f3a306c0a8472095b131e223408b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b755d9abe70740a97ad85aaa60b8a3f4685a7b26
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Microsoft Flow'da şablondan akış oluşturma
 Birçok yerleşik şablondan birini (örneğin, yöneticiniz Office 365'te bir e-posta gönderdiğinde size Slack iletisi gönderecek bir şablon) kullanarak bir akış oluşturun.
@@ -54,7 +54,7 @@ Birçok yerleşik şablondan birini (örneğin, yöneticiniz Office 365'te bir e
 1. Bir olayı genişletmek için başlık çubuğunu seçin ve ardından olayı özelleştirin. Örneğin, e-postada ilgilendiğiniz olaya ilişkin bir filtre belirtin.
 2. Giriş sağlamanız gereken eylemler otomatik olarak genişletilir.
    
-    Örneğin, bir kanal (ör. *@username* bilginiz) girmeniz gerektiği için **Post message** (İleti gönder) eylemi genişletilir. Ayrıca, ileti içeriğini de özelleştirebilirsiniz. İleti, varsayılan olarak yalnızca konuyu içerir ancak iletiye diğer bilgileri de ekleyebilirsiniz.
+    Örneğin, bir kanal (ör. *\@kullanıcı adınız*) girmeniz gerektiği için **İleti gönder** eylemi genişletilir. Ayrıca, ileti içeriğini de özelleştirebilirsiniz. İleti, varsayılan olarak yalnızca konuyu içerir ancak iletiye diğer bilgileri de ekleyebilirsiniz.
    
     ![Slack için kanal belirtme](./media/get-started-logic-template/specify-keyword.png)
 3. Ekranın üst kısmında, akışınız için bir ad belirtin ve ardından **Akış oluştur**'u seçin.

@@ -54,7 +54,7 @@ Varsayılan olarak, bu şablon belirli bir listede yeni bir öğe oluşturulduğ
 12. **ApprovalStatus** alanını seçin ve değeri **Evet** olarak ayarlayın. Sonra **ApproverComments** alanını seçip dinamik içerik listesinden değeri **Açıklamalar** olarak ayarlayın. 
     
      ![Durum ve açıklamalar](./media/learning-approval-center/approver-status.png)
-13. **HAYIR İSE, *HİÇBİR ŞEY YAPMA*** kutusunun altında **Eylem ekle**’yi seçin.
+13. **HAYIR İSE, HİÇBİR ŞEY YAPMA** kutusunun altında **Eylem ekle**’yi seçin.
     
      ![Hayır eylemi ekleme](./media/learning-approval-center/add-a-no-action.png)
 14. **EVET İSE** yapılandırması için kullandığınız adımları kullanarak bir **SharePoint - Öğe güncelleştirme** eylemi oluşturun ve **ApprovalStatus** alanı için **Hayır** değerini ayarlayıp bunun dışındaki diğer alanları aynı biçimde yapılandırın. 

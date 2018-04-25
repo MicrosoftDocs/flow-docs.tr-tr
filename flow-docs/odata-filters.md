@@ -1,13 +1,13 @@
 ---
 title: Verileri filtreleme ve kopyalama | Microsoft Docs
-description: "Microsoft Flow ile verileri filtrelemeyi ve bir kaynaktan bir hedefe kopyalamayı öğrenin"
-services: 
+description: Microsoft Flow ile verileri filtrelemeyi ve bir kaynaktan bir hedefe kopyalamayı öğrenin
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Microsoft Flow ile verileri filtreleme ve kopyalama
 Bu kılavuzda, bir kaynağı yeni veya değiştirilen öğeler için izleyen ve bu değişiklikleri bir hedefe kopyalayan bir akış oluşturmayı öğreneceksiniz. Kullanıcılarınız verileri bir konuma giriyorsa ancak takımınızın bu verilere farklı bir konumda veya biçimde ihtiyacı varsa, buna benzer bir akış oluşturabilirsiniz.
@@ -106,7 +106,7 @@ Koşul kartında:
     ![koşul yapılandırma](media/odata-filters/configure-condition.png)
 5. **Gelişmiş modda düzenleme**’yi seçin.
    
-    Gelişmiş mod açıldığında, kutuda **@equals(body('Get_rows')?['value'], 0)** ifadesini görürsünüz. **body('Get_items')?['value']** işlevinin etrafına **length()** öğesini ekleyerek bu ifadeyi düzenleyin. Tüm ifade şimdi aşağıdaki şekilde görünür: **@equals(length(body('Get_rows')?['value']), 0)**
+    Gelişmiş mod açıldığında, kutuda **\@equals(body('Get_rows')?['value'], 0)** ifadesini görürsünüz. **body('Get_items')?['value']** işlevinin etrafına **length()** öğesini ekleyerek bu ifadeyi düzenleyin. Tüm ifade şimdi aşağıdaki şekilde görünür: **@equals(length(body('Get_rows')?['value']), 0)**
    
     **Koşul** kartı şimdi şu resme benzer şekilde görünür:
    

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
-ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -44,6 +44,39 @@ ms.lasthandoff: 03/23/2018
 3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+### <a name="release-2018-04-12"></a>Sürüm 2018-04-12
+
+- **Akıştan PowerApps’e veri döndürme** - PowerApps ile oluşturulmuş bir uygulamadan çağrılabilen akışlar oluşturun ve verileri uygulamaya geri döndürün. Görsel sürükle ve bırak akış tasarımcısını kullanarak uygulamalarınız için gereken mantığını oluşturun. 
+- **Dizi girişlerine birden çok kayıt ekleme** - Bir e-postaya birden çok eki eklemek gibi işlemler için kullanılabilen bir liste oluşturucu Microsoft Flow’a eklendi.
+- **Önceki çalıştırma verileriyle akışları test etme** - Önceki akış çalıştırmalarına ait tetikleyici verileriyle akışınızı test etmenizi sağlayan yeni bir Akışı test et düğmesi tasarımcıya eklendi.
+- **Yeni iş akışı() alanları** - İş akışı() ifadesiyle artık ortam adı ve akış görünen adına erişebilirsiniz.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/return-data-to-powerapps/).
+
+### <a name="release-2018-04-04"></a>Sürüm 2018-04-04
+
+- **Common Data Service onayları** - Modern onaylar, Uygulamalar için Common Data Service’in en son sürümünde oluşturuldu. Başka bir deyişle, CDS bağlayıcısı ile gönderdiğiniz veya aldığınız onayların durumunu okuyan akışlar oluşturabilirsiniz.
+- **Her birine uygula eylemindeki hataları bulma** - Döngüde yüzlerce öğe olsa bile doğrudan akış çalıştırma görünümü döngülerindeki hatalara atlayın.
+- **Onayları yeniden atama** - Aldığınız tüm onayları kuruluşunuzdaki başka bir kişiye devretmek üzere atayabilirsiniz. 
+- **Oda listeleri** - Office 365 Outlook bağlayıcısı kuruluşunuzdaki oda verilerini almak için eylemler ekledi.
+- **Akış düğmeleri ayrıntılarını görme** - Sizinle paylaşılan bir akış çalıştırdığınızda, artık akışın kullandığı tüm eylemleri görebilirsiniz.
+- **Birleşik Krallık bölgesi** - Ortamlar, artık Birleşik Krallık’ta verilerini depolamak üzere oluşturulabilir.
+- **İki yeni bağlayıcı** - AtBot Yöneticisi ve Pazarlama İçeriği Merkezi desteği eklendi.
+- **Yeni belgeler giriş sayfası** - İçeriği acemi, orta seviye kullanıcı veya uzman olmanıza göre gruplandırmak için belgeler giriş sayfası güncelleştirildi 
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/).
+
+### <a name="release-2018-03-13"></a>Sürüm 2018-03-13
+
+- **Onay geçmişi** - Yanıtlar, gönderilen yorumlar ve gerçekleştikleri saatler dahil olmak üzere gönderdiğiniz tüm onay isteklerini görüntüleyin.
+- **Dört yeni bağlayıcı** - Excel Online (İş), Excel Online (OneDrive), Azure SQL Veri Ambarı ve Pitney Bowes vergi hesaplayıcısı eklendi.
+- **Dinamik içerik araç ipuçları** - Eylemlerin içinde nereden geldiğini görmek için dinamik içeriğin üzerine gelin ve tam ifade düzenleyicisini açmadan ifadelerin önizlemesini görüntüleyin.
+- **Eşzamanlılık denetimi** - Akışı her seferinde yalnızca bir kere çalıştırmak için eşzamanlılık denetimini etkinleştirin.
+- **Üstel yeniden deneme** - Yeniden denemelere zamanla üstel olarak ara veren yeni bir tür yeniden deneme ilkesi.
+- **Erişilebilirlik uygunluğu** - Microsoft Flow’un erişilebilirlik standartlarını nasıl karşıladığını açıklayan yeni uygunluk belgeleri yayımlandı.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/approval-history-accessibility/).
 
 ### <a name="release-2018-02-09"></a>Sürüm 2018-02-09
 
