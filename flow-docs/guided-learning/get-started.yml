@@ -9,16 +9,16 @@ metadata:
   nextTutorialTitle: Akış derleme
   displayType: one-column
   author: MSFTMan
-  manager: anneta
+  manager: KFile
   ms.service: flow
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-  ms.openlocfilehash: 3f5cc6ac324e5e389b05d84c10cc45891ea518d2
-  ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+  ms.openlocfilehash: acfe8fb4e4a4eaaaf849ff86b708cb207853a13d
+  ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 03/28/2018
+  ms.lasthandoff: 04/26/2018
 items:
 - durationInMinutes: 1
   content: >
@@ -33,7 +33,7 @@ items:
 - title: Şablondan akış oluşturma
   durationInMinutes: 9
   content: >
-    > [!Video https://www.youtube.com/watch?v=NeCu5VnL4s0
+    > [!Video https://www.youtube.com/embed/NeCu5VnL4s0]
 
 
     [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
