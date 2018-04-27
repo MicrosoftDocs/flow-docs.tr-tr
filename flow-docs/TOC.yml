@@ -54,6 +54,8 @@
       href: all-assigned-must-approve.md
     - name: Tümleşik onaylar
       href: common-data-model-approve.md
+    - name: Onay isteklerini biçimlendirme
+      href: approvals-markdown-support.md
 - name: Mobil uygulamayı kullanma
   items:
     - name: Akış oluşturma
@@ -110,6 +112,16 @@
       href: prevent-data-loss.md
     - name: Veri gruplarına giriş
       href: introduction-to-data-groups.md
+- name: DSR isteklerini yanıtlama
+  items:
+    - name: Özet
+      href: gdpr-dsr-summary.md
+    - name: İstekleri bulma
+      href: gdpr-dsr-discovery.md
+    - name: İstekleri dışarı aktarma
+      href: gdpr-dsr-export.md
+    - name: İstekleri silme
+      href: gdpr-dsr-delete.md
 - name: Başvuru
   items:
     - name: Bölgelere genel bakış
