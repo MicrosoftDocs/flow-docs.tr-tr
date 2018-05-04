@@ -14,15 +14,13 @@ ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.prod: flow
-ms.technology: ''
 ms.reviewer:
 - karann-msft
-ms.openlocfilehash: 0fb3e966593c85d2a437614f9c34087fca3a06ab
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: 7a030259095667ed64c796c8c8ab68495d3d61dc
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 <div id="main" class="v2">
 <div class="container">
@@ -370,6 +368,92 @@ ms.lasthandoff: 04/16/2018
                                         <div class="cardText">
                                             <h3>Logic Apps ile akışlarınızı genişletme</h3>
                                             <p>Azure Logic Apps, Microsoft Flow’dakinden daha zengin bir özellik kümesi sağlar. Dilediğiniz bir akışı Logic Apps şablonu olarak kaydedip herhangi bir Logic Apps kaynağı yönetir gibi yönetin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#admin">Yöneticiyim</a>
+            <ul id="admin">
+                <li>
+                    <a href="#admin-all"></a>
+                    <ul id="admin-all" class="cardsC">
+                        <li>
+                            <a href="environments-overview-admin.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Manage environments." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Ortam yönetme</h3>
+                                            <p>Kuruluşunuzun ortamlarını yönetin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prevent-data-loss.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Define data policies." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Veri kaybını önleme</h3>
+                                            <p>Kuruluşunuzun verilerini korumaya yönelik ilkeler tanımlayın.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/manage_runs.svg" alt="Manage flow runs." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Akış çalıştırmalarını yönetme</h3>
+                                            <p>Akışlarınızın çalıştırmalarını inceleyin ve yönetin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/analytics_reporting.svg" alt="Gain insights into your flows" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Akışlarınıza dair öngörüler alma</h3>
+                                            <p>Analiz panosundan akışlarınızın durumuna yönelik öngörüler alın.</p>
                                         </div>
                                     </div>
                                 </div>

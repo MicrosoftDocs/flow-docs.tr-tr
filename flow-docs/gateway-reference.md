@@ -1,13 +1,13 @@
 ---
-title: "Şirket içi veri ağ geçitlerini anlama | Microsoft Docs"
-description: "Şirket içi veri ağ geçitleri için başvuru, yükleme ve sorun giderme bilgileri"
-services: 
+title: Şirket içi veri ağ geçitlerini anlama | Microsoft Docs
+description: Şirket içi veri ağ geçitleri için başvuru, yükleme ve sorun giderme bilgileri
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
-editor: 
-tags: 
+manager: KFile
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Microsoft Flow için şirket içi veri ağ geçitlerini anlama
 Şirket içi veri ağ geçidini Microsoft Flow ile kullanarak Microsoft SQL Server gibi şirket içi veri kaynaklarınızla güvenli bağlantılar kurun.
@@ -141,6 +141,10 @@ Kullanıcılar bir iş veya okul hesabıyla oturum açar. Bu hesap, kuruluş hes
 Şirket içi veri ağ geçidi, Windows hizmeti oturum açma kimlik bilgileri için *NT SERVICE\PBIEgwService*’i kullanacak şekilde yapılandırılır. Varsayılan olarak, bir hizmet gibi oturum açma hakkına sahiptir. Bu, ağ geçidini yüklediğiniz makine bağlamındadır.
 
 Bu, şirket içi veri kaynaklarına bağlanmak için kullandığınız hesap veya bulut hizmetlerinde oturum açmak için kullandığınız iş ya da okul hesabı değildir.
+
+## <a name="tenant-level-administration"></a>Kiracı düzeyi yönetimi
+
+Şu anda kiracı yöneticilerinin diğer kullanıcıların yüklediği ve yapılandırdığı tüm ağ geçitlerini yönetebileceği tek bir yer yok.  Kiracı yöneticisiyseniz, kuruluşunuzdaki kullanıcılardan sizi yükledikleri tüm ağ geçitlerinin yöneticisi olarak eklemelerini istemenizi öneririz. Bu sayede, kuruluşunuzdaki tüm ağ geçitlerini Ağ Geçidi Ayarları sayfası veya [PowerShell komutları](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters) üzerinden yönetebilirsiniz.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="general-questions"></a>Genel sorular
