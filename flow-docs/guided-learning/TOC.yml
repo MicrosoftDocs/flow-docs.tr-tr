@@ -1,8 +1,8 @@
 - name: Kullanmaya başlama
-  href: 'get-started.yml#step-1'
+  href: get-started.yml?tutorial-step=1
 - name: Akış derleme
-  href: 'build-flows.yml#step-1'
+  href: build-flows.yml?tutorial-step=1
 - name: Onaylarla çalışma
-  href: 'work-with-approvals.yml#step-1'
+  href: work-with-approvals.yml?tutorial-step=1
 - name: Akışları yönetme
-  href: 'administer-flows.yml#step-1'
+  href: administer-flows.yml?tutorial-step=1
