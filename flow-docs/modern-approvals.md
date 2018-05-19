@@ -1,13 +1,13 @@
 ---
-title: "Onay iş akışlarını kolayca otomatikleştirin. | Microsoft Docs"
-description: "SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress ile tümleştirilen onay iş akışlarını otomatikleştirin."
-services: 
+title: Onay iş akışlarını kolayca otomatikleştirin. | Microsoft Docs
+description: SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress ile tümleştirilen onay iş akışlarını otomatikleştirin.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,13 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
-ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+ms.openlocfilehash: bd89bca994a77072815a73ba1cbc7ba1db6955d3
+ms.sourcegitcommit: e52f04b5953240d71d726c0e3373740cc59292dc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Microsoft Flow ile bir onay iş akışını oluşturma ve test etme
+
 Microsoft Flow ile SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress gibi çeşitli hizmetlerdeki belge ya da işlemlerin onaylanmasını yönetebilirsiniz.
 
 Onay iş akışı oluşturmak için **Onaylar - Onay başlat** eylemini herhangi bir akışa ekleyin. Bu eylem eklendikten sonra, akışınız belge veya işlemlerin onay süreçlerini yönetebilir. Örneğin faturaları, iş emirlerini veya satış tekliflerini onaylayan belge onay akışları oluşturabilirsiniz. Ayrıca tatil isteklerini, fazla mesaileri veya seyahat planlarını onaylamak üzere işlem onayı akışları da oluşturabilirsiniz.
@@ -49,12 +50,13 @@ SharePoint Online listenizde şu sütunları oluşturun:
 
    ![SharePoint Online listesi sütunları](./media/modern-approvals/sharepoint-list-fields.png)
 
-SharePoint Online listesinin adını ve URL'sini not edin. **SharePoint - Yeni bir öğe oluşturulduğunda** tetikleyicisini yapılandırırken bu bilgilere ihtiyaç duyacaksınız.
+SharePoint Online listesinin adını ve URL'sini not edin. **SharePoint - Bir öğe oluşturulduğunda** tetikleyicisini yapılandırırken bu bilgilere ihtiyaç duyacaksınız.
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Akışınızı boş şablondan oluşturun
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## <a name="add-a-trigger"></a>Tetikleyici ekleyin
+
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
 **Site Adresi** ve **Liste Adı**, bu kılavuzun önceki adımlarında not ettiğiniz bilgilerdir.
@@ -62,6 +64,7 @@ SharePoint Online listesinin adını ve URL'sini not edin. **SharePoint - Yeni b
 ![SharePoint bilgileri](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## <a name="add-a-profile-action"></a>Profil eylemi ekleme
+
 1. **Yeni adım**'ı ve ardından **Eylem ekle**'yi seçin.
    
     ![Yeni adım](./media/modern-approvals/select-sharepoint-add-action.png)
@@ -76,14 +79,20 @@ SharePoint Online listesinin adını ve URL'sini not edin. **SharePoint - Yeni b
     ![Akışı kaydedin](./media/modern-approvals/save.png)
 
 ## <a name="add-an-approval-action"></a>Onay eylemi ekleme
+
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Not: Bu eylem, onay isteğini **Atanan** kutusundaki e-posta adresine gönderir.
+> [!NOTE]
+> Bu eylem, onay isteğini **Atanan** kutusundaki e-posta adresine gönderir.
+>
+>
 
 ## <a name="add-a-condition"></a>Koşul ekleme
+
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 ## <a name="add-an-email-action-for-approvals"></a>Onaylar için e-posta eylemi ekleme
+
 Tatil isteği onaylandığında e-posta göndermek için şu adımları izleyin:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
@@ -91,21 +100,30 @@ Tatil isteği onaylandığında e-posta göndermek için şu adımları izleyin:
    ![Onay e-postası şablonunu yapılandırın](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## <a name="add-an-update-action-for-approved-requests"></a>Onaylanan istekler için güncelleştirme eylemi ekleme
+
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-Not: **Site Adresi**, **Liste Adı**, **Kimlik** ve **Başlık** alanları gereklidir.
+> [!NOTE]
+> **Site Adresi**, **Liste Adı**, **Kimlik** ve **Başlık** alanları gereklidir.
+>
+>
 
 ![Öğeyi güncelleştir eylemini yapılandırın](./media/modern-approvals/configure-update-item.png)
 
 ## <a name="add-an-email-action-for-rejections"></a>Reddedilen istekler için e-posta eylemi ekleme
+
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![Reddedilen istekler için yapılandırma](./media/modern-approvals/configure-rejected-email.png)
 
 ## <a name="add-update-action-for-rejected-requests"></a>Reddedilen istekler için güncelleştirme eylemi ekleme
+
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   Not: **Site Adresi**, **Liste Adı**, **Kimlik** ve **Başlık** alanları gereklidir.
+   > [!NOTE]
+   > **Site Adresi**, **Liste Adı**, **Kimlik** ve **Başlık** alanları gereklidir.
+   >
+   >
 
 ![Öğeyi güncelleştir kartı](./media/modern-approvals/configure-update-item-no.png)
 
@@ -120,11 +138,13 @@ Tüm adımları uyguladıysanız akışınız şu ekran görüntüsüne benzer o
 Akışı oluşturduk, şimdi test etme zamanı!
 
 ## <a name="request-an-approval"></a>Onay isteği gönderme
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Akışınızı oluşturup test ettikten sonra diğer kişilere nasıl kullanılacağını açıklamayı unutmayın.
 
 ## <a name="learn-more"></a>Daha fazla bilgi
+
 * [Bekleyen onay isteklerini](approve-reject-requests.md) görüntüleme ve yönetme
 * [Sıralı onay akışları](sequential-modern-approvals.md) oluşturun.
 * [Paralel onay iş akışları](parallel-modern-approvals.md) oluşturun.

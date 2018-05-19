@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
+ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -44,6 +44,14 @@ ms.lasthandoff: 04/16/2018
 3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+### <a name="release-2014-05-01"></a>Sürüm 2014-05-01
+
+- **Onay iletilerindeki zengin metin**: Gönderdiğiniz onay ayrıntılarını biçimlendirmek için Markdown kullanın.
+- **Birden çok seçim girişi içeren düğmeler**: Aynı anda birden fazla değer toplamak için çoklu seçim listesi kullanan akış düğmeleri oluşturun.
+- **Daha geniş akışlarla çalışma**: Microsoft Flow mobil uygulaması artık Yatay görünümü destekler ve web tasarımcısı, yatay bir kaydırma çubuğu içerir.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/).
 
 ### <a name="release-2018-04-12"></a>Sürüm 2018-04-12
 
