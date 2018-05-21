@@ -8,3 +8,5 @@
    
     ![Boş akış oluştur](media/modern-approvals/blank-template.png)
 
+4. **Boş akış oluştur** düğmesini seçin.
+

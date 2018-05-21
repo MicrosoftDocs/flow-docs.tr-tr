@@ -1,4 +1,4 @@
-1. Koşulun **EVET İSE, HİÇBİR ŞEY YAPMA** dalında **Eylem ekle**'yi seçin.
+1. Koşulun **EVET İSE** dalında **Eylem ekle**'yi seçin.
    
     ![Yeni adım ekleyin](media/modern-approvals/add-action-after-condition.png)
 2. **Eylem seçin** kartındaki arama kutusuna **e-posta gönder** yazın.
@@ -9,7 +9,10 @@
     ![E-posta gönder eylemini seçin](media/modern-approvals/select-send-email-yes.png)
 4. E-posta kartını ihtiyaçlarınıza uyacak şekilde yapılandırın.
    
-     Not: **Kime**, **Konu** ve **Gövde** alanları gereklidir.
+     >[!NOTE]
+     > **Kime**, **Konu** ve **Gövde** alanları gereklidir.
+     >
+     >
    
      Bu kart, tatil isteğinin durumu değiştiğinde gönderilecek e-postanın bir şablonudur.
    
