@@ -1,13 +1,13 @@
 ---
-title: "Düğmelerinizi diğerleriyle paylaşın. | Microsoft Docs"
-description: "Düğmelerinizi diğer kullanıcılarla paylaşarak, onları kullanmalarını ve zaman kazanmalarını sağlayın."
-services: 
+title: Düğmelerinizi diğerleriyle paylaşın. | Microsoft Docs
+description: Düğmelerinizi diğer kullanıcılarla paylaşarak, onları kullanmalarını ve zaman kazanmalarını sağlayın.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
 ms.openlocfilehash: 2804c683defb94f87c40452a27382bc143c11f10
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Microsoft Flow’da düğme akışlarını paylaşma
 Microsoft Flow’un mobil uygulamasıyla, [düğme akışlarını](introduction-to-button-flows.md) (düğmeleri) kuruluşunuzdaki diğer kullanıcı veya gruplarla paylaşabilirsiniz. Düğmeyi paylaştığınızda, paylaştığınız kişi veya grup aynı kendi düğmelerini çalıştırdığı gibi düğmenizi çalıştırabilir. Ayrıca başka birinin sizinle paylaştığı düğmelere yönlendiren [bir bağlantı paylaşabilirsiniz](share-buttons.md#re-share-a-button). İstediğiniz zaman düğmelerinizi [paylaşmayı durdurabilirsiniz](share-buttons.md#stop-sharing-a-button).

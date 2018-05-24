@@ -1,13 +1,13 @@
 ---
-title: "Yinelenen görevleri kullanıcı girişi alan düğme akışlarıyla otomatikleştirmeyi öğrenme | Microsoft Docs"
-description: "Microsoft Flow, yinelenen görevleri otomatikleştirmeyi kolaylaştırır. Akışlarınız, yinelenen bir görev çalıştırırken kullanıcı girişi bile alabilir."
-services: 
+title: Yinelenen görevleri kullanıcı girişi alan düğme akışlarıyla otomatikleştirmeyi öğrenme | Microsoft Docs
+description: Microsoft Flow, yinelenen görevleri otomatikleştirmeyi kolaylaştırır. Akışlarınız, yinelenen bir görev çalıştırırken kullanıcı girişi bile alabilir.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73feb90b3907ee8a7a192f16bc29c5893d0be4bb
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Kullanıcı girişli düğme akışları tanıtımı
 Rutin görevleri yalnızca bir düğmeye dokunarak çalıştırmak için düğme akışı oluşturun. Kullanıcıya akış çalıştırıldığında kullanılacak belirli ayrıntıları sağlama izni vererek akışınızı özelleştirin. Bu konuda, kullanıcıdan giriş alan bir düğme akışı oluşturma ve sonra bu düğme akışını çalıştırma işlemleri gösterilerek kullanıcı girişinin nasıl sağlandığı vurgulanır.
@@ -116,7 +116,7 @@ Bu kılavuzda, az önce oluşturduğunuz düğme akışını çalıştırmak iç
 
 ## <a name="next-steps"></a>Sonraki adımlar
 * [Düğme akışları paylaşma](share-buttons.md)
-* [Akışlar hakkında bilgi edinin](guided-learning/learning-introducing-flow.md)  
+* [Akışlar hakkında bilgi edinin](guided-learning/get-started.yml?tutorial-step=1)  
 * [Düğme akışları hakkında bilgi edinin](introduction-to-button-flows.md)  
 * [Tetikleyici belirteç içeren düğme akışları hakkında bilgi edinin](introduction-to-button-trigger-tokens.md)  
 

@@ -1,13 +1,13 @@
 ---
-title: "Düğme tetikleyici belirteçlerine giriş | Microsoft Docs"
-description: "Microsoft düğme akışları için düğme tetikleyici belirteçleri tanıtımı."
-services: 
+title: Düğme tetikleyici belirteçlerine giriş | Microsoft Docs
+description: Microsoft düğme akışları için düğme tetikleyici belirteçleri tanıtımı.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
-ms.openlocfilehash: 4b0e6d7187d12c7257bce4715c3549caf19ce093
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c3231811e5318b1fe941e005012c2890c83f6e76
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Düğme tetikleyici belirteçleri kullanmaya başlayın.
 ## <a name="what-are-button-trigger-tokens"></a>Düğme tetikleyici belirteçler nedir?
@@ -92,5 +92,5 @@ Tebrikler, hem tarih hem de tam adres tetikleyici belirteçleri kullanan bir dü
 ## <a name="next-steps"></a>Sonraki adımlar
 * [Düğme akışları paylaşma](share-buttons.md)
 * [Düğme akışları hakkında bilgi edinin](introduction-to-button-flows.md)  
-* [Akışlar hakkında bilgi edinin](guided-learning/learning-introducing-flow.md)
+* [Akışlar hakkında bilgi edinin](guided-learning/get-started.yml?tutorial-step=1)
 

@@ -1,13 +1,13 @@
 ---
 title: Etkinlikleri telefonunuzdan izleme | Microsoft Docs
-description: "Her bir akışın kaç kez başarılı veya başarısız olduğunu, her bir çalıştırmanın ne zaman gerçekleştiğini ve ne kadar sürdüğünü görüntüleme"
-services: 
+description: Her bir akışın kaç kez başarılı veya başarısız olduğunu, her bir çalıştırmanın ne zaman gerçekleştiğini ve ne kadar sürdüğünü görüntüleme
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: a9318a1571d46635babbb0b061ff65734ad172fe
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki etkinlikleri telefonunuzdan izleme
 Her bir akışın bugün, dün ve önceki günlerde kaç kez başarılı veya başarısız olduğunun bir özetini görüntüleyin. Her bir çalıştırmayla ilgili ayrıntıları (örneğin, çalıştırılma zamanı; her bir adımın ne kadar sürdüğü ve başarısız olduysa başarısız olma nedeni) keşfedin.

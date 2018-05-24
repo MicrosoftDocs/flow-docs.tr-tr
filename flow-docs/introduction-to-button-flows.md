@@ -1,13 +1,13 @@
 ---
-title: "Düğme akışlarıyla yinelenen görevleri otomatikleştirmeyi ve çalıştırmayı öğrenme | Microsoft Docs"
-description: "Düğme akışlarına giriş."
-services: 
+title: Düğme akışlarıyla yinelenen görevleri otomatikleştirmeyi ve çalıştırmayı öğrenme | Microsoft Docs
+description: Düğme akışlarına giriş.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/30/2017
 ms.author: deonhe
 ms.openlocfilehash: 558570733819e1fde6c1845ed5ca9debe9232c88
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-button-flows"></a>Düğmesi akışları tanıtımı
 ## <a name="what-are-button-flows"></a>Düğme akışları nedir?

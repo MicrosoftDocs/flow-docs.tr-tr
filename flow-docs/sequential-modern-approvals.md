@@ -1,13 +1,13 @@
 ---
-title: "Birden çok onaylayana sahip modern bir onay iş akışı oluşturma | Microsoft Docs"
-description: "Birden çok onaylayanla modern bir onay iş akışı oluşturma "
-services: 
+title: Birden çok onaylayana sahip modern bir onay iş akışı oluşturma | Microsoft Docs
+description: 'Birden çok onaylayanla modern bir onay iş akışı oluşturma '
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Microsoft Flow ile sıralı onayları yönetme
 Son onaylayanın oturumu kapatabilmesi için bazı iş akışları ön onay gerektirir. Örneğin, bir şirketin 1000 ABD dolarının üzerindeki faturalar için Finans departmanının onayından önce bir ön onay verilmesini gerektiren sıralı onay ilkesi olabilir.

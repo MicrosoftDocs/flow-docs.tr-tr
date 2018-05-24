@@ -1,13 +1,13 @@
 ---
-title: "Gelişmiş seçenek ve birden fazla eylem ekleme | Microsoft Docs"
-description: "Akışı, gelişmiş bir seçenek içerecek şekilde (e-postayı yüksek öncelikli olarak ayarlamak gibi) genişletin ve aynı etkinlik için farklı bir eylem ekleyin."
-services: 
+title: Gelişmiş seçenek ve birden fazla eylem ekleme | Microsoft Docs
+description: Akışı, gelişmiş bir seçenek içerecek şekilde (e-postayı yüksek öncelikli olarak ayarlamak gibi) genişletin ve aynı etkinlik için farklı bir eylem ekleyin.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Akışa birden fazla eylem ve gelişmiş seçenek ekleme
 Aynı tetikleyici için bir veya daha fazla gelişmiş seçenek ve birden fazla eylem ekleyerek akışı özelleştirin. Örneğin, bir e-posta iletisini yüksek öncelikli olarak gönderen gelişmiş bir seçenek ekleyin. SharePoint listesine bir öğe eklendiğinde e-posta göndermeye ek olarak Dropbox'ta aynı bilgileri içeren bir dosya oluşturun.
