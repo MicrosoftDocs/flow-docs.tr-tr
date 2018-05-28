@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 06e327963a44f74141492ec14f2bef7cab802b79
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 9b2447ce0a7c9bc353e47ee1edb4bea55f2c49f4
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow’da limitler ve yapılandırma
 Bu konu, akışlara yönelik geçerli limitler ve yapılandırma ayrıntılarıyla ilgili bilgi içerir.
@@ -31,7 +31,8 @@ Bunlar tek bir giden isteğe yönelik limitlerdir.
 
 | Ad | Limit |
 | --- | --- |
-| İstek Zaman Aşımı |120 Saniye |
+| Zaman uyumlu çağrılar için İstek Zaman Aşımı |120 Saniye |
+| Zaman uyumsuz çağrılar için İstek Zaman Aşımı|Yapılandırılabilir. En fazla 30 gündür. |
 
 ### <a name="message-size"></a>İleti boyutu
 
@@ -55,6 +56,7 @@ Bunlar tek bir akış çalıştırmasına yönelik limitlerdir.
 | Depolama bekletme |30 gün |Bu, çalıştırma başlangıç saatinden itibaren hesaplanır. |
 | En az yinelenme aralığı |1 dakika | |
 | En fazla yinelenme aralığı |500 gün | |
+| Maksimum çalıştırma geçmişini saklama |GDPR kuralları uyarınca 28 gündür. | |
 
 ## <a name="looping-and-debatching-limits"></a>Döngü ve toplu iş ayırma limitleri
 Bunlar tek bir akış çalıştırmasına yönelik limitlerdir.

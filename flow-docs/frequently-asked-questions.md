@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
-ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
+ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
@@ -131,3 +131,7 @@ Evet. Sınırlı kullanıcı hakları sunan ücretsiz teklifimizden yararlanabil
 ### <a name="what-pricing-plans-do-you-offer"></a>Sunduğunuz fiyatlandırma planları nelerdir?
 Microsoft Flow, hem ücretsiz hem de ücretli hizmet düzeyleri sunar. [Fiyatlandırma hakkında daha fazla bilgi edinin](billing-questions.md).
 
+## <a name="learn-more"></a>Daha fazla bilgi
+
+* Microsoft Flow’a ilişkin [kılavuzlu öğrenme turuna](guided-learning/index.yml) katılın
+* [Başlangıç kılavuzu](getting-started.md) ile Microsoft Flow hakkında temel bilgiler öğrenin

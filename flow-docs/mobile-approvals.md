@@ -1,13 +1,13 @@
 ---
 title: Mobil cihazdan istekleri onaylama | Microsoft Docs
-description: "Microsoft Flow’da oluşturulan istekleri onaylamak için bir mobil cihaz kullanın."
-services: 
+description: Microsoft Flow’da oluşturulan istekleri onaylamak için bir mobil cihaz kullanın.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: 18546c044dc823d703544c48f5cda76a3581e99f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 2b856dfa75e0acb7eb83525c4d64d070315b5735
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Microsoft Flow ile mobil cihazınızdan istekleri onaylayın
 Bir akış, sizi onaylayan olarak tanımlıyorsa ve Microsoft Flow için mobil uygulamayı yüklediyseniz, onayınız gerektiğinde bir anında iletme bildirimi alırsınız.
@@ -52,7 +52,7 @@ Bu makalede Microsoft Flow için mobil uygulamada onay isteklerini yönettiğini
 Bekleyen onay isteği yoksa, bir [onay akışı](modern-approvals.md) oluşturup kendinizi onaylayan olarak belirleyin ve akışı tetikleyin. Akış tetiklendikten ve onay isteği gönderdikten birkaç saniye sonra onay istekleri, onay merkezinde görünür.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>İstekleri onaylama ve isteğe bağlı bir açıklama bırakma
-1. Böyle yapmadıysanız, [bekleyen tüm onay isteklerini görüntülemek](mobile-approvals.md#view-pending-approval-requests) için önceki adımları takip edin.
+1. Böyle yapmadıysanız, [bekleyen istekleri görüntülemek](mobile-approvals.md#view-pending-requests) için önceki adımları takip edin.
 2. Onaylamak istediğiniz istekte **ONAYLA** seçeneğini belirleyin.
    
     ![onayla seçeneğini belirleme](./media/mobile-approvals/select-approve.png)
