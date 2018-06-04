@@ -122,6 +122,18 @@
       href: gdpr-dsr-export.md
     - name: İstekleri silme
       href: gdpr-dsr-delete.md
+- name: Microsoft Hesapları için DSR istekleri
+  items:
+    - name: Özet
+      href: gdpr-dsr-summary-msa.md
+    - name: İstekleri bulma
+      href: gdpr-dsr-discovery-msa.md
+    - name: İstekleri dışarı aktarma
+      href: gdpr-dsr-export-msa.md
+    - name: İstekleri silme
+      href: gdpr-dsr-delete-msa.md
+    - name: İstekleri kapatma
+      href: gdpr-dsr-accountclose-msa.md
 - name: Başvuru
   items:
     - name: Bölgelere genel bakış

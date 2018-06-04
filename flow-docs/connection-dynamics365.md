@@ -15,16 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
+ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689388"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
 
 Microsoft Flow’da dosyaları eşitlemek, bildirimler almak, veri toplamak ve daha fazlası için, sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Flow kullanmaya başlama](getting-started.md).
+
+> [!IMPORTANT] 
+> Akış tetikleyicisini çağırmak için, akış ile kullanılan Dynamics 365 müşteri etkileşimi varlığında **Değişiklik İzleme** özelliği etkin olmalıdır. Daha fazla bilgi: [Veri senkronizasyonunu denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Şablondan akış oluşturma
 Aşağıdaki örneklere benzer çok sayıda şablondan birini kullanarak akış oluşturabilirsiniz:
