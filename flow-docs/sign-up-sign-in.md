@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 04/04/2017
 ms.author: anjlic
 ms.openlocfilehash: b4243c00a3b7929654be52fdcb6dd9aa70ddf10d
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31008369"
 ---
 # <a name="sign-up-and-sign-in-for-microsoft-flow"></a>Microsoft Flow'a kaydolma ve oturum açma
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

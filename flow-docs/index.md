@@ -17,10 +17,11 @@ ms.topic: hub-page
 ms.reviewer:
 - karann-msft
 ms.openlocfilehash: 05bf99aa91b5cfe8635cc7be72669b4d1012ef49
-ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34479770"
 ---
 <div id="main" class="v2">
     <div class="container">

@@ -1,13 +1,13 @@
 ---
-title: "AppSource’ta müşterilerin akışlarınızı denemesini sağlama | Microsoft Docs"
-description: "Uygulamaları müşterilerle paylaşmak ve işletmenize müşteri adayları getirmek için AppSource kullanın."
-services: 
+title: AppSource’ta müşterilerin akışlarınızı denemesini sağlama | Microsoft Docs
+description: Uygulamaları müşterilerle paylaşmak ve işletmenize müşteri adayları getirmek için AppSource kullanın.
+services: ''
 suite: flow
 documentationcenter: na
 author: linhtranms
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
 ms.openlocfilehash: 41d53a6f7382365dfcabbc98a2fa362d465720fa
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439659"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>AppSource’ta müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
 Uygulamanızın Microsoft Flow’la nasıl tümleştirildiğini mi göstermek istiyorsunuz? Şimdi Microsoft Flow tümleştirmesini müşterilerle paylaşmanın ve işletmenize müşteri adayları getirmenin bir yolu olarak [AppSource.com](https://appsource.microsoft.com) sitesinde Test Sürüşü çözümlerimiz vardır.

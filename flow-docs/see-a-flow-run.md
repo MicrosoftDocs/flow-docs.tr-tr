@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/05/2018
 ms.author: mhade
 ms.openlocfilehash: 224bc75a1025d024af236536f4325d2c577e248c
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31008220"
 ---
 # <a name="watch-your-flows-in-action"></a>Akışlarınızı çalışırken izleme
 

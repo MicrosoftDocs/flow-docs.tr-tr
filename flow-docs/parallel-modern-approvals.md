@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/09/2018
 ms.author: deonhe
 ms.openlocfilehash: 43b748332a649e5f8d8db5fbe11f53522ce8bb79
-ms.sourcegitcommit: e52f04b5953240d71d726c0e3373740cc59292dc
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34051398"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Microsoft Flow ile paralel onay iş akışları oluşturma
 

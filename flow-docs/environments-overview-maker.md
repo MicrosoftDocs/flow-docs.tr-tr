@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
 ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31008323"
 ---
 # <a name="choosing-an-environment"></a>Ortam seçme
 

@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
 ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34453320"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji

@@ -1,13 +1,13 @@
 ---
-title: "Herkesin onaylamasını gerektiren bir onay akışı oluşturma| Microsoft Docs"
-description: "Herkesin onaylamasını veya bir kişinin bir isteği reddetmesini gerektiren bir onay akışı oluşturun."
-services: 
+title: Herkesin onaylamasını gerektiren bir onay akışı oluşturma| Microsoft Docs
+description: Herkesin onaylamasını veya bir kişinin bir isteği reddetmesini gerektiren bir onay akışı oluşturun.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/27/2018
 ms.author: deonhe
 ms.openlocfilehash: b7cf57ad343433f50a918e3a09710fbb1e3325de
-ms.sourcegitcommit: 79fc1e439640c6329bac884085eb66e71f63ab63
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29681304"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Herkesin onaylamasını gerektiren bir onay akışı oluşturma
 

@@ -1,13 +1,13 @@
 ---
-title: "Akış şablonu gönderme | Microsoft Docs"
-description: "Diğer kuruluşların oluşturduğunuz akışı şablon galerisinde bulabilmesi ve kullanabilmesi için, akışınızı şablon olarak gönderin."
-services: 
+title: Akış şablonu gönderme | Microsoft Docs
+description: Diğer kuruluşların oluşturduğunuz akışı şablon galerisinde bulabilmesi ve kullanabilmesi için, akışınızı şablon olarak gönderin.
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/10/2017
 ms.author: sunayv
 ms.openlocfilehash: c265556631d19cb3c9179454bcf3b8a26e88651b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442053"
 ---
 # <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Microsoft Flow galerisine şablon gönderme
 Microsoft Flow şablon galerisine bir akış şablonu gönderin. Şablonlar, kişilerin yalnızca daha kolay akış oluşturmasına değil bir akıştan yararlanabilecek ek senaryolar bulmasına da yardımcı olur. 

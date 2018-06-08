@@ -1,13 +1,13 @@
 ---
-title: "Akışları telefonunuzdan yönetme | Microsoft Docs"
-description: "Akışlar listenizi görüntüleme, akışları etkinleştirme veya devre dışı bırakma ve her bir akışa ilişkin olayları, eylemleri ve çalıştırma geçmişini görüntüleme"
-services: 
+title: Akışları telefonunuzdan yönetme | Microsoft Docs
+description: Akışlar listenizi görüntüleme, akışları etkinleştirme veya devre dışı bırakma ve her bir akışa ilişkin olayları, eylemleri ve çalıştırma geçmişini görüntüleme
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: 4a04fec70ae70ff17ddf6e1f93e6461ec432e8d2
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440109"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki akışları telefonunuzdan yönetme
 Oluşturduğunuz tüm akışların listesini görüntülemenin ve akışları etkinleştirip devre dışı bırakmanın yanı sıra her bir akışa ilişkin olayları, eylemleri ve çalıştırma geçmişini görüntüleyin.

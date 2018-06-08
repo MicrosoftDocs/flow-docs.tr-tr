@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
 ms.openlocfilehash: c3231811e5318b1fe941e005012c2890c83f6e76
-ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34308775"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Düğme tetikleyici belirteçleri kullanmaya başlayın.
 ## <a name="what-are-button-trigger-tokens"></a>Düğme tetikleyici belirteçler nedir?

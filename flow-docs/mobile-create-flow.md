@@ -1,13 +1,13 @@
 ---
-title: "Telefonunuzdan akış oluşturma | Microsoft Docs"
-description: "Şablon kullanarak, belirttiğiniz bir adresten e-posta aldığınızda anında iletme bildirimi gönderen bir akış oluşturma"
-services: 
+title: Telefonunuzdan akış oluşturma | Microsoft Docs
+description: Şablon kullanarak, belirttiğiniz bir adresten e-posta aldığınızda anında iletme bildirimi gönderen bir akış oluşturma
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
 ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440307"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Microsoft Flow kullanarak telefonunuzdan akış oluşturma
 Hizmetler listesinde arayarak, kategorilere göz atarak veya anahtar sözcükler belirterek bulabileceğiniz bir şablon kullanarak telefonunuzdan akış oluşturun. Bu konu başlığındaki adımları uygulayarak, yöneticinizden e-posta aldığınızda telefonunuza anında iletme bildirimi gönderen bir akış oluşturun.

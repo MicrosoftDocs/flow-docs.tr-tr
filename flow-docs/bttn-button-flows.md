@@ -1,13 +1,13 @@
 ---
-title: "Bttn ile akış başlatma | Microsoft Docs"
-description: "bttn kullanarak akış başlatmayı öğrenin"
-services: 
+title: Bttn ile akış başlatma | Microsoft Docs
+description: bttn kullanarak akış başlatmayı öğrenin
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
 ms.openlocfilehash: c4010f95ad2db3c4f3b97b39f0b45934c7b69c48
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440325"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Button Corporation tarafından tasarlanan fiziksel düğmelerle akışlarınızı çalıştırın (Önizleme)
 Bir bttn'ye ([The Button Corporation](https://my.bt.tn/) tarafından tasarlanan fiziksel bir düğme) basarak akışlarınızı tetikleyin. Örneğin, akış tetikleyen bir bttn'ye basarak şu görevleri gerçekleştirebilirsiniz:

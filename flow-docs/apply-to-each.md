@@ -1,13 +1,13 @@
 ---
-title: "Bir öğe dizisi üzerinde döngü oluşturmak için Her birine uygula eylemini kullanın. | Microsoft Docs"
-description: "Bir öğe dizisi üzerinde birden çok koşulu denetleyen ve bu koşullara bağlı olarak eylem gerçekleştiren bir döngü oluşturmak için Microsoft Flow’u kullanın."
-services: 
+title: Bir öğe dizisi üzerinde döngü oluşturmak için Her birine uygula eylemini kullanın. | Microsoft Docs
+description: Bir öğe dizisi üzerinde birden çok koşulu denetleyen ve bu koşullara bağlı olarak eylem gerçekleştiren bir döngü oluşturmak için Microsoft Flow’u kullanın.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/16/2017
 ms.author: deonhe
 ms.openlocfilehash: 37f1ce939db23694bcd92e7f1af75bf6c474be91
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440469"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Bir öğe listesini düzenli aralıklarla işlemek için Microsoft Flow’daki Her birine uygula eylemini kullanın.
 Birçok tetikleyici, bir olaya (örneğin, gelen kutunuza yeni bir e-posta gelmesi) bağlı olarak anında akış başlatabilir. Bu tetikleyiciler kullanışlı olsa da bazen önceden tanımlanmış bir zamanlamaya göre bir veri kaynağını sorgulayan ve veri kaynağındaki öğelerin özelliklerine göre belirli eylemler gerçekleştiren bir akış çalıştırmak istersiniz. Bunu yapmak için akışınız bir zamanlamaya (günde bir kere gibi) göre başlatılabilir ve **Her birine uygula** gibi bir döngü eylemini kullanarak bir öğe listesini işleyebilir. Örneğin, **Her birine uygula** eylemini kullanarak bir veritabanından alınan kayıtları ya da Microsoft SharePoint’ten alınan bir öğe listesini güncelleştirebilirsiniz.

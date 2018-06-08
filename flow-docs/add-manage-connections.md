@@ -1,13 +1,13 @@
 ---
-title: "Bağlantılar ve şirket içi veri ağ geçitleri kullanarak verilerinize bağlanma | Microsoft Docs"
-description: "SharePoint, SQL Server, OneDrive İş, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive ve daha fazlası için bağlantı ekleme veya yönetme"
-services: 
+title: Bağlantılar ve şirket içi veri ağ geçitleri kullanarak verilerinize bağlanma | Microsoft Docs
+description: SharePoint, SQL Server, OneDrive İş, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive ve daha fazlası için bağlantı ekleme veya yönetme
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/15/2017
 ms.author: stepsic
 ms.openlocfilehash: c0e115732e26bdeb0d7e4c3c60e1aa6c63e0ffc1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439785"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Microsoft Flow'da bağlantıları yönetme
 Microsoft Flow’da bağlantı oluşturmak, akış oluştururken verilerinize kolayca erişmenizi sağlar. Microsoft Flow, yaygın olarak kullanılan bağlantıları (SharePoint, SQL Server, Office 365, OneDrive İş, Salesforce, Excel, Dropbox, Twitter ve daha fazlası) içerir. Bağlantılar PowerApps ile paylaşılır, böylece bir üründe bir bağlantı oluşturduğunuzda bu bağlantı diğer üründe görüntülenir.

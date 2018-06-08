@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: a9318a1571d46635babbb0b061ff65734ad172fe
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440163"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki etkinlikleri telefonunuzdan izleme
 Her bir akışın bugün, dün ve önceki günlerde kaç kez başarılı veya başarısız olduğunun bir özetini görüntüleyin. Her bir çalıştırmayla ilgili ayrıntıları (örneğin, çalıştırılma zamanı; her bir adımın ne kadar sürdüğü ve başarısız olduysa başarısız olma nedeni) keşfedin.

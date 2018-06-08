@@ -1,13 +1,13 @@
 ---
-title: "E-posta özelliklerine göre akışları çalıştırın. | Microsoft Docs"
-description: "Konu, gönderen adresi veya bir e-postanın alıcısı gibi özellikler temelinde bir akış başlatın."
-services: 
+title: E-posta özelliklerine göre akışları çalıştırın. | Microsoft Docs
+description: Konu, gönderen adresi veya bir e-postanın alıcısı gibi özellikler temelinde bir akış başlatın.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 395cb9bc1d58e50e5ac8ebac9afaed544f3261ec
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440019"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>E-posta özelliklerine göre akış tetikleme
 Bu e-posta özelliklerinden biri veya birden fazlası, sağladığınız ölçütlerle eşleştiğinde çalışan bir akış oluşturmak için **Yeni bir e-posta geldiğinde** tetikleyicisini kullanın:

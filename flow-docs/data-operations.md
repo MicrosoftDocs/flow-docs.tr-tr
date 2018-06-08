@@ -1,13 +1,13 @@
 ---
-title: "Veri işlemlerini anlama | Microsoft Docs"
-description: "Microsoft Flow ile HTML tablosu oluşturma, CSV tablosu oluşturma, dizi oluşturma, birleştirme, seçme ve diziyi filtreleme gibi eylemleri gerçekleştirmeyi öğrenin."
-services: 
+title: Veri işlemlerini anlama | Microsoft Docs
+description: Microsoft Flow ile HTML tablosu oluşturma, CSV tablosu oluşturma, dizi oluşturma, birleştirme, seçme ve diziyi filtreleme gibi eylemleri gerçekleştirmeyi öğrenin.
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 08/02/2017
 ms.author: deonhe
 ms.openlocfilehash: aa3f61d09cb5e9b8d07124838883da9b5b9794ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440919"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Microsoft Flow ile veri işlemlerini kullanma
 Bu kılavuzda, Microsoft Flow’un akış oluştururken verileri işlemek için kullanabileceğiniz dizi oluşturma, birleştirme, seçme, diziyi filtreleme, tablo oluşturma ve JSON dosyasını ayrıştırma gibi popüler veri işlemlerinden bazıları hakkında bilgi edineceksiniz.

@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
 ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439713"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Microsoft Flow ile oluşturmaya başlama
 

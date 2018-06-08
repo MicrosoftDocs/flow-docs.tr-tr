@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme | Microsoft Docs"
-description: "Microsoft Flow deneyimlerini web sitenize veya uygulamanıza ekleyin."
-services: 
+title: Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme | Microsoft Docs
+description: Microsoft Flow deneyimlerini web sitenize veya uygulamanıza ekleyin.
+services: ''
 suite: flow
 documentationcenter: na
 author: bbarath
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: barathb
-ms.openlocfilehash: 12664286a9e7d88fb5e24607d600b42f95398cee
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: af03ee70b09ba5ee1164a9a7ea5019b13c19eec6
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440055"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme
 Kullanıcılara, kişisel veya profesyonel görevlerini otomatik hale getirmeleri için kolay bir yol sunmak üzere, Microsoft Flow'u uygulamanıza veya web sitenize ekleyin.
@@ -33,7 +34,7 @@ Akış oluşturmak için, kullanıcıların bir **Microsoft Hesabına** veya **A
 ## <a name="show-templates-for-your-scenarios"></a>Senaryolarınıza ilişkin şablonları gösterme
 Başlangıç olarak, akış şablonlarını doğrudan web sitenizde göstermek için şu kodu ekleyin:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
@@ -59,7 +60,7 @@ Kullanıcı, web sitenizde veya uygulamanızda belirli bir bağlamda ise bu bağ
 ### <a name="full-sample"></a>Tam örnek
 Wunderlist ile ilgili ilk dört şablonu görüntülemek ve kullanıcıyı **myCoolList** ile başlatmak için:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
 &pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
@@ -75,20 +76,20 @@ Kullanıcıların, (Microsoft Flow portalına gitmek yerine) doğrudan web siten
 ### <a name="include-the-javascript-for-the-authenticated-sdk"></a>Kimliği doğrulanmış SDK için JavaScript ekleme
 Bu örneği uygulayarak SDK'yı HTML kodunuza ekleyin. Ayrıca SDK'yı indirebilir, küçültebilir ve ürününüzle birlikte paket haline getirebilirsiniz.
 
-```
+```javascript
 <script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### <a name="create-a-container-to-contain-the-view"></a>Görünümü içerecek bir kapsayıcı oluşturma
 HTML div'i ekleyin:
 
-```
+```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
 Bu kapsayıcıyı, deneyiminiz süresince uygun boyutlarda görünecek şekilde biçimlendirmenizi öneririz:
 
-```
+```html
 <head>
     <style>
         .flowContainer iframe {
@@ -106,7 +107,7 @@ iframe'in 320 piksel genişliğin altında düzgün şekilde işlemeyeceğini ve
 ### <a name="authentication-against-the-sdk"></a>SDK'da kimlik doğrulaması
 Kullanıcının önceden oluşturduğu akışları listelemek ve şablonlardan akış oluşturmak için AAD'den bir authToken sağlayın.
 
-```
+```javascript
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
@@ -132,7 +133,7 @@ Kullanıcının önceden oluşturduğu akışları listelemek ve şablonlardan a
 
 Kullanıcının erişimi olan ortamların listesini döndüren aşağıdaki API çağrısını yaparak, `environmentId` değerini bulabilirsiniz:
 
-```
+```http
 GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
@@ -141,7 +142,7 @@ Bu, ortamların listelendiği bir JSON yanıtı döndürür ve aralarından herh
 
 Bu örnekte, `requestParam` tanımı aşağıdaki gibi yapılmıştır:
 
-```
+```javascript
 export interface IRpcRequestParam {
     callInfo: IRpcCallInfo,
     data?: any;
@@ -150,7 +151,7 @@ export interface IRpcRequestParam {
 
 Daha sonraki `widgetDoneCallback`, konak belirteci aldığında çağrılması gereken bir geri çağırma işlevidir. Bu işlem, belirteç edinme işlemi muhtemelen zaman uyumsuz bir işlem olduğu için gerçekleştirilir. Bu işlev çağrılırken geçirilmesi gereken parametreler şunlardır: `(errorResult: any, successResult: any)`. successResult geri çağırma türüne bağlı olacaktır. `GetAccessToken` için tür şöyle olur:
 
-```
+```javascript
 export interface IGetAccessTokenResult {
     token: string;
 }

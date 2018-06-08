@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442323"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Microsoft Flow ile sıralı onayları yönetme
 Son onaylayanın oturumu kapatabilmesi için bazı iş akışları ön onay gerektirir. Örneğin, bir şirketin 1000 ABD dolarının üzerindeki faturalar için Finans departmanının onayından önce bir ön onay verilmesini gerektiren sıralı onay ilkesi olabilir.
