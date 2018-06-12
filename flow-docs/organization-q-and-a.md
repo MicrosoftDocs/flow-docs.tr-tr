@@ -1,13 +1,13 @@
 ---
-title: "Kuruluşunuzda Flow’a kaydolma hakkında soru ve cevaplar | Microsoft Docs"
-description: "Office 365 kiracınızdaki lisanslar, yönetim ve Flow hizmetine kaydolan kullanıcılar hakkında sık sorulan sorular ve yanıtları"
-services: 
+title: Kuruluşunuzda Flow’a kaydolma hakkında soru ve cevaplar | Microsoft Docs
+description: Office 365 kiracınızdaki lisanslar, yönetim ve Flow hizmetine kaydolan kullanıcılar hakkında sık sorulan sorular ve yanıtları
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
 ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
-ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442503"
 ---
 # <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda Flow ile ilgili soru-cevap
 Bu konu başlığında, kuruluşunuzdaki kullanıcıların Flow’u nasıl kullanacağı ve Flow hizmetini nasıl denetleyeceğiniz açıklanmıştır.

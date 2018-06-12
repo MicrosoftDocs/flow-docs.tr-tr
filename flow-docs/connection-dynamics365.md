@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
-ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
+ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
+ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689388"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799683"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
@@ -91,6 +91,11 @@ Bu kılavuzda, Dynamics 365’te bir görev oluşturulduğunda [Wunderlist](http
 8. **Liste kimliği** altında, **gelen kutusu** seçeneğini belirleyin.
 9. **Başlık** altında, dinamik içerik bölmesinden **Konu**’yu seçin.
 10. **Akış oluştur**'a tıklayın veya dokunun.  
+
+## <a name="trigger-based-logic"></a>Tetikleyici tabanlı mantık
+**Bir kayıt oluşturulduğunda**, **Kayıt güncelleştirildiğinde** ve **Kayıt silindiğinde** gibi tetikleyiciler, olay oluştuktan sonra birkaç dakika içinde akışınızı başlatır.  Nadir de olsa bazı durumlarda akışın tetiklenmesi 2 saate kadar sürebilir.
+
+Tetikleyici oluştuğunda akış bir bildirim alır, ancak akış, işlem çalıştırıldığı anda mevcut olan veriler üzerinde çalıştırılır.  Örneğin, yeni bir kayıt oluşturulduğunda akışınız tetiklenirse ve akış çalıştırılmadan önce kaydı iki defa güncelleştirirseniz akışınız en son verilerle yalnızca bir defa çalıştırılır.
 
 ## <a name="specify-advanced-options"></a>Gelişmiş seçenekleri belirtme
 Bir akışa adım eklediğinizde, verilerin akışta nasıl filtreleneceğini denetleyen bir filtre veya sıralama sorgusu eklemek için **Gelişmiş seçenekleri göster**’e tıklayabilir veya dokunabilirsiniz.

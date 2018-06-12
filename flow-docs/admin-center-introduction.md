@@ -1,13 +1,13 @@
 ---
-title: "Yönetim merkezini kullanarak ortamları ve veri ilkelerini yönetin. | Microsoft Docs"
-description: "Microsoft Flow yönetim merkezi, kiracı ve ortam yöneticileri tarafından Microsoft Flow dağıtımlarına yönelik veri ilkelerini ve ortamları yönetmek için kullanılır."
-services: 
+title: Yönetim merkezini kullanarak ortamları ve veri ilkelerini yönetin. | Microsoft Docs
+description: Microsoft Flow yönetim merkezi, kiracı ve ortam yöneticileri tarafından Microsoft Flow dağıtımlarına yönelik veri ilkelerini ve ortamları yönetmek için kullanılır.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/31/2017
 ms.author: deonhe
 ms.openlocfilehash: 368b208a6f1d47f76a6f195edcd8055a03c06800
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981330"
 ---
 # <a name="the-admin-center"></a>Yönetim Merkezi
 
@@ -29,7 +30,7 @@ Yönetim merkezi kiracı yöneticilerinin ve ortam yöneticilerinin bir kuruluş
 
 ## <a name="access-the-admin-center"></a>Yönetim merkezine erişim
 
-* https://admin.flow.microsoft.com adresinden Microsoft Flow yönetim merkezine erişebilirsiniz.
+* https://admin.flow.microsoft.com konumuna giderek Microsoft Flow yönetim merkezine erişin.
 
 ## <a name="environments"></a>Ortamlar
 

@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/18/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 9f9513ca0239f72c36e96387fc010040936bbd02
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: c57296bed460dbf94aa597542413783292e1a8f7
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552180"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi İstekleri’ni yanıtlama
 
@@ -42,6 +43,9 @@ Bu iki izne de sahip bir hesapla [Microsoft Flow Yönetim merkezi](https://admin
     [Bir deneme lisansının](http://web.powerapps.com/trial) 30 gün içinde süresi dolar.
 
 - [Office 365 Genel Yönetici](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) veya [Azure Active Directory Genel Yönetici](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+
+### <a name="unmanaged-tenants"></a>Yönetilmeyen Kiracılar
+[Yönetilmeyen kiracının](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover) üyesiyseniz, başka bir deyişle Azure AD kiracınızın genel yöneticisi yoksa, kendi kişisel verilerinizi dışarı aktarıp kaldırmak için bu makalede açıklanan adımları izleyebilirsiniz. 
 
 ## <a name="responding-to-dsrs-for-microsoft-flow-customer-data"></a>Microsoft Flow müşteri verileri için DSR’leri yanıtlama
 

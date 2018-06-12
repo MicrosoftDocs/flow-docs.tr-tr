@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: d750ee2bc672d08bff940341349663b4721f9a57
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561322"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -33,17 +34,17 @@ Aşağıdaki tabloda, hangi kişisel verilerin otomatik olarak silindiği ve han
 |------|------|
 |Ortam*|Sistem tarafından oluşturulan günlükler|
 |Ortam izinleri**|Çalıştırma geçmişi|
-|Akışlar|Kullanıcı işleri|
+|Akışlar|Etkinlik Akışı|
 |Akış izinleri|Ağ geçidi |
-|Kullanıcı ayrıntıları|Ağ geçidi izinleri |
+|Kullanıcı ayrıntıları|Ağ geçidi izinleri|
 |Bağlantılar*||
 |Bağlantı izinleri||
 |Özel bağlayıcı*||
 |Özel bağlayıcı izinleri||
 
-* Bu kaynakların her biri kişisel verileri içeren “Oluşturan” ve “Değiştiren” kayıtlarını kapsar. Güvenlik nedenleriyle, bu kayıtlar kaynak silinene kadar korunur.
+*Bu kaynakların her biri, kişisel verileri içeren “Oluşturan” ve “Değiştiren” kayıtlarını içerir. Güvenlik nedenleriyle, bu kayıtlar kaynak silinene kadar korunur.
 
-* Uygulamalar için Common Data Service veritabanını içeren ortamlar için, ortam izinleri (örn. hangi kullanıcıların Ortam Oluşturucu ve Yönetici rollerine atandığı) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+**Uygulamalar için Common Data Service veritabanını içeren ortamlar için, ortam izinleri (örn. hangi kullanıcıların Ortam Oluşturucu ve Yönetici rollerine atandığı) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
 
 El ile inceleme gerektiren veriler ve kaynaklar için, Microsoft Flow belirli bir kullanıcının kişisel verilerini bulmaya veya değiştirmeye yönelik olarak aşağıdaki deneyimleri sunar:
 
@@ -59,11 +60,11 @@ Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için
 |Ortam|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet'leri||
 |Ortam izinleri*|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet'leri||
 |Çalıştırma geçmişi||| 28 günlük bekletme ilkesi aracılığıyla silindi|
-|Etkinlik akışı ||PowerApps cmdlet'leri||
+|Etkinlik akışı |||28 günlük bekletme ilkesi aracılığıyla silindi|
 |Kullanıcı işleri|| ||
 |Akışlar|Microsoft Flow Oluşturucu Portalı**|||
 |Akış izinleri|Microsoft Flow Oluşturucu Portalı|||
-|Kullanıcı ayrıntıları|| ||
+|Kullanıcı ayrıntıları||PowerApps cmdlet'leri||
 |Bağlantılar|Microsoft Flow Oluşturucu Portalı| ||
 |Bağlantı izinleri|Microsoft Flow Oluşturucu Portalı| ||
 |Özel bağlayıcı|Microsoft Flow Oluşturucu Portalı| ||
@@ -76,7 +77,7 @@ Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için
 
 ## <a name="manage-delete-requests"></a>Silme isteklerini yönetme
 
-Aşağıdaki adımlar yönetim işlevlerinin GDPR için silme isteklerini sunmak üzere var olduğunu açıklar.
+Aşağıdaki adımlar yönetim işlevlerinin GDPR için silme isteklerini sunmak üzere var olduğunu açıklar. Bu adımlar aşağıda açıklanan sırayla gerçekleştirilmelidir.
 
 > [!IMPORTANT]
 > Veri bozulmasını önlemek için bu adımları sırasıyla izleyin.
@@ -124,7 +125,8 @@ Bu adımlar, ayrılan bir kullanıcı için mevcut akışları kopyalar. Kopyala
     ![Akış onayını silme](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Akışın kopyasını etkinleştirmek için **Akışlarım**’ı açın ve iki durumlu denetimi **Açık** durumuna getirin.
-    ![Akışı etkinleştir](./media/gdpr-dsr-delete/toggle-on.png)
+
+    ![Akışı etkinleştirme](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. Kopya artık özgün sürümle aynı iş akışı mantığını gerçekleştirir.
 
@@ -141,6 +143,7 @@ Bu adımlar, ayrılan bir kullanıcı için mevcut akışları kopyalar. Kopyala
 1. Microsoft Excel’de onay verilerini gerektiği gibi arayın, filtreleyin ve silin.
 
 Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında ek rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+
 
 ## <a name="delete-connections-created-by-a-user"></a>Bir kullanıcı tarafından oluşturulan bağlantıları silme
 
@@ -159,8 +162,14 @@ Get-Connection | Remove-Connection
 
 PowerApps Yönetici PowerShell cmdlet'leri
 
-Kullanılamaz.
+```PowerShell
+Add-PowerAppsAccount
 
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all connections for the DSR user and deletes them 
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+
+```
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Kullanıcının paylaşılan bağlantılara yönelik izinlerini silme
 
 PowerApps Oluşturucu PowerShell cmdlet'leri
@@ -174,14 +183,20 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all shared connections for the DSR user and deletes their permissions 
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment  
+
+```
 > [!NOTE]
 > Bağlantı kaynağı silinmeden sahip rolü atamaları silinemez.
 >
 >
-
-PowerApps Yönetici PowerShell cmdlet'leri
-
-Kullanılamaz.
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Kullanıcı tarafından oluşturulan özel bağlayıcıları silme
 
@@ -199,8 +214,14 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
 PowerApps Yönetici PowerShell cmdlet'leri
+```PowerShell
+Add-PowerAppsAccount
 
-Kullanılamaz.
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connectors created by the DSR user and deletes them 
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector  
+
+```
 
 ## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Kullanıcının paylaşılan özel bağlayıcılara yönelik izinlerini silme
 
@@ -215,14 +236,21 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
+PowerApps Yönetici PowerShell cmdlet'leri
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connector role assignments for the DSR user and deletes them 
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment  
+
+```
+
 > [!NOTE]
 > Bağlantı kaynağı silinmeden sahip rolü atamaları silinemez.
 >
 >
 
-PowerApps Yönetici PowerShell cmdlet'leri
-
-Kullanılamaz.
 
 ## <a name="delete-or-reassign-all-environments-created-by-the-user"></a>Kullanıcı tarafından oluşturulan tüm ortamları silme veya yeniden atama
 
@@ -246,3 +274,43 @@ Kullanıcılara bir ortamda izinler atanabilir (Ortam Yöneticisi, Ortam Oluştu
 Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, bu “rol atamaları”, Uygulamalar için Common Data Service veritabanı örneğinde kayıt olarak depolanır.
 
 Bir ortamda kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
+
+## <a name="delete-gateway-settings"></a>Ağ Geçidi Ayarlarını Silme
+Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Silme İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
+
+## <a name="delete-user-details"></a>Kullanıcı Ayrıntılarını Silme
+Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. İşlem tamamlandıktan sonra bir yönetici, **Remove-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek kullanıcı ayrıntılarını silebilir.
+
+
+PowerApps Yönetici PowerShell cmdlet'leri
+```PowerShell
+Add-PowerAppsAccount
+Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+> [!IMPORTANT]
+> Bir kullanıcı halen bireysel akışlara veya takım akışlarına sahipse bu komut bir hata döndürür. Çözümlemek için, bu kullanıcıya yönelik takım akışlarını veya kalan tüm akışları silin ve komutu yeniden çalıştırın.
+>
+>
+## <a name="delete-the-user-from-azure-active-directory"></a>Azure Active Directory’den kullanıcıyı silme
+Yukarıdaki adımlar tamamlandıktan sonra son adım, [Office 365 Hizmet Güveni Portalı](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)’nda bulunabilecek Azure Veri Sahibi İsteği GDPR belgelerinde açıklanan adımları izleyerek Azure Active Directory için kullanıcının hesabını silmektir.
+
+## <a name="delete-the-user-from-unmanaged-tenant"></a>Yönetilmeyen Kiracıdan kullanıcıyı silme
+Yönetilmeyen bir kiracının üyesi olmanız durumunda, [İş ve Okul Gizliliği portalından](https://go.microsoft.com/fwlink/?linkid=873123) bir **Hesap kapatma** eylemi gerçekleştirmeniz gerekir.
+
+Yönetilen kiracının mı yoksa yönetilmeyen kiracının mu kullanıcısı olduğunuzu belirlemek için aşağıdaki eylemleri gerçekleştirin:
+1. Şu URL’yi bir tarayıcıda açın ve URL’deki e-posta adresinizi değiştirdiğinizden emin olun: [ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+1. **Yönetilmeyen kiracının** üyesiyseniz, yanıtta bir `"IsViral": true` görürsünüz.
+
+    {
+
+     "Login": "foobar@unmanagedcontoso.com",
+
+    "DomainName": "unmanagedcontoso.com",
+
+    "IsViral": **true**,
+    
+    }
+
+1. Aksi takdirde, yönetilen bir kiracıya aitsiniz demektir.
+

@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2018
+ms.date: 06/04/2018
 ms.author: stepsic
-ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
-ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
+ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
+ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755587"
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -45,7 +46,17 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="whats-new"></a>Yenilikler
 
-### <a name="release-2014-05-01"></a>Sürüm 2014-05-01
+### <a name="release-2018-05-21"></a>Sürüm 2018-05-21
+
+- **SharePoint listelerine ve kitaplıklarına “ait” akışlar**: SharePoint listeleri ve kitaplıkları ile birlikte çalışan akışlar, bu listeler veya kitaplıklarla paylaşılabilir. Bu nedenle, kişiler veya gruplarla paylaşılmak yerine, listeye erişim izni olan herkesle paylaşılır. Liste veya kitaplıktan kullanıcılar eklendikçe ya da kaldırıldıkça kullanıcıların üyeliği uygun şekilde değişir.
+- **Hata ayrıntıları analizi**: Bir akış içinde oluşan tüm hatalar hakkında bilgi sağlayan yeni bir tümleşik rapor.
+- **Office 365 gruplarıyla akışları paylaşma**: Office 365 modern grubunu bir akışın sahibi yapabilir ve düğme akışlarını Office 365 gruplarıyla paylaşabilirsiniz; böylece gruptaki herkes akışı çalıştırabilir.
+- **SharePoint bağlayıcısı iyileştirmeleri**: İki yeni SharePoint bağlayıcısı özelliği vardır: öğeler veya dosyalar silindiğinde akışları tetikleme ve SharePoint REST API’sinin desteklediği herhangi bir HTTP uç noktasını çağırma.
+- **İki yeni bağlayıcı**: Azure Data Factory ve MailParser desteği eklendi
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/).
+
+### <a name="release-2018-05-01"></a>Sürüm 2018-05-01
 
 - **Onay iletilerindeki zengin metin**: Gönderdiğiniz onay ayrıntılarını biçimlendirmek için Markdown kullanın.
 - **Birden çok seçim girişi içeren düğmeler**: Aynı anda birden fazla değer toplamak için çoklu seçim listesi kullanan akış düğmeleri oluşturun.

@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 1e1fe346ba6ffb264985da0115714246a621ef5a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552077"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Dışarı Aktarma İstekleri’ni yanıtlama
 
@@ -39,16 +40,15 @@ Microsoft Flow, belirli bir kullanıcının kişisel verilerini bulmak veya dı�
 |-----------------|------------------|-------------------|
 |Sistem tarafından oluşturulan günlükler|[Office 365 Hizmet Güveni Portalı](https://servicetrust.microsoft.com/)|
 |Çalıştırma geçmişi|Microsoft Flow Oluşturucu Portalı||
-|Kullanıcı işleri|| |
 |Akışlar|Microsoft Flow Oluşturucu Portalı||
 |Akış izinleri| Microsoft Flow Oluşturucu Portalı ve Microsoft Flow Yönetim Merkezi||
-|Kullanıcı ayrıntıları|| |
-|Bağlantılar|Microsoft Flow Oluşturucu Portalı| |
-|Bağlantı izinleri|Microsoft Flow Oluşturucu Portalı| |
-|Özel bağlayıcılar|Microsoft Flow Oluşturucu Portalı| |
-|Özel bağlayıcı izinleri|Microsoft Flow Oluşturucu Portalı| |
-|Ağ geçidi|Microsoft Flow Oluşturucu Portalı|Şirket içi ağ geçidi PowerShell cmdlet'leri|
-|Ağ geçidi izinleri|Microsoft Flow Oluşturucu Portalı|
+|Kullanıcı ayrıntıları||PowerApps cmdlet'leri|
+|Bağlantılar|Microsoft Flow Oluşturucu Portalı|PowerApps cmdlet'leri |
+|Bağlantı izinleri|Microsoft Flow Oluşturucu Portalı|PowerApps cmdlet'leri |
+|Özel bağlayıcılar|Microsoft Flow Oluşturucu Portalı|PowerApps cmdlet'leri |
+|Özel bağlayıcı izinleri|Microsoft Flow Oluşturucu Portalı|PowerApps cmdlet'leri |
+|Ağ geçidi|Microsoft Flow Oluşturucu Portalı|Şirket İçi Veri Ağ Geçidi PowerShell cmdlet’leri|
+|Ağ geçidi izinleri|Microsoft Flow Oluşturucu Portalı|Şirket İçi Veri Ağ Geçidi PowerShell cmdlet’leri|
 
 ## <a name="export-a-flow"></a>Akışı dışarı aktarma
 
@@ -105,10 +105,35 @@ Bağlantılar, akışların API’lere, SaaS uygulamalarına ve üçüncü taraf
     ![Bağlantılar sekmesini göster](./media/gdpr-dsr-export/show-connections.png)
 1. Sonuçları kopyalayın ve Microsoft Word gibi bir belge düzenleyicisine yapıştırın.
 
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connections for the user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "UserConnections.txt"
+```
+
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Bir kullanıcının bağlantı izinlerinin listesini dışarı aktarma
 
 Bir kullanıcı, erişimi olduğu tüm bağlantıların bağlantı rol atamalarını [PowerApps PowerShell cdmlet’lerindeki](https://go.microsoft.com/fwlink/?linkid=871804) Get-ConnectionRoleAssignment işlevi aracılığıyla dışarı aktarabilir.
-![Bağlantı izinlerini dışarı aktarma](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
+```
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt" 
+```
 
 ## <a name="export-a-users-custom-connectors"></a>Bir kullanıcının özel bağlayıcılarını dışarı aktarma
 
@@ -125,13 +150,41 @@ Bir kullanıcı, erişimi olduğu tüm bağlantıların bağlantı rol atamalar�
 
 Microsoft Flow’da sağlanan deneyime ek olarak, [PowerApps PowerShell cmdlet’lerindeki](https://go.microsoft.com/fwlink/?linkid=871804) Get-Connector işlevini kullanarak tüm özel bağlayıcıları dışarı aktarabilirsiniz.
 
-![Özel bağlayıcılar PowerShell’i dışarı aktarma](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+~~~~
+Add-PowerAppsAccount
+Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
+~~~~
+
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserCustomConnectors.txt"  
+```
 
 ## <a name="export-a-users-custom-connector-permissions"></a>Bir kullanıcının özel bağlayıcı izinlerini dışarı aktarma
 
 Bir kullanıcı oluşturduğu tüm özel bağlayıcı izinlerini [PowerApps PowerShell cdmlet’lerindeki](https://go.microsoft.com/fwlink/?linkid=871804) Get-ConnectorRoleAssignment işlevi aracılığıyla dışarı aktarabilir.
 
-![Özel bağlayıcı izinleri PowerShell’i dışarı aktarma](./media/gdpr-dsr-export/export-connector-permissions.png)
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
+```
+
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"   
+```
 
 ## <a name="export-approval-history"></a>Onay geçmişini dışarı aktarma
 
@@ -144,3 +197,18 @@ Microsoft Flow Onay Geçmişi bir kullanıcı için alınan veya gönderilen ona
 1. Liste, kullanıcının aldığı onayları gösterir. Kullanıcılar gönderdikleri onayları, **Alınan** seçeneğinin yanındaki aşağı ok tuşunu ve ardından **Gönderilen**’i seçerek gösterebilir.
 
     ![Alınan onayları görüntüleme](./media/gdpr-dsr-export/view-received-approvals.png)
+
+## <a name="export-user-details"></a>Kullanıcı Ayrıntılarını Dışarı Aktarma
+Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Yönetici, **Get-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek bu bilgileri dışarı aktarabilir.
+
+PowerApps Yönetici PowerShell cmdlet'leri
+
+```PowerShell
+Add-PowerAppsAccount
+
+Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+## <a name="export-gateway-settings"></a>Ağ Geçidi Ayarlarını Dışarı Aktarma
+Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Dışarı Aktarma İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
+
