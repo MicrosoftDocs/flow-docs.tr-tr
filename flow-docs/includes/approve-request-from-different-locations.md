@@ -13,7 +13,7 @@ Bir isteği onaylamak için:
     ![Açıklama girin](media/modern-approvals/request-in-approval-center.png)
 
 ### <a name="from-the-approvals-center"></a>Onay merkezinden
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
+1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın.
    
     ![Oturum açın](media/modern-approvals/sign-in.png)
 2. **Onaylar** sekmesini seçin.

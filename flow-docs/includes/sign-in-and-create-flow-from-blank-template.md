@@ -1,4 +1,4 @@
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
+1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın.
    
     ![Oturum açın](media/modern-approvals/sign-in.png)
 2. **Akışlarım** sekmesini seçin.

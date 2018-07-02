@@ -3,7 +3,7 @@ Bu konu başlığında, Contoso Flooring Company için **bir düğme akışı ol
 Düğme akışları bir ekibe **e-posta göndermek** ve gerçekleştirilecek **görevleri bildirmek** için kullanılabilir. Akışların **sahipliği** **bir çalışana atanabilir** veya bir ekipteki **birden çok üye tarafından paylaşılabilir**.  
 
 1. Öncelikle [Microsoft Flow web sitesine](https://ms.flow.microsoft.com) gidip oturum açın.
-2. Oturum açma tamamlandıktan sonra, **Akışlarım**’ı ve ardından **Boş akış oluştur**’u seçin.
+2. Oturum açtıktan sonra **Akışlarım**’ı ve ardından **Boş akış oluştur**’u seçin.
    
     ![Boş akış oluşturma](./media/learning-create-button-flow/2-create-from-blank.png)
    
