@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
 ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 07/10/2018
 ms.locfileid: "31007990"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Microsoft Flow’daki ortamları kullanma

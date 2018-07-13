@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 4/23/2018
 ms.author: gcorvera
 ms.openlocfilehash: dc8d9d650b02b7962770ff0574deb151492739d9
-ms.sourcegitcommit: 87934a195701e2ab33127ee084b9519e387db268
+ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/12/2018
 ms.locfileid: "32323644"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markdown kullanma

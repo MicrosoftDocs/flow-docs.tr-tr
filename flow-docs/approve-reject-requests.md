@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 07/15/2017
 ms.author: deonhe
 ms.openlocfilehash: 016673948ffaeaf98e81cc2c561d9ff9f5f627e4
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439533"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38949455"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Microsoft Flow’da onay isteklerini yönetme
 Microsoft Flow, [onayı iş akışı işlemlerini](modern-approvals.md) otomatikleştirmeyi kolaylaştırır. Bu kılavuzda, Microsoft Flow’dan gönderilen onay isteklerini görüntüleme, onaylama veya reddetme işlemlerinin nasıl yapıldığını öğreneceksiniz.
