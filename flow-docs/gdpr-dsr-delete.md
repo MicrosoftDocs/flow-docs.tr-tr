@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
+ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561322"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175144"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -258,10 +258,10 @@ Bir yönetici olarak, bir kullanıcı için kullanıcı tarafından oluşturulmu
 
 1. Kuruluşunuzdan başka kimsenin ortamı kullanmadığını belirledikten sonra ortamı silmeyi seçebilirsiniz
 1. Ortamın hala gerekli olduğunu belirlerseniz, ortamı silmemeyi seçebilir ve kendinizi (veya kuruluşunuzdaki başka bir kullanıcıyı) Ortam Yöneticisi olarak ekleyebilirsiniz.
-    > [!IMPORTANT]
-    > Bir ortamı silmek, tüm uygulamalar, akışlar, bağlantılar vb. dahil ortamın içindeki tüm kaynakları kalıcı olarak siler. Bu nedenle lütfen silmeden önce ortamın içeriklerini gözden geçirin.
-    >
-    >
+> [!IMPORTANT]
+> Bir ortamı silmek, tüm uygulamalar, akışlar, bağlantılar vb. dahil ortamın içindeki tüm kaynakları kalıcı olarak siler. Bu nedenle lütfen silmeden önce ortamın içeriklerini gözden geçirin.
+>
+>
 
 ## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Microsoft Flow Yönetim Merkezi’nden kullanıcının ortamlarına erişim izni verme
 
