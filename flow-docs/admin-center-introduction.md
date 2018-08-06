@@ -30,7 +30,7 @@ Yönetim merkezi kiracı yöneticilerinin ve ortam yöneticilerinin bir kuruluş
 
 ## <a name="access-the-admin-center"></a>Yönetim merkezine erişim
 
-* https://admin.flow.microsoft.com konumuna giderek Microsoft Flow yönetim merkezine erişin.
+* Konumuna giderek Microsoft Flow https://admin.flow.microsoft.com yönetim merkezine erişin.
 
 ## <a name="environments"></a>Ortamlar
 
