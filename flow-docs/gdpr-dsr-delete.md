@@ -73,7 +73,7 @@ Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için
 
 *Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, ortam izinleri ve model tabanlı uygulama izinleri, Uygulamalar için Common Data Service veritabanı örneğinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
 
-** Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
+\*\*Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
 
 ## <a name="manage-delete-requests"></a>Silme isteklerini yönetme
 
