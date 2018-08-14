@@ -5,7 +5,7 @@ metadata:
   description: Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. Kendi kendinize ilerlediğiniz bu çevrimiçi kursta, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır.
   audience: Business User
   level: Beginner
-  nextTutorialHref: build-flows
+  nextTutorialHref: build-flows.yml
   nextTutorialTitle: Akış derleme
   displayType: one-column
   author: MSFTMan
@@ -14,12 +14,12 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-  ms.openlocfilehash: acfe8fb4e4a4eaaaf849ff86b708cb207853a13d
-  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+  ms.openlocfilehash: b77255b42beb2f90adb9bf7d85da822be7ce9edf
+  ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/04/2018
-  ms.locfileid: "31813489"
+  ms.lasthandoff: 08/08/2018
+  ms.locfileid: "39718408"
 items:
 - durationInMinutes: 1
   content: >

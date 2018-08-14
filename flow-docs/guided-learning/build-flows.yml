@@ -5,7 +5,7 @@ metadata:
   description: Verileri kopyalayıp toplayan akışlar ve bildirim gönderen akışları derleme hakkında bilgi edinin. Akışlarınızı bir zamanlamaya göre veya bir düğmeyle isteğe bağlı olarak çalıştırın.
   audience: Business User
   level: Beginner
-  nextTutorialHref: work-with-approvals
+  nextTutorialHref: work-with-approvals.yml
   nextTutorialTitle: Onaylarla çalışma
   displayType: one-column
   author: MSFTMan
@@ -14,12 +14,12 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-  ms.openlocfilehash: 6653c723ba9c3dfce8c953b86e3b54d5226cd258
-  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+  ms.openlocfilehash: 31b07db03450572ddff2c8cdbcfeef193a3979ab
+  ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/04/2018
-  ms.locfileid: "26580797"
+  ms.lasthandoff: 08/08/2018
+  ms.locfileid: "39718201"
 items:
 - durationInMinutes: 1
   content: >

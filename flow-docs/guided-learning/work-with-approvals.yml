@@ -5,7 +5,7 @@ metadata:
   description: Microsoft Flow’da belge ve işlem onayını nasıl yönetebileceğinizi öğrenin.
   audience: Business User
   level: Beginner
-  nextTutorialHref: administer-flows
+  nextTutorialHref: administer-flows.yml
   nextTutorialTitle: Akışları yönetme
   displayType: one-column
   author: MSFTMan
@@ -14,12 +14,12 @@ metadata:
   ms.topic: get-started-article
   ms.date: 02/22/2018
   ms.author: deonhe
-  ms.openlocfilehash: b3b77f073464ae15eaf3ca49ce6664ed5d03cfe8
-  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+  ms.openlocfilehash: b6e95b8d30ef823157420c98cfbaae5d5d1dc87c
+  ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/04/2018
-  ms.locfileid: "29563029"
+  ms.lasthandoff: 08/08/2018
+  ms.locfileid: "39718385"
 items:
 - durationInMinutes: 1
   content: >
