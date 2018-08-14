@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
-ms.openlocfilehash: c4010f95ad2db3c4f3b97b39f0b45934c7b69c48
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 3387cc29bb088348634c4d97699f56a4a69ac434
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440325"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718224"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Button Corporation tarafından tasarlanan fiziksel düğmelerle akışlarınızı çalıştırın (Önizleme)
 Bir bttn'ye ([The Button Corporation](https://my.bt.tn/) tarafından tasarlanan fiziksel bir düğme) basarak akışlarınızı tetikleyin. Örneğin, akış tetikleyen bir bttn'ye basarak şu görevleri gerçekleştirebilirsiniz:

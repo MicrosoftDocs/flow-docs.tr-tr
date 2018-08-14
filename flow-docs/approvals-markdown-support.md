@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/23/2018
 ms.author: gcorvera
-ms.openlocfilehash: dc8d9d650b02b7962770ff0574deb151492739d9
-ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
+ms.openlocfilehash: 147a5ee1e19744c6164cac4acdd04aef16440e46
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "32323644"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519813"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markdown kullanma
 
@@ -199,12 +199,15 @@ Yapılandırılmış verileri tablolarla düzenleyin.
 
 **Örnek:**
 
-<pre>
+```
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
-</pre>  <br/>
+```
+
+
+
 
 **Sonuç:**  
 

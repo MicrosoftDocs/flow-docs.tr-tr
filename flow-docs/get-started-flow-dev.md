@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 1bcdbf3772ab2481b15bd224523dff74afc53101
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439713"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718293"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Microsoft Flow ile oluşturmaya başlama
 
@@ -56,11 +56,11 @@ Bu bilgileri gönderdikten sonra Microsoft, API’nizin Microsoft Flow ve Micros
 
 ## <a name="embed-the-flow-experience-into-your-website-or-app"></a>Akış deneyimini web sitenize veya uygulamanıza ekleme
 
-Uygulamanıza Microsoft Flow’u [ekleyerek](embed-flow-dev.md) uygulamanız ile Microsoft Flow’un desteklediği tüm diğer hizmetler arasında derin ve bağlam içi bir tümleştirme sağlayabilirsiniz. Örneğin, şunları yapabilirsiniz:
+Uygulamanıza Microsoft Flow’u [ekleyerek](developer/embed-flow-dev.md) uygulamanız ile Microsoft Flow’un desteklediği tüm diğer hizmetler arasında derin ve bağlam içi bir tümleştirme sağlayabilirsiniz. Örneğin, şunları yapabilirsiniz:
 
 * Hizmetinizle ilgili tüm şablonlara göz atın ve kullanıcıların şablon seçmesine izin verin.
 * Kullanıcıların uygulamanızla ilgili akışlarını yönetin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Microsoft Flow’u uygulamanıza nasıl [ekleyeceğinizi](embed-flow-dev.md) öğrenin.
+Microsoft Flow’u uygulamanıza nasıl [ekleyeceğinizi](developer/embed-flow-dev.md) öğrenin.

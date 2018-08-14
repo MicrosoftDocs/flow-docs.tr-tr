@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453320"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718316"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
@@ -80,7 +80,7 @@ Kendi BT altyapınızdaki veri kaynaklarına [şirket içi veri ağ geçidi](gat
 Microsoft ve üçüncü taraflarca sağlanan Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server gibi 100’den fazla standart hizmete bağlanabilirsiniz. Ayrıca, Salesforce ve PowerApps için Common Data Service gibi premium hizmetlere de bağlanabilirsiniz.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Akışımda bir REST API'ye nasıl bağlanırım?
-[Özel bir bağlayıcı ](register-custom-api.md) oluşturarak JSON kullanan ve 10’dan fazla kimlik doğrulama yönteminden en az birini destekleyen tüm REST API'lere bağlanabilirsiniz.
+[Özel bir bağlayıcı ](developer/register-custom-api.md) oluşturarak JSON kullanan ve 10’dan fazla kimlik doğrulama yönteminden en az birini destekleyen tüm REST API'lere bağlanabilirsiniz.
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>SQL Server ve diğer şirket içi veri kaynaklarına nasıl bağlanırım?
 Yerel ağınızdaki hizmetlere [şirket içi veri ağ geçidini](gateway-manage.md) kullanarak bağlanabilirsiniz.
