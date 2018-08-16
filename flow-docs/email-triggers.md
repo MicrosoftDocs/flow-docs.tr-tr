@@ -1,6 +1,6 @@
 ---
-title: E-posta özelliklerine göre akışları çalıştırın. | Microsoft Docs
-description: Konu, gönderen adresi veya bir e-postanın alıcısı gibi özellikler temelinde bir akış başlatın.
+title: E-posta özelliklerine göre akış çalıştırma | Microsoft Docs
+description: Bir e-postanın konu, gönderen adresi veya alıcının adresi gibi özelliklerine göre bir akış başlatın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
-ms.openlocfilehash: 395cb9bc1d58e50e5ac8ebac9afaed544f3261ec
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: c021f4fee692863bdeaa71d2d49901fbb603aa31
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440019"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519974"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>E-posta özelliklerine göre akış tetikleme
-Bu e-posta özelliklerinden biri veya birden fazlası, sağladığınız ölçütlerle eşleştiğinde çalışan bir akış oluşturmak için **Yeni bir e-posta geldiğinde** tetikleyicisini kullanın:
+Aşağıdaki e-posta özelliklerinden biri veya birden fazlası, sağladığınız ölçütlerle eşleştiğinde çalışan bir akış oluşturmak için **Yeni bir e-posta geldiğinde** tetikleyicisini kullanın:
 
 | Özellik | Ne zaman kullanılır? |
 | --- | --- |
@@ -35,22 +35,25 @@ Bu e-posta özelliklerinden biri veya birden fazlası, sağladığınız ölçü
 | Konu Filtresi |Bir e-postanın konusunda belirli sözcüklerin olup olmadığını belirlemek için arama yapar. Böylece akışınız aramanızın sonuçlarına göre *eylemler* çalıştırır. |
 
 > [!IMPORTANT]
-> Her [Microsoft Flow planı](https://flow.microsoft.com/pricing/) bir çalıştırma kotası içerir. Akışın tetikleyicisindeki özellikleri her zaman kontrol etmeye çalışın; bu şekilde, çalıştırma kotanızın gereksiz yere kullanılmasını önlemiş olursunuz. Bir koşulda yer alan bir özelliği kontrol etmeniz durumunda, tanımladığınız filtre koşulu karşılanmamış olsa bile her çalıştırma, planınızın çalıştırma kotasında hesaba katılır. Örneğin, bir koşulda e-postanın *kimden* adresini kontrol etmeniz durumunda, e-postanın *göndereni* sizin ilgilendiğiniz adres olmasa bile her çalıştırma, planınızın çalıştırma kotasında hesaba katılır.
+> Her [Microsoft Flow planı](https://flow.microsoft.com/pricing/) bir çalıştırma kotası içerir. Mümkün olduğunda akışın tetikleyicisinin özelliklerini mutlaka kontrol edin. Bunu yapmanız kotanızın gereksiz yere dolmasını önler. Bir koşulda yer alan bir özelliği kontrol etmeniz durumunda, tanımladığınız filtre koşulu karşılanmamış olsa bile her çalıştırma, planınızın çalıştırma kotasında hesaba katılır. 
+
+Örneğin, bir koşulda e-postanın *kimden* adresini kontrol etmeniz durumunda, e-postanın *göndereni* sizin ilgilendiğiniz adres olmasa bile her çalıştırma, planınızın çalıştırma kotasında hesaba katılır.
 > 
 > 
 
 Aşağıdaki incelemelerde **Yeni bir e-posta geldiğinde** tetikleyicisindeki tüm özellikleri ele alacağız. [Faturayla ilgili sık sorulan sorular](billing-questions.md#what-counts-as-a-run) ve [fiyatlandırma](https://ms.flow.microsoft.com/pricing/) sayfasını ziyaret ederek daha fazla bilgi edinebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
-* [Microsoft Flow](https://flow.microsoft.com) erişimi olan bir hesap.
-* Bir Office 365 Outlook hesabı.
-* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulaması.
-* Office 365 Outlook’a ve anında iletme bildirimi hizmetine bağlantı.
+* [Microsoft Flow](https://flow.microsoft.com) erişimi olan bir hesap
+* Bir Office 365 Outlook hesabı
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulaması
+* Office'e, Outlook’a ve anında iletme bildirimi hizmetine bağlantı
 
 ## <a name="trigger-a-flow-based-on-an-emails-subject"></a>E-postanın konusuna göre akış tetikleme
 Bu incelemede, yeni herhangi bir e-postanın konusunda "kura" sözcüğünün olması durumunda cep telefonunuza anında iletme bildirimi gönderecek bir akış oluşturacağız. Bu durumda, akışınız söz konusu e-postaları *okundu* olarak işaretler.
 
-Not: Bu incelemede anında iletme bildirimi gönderiliyor olsa da siz kendi iş akışı gereksinimlerinize uyan diğer herhangi bir eylemi kullanabilirsiniz. Örneğin, e-posta içeriklerini Google E-Tablolar veya Dropbox'ta saklanan Microsoft Excel dosyası gibi başka bir depoda saklayabilirsiniz.
+>[!NOTE]
+>Bu incelemede anında iletme bildirimi gönderiliyor olsa da siz kendi iş akışı gereksinimlerinize uyan diğer herhangi bir eylemi kullanabilirsiniz. Örneğin, e-posta içeriklerini Google E-Tablolar veya Dropbox'ta saklanan Microsoft Excel dosyası gibi başka bir depoda saklayabilirsiniz.
 
 Haydi başlayalım:
 
@@ -58,21 +61,21 @@ Haydi başlayalım:
 
 1. **Konu Filtresi** kutusuna, akışınızın gelen e-postaları filtrelemek için kullanacağı metni girin.
    
-     Bu örnekte, konusunda "kura" sözcüğü bulunan tüm e-postalarla ilgileniyorum.
+     Bu örnekte, konusunda "kura" sözcüğü bulunan tüm e-postalarla ilgileniyoruz.
    
     ![Gelişmiş seçenekler](./media/email-triggers/email-triggers-subject-text.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Daha önce **Konu Filtresi** kutusunda belirttiğiniz konuyla eşleşen bir e-posta geldiğinde almak istediğiniz mobil bildirime ilişkin ayrıntıları girin.
+1. Daha önce **Konu Filtresi** kutusunda belirttiğiniz konuyla eşleşen bir e-posta aldığınızda, almak istediğiniz mobil bildirime ilişkin ayrıntıları girin.
    
     ![Bildirim ayrıntıları](./media/email-triggers/email-triggers-4.png)
 
-[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Akışınıza bir ad verin ve sayfanın üst tarafındaki **Akış oluştur** seçeneğini belirleyerek akışı kaydedin.
+1. Akışınıza bir ad verin. Ardından sayfanın üst tarafındaki **Akış oluştur** seçeneğini belirleyerek akışı kaydedin.
    
-    ![Akışı kaydedin](./media/email-triggers/email-triggers-subject-notification.png)
+    ![Akışı kaydetme](./media/email-triggers/email-triggers-subject-notification.png)
 
 Tebrikler! Artık konusunda "kura" sözcüğü bulunan bir e-posta aldığınız her seferde anında iletme bildirimi alacaksınız.
 
@@ -81,23 +84,23 @@ Bu incelemede, belirli bir gönderenden (e-posta adresi) yeni e-posta almanız d
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. Gönderenin e-posta adresini **Kimden** alanına girin.
+1. Gönderenin e-posta adresini **Kimden** alanına girin. 
    
-     Akışınız bu adresten gönderilen tüm e-postalarda işlem gerçekleştirir.
+     Akışınız, bu adresten gönderilen tüm e-postalarda işlem gerçekleştirir.
    
     ![E-posta özelliği](./media/email-triggers/email-triggers-from.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Daha önce girdiğiniz e-posta adresinden her ileti alışınızda almak istediğiniz mobil bildirime ilişkin ayrıntıları girin.
    
     ![Bildirim ayrıntıları](./media/email-triggers/email-triggers-sender-notification.png)
 
-[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Akışınıza bir ad verin ve sayfanın üst tarafındaki **Akış oluştur** seçeneğini belirleyerek akışı kaydedin.
    
-    ![Akışı kaydedin](./media/email-triggers/email-triggers-sender-5.png)
+    ![Akışı kaydetme](./media/email-triggers/email-triggers-sender-5.png)
 
 ## <a name="trigger-a-flow-when-emails-arrive-in-a-specific-folder"></a>Belirli bir klasöre her e-posta gelişinde bir akış tetikler.
 E-postaları adres gibi belirli özelliklere göre farklı klasörlere yönlendiren kurallarınız varsa bu akış türü ilginizi çekebilir.
@@ -111,21 +114,21 @@ Haydi başlayalım:
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Oluşturduğunuz kuralın belirli e-postaları yönlendireceği hedef klasörü seçin. Tüm e-posta klasörlerini görüntülemek için öncelikle **Yeni bir e-posta geldiğinde** kartındaki **Klasör** kutusunun sağ tarafında yer alan **Seçiciyi Göster** simgesini seçin.
+1. Belirli e-postaları yönlendirdiğiniz klasörü seçin. Tüm e-posta klasörlerini görüntülemek için öncelikle **Yeni bir e-posta geldiğinde** kartındaki **Klasör** kutusunun sağ tarafında yer alan **Seçiciyi Göster** simgesini seçin.
    
     ![Klasörü seçin](./media/email-triggers/email-triggers-2.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Daha önce seçtiğiniz klasöre e-posta geldiğinde almak istediğiniz mobil bildirime ilişkin ayrıntıları girin. Henüz yapmadıysanız bildirim hizmetine ilişkin kimlik bilgilerini girin.
    
     ![Bildirim ayrıntıları](./media/email-triggers/email-triggers-folder-notification.png)
 
-[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Akışınıza bir ad verin ve sayfanın üst tarafındaki **Akış oluştur** seçeneğini belirleyerek akışı kaydedin.
    
-    ![Akışı kaydedin](./media/email-triggers/email-triggers-7.png)
+    ![Akışı kaydetme](./media/email-triggers/email-triggers-7.png)
 
 Bu incelemede daha önce seçtiğiniz klasöre yönlendirilecek bir e-posta göndererek akışı test edin.
 

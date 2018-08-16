@@ -7,7 +7,8 @@
     ![E-posta tetikleyicisi](media/email-triggers/email-triggers-1.png)
 4. Akışın gelen e-postalar için izlemesini istediğiniz klasörü seçin ve ardından **Gelişmiş seçenekleri göster** seçeneğini belirleyin.
    
-     Tüm e-posta klasörlerinizi görüntülemek için öncelikle **Yeni bir e-posta geldiğinde** kartındaki **Klasör** kutusunun sağ tarafında yer alan **Seçiciyi Göster** simgesini seçin.
+     >[!NOTE]
+     > Tüm e-posta klasörlerinizi görüntülemek için öncelikle **Yeni bir e-posta geldiğinde** kartındaki **Klasör** kutusunun sağ tarafında yer alan **Seçiciyi Göster** simgesini seçin.
    
     ![Klasör özelliği](media/email-triggers/email-triggers-subject-folder.png)
 

@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
-ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
+ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175144"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520089"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -73,7 +73,7 @@ Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için
 
 *Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, ortam izinleri ve model tabanlı uygulama izinleri, Uygulamalar için Common Data Service veritabanı örneğinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
 
-\*\*Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
+\*\* Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
 
 ## <a name="manage-delete-requests"></a>Silme isteklerini yönetme
 
