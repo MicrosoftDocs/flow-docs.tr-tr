@@ -1,0 +1,1 @@
+Önizleme özellikleri üretimde kullanıma yönelik değildir ve kısıtlı işlevlere sahip olabilir. Bu özellikler, müşterilerin erken erişim imkanı elde edip geri bildirim sağlayabilmeleri için resmi yayından önce kullanılabilir.

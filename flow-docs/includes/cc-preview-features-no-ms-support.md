@@ -1,0 +1,1 @@
+Microsoft, bu önizleme özellikleri için destek sağlamaz. Microsoft Dynamics 365 Teknik Destek sorunlarla veya sorularla ilgili yardımcı olamaz. Önizleme özellikleri üretimde kullanıma yönelik değildir ve ayrı [ek kullanım koşullarına](http://go.microsoft.com/fwlink/p/?LinkId=511446) tabidir.
