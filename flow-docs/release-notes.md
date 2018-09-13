@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 07/21/2018
 ms.author: stepsic
-ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
-ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
+ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755587"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774280"
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -45,6 +45,35 @@ ms.locfileid: "34755587"
 3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+### <a name="release-2018-07-23"></a>Sürüm 2018-07-23
+
+- **Excel’den akış oluşturma ve çalıştırma** - Yeni **Flow** düğmesini (şeritteki **Veri** sekmesinden erişilir) kullanarak Flow’dan Excel’deki tablo verileriniz üzerinde otomasyonlar oluşturup bunları tetikleyebilirsiniz. Veri işlemeyi veya verilerin kopyalanmasını/içeri aktarılmasını otomatikleştirin.
+- **İş süreci akışı oluşturma** - İş süreci akışı, Uygulamalar için Common Data Service’i temel alan, durum bilgisi olan ve insanlarla etkileşim kurabilen yeni bir akış türüdür. Bu yeni akışları kullanarak insanların izlemesi için bir dizi aşama ve adım tanımlayabilirsiniz. Bunlar gerektiği gibi ileri veya geri yönde hareket edebilir.
+- **Outlook Web App’te Microsoft To-Do için akış oluşturma** - Outlook Web App’te birisinden \@bahsedilirse, bu kişi bir akış oluşturmaya yönelik bir kısayol görür. Bu akış, kendinden \@bahsedilen kişi için Microsoft To-Do’da otomatik olarak e-postanın içeriğini temel alan görevler oluşturur.
+- **SharePoint görünümü desteği** - SharePoint bağlayıcısı artık tetikleyicilerde ve eylemlerde belirli bir SharePoint görünümünün seçilmesini destekliyor. Bu, sütunları filtreleyerek yalnızca seçili görünümdeki alanların kalmasını sağlar.
+- **Dört yeni bağlayıcı** - Yüksek oranda ölçeklenebilir bir IoT hizmet olarak yazılım (SaaS) çözümü olan Azure IoT Central, Survey 123, LMS365 ve ProjectWise Design Integration.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/).
+
+### <a name="release-2018-06-29"></a>Sürüm 2018-06-29
+
+- **SharePoint’te yerleşik olarak onaylama akışı isteği** - SharePoint’te bir dosyayı veya öğeyi seçtiğinizde yeni bir **Onay için iste** akışı görürsünüz. Bu akış herhangi bir yapılandırma ya da kurulum gerektirmez ve tek bir tıklamayla bir onay isteği gönderir.
+- **İki yeni bağlayıcı** - Cloud Connect Studio ve PoliteMail eklendi.
+- **Geçmiş ve sayfa oluşturma geliştirmeleri** - Çalıştırma geçmişi listesini, tam çalışma sürelerini dahil ederek, oluşturma sayfasını ise yeni bir video kılavuzu ile yeniliyoruz.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/request-sign-off-four-connectors/).
+
+### <a name="release-2018-06-08"></a>Sürüm 2018-06-08
+
+- **PowerShell Cmdlet’leri** - Arık hem akış oluşturucular hem de kiracı yöneticileri Akışlarını programlama yoluyla yönetmek için PowerShell’i kullanabilir.
+- **Teams Flow botu** - Microsoft Teams’deki Flow botu, akış düğmelerini çalıştırabilir ve akışınızı tanımlayabilir.
+- **Üç yeni bağlayıcı** - Marketo, ElasticOCR ve DynamicSignal için destek eklendi. 
+- **Ek Paylaşım Bilgileri** - Akış paylaştığınızda ya da paylaşılan akışları çalıştırdığınızda başka kişilerin tam olarak hangi izinlere sahip olacağını bilmesi için ek bilgi eklendi.
+- **Otomatik Kırpma SharePoint URL2leri** - Bir SharePoint URL’sini kopyalayıp tarayıcıya yapıştırdığınızda, siteden sonra ek metin içerebilir ve yalnızca siteye bağlanabilmeniz için bu metin otomatik olarak kaldırılır.
+- **GDPR istekleriyle ilgili belgeler** - Kurumsal kuruluşların Veri Konu Hakları taleplerini yerine getirebilmesi için eksiksiz bir kılavuz ve araç kümesi oluşturduk.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/).
 
 ### <a name="release-2018-05-21"></a>Sürüm 2018-05-21
 

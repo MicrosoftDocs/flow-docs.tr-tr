@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 06/19/2018
 ms.author: stepsic
-ms.openlocfilehash: 0595fa9113d85c6517392149f510a3a11df36061
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+ms.openlocfilehash: dcdd82b358737867372c1adece907158fa2ee77b
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519882"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774286"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow’da limitler ve yapılandırma
 Bu konu, akışlara yönelik geçerli limitler ve yapılandırma ayrıntılarıyla ilgili bilgi içerir.
@@ -46,7 +46,9 @@ Bunlar tek bir giden isteğe yönelik limitlerdir.
 
 | Ad | Limit |
 | --- | --- |
-| Yeniden deneme sayısı |4 |
+| Yeniden deneme sayısı |90 | Varsayılan değer 4'tür. Varsayılan değeri değiştirmek için eylem ayarlarını kullanın | 
+| En fazla gecikmede yeniden dene |1 gün | |
+| Yeniden deneme en az gecikme süresi |5 saniye | |
 
 ## <a name="run-duration-and-retention"></a>Çalışma süresi ve bekletme
 Bunlar tek bir akış çalıştırmasına yönelik limitlerdir.
@@ -64,10 +66,12 @@ Bunlar tek bir akış çalıştırmasına yönelik limitlerdir.
 
 | Ad | Limit | Notlar |
 | --- | --- | --- |
-| ForEach öğeleri |5,000 |Gerektiğinde daha büyük dizileri filtrelemek için filtreleme eylemini kullanabilirsiniz. |
+| Her bir öğeye uygulayın |100.000 |100.000 yalnızca premium planlarda kullanılabilir. Aksi takdirde, 5.000 ile sınırlı kalırsınız. Gerektiğinde daha büyük dizileri filtrelemek için filtreleme eylemini kullanabilirsiniz. |
 | Yinelemelere kadar |5,000 | |
-| SplitOn öğeleri |5,000 | |
-| ForEach Paralelliği |1 | |
+| SplitOn öğeleri |100.000 |Her birine uygula seçeneğinde olduğu gibi, premium planda değilseniz sınır 5.000’dir. |
+| Her birine uygula Paralellik |50 |Varsayılan olarak döngüler birbiri ardına çalışır (aslına bakılırsa parallellik 1). Varsayılan olarak 50’ye kadar paralel akış yapılandırabilirsiniz. |
+| Eylem yürütme işlemleri 5 dakikada bir yapılır | 100.000 | Ayrıca, bir iş yükünü gerektiğinde birden fazla akış oluşturmak üzere dağıtabilirsiniz. |
+| Eylemler eş zamanlı giden çağrılar | Yaklaşık 2.500 | Eş zamanlı istek sayısını veya süreyi gerektiği gibi azaltın. | 
 
 ## <a name="definition-limits"></a>Tanım limitleri
 Bunlar tek bir akışa yönelik limitlerdir.
