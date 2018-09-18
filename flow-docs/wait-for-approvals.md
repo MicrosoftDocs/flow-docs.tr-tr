@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2018
 ms.author: merwanhade
-ms.openlocfilehash: b75cacf14da7d1b339e8a2f9e35eece389c2a6f7
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 0cc750dd9601e7675cee148882c6aaee9250b92e
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29563167"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689997"
 ---
 # <a name="wait-for-approval-in-microsoft-flow"></a>Microsoft Flow'da onay bekleme
 

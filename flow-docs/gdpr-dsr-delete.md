@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39520089"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727194"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -276,7 +281,7 @@ Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içi
 Bir ortamda kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
 
 ## <a name="delete-gateway-settings"></a>Ağ Geçidi Ayarlarını Silme
-Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Silme İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
+Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Silme İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
 
 ## <a name="delete-user-details"></a>Kullanıcı Ayrıntılarını Silme
 Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. İşlem tamamlandıktan sonra bir yönetici, **Remove-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek kullanıcı ayrıntılarını silebilir.

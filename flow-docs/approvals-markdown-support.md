@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/23/2018
 ms.author: gcorvera
-ms.openlocfilehash: 147a5ee1e19744c6164cac4acdd04aef16440e46
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: a6c06fc564334eeacd01e54ab3b71046d229d033
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519813"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690049"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markdown kullanma
 

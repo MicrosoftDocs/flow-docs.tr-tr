@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29351311"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690849"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Common Data Service’ı kullanan bir akış oluşturma
 [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/)'ı kullanan bir akış oluşturarak iş verilerinin birleşik bir görünümünü elde edin ve operasyonel verimliliği artırın. İyi biçimlendirilmiş standart iş varlıkları (ör. Satış, Satın Alma, Müşteri Hizmetleri ve Üretkenlik) oluşturan bu güvenli iş veritabanını kuruluşunuzda dağıtın. Kuruluş verilerinizi, dış veri kaynaklarından (örneğin, Microsoft Excel ve Salesforce) daha fazla avantaj sunan bir veya daha fazla [özel varlıkta](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/) depolayın.

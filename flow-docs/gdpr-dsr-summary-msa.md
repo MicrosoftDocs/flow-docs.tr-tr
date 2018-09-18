@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/16/2018
 ms.author: keweare
-ms.openlocfilehash: b6fdcd33fd657086a5d37919858eceefabd18934
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34563291"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688502"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>GDPR Veri Sahibi Hakları (DSR) isteklerine yanıt verme
 

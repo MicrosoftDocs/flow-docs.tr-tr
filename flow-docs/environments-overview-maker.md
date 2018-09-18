@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 0e6b410f75f28ba13357878a5cda178bc66b69ff
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31008323"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690273"
 ---
 # <a name="choosing-an-environment"></a>Ortam seçme
 

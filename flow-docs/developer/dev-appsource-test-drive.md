@@ -15,12 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
-ms.openlocfilehash: 41d53a6f7382365dfcabbc98a2fa362d465720fa
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- developer
+ms.openlocfilehash: ac71b9b2d991496121d910e9e74b83e69d74c098
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39720571"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689514"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>AppSource’ta müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
 Uygulamanızın Microsoft Flow’la nasıl tümleştirildiğini mi göstermek istiyorsunuz? Şimdi Microsoft Flow tümleştirmesini müşterilerle paylaşmanın ve işletmenize müşteri adayları getirmenin bir yolu olarak [AppSource.com](https://appsource.microsoft.com) sitesinde Test Sürüşü çözümlerimiz vardır.

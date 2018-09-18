@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/26/2016
 ms.author: deonhe
-ms.openlocfilehash: fd76c12d1879c9b613ba833d9ef2211cd4aab702
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: ba064461c34ce73faa712964791643ef67fca089
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440253"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690158"
 ---
 # <a name="learn-all-about-data-groups"></a>Veri grupları hakkında bilgi edinin
 ## <a name="what-is-a-data-group"></a>Veri grubu nedir?

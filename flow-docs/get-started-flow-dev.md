@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: 1bcdbf3772ab2481b15bd224523dff74afc53101
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 21f35216231193f40c1a723dda62bb3a2ad1be59
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718293"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689652"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Microsoft Flow ile oluşturmaya başlama
 

@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/17/2017
 ms.author: stepsic
-ms.openlocfilehash: 135b3509a9412f7674a1e9cb2ada86ebd2bb9f4f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: b4407238f9d1782db802b47060b156b8b77c328b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23981294"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689054"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Akışa koşul ekleme
 

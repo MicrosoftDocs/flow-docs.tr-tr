@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34308729"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689974"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Kullanıcı girişli düğme akışları tanıtımı
 Rutin görevleri yalnızca bir düğmeye dokunarak çalıştırmak için düğme akışı oluşturun. Kullanıcıya akış çalıştırıldığında kullanılacak belirli ayrıntıları sağlama izni vererek akışınızı özelleştirin. Bu konuda, kullanıcıdan giriş alan bir düğme akışı oluşturma ve sonra bu düğme akışını çalıştırma işlemleri gösterilerek kullanıcı girişinin nasıl sağlandığı vurgulanır.

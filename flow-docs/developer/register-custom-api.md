@@ -14,12 +14,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/29/2018
 ms.author: sunayv
-ms.openlocfilehash: 045ae7c50cae1cf62782b33d3a6465fab89d033f
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- developer
+ms.openlocfilehash: b274da0bf638e338d2e566d9f6a3b133fc45f9fe
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39720563"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689422"
 ---
 # <a name="custom-connectors-in-microsoft-flow"></a>Microsoft Flow’da özel bağlayıcılar
 

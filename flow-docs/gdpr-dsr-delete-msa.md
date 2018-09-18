@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
 ms.author: keweare
-ms.openlocfilehash: c7bede08503fc1c009f07201f98e1a2197251bda
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: e42da775d5c004bfbe0d6bb8923e6d05aaa5e976
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34563292"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688985"
 ---
 # <a name="respond-to-gdpr-data-subject-delete-requests"></a>GDPR Veri Sahibi Silme İsteklerini yanıtlama
 

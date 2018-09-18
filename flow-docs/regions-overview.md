@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: deonhe
-ms.openlocfilehash: ec9b72e570c562c091aefd370f73d6862ff56f18
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 4d8be06222a0ed64290772d168def85720877f28
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23442089"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689583"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Microsoft Flow'daki bölgelerle ilgili SSS
 Bu belgede Microsoft Flow hakkında sık sorulan soruların bir listesi bulunur.

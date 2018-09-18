@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/04/2017
 ms.author: anjlic
-ms.openlocfilehash: b4243c00a3b7929654be52fdcb6dd9aa70ddf10d
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 1088408c3c226d64b4475c18e38729d5814c0305
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31008369"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690112"
 ---
 # <a name="sign-up-and-sign-in-for-microsoft-flow"></a>Microsoft Flow'a kaydolma ve oturum açma
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

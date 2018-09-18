@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
 ms.author: mhade
-ms.openlocfilehash: 224bc75a1025d024af236536f4325d2c577e248c
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f449307318fc1165cb607467de4cdd652df434d2
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31008220"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688621"
 ---
 # <a name="watch-your-flows-in-action"></a>Akışlarınızı çalışırken izleme
 
