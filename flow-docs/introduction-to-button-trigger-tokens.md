@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690940"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711623"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Düğme tetikleyici belirteçleri kullanmaya başlayın.
 ## <a name="what-are-button-trigger-tokens"></a>Düğme tetikleyici belirteçler nedir?
@@ -97,6 +97,4 @@ Tebrikler, hem tarih hem de tam adres tetikleyici belirteçleri kullanan bir dü
 
 ## <a name="next-steps"></a>Sonraki adımlar
 * [Düğme akışları paylaşma](share-buttons.md)
-* [Düğme akışları hakkında bilgi edinin](introduction-to-button-flows.md)  
-* [Akışlar hakkında bilgi edinin](guided-learning/get-started.yml?tutorial-step=1)
-
+* [Düğme akışları hakkında bilgi edinin](introduction-to-button-flows.md)
