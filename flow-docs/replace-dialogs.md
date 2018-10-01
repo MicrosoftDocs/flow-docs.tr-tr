@@ -16,12 +16,17 @@ caps.latest.revision: 12
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: e21d71c001deb7d696b880419985cf374a3d4cf4
-ms.sourcegitcommit: d3243c9f82c5e058919c5cb85d36d45f1f034411
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "43774311"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691101"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Diyalogları iş süreci akışları veya tuval uygulamalarıyla değiştirme
 

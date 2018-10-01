@@ -17,12 +17,17 @@ caps.latest.revision: 39
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: 258fedabea816b9a20a8f768632e797dec576365
-ms.sourcegitcommit: d3243c9f82c5e058919c5cb85d36d45f1f034411
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "43774237"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691055"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Öğretici: Süreçleri standartlaştırmak için bir iş süreci akışı oluşturma
 
