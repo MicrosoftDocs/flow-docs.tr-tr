@@ -13,14 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
-ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "43774280"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727263"
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -45,6 +50,29 @@ ms.locfileid: "43774280"
 3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+### <a name="release-2018-08-31"></a>Sürüm 2018-08-31
+
+- **Örnek veriler kullanarak akışınızı test edin** - Akışınızı geliştirirken Microsoft Flow Tasarımcısı içinde test etmek için bağlayıcılardan örnek veriler kullanın. Örnek verilerle test etmekle, üretim aşamasında dağıtıldığında akışınızın beklendiği gibi çalışacağını doğrulamış olursunuz.
+- **Beş yeni bağlayıcı** - Dört adet yeni yönetim bağlayıcısı ekledik: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins ve Microsoft School Data Sync.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/test-data-management-connectors/).
+
+### <a name="release-2018-08-24"></a>Sürüm 2018-08-24
+
+- **Yeni takvim eşitleme şablonları** - Google Calendar ve Office 365 ya da Outlook.com arasında olay kopyalayan yeni takvim şablonları.
+- **SharePoint için çok değerli desteği** - SharePoint'te Seçenek, Kişi veya Arama türlerinde olan çok değerli alanlar için okuma ve yazma.
+- **Kuruluşunuzdaki diğer kullanıcılar adına onaylar gönderin** - Akışı oluşturan kişi yerine dosyayı SharePoint listesine yükleyen kişi gibi kuruluşunuzdaki diğer kullanıcılar adına onaylar gönderin.
+- **Daha fazla düğmeli giriş türü** - Düğmelere iki yeni giriş türü eklenmiştir: Sayı ve Evet/Hayır.
+- **Bağlayıcı güncelleştirmeleri** - Yeni bir NetDocuments bağlayıcısı, Azure bağlayıcılarında yapılan iyileştirmeler ve diğerleri.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/button-types-more/).
+
+### <a name="release-2018-08-02"></a>Sürüm 2018-08-02
+
+Microsoft Flow'da çıkması yaklaşan işlevlere ve güncelleştirmelere erken erişim elde etmenin yolu Microsoft Flow Önizleme programıdır. En yeni özelliklere erkenden erişmek için Önizleme bölgesinde bir ortam oluşturup kullanmanız yeterlidir.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/flow-preview-program/).
 
 ### <a name="release-2018-07-23"></a>Sürüm 2018-07-23
 

@@ -1,0 +1,1 @@
+Deneyip düşüncelerinizi bizimle paylaşabilmeniz için bu önizlemeyi kullanımınıza sunuyoruz. Geri bildirimleriniz, en çok ihtiyaç duyduğunuz özellikleri eklemek için yaptığımız çalışmanın önceliğini belirlememize yardımcı olur. Genel kullanıma sunulan geri bildirim sitemizi kullanarak bize önerilerinizi sunmanızı ve sorunları bildirmenizi rica ediyoruz:

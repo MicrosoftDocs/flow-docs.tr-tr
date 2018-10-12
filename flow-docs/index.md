@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: Microsoft Flow Belgeleri | Microsoft Docs
-description: Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve daha fazlasını yapmanıza yardımcı olan bir hizmettir.
+description: Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.
 keywords:
 - Microsoft Flow
 - iş akışı
@@ -16,12 +16,17 @@ ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
 - karann-msft
-ms.openlocfilehash: 05bf99aa91b5cfe8635cc7be72669b4d1012ef49
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 03eebb10c1155894b9dc1db5a0283cd72d78a1ae
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34479770"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711600"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -56,16 +61,16 @@ ms.locfileid: "34479770"
                     <a href="#start-all"></a>
                     <ul id="start-all" class="cardsC">
                         <li>
-                            <a href="./guided-learning/index.yml">
+                            <a href="https://docs.microsoft.com/learn/paths/automate-process-using-flow">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" /><br/>                                            </div>
+                                                <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Kılavuzlu öğrenme turuna katılın</h3>
+                                            <h3>Microsoft Flow hakkında bilgi edinme</h3>
                                             <p>Öğrenme yolculuğunuza bu sıralı kurs koleksiyonu ile başlayın ve Microsoft Flow’un kapsamlı ve güçlü özelliklerini öğrenin.</p>
                                         </div>
                                     </div>
@@ -391,6 +396,44 @@ ms.locfileid: "34479770"
                                         <div class="cardText">
                                             <h3>Logic Apps ile akışlarınızı genişletme</h3>
                                             <p>Azure Logic Apps, Microsoft Flow’dakinden daha zengin bir özellik kümesi sağlar. Dilediğiniz bir akışı Logic Apps şablonu olarak kaydedip herhangi bir Logic Apps kaynağı yönetir gibi yönetin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/flow/business-process-flows-overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/analytics_reporting.svg" alt="Drive data collection and workflow consistency." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Veri toplama ve iş akışı tutarlılığını yönetme</h3>
+                                            <p>İş süreci akışlarını kullanarak veri toplama ve iş akışı tutarlılığını yönetme</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/flow/workflow-processes">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Uygulamalar için Common Data Service (CDS) kullanma</h3>
+                                            <p>İş akışı süreçleriyle Uygulamalar için Common Data Service (CDS) kullanma</p>
                                         </div>
                                     </div>
                                 </div>

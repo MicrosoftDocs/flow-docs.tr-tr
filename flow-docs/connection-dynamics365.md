@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727217"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188628"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
@@ -61,7 +61,7 @@ Bir şablondan akış oluşturmak için, bu adımları izleyin.
      Bu kılavuz için, **Müşteri Adayları**’nı seçin.
    
     ![Akış ayrıntıları](./media/connection-dynamics365/flow-details.png)
-    > [ÖNEMLİ] Akışın Dynamics 365 varlığı üzerinde tetiklenmesi için varlık tanımında Değişiklik İzleme özelliğinin etkinleştirilmiş olması gerekir. Daha fazla bilgi için bkz. [Veri senkronizasyonunu denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > [ÖNEMLİ] Akışın Dynamics 365 varlığı üzerinde tetiklenmesi için varlık tanımında **Değişiklik İzleme** özelliğinin etkinleştirilmiş olması gerekir. Daha fazla bilgi için bkz. [Veri senkronizasyonunu denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. **Yeni adım**'a ve ardından **Eylem ekle**'ye tıklayın veya dokunun.
 8. **Dynamics 365 – Yeni kayıt oluştur**’a tıklayın veya dokunun.

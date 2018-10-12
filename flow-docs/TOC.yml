@@ -1,49 +1,101 @@
-- name: Kullanmaya başlama
+items:
+- name: Genel bakış
   items:
-    - name: Kullanmaya başlama
-      href: getting-started.md
-    - name: Kaydolma
-      href: sign-up-sign-in.md
-    - name: Şablondan akış oluşturma
-      href: get-started-logic-template.md
-    - name: Sıfırdan akış oluşturma
-      href: get-started-logic-flow.md
-    - name: Takım akışı oluşturma
-      href: create-team-flows.md
-    - name: Ortamlara genel bakış
-      href: environments-overview-maker.md
-    - name: Sık sorulan sorular
-      href: frequently-asked-questions.md
-- name: Akış derleme
+  - name: Kaydolma
+    href: sign-up-sign-in.md
+  - name: Kullanmaya başlama
+    href: getting-started.md
+  - name: Kılavuzlu öğrenme
+    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
+  - name: Tarayıcıda akış oluşturma
+    href: get-started-logic-template.md
+  - name: Telefonda akış oluşturma
+    href: mobile-create-flow.md
+  - name: Takım akışı oluşturma
+    href: create-team-flows.md
+  - name: Common Data Service kullanan akış oluşturma
+    href: common-data-model-intro.md
+- name: Otomatik akışlar
   items:
-    - name: Eylem ekleme
-      href: multi-step-logic-flow.md
-    - name: Koşul ekleme
-      href: add-condition.md
-    - name: Akışı bir zamanlamaya göre çalıştırma
-      href: run-scheduled-tasks.md
-    - name: Akışı e-posta ile tetikleme
-      href: email-triggers.md
-    - name: Öğe listesini işleme alma
-      href: apply-to-each.md
-    - name: Veri işlemlerini kullanma
-      href: data-operations.md
-    - name: Verileri filtreleme ve kopyalama
-      href: odata-filters.md
-    - name: Koşullarda ifadeleri kullanma
-      href: use-expressions-in-conditions.md
-    - name: Dynamics 365 ile bir akış oluşturma
-      href: connection-dynamics365.md
-    - name: Common Data Service’e veri ekleme
-      href: common-data-model-intro.md
-    - name: Akış izleme
-      href: see-a-flow-run.md
-    - name: Şablon yayımlama
-      href: publish-a-template.md
-    - name: Akışla ilgili sorunları giderme
-      href: fix-flow-failures.md
-- name: Onay akışları oluşturun
+  - name: Sıfırdan akış oluşturma
+    href: get-started-logic-flow.md
+  - name: Akışı e-posta ile tetikleme
+    href: email-triggers.md
+  - name: Dynamics 365 ile bir akış oluşturma
+    href: connection-dynamics365.md
+  - name: Verileri filtreleme ve kopyalama
+    href: odata-filters.md
+  - name: Flic kullanma
+    href: flic-button-flows.md
+  - name: Bttn kullanma
+    href: bttn-button-flows.md
+- name: Düğme akışları
   items:
+  - name: Düğme akışı oluşturma
+    href: introduction-to-button-flows.md
+  - name: Tetikleyici belirteçleri ile düğme akışı oluşturma
+    href: introduction-to-button-trigger-tokens.md
+  - name: Kullanıcı girişli bir düğme akışı oluşturma
+    href: button-flow-with-user-input-tokens.md
+  - name: Düğmeyi paylaşma
+    href: share-buttons.md
+- name: Zamanlanmış akışlar
+  items:
+  - name: Akışı bir zamanlamaya göre çalıştırma
+    href: run-scheduled-tasks.md
+  - name: Öğe listesini işleme alma
+    href: apply-to-each.md
+- name: İş süreci akışları
+  items:
+  - name: İş süreci akışlarına genel bakış
+    href: business-process-flows-overview.md
+  - name: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma
+    href: create-business-process-flow.md
+  - name: Dal oluşturma ile iş süreci akışlarını geliştirme
+    href: enhance-business-process-flows-branching.md
+- name: Uygulamalar için Common Data Service (CDS)
+  items:
+  - name: Klasik Uygulamalar için CDS iş akışları
+    href: workflow-processes.md
+    items:
+    - name: İş akışı aşamalarını ve adımlarını yapılandırma
+      href: configure-workflow-steps.md
+    - name: İş akışı süreçlerini izleme ve yönetme
+      href: monitor-manage-processes.md
+    - name: İş akışı süreçleri için en iyi uygulamalar
+      href: best-practices-workflow-processes.md
+  - name: Klasik Uygulamalar için CDS eylemleri
+    items:
+    - name: Eylemler kullanma
+      href: actions.md
+    - name: Özel eylem oluşturma
+      href: create-actions.md
+    - name: Bir iş akışından özel eylemler yapılandırma
+      href: configure-actions.md
+    - name: Bir iş akışından özel eylemler çağırma
+      href: invoke-custom-actions-workflow-dialog.md
+  - name: Klasik Uygulamalar için CDS iş akışları
+    items:
+    - name: Mobil görev akışları oluşturma
+      href: create-mobile-task-flow.md
+  - name: Klasik Uygulamalar için CDS iletişim kutuları
+    items:
+    - name: Klasik Uygulamalar için CDS iletişim kutularını kullanma
+      href: use-cds-for-apps-dialogs.md
+    - name: Klasik Uygulamalar için CDS iletişim kutularını değiştirme
+      href: replace-dialogs.md
+- name: Nasıl yapılır
+  items:
+  - name: Eylem ekleme
+    href: multi-step-logic-flow.md
+  - name: Koşul ekleme
+    href: add-condition.md
+  - name: Veri işlemlerini kullanma
+    href: data-operations.md
+  - name: Koşullarda ifadeleri kullanma
+    href: use-expressions-in-conditions.md
+  - name: Onay akışları
+    items:
     - name: Tek onaylar
       href: modern-approvals.md
     - name: Sıralı onaylar
@@ -56,64 +108,61 @@
       href: common-data-model-approve.md
     - name: Onay isteklerini biçimlendirme
       href: approvals-markdown-support.md
-- name: Mobil uygulamayı kullanma
+  - name: Telefonda akışları yönetme
+    href: mobile-manage-flows.md
+  - name: Şablon yayımlama
+    href: publish-a-template.md
+- name: Sorun giderme
   items:
-    - name: Akış oluşturma
-      href: mobile-create-flow.md
-    - name: Düğme akışı oluşturma
-      href: introduction-to-button-flows.md
-    - name: Tetikleyici belirteçleri ile düğme akışı oluşturma
-      href: introduction-to-button-trigger-tokens.md
-    - name: Kullanıcı girişli bir düğme akışı oluşturma
-      href: button-flow-with-user-input-tokens.md
-    - name: Düğmeyi paylaşma
-      href: share-buttons.md
-    - name: Akış etkinliğini izleme
-      href: mobile-monitor-activity.md
-    - name: Akışlarınızı yönetme
-      href: mobile-manage-flows.md
-- name: Fiziksel cihazları kullanma
+  - name: Akış izleme
+    href: see-a-flow-run.md
+  - name: Telefonda akış etkinliği izleme
+    href: mobile-monitor-activity.md
+  - name: Akışla ilgili sorunları giderme
+    href: fix-flow-failures.md
+- name: Verilere bağlanma
   items:
-    - name: Flic kullanma
-      href: flic-button-flows.md
-    - name: Bttn kullanma
-      href: bttn-button-flows.md
-- name: Bağlantılar
+  - name: Kullanılabilir bağlantılar
+    href: https://go.microsoft.com/fwlink/?linkid=832211
+  - name: Bağlantıları yönetme
+    href: add-manage-connections.md
+  - name: Ağ geçitlerini yönetme
+    href: gateway-manage.md
+  - name: Ağ geçitlerini anlama
+    href: gateway-reference.md
+- name: Geliştiriciler için
   items:
-    - name: Kullanılabilir bağlantılar
-      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
-    - name: Bağlantıları yönetme
-      href: add-manage-connections.md
-    - name: Ağ geçitlerini yönetme
-      href: gateway-manage.md
-    - name: Ağ geçitlerini anlama
-      href: gateway-reference.md
-- name: Microsoft Flow için Geliştirme
-  items:
-    - name: 'Kurumsal geliştiriciler, iş ortakları ve ISV’ler için Microsoft Flow'
-      href: dev-enterprise-intro.md
-    - name: Özel bağlayıcılar derleme ve onaylama
-      href: register-custom-api.md
-    - name: Web siteleri ve diğer teknolojiler ile tümleştirme
-      href: embed-flow-dev.md
-    - name: Müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
-      href: dev-appsource-test-drive.md
+  - name: Kurumsal geliştiriciler, iş ortakları ve ISV’ler için Microsoft Flow
+    href: ./developer/dev-enterprise-intro.md
+  - name: Özel bağlayıcılar derleme ve onaylama
+    href: ./developer/register-custom-api.md
+  - name: Web siteleri ve diğer teknolojiler ile tümleştirme
+    href: ./developer/embed-flow-dev.md
+  - name: Müşterilerinizin akışlarınızda test sürüşü yapmasını sağlama
+    href: ./developer/dev-appsource-test-drive.md
+  - name: Kod kullanarak iş süreci akışları ile çalışma
+    href: ./developer/business-process-flows-code.md
+    items:
+    - name: 'Örnek: İş süreci akışları ile çalışma'
+      href: ./developer/sample-work-business-process-flows.md
+  - name: Özel Uygulamalar için CDS iş akışı etkinlikleri
+    href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Yönetim
   items:
-    - name: Kuruluşunuzda akışlarla ilgili soru-cevap
-      href: organization-q-and-a.md
-    - name: Fiyatlandırma
-      href: billing-questions.md
-    - name: Yönetim merkezine giriş
-      href: admin-center-introduction.md
-    - name: Ortamları yönetme
-      href: environments-overview-admin.md
-    - name: Veri kaybını önlemeye yardımcı olan bir ilke ayarlama
-      href: prevent-data-loss.md
-    - name: Veri gruplarına giriş
-      href: introduction-to-data-groups.md
-- name: DSR isteklerini yanıtlama
-  items:
+  - name: Kuruluşunuzda akışlarla ilgili soru-cevap
+    href: organization-q-and-a.md
+  - name: Fiyatlandırma
+    href: billing-questions.md
+  - name: Yönetim merkezine giriş
+    href: admin-center-introduction.md
+  - name: Ortamları yönetme
+    href: environments-overview-admin.md
+  - name: Veri kaybını önlemeye yardımcı olan bir ilke ayarlama
+    href: prevent-data-loss.md
+  - name: Veri gruplarına giriş
+    href: introduction-to-data-groups.md
+  - name: DSR isteklerini yanıtlama
+    items:
     - name: Özet
       href: gdpr-dsr-summary.md
     - name: İstekleri bulma
@@ -122,8 +171,8 @@
       href: gdpr-dsr-export.md
     - name: İstekleri silme
       href: gdpr-dsr-delete.md
-- name: Microsoft Hesapları için DSR istekleri
-  items:
+  - name: Microsoft Hesapları için DSR istekleri
+    items:
     - name: Özet
       href: gdpr-dsr-summary-msa.md
     - name: İstekleri bulma
@@ -136,9 +185,25 @@
       href: gdpr-dsr-accountclose-msa.md
 - name: Başvuru
   items:
-    - name: Bölgelere genel bakış
-      href: regions-overview.md
-    - name: Limitler ve yapılandırma
-      href: limits-and-config.md
-    - name: Sürüm notları
-      href: release-notes.md
+  - name: Bölgelere genel bakış
+    href: regions-overview.md
+  - name: Limitler ve yapılandırma
+    href: limits-and-config.md
+  - name: Sürüm notları
+    href: release-notes.md
+  - name: Sık sorulan sorular
+    href: frequently-asked-questions.md
+- name: Başkalarından öğrenin
+  items:
+  - name: Web Seminerleri
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/blog/
+  - name: Forumlar
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
+ms.openlocfilehash: 0ea74141e1c80b2f550ca5f43191a40c1b5aad58
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188536"

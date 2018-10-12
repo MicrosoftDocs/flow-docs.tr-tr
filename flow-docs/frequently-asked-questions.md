@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718316"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711669"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
@@ -43,8 +48,23 @@ Microsoft Flow; PowerApps, Common Data Service, Dynamics 365 ve Office 365’i k
 ### <a name="what-do-i-need-to-use-microsoft-flow"></a>Microsoft Flow kullanmak için neler gerekir?
 Microsoft Flow’u kullanmak için yalnızca bir web tarayıcısı ve bir e-posta adresi gereklidir.
 
-### <a name="what-browsers-does-microsoft-flow-support"></a>Microsoft Flow hangi tarayıcıları destekliyor?
-Microsoft Flow, Microsoft Edge'in yanı sıra, Chrome ve Safari'nin güncel sürümlerini destekler.
+### <a name="what-browsers-and-devices-can-i-use-with-microsoft-flow"></a>Microsoft Flow ile hangi tarayıcıları ve cihazları kullanabilirim?
+
+Microsoft Flow’u tüm modern cihazlar ve tarayıcılarda çalıştırabilirsiniz.
+
+#### <a name="supported-devices"></a>Desteklenen cihazlar
+
+Microsoft Flow modern cihazlarda harika çalışır. Microsoft Flow’u bir mobil cihazdan yönetmeniz gerekiyorsa, [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) ve [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab)’da kullanılabilir Microsoft Flow mobil uygulamasını deneyin.
+
+#### <a name="supported-browsers"></a>Desteklenen tarayıcılar
+
+İşletim sisteminizle uyumlu en güncel tarayıcıyı kullanmanızı öneririz. Aşağıdaki tarayıcılarım destekliyoruz:
+
+* Microsoft Edge
+* Internet Explorer 11
+* Safari
+* Chrome
+* Firefox
 
 ### <a name="which-email-addresses-are-supported"></a>Hangi e-posta adresleri desteklenir?
 Microsoft Flow; .gov ve .mil dışındaki etki alanlarıyla biten e-posta adreslerini destekler.  
@@ -125,6 +145,10 @@ Microsoft Flow onaylar, belge inceleme ve ekleme/çıkarma gibi birçok yaygın 
 ### <a name="how-does-microsoft-flow-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Microsoft Flow, kurumsal verilerin yanlışlıkla sosyal medya hizmetlerinde yayınlanmasını nasıl önler?
 Yöneticiler, Microsoft Flow’da yalnızca tasdikli hizmetlerin kullanıldığından emin olmak [veri kaybı önleme ilkeleri](prevent-data-loss.md) oluşturabilir.
 
+### <a name="does-microsoft-flow-support-service-accounts"></a>Microsoft Flow hizmet hesaplarını destekliyor mu?
+
+Bir hizmet hesabıyla akışlar oluşturabilimenize rağmen, hizmet hesabının kimlik bilgileri paylaşılmışsa bunu yapmanızı önermeyiz.
+
 ## <a name="licensing"></a>Lisanslama
 ### <a name="will-microsoft-flow-still-have-a-free-or-trial-option"></a>Microsoft Flow’da ücretsiz veya deneme sürümü seçeneği olacak mı?
 Evet. Sınırlı kullanıcı hakları sunan ücretsiz teklifimizden yararlanabilir ya da Microsoft Flow’un 90 günlük ücretsiz deneme sürümüne kaydolabilirsiniz. Deneme sürümü boyunca aboneliğinizi istediğiniz zaman etkinleştirebilirsiniz.
@@ -134,5 +158,5 @@ Microsoft Flow, hem ücretsiz hem de ücretli hizmet düzeyleri sunar. [Fiyatlan
 
 ## <a name="learn-more"></a>Daha fazla bilgi
 
-* Microsoft Flow’a ilişkin [kılavuzlu öğrenme turuna](guided-learning/index.yml) katılın
+* Microsoft Flow’a ilişkin [kılavuzlu öğrenme turuna](https://docs.microsoft.com/learn/paths/automate-process-using-flow) katılın
 * [Başlangıç kılavuzu](getting-started.md) ile Microsoft Flow hakkında temel bilgiler öğrenin
