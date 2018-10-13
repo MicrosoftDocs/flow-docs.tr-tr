@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,18 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440001"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689790"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama #
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Hoş Geldiniz! Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve daha fazlasını yapmanıza yardımcı olan bir hizmettir.
+
+Ana akış türleri; [otomatik](get-started-logic-flow.md), [düğme](introduction-to-button-flows.md), [zamanlanmış](run-scheduled-tasks.md) ve [iş süreci](business-process-flows-overview.md) akışlarıdır.
+
+Bir Dynamics 365 müşteri etkileşimi özelleştiricisiyseniz; [iş akışları](configure-workflow-steps.md), [eylemler](create-actions.md), [mobil görev akışları](create-mobile-task-flow.md) ve [iletişim kutularını](use-cds-for-apps-dialogs.md) içeren klasik Uygulamalar için Common Data Service işlemlerine de aşina olabilirsiniz.
 
 İlk adım olarak [kaydolmanız](sign-up-sign-in.md) gerekir. Zaten bir Microsoft Flow hesabınız varsa tabletinizde, masaüstü bilgisayarınızda ve hatta telefonunuzda [oturum açabilirsiniz](https://flow.microsoft.com/signin).
 
