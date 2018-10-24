@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
+ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711669"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892416"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
@@ -133,7 +133,7 @@ Akışınızın geri açıldığında nasıl yanıt vereceğini anlamak için a�
 
 Tetikleyici türü|Açıklama
 -------|--------
-**Yineleme** tetikleyicisi gibi yoklama|Akış tekrar açıldığında, işlenmeyen/beklemedeki tüm olaylar işlenir.
+**Yineleme** tetikleyicisi gibi yoklama|Akış tekrar açıldığında, işlenmeyen/beklemedeki tüm olaylar işlenir. Bekleyen öğeleri işlemek istemiyorsanız akışınızı silin.
 Web kancası|Akış tekrar açıldığında yalnızca akış açıldıktan sonra oluşturulan yeni olayları işler.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Microsoft Flow hangi bölgeleri ve dilleri destekler?
