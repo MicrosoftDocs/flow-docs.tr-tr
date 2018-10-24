@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690549"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874449"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Koşullarda ifadeleri kullanarak birden çok değeri denetleme
 Bu kılavuzda, **Gelişmiş mod**’da ifadeleri ve **Koşulları** kullanarak birden çok değeri nasıl karşılaştırabileceğinizi öğreneceksiniz.
@@ -44,7 +44,7 @@ Koşullarınızda aşağıdaki mantıksal ifadelerin herhangi bir birleşimini k
 |[greater](#use-the-greater-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade false değerini döndürür:<br>greater(10,10)
 |greaterOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyük veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade false değerini döndürür:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Nesne, dizi veya dize boşsa true değerini döndürür.|Bu ifade true değerini döndürür:<br>empty('')
-|not|İki bağımsız değişkeni alır ve bunlar false ise true değerini döndürür. <br><b>Not</b>: İki bağımsız değişkenin de Boolean olması gerekir.|Bu ifade true değerini döndürür:<br>not(contains('200 Success','Fail'))
+|not|Bir boolean değerinin tersini döndürür. |Bu ifade true değerini döndürür:<br>not(contains('200 Success','Fail'))
 |if|İfadenin true veya false olarak sonuçlanmasına bağlı olarak belirli bir değeri döndürür.|Bu ifade "yes" değerini döndürür:<br>if(equals(1, 1), 'evet', 'hayır')
 
 ## <a name="prerequisites"></a>Önkoşullar
