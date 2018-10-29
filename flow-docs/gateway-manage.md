@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 04246007fabacabaf86914f906eee1741df217a1
-ms.sourcegitcommit: b5395b7f3d6610990cbbeeff8f6972224bc2149a
+ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
+ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817953"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087920"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Microsoft Flow’da şirket içi veri ağ geçitlerini yönetme
 
@@ -34,6 +34,7 @@ Microsoft Flow aracılığıyla çeşitli bulut tabanlı uygulamalarınızı şi
 Ağ geçidi aracılığıyla şu bağlantılar üzerinden şirket içi verilere erişebilirsiniz:
 
 * Apache Impala
+* Oluşturduğunuz özel bağlayıcılar
 * DB2
 * Dosya Sistemi
 * Azure AD ile Http
