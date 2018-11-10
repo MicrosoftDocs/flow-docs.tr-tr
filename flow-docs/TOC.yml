@@ -53,6 +53,20 @@ items:
     href: create-business-process-flow.md
   - name: Dal oluşturma ile iş süreci akışlarını geliştirme
     href: enhance-business-process-flows-branching.md
+- name: Çözümler
+  items:
+  - name: Genel bakış
+    href: overview-solution-flows.md
+  - name: Çözümde akış oluşturma
+    href: create-flow-solution.md
+  - name: Çözümü dışarı aktarma
+    href: export-flow-solution.md
+  - name: Çözümü içeri aktarma
+    href: import-flow-solution.md
+  - name: Çözüm odaklı akış düzenleme
+    href: edit-solution-aware-flow.md
+  - name: Çözüm odaklı akış kaldırma
+    href: remove-solution-aware-flow.md
 - name: Uygulamalar için Common Data Service (CDS)
   items:
   - name: Klasik Uygulamalar için CDS iş akışları
@@ -201,9 +215,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forumlar
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: 0ea74141e1c80b2f550ca5f43191a40c1b5aad58
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: a98100739ff22967f0de01d13ce3b75116d2b811
+ms.sourcegitcommit: 35efd5c72e25636470d5e307eba29f77032c29df
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188536"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51028666"
