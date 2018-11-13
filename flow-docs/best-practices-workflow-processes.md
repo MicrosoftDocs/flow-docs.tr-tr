@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94c38a54fec91e6a480cd90d0a72f19ca56ae51c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689537"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51225552"
 ---
 # <a name="best-practices-for-workflow-processes"></a>İş akışı işlemleri için en iyi yöntemler
 
@@ -61,7 +61,7 @@ Arka planda çalışmayan (zaman uyumlu) iş akışlarının tanımında**Hatala
 ![Başarısız iş akışları için günlükleri saklama seçeneği](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Aynı varlığı güncelleştiren iş akışı sayısını sınırlayın
-Aynı varlığı güncelleştiren birden fazla iş akışının çalıştırılması kaynak kilitleme sorunlarına neden olabilir. Her fırsat güncelleştirmesinin ilgili hesapta bir güncelleştirmeyi tetiklediği birden fazla iş akışına sahip olduğunuzu düşünün. Bu iş akışlarının birden fazla örneğinin aynı anda çalışarak aynı hesap kaydını güncelleştirmeye çalışması kaynak kilitleme sorunlarına yol açabilir. İş akışı hataları oluşur ve **SQL Zaman aşımı: *kaynak adı* adlı kaynak kilitlenemiyor** gibi bir hata iletisi kaydedilir. 
+Aynı varlığı güncelleştiren birden fazla iş akışının çalıştırılması kaynak kilitleme sorunlarına neden olabilir. Her fırsat güncelleştirmesinin ilgili hesapta bir güncelleştirmeyi tetiklediği birden fazla iş akışına sahip olduğunuzu düşünün. Bu iş akışlarının birden fazla örneğinin aynı anda çalışarak aynı hesap kaydını güncelleştirmeye çalışması kaynak kilitleme sorunlarına yol açabilir. İş akışı hataları oluşur ve **SQL Zaman aşımı: _kaynak adı_ adlı kaynak kilitlenemiyor** gibi bir hata iletisi kaydedilir. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
