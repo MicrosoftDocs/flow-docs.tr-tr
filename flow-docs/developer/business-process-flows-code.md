@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691078"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma
@@ -354,7 +354,7 @@ Varsayılan olarak, kendisine birden çok iş süreci akışı tanımlanmış ol
 1. İş süreci akışı tanım kayıtlarının **Workflow.PrimaryEntity** özniteliği temelinde, yeni varlık kaydına uygulanabilecek tüm iş süreci akışlarını belirleyin.
 2. Geçerli kullanıcının erişebildiği iş süreci akışı tanımlarını belirleyin. İş süreci akışına erişimi saptama ve yönetme hakkında bilgi için, bu konu başlığının önceki kısımlarında [İş süreci akışları için güvenliği yönetme](#BPFSecurity) bölümüne bakın.<br/>  
 3. Sistemdeki tüm iş süreci akışı tanımları varlık başına genel düzene tabidir. İş süreci akışının düzeni **Workflow.ProcessOrder** özniteliğinde depolanır. Varlığın iş süreci akışı tanımları bu düzene göre sıralanır ve sıralama değeri en düşük olan tanım seçilir.
-4. Son olarak, varlık kaydı bir iş uygulamasından (uygulama modülü) oluşturulduysa, yeni varlık kaydına otomatik olarak uygulanacak iş süreci akışını seçmek için bir filtreleme düzeyi daha uygulanır. Kullanıcılar bir uygulamada çalışırken, iş uygulamasına atanmış olan güvenlik rollerinden dolayı yalnızca erişimleri olan ilgili varlıklara, iş süreci akışlarına, görünümlere ve formlara erişebilir. 
+4. Son olarak, varlık kaydı bir iş uygulamasından (uygulama modülü) oluşturulduysa, yeni varlık kaydına otomatik olarak uygulanacak iş süreci akışını seçmek için bir filtreleme düzeyi daha uygulanır. Kullanıcılar bir uygulamada çalışırken, iş uygulamasına atanmış olan güvenlik rollerinden dolayı yalnızca erişimleri olan ilgili varlıklara, iş süreci akışlarına, görünümlere ve formlara erişebilir. 
     - İş uygulamasının hiç iş süreci akışı yoksa, iş süreci akışı 3. adımda açıklandığı gibi uygulanır.
     - İş uygulamasının bir veya birden çok iş süreci akışı varsa, yalnızca uygulamada var olan iş süreci akışları uygulanabilir. Bu durumda, kullanıcı bir iş uygulaması bağlamında çalışırken, 3. adımdaki iş süreci akışlarının listesi yine filtrelenerek uygulama modülünün içindeki iş uygulamasının parçası olan iş süreci akışları bırakılır ve bunlar süreç düzeni temelinde sıralanır. 
     - İş uygulamasında varlık için iş süreci akışı yoksa veya kullanıcının erişebildiği bir iş süreci akışı yoksa, yeni varlık kaydına hiçbir iş süreci akışı uygulanmaz.
