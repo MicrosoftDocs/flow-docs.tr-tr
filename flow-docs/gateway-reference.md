@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690917"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179829"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Microsoft Flow için şirket içi veri ağ geçitlerini anlama
 Şirket içi veri ağ geçidini Microsoft Flow ile kullanarak Microsoft SQL Server gibi şirket içi veri kaynaklarınızla güvenli bağlantılar kurun.
@@ -123,14 +123,14 @@ Daha kapsamlı bir test gerçekleştirmek istiyorsanız **ComputerName** ve **Po
 Güvenlik duvarı, Azure Service Bus'tan Azure veri merkezlerine giden bağlantıları da engelliyor olabilir. Böyle bir durumda, bölgenizdeki tüm [IP adreslerini](https://www.microsoft.com/download/details.aspx?id=41653) ilgili veri merkezleri için güvenilenler listesine eklemeniz (engellemelerini kaldırmanız) gerekir.
 
 ## <a name="configure-ports"></a>Bağlantı noktalarını yapılandırma
-Ağ geçidi, Azure Service Bus'a yönelik bir giden bağlantı oluşturur. Ağ geçidi, şu giden bağlantı noktaları üzerinden iletişim kurar: TCP 443 (varsayılan), 5671, 5672, 9350-9354. Ağ geçidi için gelen bağlantı noktaları gerekmez.
+Ağ geçidi, Azure Service Bus'a yönelik bir giden bağlantı oluşturur. Ağ geçidi, şu giden bağlantı noktaları üzerinden iletişim kurar: TCP 443 (varsayılan), 5671, 5672, 9350 - 9354. Ağ geçidi için gelen bağlantı noktaları gerekmez.
 
 [Karma çözümler](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/) hakkında daha fazla bilgi edinin.
 
 | Etki alanı adları | Giden bağlantı noktaları | Açıklama |
 | --- | --- | --- |
 | *. analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *. servicebus.windows.net |5671-5672 |Gelişmiş İleti Sıraya Alma Protokolü (AMQP) |
 | *. servicebus.windows.net |443, 9350-9354 |TCP üzerinden Service Bus Geçişi üstündeki dinleyiciler (Access Control belirteç alımı için 443 gerekir) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -164,7 +164,7 @@ Bu, şirket içi veri kaynaklarına bağlanmak için kullandığınız hesap vey
 * Filesystem
 * DB2
 
-**Soru:** Buluttaki veri kaynakları için (ör. SQL Azure) bir ağ geçidi gerekir mi?
+**Soru:** SQL Azure gibi buluttaki veri kaynakları için bir ağ geçidi gerekir mi?
 **Cevap:** Hayır. Ağ geçidi yalnızca şirket içi veri kaynaklarına bağlanır.
 
 **Soru:** Asıl Windows hizmeti adı nedir?
@@ -180,7 +180,7 @@ Bu, şirket içi veri kaynaklarına bağlanmak için kullandığınız hesap vey
 **Cevap:** Hayır. Ağ geçidi, sağlanan bağlantı bilgilerini kullanarak veri kaynağına bağlanır. Bu bağlamda ağ geçitlerini, bir istemci uygulama gibi düşünebilirsiniz. Ağ geçidinin, yalnızca sağlanan sunucu adına bağlanabiliyor olması gerekir.
 
 **Soru:** Ağ geçidinden veri kaynağına yönelik sorgu çalıştırma işlemi için gecikme süresi nedir? En iyi mimari nedir?
-**Cevap:** Ağ üzerindeki gecikme süresini azaltmak için ağ geçidini veri kaynağına olabildiğince yakın yükleyin. Ağ geçidini, asıl veri kaynağı üzerine yükleyebilirseniz yaşayacağınız gecikme süresini en aza indirebilirsiniz. Veri merkezlerini de göz önünde bulundurun. Örneğin, hizmetiniz Batı ABD veri merkezini kullanıyorsa ve SQL Server'ınız bir Azure sanal makinesinde barındırılıyorsa, Azure sanal makinenizin de Batı ABD'de bulunmasını istersiniz. Bu sayede gecikme süresini en aza indirir ve Azure sanal makinesine ilişkin çıkış ücretlerinin önüne geçersiniz.
+**Cevap:**  Ağ üzerindeki gecikme süresini azaltmak için ağ geçidini veri kaynağına olabildiğince yakın yükleyin. Ağ geçidini, asıl veri kaynağı üzerine yükleyebilirseniz yaşayacağınız gecikme süresini en aza indirebilirsiniz. Veri merkezlerini de göz önünde bulundurun. Örneğin, hizmetiniz Batı ABD veri merkezini kullanıyorsa ve SQL Server'ınız bir Azure sanal makinesinde barındırılıyorsa, Azure sanal makinenizin de Batı ABD'de bulunmasını istersiniz. Bu sayede gecikme süresini en aza indirir ve Azure sanal makinesine ilişkin çıkış ücretlerinin önüne geçersiniz.
 
 **Soru:** Ağ bant genişliği için herhangi bir gereksinim var mı?
 **Cevap:** Ağ bağlantınız için iyi bir veri aktarım hızınızın olması önerilir. Her ortam birbirinden farklıdır ve gönderilen veri miktarı sonuçları etkiler. ExpressRoute, şirket içi ile Azure veri merkezleri arasında belirli düzeyde bir aktarım hızı elde etmenize yardımcı olur.
@@ -191,20 +191,20 @@ Aktarım hızınızı belirlemek için üçüncü taraf bir uygulama olan [Azure
 **Cevap:** Hayır. Windows hizmetinin geçerli bir Windows hesabı olmalıdır. Hizmet, varsayılan olarak Hizmet SID'si (*NT SERVICE\PBIEgwService*) ile çalıştırılır.
 
 **Soru:** Sonuçlar buluta nasıl gönderilir?
-**Yanıt:** Sonuçlar Azure Service Bus kullanılarak gönderilir. Daha fazla bilgi edinmek için bu işlemin [nasıl gerçekleştiğine](gateway-reference.md#how-the-gateway-works) göz atın.
+**Cevap:** Sonuçlar Azure Service Bus kullanılarak gönderilir. Daha fazla bilgi edinmek için bu işlemin [nasıl gerçekleştiğine](gateway-reference.md#how-the-gateway-works) göz atın.
 
 **Soru:** Kimlik bilgilerim nerede depolanır?
-**Yanıt:** Bir veri kaynağı için girdiğiniz kimlik bilgileri, ağ geçidi bulut hizmetinde şifrelenir ve depolanır. Kimlik bilgilerinin şifresi, şirket içi ağ geçidinde çözülür.
+**Cevap:** Bir veri kaynağı için girdiğiniz kimlik bilgileri, ağ geçidi bulut hizmetinde şifrelenir ve depolanır. Kimlik bilgilerinin şifresi, şirket içi ağ geçidinde çözülür.
 
 ### <a name="high-availabilitydisaster-recovery"></a>Yüksek kullanılabilirlik/olağanüstü durum kurtarma
 **Soru:** Ağ geçidi ile yüksek kullanılabilirlik senaryolarını etkinleştirmeye yönelik herhangi bir plan var mı?
-**Yanıt:** Yüksek kullanılabilirlik [artık mevcuttur](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
+**Cevap:** Yüksek kullanılabilirlik [artık mevcuttur](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Soru:** Olağanüstü durum kurtarma için hangi seçenekler kullanılabilir?
 **Cevap:** Bir ağ geçidini geri yüklemek veya taşımak için kurtarma anahtarını kullanabilirsiniz.
 
 **Soru:** Kurtarma anahtarının avantajı nedir?
-**Yanıt:** Ağ geçidinizi aktarmanız veya geri yüklemeniz için bir yol sağlar.
+**Cevap:** Ağ geçidinizi aktarmanız veya geri yüklemeniz için bir yol sağlar.
 
 ### <a name="troubleshooting-questions"></a>Sorun giderme soruları
 **Soru:** Ağ geçidi günlükleri nerede bulunur?

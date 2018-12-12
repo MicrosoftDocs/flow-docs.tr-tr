@@ -2,7 +2,7 @@
 title: Bir iş akışından özel eylemler çağırma | Microsoft Docs
 description: İş akışından özel eylem çağırmayı öğrenin
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 11/22/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -22,21 +22,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b2904632f4b3bf097275906d917e686cace67ba
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: e4dbedbd8157f2dd1814bbbbd080a6b366c04938
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688532"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53006990"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemler çağırma
 
-İş akışları, iş senaryolarını destekleyen birçok özelliğe sahiptir. Bir iş akışından bir kayıt için oluşturma, güncelleştirme ve silme gibi temel SDK eylemlerini çağırmak birçok iş senaryosu için gerekli çözümleri sunacaktır. Ancak iş akışlarının özelliklerini doğrudan iş akışından çağrılan özel eylemlerin gücüyle birleştirdiğinizde kod yazmaya ihtiyaç duymadan uygulamanıza yepyeni iş senaryoları eklemiş olursunuz.  
+İş akışları, iş senaryolarını destekleyen birçok özelliğe sahiptir. Bir iş akışından bir kayıt için oluşturma, güncelleştirme ve silme gibi temel veri işlemi eylemlerini çağırmak birçok iş senaryosu için gerekli çözümleri sunacaktır. Ancak iş akışlarının özelliklerini doğrudan iş akışından çağrılan özel eylemlerin gücüyle birleştirdiğinizde kod yazmaya ihtiyaç duymadan uygulamanıza yepyeni iş senaryoları eklemiş olursunuz.  
   
  Şimdi iş akışından özel eylemin çağrıldığı bir senaryoya bakalım. Belirli bir fırsat için uygulanan indirim %20'yi aştığında yöneticinin onayını almak için özel bir eylem çağıracağız.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Dynamics 365 müşteri etkileşimi örneği: Fırsat varlığını kullanarak özel eylem oluşturma
+## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Dynamics 365 müşteri katılımı örneği: Fırsat varlığını kullanarak özel eylem oluşturma
   
 1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer)'nde **İşlemler**'i seçin.  
   

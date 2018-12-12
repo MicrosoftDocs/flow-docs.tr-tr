@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: 1283d9d0a8e7f2b9b0495400c5db1f624ef91954
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "44691078"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007013"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma
 
@@ -65,7 +65,7 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
   
  Örneğin, iş süreci akışı tanımının adı olarak "My Custom BPF" belirttiyseniz ve yeni etkin çözümünüz için varsayılan yayımcıyı (new) kullanıyorsanız, süreç örneklerini depolamak için oluşturulan özel varlığın adı "new_mycustombpf" olacaktır.  
   
- İş süreci akışı tanımı için `uniquename` değeri yoksa, örneğin iş süreci akışı önceki sürümden bir çözümün parçası olarak içeri aktarıldıysa, özel varlığın varsayılan adı "*\<activesolutionprefix>*\_bpf\_*<GUID_BPF_Definition>* olur:  
+ İş süreci akışı tanımı için `uniquename` değeri yoksa, örneğin iş süreci akışı önceki sürümden bir çözümün parçası olarak içeri aktarıldıysa, özel varlığın varsayılan adı "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>` olur:  
   
 > [!IMPORTANT]
 >  Örnek iş süreci akışı kayıtları, ilgili iş süreci akışı örneği kayıtlarını depolamak için sistem varlıklarını kullanır.  
@@ -97,8 +97,8 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
          }
       ]
     }
-
-- **Using the Organization service**: Use the following code sample:
+    ```
+- **Kuruluş hizmetini kullanma**: Aşağıdaki kod örneğini kullanın:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -119,35 +119,35 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
-> The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
+> İş süreci akışı varlıkları için <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> özelliğinin değeri `true` olur. Aşağıdaki Web API'si isteğini çalıştırarak örneğinizdeki tüm iş süreci akışı varlıklarını alabilirsiniz:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## Manage security for business process flows
+## <a name="manage-security-for-business-process-flows"></a>İş süreci akışları için güvenliği yönetme
 
-The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Customer Engagement. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
+İş süreci akışı etkinleştirildiğinde iş süreci akış örneklerini depolamak üzere otomatik olarak oluşturulan özel varlık, aynı Müşteri Bağlantısı'ndaki diğer tüm özel varlıklar gibi standart güvenlik modeline uyar. Bunun anlamı, bu varlıklara verilen ayrıcalıkların iş süreci akışlarına ilişkin kullanıcı çalışma zamanı izinlerini tanımladığıdır.
 
-The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his/her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
+Özel iş süreci akışı varlığı kuruluş kapsamına sahiptir. Bu varlık üzerindeki normal oluşturma, alma, güncelleştirme ve silme ayrıcalıkları, kullanıcının kendine atanmış rolleri temel alabilecek izni tanımlar. Varsayılan olarak, iş süreci akışı özel varlığı oluşturulduğunda yalnızca **Sistem Yöneticisi** ve **Sistem Özelleştiricisi** güvenlik rollerine erişim verilir ve gerekirse diğer güvenlik rolleri için yeni iş süreci akışı varlığına açıkça izin vermeniz gerekir (örneğin, **My Custom BPF**).
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## Create, retrieve, update, and delete business process flow entity records (process instances)  
- The custom entity that is automatically created on activating a business process flow definition stores all the process instances for the business process flow definition. The custom entity supports the standard programmatic creation and management of records (process instances) using Web API and CRM 2011 endpoint.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>İş süreci akışı varlık kayıtlarını (süreç örnekleri) oluşturma, alma, güncelleştirme ve silme  
+ İş süreci akışı tanımı etkinleştirildiğinde otomatik olarak oluşturulan özel varlık, iş süreci akışı tanımı için tüm süreç örneklerini depolar. Özel varlık, Web API ve CRM 2011 uç noktasının kullanımıyla kayıtların (süreç örnekleri) standart programlama yoluyla oluşturulmasını ve yönetimini destekler.
 
 > [!IMPORTANT]
-> Switching to another process instance for an entity record is only supported through UI (client) or programmatically using information available in this section. You can no longer use the `SetProcess` message (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> or <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) to programmatically switch processes (set another business process flow as the active process instance) for the target entity record. 
+> Bir varlık kaydı için başka bir süreç örneğine geçmek, bu bölümde sağlanan bilgiler kullanılarak yalnızca kullanıcı arabirimi (istemci) aracılığıyla veya programlama yoluyla yapıldığında desteklenir. Hedef varlık kaydı için programlama yoluyla süreçleri değiştirmek (etkin süreç örneği olarak başka bir iş süreci akışını ayarlamak) amacıyla artık `SetProcess` iletisini (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> veya <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) kullanamazsınız. 
 
- Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
+ Şimdi 3 aşamalı bir varlıklar arası iş süreci akışımızın ("My Custom BPF") olduğu aşağıdaki örneği gözden geçirelim: S1:Account S2:Account ve S3:Contact. 
 
  ![](media/sample-bpf.png)
  
-### Retrieve all the records (instances) for a business process flow entity
- If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>İş süreci akışı varlığı için tüm kayıtları (örnekleri) alma
+ İş süreci akışı varlığınızın adı "new_mycustombpf" ise, aşağıdaki sorguyu kullanarak iş süreci akışı varlığınız için tüm kayıtları (süreç örneklerini) alabilirsiniz:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -264,9 +264,9 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Süreç örneğinin durumunu değiştirme: Durdur, Yeniden Etkinleştir veya Bitir 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Süreç örneğinin durumunu değiştirme: Durdurma, Yeniden Etkinleştirme veya Tamamlama 
 
-Süreç örneğinin durumu şunlardan biri olabilir: **Etkin**, **Bitti** veya **Durduruldu**. Durum, süreç örneği kaydında aşağıdaki öznitelikler tarafından belirlenir:
+Süreç örneğinin durumu şunlardan biri olabilir: **Etkin**, **Tamamlandı** veya **İptal Edildi**. Durum, süreç örneği kaydında aşağıdaki öznitelikler tarafından belirlenir:
 
 - **statecode**: Süreç örneğinin durumunu görüntüler.
 
@@ -343,7 +343,7 @@ Tüm iş süreci tanımları genelinde bir varlık kaydının tüm iş süreci a
   
  İş süreci akışı örneğinin etkin aşama ve etkin yol bilgilerine sahip olduktan sonra, bu bilgileri kullanarak etkin yolda önceki veya sonraki aşamaya geçebilirsiniz. Aşamalarda ileriye gitme işlemi sırayla yapılmalıdır; başka bir deyişle, etkin yolda yalnızca bir sonraki aşamaya ilerlemelisiniz.   
   
- Bu iki yöntemin kullanımını ve [Kuruluş hizmeti](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata)'ni kullanarak aşama gezintisini gösteren eksiksiz bir örnek kod için bkz. [Örnek: İş süreci akışlarıyla çalışma](sample-work-business-process-flows.md). 
+ Bu iki yöntemin kullanımını ve [Kuruluş hizmeti](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata)'ni kullanarak aşama gezintisini gösteren eksiksiz bir örnek kod için bkz. [Örnek: İş süreci akışlarıyla çalışma](sample-work-business-process-flows.md) 
 
 <a name="ApplyBPF"></a>   
 ## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Varlık kaydını oluştururken iş süreci akışı uygulama

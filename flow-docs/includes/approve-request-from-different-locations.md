@@ -5,7 +5,7 @@ Bir isteği onaylamak için:
 ### <a name="from-email"></a>E-postadan
 1. SharePoint Online listesine bir öğe eklendiğinde gönderilen e-postada **Onayla** seçeneğini belirleyin.
    
-     Not: Microsoft Flow uygulamasının yüklü olduğu bir mobil cihaz kullanıyorsanız Microsoft Flow uygulaması açılır, aksi durumda onay merkezi tarayıcınızda açılır.
+     Not: Microsoft Flow uygulamasının yüklü olduğu bir mobil cihaz kullanıyorsanız Microsoft Flow uygulaması açılır, aksi takdirde onay merkezi tarayıcınızda açılır.
    
     ![İstek e-postası](media/modern-approvals/email-approval-request.png)
 2. Bir açıklama girin ve **Onayla** düğmesini seçin.
