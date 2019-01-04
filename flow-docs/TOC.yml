@@ -65,7 +65,7 @@ items:
     href: import-flow-solution.md
   - name: Çözüm odaklı akış düzenleme
     href: edit-solution-aware-flow.md
-  - name: Çözüm odaklı akış kaldırma
+  - name: Çözüm kullanan bir akışı kaldırma
     href: remove-solution-aware-flow.md
 - name: Uygulamalar için Common Data Service (CDS)
   items:
@@ -157,7 +157,7 @@ items:
   - name: Kod kullanarak iş süreci akışları ile çalışma
     href: ./developer/business-process-flows-code.md
     items:
-    - name: 'Örnek: İş süreci akışları ile çalışma'
+    - name: 'Örnek: İş süreci akışlarıyla çalışma'
       href: ./developer/sample-work-business-process-flows.md
   - name: Özel Uygulamalar için CDS iş akışı etkinlikleri
     href: ./developer/custom-cds-for-apps-workflow-activities.md
@@ -205,6 +205,8 @@ items:
     href: limits-and-config.md
   - name: Sürüm notları
     href: release-notes.md
+  - name: Microsoft Flow Web API’si
+    href: web-api.md
   - name: Sık sorulan sorular
     href: frequently-asked-questions.md
 - name: Başkalarından öğrenin
@@ -215,9 +217,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forumlar
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: a98100739ff22967f0de01d13ce3b75116d2b811
-ms.sourcegitcommit: 35efd5c72e25636470d5e307eba29f77032c29df
+ms.openlocfilehash: a06bf4922b8e17fb8956d9fd5d45f313f736c286
+ms.sourcegitcommit: 791bf29ad58dee8df475fc864ccc213c2c1ebd75
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51028666"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441103"
