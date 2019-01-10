@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
+ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727194"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248857"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -55,7 +55,7 @@ El ile inceleme gerektiren veriler ve kaynaklar için, Microsoft Flow belirli bi
 
 * **Web sitesi erişimi:** [PowerApps Yönetim Merkezi](https://admin.powerapps.com/) veya [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com/)’nde oturum açın
 
-* **PowerShell erişimi:** [PowerApps Yönetici PowerShell cdmlet’leri](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell erişimi:**  [PowerApps Yönetici PowerShell cmdlet'leri](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için kullanabileceği deneyimlerin dökümü şöyledir:
 
@@ -175,6 +175,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Kullanıcının paylaşılan bağlantılara yönelik izinlerini silme
 
 PowerApps Oluşturucu PowerShell cmdlet'leri
@@ -281,11 +282,12 @@ Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içi
 Bir ortamda kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
 
 ## <a name="delete-gateway-settings"></a>Ağ Geçidi Ayarlarını Silme
+
 Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Silme İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
 
 ## <a name="delete-user-details"></a>Kullanıcı Ayrıntılarını Silme
-Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. İşlem tamamlandıktan sonra bir yönetici, **Remove-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek kullanıcı ayrıntılarını silebilir.
 
+Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. İşlem tamamlandıktan sonra bir yönetici, **Remove-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek kullanıcı ayrıntılarını silebilir.
 
 PowerApps Yönetici PowerShell cmdlet'leri
 ```PowerShell
@@ -297,14 +299,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > Bir kullanıcı halen bireysel akışlara veya takım akışlarına sahipse bu komut bir hata döndürür. Çözümlemek için, bu kullanıcıya yönelik takım akışlarını veya kalan tüm akışları silin ve komutu yeniden çalıştırın.
 >
 >
+
 ## <a name="delete-the-user-from-azure-active-directory"></a>Azure Active Directory’den kullanıcıyı silme
+
 Yukarıdaki adımlar tamamlandıktan sonra son adım, [Office 365 Hizmet Güveni Portalı](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)’nda bulunabilecek Azure Veri Sahibi İsteği GDPR belgelerinde açıklanan adımları izleyerek Azure Active Directory için kullanıcının hesabını silmektir.
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Yönetilmeyen Kiracıdan kullanıcıyı silme
+
 Yönetilmeyen bir kiracının üyesi olmanız durumunda, [İş ve Okul Gizliliği portalından](https://go.microsoft.com/fwlink/?linkid=873123) bir **Hesap kapatma** eylemi gerçekleştirmeniz gerekir.
 
 Yönetilen kiracının mı yoksa yönetilmeyen kiracının mu kullanıcısı olduğunuzu belirlemek için aşağıdaki eylemleri gerçekleştirin:
-1. Şu URL’yi bir tarayıcıda açın ve URL’deki e-posta adresinizi değiştirdiğinizden emin olun: [ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Şu URL’yi bir tarayıcıda açın ve URL’deki e-posta adresinizi değiştirdiğinizden emin olun:[ https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. **Yönetilmeyen kiracının** üyesiyseniz, yanıtta bir `"IsViral": true` görürsünüz.
 
     {
@@ -318,4 +324,3 @@ Yönetilen kiracının mı yoksa yönetilmeyen kiracının mu kullanıcısı old
     }
 
 1. Aksi takdirde, yönetilen bir kiracıya aitsiniz demektir.
-
