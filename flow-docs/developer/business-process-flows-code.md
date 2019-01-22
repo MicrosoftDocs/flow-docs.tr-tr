@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 1283d9d0a8e7f2b9b0495400c5db1f624ef91954
-ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
+ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
+ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53007013"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362990"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma
 
