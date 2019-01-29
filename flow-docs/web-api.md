@@ -84,7 +84,7 @@ Yukarıda gösterildiği gibi, `workflows` üzerinde `GET` çağrısı yaparak i
 | _modifiedby_value | Akışı son güncelleştiren kullanıcı. Bu, Uygulamalar için CDS'deki systemusers varlığından gelen bir tanımlayıcıdır. |
 | _createdby_value  | Akışı oluşturan kullanıcı. Bu, Uygulamalar için CDS'deki systemusers varlığından gelen bir tanımlayıcıdır. |
 | type              | Akışın çalışan bir akış mı yoksa ek akışlar oluştururken kullanılacak bir şablon mu olduğunu belirtir. 1 - akış, 2 - etkinleştirme veya 3 - şablon. |
-| description       | Akışın kullanıcı tarafından sağlanan açıklaması. |
+| açıklama       | Akışın kullanıcı tarafından sağlanan açıklaması. |
 | clientdata        | Akışın connectionReferences bilgilerini ve tanımını içeren nesnenin dize olarak kodlanmış JSON öğesi. |
 
 Ayrıca, [Uygulamalar için CDS API'si verileri sorgulama belgelerinde](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api) açıklandığı gibi belirli özellikleri isteyebilir, akış listesini filtreleyebilir ve daha birçok işlem yapabilirsiniz. Örneğin, bu sorgu yalnızca şu anda açık olan otomatik, anlık veya zamanlanmış akışları döndürür:
