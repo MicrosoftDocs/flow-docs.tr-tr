@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d948cdf5bce01aa5c18955645774dbcf455ba1b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 50466c2cf51593a4e34796fdf1d7a285eb63d462
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905732"
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Microsoft Flow ile bir onay iş akışını oluşturma ve test etme
 
-Microsoft Flow ile SharePoint, Dynamics CRM, Salesforce, OneDrive İş, Zendesk veya WordPress gibi çeşitli hizmetlerdeki belge ya da işlemlerin onaylanmasını yönetebilirsiniz.
+Microsoft Flow ile SharePoint, Dynamics 365, Salesforce, OneDrive İş, Zendesk veya WordPress gibi çeşitli hizmetlerdeki belge ya da işlemlerin onaylanmasını yönetebilirsiniz.
 
 Onay iş akışı oluşturmak için **Onaylar - Onay başlat** eylemini herhangi bir akışa ekleyin. Bu eylem eklendikten sonra, akışınız belge veya işlemlerin onay süreçlerini yönetebilir. Örneğin faturaları, iş emirlerini veya satış tekliflerini onaylayan belge onay akışları oluşturabilirsiniz. Ayrıca tatil isteklerini, fazla mesaileri veya seyahat planlarını onaylamak üzere işlem onayı akışları da oluşturabilirsiniz.
 

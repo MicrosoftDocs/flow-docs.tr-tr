@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905758"
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -37,24 +37,43 @@ ms.locfileid: "45727263"
 2. Gelişmiş bir koşulu veya ifadeyi nasıl kullanabilirim?
    
    * [Koşul ekleme](add-condition.md) hakkında bilgi edinin.
-   * Bir akışa birden çok durum eklemek için, mevcut bir koşulun içinden **Koşul ekle**’ye tıklayın veya dokunun.
+   * Bir akışa birden çok durum eklemek istiyorsanız, mevcut koşulun içinden **Koşul ekle**’yi seçin.
    * [Logic Apps'teki bir işleve](https://docs.microsoft.com/rest/api/logic/definition-language) başvurarak gelişmiş bir ifade oluşturun.
 3. Office 365 ile lisanslama nasıl çalışır?
    
    * Office 365 kullanıcısıysanız, Office 365 için Microsoft Flow planı aracılığıyla tam erişim elde edebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Flow için fiyatlandırma planları](https://flow.microsoft.com/pricing/) .
    * Yöneticiyseniz, Office 365 kapsamında kullanımı da içeren [Microsoft Flow lisanslama seçenekleri](organization-q-and-a.md) ile ilgili bilgi edinin.
 
-## <a name="known-issues-and-resolutions"></a>Bilinen sorunlar ve çözümleri
+## <a name="known-issues"></a>Bilinen sorunlar
 1. Sitelerim’deki SharePoint listeleri ve *Özel Liste* türünde olmayan listeler desteklenmez. Bu soruna geçici çözüm olarak, standart bir SharePoint sitesinde özel liste oluşturun.
-2. Akışlar, SharePoint listelerindeki Sınıflandırma alanlarına yazamaz. Bu sorun düzeltilene kadar basit bir dize alanı kullanmanızı öneririz.
-3. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
+2. Dosya tetikleyicileri, seçtiğiniz klasördeki iç içe geçmiş klasörlere eklenmekte olan dosyalar için tetiklenmez.
 
 ## <a name="whats-new"></a>Yenilikler
+
+> [!IMPORTANT]
+>
+> **Sürüm notları duyurusu**
+>
+> Microsoft Flow'un yakında kullanıma sunulacak olan ve kısa süre önce kullanıma sunulan özelliklerini merak ediyor musunuz?
+>[Ekim 2018 sürüm notlarını görüntüleyin](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). Planlama için kullanabileceğiniz tüm ayrıntıları bir uçtan diğerine, baştan sona yakaladık. Diğer ayrıntılar için [haftalık sürümlerin her birini](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) ve içerdiği özelliklerle iyileştirmeleri gözden geçirin.
+>
+> Ekim 2018 sürümünden önceki sürüm notları gelecekte başvurulmak üzere burada kalacak ama tüm yeni sürümler bu sayfaya değil yukarıdaki konumlara eklenecek.
+
+### <a name="release-2018-09-24"></a>Sürüm 2018-09-24
+
+- **Yardım ve desteğe yönetici erişimi** - Power platformu yönetim merkezinde Microsoft Flow için destek biletleri açın ve iş akışı hatanızla ilgili ek ayrıntıları sağlayın.
+- **Yeniden tasarlanan Flow Topluluğu** - Flow Topluluğu'nda ihtiyacınız olanları bulmanız daha da kolaylaştı.
+- **Microsoft Teams bağlayıcısındaki geliştirmeler** - Kanalda yeni iletiler olduğunda akış çalıştırabilmeniz için Microsoft Teams'e yeni tetikleyiciler eklendi.
+- **Diğer SharePoint eylemleri** - SharePoint bağlayıcısında dosyaları taşımak ve başka işlemler yapmak için yeni eylemler bulunuyor.
+- **Yeni yönetici analiz raporları** - İş Uygulaması Platformu Yönetim merkezine Ortam ve Kiracı genelinde analizler eklendi.
+- **Power Query tümleştirmesi** - Power Query deneyimi, işaretçilerin SQL Server'dan veri karmalarını şekillendirmesine olanak tanıyacak şekilde oluşturuldu.
+
+Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/).
 
 ### <a name="release-2018-08-31"></a>Sürüm 2018-08-31
 
 - **Örnek veriler kullanarak akışınızı test edin** - Akışınızı geliştirirken Microsoft Flow Tasarımcısı içinde test etmek için bağlayıcılardan örnek veriler kullanın. Örnek verilerle test etmekle, üretim aşamasında dağıtıldığında akışınızın beklendiği gibi çalışacağını doğrulamış olursunuz.
-- **Beş yeni bağlayıcı** - Dört adet yeni yönetim bağlayıcısı ekledik: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins ve Microsoft School Data Sync.
+- **Beş yeni bağlayıcı** - Dört yeni yönetim bağlayıcısı ekledik: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins ve Microsoft School Data Sync.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/test-data-management-connectors/).
 
@@ -63,7 +82,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 - **Yeni takvim eşitleme şablonları** - Google Calendar ve Office 365 ya da Outlook.com arasında olay kopyalayan yeni takvim şablonları.
 - **SharePoint için çok değerli desteği** - SharePoint'te Seçenek, Kişi veya Arama türlerinde olan çok değerli alanlar için okuma ve yazma.
 - **Kuruluşunuzdaki diğer kullanıcılar adına onaylar gönderin** - Akışı oluşturan kişi yerine dosyayı SharePoint listesine yükleyen kişi gibi kuruluşunuzdaki diğer kullanıcılar adına onaylar gönderin.
-- **Daha fazla düğmeli giriş türü** - Düğmelere iki yeni giriş türü eklenmiştir: Sayı ve Evet/Hayır.
+- **Daha fazla düğmeli giriş türü** - Düğmelere iki yeni giriş türü eklendi: Sayı ve Evet/Hayır.
 - **Bağlayıcı güncelleştirmeleri** - Yeni bir NetDocuments bağlayıcısı, Azure bağlayıcılarında yapılan iyileştirmeler ve diğerleri.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/button-types-more/).
@@ -76,7 +95,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 
 ### <a name="release-2018-07-23"></a>Sürüm 2018-07-23
 
-- **Excel’den akış oluşturma ve çalıştırma** - Yeni **Flow** düğmesini (şeritteki **Veri** sekmesinden erişilir) kullanarak Flow’dan Excel’deki tablo verileriniz üzerinde otomasyonlar oluşturup bunları tetikleyebilirsiniz. Veri işlemeyi veya verilerin kopyalanmasını/içeri aktarılmasını otomatikleştirin.
+- **Excel’den akış oluşturma ve çalıştırma** - Yeni **Akış** düğmesini (şeritteki **Veri** sekmesinden erişilir) kullanarak Microsoft Flow’dan Excel’deki tablo verileriniz üzerinde otomasyonlar oluşturup bunları tetikleyebilirsiniz. Veri işlemeyi veya verilerin kopyalanmasını/içeri aktarılmasını otomatikleştirin.
 - **İş süreci akışı oluşturma** - İş süreci akışı, Uygulamalar için Common Data Service’i temel alan, durum bilgisi olan ve insanlarla etkileşim kurabilen yeni bir akış türüdür. Bu yeni akışları kullanarak insanların izlemesi için bir dizi aşama ve adım tanımlayabilirsiniz. Bunlar gerektiği gibi ileri veya geri yönde hareket edebilir.
 - **Outlook Web App’te Microsoft To-Do için akış oluşturma** - Outlook Web App’te birisinden \@bahsedilirse, bu kişi bir akış oluşturmaya yönelik bir kısayol görür. Bu akış, kendinden \@bahsedilen kişi için Microsoft To-Do’da otomatik olarak e-postanın içeriğini temel alan görevler oluşturur.
 - **SharePoint görünümü desteği** - SharePoint bağlayıcısı artık tetikleyicilerde ve eylemlerde belirli bir SharePoint görünümünün seçilmesini destekliyor. Bu, sütunları filtreleyerek yalnızca seçili görünümdeki alanların kalmasını sağlar.
@@ -166,7 +185,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 - **Microsoft Teams’de Flow** - Teams’den akış oluşturup bu akışları yönetebilir, aldığınız ve gönderdiğiniz onayları gözden geçirebilir ve doğrudan Teams masaüstü uygulamasının içinden veya teams.microsoft.com adresinden akış başlatabilirsiniz - [buradan daha fazla bilgi edinebilirsiniz](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
 - **Paylaşılan düzenleme bildirimleri** - Sahip olduğunuz bir akış bir iş arkadaşınız tarafından her değiştirildiğinde, hangi akışı kimin değiştirdiği konusunda bilgi sağlayan bir e-posta bildirimi alırsınız.
 - **Yeni ifadeler** - Biri URL'leri ayrıştırmaya, diğeri JSON nesneleriyle çalışmaya yönelik iki yeni ifade kümesi eklendi.
-- **Üç yeni bağlayıcı** - Bu hafta, Plumsail SP ve Plumsail Forms adlı iki yeni Plumsail bağlayıcısının yanı sıra bir kintone bağlayıcısı sunuldu.
+- **Üç yeni bağlayıcı** - Bu hafta iki yeni Plumsail bağlayıcısı var: Plumsail SP ve Plumsail Form; ayrıca kintone için de yeni bir bağlayıcı eklendi.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/shared-notifications-and-expressions/).
 
@@ -233,7 +252,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 - **İç içe her birine uygula** - Her birine uygula eylemleri ekleyebilir, diğer her birine ekle kapsayıcı eylemlerini filtreleyebilir ve seçebilirsiniz.
 - **Tarih Saat eylemleri** - Yerel saatleri alma, ekleme, çıkarma veya saatleri biçimlendirme için yeni eylemler.
 - **Dört yeni bağlayıcı** - Content Moderator, Docparser, Microsoft Kaizala ve Pitney Bowes Veri Doğrulama eklendi.
-- **Geliştirilmiş bağlantı deneyimi** - Bağlantı kesildiğinde Flow portalında görüntülenen bildirimler ve daha zengin bağlantı ayrıntıları.
+- **Geliştirilmiş bağlantı deneyimi** - Bağlantı kesildiğinde Microsoft Flow portalında görüntülenen bildirimler ve daha zengin bağlantı ayrıntıları.
 - **Hareket halinde koleksiyonu** - [Hareket halindeki çalışanlar](https://flow.microsoft.com/collections/onthego/) için yeni bir şablon koleksiyonu.
 - **E-posta adresi düğmesi girişleri** - Düğmeleri çalıştıran kullanıcıların e-posta adreslerini toplayın.
 - **Dosya düğmesi girişleri** - Düğmeyi çalıştıran kullanıcılardan fotoğraf gibi yüklenen dosyaları alın.
@@ -257,7 +276,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 
 - **İlk Sürümde Daha Ayrıntılı SharePoint tümleştirmesi** - Yeni "hazır" incelemeye gönder akışları ve ilk sürüm kiracıları için bir akış çalıştırdığınızda girişleri toplamak üzere bir Flow paneli mevcuttur.
 - **Dynamics 365 for Customer Engagement** - Flow artık Dynamics 365 for Customer Engagement arabirimine tümleşiktir.
-- **Microsoft Güven Merkezi** - Flow, Microsoft Güven Merkezi'nde listelenerek HIPAA, ISO ve SOC gibi sertifikaları göstermektedir.
+- **Microsoft Güven Merkezi** - Microsoft Flow, Microsoft Güven Merkezi'nde listelenerek HIPAA, ISO ve SOC gibi sertifikaları gösterir.
 - **Kullanım analizi** - Her akışta temel kullanım analizini içeren ekli bir Power BI panosu mevcuttur.
 - **İlk Sürümde Denetim Günlüğü** - Tüm akış yönetim olayları ilk sürüm kiracıları için Office 365 Güvenlik ve Uyumluluk Merkezi'ne kaydedilir.
 - **Altı yeni bağlayıcı** - LinkedIn, Office 365 Grupları, Skype Kurumsal, Adobe Sign, Bizzy ve Azure Log Analytics Veri Koleksiyonu eklendi.
@@ -381,7 +400,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 
 ### <a name="release-2017-04-27"></a>Sürüm 2017-04-27
 * **Paralel adımlarla akışları oluşturma** - Paralel yürütmeyle akışları oluşturma: iki veya daha çok adımı tam olarak aynı anda çalıştırabileceğiniz anlamına gelir.
-* **Desteklenen beş yeni hizmet** - Beş yeni hizmet: Onaylar, Karşılaştırma E-postası, Capsule CRM, LiveChat ve Outlook Customer Manager.
+* **Desteklenen beş yeni hizmet** - Beş yeni hizmet: Approvals, Benchmark Email, Capsule CRM, LiveChat ve Outlook Customer Manager.
 * **Eylemler için yeniden denemeleri izleme** - Hizmetlerde hatalar olduğunda Microsoft Flow yeniden deneyecektir. Şimdi kaç otomatik yeniden deneme yapıldığını ve olayların ayrıntılarını görebilirsiniz.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/parallel-actions/).
@@ -426,7 +445,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/new-updates-custom-api/).
 
 ### <a name="release-2017-02-27"></a>Sürüm 2017-02-27
-* **Akış düğmelerinizi tetikleme** - Akış düğmelerinizi doğrudan Microsoft Flow web sitesinden tetikleyebilirsiniz. Akış listeniz görüntülendiğinde, "..." menüsünü ve ardından Şimdi çalıştır komutunu seçin.
+* **Akış düğmelerinizi tetikleme** - Akış düğmelerinizi artık doğrudan Microsoft Flow'dan tetikleyebilirsiniz. Akış listeniz görüntülendiğinde, "..." menüsünü ve ardından Şimdi çalıştır komutunu seçin.
 * **Beş yeni hizmet** - Oracle Database, Intercom, FreshBooks, LeanKit ve WebMerge desteği eklendi.
 
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/trigger-flow-buttons-web/).
@@ -629,7 +648,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/).
 
 ### <a name="release-2016-05-07"></a>Sürüm 2016-05-07
-İki yeni hizmet eklendi: Microsoft Project Online ve Mandrill by Mailchimp. Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/).
+İki yeni hizmet eklendi: Microsoft Project Online ve Mailchimp'ten Mandrill. Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/).
 
 ### <a name="release-2016-04-27---public-preview"></a>Sürüm 2016-04-27 - Genel Önizleme
 [Microsoft PowerApps](https://powerapps.microsoft.com)'in bir parçası olarak Logic akışlarını kullandıysanız Microsoft Flow Önizleme sürümü ile sunulan şu yeni özelliklere göz atın:

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905733"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
@@ -33,7 +33,7 @@ Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmet
 Microsoft Flow’da dosyaları eşitlemek, bildirimler almak, veri toplamak ve daha fazlası için, sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Flow kullanmaya başlama](getting-started.md).
 
 > [!IMPORTANT] 
-> Akış tetikleyicisini çağırmak için, akış ile kullanılan Dynamics 365 müşteri etkileşimi varlığında **Değişiklik İzleme** özelliği etkin olmalıdır. Daha fazla bilgi: [Veri senkronizasyonunu denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> Akış tetikleyicisini çağırmak için, akış ile kullanılan Dynamics 365 müşteri etkileşimi varlığında **Değişiklik İzleme** özelliği etkin olmalıdır. Daha fazla bilgi: [Veri eşitlemesini denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Şablondan akış oluşturma
 Aşağıdaki örneklere benzer çok sayıda şablondan birini kullanarak akış oluşturabilirsiniz:
@@ -147,7 +147,7 @@ Bu örnek ayrıca görevi kullanıcının kayıt kimliğine dayalı olarak belir
 
 Bir kaydın kimliğini bulmak için, bu konudaki [Kayıt kimliğini bulma](#find-the-records-id) bölümüne bakın.
 
-> **Önemli:** Alanlar "Yalnızca dahili kullanım içindir" açıklamasına sahipse bir değer içermemelidir. Bu alanlar **Geçiş yapılan yol**, **Ek Parametreler** ve **Saat Dilimi Kuralı Sürüm Numarası**’nı içerir.
+> **Önemli:** Alanlar "Yalnızca iç kullanım için" açıklamasına sahipse bir değer içermemelidir. Bu alanlar **Geçiş yapılan yol**, **Ek Parametreler** ve **Saat Dilimi Kuralı Sürüm Numarası**’nı içerir.
 > 
 > 
 
