@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905733"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504519"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
@@ -120,6 +120,7 @@ Bir alana değer eklediğinizde, bir değer yazarken veya dinamik içerik bölme
 | Tamsayı alanları |Bazı alanlar tamsayı veya bir tamsayı tür alanı olan dinamik içerik gerektirir. Örnekler arasında **Tamamlanma Yüzdesi** ve **Süre** bulunur. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Görev** > **Alanlar** |**tamamlanma yüzdesi** |**Tamsayı** |
 | Tarih alanları |Bazı alanlar aa/gg/yyyy biçiminde girilen bir tarih veya bir tarih tür alanı olan dinamik içerik gerektirir. Örnekler arasında **Oluşturulma Tarihi**, **Başlangıç Tarihi**, **Gerçek Başlangıç**, **Son Bekletme Zamanı**, **Gerçek Bitiş** ve **Son Tarih** bulunur. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Görev** > **Alanlar** |**oluşturulma tarihi** |**Tarih ve Saat** |
 | Kayıt kimliği ve arama türü gerektiren alanlar |Başka bir varlık kaydına başvuran bazı alanlar kayıt kimliğini ve arama türünü gerektirir. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Hesap** > **Alanlar** |**hesap kimliği** |**Birincil Anahtar** |
+|Seçenek Kümesi|Seçenek Kümesi alanları, bu tür bir alana geçirilmek üzere bilinen bir tamsayı değeri gerektirir.  Dynamics 365 özelleştirme alanında, ilgili etiketiyle birlikte tamsayı alanını destekleyen seçenek kümelerini görebilirsiniz.|Ayarlar > Özelleştirme > Sistemi Özelleştir > Varlıklar > Hesap > Alanlar | Tercih Edilen İletişim Yöntemi| Tamsayı|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Kayıt kimliği ve arama türü gerektiren alanlara daha fazla örnek
 Önceki tabloya ek olarak, aşağıda dinamik içerik listesinden seçilen değerler ile çalışmayan alanlara daha fazla örnek verilmiştir. Bunun yerine, bu alanlar PowerApps alanlarına kayıt kimliğinin ve arama türünün girilmesini gerektirir.

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
-ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
+ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
+ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179829"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55647864"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Microsoft Flow için şirket içi veri ağ geçitlerini anlama
 Şirket içi veri ağ geçidini Microsoft Flow ile kullanarak Microsoft SQL Server gibi şirket içi veri kaynaklarınızla güvenli bağlantılar kurun.
@@ -166,6 +166,9 @@ Bu, şirket içi veri kaynaklarına bağlanmak için kullandığınız hesap vey
 
 **Soru:** SQL Azure gibi buluttaki veri kaynakları için bir ağ geçidi gerekir mi?
 **Cevap:** Hayır. Ağ geçidi yalnızca şirket içi veri kaynaklarına bağlanır.
+
+**Soru:** Ağ geçidimi varsayılan ortama yüklemem gerekiyor mu?
+**Cevap:** Evet, Microsoft Flow yalnızca varsayılan ortama yüklenen ağ geçitlerini destekler.
 
 **Soru:** Asıl Windows hizmeti adı nedir?
 **Cevap:** Hizmetlerde ağ geçidinin adı, **Power BI Enterprise Gateway Service**'tir.

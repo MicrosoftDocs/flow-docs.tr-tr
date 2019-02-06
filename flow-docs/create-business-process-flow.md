@@ -22,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691055"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501446"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Öğretici: Süreçleri standartlaştırmak için bir iş süreci akışı oluşturma
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma
 
 Bu öğreticide PowerApps ile iş süreci akışı oluşturma adımları gösterilmektedir. İş süreci akışlarını kullanma nedenleri hakkında daha fazla bilgi edinmek için bkz. [İş süreci akışlarına genel bakış](business-process-flows-overview.md). Mobil görev akışı oluşturma hakkında daha fazla bilgi için bkz. [Mobil görev akışı oluşturma](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
@@ -40,7 +40,12 @@ Bu öğreticide PowerApps ile iş süreci akışı oluşturma adımları göster
  > [!TIP]
  >  Oluşturduğunuz iş süreci akışı örneği üzerinde oluşturma, okuma, güncelleştirme veya silme iznine sahip olacak kişileri denetleyebilirsiniz. Örneğin hizmetle ilgili süreçler için müşteri hizmetleri temsilcilerine iş süreci akışı örneğini değiştirme izni verebilir ancak müşterileri için satış sonrası etkinlikleri izlemesi gereken satış temsilcilerine salt okunur erişim verebilirsiniz. Oluşturduğunuz bir iş süreci akışı tanımında güvenlik ayarlarını etkinleştirmek için eylem çubuğundan **Güvenlik Rollerini Etkinleştir**'i seçin.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Önkoşullar
+
+İş süreci akışları oluşturmak için [Flow Plan 2](https://preview.flow.microsoft.com/pricing/)'ye ihtiyacınız vardır. Bazı Dynamics 365 lisans planları Flow Plan 2'yi içerir.
+
 ## <a name="create-a-business-process-flow"></a>İş süreci akışı oluşturma  
   
 1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer)'ni açın.

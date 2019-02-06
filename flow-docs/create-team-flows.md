@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
-ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
+ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
+ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204951"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479431"
 ---
 # <a name="create-team-flows"></a>Takım akışları oluşturma
 Kuruluşunuza başka kişileri de sahip olarak ekleyip bir takım akışı oluşturun. Takım akışının tüm sahipleri şu eylemleri gerçekleştirebilir:
@@ -74,6 +74,10 @@ Takım akışı oluşturmak veya bir takım akışına sahip eklemek için aşa�
 
 SharePoint listelerini bir akışa ikincil sahip olarak ekleyerek listede düzenleme erişimine sahip olan herkesin otomatik olarak akışta da düzenleme erişimine sahip olmasını sağlayabilirsiniz. Akışı paylaştıktan sonra yalnızca bağlantısını iletmeniz yeterlidir.
 
+> [!TIP]
+> Akış SharePoint'e bağlı olduğunda bir liste, diğer durumlarda bir grup kullanın.
+>
+
 ## <a name="remove-an-owner"></a>Akış sahibini kaldırma
 
 > [!IMPORTANT]
@@ -114,6 +118,8 @@ Bir akışta kullanılan bağlantılar iki kategoriye ayrılır:
 * **Diğer** &mdash; Bu bağlantılar bir akış için tanımlanmıştır ancak akışın içinde kullanılmaz.
 
 Akışın içinde bir bağlantının kullanılmasını durdurursanız, bir sahip bağlantıyı akışa yeniden ekleyene kadar bu bağlantı **Diğer** bağlantılar listesinde görünür.
+
+Ekli bağlantılarda değişiklik yapmak için [bağlantı sahibini güncelleştirme](./create-team-flows.md#update-connection-owner) adımlarını izleyin.
 
 Bağlantılar listesi, akış özelliklerinde sahipler listesinin altında görünür:
 
