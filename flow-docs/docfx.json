@@ -1,6 +1,5 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -21,25 +20,37 @@
       {
         "files": [
           "**/*.png",
+          "**/*.svg",
           "**/*.jpg",
           "**/*.gif",
-         "**/includes/media/**"
+          "**/includes/media/**"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/*.md"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-MSFlow",      
-      "breadcrumb_path":"breadcrumb/toc.yml",
-       "searchScope": ["Flow"]
+      "uhfHeaderId": "MSDocsHeader-MSFlow",
+      "contributors_to_exclude": [
+        "openpublishingbuild",
+        "sudeepku",
+        "v-thepet",
+        "buck1ey"
+      ],
+      "breadcrumb_path": "breadcrumb/toc.yml",
+      "searchScope": [
+        "Flow"
+      ],
+      "titleSuffix": "Microsoft Flow",
+      "search.appverid": "met150"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "flow"
+    "dest": "flow",
+    "markdownEngineName": "markdig"
   }
 }
