@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690572"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885516"
 ---
 # <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda Flow ile ilgili soru-cevap
 Bu konu başlığında, kuruluşunuzdaki kullanıcıların Flow’u nasıl kullanacağı ve Flow hizmetini nasıl denetleyeceğiniz açıklanmıştır.
@@ -46,6 +46,10 @@ Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip
 Kuruluşunuzdaki bir kullanıcı Seçenek 2 ile Flow’a kaydolduğunda bu kullanıcıya otomatik olarak bir Microsoft Flow Ücretsiz lisansı atanır.
 
 [Flow’a kaydolma](sign-up-sign-in.md) bölümünde daha ayrıntılı bilgi verilmektedir.
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Microsoft Flow Ücretsiz Planı nedir?
+
+Microsoft Flow Ücretsiz Planı yalnızca izleme amaçlı kullanılır. Etkinleştirilmesi veya devre dışı bırakılması, kullanıcının akış oluşturma olanağını etkilemez. Microsoft Flow Ücretsiz Planı devre dışı bırakıldığında, kullanıcının oturum açmasıyla birlikte plan yeniden etkinleştirilir. Bu beklenen bir davranıştır.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Bir kullanıcının Flow’a kaydolmasını engelleyebilir miyim?
 Microsoft Flow tamamen genel bir bulut hizmetidir. Dünyadaki herkes kaydolup günlük görevlerini otomatik hale getirmek için bu programı kullanabilir. Microsoft Flow’u kullanmak için kullanıcıların bir Office 365 hesabına sahip olması veya bu hesabı kullanması şart değildir. Bu nedenle, şu anda başka bir kişinin Flow kullanmasını (e-posta adresine bakılmaksızın dünyadaki herkes kullanabilir) engellemenize yönelik bir mekanizma bulunmamaktadır.
@@ -147,7 +151,7 @@ Microsoft Flow tarafından yeni bir kiracı oluşturulduysa aşağıdaki adımla
    2. Sol üst köşedeki uygulama başlatıcısı simgesini ve Yönetici öğesini seçin.
    3. **Yönetici olun** sayfasındaki yönergeleri okuyun ve ardından **Evet, yönetici olmak istiyorum**’u seçin.  
       
-       **NOT**: Bu seçenek görünmezse zaten bir Office 365 yöneticisi mevcut olabilir.
+       **NOT**: Bu seçenek görünmezse bir Office 365 yöneticisi zaten mevcut olabilir.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Birden fazla etki alanım varsa kullanıcıların ekleneceği Office 365 kiracısını denetleyebilir miyim?
 Hiçbir şey yapmazsanız her kullanıcı e-posta etki alanı ve alt etki alanı için bir kiracı oluşturulur.
