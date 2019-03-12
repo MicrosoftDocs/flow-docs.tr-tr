@@ -1,3 +1,22 @@
+---
+title: Akışlar artık Uygulamalar için Common Data Service’te depolanır ve zengin Web API’sini kullanır
+description: Akışlar artık Uygulamalar için Common Data Service’te depolanır ve zengin Web API’sini kullanır.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: business-applications
+ms.technology: ''
+ms.author: stepsic
+audience: Power user
+ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463051"
+---
 # <a name="microsoft-flow-web-api"></a>Microsoft Flow Web API’si
 
 Bundan sonra tüm akışlar Uygulamalar için Common Data Service'te (CDS) depolanacak ve [zengin Web API'sinden](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api) yararlanacak.
