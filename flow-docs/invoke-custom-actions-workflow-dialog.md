@@ -4,7 +4,7 @@ description: İş akışından özel eylem çağırmayı öğrenin
 ms.custom: ''
 ms.date: 11/22/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e4dbedbd8157f2dd1814bbbbd080a6b366c04938
-ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
+ms.openlocfilehash: 938410cf4484f8bed6509beee1d36c8cb3718e6f
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53006990"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462982"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemler çağırma
 

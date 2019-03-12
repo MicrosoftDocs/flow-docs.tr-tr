@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: aaa1d90368cbf513b46a939e7ea512a66b2c0a14
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 7d75332f8902d5889881d122f2d42e3c203e34ad
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688968"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462752"
 ---
 # <a name="use-actions"></a>Eylemler kullanma
 

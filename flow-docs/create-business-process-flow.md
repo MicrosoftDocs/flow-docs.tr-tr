@@ -4,7 +4,7 @@ description: İş süreci akışı oluşturmayı öğrenin
 ms.custom: ''
 ms.date: 08/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
-ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
+ms.openlocfilehash: 33ae71ea6b0af6a94021f5b0a02690aae21f0043
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55501446"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463074"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma
 

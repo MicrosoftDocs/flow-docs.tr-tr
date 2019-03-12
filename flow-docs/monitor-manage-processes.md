@@ -3,7 +3,7 @@ title: PowerApps ile iş akışı süreçlerini izleme ve yönetme | MicrosoftDo
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 209b0b63376a9cc0c3ad7d936d7f98f55dfddf00
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 007caa66731870f359e8cb33ba0919390d3196cd
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690503"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462890"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>İş akışı süreçlerini izleme ve yönetme
 
