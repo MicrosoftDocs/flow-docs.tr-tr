@@ -4,7 +4,7 @@ description: İş akışı adımlarının nasıl yapılandırılacağını öğr
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690457"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462867"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>İş akışı aşamalarını ve adımlarını yapılandırma
 
@@ -76,7 +76,7 @@ ms.locfileid: "44690457"
   
 |Koşul Türü|Açıklama|  
 |--------------------|-----------------|  
-|**Denetim Koşulu**|Mantıksal bir "if-\<condition> then" deyimi.<br /><br /> İş akışının çalışmakta olduğu kayıt, N:1 ilişkilerinde bu kayıtla bağlantılı herhangi bir kayıt veya önceki adımlar tarafından oluşturulan tüm kayıtlar için geçerli değerleri denetleyebilirsiniz. Bu değerlere göre, koşul true olduğunda ek adımlar tanımlayabilirsiniz.<br /><br /> "if-\<condition> then" deyiminde şu işleçleri kullanabilirsiniz: **Eşittir**, **Eşit Değildir**, **Veri İçerir**, **Veri İçermez**, **Altındadır** ve **Altında Değildir**. **Not:**  **Altındadır** ve **Altında Değildir**, hiyerarşik işleçlerdir. Yalnızca bir hiyerarşik ilişki tanımlanmış olan varlıklarda kullanılabilir. Hiyerarşik ilişki tanımlanmamış olan varlıklarda bu işleçleri kullanmayı deniyorsanız şu hata iletisini görürsünüz: “Hiyerarşik ilişki tanımlanmamış olan bir varlıkta hiyerarşik işleç kullanıyorsunuz. Varlığı hiyerarşik yapın (bir ilişkiyi hiyerarşik olarak işaretleyerek) veya farklı bir işleç kullanın.” Hiyerarşik ilişkiler hakkında daha fazla bilgi için bkz. [Hiyerarşik olarak ilgili verileri tanımlama ve sorgulama](/powerapps/maker/common-data-service/define-query-hierarchical-data). Tablonun altındaki ekran görüntüsü, **Altındadır** ve **Altında Değildir** hiyerarşik işleçlerini kullanan iş akışı işleminin tanımına bir örnektir.|  
+|**Denetim Koşulu**|Mantıksal bir "if-\<condition> then" deyimi.<br /><br /> İş akışının çalışmakta olduğu kayıt, N:1 ilişkilerinde bu kayıtla bağlantılı herhangi bir kayıt veya önceki adımlar tarafından oluşturulan tüm kayıtlar için geçerli değerleri denetleyebilirsiniz. Bu değerlere göre, koşul true olduğunda ek adımlar tanımlayabilirsiniz.<br /><br /> "if-\<condition> then" deyiminde aşağıdaki işleçleri kullanabilirsiniz: **Eşittir**, **Eşit Değildir**, **Veri İçerir**, **Veri İçermez**, **Altındadır** ve **Altında Değildir**. **Not:**  **Altındadır** ve **Altında Değildir**, hiyerarşik işleçlerdir. Yalnızca bir hiyerarşik ilişki tanımlanmış olan varlıklarda kullanılabilir. Tanımlı hiyerarşik ilişkisi olmayan varlıklarda bu işleçleri kullanmayı denerseniz şu hata iletisini görürsünüz: “Tanımlı bir hiyerarşik ilişkisi bulunmayan bir varlıkta hiyerarşik işleç kullanıyorsunuz. Varlığı hiyerarşik yapın (bir ilişkiyi hiyerarşik olarak işaretleyerek) veya farklı bir işleç kullanın.” Hiyerarşik ilişkiler hakkında daha fazla bilgi için bkz. [Hiyerarşik olarak ilgili verileri tanımlama ve sorgulama](/powerapps/maker/common-data-service/define-query-hierarchical-data). Tablonun altındaki ekran görüntüsü, **Altındadır** ve **Altında Değildir** hiyerarşik işleçlerini kullanan iş akışı işleminin tanımına bir örnektir.|  
 |**Koşullu Dal**|Mantıksal bir "else-if-then" deyimi, düzenleyici, “Otherwise, if \<condition> then:” metnini kullanır.<br /><br /> Önceden tanımladığınız bir denetim koşulu seçin; böylece denetim koşulu false değerini döndürdüğünde ek adımlar tanımlamak için bir koşullu dal ekleyebilirsiniz.|  
 |**Varsayılan Eylem**|Mantıksal bir "else" deyimi. düzenleyici “Otherwise:” metnini kullanır.<br /><br /> Önceden tanımladığınız bir denetim koşulu, koşullu dal, bekleme koşulu veya paralel bekleme dalı seçin; böylece koşul veya dal öğelerinde tanımlanan ölçütlerle eşleşmeyen tüm durumlara yönelik adımlar tanımlamak için varsayılan bir eylem kullanabilirsiniz.|  
 |**Bekleme Koşulu**|Arka plan iş akışının, koşul tarafından tanımlanan ölçütler yerine getirilinceye kadar kendisini duraklatmasını sağlar. Bekleme koşulundaki ölçütler karşılandığında iş akışı otomatik olarak yeniden başlar.<br /><br /> Gerçek zamanlı iş akışları, bekleme koşullarını kullanamaz.|  

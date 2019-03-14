@@ -4,7 +4,7 @@ description: Uygulamanızda kullanabileceğiniz farklı iş mantığı türleri 
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b6cf8c2bc5e7499e7eaf5feb367c07a3aa94b3f7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188605"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462959"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>İşlemler aracılığıyla özel iş mantığı oluşturma
 
@@ -92,8 +92,8 @@ PowerApps, her biri farklı bir amaç için tasarlanmış olan birçok işlem t�
 |CEO-İşletme Yöneticisi|Kuruluş|  
 |Sistem Yöneticisi|Kuruluş|  
 |Sistem Özelleştirici|Kuruluş|  
-|Pazarlamadan Sorumlu Başkan Yardımcısı|Üst: Alt Departmanlar|  
-|Satıştan Sorumlu Başkan Yardımcısı|Üst: Alt Departmanlar|  
+|Pazarlamadan Sorumlu Başkan Yardımcısı|Üst Öğe: Alt Departmanlar|  
+|Satıştan Sorumlu Başkan Yardımcısı|Üst Öğe: Alt Departmanlar|  
 |Service Manager|Departman|  
 |Pazarlama Yöneticisi|Departman|  
 |Satış Yöneticisi|Departman|  

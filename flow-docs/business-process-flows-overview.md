@@ -3,7 +3,7 @@ title: İş süreci akışlarına genel bakış | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690339"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463023"
 ---
 # <a name="business-process-flows-overview"></a>İş süreci akışlarına genel bakış
 
@@ -92,7 +92,7 @@ Bir iş süreci akışı oluşturarak, kişilerin sürekli veri girmelerine ve b
  İş süreci akışlarını yalnızca kendilerini destekleyen varlıklar için tanımlayabilirsiniz. Eklenebilecek süreç, aşama ve adım sayısı sınırlarının da farkında olmanız gerekir.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Bir iş akışını çağıran iş süreci akışları  
- İsteğe bağlı iş akışlarını bir iş süreci akışının içinden çağırabilirsiniz. Bunu, bir iş akışı bileşenini bir süreç aşamasına veya Genel İş Akışları bölümüne sürükleyerek yeni iş süreci akış tasarımcısından yapılandırabilirsiniz. İş süreci akışı akışlarında iş akışlarını kullanma hakkında daha fazla bilgi için, bkz. [Blog: Dynamics 365’te iş süreci akış otomasyonu](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+ İsteğe bağlı iş akışlarını bir iş süreci akışının içinden çağırabilirsiniz. Bunu, bir iş akışı bileşenini bir süreç aşamasına veya Genel İş Akışları bölümüne sürükleyerek yeni iş süreci akış tasarımcısından yapılandırabilirsiniz. İş süreci akışı akışlarında iş akışlarını kullanma hakkında daha fazla bilgi için bkz. [Blog: Dynamics 365’te iş süreci akış otomasyonu](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
  İş süreci akışınıza, bir aşamanın Aşama Çıkışı'nda tetiklemek istediğiniz bir iş akışı dahil etiğinizde ve bu aşama akıştaki son aşama olduğunda, tasarımcı o aşama tamamlandığında iş akışının tetikleneceği izlenimini verir. Ancak, bir aşama geçişi gerçekleşmediği için iş akışı tetiklenmez. İş akışını aşamaya dahil etmenizi engelleyen bir uyarı veya hata almazsınız. Bir kullanıcı iş süreci akışıyla etkileşime girdiğinde, işlemi bitirmek veya bırakmak aşama geçişiyle sonuçlanmaz ve bu nedenle iş akışı tetiklenmez. Aşağıdaki örnekleri dikkate alın:  
   
@@ -137,7 +137,7 @@ Bir iş süreci akışı oluşturarak, kişilerin sürekli veri girmelerine ve b
  İş süreci akışları için özel bir varlık etkinleştirmek için, varlık tanımındaki **İş süreci akışları (alanlar oluşturulacak)** onay kutusunu seçin. Bu eylemi geri alamayacağınızı unutmayın.  
   
 > [!NOTE]
->  `Social Activity` varlığı içeren iş süreci akış aşamasına gidip **Sonraki Aşama** düğmesini seçerseniz **Oluştur** seçeneğini görürsünüz. **Oluştur**’u seçtiğinizde, **Sosyal Etkinlik** formu yüklenir. Ancak `Social Activity`, uygulama kullanıcısı arabiriminden `Create` için geçerli olmadığından, formu kaydedemezsiniz ve şu hata iletisini görürsünüz: “Beklenmeyen hata”.  
+>  `Social Activity` varlığı içeren iş süreci akış aşamasına gidip **Sonraki Aşama** düğmesini seçerseniz **Oluştur** seçeneğini görürsünüz. **Oluştur**’u seçtiğinizde, **Sosyal Etkinlik** formu yüklenir. Ancak `Social Activity` uygulama kullanıcısı arabiriminden `Create` için geçerli olmadığından, formu kaydedemezsiniz ve şu hata iletisini görürsünüz: “Beklenmeyen hata”.  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Süreç, aşama ve adım sayısı üst sınırı  

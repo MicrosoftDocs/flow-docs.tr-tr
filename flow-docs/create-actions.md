@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f1b51a48d7355684d2c6883bbf0db12853f686eb
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 92db054d5e9fab7ef6077146260ce46f540697c9
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690250"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462856"
 ---
 # <a name="create-a-custom-action"></a>Özel eylem oluşturma
 
@@ -93,7 +93,7 @@ Eylemler, iş akışı işlemlerinde olmayan bir şeye de sahiptir; giriş ve ç
  Bu alanda, eylemin başlatması beklenen verileri ve eylemden hangi verilerin geçirileceğini belirteceksiniz. Daha fazla bilgi: [İşlem bağımsız değişkenlerini tanımlama](#define-process-arguments)  
   
  **Aşamalar ve adımlar ekleme**  
- Diğer işlemlere benzer şekilde, hangi eylemlerin ne zaman gerçekleştirileceğini belirtirsiniz. Daha fazla bilgi: [Aşama ve adım ekleme](#add-stages-and-steps)
+ Diğer işlemlere benzer şekilde, hangi eylemlerin ne zaman gerçekleştirileceğini belirtirsiniz. Daha fazla bilgi: [Aşamalar ve adımlar ekleme](#add-stages-and-steps)
 
 <a name="BKMK_DefineProcessArgs"></a>   
 ## <a name="define-process-arguments"></a>İşlem bağımsız değişkenlerini tanımlama  

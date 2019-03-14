@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 809ea2202971df854b2351d57a09da8918d13b8b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
+ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690204"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57665026"
 ---
 # <a name="run-flows-on-a-schedule"></a>Akışları bir zamanlamaya göre çalıştırma
 Bir veya daha fazla görevi gerçekleştiren (örneğin e-postayla rapor gönderme) bir akış oluşturma:
@@ -84,4 +84,8 @@ Bir veya daha fazla görevi gerçekleştiren (örneğin e-postayla rapor gönder
      ![Gecikme ekleme](./media/run-scheduled-tasks/add-delay.png)
      ![Gecikme süresini saat birimleriyle belirtme](./media/run-scheduled-tasks/delay.png)
      ![Gecikme belirtme](./media/run-scheduled-tasks/delay-until.png)
+
+## <a name="learn-more"></a>Daha fazla bilgi
+
+[Gelişmiş seçenekler](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) ve bunların nasıl yapılandırılacağı hakkında daha fazla bilgi edinin.
 

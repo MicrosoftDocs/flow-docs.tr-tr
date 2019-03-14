@@ -3,7 +3,7 @@ title: Diyalogları iş süreci akışları veya tuval uygulamalarıyla değişt
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691101"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463050"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Diyalogları iş süreci akışları veya tuval uygulamalarıyla değiştirme
 
@@ -84,7 +84,7 @@ Son olarak iş süreci akışı aşamalarına ve adımlarına ek olarak süreç 
 
 Bu iş süreci akışını kullanıcılara açmak için kullanıcıların iş süreci akışında doğru ayrıcalıklara sahip olduğundan emin olun ve akışı etkinleştirin.
 
-İş süreci akışı oluşturma hakkında daha fazla bilgi için bkz. [Öğretici: Süreçleri standartlaştırmak için bir iş süreci akışı oluşturma](create-business-process-flow.md).
+İş süreci akışı oluşturma hakkında daha fazla bilgi için bkz. [Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Diyalogları tuval uygulamalarıyla değiştirme senaryosu
 
@@ -125,7 +125,7 @@ Diyalogları otomatik olarak iş süreci akışlarına veya tuval uygulamaların
 
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Öğretici: Süreçleri standartlaştırmak için bir iş süreci akışı oluşturma](create-business-process-flow.md) </br>
+[Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma](create-business-process-flow.md) </br>
 [PowerApps'te tuval uygulamaları nedir?](/powerapps/maker/canvas-apps/getting-started)
 
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e544f396bc4ba4410a04cda9b56a221d1b3cb181
-ms.sourcegitcommit: d8a061b308547043dbdd99379bbd778dfeca6e1f
+ms.openlocfilehash: 693874ae7876b7c91fa55c45a656b3b76c52a517
+ms.sourcegitcommit: 54700957eb6d7ac486b9ec1f95f2b3ddb58e698c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/05/2019
-ms.locfileid: "57345098"
+ms.locfileid: "57430185"
 ---
 # <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Microsoft Flow galerisine şablon gönderme
 
@@ -35,7 +35,7 @@ Microsoft Flow şablon galerisine bir akış şablonu gönderin. Şablonlar, ki�
 
     ![Üç nokta düğmesi](./media/publish-a-template/ellipsis-button.png)
 1. Görüntülenen menüde **Ayrıntılar**’ı seçin.
-1. **Diğer**’i seçin ve sonra görüntülenen menüde **Şablon olarak gönder** seçeneğini belirleyin.
+1. **Diğer**’i seçin ve sonra görüntülenen menüde **Şablon olarak gönder** seçeneğini belirtin.
 
     ![Bağlam menüsü](./media/publish-a-template/context-menu.png)
 

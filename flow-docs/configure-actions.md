@@ -3,7 +3,7 @@ title: PowerApps’te iş akışları için eylemler yapılandırma | MicrosoftD
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7bd236368e572c7204309094982b2868db0bce8f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: c1b8686000b7723f2d942f3c6c5ebe685d98429d
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690703"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462936"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemler yapılandırma
 
@@ -123,7 +123,7 @@ Eylemler, iş akışı işlemlerinde olmayan bir şeye de sahiptir; giriş ve ç
 |Tür|Açıklama|  
 |----------|-----------------|  
 |Boole|Bir `true` veya `false` değeri.|  
-|Tarih Saat|Tarih ve saat bilgilerini depolayan bir değerdir.|  
+|DateTime|Tarih ve saat bilgilerini depolayan bir değerdir.|  
 |Ondalık|Ondalık duyarlığa sahip bir sayı değeridir. Duyarlık son derece önemli olduğunda kullanılır.|  
 |Varlık|Belirtilen varlık için bir kayıttır. Varlığı seçtiğinizde açılır liste etkinleştirilir ve varlık türünü seçmenize olanak sağlar.|  
 |EntityCollection|Varlık kayıtlarının koleksiyonudur.|  

@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690986"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462922"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>Klasik Uygulamalar için Common Data Service (CDS) iş akışları 
 
@@ -74,7 +74,7 @@ Geliştiriciler, [Dynamics 365 Müşteri Etkileşimi Geliştirici Kılavuzu](htt
  ![Bir iş akışındaki genel sekmesi](media/create-workflow-general-tab.PNG "Bir iş akışındaki genel sekmesi")  
   
  **Farklı Etkinleştir**  
- Diğer şablonlara yönelik gelişmiş bir başlangıç noktası oluşturmak için **İşlem şablonu**’nu seçebilirsiniz. Bu seçeneği belirlerseniz, iş akışını etkinleştirmenizin ardından iş akışı uygulanmaz, bunun yerine **Tür**: **Mevcut bir şablondan yeni işlem (listeden seçin)** seçeneğini belirlemeniz durumunda iş akışı, **İşlem Oluştur** iletişim kutusunda seçilebilir duruma gelir.  
+ Diğer şablonlara yönelik gelişmiş bir başlangıç noktası oluşturmak için **İşlem şablonu**’nu seçebilirsiniz. Bu seçeneği belirtirseniz, iş akışını etkinleştirmenizin ardından iş akışı uygulanmaz; bunun yerine iş akışının **İşlem Oluştur** iletişim kutusunda seçilebilir duruma gelmesi için **Tür**: **Mevcut bir şablondan yeni işlem (listeden seçin)** öğesini seçersiniz  
   
  İşlem şablonları, bir dizi iş akışı işleminiz olduğunda ve aynı mantığı yinelemeden bunları tanımlamak istediğinizde kullanışlıdır.  
   
@@ -103,7 +103,7 @@ Geliştiriciler, [Dynamics 365 Müşteri Etkileşimi Geliştirici Kılavuzu](htt
 >  İş akışı işleri tamamlandıktan hemen sonra silinmez, ancak kısa bir süre sonra toplu iş işlemiyle silinir.  
   
  **Kapsam**  
- Kullanıcıya ait varlıklar için seçenekler **Kuruluş**, **Üst: Alt Departmanlar**, **Departman** veya **Kullanıcı**’dır. Kuruluşa ait varlıklar tek seçenek **Kuruluş**’tur.  
+ Kullanıcıya ait varlıklar için seçenekler **Kuruluş**, **Üst Öğe: Alt Departmanlar**, **Departman** ve **Kullanıcı**'dır. Kuruluşa ait varlıklar tek seçenek **Kuruluş**’tur.  
   
  Kapsam **Kuruluş** ise iş akışı mantığı, kuruluştaki herhangi bir kayda uygulanabilir. Aksi takdirde iş akışı yalnızca kapsam dahilindeki bir kayıt alt kümesine uygulanabilir.  
   
@@ -111,7 +111,7 @@ Geliştiriciler, [Dynamics 365 Müşteri Etkileşimi Geliştirici Kılavuzu](htt
 >  Varsayılan kapsam değeri **Kullanıcı**’dır. İş akışını etkinleştirmeden önce kapsam değerinin uygun olduğunu doğruladığınızdan emin olun.  
   
  **Başlangıç Zamanı**  
- Bir iş akışının otomatik olarak ne zaman başlayacağını belirtmek için bu bölümdeki seçenekleri kullanın. Gerçek zamanlı bir iş akışını belirli olaylardan önce çalıştırılacak şekilde yapılandırabilirsiniz. İş akışı, gerçekleşmeden önce eylemi durdurabileceğinden bu çok güçlü bir özelliktir. Daha fazla bilgi: [Gerçek Zamanlı İş Akışlarını Kullanma](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Seçenekler şunlardır:  
+ Bir iş akışının otomatik olarak ne zaman başlayacağını belirtmek için bu bölümdeki seçenekleri kullanın. Gerçek zamanlı bir iş akışını belirli olaylardan önce çalıştırılacak şekilde yapılandırabilirsiniz. İş akışı, gerçekleşmeden önce eylemi durdurabileceğinden bu çok güçlü bir özelliktir. Daha fazla bilgi: [Gerçek Zamanlı İş Akışları Kullanma](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Seçenekler şunlardır:  
   
 - **Kayıt oluşturuldu**  
   
