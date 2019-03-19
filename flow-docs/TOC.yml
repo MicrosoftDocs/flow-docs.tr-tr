@@ -199,6 +199,8 @@ items:
       href: gdpr-dsr-delete-msa.md
     - name: İstekleri kapatma
       href: gdpr-dsr-accountclose-msa.md
+  - name: Microsoft Flow US Government
+    href: us-govt.md
 - name: Başvuru
   items:
   - name: Bölgelere genel bakış
@@ -219,9 +221,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forumlar
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: 6d6e0511193a6d09bd3c584cf58fa1c776d524a0
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: de3afe912876ce6d84a4d1ef3af6fb9a9d9ec9c8
+ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524371"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58053600"
