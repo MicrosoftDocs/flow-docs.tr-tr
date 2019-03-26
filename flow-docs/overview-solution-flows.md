@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2515b64629436ccb96de497eaf928b83f281dc5f
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
+ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026047"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353021"
 ---
 # <a name="overview"></a>Genel bakış
 
@@ -40,7 +40,7 @@ Bir çözümün içinde oluşturduğunuz akışlar *çözüm kullanan* akışlar
 
 Çözümler ve çözüm kullanan akışlar oluşturmak için aşağıdaki bileşenlere sahip olmanız gerekir.
 
-- [Uygulamalar için Common Data Service 2.0](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - 9.1.0.267 veya sonraki sürüme sahip bir ortam.
 
   Sürümünüzü denetlemek için, [Microsoft Flow Yönetim merkezine](https://admin.flow.microsoft.com) gidin, **Ortamlar**’ı seçin, ilgilendiğiniz ortamı seçin ve ardından **Ayrıntılar** sekmesini seçin.
