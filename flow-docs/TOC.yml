@@ -69,18 +69,18 @@ items:
     href: edit-solution-aware-flow.md
   - name: Çözüm kullanan bir akışı kaldırma
     href: remove-solution-aware-flow.md
-- name: Uygulamalar için Common Data Service (CDS)
+- name: Common Data Service
   items:
-  - name: Klasik Uygulamalar için CDS iş akışları
+  - name: Klasik Common Data Service iş akışları
     href: workflow-processes.md
     items:
     - name: İş akışı aşamalarını ve adımlarını yapılandırma
       href: configure-workflow-steps.md
     - name: İş akışı süreçlerini izleme ve yönetme
       href: monitor-manage-processes.md
-    - name: İş akışı süreçleri için en iyi uygulamalar
+    - name: İş akışı işlemleri için en iyi yöntemler
       href: best-practices-workflow-processes.md
-  - name: Klasik Uygulamalar için CDS eylemleri
+  - name: Klasik Common Data Service eylemleri
     items:
     - name: Eylemler kullanma
       href: actions.md
@@ -90,15 +90,15 @@ items:
       href: configure-actions.md
     - name: Bir iş akışından özel eylemler çağırma
       href: invoke-custom-actions-workflow-dialog.md
-  - name: Klasik Uygulamalar için CDS iş akışları
+  - name: Klasik Common Data Service görev akışları
     items:
     - name: Mobil görev akışları oluşturma
       href: create-mobile-task-flow.md
-  - name: Klasik Uygulamalar için CDS iletişim kutuları
+  - name: Klasik Common Data Service iletişim kutuları
     items:
-    - name: Klasik Uygulamalar için CDS iletişim kutularını kullanma
+    - name: Klasik Common Data Service iletişim kutularını kullanma
       href: use-cds-for-apps-dialogs.md
-    - name: Klasik Uygulamalar için CDS iletişim kutularını değiştirme
+    - name: Klasik Common Data Service iletişim kutularını değiştirme
       href: replace-dialogs.md
 - name: Nasıl yapılır
   items:
@@ -161,7 +161,7 @@ items:
     items:
     - name: 'Örnek: İş süreci akışlarıyla çalışma'
       href: ./developer/sample-work-business-process-flows.md
-  - name: Özel Uygulamalar için CDS iş akışı etkinlikleri
+  - name: Özel Common Data Service iş akışı etkinlikleri
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Yönetim
   items:
@@ -221,9 +221,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forumlar
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: e5b09261b0c46b8019fbb58e058c3a11720c2028
-ms.sourcegitcommit: 3c7822c7207cfa51d0274e9647ef02e5ea1d999f
+ms.openlocfilehash: 160466a0a616661993237e70007072efded33c9c
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321376"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352746"
