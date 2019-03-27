@@ -1,5 +1,5 @@
 ---
-title: Klasik Uygulamalar için Common Data Service (CDS) iş akışları | MicrosoftDocs
+title: Klasik Common Data Service iş akışları | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: matp
@@ -14,14 +14,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462922"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352861"
 ---
-# <a name="classic-common-data-service-cds-for-apps-workflows"></a>Klasik Uygulamalar için Common Data Service (CDS) iş akışları 
+# <a name="classic-common-data-service-workflows"></a>Klasik Common Data Service iş akışları 
 
 İş akışları, bir kullanıcı arabirimi olmadan iş süreçlerini otomatikleştirir. Kişiler genellikle herhangi bir kullanıcı etkileşimi gerektirmeyen otomasyonu başlatmak için iş akışı işlemlerini kullanır.  
   

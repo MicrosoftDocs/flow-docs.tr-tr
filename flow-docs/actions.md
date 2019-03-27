@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d75332f8902d5889881d122f2d42e3c203e34ad
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: cf5c0e488f1d01c514f509b9d2a8afae265cf487
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462752"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352884"
 ---
 # <a name="use-actions"></a>Eylemler kullanma
 
@@ -39,7 +39,7 @@ Eylemler, işletmeniz için yapmanız gereken bir işlemle eşleşen tek bir fii
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Genel iletiler 
  
- Bir eylem, CDS for Apps iş akışlarından ya da [eklentilerden](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) farklı olarak belirli bir varlıkla ilişkilendirilmek zorunda değildir. Kendi başlarına çağrılabilen "genel" eylemler tanımlayabilirsiniz.
+ Bir eylem, Common Data Service iş akışlarından ya da [eklentilerden](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) farklı olarak belirli bir varlıkla ilişkilendirilmek zorunda değildir. Kendi başlarına çağrılabilen "genel" eylemler tanımlayabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

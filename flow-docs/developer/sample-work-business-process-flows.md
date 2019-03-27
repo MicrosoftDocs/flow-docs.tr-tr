@@ -18,24 +18,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690066"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352976"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Örnek: İş süreci akışlarıyla çalışma
 
 Bu örnekte, bir varlık kaydı için iş süreci akışını alma, bir iş süreci akışı örneği ve süreç aşamaları için etkin yolu alma ve etkin aşamayı değiştirme gibi işlemleri gerçekleştirerek iş süreci akışlarıyla program aracılığıyla nasıl çalışılacağı gösterilmektedir. Bu kavramlar hakkında bilgi edinmek için bkz. [Kod kullanarak iş süreci akışlarıyla çalışma](business-process-flows-code.md)  
 
- Bu örnek, [Örnek: İş süreci akışlarıyla çalışma](https://go.microsoft.com/fwlink/p/?LinkId=846108) sayfasından indirilebilir.  
+ Bu örnek şu konumdan indirilebilir: [Örnek: İş süreci akışlarıyla çalışma](https://go.microsoft.com/fwlink/p/?LinkId=846108)  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Önkoşullar  
  Örneği çalıştırmadan önce:  
 
-1. Bir Uygulamalar için Common Data Service ortamına erişim sağlayın.  
+1. Bir Common Data Service ortamına erişim sağlayın.  
 
 2. Bu örnekte kullanılan Müşteri Adayı, Fırsat ve İş Akışı varlıkları ile iş süreci akış tanımı varlık kayıtları üzerinde uygun ayrıcalıklara sahip olun.  
 

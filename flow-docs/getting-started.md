@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb623e84f309303557d05d82422d2419f8d3ccbe
-ms.sourcegitcommit: 300829df88dfa1d0049ea506f949b29d6bd52e42
+ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251826"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353022"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama #
 
@@ -35,7 +35,7 @@ Hoş Geldiniz! Microsoft Flow sık kullandığınız uygulamalar ile hizmetler a
 
 Ana akış türleri; [otomatik](get-started-logic-flow.md), [düğme](introduction-to-button-flows.md), [zamanlanmış](run-scheduled-tasks.md) ve [iş süreci](business-process-flows-overview.md) akışlarıdır.
 
-Bir Dynamics 365 müşteri etkileşimi özelleştiricisiyseniz; [iş akışları](configure-workflow-steps.md), [eylemler](create-actions.md), [mobil görev akışları](create-mobile-task-flow.md) ve [iletişim kutularını](use-cds-for-apps-dialogs.md) içeren klasik Uygulamalar için Common Data Service işlemlerine de aşina olabilirsiniz.
+Bir Dynamics 365 müşteri etkileşimi özelleştiricisiyseniz; [iş akışları](configure-workflow-steps.md), [eylemler](create-actions.md), [mobil görev akışları](create-mobile-task-flow.md) ve [iletişim kutularını](use-cds-for-apps-dialogs.md) içeren klasik Common Data Service işlemlerini de biliyor olabilirsiniz.
 
 İlk adım olarak [kaydolmanız](sign-up-sign-in.md) gerekir. Zaten bir Microsoft Flow hesabınız varsa tabletinizde, masaüstü bilgisayarınızda ve hatta telefonunuzda [oturum açabilirsiniz](https://flow.microsoft.com/signin).
 

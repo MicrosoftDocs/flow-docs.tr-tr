@@ -2,31 +2,25 @@
 layout: HubPage
 hide_bc: true
 title: Microsoft Flow Belgeleri | Microsoft Docs
-description: Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.
+description: 'Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.'
 keywords:
-- Microsoft Flow
-- iş akışı
-- akış
-- onay iş akışı
-- sharepoint iş akışı
+  - Microsoft Flow
+  - iş akışı
+  - akış
+  - onay iş akışı
+  - sharepoint iş akışı
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-- karann-msft
+  - karann-msft
 search.app:
-- Flow
+  - Flow
 search.audienceType:
-- flowmaker
-- enduser
-ms.openlocfilehash: 03eebb10c1155894b9dc1db5a0283cd72d78a1ae
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711600"
+  - flowmaker
+  - enduser
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -428,12 +422,12 @@ ms.locfileid: "46711600"
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Uygulamalar için Common Data Service (CDS) kullanma</h3>
-                                            <p>İş akışı süreçleriyle Uygulamalar için Common Data Service (CDS) kullanma</p>
+                                            <h3>Common Data Service'i kullanma</h3>
+                                            <p>İş akışı süreçleriyle Common Data Service'i kullanın.</p>
                                         </div>
                                     </div>
                                 </div>

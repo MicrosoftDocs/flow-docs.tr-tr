@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248857"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353091"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -49,7 +49,7 @@ Aşağıdaki tabloda, hangi kişisel verilerin otomatik olarak silindiği ve han
 
 *Bu kaynakların her biri, kişisel verileri içeren “Oluşturan” ve “Değiştiren” kayıtlarını içerir. Güvenlik nedenleriyle, bu kayıtlar kaynak silinene kadar korunur.
 
-**Uygulamalar için Common Data Service veritabanını içeren ortamlar için, ortam izinleri (örn. hangi kullanıcıların Ortam Oluşturucu ve Yönetici rollerine atandığı) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+**Common Data Service veritabanını içeren ortamlar için, ortam izinleri (örn. hangi kullanıcıların Ortam Oluşturucu ve Yönetici rollerine atandığı) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
 
 El ile inceleme gerektiren veriler ve kaynaklar için, Microsoft Flow belirli bir kullanıcının kişisel verilerini bulmaya veya değiştirmeye yönelik olarak aşağıdaki deneyimleri sunar:
 
@@ -76,7 +76,7 @@ Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için
 |Özel bağlayıcı izinleri|Microsoft Flow Oluşturucu Portalı| ||
 |Onay Geçmişi|Microsoft PowerApps Oluşturucu Portalı*|||
 
-*Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, ortam izinleri ve model tabanlı uygulama izinleri, Uygulamalar için Common Data Service veritabanı örneğinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+*Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, ortam izinleri ve model tabanlı uygulama izinleri, Common Data Service veritabanı örneğinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
 
 \*\* Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
 
@@ -137,7 +137,7 @@ Bu adımlar, ayrılan bir kullanıcı için mevcut akışları kopyalar. Kopyala
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Microsoft Flow’dan onay geçmişini silme
 
- Microsoft Flow onay verileri, Uygulamalar için Common Data Service’in şu anki veya bir önceki sürümünde depolanır. Kişisel bilgiler onay içinde bir onay yanıtının içerdiği onay atamaları ve açıklamaları formunda bulunur. Yöneticiler aşağıdaki adımları izleyerek bu verilere erişebilir:
+ Microsoft Flow onay verileri, Common Data Service’in şu anki veya bir önceki sürümünde depolanır. Kişisel bilgiler onay içinde bir onay yanıtının içerdiği onay atamaları ve açıklamaları formunda bulunur. Yöneticiler aşağıdaki adımları izleyerek bu verilere erişebilir:
 
 1. [PowerApps](https://web.powerapps.com/)’te oturum açın.
 
@@ -277,7 +277,7 @@ Bir yönetici, [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.co
 
 Kullanıcılara bir ortamda izinler atanabilir (Ortam Yöneticisi, Ortam Oluşturucu vb. gibi) ve bu izinler de Microsoft Flow hizmetinde “rol ataması” olarak depolanır.
 
-Uygulamalar için Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, bu “rol atamaları”, Uygulamalar için Common Data Service veritabanı örneğinde kayıt olarak depolanır.
+Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, bu “rol atamaları”, Common Data Service veritabanı örneğinde kayıt olarak depolanır.
 
 Bir ortamda kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
 

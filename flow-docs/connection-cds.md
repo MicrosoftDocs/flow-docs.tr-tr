@@ -1,6 +1,6 @@
 ---
-title: Uygulamalar için Common Data Service ile otomatik akış oluşturma | Microsoft Docs
-description: Uygulamalar için Common Data Service bağlantısı ve Microsoft Flow kullanarak iş akışları oluşturma
+title: Common Data Service ile otomatik akış oluşturma | Microsoft Docs
+description: Common Data Service bağlantısı ve Microsoft Flow kullanarak iş akışları oluşturma
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524509"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352907"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Uygulamalar için Common Data Service'i kullanarak otomatik akış oluşturma
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Common Data Service'i kullanarak otomatik akış oluşturma
 
-Uygulamalar için Common Data Service bağlayıcısıyla Common Data Service veritabanınızın içinde oluşturma ve güncelleştirme olayları tarafından başlatılan iş akışları oluşturabilirsiniz. Buna ek olarak, Uygulamalar için Common Data Service veritabanının içindeki kayıtlar üzerinde oluşturma, güncelleştirme, alma ve silme eylemleri de gerçekleştirebilirsiniz.
+Common Data Service bağlayıcısıyla Common Data Service veritabanınızın içinde oluşturma ve güncelleştirme olayları tarafından başlatılan iş akışları oluşturabilirsiniz. Buna ek olarak, Common Data Service veritabanının içindeki kayıtlar üzerinde oluşturma, güncelleştirme, alma ve silme eylemleri de gerçekleştirebilirsiniz.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Uygulamalar için Common Data Service'den akış başlatma
+## <a name="initiate-a-flow-from-common-data-service"></a>Common Data Service'den akış başlatma
 
 Akışınızı başlatmak için aşağıdaki tetikleyicilerden birini kullanabilirsiniz:
 
@@ -75,9 +75,9 @@ Akış kullanıcısının kişilerinden birini adı veya soyadı her güncelleş
 
 Kayıt üzerindeki oluşturma, güncelleştirme veya silme eylemleriyle tetiklenen bir akış oluşturmak için, kullanıcının Callback Registration varlığı üzerinde oluşturma, okuma, yazma ve silme eylemleri için kullanıcı düzeyi izinlerine sahip olması gerekir. Ayrıca, tanımlanan kapsamlara bağlı olarak kullanıcının aynı varlık üzerinde en azından aynı düzeyde okuma izni de olmalıdır.  Ortam güvenliği hakkında [daha fazla bilgi edinin](https://docs.microsoft.com/power-platform/admin/database-security).
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Uygulamalar için Common Data Service'e veri yazma
+## <a name="write-data-into-common-data-service"></a>Common Data Service'e veri yazma
 
-Uygulamalar için Common Data Service'e veri yazarken aşağıdaki eylemlerden birini kullanın:
+Common Data Service'e veri yazarken aşağıdaki eylemlerden birini kullanın:
 
 - Yeni kayıt oluşturma
 - Kaydı güncelleştirme

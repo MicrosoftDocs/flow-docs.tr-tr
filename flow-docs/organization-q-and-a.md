@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885516"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327102"
 ---
 # <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda Flow ile ilgili soru-cevap
 Bu konu başlığında, kuruluşunuzdaki kullanıcıların Flow’u nasıl kullanacağı ve Flow hizmetini nasıl denetleyeceğiniz açıklanmıştır.
@@ -38,7 +38,7 @@ Microsoft Flow, kişilerin ve ekiplerin eşitleme yapmak, bildirimler almak, ver
 Kullanıcılar Web portalı üzerinden Flow’a iki şekilde kaydolabilir:
 
 #### <a name="option-1"></a>Seçenek 1
-Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip **Ücretsiz kaydolun**’u seçerek ve ardından [portal.office.com](https://portal.office.com/Start?sku=flow_free) veya [signup.live.com](https://signup.live.com) üzerinden Flow’a kaydolma işlemini tamamlayarak kayıt yapabilir.
+Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip **Ücretsiz kaydolun**’u seçerek ve ardından [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) veya [signup.live.com](https://signup.live.com) üzerinden Flow’a kaydolma işlemini tamamlayarak kayıt yapabilir.
 
 #### <a name="option-2"></a>Seçenek 2
 Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip **Oturum Aç**’ı seçtikten sonra iş, okul veya kişisel e-posta adresleri ile oturum açıp Flow kullanım koşullarını kabul ederek kaydolabilir.    
@@ -147,7 +147,7 @@ Microsoft Flow tarafından yeni bir kiracı oluşturulduysa aşağıdaki adımla
 1. Kiracıya katılmak için, yönetmek istediğiniz kiracı etki alanıyla eşleşen bir e-posta adresi etki alanı kullanarak Flow’a kaydolun. Örneğin, Microsoft contoso.com kiracısını oluşturduysa @contoso.com ile sona eren bir e-posta adresi kullanarak kiracıya katılın.
 2. Etki alanı sahipliğini doğrulayarak yönetici denetimini talep edin: kiracıya girdikten sonra etki alanı sahipliğini doğrulayarak kendinizi yönetici rolüne yükseltebilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin:    
    
-   1. [https://portal.office.com](https://portal.office.com/Start?sku=flow_free) adresine gidin.
+   1. [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) adresine gidin.
    2. Sol üst köşedeki uygulama başlatıcısı simgesini ve Yönetici öğesini seçin.
    3. **Yönetici olun** sayfasındaki yönergeleri okuyun ve ardından **Evet, yönetici olmak istiyorum**’u seçin.  
       

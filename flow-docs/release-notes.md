@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 392a869d6b25bb16ee02a6bb3373d6edcf81621b
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905758"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353160"
 ---
 # <a name="release-notes"></a>Sürüm notları
 ## <a name="top-questions"></a>En çok sorulan sorular
@@ -96,7 +96,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 ### <a name="release-2018-07-23"></a>Sürüm 2018-07-23
 
 - **Excel’den akış oluşturma ve çalıştırma** - Yeni **Akış** düğmesini (şeritteki **Veri** sekmesinden erişilir) kullanarak Microsoft Flow’dan Excel’deki tablo verileriniz üzerinde otomasyonlar oluşturup bunları tetikleyebilirsiniz. Veri işlemeyi veya verilerin kopyalanmasını/içeri aktarılmasını otomatikleştirin.
-- **İş süreci akışı oluşturma** - İş süreci akışı, Uygulamalar için Common Data Service’i temel alan, durum bilgisi olan ve insanlarla etkileşim kurabilen yeni bir akış türüdür. Bu yeni akışları kullanarak insanların izlemesi için bir dizi aşama ve adım tanımlayabilirsiniz. Bunlar gerektiği gibi ileri veya geri yönde hareket edebilir.
+- **İş süreci akışı oluşturma** - İş süreci akışı, Common Data Service’i temel alan, durum bilgisi olan ve insanlarla etkileşim kurabilen yeni bir akış türüdür. Bu yeni akışları kullanarak insanların izlemesi için bir dizi aşama ve adım tanımlayabilirsiniz. Bunlar gerektiği gibi ileri veya geri yönde hareket edebilir.
 - **Outlook Web App’te Microsoft To-Do için akış oluşturma** - Outlook Web App’te birisinden \@bahsedilirse, bu kişi bir akış oluşturmaya yönelik bir kısayol görür. Bu akış, kendinden \@bahsedilen kişi için Microsoft To-Do’da otomatik olarak e-postanın içeriğini temel alan görevler oluşturur.
 - **SharePoint görünümü desteği** - SharePoint bağlayıcısı artık tetikleyicilerde ve eylemlerde belirli bir SharePoint görünümünün seçilmesini destekliyor. Bu, sütunları filtreleyerek yalnızca seçili görünümdeki alanların kalmasını sağlar.
 - **Dört yeni bağlayıcı** - Yüksek oranda ölçeklenebilir bir IoT hizmet olarak yazılım (SaaS) çözümü olan Azure IoT Central, Survey 123, LMS365 ve ProjectWise Design Integration.
@@ -151,7 +151,7 @@ Bu sürüm hakkında [daha fazla bilgi edinin ve soru sorun](https://flow.micros
 
 ### <a name="release-2018-04-04"></a>Sürüm 2018-04-04
 
-- **Common Data Service onayları** - Modern onaylar, Uygulamalar için Common Data Service’in en son sürümünde oluşturuldu. Başka bir deyişle, CDS bağlayıcısı ile gönderdiğiniz veya aldığınız onayların durumunu okuyan akışlar oluşturabilirsiniz.
+- **Common Data Service onayları** - Modern onaylar, Common Data Service’in en son sürümünde oluşturuldu. Başka bir deyişle, Common Data Service bağlayıcısı ile gönderdiğiniz veya aldığınız onayların durumunu okuyan akışlar oluşturabilirsiniz.
 - **Her birine uygula eylemindeki hataları bulma** - Döngüde yüzlerce öğe olsa bile doğrudan akış çalıştırma görünümü döngülerindeki hatalara atlayın.
 - **Onayları yeniden atama** - Aldığınız tüm onayları kuruluşunuzdaki başka bir kişiye devretmek üzere atayabilirsiniz. 
 - **Oda listeleri** - Office 365 Outlook bağlayıcısı kuruluşunuzdaki oda verilerini almak için eylemler ekledi.

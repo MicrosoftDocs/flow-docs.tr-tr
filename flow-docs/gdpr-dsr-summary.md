@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690822"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353137"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi İstekleri’ni yanıtlama
 
-Bu makale sizi ve kuruluşunuzu Avrupa Birliği’nin Genel Veri Koruma Yönetmeliği’ne (GDPR) hazırlar. Bu belgeler, yalnızca GDPR’ye hazırlanmak için Microsoft’un neler yaptığını açıklamakla kalmıyor, aynı zamanda PowerApps, Microsoft Flow ve Uygulamalar için Common Data Service kullanırken GDPR uyumluluğunu desteklemek için bir an önce atabileceğiniz adımların örneklerini paylaşıyor.
+Bu makale sizi ve kuruluşunuzu Avrupa Birliği’nin Genel Veri Koruma Yönetmeliği’ne (GDPR) hazırlar. Bu belgeler, yalnızca GDPR’ye hazırlanmak için Microsoft’un neler yaptığını açıklamakla kalmıyor, aynı zamanda PowerApps, Microsoft Flow ve Common Data Service kullanırken GDPR uyumluluğunu desteklemek için bir an önce atabileceğiniz adımların örneklerini paylaşıyor.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -68,11 +68,11 @@ Bu makalede Microsoft’un ürünlerini, hizmetlerini ve yönetim araçlarını 
 
     Azure Active Directory kullanarak Microsoft Flow kullanıcılarının kimliklerini yönetebilirsiniz. Kurumsal müşteriler, belirli bir Microsoft hizmetinin yapısı dahilinde sınırlı düzenleme özellikleri içeren DSR düzeltme isteklerini yönetebilir.  Sistem tarafından oluşturulmuş günlükler gerçek etkinlikleri yansıttığından ve Microsoft hizmetlerindeki etkinliklerin geçmiş kaydını oluşturduğundan, veri işlemcisi olarak Microsoft bu günlükleri düzeltme özelliği sunmaz.  [DSR hakkında daha fazla bilgi edinin](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Kısıtlayın: Mümkün olduğunda çeşitli çevrimiçi hizmetlerin lisanslarını kaldırarak veya istenen hizmetleri kapatarak kişisel verilerin işlenmesini kısıtlayın. Ayrıca verileri Microsoft bulutundan kaldırabilir ve şirket içinde ya da başka bir konumda saklayabilirsiniz.
+1. Kısıtlayın: Mümkün olduğunca çeşitli çevrimiçi hizmetlerin lisanslarını kaldırarak veya istenen hizmetleri kapatarak kişisel verilerin işlenmesini kısıtlayın. Ayrıca verileri Microsoft bulutundan kaldırabilir ve şirket içinde ya da başka bir konumda saklayabilirsiniz.
 
     Veri sahipleri, kişisel verilerinin işlenmesini kısıtlamanızı isteyebilir.  Microsoft bu amaç doğrultusunda uygulama programı arabirimleri (API’ler) ve kullanıcı arabirimleri (UI’ler) sağlar.  Bu arabirimler, kurumsal müşterinin kiracı yöneticisinin bu tarz DSR’leri veri dışarı aktarma ve veri silmeyi birlikte kullanarak yönetmesine olanak sağlar. Bir müşteri (1) kullanıcının hesapları, sistem tarafından oluşturulmuş günlükleri ve ilişkili günlükleri içeren kişisel verilerinin bir elektronik kopyasını dışarı aktarabilir ve ardından (2) Microsoft sistemleri içinde yer alan hesabı ve ilişkili verileri silebilir.
 
-1. Silin: Microsoft'un bulutunda yer alan kişisel verileri kalıcı olarak kaldırın. [Kişisel verileri silme hakkında daha fazla bilgi edinin](gdpr-dsr-delete.md).
+1. Silin: Microsoft’un bulutunda yer alan kişisel verileri kalıcı olarak kaldırın. [Kişisel verileri silme hakkında daha fazla bilgi edinin](gdpr-dsr-delete.md).
 
 1. Dışarı aktarın: Kişisel verilerin bir elektronik kopyasını (makine tarafından okunabilir bir biçimde) veri sahibine sağlayın. Bu makaledeki her bölüm, bir veri sorumlusu kuruluşun Microsoft’un bulutundaki kişisel verilere yönelik bir DSR’yi yanıtlamak için gerçekleştirebileceği teknik yordamları özetler. [Kişisel verileri dışarı aktarma hakkında daha fazla bilgi edinin](gdpr-dsr-export.md).
 
