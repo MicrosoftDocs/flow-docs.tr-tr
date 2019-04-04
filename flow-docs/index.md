@@ -2,25 +2,31 @@
 layout: HubPage
 hide_bc: true
 title: Microsoft Flow Belgeleri | Microsoft Docs
-description: 'Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.'
+description: Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.
 keywords:
-  - Microsoft Flow
-  - iş akışı
-  - akış
-  - onay iş akışı
-  - sharepoint iş akışı
+- Microsoft Flow
+- iş akışı
+- akış
+- onay iş akışı
+- sharepoint iş akışı
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-  - karann-msft
+- karann-msft
 search.app:
-  - Flow
+- Flow
 search.audienceType:
-  - flowmaker
-  - enduser
+- flowmaker
+- enduser
+ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353045"
 ---
 <div id="main" class="v2">
     <div class="container">
