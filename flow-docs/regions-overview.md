@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 32301a87c33e5586280d822df8f6c381dbbf96a9
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
+ms.openlocfilehash: dce9fa4bb838f931acdcd95710d82d15bdc7dd24
+ms.sourcegitcommit: 17bb4525b881ab2095bdfa4a573a186f6b7b1fd6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57885173"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58913113"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Microsoft Flow'daki bölgelerle ilgili SSS
 Bu belgede Microsoft Flow hakkında sık sorulan soruların bir listesi bulunur.
@@ -47,6 +47,7 @@ Yöneticiler Microsoft Flow [yönetim merkezinde](https://admin.flow.microsoft.c
 * Kanada
 * Güney Amerika
 * Birleşik Krallık
+* ABD Kamu (GCC)
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>Hangi özellikler belirli bir bölgeye özeldir?
 Ortamlar, farklı bölgelerde oluşturulabilir ve oluşturuldukları coğrafi konuma bağlı olur. Bir ortamda akış oluşturduğunuzda, bu akış o coğrafi konumdaki veri merkezlerinde dağıtılır. Bu durum, o ortamda oluşturduğunuz ortak veri modeli, akışlar, bağlantılar, ağ geçitleri, uygulamalar ve özel bağlayıcılar dahil tüm öğeler için geçerlidir.
