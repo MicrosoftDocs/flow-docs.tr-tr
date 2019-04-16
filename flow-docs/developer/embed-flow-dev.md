@@ -389,7 +389,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 Bir veya birden çok temsilci izni seçmek için şu adımları izleyin:
 
-1.  https://portal.azure.com adresine gidin. 
+1.  Git https://portal.azure.com 
 2.  **Azure Active Directory**'yi seçin.
 3.  **Yönet**'in altında **Uygulama kayıtları**'nı seçin.
 4.  Flow hizmeti kapsamları için yapılandırılacak üçüncü taraf uygulamasını girin.
