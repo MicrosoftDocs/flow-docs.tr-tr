@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.openlocfilehash: ddf0aadfa66b68e25246dd6cb5f50dc957d05074
+ms.sourcegitcommit: 4427b46901376f282c18fc5c1af5fa564b04cfb5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353091"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477945"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
 
@@ -162,7 +162,7 @@ Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet'lerinden](https://go.micro
 Add-PowerAppsAccount
 
 #Retrieves all connections for the calling user and deletes them
-Get-Connection | Remove-Connection
+Get-AdminPowerAppConnection | Remove-Connection
 ```
 
 PowerApps Yönetici PowerShell cmdlet'leri
@@ -172,7 +172,7 @@ Add-PowerAppsAccount
 
 $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 #Retrieves all connections for the DSR user and deletes them 
-Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
 
