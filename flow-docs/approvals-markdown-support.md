@@ -57,23 +57,23 @@ Metninizi paragraflar ve satır sonlarıyla ayırarak daha kolay okunur hale get
    
 **Örnek**
 
-Enter tuşuyla metninizin arasına satırlar ekleyin.
-Bu metninizde daha iyi bir şekilde aralıklar bırakarak metninizi okumayı kolaylaştırır.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Sonuç:**   
-Enter tuşuyla metninizin arasına satırlar ekleyin.      
-Bu metninizde daha iyi bir şekilde aralıklar bırakarak metninizi okumayı kolaylaştırır.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Örnek 2**
 
-Satır sonundan önce iki boşluk ekleyin.(boşluk, boşluk)     
-Bu işlem paragraflar arasında boşluk bırakır.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Sonuç:**  
-Satır sonundan önce iki boşluk ekleyin.   
+Add two spaces prior to the end of the line.   
 
-Bu işlem paragraflar arasında boşluk bırakır.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Listeler
@@ -94,9 +94,9 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 
 **Sonuç:**
 
-1. İlk öğe.
-2. İkinci öğe.
-3. Üçüncü öğe.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Madde işareti listeleri
 
@@ -112,9 +112,9 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 
 **Sonuç:**
 
-- Öğe 1
-- Öğe 2
-- Öğe 3
+- Item 1
+- Item 2
+- Item 3
 
 ### <a name="nested-lists"></a>İç içe listeler
 
@@ -134,15 +134,15 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 
 **Sonuç:**  
 
-1. İlk öğe.
+1. First item.
 
-    - Öğe 1
-    - Öğe 2
-    - Öğe 3
-2. İkinci öğe.
-    - İç içe öğe 1
-    - İç içe öğe 2
-    - İç içe öğe 3
+    - Item 1
+    - Item 2
+    - Item 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Bağlantılar
@@ -212,10 +212,10 @@ Yapılandırılmış verileri tablolarla düzenleyin.
 
 **Sonuç:**  
 
-| Başlık 1 | Başlık 2 | Başlık 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Hücre A1 | Hücre A2 | Hücre A3 |  
-| Hücre B1 | Hücre B2 | Hücre B3<br/>metnin ikinci satırı |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Vurgu (kalın, italik, üstü çizili)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Sonuç:**
 
-Açıklamalarda _vurgu_ kullanarak **güçlü** fikirlerinizi ifade edin ve <s>düzeltmeleri</s>  belirtin  
-**_Kalın, italik metin_**   
-**~~Kalın, üstü çizgili metin~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Özel karakterler
