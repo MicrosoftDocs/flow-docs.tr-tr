@@ -46,7 +46,8 @@
         "Flow"
       ],
       "titleSuffix": "Microsoft Flow",
-      "search.appverid": "met150"
+      "search.appverid": "met150",
+      "toc_preview": true
     },
     "fileMetadata": {},
     "template": [],
