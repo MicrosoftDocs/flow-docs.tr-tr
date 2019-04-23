@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dce9fa4bb838f931acdcd95710d82d15bdc7dd24
-ms.sourcegitcommit: 17bb4525b881ab2095bdfa4a573a186f6b7b1fd6
+ms.sourcegitcommit: 3bdd6c6b9df40f53e52c31130abaa93ba09a0e9b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58913113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60120730"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Microsoft Flow'daki bölgelerle ilgili SSS
 Bu belgede Microsoft Flow hakkında sık sorulan soruların bir listesi bulunur.

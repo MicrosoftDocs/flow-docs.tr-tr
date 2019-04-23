@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: ddf0aadfa66b68e25246dd6cb5f50dc957d05074
-ms.sourcegitcommit: 4427b46901376f282c18fc5c1af5fa564b04cfb5
+ms.sourcegitcommit: 3bdd6c6b9df40f53e52c31130abaa93ba09a0e9b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477945"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
