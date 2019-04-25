@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874449"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614546"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Koşullarda ifadeleri kullanarak birden çok değeri denetleme
 Bu kılavuzda, **Gelişmiş mod**’da ifadeleri ve **Koşulları** kullanarak birden çok değeri nasıl karşılaştırabileceğinizi öğreneceksiniz.
@@ -36,13 +34,13 @@ Koşullarınızda aşağıdaki mantıksal ifadelerin herhangi bir birleşimini k
 
 İfade|Açıklama|Örnek
 --------|-----------|-------
-|[and](#use-the-and-expression)|İki bağımsız değişkeni alır ve iki değer de true ise, true değerini döndürür.<br><b>Not</b>: İki bağımsız değişkenin de Boolean olması gerekir.|Bu ifade false değerini döndürür: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|İki bağımsız değişkeni alır ve ikisinden biri true ise, true değerini döndürür. <br><b>Not</b>: İki bağımsız değişkenin de Boolean olması gerekir.|Bu ifade true değerini döndürür:<br>or(greater(1,10),equals(0,0))
+|[and](#use-the-and-expression)|İki bağımsız değişkeni alır ve iki değer de true ise, true değerini döndürür.<br><b>Not</b>: İki bağımsız değişken de Boolean olmalıdır.|Bu ifade false değerini döndürür: <br>and(greater(1,10),equals(0,0))
+|[or](#use-the-or-expression)|İki bağımsız değişkeni alır ve ikisinden biri true ise, true değerini döndürür. <br><b>Not</b>: İki bağımsız değişken de Boolean olmalıdır.|Bu ifade true değerini döndürür:<br>or(greater(1,10),equals(0,0))
 |equals|İki değer eşitse true değerini döndürür.|Örneğin, parametre1’in değeri birDeğer olduğunda bu ifade true değerini döndürür:<br>equals(parameters('parametre1'), 'birDeğer')
-|[less](#use-the-less-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade true değerini döndürür:<br>less(10,100)
-|lessOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade true değerini döndürür:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade false değerini döndürür:<br>greater(10,10)
-|greaterOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyük veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string’dir.|Bu ifade false değerini döndürür:<br>greaterOrEquals(10,100)
+|[less](#use-the-less-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade true değerini döndürür:<br>less(10,100)
+|lessOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade true değerini döndürür:<br>lessOrEquals(10,10)
+|[greater](#use-the-greater-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade false değerini döndürür:<br>greater(10,10)
+|greaterOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyük veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade false değerini döndürür:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Nesne, dizi veya dize boşsa true değerini döndürür.|Bu ifade true değerini döndürür:<br>empty('')
 |not|Bir boolean değerinin tersini döndürür. |Bu ifade true değerini döndürür:<br>not(contains('200 Success','Fail'))
 |if|İfadenin true veya false olarak sonuçlanmasına bağlı olarak belirli bir değeri döndürür.|Bu ifade "yes" değerini döndürür:<br>if(equals(1, 1), 'evet', 'hayır')
@@ -214,6 +212,6 @@ Son ödeme tarihine bir günden kısa süre kalmasına rağmen tutarın tamamın
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>Daha fazla bilgi
-Diğer [ifadeler](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions) hakkında bilgi edinin
+## <a name="use-functions-in-expressions"></a>İfadelerde işlevleri kullanma
 
+Bazı ifadelerin değerleri, bir akış çalışmaya başladığında henüz var olmayabilecek çalışma zamanı eylemlerinden alınır. İfadelerde bu değerlere başvurmak veya bunlarla çalışmak için İş Akışı Tanımlama Dili'nin sağladığı işlevleri kullanabilirsiniz. Daha fazla bilgi: [Microsoft Flow'da İş Akışı Tanımlama Dili'nin işlevler başvurusu](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
