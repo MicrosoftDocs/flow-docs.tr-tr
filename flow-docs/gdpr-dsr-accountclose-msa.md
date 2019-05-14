@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: be12491490cac51a0b91906b1a663522c2a7658f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688778"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035087"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Hesap Kapatma İsteklerini yanıtlama
 
-Kişisel verileri **silme hakkı**, GDPR’de önemli bir korunma yöntemidir. Bu hak, denetim günlüğü bilgileri dışında tüm kişisel verilerin kaldırılmasını kapsar. Bir kullanıcı, Microsoft Hesabını (MSA) kapatmaya karar verdiğinde kullanıcının temel alınan verileri de silinir.
+Kişisel verileri **silme hakkı**, GDPR’de önemli bir korunma yöntemidir. Bu hak, denetim günlüğü bilgileri dışında tüm kişisel verilerin kaldırılmasını kapsar. Kullanıcılar Microsoft Hesabını (MSA) kapatmaya karar verdiğinde kullanıcının temel alınan verileri de silinir.
 
 Bu kaynaklar, bir kullanıcı MSA’yı kapattığında otomatik olarak silinen kişisel veriler içeriyor:
 

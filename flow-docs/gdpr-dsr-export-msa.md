@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690783"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035025"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Dışarı Aktarma İstekleri’ni yanıtlama
 
@@ -33,7 +33,7 @@ Genel Veri Koruma Yönetmeliği (GDPR) yolculuğunuzda sizinle iş ortaklığın
 
 ## <a name="manage-export-requests"></a>Dışarı aktarma isteklerini yönetme
 
-*Veri taşınabilirliği hakkı*, bir veri sahibine kişisel verilerinin elektronik biçimde (başka bir deyişle, “yapılandırılmış, yaygın olarak kullanılan, makine tarafından okunabilir ve birlikte çalışabilen bir biçim”) bir kopyasını isteme olanağı sağlar. Bu kopya da başka bir veri sorumlusuna aktarılabilir.
+*Veri taşınabilirliği hakkı*, veri sahiplerine kişisel verilerinin elektronik biçimde (yani “yapılandırılmış, yaygın olarak kullanılan, makine tarafından okunabilir ve birlikte çalışabilen bir biçim”) bir kopyasını isteme olanağı sağlar. Bu kopya da başka bir veri sorumlusuna aktarılabilir.
 
 Belirli bir kullanıcıya yönelik kişisel verileri bulmak veya dışarı aktarmak için [Microsoft gizlilik panosu](https://account.microsoft.com/privacy/)’nu veya [Microsoft Flow](https://flow.microsoft.com/)’u kullanın.
 
@@ -98,7 +98,7 @@ Akışa erişim izni olan bir son kullanıcı aşağıdaki adımları izleyerek 
 
 ## <a name="export-a-users-activity-feed"></a>Bir kullanıcının etkinlik akışını dışarı aktarma
 
-[Microsoft Flow](https://flow.microsoft.com/)’da, etkinlik akışı bir kullanıcının etkinlik, hata ve bildirim geçmişini gösterir. Kullanıcı aşağıdaki adımları izleyerek etkinlik akışını görüntüleyebilir:
+[Microsoft Flow](https://flow.microsoft.com/)’da, etkinlik akışı bir kullanıcının etkinlik, hata ve bildirim geçmişini gösterir. Kullanıcılar etkinlik akışlarını şu adımları izleyerek görüntüleyebilir:
 
 1. [Microsoft Flow](http://flow.microsoft.com/)’da oturum açın, sağ üst köşenin yakınında bulunan zil simgesini ve ardından **Tüm etkinliği göster**’i seçin.
 

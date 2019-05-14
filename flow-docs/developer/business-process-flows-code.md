@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362990"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054075"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma
 
@@ -131,7 +131,7 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
 
 İş süreci akışı etkinleştirildiğinde iş süreci akış örneklerini depolamak üzere otomatik olarak oluşturulan özel varlık, aynı Müşteri Bağlantısı'ndaki diğer tüm özel varlıklar gibi standart güvenlik modeline uyar. Bunun anlamı, bu varlıklara verilen ayrıcalıkların iş süreci akışlarına ilişkin kullanıcı çalışma zamanı izinlerini tanımladığıdır.
 
-Özel iş süreci akışı varlığı kuruluş kapsamına sahiptir. Bu varlık üzerindeki normal oluşturma, alma, güncelleştirme ve silme ayrıcalıkları, kullanıcının kendine atanmış rolleri temel alabilecek izni tanımlar. Varsayılan olarak, iş süreci akışı özel varlığı oluşturulduğunda yalnızca **Sistem Yöneticisi** ve **Sistem Özelleştiricisi** güvenlik rollerine erişim verilir ve gerekirse diğer güvenlik rolleri için yeni iş süreci akışı varlığına açıkça izin vermeniz gerekir (örneğin, **My Custom BPF**).
+Özel iş süreci akışı varlığı kuruluş kapsamına sahiptir. Bu varlık üzerindeki normal oluşturma, alma, güncelleştirme ve silme ayrıcalıkları, kullanıcıların kendilerine atanmış rolleri temel alabilecek izni tanımlar. Varsayılan olarak, iş süreci akışı özel varlığı oluşturulduğunda yalnızca **Sistem Yöneticisi** ve **Sistem Özelleştiricisi** güvenlik rollerine erişim verilir ve gerekirse diğer güvenlik rolleri için yeni iş süreci akışı varlığına açıkça izin vermeniz gerekir (örneğin, **My Custom BPF**).
 
 ![](media/bpf-privileges.png)
 

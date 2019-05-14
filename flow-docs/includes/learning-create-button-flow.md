@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035150"
+---
 Bu konu başlığında, Contoso Flooring Company için **bir düğme akışı oluşturmayı** öğreneceksiniz. 
 
 Düğme akışları bir ekibe **e-posta göndermek** ve gerçekleştirilecek **görevleri bildirmek** için kullanılabilir. Akışların **sahipliği** **bir çalışana atanabilir** veya bir ekipteki **birden çok üye tarafından paylaşılabilir**.  
@@ -48,7 +56,7 @@ Düğme akışları bir ekibe **e-posta göndermek** ve gerçekleştirilecek **g
      ![Akış oluşturma](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Takım akışı oluşturma
-Bu düğme akışını bir ekip akışı oluşturmak için örnek olarak kullanabilirsiniz. Ya bu akışı oluşturan kişi hastalık nedeniyle şirket dışındaysa? Ya şirketten ayrılırsa? Bu akışın çalışmaya devam ettiğinden emin olmanız gerekir. Bunu yapmak için ikincil sahipler ekleyin.
+Bu düğme akışını bir ekip akışı oluşturmak için örnek olarak kullanabilirsiniz. Ya bu akışı oluşturan kişi hastalık nedeniyle şirket dışındaysa? Peki bu kişi şirketten ayrılırsa? Bu akışın çalışmaya devam ettiğinden emin olmanız gerekir. Bunu yapmak için ikincil sahipler ekleyin.
 
 1. İkincil sahip eklemek için akışınızda **ekip simgesini** seçin.
    
@@ -66,9 +74,9 @@ Bu düğme akışını bir ekip akışı oluşturmak için örnek olarak kullana
 ## <a name="summary"></a>Özet
 Bu derste, **düğme akışı oluşturmayı** öğrendiniz. 
 
-Akış, bir ambar çalışanının dakikalar içinde bir **teslimatı** **ekibine bildirmesini** sağladı ve böylece ekip diğer görevlere ayırabileceği zamanı bekleyerek harcamamış oldu. 
+Akış, bir ambar çalışanının dakikalar içinde bir **teslimatı** **takıma bildirmesini** sağladı ve böylece ekip diğer görevlere ayırabileceği zamanı bekleyerek harcamamış oldu. 
 
-Çalışan daha sonra kendisi olmadığında diğer kullanıcıların aynı akışı tetikleyebilmesi için bu düğmeyi ekibiyle paylaştı.
+Çalışan daha sonra kendisi olmadığında diğer kullanıcıların aynı akışı tetikleyebilmesi için bu düğmeyi takımıyla paylaştı.
 
 ## <a name="next-lesson"></a>Sonraki ders
 **Anında iletme bildirimlerini** kullanan bir akış oluşturmak için sonraki derse göz atın.

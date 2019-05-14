@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087920"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054062"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Microsoft Flow’da şirket içi veri ağ geçitlerini yönetme
 
@@ -60,7 +60,13 @@ Ağ geçidi aracılığıyla şu bağlantılar üzerinden şirket içi verilere 
 > [!NOTE]
 > Yalnızca [varsayılan ortamınızda](environments-overview-maker.md) bir ağ geçidi ve şirket içi bağlantısı oluşturabilirsiniz.
 
+## <a name="install-a-gateway"></a>Ağ geçidi yükleme
 
+1. [Ağ Geçidi Yükleme Sihirbazı](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)'nı indirin.
+
+1. Sihirbazı çalıştırın ve Microsoft Flow'da oturum açmak için kullandığınız kimlik bilgilerini girin.
+
+    Ağ geçidinizi başarılı şekilde kaydedip yapılandırdıktan sonra, ağ geçidiniz Microsoft Flow’daki **Ağ geçitleri** listesinde görünür.
 
 ## <a name="view-your-gateways"></a>Ağ geçitlerinizi görüntüleme
 
@@ -72,14 +78,22 @@ Ağ geçidi aracılığıyla şu bağlantılar üzerinden şirket içi verilere 
 > PowerApps’te bir ağ geçidi oluşturduysanız veya size bu ağ geçidine yönelik erişim izni verildiyse, bu ağ geçidi Microsoft Flow’daki **Ağ geçitlerim** listesinde görüntülenir.
 
 
+## <a name="cluster-your-gateways"></a>Ağ geçitlerini kümeleme
 
-## <a name="install-a-gateway"></a>Ağ geçidi yükleme
+Şirket içi veri kaynaklarına erişirken tek hata noktalarını önlemek için *şirket içi veri ağ geçidi yüklemelerinin yüksek kullanılabilirlik kümelerini* oluşturabilirsiniz. 
 
-1. [Ağ Geçidi Yükleme Sihirbazı](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)'nı indirin.
+Varsayılan olarak Microsoft Flow kümedeki birincil ağ geçidini kullanır. Birincil ağ geçidi kullanılamıyorsa hizmet kümedeki ikinci ağ geçidine geçer ve bu şekilde devam eder.
 
-1. Sihirbazı çalıştırın ve Microsoft Flow'da oturum açmak için kullandığınız kimlik bilgilerini girin.
+Ağ geçidi kümesini oluşturduktan sonra trafiğin kümedeki tüm ağ geçitlerine dağıtılmasını sağlayabilirsiniz. 
 
-    Ağ geçidinizi başarılı şekilde kaydedip yapılandırdıktan sonra, ağ geçidiniz Microsoft Flow’daki **Ağ geçitleri** listesinde görünür.
+Trafiğinizi ağ geçitleri arasında dağıtmak için şu adımları izleyin:
+
+1. Sol taraftaki gezinti çubuğunda **Veri**'yi seçin.
+1. **Ağ Geçitleri**'ni seçin.
+1. Ağ geçitlerinizden birini seçin.
+1. **İstekleri bu kümedeki tüm etkin ağ geçitlerine dağıtın** öğesini seçin.
+1. Değişikliklerinizi kaydetmek için **Uygula**'yı seçin.
+
 
 Daha fazla bilgi edinmek için bkz. [Ağ geçitlerini anlama](gateway-reference.md).
 

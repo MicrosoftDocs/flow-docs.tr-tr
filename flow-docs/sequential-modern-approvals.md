@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 197bdf2fd1867c2c7162c909daf41e10279721f5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690756"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "65019856"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Microsoft Flow ile sıralı onayları yönetme
 Son onaylayanın oturumu kapatabilmesi için bazı iş akışları ön onay gerektirir. Örneğin, bir şirketin 1000 ABD dolarının üzerindeki faturalar için Finans departmanının onayından önce bir ön onay verilmesini gerektiren sıralı onay ilkesi olabilir.
 
 Bu incelemede, çalışanların tatil isteklerini yöneten sıralı bir onay akışı oluşturacağız.
+
+> [!NOTE]
+> SharePoint burada yalnızca örnek vermek için kullanılmıştır; onay akışlarını oluşturmak için gerekli değildir. Akışlarınızı ilerletmek için Microsoft Flow'un tümleştirildiği 200'den fazla hizmetten herhangi birini kullanabilirsiniz.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Akıştaki ayrıntılı adımlar
 Akış:
@@ -40,7 +44,7 @@ Akış:
 3. Çalışana ön onay kararını e-posta ile gönderir.
 4. SharePoint Online listesini ön onayı veren kişinin kararı ve açıklamalarıyla birlikte güncelleştirir.
    
-   Not: İstek önceden onaylandıysa, akış şu adımlarla devam eder:
+   Not: İstek önceden onaylandıysa akış şu adımlarla devam eder:
 5. Son onaylayana isteği gönderir.
 6. Çalışana son kararı e-posta ile gönderir.
 7. SharePoint listesini son karar ile güncelleştirir.
@@ -52,7 +56,7 @@ Akış:
 ## <a name="prerequisites"></a>Önkoşullar
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-Oluşturduğunuz SharePoint Online listesinde şu sütunlar bulunmalıdır:
+Bu yönergeleri uygulamak amacıyla, oluşturduğunuz SharePoint Online listesinde şu sütunlar bulunmalıdır:
 
    ![SharePoint listesinin sütunları](./media/sequential-modern-approvals/sharepoint-columns.png)
 

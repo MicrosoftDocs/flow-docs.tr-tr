@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9dd1fd2f3c00870b0a713f50cc567d5d79385d8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690641"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035040"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Microsoft Flow’daki ortamları kullanma
 
@@ -46,8 +46,8 @@ Ortamlar, aşağıdaki avantajları sunar:
   > [!NOTE]
   > Veri kaybını önleme, P2 lisansını da içeren bazı lisans SKU’larıyla kullanılabilir.
 
-* **Tüm kaynaklar için yalıtım sınırı**: Tüm akışlar, ağ geçitleri, bağlantılar, özel bağlayıcılar, vb. belirli bir ortamda yer alır. Diğer ortamlarda bulunmazlar.
-* **Common Data Service**: Bir hizmete veri ekleyen akışlar oluşturma seçeneklerinizi burada bulabilirsiniz:
+* **Tüm kaynaklar için yalıtım sınırı**: Tüm akışlar, ağ geçitleri, bağlantılar, özel bağlayıcılar vb. belirli bir ortamda yer alır. Diğer ortamlarda bulunmazlar.
+* **Common Data Service**: Hizmete veri ekleyen akışlar oluşturma seçeneklerinizi burada bulabilirsiniz:
 
   * Bir Excel dosyasına veri ekleme ve Excel dosyasını OneDrive gibi bir bulut depolama hesabında depolama.
   * Bir SQL Veritabanı oluşturun ve verilerinizi burada depolayın.
@@ -70,7 +70,7 @@ Ortamlar, birçok avantaj sunmanın yanı sıra bazı sınırlamalar uygular. Or
 
 Yöneticiler, ortamlar oluşturup yönetmek için yönetim merkezini kullanır. Yönetim merkezini açmanın iki yolu vardır:
 
-### <a name="option-1-select-settings"></a>1. Seçenek: Ayarlar’ı seçin
+### <a name="option-1-select-settings"></a>1. Seçenek: Ayarlar'ı seçin
 
 1. [flow.microsoft.com](https://flow.microsoft.com) adresinde oturum açın.
 1. Ayarlar dişlisini ve listeden **Yönetim Merkezi**’ni seçin:
@@ -78,7 +78,7 @@ Yöneticiler, ortamlar oluşturup yönetmek için yönetim merkezini kullanır. 
    ![Ayarlar ve Yönetici Portalı](./media/environments-overview-admin/settings.png)
 1. Yönetici merkezi açılır.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>2. Seçenek: admin.flow.microsoft.com’u açın
+### <a name="option-2-open-adminflowmicrosoftcom"></a>2. Seçenek: Admin.flow.microsoft.com’u açın
 
 [admin.flow.microsoft.com](https://admin.flow.microsoft.com) adresine gidin ve iş hesabınızla oturum açın.
 

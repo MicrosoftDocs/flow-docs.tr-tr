@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8a6ece8d2233703da2cd6eb6ed48d2334d076c39
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
+ms.sourcegitcommit: 3f17d8a0765d66740bb181885a79fa9127fc2aab
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690135"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64950499"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Veri kaybı önleme (DLP) ilkeleri
 
@@ -182,6 +182,36 @@ Yönetici izinlerine sahip değilseniz ve kuruluşunuzdaki DLP ilkeleri hakkınd
 ## <a name="dlp-policy-permissions"></a>DLP ilkesi izinleri
 
 DLP ilkeleri yalnızca kiracı ve ortam yöneticileri tarafından oluşturulup değiştirilebilir. [Ortamlar](environments-overview-admin.md) makalesinde izinler hakkında daha fazla bilgi edinebilirsiniz.
+
+
+## <a name="custom-and-http-connectors"></a>Özel bağlayıcılar ve HTTP bağlayıcıları
+
+Özel bağlayıcılarla HTTP bağlayıcıları, Microsoft Flow şablonu veya PowerShell kullanılarak DLP'lere eklenmelidir.
+
+> [!TIP]
+> Şemanın 2018-11-01 sürümünden eski sürüme düşüremezsiniz. İlkeden HTTP desteği kaldırılamaz. HTTP desteğini kaldırmayı denerseniz DLP ilkesi bozulabilir. Üstelik DLP ilkesi HTTP bağlayıcılarını destekleyecek şekilde güncelleştirildiyse bu HTTP özelliklerini kullanan geçerli akışlar kapatılabilir.
+
+İlkeye ekleyebileceğiniz HTTP bağlayıcıları şunlardır:
+
+- HTTP (ve HTTP + Swagger)
+- HTTP Web Kancası
+- HTTP İsteği
+
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Özel bağlayıcıları ve HTTP bağlayıcılarını şablonlarla ekleme
+
+[Şablon](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/) kullanarak ilkeye özel bir bağlayıcı eklemek için ilke adını, bağlayıcının ekleneceği grubu, bağlayıcının adını, kimliğini ve türünü girin. Akışı bir kez çalıştırarak özel bağlayıcıyı belirtilen ilkeye ve gruba ekleyin.
+
+[Şablon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/) yoluyla mevcut ilkeye HTTP bağlayıcıları eklemek için, bunların eklenmesini istediğiniz ilkenin adını girin ve akışı çalıştırın.
+
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Özel bağlayıcıları ve HTTP bağlayıcılarını PowerShell'le ekleme
+
+PowerShell kullanarak ilkeye özel bağlayıcılar ve/veya HTTP bağlayıcıları desteği eklemek için, en son PowerApps PowerShell betiklerini [indirip](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) içeri aktarın ve sonra ilkede değişiklik yapmak için şu cmdlet'leri kullanın:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’ ve ‘Remove-CustomConnectorFromPolicy’. Başvuru olarak ‘Get-Help -detailed’ cmdlet'ini kullanın.
+
+
+> [!IMPORTANT]
+> HTTP bağlayıcıları eklemek amacıyla bir DLP ilkesini oluşturur veya güncelleştirirken 2018-11-01 şema sürümünü kullanın. Şablon veya PowerShell kullanılarak HTTP desteği eklenmesi, yalnızca belirtilen ilkeyi etkiler. Yönetim Merkezi aracılığıyla oluşturulan yeni ilkeler HTTP bağlayıcılarını içermeyecektir.
+
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

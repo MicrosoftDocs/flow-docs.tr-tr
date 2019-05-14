@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db0d7003017eb9929b03a89f697defb40c5ed6e4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
+ms.sourcegitcommit: edc0f625914b7dc8f0dd7f05e7b9c05346282064
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690869"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64992604"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Microsoft Flow'da akış oluşturma
 
@@ -88,6 +88,11 @@ Bir olay tarafından tetiklendikten sonra otomatik olarak bir veya daha fazla g�
 1. Belirttiğiniz anahtar sözcüğü içeren bir tweet gönderin veya başka birisinin böyle bir tweet göndermesini bekleyin.
 
      Tweet gönderildikten sonraki bir dakika içinde, size yeni tweet’i bildiren bir e-posta iletisi gönderilir.
+
+> [!TIP]
+> Yazı tipini özelleştirdiğiniz, kalın, italik veya alt çizgi kullandığınız, rengi ve vurguyu özelleştirdiğiniz, liste veya bağlantılar oluşturduğunuz ve üzerinde daha fazla işlem yaptığınız e-postayı biçimlendirmek için **E-posta gönder (V2)** eylemini kullanın.
+
+![Zengin e-posta düzenlemesi](media/get-started-logic-flow/email-rich-text.png)
 
 ## <a name="manage-a-flow"></a>Akışı yönetme
 

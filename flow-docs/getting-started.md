@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353022"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035203"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama #
 
@@ -94,6 +94,38 @@ Sıfırdan bir akış oluşturduğunuzda, iş akışının tamamını denetlersi
 - [Akışı çalıştırılırken izleme](see-a-flow-run.md).
 - [Şablon yayımlama](publish-a-template.md).
 - [Bir Microsoft Teams şablonundan akışlar oluşturma](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+
+
+## <a name="peek-at-the-code"></a>Koda göz atma
+
+Akış oluşturmak için geliştirici olmanız gerekmez. Bununla birlikte Microsoft Flow akıştaki tüm eylemler ve tetikleyiciler için oluşturulan koda daha yakından bakmanızı sağlayan bir **Koda göz at** özelliği sağlar. Koda göz atmak, tetikleyiciler ve eylemler tarafından kullanılan verileri daha net anlamanızı sağlayabilir. Microsoft Flow tasarımcısının içinden sizin için oluşturulan koda göz atmak için şu adımları izleyin: 
+
+1. Herhangi bir **eylemin** veya **tetikleyicinin** sağ üst köşesindeki **...** menü öğesini seçin. 
+1. **Koda göz at**'ı seçin.
+
+    ![Koda göz at](media/getting-started/peek-code.png)
+
+1. Eylemlerin ve tetikleyicilerin tam JSON gösterimine dikkat edin. Doğrudan girdiğiniz metinler gibi tüm girişleri ve kullanılan ifadeleri içerir. Burada ifadeleri seçebilir ve ardından bunları **Dinamik İçerik** ifade düzenleyicisine yapıştırabilirsiniz. Bu size beklediğiniz verilerin akışta var olduğunu doğrulamanın da bir yolunu sağlar.
+
+    ![Koda göz at](media/getting-started/peek-code-details.png)
+   
+
+## <a name="find-your-flows-easily"></a>Akışlarınızı kolayca bulma
+
+Yaratıcılığınız harekete geçip fikirler *akmaya* başladığında birçok akış oluşturabilirsiniz. Kaygılanmayın, akışlarınızı kolayca bulabilirsiniz. **Akışlarım**, **Ekip akışları**, **Bağlantılar** veya **Çözümler** ekranın arama kutusunu kullanıp yalnızca girdiğiniz arama terimleriyle eşleşen akışları görüntülemeniz yeterli olur.
+
+![Akışları filtreleme veya arama](media/getting-started/filter-search-box.png)
+ 
+> [!NOTE]
+> Arama filtresi yalnızca sayfaya yüklenen akışları bulur. Akışınızı bulamazsanız, sayfanın alt kısmında **Daha fazla yükle**'yi seçin.
+
+## <a name="get-notifications-when-somethings-wrong"></a>Bir şeyler yanlış gittiğinde bildirim alma
+
+Son zamanlarda başarısız olan akışların listesini hızla görmek için Microsoft Flow bildirim merkezini (tasarımcının sağ üst kısmında yer alır) kullanın. Bildirim merkezinde son zamanlarda başarısız olan akışların sayısını gösteren bir sayı görüntülenir.
+
+Son zamanlarda çalıştırılmış, bildirim göndermiş veya başarısız olmuş tüm akışlarınızı görmek için bildirim merkezinde Microsoft Flow'un **Etkinlik** sayfasına gidebilirsiniz.
+
+![Bildirim merkezi](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Mobil uygulamayı kullanma ##
 

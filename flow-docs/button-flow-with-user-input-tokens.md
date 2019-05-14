@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
+ms.sourcegitcommit: c1b32d32eed29ab2e0b76a852c273eb4def0be7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711577"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64992286"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Kullanıcı girişli düğme akışları tanıtımı
 Rutin görevleri yalnızca bir düğmeye dokunarak çalıştırmak için düğme akışı oluşturun. Kullanıcıya akış çalıştırıldığında kullanılacak belirli ayrıntıları sağlama izni vererek akışınızı özelleştirin. Bu konuda, kullanıcıdan giriş alan bir düğme akışı oluşturma ve sonra bu düğme akışını çalıştırma işlemleri gösterilerek kullanıcı girişinin nasıl sağlandığı vurgulanır.
@@ -118,7 +118,28 @@ Bu kılavuzda, az önce oluşturduğunuz düğme akışını çalıştırmak iç
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (isteğe bağlı) Akış çalıştırmasının ayrıntılı sonuçlarını, **Yeni iş öğesi oluştur** adımına dokunarak görüntüleyebilirsiniz.
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## <a name="use-different-input-types"></a>Farklı giriş türlerini kullanma
+
+Düğme akışlarınız zengin veri türlerini de kabul edebilir. Burada düğme akışlarının kabul ettiği veri girişi türleri listelenmiştir: 
+
+- Metin
+- Açılan listeler (örneğin radyo düğmeleri)
+- E-posta adresi
+- Dosya (örneğin telefonunuzdaki bir fotoğraf)
+- Evet veya Hayır onay kutusu
+- Sayı
+- Tarih (takvim seçiciyle)
+
+Bu giriş türlerini kullanmak için **Bir akışı el ile tetikleyin** tetikleyicisini ekleyin ve sonrada akışınıza bu türlerden birini ekleyin:
+
+![Giriş seçenekleri](media/button-flow-with-user-input-tokens/input-options.png)
+
+Bunun yanı sıra bazı girişleri gerekli ve diğerlerini de isteğe bağlı olarak belirleyebilirsiniz. Her giriş alanında eylem menüsünü (... sağ tarafta) kullanın. Düğme başına beş giriş sınırı vardır.
+
+![İsteğe bağlı belirteçleri seçin](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 * [Düğme akışları paylaşma](share-buttons.md)
