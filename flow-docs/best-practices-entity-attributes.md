@@ -20,10 +20,10 @@ author: msftman
 ms.author: deonhe
 manager: kvivek
 ms.openlocfilehash: 950f03d78e708f00f28b68daf7c1012fae231c95
-ms.sourcegitcommit: 2931edb777c1ed57e040670fc8a1c55252ac95b1
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/25/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64472984"
 ---
 # <a name="best-practices-in-using-business-process-flow-attributes"></a>İş süreci akış özniteliklerini kullanmanı en iyi yöntemleri

@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
-ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65035087"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Hesap Kapatma İsteklerini yanıtlama

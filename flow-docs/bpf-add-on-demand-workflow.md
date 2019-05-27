@@ -17,11 +17,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689629"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460896"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>İş süreci akışına isteğe bağlı iş akışı ekleme
 
@@ -32,8 +32,8 @@ ms.locfileid: "44689629"
 - İsteğe bağlı genel süreçler. İş akışı **Genel İş Akışları** alanına bırakıldığında süreç etkinleştirildiğinde veya arşivlendiğinde (durum uygulandı, tamamlandı, yeniden etkinleştirildi veya bırakıldı olduğunda) tetiklenir. 
 
 İş süreci akışına iş akışı eklerken aşağıdaki gereksinimleri göz önünde bulundurun.
-- Aşamaya eklenen iş akışları için: Yalnızca iş akışını eklediğiniz aşamanın varlığı için oluşturulmuş olan etkin ve isteğe bağlı iş akışlarını kullanabilirsiniz.  
-- Genel iş akışları için: Yalnızca iş süreci akışının birincil varlığı için oluşturulan etkin ve isteğe bağlı iş akışlarını kullanabilirsiniz.
+- İş akışları için bir aşamaya eklendi: Yalnızca, iş akışını eklediğiniz aşama aynı varlık için oluşturulan etkin, isteğe bağlı iş akışları kullanabilirsiniz.  
+- Genel iş akışları için: Yalnızca iş süreci akışı birincil varlık için oluşturulan etkin, isteğe bağlı iş akışları kullanabilirsiniz.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>İş süreci akışı aşamasında isteğe bağlı iş akışı ekleme
 
@@ -66,5 +66,5 @@ Aşağıdaki örnekte **İsteğe bağlı iş akışım** adlı isteğe bağlı i
  
 ## <a name="next-steps"></a>Sonraki adımlar
 [Kullanıcı etkileşimi gerektirmeyen işlemleri otomatikleştirmek için iş akışı işlemlerini kullanma](workflow-processes.md) <br/>
-[Öğretici: Süreçleri standartlaştırmak için bir iş süreci akışı oluşturma](create-business-process-flow.md) <br/>
+[Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma](create-business-process-flow.md) <br/>
 [Dynamics 365'te iş süreci akışı otomasyonu](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

@@ -22,9 +22,9 @@ search.audienceType:
 - admin
 ms.openlocfilehash: 9ed37c8ce1d2b031fbfb2f3bf7bcf77a359f47f4
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061400"
 ---
 # <a name="sharing-and-connectors-admin-analytics-reports"></a>Paylaşım ve bağlayıcı yönetici analizi raporları

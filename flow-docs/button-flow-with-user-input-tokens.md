@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
-ms.sourcegitcommit: c1b32d32eed29ab2e0b76a852c273eb4def0be7e
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/02/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64992286"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Kullanıcı girişli düğme akışları tanıtımı

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
-ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504519"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457062"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
 Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 

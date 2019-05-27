@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f449307318fc1165cb607467de4cdd652df434d2
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688621"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465744"
 ---
 # <a name="watch-your-flows-in-action"></a>Akışlarınızı çalışırken izleme
 

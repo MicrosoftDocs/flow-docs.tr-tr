@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461121"
+---
 ## <a name="what-is-an-environment"></a>Ortam nedir?
 Ortam, Common Data Service üzerinde uygulamalar, akışlar ve iş verileri depolamak, yönetmek ve paylaşmak için kullanılan sanal bir alandır. Ortamlar coğrafi olarak konumlandırıldığından bir ortamın veritabanında depolanan tüm uygulama ve veriler de coğrafi olarak konumlandırılır.  
 

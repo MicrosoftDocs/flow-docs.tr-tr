@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ec3c6725ca6c0b1e03738f50132464b00c1f8695
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690710"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469335"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Microsoft Flow ile paralel onay iş akışları oluşturma
 
@@ -147,7 +147,7 @@ Devam ediyoruz:
 
 **Koşul** dalının **EVET İSE** ifadesinin yer aldığı tarafında aşağıdaki adımları uygulayın.
 
-   Not: Akışınız, istek onaylandığında e-posta göndermek için şu adımları kullanır:
+   Not: Akışınız, istek onaylandığında bir e-posta göndermek için şu adımları kullanır:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -161,7 +161,7 @@ Bir istek reddedildiğinde e-posta göndermek için **Koşul** dalının **HAYIR
 
 Kararlar verildiğinde SharePoint'i güncelleştirmek için aşağıdaki adımları uygulayın.
 
-   Not: Bu adımları dalın **EVET İSE** ve **HAYIR İSE** ifadelerinin yer aldığı her iki tarafında da uyguladığınızdan emin olun.
+   Not: Emin hem de bu adımları uygulamadan olması **Evet ise** ve **Hayır ise** yüz dalın.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

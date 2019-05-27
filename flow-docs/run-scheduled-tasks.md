@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
-ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57665026"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468354"
 ---
 # <a name="run-flows-on-a-schedule"></a>Akışları bir zamanlamaya göre çalıştırma
 Bir veya daha fazla görevi gerçekleştiren (örneğin e-postayla rapor gönderme) bir akış oluşturma:

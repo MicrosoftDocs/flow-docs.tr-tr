@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 007caa66731870f359e8cb33ba0919390d3196cd
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462890"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465807"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>İş akışı süreçlerini izleme ve yönetme
 

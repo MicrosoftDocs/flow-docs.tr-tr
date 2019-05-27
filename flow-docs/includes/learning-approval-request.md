@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bb5f08b2606b889a19de0167ef2825cd3428d069
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463394"
+---
 Önceki konulardan birinde, bir SharePoint listesinde depolanan tweetler için bir onay işlemi oluşturmayı öğrendiniz.  Bu konu başlığında, bir onaylayan yeni bir onay isteği aldığında, bu deneyimin nasıl göründüğünü öğreneceksiniz. 
 
 ## <a name="create-and-process-a-request"></a>İstek oluşturma ve işleme

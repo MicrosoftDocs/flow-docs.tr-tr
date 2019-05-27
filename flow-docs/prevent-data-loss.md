@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
-ms.sourcegitcommit: 3f17d8a0765d66740bb181885a79fa9127fc2aab
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/30/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64950499"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Veri kaybı önleme (DLP) ilkeleri

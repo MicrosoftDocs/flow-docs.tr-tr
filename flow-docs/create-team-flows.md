@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
-ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479431"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64458144"
 ---
 # <a name="create-team-flows"></a>Takım akışları oluşturma
 Kuruluşunuza başka kişileri de sahip olarak ekleyip bir takım akışı oluşturun. Takım akışının tüm sahipleri şu eylemleri gerçekleştirebilir:

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690494"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455630"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Flic akıllı düğmesine basarak akışlarınızı çalıştırma (Önizleme)
 Shortcut Labs’in Flic olarak bilinen fiziksel düğmesine basarak akışlarınızı tetikleyin. Örneğin, Flic düğmesine basarak çalışma saatlerinizi izleyebilir, takviminizi engelleyebilir, bir olayın ziyaretçilerini sayabilir veya coğrafi konumları kaydedebilirsiniz.
@@ -57,7 +57,7 @@ Bir Flic olayını Microsoft Flow’a bağladıktan sonra, akışlarınızın te
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Flic tarafından tetiklenen bir akış oluşturma
 Bu yönergelerde, bir danışmanın her müşteride ne kadar zaman harcadığını kaydeden bir akış çalıştırmak için Flic kullanıyoruz. Danışman müşteriye geldiğinde Flic’e bir kez basıyor ve müşteriden ayrılmadan hemen önce yeniden basıyor. Flic’e her basıldığında, bağlantılı olduğunu akışın bir çalıştırması başlatılıyor. Akış, geçerli zamanı Google E-Tablolarına kaydediyor ve ardından bir e-posta bildirimi gönderiyor. E-posta, akış çalıştırması hakkındaki ayrıntıları içeriyor.
 
-Not: Flic mobil uygulamasını kullanarak eşleştirdiğinizden ve Microsoft Flow’u tetiklemek üzere en az bir **tıklama** eylemi yapılandırdığınızdan emin olun. Bu ekran görüntüsünde, Microsoft Flow’u tetiklemek için **tıklama** eylemini yapılandırdım. Bu yönergenin devamında akışımızı Flic’e bir kez basıldığında (tıklandığında) tetiklenecek şekilde yapılandırıyoruz.
+Not: Flic mobil uygulamasını kullandınız ve en az bir yapılandırma mutlaka **tıklayın** tetikleyici Microsoft Flow için eylem. Bu ekran görüntüsünde, Microsoft Flow’u tetiklemek için **tıklama** eylemini yapılandırdım. Bu yönergenin devamında akışımızı Flic’e bir kez basıldığında (tıklandığında) tetiklenecek şekilde yapılandırıyoruz.
 
    ![flic yapılandırın](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Not: Flic mobil uygulamasını kullanarak eşleştirdiğinizden ve Microsoft Flo
    ![şablon ayrıntılarını gözden geçirin](./media/flic-button-flows/flic-template-details.png)
 2. Google E-Tabloları’nda, **ClickType** ve **TimeStamp** adlı sütunların bulunduğu bir sayfa içeren bir elektronik tablo oluşturun.
    
-      İpucu: Google E-Tabloları’nda sütunları adlandırmak için, sütunun en üstüne adı girersiniz. Bu durumda, sayfanız şu ekran görüntüsündeki gibi görünecektir:
+      İpucu: Google e-tablolar, sütunlar, sütunun üst sütun adı girerek adlandırın. Bu durumda, sayfanız şu ekran görüntüsündeki gibi görünecektir:
    
    ![Google E-Tablosu](./media/flic-button-flows/flic-google-sheet.png)
    
-   Not: Bu yönergelerin devamında bu sayfayı kullanacaksınız.
+   Not: Bu kılavuzda daha sonra bu sayfayı kullanırsınız.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>Flic tetikleyicisini akışınıza ekleme
 1. Şablonun hizmetlerinde oturum açın ve **Devam**’ı seçin.
@@ -112,7 +112,7 @@ Not: Flic mobil uygulamasını kullanarak eşleştirdiğinizden ve Microsoft Flo
 1. **Dosya** listesinde, daha önce oluşturmuş olduğunuz elektronik tabloyu seçin.
 2. **Çalışma Sayfası** listesinde, sayfayı seçin.
    
-   Not: Siz sayfayı seçtikten sonra **Satır ekle** kartında iki kutu daha görüntülenir. Bu kutular, daha önce oluşturduğunuz sayfadaki iki sütunu temsil eder.
+   Not: İki kutu görünmez **Satır Ekle** siz sayfayı seçtikten sonra kartı. Bu kutular, daha önce oluşturduğunuz sayfadaki iki sütunu temsil eder.
 3. **ClickType** kutusunu ve sonra da **Tıklama türü** belirtecini seçin.
 4. **Timestamp** kutusunu ve sonra da **Tıklama zamanı** belirtecini seçin.
    

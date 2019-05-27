@@ -23,11 +23,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 33ae71ea6b0af6a94021f5b0a02690aae21f0043
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57463074"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64458415"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Öğretici: Süreçleri standart hale getirmek için bir iş süreci akışı oluşturma
 

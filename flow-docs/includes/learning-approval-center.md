@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 431bb579e19f89132f5ea0ca772a89ea17988de2
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463427"
+---
 Önceki konu başlıklarından birinde, Twitter akışınızı bir SharePoint listesi ile basit bir şekilde nasıl güçlendirebileceğinizi öğrendiniz. Bu konu başlığında, onayları kullanarak işletme ortamına yönelik senaryolar oluşturmayı öğreneceksiniz. Bu sayede, SharePoint listesine erişimi olan herkes tweetlerle katkıda bulunabilir ve sosyal medya ekibi bu tweetleri onaylayabilir veya reddedebilir. Hesabın ve müşterilere gönderilen tweetlerin denetimi ekip tarafından yapılır. 
 
 ## <a name="create-an-approval-request-flow"></a>Bir onay isteği akışı oluşturma
@@ -21,7 +29,7 @@ Varsayılan olarak, bu şablon belirli bir listede yeni bir öğe oluşturulduğ
 2. **Microsoft Flow**’a dönün ve **Yeni bir öğe oluşturulduğunda** eyleminde aşağıdaki değerleri girin:
    
    * **Site Adresi**: Ekibinizin SharePoint URL’si
-   * **Liste Adı**: ContosoTweets
+   * **Liste adı**: ContosoTweets
      
      ![Site ve liste](./media/learning-approval-center/site-address.png)
 3. **Bir onay işlemi başlat** eyleminde, tüm alanları görüntülemek için **Düzenle**’yi seçin. 

@@ -22,9 +22,9 @@ search.audienceType:
 - enduser
 ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65054062"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Microsoft Flow’da şirket içi veri ağ geçitlerini yönetme

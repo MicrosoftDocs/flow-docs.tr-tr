@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353045"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463272"
 ---
 <div id="main" class="v2">
     <div class="container">

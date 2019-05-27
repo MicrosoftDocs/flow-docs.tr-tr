@@ -17,9 +17,9 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061584"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->

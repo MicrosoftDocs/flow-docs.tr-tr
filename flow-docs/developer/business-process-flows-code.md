@@ -16,9 +16,9 @@ search.audienceType:
 - developer
 ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65054075"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma

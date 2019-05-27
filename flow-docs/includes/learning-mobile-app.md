@@ -1,4 +1,12 @@
-Bu ders, Microsoft Flow mobil uygulamasını ve özelliklerini kapsar. Mobil uygulamadan şu özelliklere erişebilirsiniz: **Etkinlik Akışı**, **Gözatma**, **Düğmeler** ve **Akışları Yönetme**.
+---
+ms.openlocfilehash: af3b0e4171e49cc918d8a18985136ffb760c1473
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462775"
+---
+Bu ders, Microsoft Flow mobil uygulamasını ve özelliklerini kapsar. Mobil uygulamadan şu özelliklere erişebilirsiniz: **Etkinlik akışı**, **gözatma**, **düğmeleri**, ve **akışları yönetme**.
 
 Öncelikle uygulama mağazanızdan Microsoft Flow uygulamasını **indirmeniz** ve **yüklemeniz** gerekir.
 

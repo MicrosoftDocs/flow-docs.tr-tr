@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 52aae570f65eaae537f548e686f437592eb5ef03
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689468"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461266"
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Microsoft Flow'da şablondan akış oluşturma
 Birçok yerleşik şablondan birini (örneğin, yöneticiniz Office 365'te bir e-posta gönderdiğinde size Slack iletisi gönderecek bir şablon) kullanarak bir akış oluşturun.
 
-**Not:** Aklınızda zaten bir işlem varsa ve buna uygun bir şablon bulamıyorsanız [sıfırdan akış oluşturun](get-started-logic-flow.md).
+**Not:** [Sıfırdan bir akış oluşturma](get-started-logic-flow.md) zaten aklınızda bir işlem varsa ve bir şablon bulamıyorsanız.
 
 **Önkoşullar**
 

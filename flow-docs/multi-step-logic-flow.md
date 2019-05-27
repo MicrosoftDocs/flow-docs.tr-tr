@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689399"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64466474"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Akışa birden fazla eylem ve gelişmiş seçenek ekleme
 Aynı tetikleyici için bir veya daha fazla gelişmiş seçenek ve birden fazla eylem ekleyerek akışı özelleştirin. Örneğin, bir e-posta iletisini yüksek öncelikli olarak gönderen gelişmiş bir seçenek ekleyin. SharePoint listesine bir öğe eklendiğinde e-posta göndermeye ek olarak Dropbox'ta aynı bilgileri içeren bir dosya oluşturun.
@@ -76,7 +76,7 @@ Bu yordamda, akışın ortasına bir eylem ekleyeceksiniz. Bu eylem, listedeki �
   
     ![Menüyü silme](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Not:** Akışın herhangi bir yerinde, bir eyleme ait çıkışı kullanıyorsanız bu eylemi silemezsiniz. İlk olarak bu çıkışları alanlardan kaldırdıktan sonra eylemi silebilirsiniz.
+     **Not:** Akışın herhangi bir yerindeki ait herhangi bir çıkışı kullanıyorsanız, bir eylemi silemezsiniz. İlk olarak bu çıkışları alanlardan kaldırdıktan sonra eylemi silebilirsiniz.
 
 ## <a name="add-advanced-options"></a>Gelişmiş seçenekleri ekleme
 **E-posta gönder** eylemine sahip bir akışla başlayın.

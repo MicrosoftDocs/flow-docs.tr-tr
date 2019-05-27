@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 914fe6d84bb63e1f3e184794d34fbfd58ad30963
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690181"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459883"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Bir öğe listesini düzenli aralıklarla işlemek için Microsoft Flow’daki Her birine uygula eylemini kullanın.
 Birçok tetikleyici, bir olaya (örneğin, gelen kutunuza yeni bir e-posta gelmesi) bağlı olarak anında akış başlatabilir. Bu tetikleyiciler kullanışlı olsa da bazen önceden tanımlanmış bir zamanlamaya göre bir veri kaynağını sorgulayan ve veri kaynağındaki öğelerin özelliklerine göre belirli eylemler gerçekleştiren bir akış çalıştırmak istersiniz. Bunu yapmak için akışınız bir zamanlamaya (günde bir kere gibi) göre başlatılabilir ve **Her birine uygula** gibi bir döngü eylemini kullanarak bir öğe listesini işleyebilir. Örneğin, **Her birine uygula** eylemini kullanarak bir veritabanından alınan kayıtları ya da Microsoft SharePoint’ten alınan bir öğe listesini güncelleştirebilirsiniz.

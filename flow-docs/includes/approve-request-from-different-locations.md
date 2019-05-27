@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0422f774f18fd7ac49bed005755be251a7f24c1f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462459"
+---
 Bir onay akışında onaylayan rolündeyseniz her istek oluşturma işleminde bir e-posta alırsınız. Onay istekleri onay merkezine de gönderilir. İstekleri e-postadan, onay merkezinden veya Microsoft Flow uygulamasından onaylayabilir ya da reddedebilirsiniz.
 
 Bir isteği onaylamak için:

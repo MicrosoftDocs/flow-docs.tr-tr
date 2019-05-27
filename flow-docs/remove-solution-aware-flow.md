@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 120689bce2100c383297f95371387f9b41559ffe
-ms.sourcegitcommit: 35efd5c72e25636470d5e307eba29f77032c29df
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51028712"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465091"
 ---
 # <a name="remove-a-solution-aware-flow"></a>Çözüm kullanan bir akışı kaldırma
 

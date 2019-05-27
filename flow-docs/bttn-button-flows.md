@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689077"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462214"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Button Corporation tarafından tasarlanan fiziksel düğmelerle akışlarınızı çalıştırın (Önizleme)
 Bir bttn'ye ([The Button Corporation](https://my.bt.tn/) tarafından tasarlanan fiziksel bir düğme) basarak akışlarınızı tetikleyin. Örneğin, akış tetikleyen bir bttn'ye basarak şu görevleri gerçekleştirebilirsiniz:
@@ -56,7 +56,7 @@ bttn'niz için hızlı bir şekilde akış oluşturmak ve Zendesk, Google, Share
 
 ![bttn şablonları](./media/bttn-button-flows/bttn-templates.png)
 
-İpucu: Bu incelemenin amaçları doğrultusunda bttn'nize tipik bir ofis binasındaki bir konferans salonunu temsil eden bir ad verin.
+İpucu: Bu izlenecek yolda amacı doğrultusunda bttn'nize tipik bir ofis binasındaki bir konferans salonunu temsil eden bir ad verin.
 
 bttn'nizin ayarları şu örnekteki (bttn sitesinden) gibi olmalıdır:
 
@@ -69,7 +69,7 @@ bttn'nizi kaydedip yapılandırdığınıza göre akışımızı oluşturmaya ba
    
     ![Oturum açın](./media/bttn-button-flows/sign-into-flow.png)
    
-    Not: Alternatif olarak [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasında akış oluşturabilirsiniz.
+    Not: Alternatif olarak, Microsoft Flow mobil uygulamasını akışlar oluşturabilirsiniz [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), veya [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Arama kutusuna **bttn** yazın ve arama simgesini seçin.
    
     ![Arama](./media/bttn-button-flows/bttn-search-template.png)
@@ -85,7 +85,7 @@ bttn'nizi kaydedip yapılandırdığınıza göre akışımızı oluşturmaya ba
     ![Kimlik bilgileri](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. bttn hizmetinde oturum açtığınızda, Microsoft Flow'u bttn'lerinizi kullanması için yetkilendirin.
    
-    **Önemli**: Microsoft Flow'u bttn'lerinizi kullanması için yetkilendirmezseniz bttn'lerinizi göremez veya Microsoft Flow'dan bunlara bağlanamazsınız.
+    **Önemli**: Microsoft Flow bttn'lerinizi kullanması için yetkilendirmezseniz bakın veya Microsoft Flow bağlamak.
    
     ![Yetkilendir](./media/bttn-button-flows/authorize-bttn.png)
 3. Her iki hizmette de oturum açtıktan sonra **Devam**'ı seçin.
@@ -110,7 +110,7 @@ bttn'nizi kaydedip yapılandırdığınıza göre akışımızı oluşturmaya ba
    
     Microsoft Flow Web sitesinde veya mobil cihazınızda çalıştırma geçmişi kontrol edebilirsiniz.
    
-    Not: Çalıştırma durumu, birisi destek isteği e-postasında **Kabul et** seçeneğini belirleyene kadar **çalışıyor** şeklindedir.
+    Not: Çalıştırma durumu kümesine **çalıştıran** birisi seçene kadar **kabul** destek isteği e-posta.
 3. Ayrıca e-postanın, destek ekibine gönderilip gönderilmediğini de doğrulayabilirsiniz.
    
     Tüm adımları uyguladıysanız destek e-postası şu örnekteki gibi görünür:

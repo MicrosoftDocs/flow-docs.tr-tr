@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bdfa1072bca2afc7c608a4dbf68b8f598dff89f1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689123"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456816"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Microsoft Flow'da bağlantıları yönetme
 Microsoft Flow’da bağlantı oluşturmak, akış oluştururken verilerinize kolayca erişmenizi sağlar. Microsoft Flow, yaygın olarak kullanılan bağlantıları (SharePoint, SQL Server, Office 365, OneDrive İş, Salesforce, Excel, Dropbox, Twitter ve daha fazlası) içerir. Bağlantılar PowerApps ile paylaşılır, böylece bir üründe bir bağlantı oluşturduğunuzda bu bağlantı diğer üründe görüntülenir.

@@ -17,9 +17,9 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 4987d1f4fb504c0279540eb86dcb6ad1b983ff4a
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061860"
 ---
 # <a name="microsoft-flow-in-teams"></a>Teams'de Microsoft Flow

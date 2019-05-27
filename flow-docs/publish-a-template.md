@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 693874ae7876b7c91fa55c45a656b3b76c52a517
-ms.sourcegitcommit: 54700957eb6d7ac486b9ec1f95f2b3ddb58e698c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57430185"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465174"
 ---
 # <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Microsoft Flow galerisine şablon gönderme
 

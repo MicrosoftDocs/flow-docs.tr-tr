@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4c1189e943d5e1f48507bd3e55b5f2d8fe52a8c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460492"
+---
 Bu konu başlığında, **Yinelenme** olarak adlandırılan bir tetikleyici kullanarak önceden zamanlanmış akışlar çalıştırmayı öğreneceksiniz.  Contoso pazarlama ekibi için bir Excel tablosundan müşteri e-posta adreslerini otomatik olarak OneDrive’a alan bir akış oluşturacaksınız. Akışı günde bir kez elektronik tabloya eklenen yeni e-posta adreslerini bir MailChimp müşteri listesine ekleyecek şekilde yapılandıracaksınız. 
 
 ## <a name="create-a-scheduled-flow"></a>Zamanlanan akış oluşturma
@@ -15,7 +23,7 @@ Bu konu başlığında, **Yinelenme** olarak adlandırılan bir tetikleyici kull
    
     ![](./media/learning-recurrence/excel-get-rows.png)
    
-    **Not**: **Satırı al** değil **Satırları al** seçeneğini belirlediğinizden emin olun. 
+    **Not**: Seçtiğinizden emin olun **satırları Al**değil **Get satır**. 
 6. **Dosya adı**’nı seçin ve dosyanızın olduğu konuma gidin. **Tablo adı**’nı seçin ve elektronik tabloda istediğiniz tabloyu seçin. 
    
     ![](./media/learning-recurrence/excel-get-file.png)
@@ -26,7 +34,7 @@ Bu konu başlığında, **Yinelenme** olarak adlandırılan bir tetikleyici kull
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Not:** MailChimp *premium* bir bağlayıcıdır. Microsoft Flow lisansınıza bağlı olarak, bu bağlayıcıyı kullanmak için bir denemeye kaydolmanız gerekebilir.
+    **Not:** Mailchimp bir *premium* bağlayıcı. Microsoft Flow lisansınıza bağlı olarak, bu bağlayıcıyı kullanmak için bir denemeye kaydolmanız gerekebilir.
 9. Açılır menülerden **Liste Kimliği** ve **Durum** alanlarını ekleyin:
    
    * **Liste Kimliği** - İstediğiniz MailChimp posta listesini seçin

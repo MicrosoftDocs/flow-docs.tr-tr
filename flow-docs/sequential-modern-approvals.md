@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
-ms.sourcegitcommit: 197bdf2fd1867c2c7162c909daf41e10279721f5
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/02/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65019856"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Microsoft Flow ile sıralı onayları yönetme

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2780850e521e208c3ab047543f00cab0b9a17f69
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463345"
+---
 **Microsoft Flow**’un yaygın kullanımlarından biri, bir şey olduğunda **bildirim** almaktır.  Bildirimler **e-posta**, **kısa mesaj** veya **telefonunuzda anında iletme bildirimleri** şeklinde olabilir.
 
 ![Bir şablondan](./media/learning-get-notifications/template-notifications.png)

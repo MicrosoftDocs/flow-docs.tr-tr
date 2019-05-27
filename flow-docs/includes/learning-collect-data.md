@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d886fb55c8cafb50020547c912a8207f335f04ad
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463369"
+---
 **Microsoft Flow** sayesinde **bildirim alma** ve **dosya kopyalama** özelliklerine ek olarak **veri toplama** imkanına da sahip olursunuz.  Bu, **Power BI** örneğinde olduğu gibi **analizler** için kullanışlı olabilir.  
 
 ## <a name="sources-and-destinations-triggers-and-actions"></a>Kaynaklar ve hedefler, tetikleyiciler ve eylemler.

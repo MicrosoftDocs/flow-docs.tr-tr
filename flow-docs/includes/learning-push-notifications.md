@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460334"
+---
 Bu akış için, **Contoso Flooring** Pazarlama ekibinin **Twitter gönderilerini** ve gönderme tarihlerini depolandığı bir **SharePoint** listesi oluşturacaksınız. Daha sonra, bunlara yönelik içeriği otomatik olarak Tweetleyen bir akış oluşturacaksınız. 
 
 ## <a name="connect-microsoft-flow-services"></a>Microsoft Flow Hizmetlerini Bağlama
@@ -81,7 +89,7 @@ Tetikleyici için gerçekleştirmeniz gereken işlemler bu kadar.
 3. Gecikme değerini ayarlayın.
    
    1. **Zaman damgası** alanına tıklayın veya dokunun. 
-   2. Dinamik içerik kutusu açıldığında, aşağıya kaydırarak SharePoint listesindeki üç sütunu görebilirsiniz: **Başlık**, **Tweet Tarihi** ve **Tweet İçeriği**.
+   2. Dinamik içerik kutusu açıldığında, aşağıya kaydırın ve SharePoint listesindeki üç sütunu görebilirsiniz: **Başlık**, **Tweet tarihi**, ve **Tweet içeriği**.
    3. **Tweet Tarihi**’ni seçin. 
       
        ![Zaman damgasına kadar geciktir](./media/learning-push-notifications/14-delay-until-timestamp.png)

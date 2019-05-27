@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ffc83e99be227257a97d514f3238d52a7627d8ab
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026060"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455940"
 ---
 # <a name="export-a-solution"></a>Çözümü dışarı aktarma
 

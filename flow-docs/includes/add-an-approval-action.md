@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cb78740e4227542566f1ffabbbda023b439d4de4
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469630"
+---
 1. **Yeni adım**'ı ve ardından **Eylem ekle**'yi seçin.
 
     ![Yeni adım](media/modern-approvals/select-sharepoint-add-action.png)

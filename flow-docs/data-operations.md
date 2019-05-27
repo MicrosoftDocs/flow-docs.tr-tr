@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691011"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457885"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Microsoft Flow ile veri işlemlerini kullanma
 Bu kılavuzda, Microsoft Flow’un akış oluştururken verileri işlemek için kullanabileceğiniz dizi oluşturma, birleştirme, seçme, diziyi filtreleme, tablo oluşturma ve JSON dosyasını ayrıştırma gibi popüler veri işlemlerinden bazıları hakkında bilgi edineceksiniz.
@@ -145,7 +145,7 @@ Bir JSON dizisi girişini virgülle ayrılmış değer (CSV) tablosuna dönüşt
    
     ![csv tablosu oluşturma eylemini yapılandırma](./media/data-operations/create-csv-table.png)
    
-    Not: Bu resimdeki **Gövde** belirteci bir **İstek/Yanıt – Yanıt** eyleminden gelir, ancak **CSV tablosu oluştur** eylemine yönelik girişi akışınızda daha önce gerçekleştirilen herhangi bir eylemden alabilir ya da doğrudan **Kimden** kutusuna girebilirsiniz.
+    Not: **Gövdesi** belirteci bu görüntüdeki geldiği bir **istek / yanıt – yanıt** eylem, ancak alabilir giriş **CSV tablosu oluştur** eylemine herhangi Önceki eylemi akışınız ya da doğrudan girebilirsiniz **gelen** kutusu.
 2. Akışınızı kaydedip çalıştırın.
    
     Akışınız çalıştığında, **CSV tablosu oluştur** çıkışı şu resimdekine benzer:

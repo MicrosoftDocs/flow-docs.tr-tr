@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
-ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892416"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64453992"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji

@@ -22,9 +22,9 @@ search.audienceType:
 - flowmaker
 ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65060871"
 ---
 # <a name="the-microsoft-flow-checker"></a>Microsoft Flow denetleyicisi

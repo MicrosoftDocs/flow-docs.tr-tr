@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 47d44b2c97275add492153d85138b7d11b554530
-ms.sourcegitcommit: 3c7822c7207cfa51d0274e9647ef02e5ea1d999f
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321422"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457409"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690103"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463887"
 ---
 # <a name="introducing-button-flows"></a>Düğmesi akışları tanıtımı
 ## <a name="what-are-button-flows"></a>Düğme akışları nedir?
@@ -65,14 +65,14 @@ Bu kılavuzda Visual Studio Online (VSO) derlemesi başlatan ve derleme başlad�
    ![Genel bakış görüntüsü](./media/introduction-to-button-flows/create-button-8.png)  
 9. Ardından, **Anında iletme bildirimi gönder** kartında anında iletme bildiriminin özelliklerini yapılandırın. Varsayılan olarak, bu anında iletme bildirimi derlemenin durumunu gösteren bir Web sayfasına HTML bağlantısı gönderecek şekilde yapılandırılır:  
    ![Genel bakış görüntüsü](./media/introduction-to-button-flows/create-button-9.png)  
-10. Düğme akışınızı kaydetmek için **Akış oluştur** düğmesini seçin: ![Genel bakış görüntüsü](./media/introduction-to-button-flows/create-button-10.png)  
+10. Seçin **akış oluşturma** düğme akışınızı kaydetmek için: ![Genel bakış görüntüsü](./media/introduction-to-button-flows/create-button-10.png)  
 11. Birkaç dakika içinde şu başarı iletisini görmeniz gerekir:  
     ![Genel bakış görüntüsü](./media/introduction-to-button-flows/create-button-11.png)  
 
 Tebrikler, bir düğme akışı oluşturdunuz! Artık bu düğmeyi, dilediğiniz zaman ve dilediğiniz yerde Flow uygulamasındaki **Düğmeler** sekmesinden çalıştırabilirsiniz. Çalışması için "düğmeye" basmanız yeterli! Microsoft Flow mobil uygulaması [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows)’da kullanılabilir.
 
 ### <a name="from-your-mobile-device"></a>Mobil cihazınızdan
-**Not**: Bu kılavuzda bir Android cihazındaki ekranlar gösterilmektedir; bir iOS cihazındaki ekranlar ve deneyim aynıdır.
+**Not**: Bu kılavuzda bir Android CİHAZDAN ekranlar görüntülerken, ekranlar ve deneyim bir iOS cihazında benzerdir.
 
 Flow uygulamasında:
 

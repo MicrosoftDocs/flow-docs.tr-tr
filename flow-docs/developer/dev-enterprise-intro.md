@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690411"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455880"
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Kurumsal geliştiriciler, ISV’ler ve iş ortakları için Microsoft Flow
 
@@ -36,9 +36,9 @@ Bir kurumsal geliştirici olarak, Microsoft Flow’da sağlam, gereksinimlere uy
 
 - **Özel bağlayıcılar derleme**: Microsoft Flow üzerinden kuruluşunuzun verilerine ve web hizmetlerine bağlanmak üzere özel bağlayıcılar geliştirin. [Daha fazla bilgi](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Azure İşlevleri derleme**: Özel sunucu tarafı mantığıyla uygulamaların kapsamını genişletmek için Azure İşlevleri hazırlayın. [Daha fazla bilgi](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Azure işlevleri oluşturma**: Özel sunucu tarafı mantığıyla uygulamaların kapsamını genişletmek için Azure İşlevleri hazırlayın. [Daha fazla bilgi](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
 
-- **Microsoft Flow’u ekleme**: Tümleşik çözümler oluşturmak, iş akışlarının veya süreçlerin kuruluşunuzdaki kişilerin zaten çalışmakta olduğu yerlerde görünmesini sağlamak için Microsoft Flow’u doğrudan web siteyi deneyimlerinize ekleyin. [Daha fazla bilgi](embed-flow-dev.md)
+- **Microsoft Flow ekleme**: Tümleşik çözümler oluşturmak, iş akışlarının veya süreçlerin kuruluşunuzdaki kişilerin zaten çalışmakta olduğu yerlerde görünmesini sağlamak için Microsoft Flow’u doğrudan web siteyi deneyimlerinize ekleyin. [Daha fazla bilgi](embed-flow-dev.md)
 
 ## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>ISS’ler ve Microsoft iş ortakları için Microsoft Flow
 

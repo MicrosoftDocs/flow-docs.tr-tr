@@ -15,11 +15,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 1cda3fb99dac66bcb675db031573be682c6e85ba
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352953"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455845"
 ---
 # <a name="custom-common-data-service-workflow-activities-workflow-assemblies"></a>Özel Common Data Service iş akışı etkinlikleri (iş akışı derlemeleri)
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690849"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459944"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Common Data Service’ı kullanan bir akış oluşturma
 [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/)'ı kullanan bir akış oluşturarak iş verilerinin birleşik bir görünümünü elde edin ve operasyonel verimliliği artırın. İyi biçimlendirilmiş standart iş varlıkları (ör. Satış, Satın Alma, Müşteri Hizmetleri ve Üretkenlik) oluşturan bu güvenli iş veritabanını kuruluşunuzda dağıtın. Kuruluş verilerinizi, dış veri kaynaklarından (örneğin, Microsoft Excel ve Salesforce) daha fazla avantaj sunan bir veya daha fazla [özel varlıkta](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/) depolayın.
@@ -85,7 +85,7 @@ ms.locfileid: "44690849"
     ![Dynamics 365 örneği belirtme](./media/common-data-model-intro/specify-instance.png)
 2. (isteğe bağlı) Ekranın üst kısmında, oluşturmakta olduğunuz akış için farklı bir ad belirtin.
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa kullanıcı arabirimi biraz farklı görünebilir.
+    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa kullanıcı Arabirimi biraz farklı görünebilir.
    
     ![Akışı adlandırma](./media/common-data-model-intro/name-flow.png)
 3. **Akış oluştur**'a tıklayın veya dokunun.

@@ -21,10 +21,10 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
-ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65035040"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Microsoft Flow’daki ortamları kullanma

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f5fd6ecb3ace5d2e11f4929fe94124b231cccf2a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463757"
+---
 Microsoft Flow için Kılavuzlu Öğrenme’ye tekrar hoş geldiniz. Bu derste, Microsoft Flow ortamını daha yakından görecek ve **ilk akışınızı oluşturacaksınız**.
 
 Microsoft Flow’u kullanmaya başlamak kolaydır. Zaten kullandığınız hizmetlere daha anlamlı şekillerde bağlanmanıza yardımcı olmak için **seçebileceğiniz çok sayıda şablon** bulunur.  

@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0e151f3c5cd69fe07263e5fa36d46eb3b8be19f5
-ms.sourcegitcommit: edc0f625914b7dc8f0dd7f05e7b9c05346282064
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/02/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64992697"
 ---
 # <a name="troubleshooting-a-flow"></a>Bir akışla ilgili sorunları giderme

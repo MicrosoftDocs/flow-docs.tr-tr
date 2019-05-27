@@ -23,11 +23,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 938410cf4484f8bed6509beee1d36c8cb3718e6f
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462982"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461371"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemler çağırma
 

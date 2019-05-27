@@ -17,9 +17,9 @@ ms.date: 04/30/2019
 ms.author: deonhe
 ms.openlocfilehash: b0f1aa80fb92c9718d2b0697d3abb0b0d2478013
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061124"
 ---
 # <a name="sharepoint-remind-me"></a>SharePoint bana anımsat

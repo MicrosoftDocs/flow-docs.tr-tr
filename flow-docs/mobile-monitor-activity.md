@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689698"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467942"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki etkinlikleri telefonunuzdan izleme
 Her bir akışın bugün, dün ve önceki günlerde kaç kez başarılı veya başarısız olduğunun bir özetini görüntüleyin. Her bir çalıştırmayla ilgili ayrıntıları (örneğin, çalıştırılma zamanı; her bir adımın ne kadar sürdüğü ve başarısız olduysa başarısız olma nedeni) keşfedin.
@@ -47,7 +47,7 @@ Akış çalıştırıldığında telefonunuza şu söz diziminin bulunduğu öze
 
 ![Anında iletme bildirimi gönderme](./media/mobile-monitor-activity/create-event.png)
 
-**Not:** Mobil uygulamanızdan da [akışlarınızı yönetebilirsiniz](mobile-manage-flows.md).
+**Not:** Ayrıca [akışlarınızı yönetin](mobile-manage-flows.md) mobil uygulamadan alınan.
 
 ## <a name="display-a-summary-of-activity"></a>Etkinlik özetini görüntüleme
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

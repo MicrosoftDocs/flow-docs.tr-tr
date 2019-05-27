@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: e0f9b8e5b345b4dbc226cff2f42850bb126c09b3
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727148"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461793"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Dışarı Aktarma İstekleri’ni yanıtlama
 
@@ -39,7 +39,7 @@ Microsoft Flow, belirli bir kullanıcının kişisel verilerini bulmak veya dı�
 
 * **Web sitesi erişimi:** [PowerApps Yönetim Merkezi](https://admin.powerapps.com/) veya [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com/)’nde oturum açın.
 
-* **PowerShell erişimi:** [PowerApps Yönetici PowerShell cdmlet’leri](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell erişimi:**  [PowerApps Yöneticisi PowerShell cdmlet'leri](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Müşteri verileri**|**Web sitesi erişimi**|**PowerShell erişimi**|
 |-----------------|------------------|-------------------|

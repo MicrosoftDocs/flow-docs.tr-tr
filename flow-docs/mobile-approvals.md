@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689606"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468161"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Microsoft Flow ile mobil cihazınızdan istekleri onaylayın
 Bir akış, sizi onaylayan olarak tanımlıyorsa ve Microsoft Flow için mobil uygulamayı yüklediyseniz, onayınız gerektiğinde bir anında iletme bildirimi alırsınız.

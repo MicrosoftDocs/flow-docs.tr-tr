@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711623"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462756"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Düğme tetikleyici belirteçleri kullanmaya başlayın.
 ## <a name="what-are-button-trigger-tokens"></a>Düğme tetikleyici belirteçler nedir?
@@ -84,7 +84,7 @@ Haydi başlayalım:
    ![düğme tetikleyici belirteç](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Düğme akışını çalıştırma
-**NOT**: Bu düğme akışı, konumunuzu e-posta yoluyla gönderir.  
+**NOT**: Bu düğme akışı, konumunuzu e-posta ile gönderir.  
 
 1. Ekranın en altındaki **Düğmeler** kategorisine dokunun. Kullanma izninizin olduğu düğmelerin listesini görürsünüz. Az önce oluşturduğunuz düğme akışını temsil eden düğmeye dokunun:  
    ![düğme tetikleyici belirteç](./media/introduction-to-button-trigger-tokens/10.png)  

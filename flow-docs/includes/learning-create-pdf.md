@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 253acf6677bf244c1719000c332102aa58c2e805
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463710"
+---
 Bu konu başlığında, Contoso Flooring’in belgeleri standart biçime dönüştürüp bulutta güvenli bir şekilde saklamak üzere SharePoint Online’da depolamak için Microsoft Flow’u nasıl kullandığını öğreneceksiniz. OneDrive İş klasörüne yeni bir dosya eklendiğini algılayan ve bu dosyayı PDF biçimine dönüştürüp bir SharePoint Online klasörüne depolayan bir akış oluşturacaksınız. 
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -35,9 +43,9 @@ Bu senaryo için, bir PDF dönüştürme hizmeti olan **Muhimbi**’ye sahip bir
        ![](./media/learning-create-pdf/tenant-id.png)
 7. **Belge dönüştürme** eyleminde, aşağıdaki değerleri ayarlayın:
    
-   * **Kaynak dosya adı**: Dinamik içerik listesinden **Dosya adı**’nı seçin.
-   * **Kaynak dosya içeriği**: Dinamik içerik listesinden **Dosya içeriği**’ni seçin.
-   * **Çıkış biçimi**: Açılır listeden **PDF**’yi seçin.
+   * **Kaynak dosya adı**: Dinamik içerik listesinden **dosya adı**.
+   * **Kaynak dosya içeriği**: Dinamik içerik listesinden **dosya içeriği**.
+   * **Çıkış biçimi**: Açılan listeden seçin **PDF**.
      
      ![](./media/learning-create-pdf/muhimbi-configuration.png)
 
@@ -53,10 +61,10 @@ Son adım için, PDF belgesini ekibin erişebileceği bir SharePoint Online klas
     ![](./media/learning-create-pdf/sharepoint-create-file.png)
 2. **Dosya oluşturma** eyleminde aşağıdaki değerleri ayarlayın:
    
-   * **Site adresi**: SharePoint sitenizin URL’si.  
-   * **Klasör yolu**: Klasör simgesini seçip **PDF - Tamamlanan dosyalar** klasörüne gidin.
-   * **Dosya adı**: **Belge dönüştürme** için dinamik içerik listesinden, **Temel dosya adı**’nı seçip dosya uzantısıyla SharePoint’e kaydetmek için “**.pdf**” ekleyin. 
-   * **Dosya içeriği**: **Belge dönüştürme** için dinamik içerik listesinden **İşlenen dosya içeriği**’ni seçin.
+   * **Site adresi**: SharePoint sitenizin URL'si.  
+   * **Klasör yolu**: Klasör simgesini seçin ve gitmek **PDF - tamamlanan dosyalar** klasör.
+   * **Dosya adı**: İçin dinamik içerik listesinden **belge dönüştürme**seçin **temel dosya adı**, ardından Ekle "**.pdf**" için dosya uzantısıyla SharePoint'e kaydedilir. 
+   * **Dosya içeriği**: İçin dinamik içerik listesinden **belge dönüştürme**seçin **işlenen dosya içeriği**.
 3. Çalışmanızı kaydetmek için sayfanın en üstünde **Akış oluştur**’u seçin.
    
     ![](./media/learning-create-pdf/sharepoint-configure-file.png)

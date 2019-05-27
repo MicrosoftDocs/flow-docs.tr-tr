@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0e6b410f75f28ba13357878a5cda178bc66b69ff
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690273"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460850"
 ---
 # <a name="choosing-an-environment"></a>Ortam seçme
 

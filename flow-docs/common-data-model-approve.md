@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690894"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64470122"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Microsoft Flow'u ve Microsoft Common Data Service'ı kullanarak bir onay döngüsü oluşturma
 Common Data Service, bilgilerin akıştan bağımsız olarak bir veritabanında depolandığı akışlar oluşturmanızı sağlayabilir. Bunun en iyi örneği onaylardır. Onay durumunu bir varlıkta depolarsanız, ek olarak akışınız da çalışabilir.
@@ -148,7 +148,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
     ![Dosya adı belirteci ekleme](./media/common-data-model-approve/add-filename-token.png)
 5. **Approver** (Onaylayan) alanına, dosyaları gözden geçirecek kişinin e-posta adresini yazın veya yapıştırın.
    
-    **Not**: Akışı test etme işlemini daha kolay hale getirmek için kendi adresinizi belirtin. Bunu, daha sonra akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
+    **Not**: Daha kolay akış test yapmak için kendi adresinizi belirtin. Bunu, daha sonra akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
    
     ![Onaylayan ekleme](./media/common-data-model-approve/add-approver.png)
 6. **Status** (Durum) alanına **Pending** (Beklemede) yazın veya yapıştırın.
@@ -166,7 +166,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
    
     ![Değer seçme](./media/common-data-model-approve/choose-value.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa **Bir değer seçin** yazılı üst kutuya tıklayın veya dokunun.
+    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı üst kutuya **bir değer seçin**.
 3. **Create object çıkışları** (Nesne oluştur çıkışları) altında bulunan **Status**'a (Durum) tıklayarak veya dokunarak bu parametre belirtecini alana ekleyin.
    
     ![Status (Durum) belirteci ekleme](./media/common-data-model-approve/add-status.png)
@@ -177,7 +177,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
    
     ![İzlenecek durumu belirtin](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa **Bir değer seçin** yazılı alt kutuya tıklayın veya dokunun.
+    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı alt kutuya **bir değer seçin**.
 6. **Do until** eyleminin altındaki **Eylem ekle**'ye tıklayın veya dokunun.
    
     ![Do until'e eylem ekleme](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -200,7 +200,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
    
     ![Koşulun sol üst köşesi](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa **Bir değer seçin** yazılı üst kutuya tıklayın veya dokunun.
+    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı üst kutuya **bir değer seçin**.
 3. **Get object çıkışları** (Nesne al çıkışları) altında yer alan **Status** (Durum) parametre belirtecini alana eklemek için üzerine tıklayın veya dokunun.
    
     ![Koşula durum ekleme](./media/common-data-model-approve/add-status-to-condition.png)
@@ -208,7 +208,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
    
     ![Durumun onaylandı olarak ayarlandığını doğrulayın](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa **Bir değer seçin** yazılı alt kutuya **Approved** (Onaylandı) yazın veya yapıştırın.
+    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa yazın veya yapıştırın **Onaylandı** yazılı alt kutuya içinde **bir değer seçin**.
 
 ## <a name="send-notification-mail"></a>Bildirim e-postası gönderme
 1. **Evet ise, hiçbir şey yapma**'nın altında bulunan **Eylem ekle**'ye tıklayın veya dokunun.
@@ -219,7 +219,7 @@ Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
     ![Evet ise e-posta gönder](./media/common-data-model-approve/if-yes-send-mail.png)
 3. **Kime** alanına, bir öğe onaylandığında bildirim almasını istediğiniz kullanıcının adresini yazın veya yapıştırın.
    
-    **Not**: Akışı test etme işlemini daha kolay hale getirmek için kendi adresinizi belirtin. Bunu, akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
+    **Not**: Daha kolay akış test yapmak için kendi adresinizi belirtin. Bunu, akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
    
     ![Onay alıcısı](./media/common-data-model-approve/approval-recipient.png)
 4. **Konu** altındaki kutuya tıklayın ve ardından **Dosya adı** parametre belirtecini alana eklemek için üzerine tıklayın veya dokunun.

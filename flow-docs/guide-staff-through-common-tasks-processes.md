@@ -23,11 +23,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462959"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460328"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>İşlemler aracılığıyla özel iş mantığı oluşturma
 

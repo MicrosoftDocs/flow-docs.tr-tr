@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353021"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465281"
 ---
 # <a name="overview"></a>Genel bakış
 

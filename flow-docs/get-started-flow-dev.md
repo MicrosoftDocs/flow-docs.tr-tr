@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 21f35216231193f40c1a723dda62bb3a2ad1be59
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689652"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460495"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Microsoft Flow ile oluşturmaya başlama
 

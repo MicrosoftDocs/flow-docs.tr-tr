@@ -23,11 +23,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462798"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460582"
 ---
 # <a name="best-practices-for-workflow-processes"></a>İş akışı işlemleri için en iyi yöntemler
 

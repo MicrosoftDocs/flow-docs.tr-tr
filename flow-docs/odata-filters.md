@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 702fd695a91fdf267f166d5162570b39505dbc91
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690434"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465874"
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Microsoft Flow ile verileri filtreleme ve kopyalama
 Bu kılavuzda, bir kaynağı yeni veya değiştirilen öğeler için izleyen ve bu değişiklikleri bir hedefe kopyalayan bir akış oluşturmayı öğreneceksiniz. Kullanıcılarınız verileri bir konuma giriyorsa ancak takımınızın bu verilere farklı bir konumda veya biçimde ihtiyacı varsa, buna benzer bir akış oluşturabilirsiniz.

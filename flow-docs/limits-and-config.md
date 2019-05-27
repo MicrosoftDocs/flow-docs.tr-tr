@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 615d13adaee8b5db302065b3c21a488504f39398
-ms.sourcegitcommit: f1f1b8e24f30fcf6c2e3bb01a0223e382a10bed7
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64906412"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Microsoft Flow’da limitler ve yapılandırma

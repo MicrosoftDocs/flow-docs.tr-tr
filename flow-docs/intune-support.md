@@ -17,9 +17,9 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: 7cc2b37eb27ed0e2107eeaada02afb072d9a0098
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65060503"
 ---
 # <a name="microsoft-flow-mobile-app-supports-microsoft-intune"></a>Microsoft Flow mobil uygulaması Microsoft Intune'u destekliyor

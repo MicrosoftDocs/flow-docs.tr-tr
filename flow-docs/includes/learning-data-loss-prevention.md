@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 985e15451fd080e69310fea5617a0cf8f3c3c7f9
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461101"
+---
 [Microsoft Flow](https://flow.microsoft.com)’da iş akışları oluşturmak için kullanılabilen [hizmetler](https://flow.microsoft.com/services) her geçen gün arttığından SharePoint veya Salesforce gibi kurumsal hizmetlerde depolanan gizli veya kritik iş verilerini korumanız gerekebilir. Kuruluşunuzun, gizli iş verilerinin Twitter ve Facebook gibi tüketici hizmetlerine yayımlanmadığından emin olmak için bir ilke oluşturması gerekebilir. Microsoft Flow sayesinde, kullanıcılarınız akış oluşturduğunda iş verilerinizin hangi tüketici hizmetleriyle paylaşılacağını sıkı bir şekilde denetlemek için kolayca **veri kaybı önleme** (DLP) ilkeleri oluşturabilirsiniz.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Bilmeniz gereken terimler:

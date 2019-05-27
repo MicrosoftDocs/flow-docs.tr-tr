@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5d3a4df4ac575f42790a2748aa9cebad05348da1
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469979"
+---
 1. Koşulun **EVET İSE** dalında **Eylem ekle**'yi seçin.
    
     ![Yeni adım ekleyin](media/modern-approvals/add-action-after-condition.png)

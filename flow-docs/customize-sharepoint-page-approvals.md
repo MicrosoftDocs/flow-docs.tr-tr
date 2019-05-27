@@ -17,9 +17,9 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ms.openlocfilehash: d5e01a3d2e13cc48107e19e0e2bbea3821437273
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061354"
 ---
 # <a name="manage-sharepoint-page-approvals-with-microsoft-flow"></a>Microsoft Flow'la SharePoint sayfa onaylarını yönetme

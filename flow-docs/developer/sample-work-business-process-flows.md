@@ -19,11 +19,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352976"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456024"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Örnek: İş süreci akışlarıyla çalışma
 

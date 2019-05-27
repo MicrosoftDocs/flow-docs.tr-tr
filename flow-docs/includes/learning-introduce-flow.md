@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09f1d3ca4cfb79cb73c91aa77d18be07c047c028
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462818"
+---
 Microsoft Flow için Kılavuzlu Öğrenme’ye hoş geldiniz. **Dilediğiniz hızda ilerleyebileceğiniz bu çevrimiçi kursta**, baştan sonra bilgi edinebilmeniz için Microsoft Flow sıralı bir şekilde anlatılmaktadır. Bu kurs, çok sayıda **görsel ve örnekler** ile ilke ve ayrıntıları anlamanıza yardımcı olan mantıksal bir ilerleyişe uygun olarak **anlaşılır öbekler halinde rehberlik** sunmak üzere tasarlanmıştır.
 
 Bu kursta, Microsoft Flow ve kavramları hakkında bilgi edinip **akış oluşturmayı**, **akışları yönetmeyi** ve bunları ortamınızda **yönetmeyi** öğreneceksiniz. Contoso Flooring adlı kurgusal bir şirkete ilişkin bilgilerle senaryolar sunulacak ve bu senaryoları kendi işletmenizde veya müşterilerinizi işletmelerinde kullanmayı öğreneceksiniz.

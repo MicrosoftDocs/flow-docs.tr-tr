@@ -21,10 +21,10 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
-ms.sourcegitcommit: edc0f625914b7dc8f0dd7f05e7b9c05346282064
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/02/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "64992604"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Microsoft Flow'da akış oluşturma

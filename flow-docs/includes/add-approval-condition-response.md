@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a6ae20b0402a2629d3f1b615ddf738b165098
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64472037"
+---
 1. **Yeni adım**'ı ve ardından **Koşul ekle**'yi seçin.
    
     ![Koşul ekleme](media/modern-approvals/add-response-condition.png)
