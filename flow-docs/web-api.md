@@ -11,11 +11,11 @@ ms.technology: ''
 ms.author: stepsic
 audience: Power user
 ms.openlocfilehash: ede20606d1d5ba2a97217dfbcfb3c9fffec2c017
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353068"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463608"
 ---
 # <a name="microsoft-flow-web-api"></a>Microsoft Flow Web API’si
 
