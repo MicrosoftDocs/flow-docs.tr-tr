@@ -109,6 +109,10 @@
           href: use-cds-for-apps-dialogs.md
         - name: Klasik Common Data Service iletişim kutularını değiştirme
           href: replace-dialogs.md
+- name: Yapay Zeka Oluşturucusu
+  items:
+    - name: Microsoft Flow’da Yapay Zeka Oluşturucusu’nu kullanma
+      href: use-ai-builder.md
 - name: Nasıl yapılır
   items:
     - name: Eylem ekleme
