@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: MT
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455178"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656143"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markdown kullanma
 
@@ -57,23 +57,23 @@ Metninizi paragraflar ve satır sonlarıyla ayırarak daha kolay okunur hale get
    
 **Örnek**
 
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
+Enter tuşu ile metinlerinizin arasına satırlar ekleyin.
+Bu sayede metninizdeki boşluklar daha net hale gelir ve metin daha kolay okunur.
 
-**Sonuç:**   
-Add lines between your text with the Enter key.      
-This spaces your text better and makes it easier to read.
+**Sonuç:**    
+Enter tuşu ile metinlerinizin arasına satırlar ekleyin.      
+Bu sayede metninizdeki boşluklar daha net hale gelir ve metin daha kolay okunur.
 
 
 **Örnek 2**
 
 Satır sonundan önce iki boşluk ekleyin.(boşluk, boşluk)     
-This adds space in between paragraphs.
+Bu, paragraflar arasına boşluk ekler.
 
 **Sonuç:**  
-Add two spaces prior to the end of the line.   
+Satır sonundan önce iki boşluk ekleyin.   
 
-This adds space in between paragraphs.
+Bu, paragraflar arasına boşluk ekler.
   
 
 ## <a name="lists"></a>Listeler
@@ -240,7 +240,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 **Sonuç:**
 
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**   
+**_Bold, italicized text_**    
 **~~Bold, strike-through text~~**  
 
 
