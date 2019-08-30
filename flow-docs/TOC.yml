@@ -81,14 +81,17 @@
 - name: Common Data Service
   items:
     - name: Klasik Common Data Service iş akışları
-      href: workflow-processes.md
       items:
+        - name: Genel bakış
+          href: workflow-processes.md
         - name: İş akışı aşamalarını ve adımlarını yapılandırma
           href: configure-workflow-steps.md
         - name: İş akışı süreçlerini izleme ve yönetme
           href: monitor-manage-processes.md
         - name: İş akışı işlemleri için en iyi yöntemler
           href: best-practices-workflow-processes.md
+        - name: İş akışlarını akışlarla değiştirme
+          href: replace-workflows-with-flows.md
     - name: Klasik Common Data Service eylemleri
       items:
         - name: Eylemler kullanma
