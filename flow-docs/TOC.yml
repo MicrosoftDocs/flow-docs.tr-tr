@@ -32,6 +32,8 @@
       href: connection-cds.md
     - name: Dynamics 365 ile bir akış oluşturma
       href: connection-dynamics365.md
+    - name: OneDrive İş ile akış oluşturma
+      href: onedrive-business-launch-panel.md
     - name: Verileri filtreleme ve kopyalama
       href: odata-filters.md
     - name: Flic kullanma
@@ -126,6 +128,8 @@
       href: data-operations.md
     - name: Koşullarda ifadeleri kullanma
       href: use-expressions-in-conditions.md
+    - name: Akışları modellemek için Visio’yu kullanma
+      href: visio-flows.md
     - name: 'Başvuru: İfadelerde işlevleri kullanma'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Onay akışları
