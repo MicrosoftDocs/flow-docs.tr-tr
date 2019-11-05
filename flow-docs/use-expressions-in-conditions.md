@@ -1,6 +1,6 @@
 ---
-title: Koşullu ifadeler kullanma | Microsoft Docs
-description: "\"ve\", \"veya\", \"boş\", \"küçüktür\" ve \"büyüktür\" Microsoft Flow Koşulları’yla gelişmiş ifadeler kullanın."
+title: İfadeleri koşullara göre kullanın. | Microsoft Docs
+description: Microsoft Flow koşullara sahip "ve", "veya", "Empty", "uz" ve "daha" gibi gelişmiş ifadeler kullanın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -18,200 +18,201 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 940ab40b9bac7d76734773805820911a20cd46aa
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64466980"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548388"
 ---
-# <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Koşullarda ifadeleri kullanarak birden çok değeri denetleme
-Bu kılavuzda, **Gelişmiş mod**’da ifadeleri ve **Koşulları** kullanarak birden çok değeri nasıl karşılaştırabileceğinizi öğreneceksiniz.
+# <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Birden çok değeri denetlemek için koşullarda ifadeleri kullanma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Bu kılavuzda, **Gelişmiş modda**birden çok değeri karşılaştırmak için Ifadeleri ve **Koşulları** kullanmayı öğreneceksiniz.
 
-Bir akış oluştururken, temel moddaki [**Koşul**](add-condition.md#add-a-condition) kartını kullanarak tek bir değeri başka bir değerle hızlıca karşılaştırabilirsiniz. Ancak birden çok değeri karşılaştırmanızı gerektiren durumlar olabilir. Örneğin, bir elektronik tablodaki veya veritabanı tablosundaki birkaç sütunun değerlerini denetlemek isteyebilirsiniz.
+Bir akış oluşturduğunuzda, tek bir değeri başka bir değerle hızlıca karşılaştırmak için temel moddaki [**koşul**](add-condition.md#add-a-condition) kartını kullanabilirsiniz. Ancak, birden çok değeri karşılaştırmanız gerektiğinde zaman vardır. Örneğin, bir elektronik tablodaki veya veritabanı tablosundaki birkaç sütunun değerini denetlemek isteyebilirsiniz.
 
-Koşullarınızda aşağıdaki mantıksal ifadelerin herhangi bir birleşimini kullanabilirsiniz.
+Koşullarınız içinde aşağıdaki mantıksal ifadelerin herhangi bir birleşimini kullanabilirsiniz.
 
-İfade|Açıklama|Örnek
+ifadesini|Açıklaması|Örneğinde
 --------|-----------|-------
-|[and](#use-the-and-expression)|İki bağımsız değişkeni alır ve iki değer de true ise, true değerini döndürür.<br><b>Not</b>: İki bağımsız değişken de Boolean olmalıdır.|Bu ifade false değerini döndürür: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|İki bağımsız değişkeni alır ve ikisinden biri true ise, true değerini döndürür. <br><b>Not</b>: İki bağımsız değişken de Boolean olmalıdır.|Bu ifade true değerini döndürür:<br>or(greater(1,10),equals(0,0))
-|equals|İki değer eşitse true değerini döndürür.|Örneğin, parametre1’in değeri birDeğer olduğunda bu ifade true değerini döndürür:<br>equals(parameters('parametre1'), 'birDeğer')
-|[less](#use-the-less-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade true değerini döndürür:<br>less(10,100)
-|lessOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden küçükse veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade true değerini döndürür:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyükse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade false değerini döndürür:<br>greater(10,10)
-|greaterOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikincisinden büyük veya ikincisine eşitse true değerini döndürür. <br><b>Not</b>: Desteklenen türler integer, float ve string'dir.|Bu ifade false değerini döndürür:<br>greaterOrEquals(10,100)
-|[empty](#use-the-empty-expression)|Nesne, dizi veya dize boşsa true değerini döndürür.|Bu ifade true değerini döndürür:<br>empty('')
-|not|Bir boolean değerinin tersini döndürür. |Bu ifade true değerini döndürür:<br>not(contains('200 Success','Fail'))
-|if|İfadenin true veya false olarak sonuçlanmasına bağlı olarak belirli bir değeri döndürür.|Bu ifade "yes" değerini döndürür:<br>if(equals(1, 1), 'evet', 'hayır')
+|['](#use-the-and-expression)|İki bağımsız değişken alır ve her iki değer de true olduğunda true değerini döndürür.<br><b>Note</b>: her iki bağımsız değişken de Boole olmalıdır.|Bu ifade yanlış değerini döndürür: <br>ve (daha büyük (1, 10), eşittir (0, 0))
+|[veya](#use-the-or-expression)|İki bağımsız değişken alır ve bağımsız değişken true ise true değeri döndürür. <br><b>Note</b>: her iki bağımsız değişken de Boole olmalıdır.|Bu ifade true değerini döndürür:<br>veya (büyük (1, 10), eşittir (0, 0))
+|eşittir|İki değer eşitse true değerini döndürür.|Örneğin, parametre1 değeri bir değer ise, bu ifade true değerini döndürür:<br>eşittir (Parametreler (' parametre1 '), ' someValue ')
+|[büyüktür](#use-the-less-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikinci bağımsız değişkenden küçükse true değerini döndürür. <br><b>Note</b>: desteklenen türler Integer, float ve String.|Bu ifade true değerini döndürür:<br>daha az (10100)
+|Lessotalals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikinci bağımsız değişkenden küçük veya ona eşitse true değerini döndürür. <br><b>Note</b>: desteklenen türler Integer, float ve String.|Bu ifade true değerini döndürür:<br>Azaltısallar (10, 10)
+|[ilerisi](#use-the-greater-expression)|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikinci bağımsız değişkenden büyükse true değerini döndürür. <br><b>Note</b>: desteklenen türler Integer, float ve String.|Bu ifade yanlış değerini döndürür:<br>daha büyük (10, 10)
+|greaterOrEquals|İki bağımsız değişkeni alır ve ilk bağımsız değişken ikinci bağımsız değişkenden büyük veya buna eşitse true değerini döndürür. <br><b>Note</b>: desteklenen türler Integer, float ve String.|Bu ifade yanlış değerini döndürür:<br>greaterOrEquals (10100)
+|[olmamalıdır](#use-the-empty-expression)|Nesne, dizi veya dize boşsa true döndürür.|Bu ifade true değerini döndürür:<br>boş (' ')
+|Başlatılmadı|Boole değerinin tersini döndürür. |Bu ifade true değerini döndürür:<br>Not (içerir (' 200 Success ', ' Fail '))
+|kullandıysanız|İfade true veya false olarak sonuçlanırsa belirli bir değeri döndürür.|Bu ifade "Yes" döndürür:<br>if (eşittir (1, 1), ' Yes ', ' No ')
 
-## <a name="prerequisites"></a>Önkoşullar
-* Microsoft Flow erişimi.
-* Bu kılavuzun sonraki bölümlerinde açıklanacak tabloları içeren bir elektronik tablo. Microsoft Flow’un elektronik tablolarınıza erişebilmesi için bunları Dropbox veya Microsoft OneDrive gibi bir konuma kaydettiğinizden emin olun.
-* Microsoft Office 365 Outlook (Biz Office 365 Outlook kullanıyoruz, ancak siz akışlarınızda, desteklenen e-posta hizmetlerinden dilediğinizi kullanabilirsiniz.)
+## <a name="prerequisites"></a>Kaynakları
+* Microsoft Flow erişim.
+* Bu izlenecek yolda daha sonra açıklanan tabloları içeren bir elektronik tablo. Microsoft Flow, çalışma alanınızı Dropbox veya Microsoft OneDrive gibi bir konuma kaydettiğinizden emin olun.
+* Microsoft Office 365 Outlook (Office 365 Outlook 'u kullanırken akışlarınızda desteklenen herhangi bir e-posta hizmetini kullanabilirsiniz.)
 
-## <a name="use-the-or-expression"></a>Or ifadesini kullanma
-Bazen, bir öğenin değerinin değerA **veya** değerB olmasına bağlı olarak iş akışınızın bir eylem gerçekleştirmesi gerekir. Örneğin, bir elektronik tablodaki görevlerin durumunu izliyor olabilirsiniz. Tablonun *Durum* adlı bir sütun içerdiğini ve *Durum* sütunundaki olası değerlerin şunlar olduğunu varsayalım:
+## <a name="use-the-or-expression"></a>Or ifadesini kullanın
+Bazen bir öğenin değeri Value EA **veya** valueb ise, iş akışınızın bir eylem yapması gerekir. Örneğin, bir elektronik tablo tablosundaki görevlerin durumunu izlemeyebilirsiniz. Tablonun *durum* adlı bir sütunu olduğunu ve *durum* sütunundaki olası değerleri olduğunu varsayalım:
 
-* **tamamlandı**
-* **engellendi**
-* **gereksiz**
+* **dım**
+* **engellendiğini**
+* **siyse**
 * **başlatılmadı**
 
-Elektronik tablo şu örnekteki gibi görünebilir:
+Aşağıda, elektronik tablonun nasıl görünebileceğini bir örnek verilmiştir:
 
 ![örnek elektronik tablo](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
-Yukarıdaki tabloyu göz önünde bulundurarak, Microsoft Flow aracılığıyla *Durum* sütunu *tamamlandı* veya *gereksiz* olarak ayarlanmış olan tüm satırları kaldırmak istediğinizi düşünelim.
+Önceki elektronik tablo verildiğinde, *tamamlandı* veya *gereksiz*olarak ayarlanmış bir *durum* sütunuyla tüm satırları kaldırmak için Microsoft Flow kullanmak istersiniz.
 
-Akışı oluşturalım.
+Flow oluşturalım.
 
-### <a name="start-with-a-blank-flow"></a>Boş bir akışla başlayın
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
+### <a name="start-with-a-blank-flow"></a>Boş bir akış ile başlayın
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
 
-    ![Oturum açın](includes/media/modern-approvals/sign-in.png)
+    ![Oturum Aç](includes/media/modern-approvals/sign-in.png)
 2. **Akışlarım** sekmesini seçin.
 
-    ![Akışlarım sekmesini seçin](includes/media/modern-approvals/select-my-flows.png)
-3. **Boş akış oluştur**’u seçin.
+    ![akışlarımı Seç](includes/media/modern-approvals/select-my-flows.png)
+3. **Boş oluştur**' u seçin.
 
-    ![Boş akış oluştur](includes/media/modern-approvals/blank-template.png)
+    ![boş oluştur](includes/media/modern-approvals/blank-template.png)
 
-### <a name="add-a-trigger-to-your-flow"></a>Akışınıza bir tetikleyici ekleyin
-1. **Zamanlama** sözcüğünü arayın ve sonra **Zamanlama - Yinelenme** tetikleyicisini seçin
+### <a name="add-a-trigger-to-your-flow"></a>Akışınız için bir tetikleyici ekleme
+1. **Zamanlama**araması yapın ve sonra **zamanlama-yinelenme** tetikleyicisini seçin
 
     ![zamanlama tetikleyicisi](includes/media/schedule-trigger/schedule-trigger.png)
-2. Zamanlamayı günde bir kez çalışacak biçimde ayarlayın.
+2. Zamanlamayı her gün çalışacak şekilde ayarlayın.
 
-    ![zamanlamayı ayarlama](includes/media/schedule-trigger/set-schedule.png)
+    ![Zamanlamayı ayarla](includes/media/schedule-trigger/set-schedule.png)
 
-### <a name="select-the-spreadsheet-and-get-all-rows"></a>Elektronik tabloyu seçin ve tüm satırları alın
-1. **Yeni adım** > **Eylem ekle** seçeneğini belirleyin.
+### <a name="select-the-spreadsheet-and-get-all-rows"></a>Elektronik tabloyu seçin ve tüm satırları al
+1. **Eylem eklemek** > **yeni adım** ' ı seçin.
 
     ![Yeni adım](includes/media/new-step/action.png)
-2. **Satırlar** sözcüğünü arayın ve sonra **Excel - Satırları al**’ı seçin.
+2. **Satırları**arayın ve sonra **Excel-satırları al**' ı seçin.
 
-    Not: Kullanmakta olduğunuz elektronik tabloya karşılık gelen "satırları al" eylemini seçin. Örneğin, Google E-Tablolar’ı kullanıyorsanız **Google E-Tablolar - Satırları al**’ı seçin.
+    Note: kullanmakta olduğunuz elektronik tabloya karşılık gelen "satırları al" eylemini seçin. Örneğin, Google sayfaları kullanıyorsanız **Google sayfaları-satırları al**' ı seçin.
 
     ![Satırları al](includes/media/new-step/get-excel-rows.png)
-3. **Dosya adı** kutusunda klasör simgesini seçin, verilerinizi içeren elektronik tabloya göz atın ve tabloyu seçin.
+3. **Dosya adı** kutusunda klasör simgesini seçin, öğesine gidin ve ardından verilerinizi içeren elektronik tabloyu seçin.
 
-    ![elektronik tabloyu seçme](includes/media/new-step/select-spreadsheet.png)
+    ![Elektronik Tablo Seç](includes/media/new-step/select-spreadsheet.png)
 4. **Tablo adı** listesinden verilerinizi içeren tabloyu seçin.
 
-    ![tabloyu seçme](includes/media/new-step/select-table.png)
+    ![Tablo Seç](includes/media/new-step/select-table.png)
 
 ### <a name="check-the-status-column-of-each-row"></a>Her satırın durum sütununu denetleyin
-1. **Yeni adım** > **Diğer** > **“Her birine uygula” ekle**’yi seçin.
+1. **Yeni adım** > **daha fazlasını** seçin > **her birine Uygula**' yı ekleyin.
 
-    ![tabloyu seçme](includes/media/new-step/apply-to-each.png)
-2. **Değer** belirtecini **Önceki adımlardan bir çıkış seçin** kutusuna ekleyin.
+    ![Tablo Seç](includes/media/new-step/apply-to-each.png)
+2. **Değer** belirtecini **önceki adımlardan bir çıkış seçin** kutusuna ekleyin.
 
-    ![tabloyu seçme](includes/media/apply-to-each/add-value-token.png)
-3. **Koşul ekle** > **Gelişmiş modda düzenle**’yi seçin.
-4. Aşağıdaki **or** ifadesini ekleyin. Bu **or** ifadesi, tablodaki her satırın değerini denetler (satır, bir ifadede erişildiğinde öğe olarak bilinir). **Durum** sütunundaki değerin *tamamlandı* **veya** *gereksiz* olması durumunda, **or** ifadesi "true" olarak değerlendirilir.
+    ![Tablo Seç](includes/media/apply-to-each/add-value-token.png)
+3. **Gelişmiş modda düzenle** > **Koşul Ekle** ' yi seçin.
+4. Aşağıdaki **veya** ifadesini ekleyin. Bu **veya** ifade, tablodaki her satırın değerini denetler (bir satır bir ifadede erişildiğinde öğe olarak bilinir). **Durum** sütununun değeri *tamamlanırsa* **veya** *gereksiz*ise, **veya** ifadesi "true" olarak değerlendirilir.
 
-    **or** ifadesi burada gösterildiği gibi görünür:
+    **Or** ifadesi burada gösterildiği gibi görünür:
 
     ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
 
-    **Koşul** kartınız şu resme benzer şekilde görünür:
+    **Koşul** kartınız şu resme benzer:
 
-    ![or ifadesi görüntüsü](./media/use-expressions-in-conditions/or-expression.png)
+    ![veya ifade resmi](./media/use-expressions-in-conditions/or-expression.png)
 
-### <a name="delete-matching-rows-from-the-spreadsheet"></a>Eşleşen satırları elektronik tablodan silme
-1. Koşulun **EVET İSE, HİÇBİR ŞEY YAPMA** dalında **Eylem ekle**'yi seçin.
-2. **Satırı sil** ifadesini arayın ve sonra **Excel - Satır sil**’i seçin.
+### <a name="delete-matching-rows-from-the-spreadsheet"></a>Elektronik tablodan eşleşen satırları sil
+1. Evet Ise **Eylem Ekle** **' yi SEÇIN, koşulun hiçbir şey yapmayın** .
+2. **Satırı sil**' i arayın ve sonra **Excel-satırı sil**' i seçin.
 
-    ![satırı sil resmi](includes/media/new-step/select-delete-excel-row.png)
-3. **Dosya adı** kutusunda, silmek istediğiniz verileri içeren elektronik tablo dosyasını arayın ve seçin.
+    ![satır görüntüsünü Sil](includes/media/new-step/select-delete-excel-row.png)
+3. **Dosya adı** kutusunda, öğesini arayın ve silmek istediğiniz verileri içeren elektronik tablo dosyasını seçin.
 4. **Tablo adı** listesinde, verilerinizi içeren tabloyu seçin.
-5. **Satır kimliği** kutusuna **Satır kimliği** belirtecini girin.
+5. **Satır kimliği kutusunda** **satır kimliği** simgesine yerleştirin.
 
     ![elektronik tablo dosyası](includes/media/new-step/delete-excel-row.png)
 
 ### <a name="name-the-flow-and-save-it"></a>Akışı adlandırın ve kaydedin
-1. Akışınıza bir ad verin ve sonra **Akış oluştur** düğmesini seçin.
+1. Akışınıza bir ad verin ve ardından **akış oluştur** düğmesini seçin.
 
-    ![akışınızı kaydedin](./media/use-expressions-in-conditions/name-and-save.png)
+    ![akışınızı kaydetme](./media/use-expressions-in-conditions/name-and-save.png)
 
-### <a name="run-the-flow-with-the-or-expression"></a>Akışı or ifadesiyle çalıştırma
-Akış kaydedildikten sonra çalışır. Bu kılavuzda daha önce gösterilen elektronik tabloyu oluşturduysanız, çalıştırma tamamlandıktan sonra bu elektronik tablo şöyle görünür:
+### <a name="run-the-flow-with-the-or-expression"></a>Akışı veya ifadesiyle çalıştırma
+Akış kaydettikten sonra çalışır. Bu izlenecek yolda daha önce gösterilen elektronik tabloyu oluşturduysanız, çalıştırma tamamlandıktan sonra şöyle görünür:
 
-![or ifadesi tamamlanır](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
+![or ifadesi tamamlandı](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
 
-Durum sütununda "tamamlandı" veya "gereksiz" değerine sahip olan satırlardaki tüm verilerin silindiğine dikkat edin.
+Durum sütununda "tamamlandı" veya "gereksiz" olan satırlardan tüm verilerin silindiğini görürsünüz.
 
-## <a name="use-the-and-expression"></a>And ifadesini kullanma
-Bir elektronik tabloda iki sütunlu bir tablonuz olduğunu varsayalım. Sütun adları Durum ve Atandı olsun. Durum sütununun "engellendi", Atandı sütununun ise "Turgay Elmas" değerine sahip olduğu tüm satırları silmek istediğinizi düşünelim.  Bu görevi gerçekleştirmek için bu kılavuzda daha önce açıklanan tüm adımları izleyin, ancak **Koşul** kartını gelişmiş modda düzenlerken burada gösterilen **and** ifadesini kullanın:
+## <a name="use-the-and-expression"></a>Ve ifadesini kullanın
+İki sütunlu bir elektronik tablo tablonuz olduğunu varsayalım. Sütun adları durum ve atandı ' dir. Durum sütununun değeri "engellendi" ise ve atanan sütunun değeri "John merak" ise, tüm satırları silmek istediğinizi de varsayın.  Bu görevi gerçekleştirmek için bu kılavuzda daha önce açıklanan tüm adımları izleyin, ancak **koşul** kartını gelişmiş modda düzenlerken burada gösterilen **ve** ifadesini kullanın:
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
-**Koşul** kartınız şu resme benzer şekilde görünür:
+**Koşul** kartınız şu resme benzer:
 
-![and ifadesi görüntüsü](./media/use-expressions-in-conditions/and-expression.png)
+![ve ifade resmi](./media/use-expressions-in-conditions/and-expression.png)
 
-### <a name="run-the-flow-with-the-and-expression"></a>Akışı and ifadesiyle çalıştırma
-Kılavuzu takip ettiyseniz, elektronik tablonuz şu resme benzer şekilde görünür:
+### <a name="run-the-flow-with-the-and-expression"></a>Akışı ve ifadesiyle çalıştırma
+Daha sonra, elektronik tablonuz şu resme benzer şekilde görünür:
 
-![and çalıştırılmadan önce](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png)
+![önce ve çalıştırma](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png)
 
-Akışınız çalıştırıldıktan sonra, elektronik tablonuz şu resme benzer şekilde görünür:
+Akışınız çalıştıktan sonra, elektronik tablonuz şu resme benzer şekilde görünür:
 
-![and çalıştırıldıktan sonra](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png)
+![sonra ve çalıştıktan sonra](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png)
 
-## <a name="use-the-empty-expression"></a>Boş ifade kullanma
-Artık elektronik tabloda birkaç boş satır olduğuna dikkat edin. Bunları kaldırmak için **empty** ifadesini kullanarak Atandı ve Durum sütunlarında metin olmayan tüm satırları belirleyin.
+## <a name="use-the-empty-expression"></a>Boş ifadeyi kullan
+Artık elektronik tabloda birkaç boş satır olduğuna dikkat edin. Bunları kaldırmak için, atanan ve durum sütunlarında metin olmayan tüm satırları tanımlamak üzere **boş** ifadeyi kullanın.
 
-Bu görevi gerçekleştirmek için bu kılavuzun önceki kısmında yer alan **and ifadesini kullanma** bölümündeki tüm adımları izleyin, ancak **Koşul** kartını gelişmiş modda düzenlerken empty ifadesini şu şekilde kullanın:
+Bu görevi gerçekleştirmek için bu kılavuzda daha önce verilen **ve Expression bölümünü kullanın** bölümünde listelenen tüm adımları izleyin, ancak **koşul** kartını gelişmiş modda düzenlediğinizde, boş ifadeyi bu şekilde kullanın:
 
 ````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
 
-**Koşul** kartınız şu resme benzer şekilde görünür:
+**Koşul** kartınız şu resme benzer:
 
-![empty ifadesi görüntüsü](./media/use-expressions-in-conditions/empty-expression.png)
+![boş ifade resmi](./media/use-expressions-in-conditions/empty-expression.png)
 
-Akışınız çalıştırıldıktan sonra, elektronik tablo şu resme benzer şekilde görünür:
+Akışınız çalıştıktan sonra, elektronik tablo şu resme benzer şekilde görünür:
 
-![empty çalıştırıldıktan sonra](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png)
+![boş çalıştırmalarından sonra](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png)
 
-Ek satırların tablodan kaldırıldığına dikkat edin.
+Daha fazla satır tablodan kaldırılır.
 
-## <a name="use-the-greater-expression"></a>greater ifadesini kullanma
-İş arkadaşlarınız için beyzbol biletleri satın aldığınızı ve herkesin bilet parasını ödediğinden emin olmak için bir elektronik tablo kullandığınızı varsayalım. Tutarın tamamını ödemeyen herkese günlük olarak e-posta gönderen bir akışı kolayca oluşturabilirsiniz.
+## <a name="use-the-greater-expression"></a>Daha büyük ifadeyi kullanın
+İş arkadaşlarınız için bez bileti satın aldığınızı ve her bir kişi tarafından geri olduğunuzdan emin olmak için bir elektronik tablo kullandığınızı düşünün. Tam miktarı ödememiş olan her kişiye günlük bir e-posta gönderen bir akışı hızlı bir şekilde oluşturabilirsiniz.
 
-Tutarın tamamını ödemeyen çalışanları belirlemek için **greater** ifadesini kullanın. Daha sonra, ödemeyi tamamlamamış kişilere otomatik olarak iyi niyetli bir anımsatma e-postası gönderebilirsiniz.
+Tam miktarı ödememiş çalışanları belirlemek için **daha fazla** ifadeyi kullanın. Daha sonra, tam olarak ödememiş kişilere otomatik olarak kolay bir anımsatıcı e-postası gönderebilirsiniz.
 
-Elektronik tablo şöyle görünür:
+Elektronik tablonun bir görünümü aşağıda verilmiştir:
 
-![elektronik tablonun görünümü](./media/use-expressions-in-conditions/tickets-spreadsheet-table.png)
+![Elektronik Tablo görünümü](./media/use-expressions-in-conditions/tickets-spreadsheet-table.png)
 
-Ödemesi gereken tutarın tamamını ödememiş tüm kişileri belirleyen **greater** ifadesi şu şekilde uygulanır:
+Bundan sonra miktardan daha az ödememiş olan tüm kişileri tanımlayan **daha büyük** ifadenin uygulanması aşağıda verilmiştir:
 
 ````@greater(item()?['Due'], item()?['Paid'])````
 
-## <a name="use-the-less-expression"></a>less ifadesini kullanma
-İş arkadaşlarınız için beyzbol biletleri satın aldığınızı ve herkesin kabul ettiği bir tarihe kadar bilet parasını ödediğinden emin olmak için bir elektronik tablo kullandığınızı varsayalım. Geçerli tarih ile son tarih arasında bir günden kısa süre kaldığında henüz tutarın tamamını ödememiş olan kişilere anımsatma e-postası gönderen bir akış oluşturabilirsiniz.
+## <a name="use-the-less-expression"></a>Daha az ifadeyi kullanın
+İş arkadaşlarınız için bir beki bileti satın aldığınızı ve herkesin kabul ettiğindeki tarihe göre her bir kişiye göre geri olduğunuzdan emin olmak için bir elektronik tablo kullandığınızı varsayalım. Geçerli tarihin son tarihten önce bir günden daha az olması durumunda, tam miktarı ödememiş olan her kişiye bir anımsatıcı e-postası gönderen bir akış oluşturabilirsiniz.
 
-Doğrulanması gereken iki koşul olduğundan, **and** ifadesinin yanı sıra **less** ifadesini kullanın:
+Doğrulanan iki koşul olduğundan, **ve** ifadesini **Less** ifadesiyle birlikte kullanın:
 
 
-|          Doğrulanacak koşul          | kullanılacak ifade |                    Örnek                     |
+|          Doğrulanacak koşul          | kullanılacak ifade |                    Örneğinde                     |
 |-----------------------------------------|-------------------|------------------------------------------------|
-|   Tutarın tamamı ödendi mi?    |      greater      |   @greater(item()?['Tutar'], item()?['Ödenen'])    |
-| Son tarihe bir günden kısa süre mi kaldı? |       less        | @less(item()?['SonTarih'], addDays(utcNow(),1)) |
+|   Ödenmesi gereken miktarın tamamı ödensin mi?    |      ilerisi      |   @greater(öğe ()? [' Bitiş '], öğe ()? [' Ücretli '])    |
+| Son Tarih bir günden daha az mı? |       büyüktür        | @less(öğe ()? [' DueDate '], addDays (utcNow (), 1)) |
 
-## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Bir and ifadesinde greater ve less ifadelerini birleştirme
-Ödemesi gereken tutarın altında ödeme yapan çalışanları belirlemek için **greater** ifadesini kullanın ve geçerli tarih ile son ödeme tarihi arasındaki sürenin bir günden kısa olup olmadığını belirlemek **less** ifadesini kullanın. Daha sonra, **E-posta gönder** eylemini kullanarak son tarihe bir günden kısa süre kalmasına rağmen tutarın tamamını ödememiş kişilere iyi niyetli bir anımsatma e-postası gönderebilirsiniz.
+## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Ve ifadesinde daha büyük ve daha az ifadeleri birleştirin
+Tüm tutardan daha az ödenen çalışanları belirlemek için **daha fazla** ifadeyi kullanın ve ödemenin son tarihinin geçerli tarihten bir günden daha az olup olmadığını belirlemek için **daha az** ifadeyi kullanın. Daha sonra, tam olarak ödememiş olan ve son tarih bir günden daha kısa olan bir e-posta göndermek için **e-posta gönder** eylemi yapabilirsiniz.
 
-Elektronik tablo şöyle görünür:
+Elektronik tablo tablosunun bir görünümü aşağıda verilmiştir:
 
-![elektronik tablonun görünümü](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png)
+![Elektronik Tablo görünümü](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png)
 
-Son ödeme tarihine bir günden kısa süre kalmasına rağmen tutarın tamamını ödememiş olan tüm kişileri belirleyen **and** ifadesinin uygulanması şu şekilde yapılır:
+Bu, ve son tarih, geçerli tarihten itibaren tutardan daha az bir günden daha az olan tüm kişileri tanımlayan **ve** ifadesinin uygulanması:
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="use-functions-in-expressions"></a>İfadelerde işlevleri kullanma
+## <a name="use-functions-in-expressions"></a>Deyimlerdeki işlevleri kullanma
 
-Bazı ifadelerin değerleri, bir akış çalışmaya başladığında henüz var olmayabilecek çalışma zamanı eylemlerinden alınır. İfadelerde bu değerlere başvurmak veya bunlarla çalışmak için İş Akışı Tanımlama Dili'nin sağladığı işlevleri kullanabilirsiniz. Daha fazla bilgi: [Microsoft Flow'da İş Akışı Tanımlama Dili'nin işlevler başvurusu](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Bazı ifadeler, bir akış çalışmaya başladığında henüz mevcut olmayan çalışma zamanı eylemlerinden değerlerini alır. Deyimlerdeki bu değerlere başvurmak veya bunlarla çalışmak için, Iş akışı tanımı dilinin sağladığı işlevleri kullanabilirsiniz. Daha fazla bilgi: [Microsoft Flow Iş akışı tanımlama dili Için işlevler başvurusu](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
