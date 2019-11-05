@@ -1,126 +1,126 @@
 ---
-title: PowerApps kullanarak dallanma ile iş süreci akışlarını geliştirme | MicrosoftDocs
-description: İş süreci akışında dallanmanın nasıl kullanılacağını öğrenin
+title: PowerApps ile Dalla iş süreci akışlarını geliştirin | MicrosoftDocs
+description: Bir iş süreci akışında dallanmayı kullanmayı öğrenin
 ms.custom: ''
 ms.date: 06/27/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-author: Mattp123
+ms.service: flow
+author: MSFTMAN
 ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9
-ms.author: matp
+ms.author: Deonhe
 manager: kvivek
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c3a03cefcb3e808bb7900b79b05e6c2b3f8ef7f5
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054098"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544775"
 ---
-# <a name="tutorial-enhance-business-process-flows-with-branching"></a>Öğretici: Dal oluşturma ile iş süreci akışlarını geliştirme
+# <a name="tutorial-enhance-business-process-flows-with-branching"></a>Öğretici: Dalla iş süreci akışlarını geliştirin
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-İş süreci akışları; satış, pazarlama veya hizmet süreçlerinin çeşitli aşamalarından tamamlanma aşamasına kadar size yol gösterir. Basit durumlarda, doğrusal bir iş süreci akışı iyi bir seçenektir. Ancak daha karmaşık senaryolarda, dallanma ile bir iş sürecini geliştirebilirsiniz. İş süreci akışlarında oluşturma izinlerine sahipseniz, `If-Else` mantığını kullanarak birden çok dal ile iş süreci akışı oluşturabilirsiniz. Dallanma koşulu, `AND` veya `OR` işleç birleşimini kullanan birden çok mantıksal ifadeden oluşabilir. Dal seçimi, işlem tanımı sırasında tanımlanan kurallara göre gerçek zamanlı olarak otomatik şekilde gerçekleşir. Örneğin, araba satışında, tek bir iş süreci akışı yapılandırabilirsiniz; bu iş süreci akışından sonra genel bir nitelendirme aşaması, bir kurala (Müşteri yeni bir araba mı, ikinci el bir araba mı tercih ediyor, bütçesi 20.000 $’ın üstünde mi altında mı vb.) dayanarak iki ayrı dala bölünür. bir dal, yeni arabaların satışı için; başka bir dal da ikinci el arabaların satışı içindir. İş süreci akışları hakkında daha fazla bilgi için bkz. [İş süreci akışlarına genel bakış](business-process-flows-overview.md).  
+İş süreci akışları, çeşitli satış, pazarlama veya hizmet işlemlerinin tamamlanmasına yönelik çeşitli aşamalarda size rehberlik sağlar. Basit durumlarda, doğrusal bir iş süreci akışı iyi bir seçenektir. Ancak, daha karmaşık senaryolarda, dalla bir iş süreci akışını geliştirebilirsiniz. İş süreci akışlarında oluşturma izinleriniz varsa, `If-Else` mantığını kullanarak birden çok dalı olan iş süreci akışı oluşturabilirsiniz. Dallanma koşulu, `AND` veya `OR` işleçlerinin birleşimini kullanan birden çok mantıksal ifadenin oluşturulabilir. Dal seçimi, işlem tanımı sırasında tanımlanan kurallara göre otomatik olarak gerçek zamanlı olarak yapılır. Örneğin, otomobillerin satılırken, ortak bir sektör aşaması bir kural temelinde iki ayrı dala bölündüğünü (müşteri yeni bir otomobil veya önceden sahip bir otomobil tercih ettiği, $20.000 vb. ), bir dalı, yeni otomobilleri ve başka bir dalı satmaya yönelik, önceden sahip olan otomobilleri satmaya yönelik Iş süreci akışları hakkında daha fazla bilgi için bkz. [iş işleme akışlarına genel bakış](business-process-flows-overview.md).  
   
- Aşağıdaki diyagramda, dallar içeren bir iş süreci akışı gösterilmektedir.  
+ Aşağıdaki diyagramda dallarla bir iş süreci akışı gösterilmektedir.  
   
- ![Araba satışı işlemindeki adımları gösteren akış çizelgesi](media/example-car-sales-flow-chart.png "Araba satışı işlemindeki adımları gösteren akış çizelgesi")  
+ ![Araba satışları işlemindeki adımları gösteren akış çizelgesi](media/example-car-sales-flow-chart.png "Araba satışları işlemindeki adımları gösteren akış çizelgesi")  
   
 <a name="Points"></a>   
-## <a name="what-you-need-to-know-when-designing-business-process-flows-with-branches"></a>Dallar içeren iş süreci akışları tasarlarken bilmeniz gerekenler  
- Dallar içeren iş süreci akışını tasarlarken aşağıdaki bilgilere dikkat edin:  
+## <a name="what-you-need-to-know-when-designing-business-process-flows-with-branches"></a>Dallarla iş süreci akışlarını tasarlarken bilmeniz gerekenler  
+ Şubelerle iş süreci akışını tasarlarken aşağıdaki bilgileri görebilirsiniz:  
   
--   Bir işlem en fazla 5 benzersiz varlığa yayılabilir.  
+-   Bir işlem, en fazla 5 benzersiz varlık arasında yayılabilir.  
   
--   İşlem başına en fazla 30 aşama ve aşama başına en fazla 30 adım kullanabilirsiniz.  
+-   İşlem başına en fazla 30 aşama ve her aşama için en fazla 30 adım kullanabilirsiniz.  
   
--   Her dal en fazla 5 düzey derinliğinde olabilir.  
+-   Her dal, 5 düzeyden daha derin olamaz.  
   
--   Dallanma kuralı, kendisinden hemen önceki aşamadaki adımları temel almalıdır.  
+-   Dallanma kuralı, aşamadaki hemen önce gelen adımlara dayalı olmalıdır.  
   
--   Her iki işleci birden değil, ya `AND` işlecini ya da `OR` işlecini kullanarak bir kuralda birden fazla koşulu birleştirebilirsiniz.  
+-   Bir kuralda birden çok koşulu, `AND` işlecini veya `OR` işlecini (her iki işleçle değil) kullanarak birleştirebilirsiniz.  
   
--   Bir işlem akışını tanımladığınızda, isteğe bağlı olarak bir varlık ilişkisi seçebilirsiniz. Bu ilişki, 1:N (Bir-Çok) varlık ilişkisi olmalıdır.  
+-   Bir işlem akışı tanımladığınızda, isteğe bağlı olarak bir varlık ilişkisi seçebilirsiniz. Bu ilişki 1: N (bire çok) varlık ilişkisine sahip olmalıdır.  
   
--   Aynı veri kaydında birden fazla etkin işlem eş zamanlı olarak çalıştırılabilir.  
+-   Aynı veri kaydında birden fazla etkin işlem aynı anda çalışabilir.  
   
--   Sürükleyip bırakma işlevini kullanarak işlem akışında kutucukları (Aşamalar, Adımlar, Koşullar vb.) yeniden düzenleyebilirsiniz.  
+-   Sürükle ve bırak ile işlem akışındaki kutucukları (aşamalar, adımlar, koşullar vb.) yeniden düzenleyebilirsiniz.  
   
--   Dallar birleştirilirken tüm eş dallar tek bir aşamada birleştirilmelidir. Eş dalların tümü tek bir aşamada birleştirilmeli veya her eş dal, işlemi sonlandırmalıdır. Bir eş dal, diğer dallarla birleştirilemez ve aynı anda işlemi sonlandıramaz.  
+-   Dallar birleştirilirken tüm eş dalların tek bir aşamaya birleştirilmesi gerekir. Eş dalların hepsi tek bir aşamada birleştirilmelidir, ya da her eş dalı işlemi sonlandırmalıdır. Bir eş dal, diğer dallarla birleştirilemez ve aynı anda işlemi sonlandırın.  
   
 > [!NOTE]
-> - İşlemde kullanılan bir varlık birçok kez yeniden ziyaret edilebilir (birden çok kapalı varlık döngüsü).  
-> - Bir işlem, varlık türüne bakılmaksızın önceki aşamaya geri dönebilir. Örneğin, bir teklif kaydında etkin aşama **Teklif Ver** ise, işlem kullanıcıları etkin aşamayı bir fırsat kaydında **Öner** aşamasına geri taşıyabilir.  
+> - İşlemde kullanılan bir varlık birden çok kez yeniden ziyaret edilebilir (birden çok kapalı varlık döngüsü).  
+> - Bir işlem, bir varlık türünden bağımsız olarak önceki aşamaya geri dönebilir. Örneğin, etkin aşama teklif kaydında **teklif sunduğunuzda** , işlem kullanıcıları etkin aşamayı bir fırsat kaydındaki **teklif aşamasına geri** taşıyabilirler.  
 >   
->   Bir diğer örnek olarak, süreç akışınızda bir sürecin şu anda **Teklif Sun** aşamasında olduğunu varsayalım: **Müşteri Adayını Uygun Kabul Et** > **Gereksinimleri Belirle** > **Öneri Oluştur** > **Teklif Sun** > **Kapat**. Müşteriye sunulan öneri, müşteri gereksinimlerini tanımlamak için daha fazla araştırma yapılmasını gerektiriyorsa, kullanıcılar işleminizin **Gereksinimleri Tanımla** aşamasını seçip **Etkin Olarak Ayarla** seçeneğini belirleyebilir.  
+>   Başka bir örnekte, şu anda işlem akışındaki **mevcut teklif** aşamasında bir işlem olduğunu varsayalım: **müşteri adayını nitelendir** > **Ihtiyaçları belirlemek** >  teklif > **sunma teklifi** oluştur >  **Kapatın**. Müşteriye sunulan teklif, müşteri ihtiyaçlarını belirlemek için daha fazla araştırma gerektiriyorsa, kullanıcılar yalnızca işleminizin **Ihtiyaçlarını belirle** aşamasını seçebilir ve **etkin ayarla**' yı seçebilirler.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Dynamics 365 müşteri katılımı örneği: İki dalı olan araba satışı süreç akışı
+## <a name="example-car-selling-process-flow-with-two-branches"></a>Örnek: iki Dalla işlem akışını satan otomobil
  
-Yeni ve ikinci el araba satışı için iki dal içeren iş süreci akışı örneğine göz atalım.  
+Yeni ve önceden sahip olan otomobilleri satmaya yönelik olarak iki Dalla iş süreci akışı örneğine bakalım.  
   
- İlk olarak **Araba Satışı İşlemi** adlı yeni bir işlem oluşturacağız.  
+ İlk olarak, **otomobil Sales Process**adlı yeni bir işlem oluşturacağız.  
   
-1.  [Çözüm gezginini açın](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) ve sonra sol gezinti bölmesinde **İşlemler**’i seçin.  
+1.  [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) ' ni açın ve ardından sol gezinti bölmesinde **süreçler**' ı seçin.  
   
-2.  Yeni bir işlem oluşturmak için **Yeni**’yi seçin.  
+2.  Yeni bir işlem oluşturmak için **Yeni** ' yi seçin.  
   
-3.  **İş Süreci Akışı** olarak **Kategori**’yi belirtin ve birincil **Varlık** için **Müşteri Adayı** seçeneğini belirleyin.  
+3.  **Kategoriyi** **iş süreci akışı** olarak belirtin ve birincil **varlık** için **müşteri adayı**' nı seçin.  
   
-4.  **Uygun Kabul Et** adlı işleme birinci aşamayı ekleyin ve **Satın Alma Zaman dilimi** ve **Araba Tercihi** adımlarını ekleyin.  
+4.  Hazırlama ve adım **satın alma zamanı çerçevesi** ve **otomobil tercihi** **adlı işleme** ilk aşamayı ekleyin.  
   
-5.  Genel **Uygun Kabul Et** aşamasından sonra, **Koşul** kutucuğunu kullanarak işlemi iki ayrı dala böleriz.  
+5.  Ortak **niteleme** aşamasından sonra, **koşul** kutucuğunu kullanarak işlemi iki ayrı dala böyoruz.  
   
-    1.  Koşul kutucuğunu, iş gereksinimlerinizi karşılayan kurallarla yapılandırma  
+    1.  Koşul kutucuğunu iş gereksinimlerinizi karşılayan kurallarla yapılandırın  
   
-    2.  Bir aşamaya yönelik birinci dalı eklemek için, koşul dosyasının “Evet” yoluna bir Aşama kutucuğu ekleyin  
+    2.  Bir aşamanın ilk dalını eklemek için koşul kutucuğunun "Evet" yoluna bir aşama kutucuğu ekleyin  
   
-    3.  Koşul karşılanmadığında yürütülecek ikinci dalı eklemek için, koşul kutucuğunun “Hayır” yoluna başka bir Aşama kutucuğu ekleyin  
+    3.  Koşul karşılanmadığı zaman yürütülen ikinci dalı eklemek için koşul kutucuğunun "Hayır" yoluna başka bir aşama kutucuğu ekleyin  
   
 > [!TIP]
->  Daha karmaşık dallanma oluşturmak için mevcut bir koşul kutucuğunun “hayır” yoluna başka bir koşul ekleyebilirsiniz.  
+>  Daha karmaşık dallandırma oluşturmak için var olan koşul kutucuğunun "Hayır" yoluna başka bir koşul ekleyebilirsiniz.  
   
- ![Oluşturulan Uygun Kabul Et aşamasını gösteren görüntü](media/example-car-sales-qualify-stage.JPG "Oluşturulan Uygun Kabul Et aşamasını gösteren görüntü")  
+ ![Oluşturulan uygun bulma aşamasını gösteren resim](media/example-car-sales-qualify-stage.JPG "Oluşturulan uygun bulma aşamasını gösteren resim")  
   
- **Araba tercihi** = **Yeni** olursa işlem, **Yeni Araba Satışı** aşamasına dallanır, aksi takdirde, aşağıda gösterildiği gibi ikinci dalda **İkinci El Araba Satışı** aşamasına atlar.  
+ **Araba tercihi** **Yeni** = , işlem **Yeni araba satışları** aşamasına dallandırır, aksi takdirde, Ikinci dalda aşağıda gösterildiği gibi, **önceden sahip olan araba satış** aşamasına atlar.  
   
- ![Yeni Araba Satışı aşamasını gösteren görüntü](media/example-car-sales-new-stage-1.JPG "Yeni Araba Satışı aşamasını gösteren görüntü")  
+ ![Yeni araba satışı aşamasını gösteren resim](media/example-car-sales-new-stage-1.JPG "Yeni araba satışı aşamasını gösteren resim")  
   
- ![İkinci el araba satışı aşaması](media/example-car-sales-pre-owned-stage.JPG "İkinci el araba satışı aşaması")  
+ ![Ön&#45;sahip olan araba satış aşaması](media/example-car-sales-pre-owned-stage.JPG "Önceden sahip olan otomobil satış aşaması")  
   
- **Yeni Araba Satışı** aşamasındaki veya **İkinci El Araba Satışı** aşamasındaki tüm adımlar tamamlandıktan sonra işlem, **Teklif Ver** aşaması ile ana akışa geri döner.  
+ **Yeni araba satış** aşamasındaki veya **önceden sahip olan araba satışları** aşamasındaki tüm adımları tamamladıktan sonra, işlem **teklif teklifi** aşamasına sahip ana akışa geri döner.  
   
- ![Teklif Ver aşaması](media/example-car-sales-deliver-quote-stage.JPG "Teklif Ver aşaması")  
+ ![Teklif aşaması sunma](media/example-car-sales-deliver-quote-stage.JPG "Teklif aşaması sunma")  
   
 <a name="PreventInformation"></a>   
-## <a name="prevent-information-disclosure"></a>Bilgilerin açığa çıkmasını önleme  
- Aşağıda gösterildiği gibi, bir bankadaki kredi isteğini işlemeye yönelik dallar içeren bir iş süreci akışını düşünün. Aşamalarda kullanılan özel varlıklar, parantez içinde gösterilmektedir.  
+## <a name="prevent-information-disclosure"></a>Bilgilerin açığa çıkmasına engel  
+ Aşağıda gösterildiği gibi, bir bankadaki kredi isteğini işlemeye yönelik dallarla bir iş süreci akışını göz önünde bulundurun. Aşamalarda kullanılan özel varlıklar parantez içinde gösterilir.  
   
- ![Bilgilerin açığa çıkmasını önlemek için örnek bir işlemdeki adımları gösteren akış çizelgesi](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Bilgilerin açığa çıkmasını önlemek için örnek bir işlemdeki adımları gösteren akış çizelgesi")  
+ ![Bilgilerin açığa çıkmasını önleyen örnek bir işlemin adımlarını gösteren akış grafiği](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Bilgilerin açığa çıkmasını önleyen örnek bir işlemin adımlarını gösteren akış grafiği")  
   
- Bu senaryoda, banka kredi yetkilisinin İstek kaydına erişmesi gerekir, ancak bu yetkilinin istek araştırmasını görmemesi gerekir. İlk bakışta, kredi yetkilisine, araştırma varlığına erişim belirtmeyen bir güvenlik rolü atayarak kolayca bunu yapabilirsiniz gibi görünüyor. Ancak örneğe daha ayrıntılı şekilde bakalım ve bu durumun doğru olup olmadığını görelim.  
+ Bu senaryoda, banka kredisi Müdürü, Istek kaydına erişmesi gerekir, ancak kredi Müdürü istek araştırmasına ilişkin görünürlüğe sahip olmamalıdır. İlk bakışta, kredi kurumunun araştırma varlığına erişimi olmadığını belirten bir güvenlik rolü atayarak bunu kolayca yapabiliriz. Ancak, daha ayrıntılı bir şekilde örneğe bakalım ve bunun gerçekten doğru olup olmadığına bakın.  
   
- Bir müşterinin bankaya 60.000 $ üzerinde kredi isteğinde bulunduğunu varsayalım. Kredi yetkilisi ilk aşamada isteği gözden geçirir. Bankaya borçlanılan tutarın 50.000 $’ı aşıp aşmadığını denetleyen dallanma kuralı karşılanırsa, işlemdeki sonraki aşama, isteğin sahtekarlık amaçlı olup olmadığının araştırılmasıdır. Bunun gerçekten sahtekarlık durumu olduğu belirlenirse, işlem, istekte bulunana karşı hukuki işlem yapılması aşamasına ilerler. Kredi yetkilisinin Araştırma varlığına erişimi olmadığından iki araştırma aşamasını görmemesi gerekir.  
+ Bir müşterinin krediden $60.000 ' e kadar kredi isteğini iade edelim. Kredi Müdürü, isteği ilk aşamada inceler. Bankaya borçlu olunan tutarın $50.000 ' i aşıp aşmadığını kontrol eden dallanma kuralı karşılanmazsa, sürecin bir sonraki aşaması isteğin sahte olup olmadığını araştırmaktır. Bunun gerçekten sahtekarlık durumunda olduğunu tespit ediyorsanız, işlem istek sahibine karşı yasal bir eylem gerçekleştirmek için hareket eder. Kurumun araştırma varlığına erişimi olmadığından, kredi Müdürü iki araştırma aşamasına yönelik görünürlüğe sahip olmamalıdır.  
   
- Ancak kredi yetkilisi İstek kaydını açarsa herkes uçtan uca işlemin tamamını görebilir. Kredi yetkilisi yalnızca sahtekarlık araştırması aşamasını görebilmekle kalmaz, aynı zamanda işlemdeki Hukuki İşlem aşamasını görebilir ve araştırmanın sonucunu da belirleyebilir. Ayrıca aşamayı seçerek araştırma aşamalarındaki adımların önizlemesini de görüntüleyebilir. Kredi yetkilisi verileri veya adımın tamamlanma durumunu göremese de, araştırma ve hukuki işlem aşamalarında isteği gönderene karşı uygulanan olası eylemleri belirleyebilir.  
+ Ancak, kredi Müdürü Istek kaydını açarsa, tümü uçtan uca işlemin tamamını görebilir. Yalnızca, kredi Müdürü sahtekarlık araştırma aşamasını göremez, ancak işlemdeki yasal eylem aşamasını görebilerek araştırmanın sonucunu da tanımlayabilecektir. Ayrıca, müdürü, aşamayı seçerek araştırma aşamalardaki adımların önizlemesini yapabilir. Kredi Müdürü verileri veya adım tamamlanma durumunu göremeyecek olsa da, araştırma ve yasal eylem aşamaları sırasında isteğin gönderenine karşı alınan olası eylemleri tanımlayabilecektir.  
   
- Bu işlem akışında kredi yetkilisi, uygunsuz şekilde bilgilerin açığa çıkmasına neden olan Sahtekarlık Araştırması ve Hukuki İşlem aşamalarını görebilir. Dallanma nedeniyle açığa çıkabilecek bilgilere özellikle dikkat edilmesini öneririz. Bizim örneğimizde, bilgilerin açığa çıkmasını önlemek için işlemi iki ayrı işleme bölüyoruz; biri istek işleme için, diğeri ise sahtekarlık araştırması içindir. Kredi yetkilisi için işlem şöyle görünür:  
+ Bu işlem akışında, kredi Müdürü, yanlış bir bilginin açığa çıkmasına neden olan sahtekarlık araştırmasını ve yasal eylem aşamalarını görebilir. Dallandırma nedeniyle açıklanabilir olabilecek bilgilere özel bir dikkat ödemenizi öneririz. Bizim örneğimizde, bir tane, istek işleme için bir diğeri ve sahtekarlık araştırması için başka bir tane olmak üzere, bilgilerin açığa çıkmasını önlemek için işlemi iki ayrı işleme ayırın. Kredi Müdürü süreci şöyle görünür:  
   
- ![Bilgilerin açığa çıkmasını önleme işlemindeki ek adımları gösteren akış çizelgesi](media/example-car-sales-flow-chart-additional-steps-prevent-information-disclosure.png "Bilgilerin açığa çıkmasını önleme işlemindeki ek adımları gösteren akış çizelgesi")  
+ ![Bilgilerin açığa çıkmasına engel olmak için işlemdeki ek adımları gösteren akış grafiği](media/example-car-sales-flow-chart-additional-steps-prevent-information-disclosure.png "Bilgilerin açığa çıkmasına engel olmak için işlemdeki ek adımları gösteren akış grafiği")  
   
- Araştırma işlemi kendi içindedir ve aşağıdaki aşamaları içerir:  
+ Araştırma süreci, kendi içinde olacaktır ve aşağıdaki aşamaları içerir:  
   
- ![Bilgilerin açığa çıkması durumları için araştırma işlemine ilişkin adımları gösteren akış çizelgesi](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Bilgilerin açığa çıkması durumları için araştırma işlemine ilişkin adımları gösteren akış çizelgesi")  
+ ![Bilgi açıklama durumları için araştırma işleminin adımlarını gösteren akış grafiği](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Bilgi açıklama durumları için araştırma işleminin adımlarını gösteren akış grafiği")  
   
- Araştırma kaydından İstek kaydına Onaylama/Reddetme kararını eşitlemek için bir iş akışı sağlamanız gerekir.  
+ Araştırma kaydından Istek kaydına onay/reddetme kararı eşitlenmesi için bir iş akışı sağlamanız gerekir.  
   
 ### <a name="next-steps"></a>Sonraki adımlar  
  [İş süreci akışı oluşturma](create-business-process-flow.md)   
- [İşlemler ile özel iş mantığı oluşturma](guide-staff-through-common-tasks-processes.md)   
+ [İşlemlerle özel iş mantığı oluşturma](guide-staff-through-common-tasks-processes.md)   
  

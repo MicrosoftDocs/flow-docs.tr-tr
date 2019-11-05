@@ -20,25 +20,26 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cbc6e3a8ffe50eb7ad27e80eba044957647a1da3
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 6cbd1ee543cfe5f54b61486eefbacbd5bb837f33
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456583"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546484"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Çözümde akış oluşturma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir çözümde oluşturduğunuz akışlar *çözüm kullanan* akışlar olarak bilinir. Çözüm kullanan bir akış oluşturmak için aşağıdaki adımları izleyin.
+Bir çözümde oluşturduğunuz akışlar *çözüm kullanan* akışlar olarak bilinir. Çözüm kullanan bir akış oluşturmak için bu adımları izleyin.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-Çözüm kullanan bir akış oluşturmak için en az bir çözümünüzün olması gerekir.
+Çözüm kullanan bir akış oluşturabilmeniz için en az bir çözümünüz olması gerekir.
 
 ## <a name="create-the-flow"></a>Akışı oluşturma 
 
-1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın.
-1. Gezinti çubuğundan **Çözümler**’i seçin.
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
+1. Gezinti çubuğundan **çözümler** ' i seçin.
 
    ![](./media/create-flow-solution/select-solutions-from-left-nav.png)
 
@@ -46,34 +47,34 @@ Bir çözümde oluşturduğunuz akışlar *çözüm kullanan* akışlar olarak b
 
    ![](./media/create-flow-solution/new-solution-created.png)
 
-1. **+ Yeni** seçeneğini ve ardından **Akış** seçeneğini belirleyin.
+1. **+ Yeni**' yi seçin ve ardından **akış**' ı seçin.
 
    ![](./media/create-flow-solution/select-new-flow.png)
 
    Microsoft Flow açılır.
 
-1. Akışınızı oluşturmak için uygun bağlayıcıları ve tetikleyicileri kullanın.
+1. Akışınızı derlemek için kullanılabilir bağlayıcıları ve Tetikleyicileri kullanın.
 
    Bu örnekte, gelen kutunuza e-posta geldiğinde bildirim gönderen basit bir akış oluşturacağız.
-1. **Office 365 Outlook** öğesini arayıp seçin.
-1. **Yeni bir e-posta geldiğinde** tetikleyicisini seçin.
-1. **+ Yeni adım**’ı seçin.
+1. **Office 365 Outlook**için arama yapın ve seçin.
+1. **Yeni bir e-posta geldiğinde** tetikleyiciyi seçin.
+1. **+ Yeni adım**' ı seçin.
 1. **Bana mobil bildirim gönder** eylemini seçin.
-1. **Konu** dinamik belirtecini **Bana mobil bildirim gönder** kutusunun **Metin** alanına ekleyin.
-1. Akışınıza bir ad verin ve akışı kaydedin.
+1. **Konu** dinamik belirtecini **bana mobil bildirim gönder** kutusunun **metin** alanına ekleyin.
+1. Akışınıza bir ad verin ve ardından akışı kaydedin.
 
-   Akışınız şu şekilde görünmelidir:
+   Akışınız şöyle görünmelidir:
 
    ![](./media/create-flow-solution/new-email-notification-flow.png)
    
-1. Akışınızı çözümde görmek için **Çözümler**’i seçin:
+1. Çözümünüzde akışınızı görmek için **çözümler** ' i seçin:
 
    ![](./media/create-flow-solution/new-flow-inside-solution.png)
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 * [Çözüm oluşturma](./overview-solution-flows.md)
-* [Çözümü dışarı aktarma](./export-flow-solution.md)
-* [Çözümü içeri aktarma](./import-flow-solution.md)
-* [Çözüm kullanan bir akışı düzenleme](./edit-solution-aware-flow.md)
-* [Çözüm kullanan bir akışı kaldırma](./remove-solution-aware-flow.md)
+* [Bir çözümü dışarı aktarma](./export-flow-solution.md)
+* [Bir çözümü içeri aktarma](./import-flow-solution.md)
+* [Çözüm kullanan akışı düzenleme](./edit-solution-aware-flow.md)
+* [Çözümle uyumlu akışı kaldırma](./remove-solution-aware-flow.md)

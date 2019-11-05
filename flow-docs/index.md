@@ -1,32 +1,31 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Microsoft Flow Belgeleri | Microsoft Docs
-description: Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve çok daha fazlasını yapmanıza yardımcı olan bir hizmettir.
+title: Microsoft Flow belgeleri | Microsoft Docs
+description: Microsoft Flow, dosyaları eşitlemeniz, bildirimler almak, veri toplamak ve çok daha fazlası için sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturmanıza yardımcı olan bir hizmettir.
 keywords:
 - Microsoft Flow
-- iş akışı
-- akış
+- akışıyla
+- Olamaz
 - onay iş akışı
-- sharepoint iş akışı
+- SharePoint iş akışı
 author: msftman
 ms.author: deonhe
-manager: kfile
+manager: kvivek
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.reviewer:
-- karann-msft
+ms.reviewer: karann-msft
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0340b92072cf320e143db89fd5e96236e3fd60c6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463272"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547477"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -41,8 +40,8 @@ ms.locfileid: "64463272"
                                         <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
+                                    <span class="likeAnH3">tüm belgeleri görüntülemek</span> 
                                 <div class="cardText">
-                                    <span class="likeAnH3">Tüm belgeleri görüntüleme</span>
                                 </div>
                             </div>
                         </div>
@@ -52,10 +51,10 @@ ms.locfileid: "64463272"
         </ul>
     </div>
 <div class="container">
-    <h1>Microsoft Flow Belgeleri</h1>
+    <h1>Microsoft Flow belgeleri</h1>
     <ul class="pivots">
         <li>
-            <a href="#start">Yeni bir kullanıcıyım</a>
+            <a href="#start">Ben</a>
             <ul id="start">
                 <li>
                     <a href="#start-all"></a>
@@ -70,8 +69,8 @@ ms.locfileid: "64463272"
                                                 <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Microsoft Flow hakkında bilgi edinme</h3>
-                                            <p>Öğrenme yolculuğunuza bu sıralı kurs koleksiyonu ile başlayın ve Microsoft Flow’un kapsamlı ve güçlü özelliklerini öğrenin.</p>
+                                            <h3>Microsoft Flow öğrenin</h3>
+                                            <p>Microsoft Flow kapsamlı ve güçlü yeteneklerini anlamak için bu sıralı kurslar koleksiyonuyla öğrenme sürecinizi başlatın.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,33 +88,14 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Temel bilgilerle çalışmaya başlama</h3>
-                                            <p>İşlerinizi ve yaşamınızı Microsoft Flow ile otomatik hale getirmeye başlamanın hızlı yolları.</p>
+                                            <h3>Temel bilgileri kullanmaya başlayın</h3>
+                                            <p>Microsoft Flow ile işinizi ve hayatınızı otomatik hale getirmeye başlamak için hızlı yollar.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="mobile-create-flow.md">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_to_know_mobile_app1.svg" alt="Get to know the mobile app." />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Mobil uygulamayı tanıma</h3>
-                                            <p>Otomatikleştirilmiş iş akışlarınızı dilediğiniz zaman her yerden yönetin, izleyin ve bulun.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="introduction-to-button-flows.md">
                             <div class="cardSize">
@@ -127,8 +107,27 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>2 dakikada düğme akışı oluşturma</h3>
-                                            <p>Düğme akışlarıyla yinelenen görevleri otomatikleştirmeyi ve çalıştırmayı öğrenme</p>
+                                            <h3>2 dakika içinde bir düğme akışı oluşturma</h3>
+                                            <p>Düğme akışlarıyla yinelenen görevleri otomatikleştirmeyi ve çalıştırmayı öğrenin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/flow/ui-flows/overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/ui_flows.svg" alt="Get started with UI flows (Preview)" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>UI akışlarını kullanmaya başlama (Önizleme)</h3>
+                                            <p>Kullanımı kolay veya tam API 'Leri bulunan uygulamalarda yinelenen görevleri otomatikleştirin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -146,8 +145,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Haftanın Flow’unu yakalayın</h3>
-                                            <p>Yeni püf noktaları doğrudan Microsoft Flow ekibinden öğrenin.</p>
+                                            <h3>Haftanın akışında yakala</h3>
+                                            <p>Doğrudan Microsoft Flow ekibinden yeni püf noktaları öğrenin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +165,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Yardım alın</h3>
-                                            <p>Size yardımcı olmak için her zaman buradayız. Ne düşünüyorsunuz?</p>
+                                            <p>Her&#39;zaman yardım etmek istiyoruz. Ne&#39;var?</p>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +177,7 @@ ms.locfileid: "64463272"
             </ul>
         </li>
         <li>
-            <a href="#intermediate">Orta düzeyde bir kullanıcıyım</a>
+            <a href="#intermediate">Ara</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -195,7 +194,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Şablondan akış oluşturma</h3>
-                                            <p>Çeşitli önceden tanımlanmış şablonlardan birini kullanarak akış oluşturun.</p>
+                                            <p>Önceden tanımlanmış birkaç şablondan herhangi birinden bir akış oluşturun.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +213,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Sıfırdan akış oluşturma</h3>
-                                            <p>Hayal gücünüz ile harika akışlar oluşturun.</p>
+                                            <p>Hayal, sizi harika akışlar ile sonuçlanabilmenizi sağlar.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -232,8 +231,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Onay akışları oluşturun</h3>
-                                            <p>Çeşitli hizmetlerdeki belgelerin veya süreçlerin onayını yöneten akışlar oluşturmayı öğrenin.</p>
+                                            <h3>Onay akışları oluşturma</h3>
+                                            <p>Birçok hizmet üzerinde belge veya işlemlerin onayını yöneten akışlar oluşturmayı öğrenin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -251,8 +250,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Ekip akışında işbirliği yapın</h3>
-                                            <p>Microsoft Flow, yinelenen görevleri otomatikleştirmeyi kolaylaştırır. Kullanıcı veya grupları sahip olarak ekleyebilir, ayrıca akışları tasarlamak ve yönetmek için işbirliği yapabilirsiniz.</p>
+                                            <h3>Ekip akışında işbirliği yapma</h3>
+                                            <p>Microsoft Flow yinelenen görevleri otomatik hale getirmeyi kolaylaştırır. Kullanıcıları veya grupları sahip olarak ekleyebilir ve sonra akışları tasarlamak ve yönetmek için bunlarla işbirliği yapabilirsiniz.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,8 +269,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Başkalarının düğme akışlarınızı kullanmasına izin verin</h3>
-                                            <p>Düğmelerinizi diğer kullanıcılarla paylaşarak, onları kullanmalarını ve zaman kazanmalarını sağlayın.</p>
+                                            <h3>Başkalarının düğme akışlarınızı kullanmasına izin ver</h3>
+                                            <p>Düğmelerinizi başkalarıyla paylaşarak, zaman kazanmak için bunları kullanabilirler.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -289,8 +288,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Akışlarınızda sorun giderme</h3>
-                                            <p>Burada bir şeyler ters gittiğinde ve onlara daha yakından bakmanız gerektiğinde kullanabileceğiniz birkaç ipucunu bulabilirsiniz.</p>
+                                            <h3>Akışlarınızla ilgili sorunları giderin</h3>
+                                            <p>İşte yanlış gitmeye yönelik birkaç ipucu ve daha yakından bir görünüm uygulamanız gerekir.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +301,7 @@ ms.locfileid: "64463272"
             </ul>
         </li>
         <li>
-            <a href="#expert">Ben bir uzmanım</a>
+            <a href="#expert">Ben bir uzman</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>
@@ -318,7 +317,7 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>İfadelerle iş akışlarınızda hassas ayarlamalar yapın</h3>
+                                            <h3>İfadelerinizi ifadelerle hassas bir şekilde ayarlayın</h3>
                                             <p>Birden çok değeri karşılaştırmak için ifadeleri ve koşulları kullanmayı öğrenin.</p>
                                         </div>
                                     </div>
@@ -337,8 +336,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Kuruluşunuz için Microsoft Flow’u yönetme</h3>
-                                            <p>Microsoft Flow’da ortam oluşturma, kullanma ve yönetmeyi öğrenin.</p>
+                                            <h3>Kuruluşunuz için Microsoft Flow yönetme</h3>
+                                            <p>Microsoft Flow ortamda ortam oluşturma, kullanma ve yönetme hakkında bilgi edinin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -356,8 +355,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Akışlarınızla REST API'lerini kullanmayı öğrenme</h3>
-                                            <p>Kendi uygulamalarınızdan Microsoft Flow’u çağırın.</p>
+                                            <h3>Akışlarınızla REST API 'Lerini kullanmayı öğrenin</h3>
+                                            <p>Kendi uygulamalarınızdan Microsoft Flow çağırın.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -376,7 +375,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Özel bağlayıcı oluşturma</h3>
-                                            <p>Azure Logic Apps, Microsoft Flow veya Microsoft PowerApps’te kullanabileceğiniz bir özel bağlayıcı oluşturun.</p>
+                                            <p>Azure Logic Apps, Microsoft Flow veya Microsoft PowerApps için kullanabileceğiniz bir özel bağlayıcı oluşturun.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -394,8 +393,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Logic Apps ile akışlarınızı genişletme</h3>
-                                            <p>Azure Logic Apps, Microsoft Flow’dakinden daha zengin bir özellik kümesi sağlar. Dilediğiniz bir akışı Logic Apps şablonu olarak kaydedip herhangi bir Logic Apps kaynağı yönetir gibi yönetin.</p>
+                                            <h3>Logic Apps akışlarınızı genişletin</h3>
+                                            <p>Azure Logic Apps, Microsoft Flow dahil olandan daha zengin bir özellik kümesi sağlar. Herhangi bir akışı Logic Apps şablonu olarak kaydedin ve sonra diğer Logic Apps kaynakları gibi yönetin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -413,8 +412,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Veri toplama ve iş akışı tutarlılığını yönetme</h3>
-                                            <p>İş süreci akışlarını kullanarak veri toplama ve iş akışı tutarlılığını yönetme</p>
+                                            <h3>Veri toplamayı ve iş akışı tutarlılığını sürücü</h3>
+                                            <p>İş süreci akışlarını kullanarak veri toplamayı ve iş akışı tutarlılığını sürücü.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -432,8 +431,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Common Data Service'i kullanma</h3>
-                                            <p>İş akışı süreçleriyle Common Data Service'i kullanın.</p>
+                                            <h3>Common Data Service kullan</h3>
+                                            <p>İş akışı işlemleriyle Common Data Service kullanın.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -445,7 +444,7 @@ ms.locfileid: "64463272"
             </ul>
         </li>
         <li>
-            <a href="#admin">Yöneticiyim</a>
+            <a href="#admin">Yönetici</a>
             <ul id="admin">
                 <li>
                     <a href="#admin-all"></a>
@@ -461,7 +460,7 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Ortam yönetme</h3>
+                                            <h3>Ortamları yönetme</h3>
                                             <p>Kuruluşunuzun ortamlarını yönetin.</p>
                                         </div>
                                     </div>
@@ -481,7 +480,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Veri kaybını önleme</h3>
-                                            <p>Kuruluşunuzun verilerini korumaya yönelik ilkeler tanımlayın.</p>
+                                            <p>Kuruluşunuzun verilerini korumak için ilkeler tanımlayın.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -500,7 +499,7 @@ ms.locfileid: "64463272"
                                         </div>
                                         <div class="cardText">
                                             <h3>Akış çalıştırmalarını yönetme</h3>
-                                            <p>Akışlarınızın çalıştırmalarını inceleyin ve yönetin.</p>
+                                            <p>Akışlarınızın her çalıştırmasını araştırın ve yönetin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -518,8 +517,8 @@ ms.locfileid: "64463272"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Akışlarınıza dair öngörüler alma</h3>
-                                            <p>Analiz panosundan akışlarınızın durumuna yönelik öngörüler alın.</p>
+                                            <h3>Akışlarınızla ilgili Öngörüler edinin</h3>
+                                            <p>Analiz panosundan akışlarınızın sistem durumu hakkında öngörüler elde edin.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -1,11 +1,12 @@
 ---
-title: Akış içinde onay bekleme | Microsoft Docs
-description: Akışlar, bir eylem (örneğin, karar bildirimi gönderme) gerçekleştirmeden önce bir dış olayın gerçekleşmesini (örneğin, kullanıcının değişiklikleri onaylaması veya reddetmesi) bekleyebilir.
+title: Akışta onay bekle | Microsoft Docs
+description: Akışlar, bir kullanıcı tarafından bir değişikliği onaylama veya reddetme gibi bir eylem yapmadan önce bir dış olayın gerçekleşmesini bekleyebilir (örneğin, karar bildirimi gönderme).
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,106 +15,106 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2018
-ms.author: merwanhade
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0cc750dd9601e7675cee148882c6aaee9250b92e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ea6be2d1deae080df58afd94c1f1e8d0c13c9fcd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464813"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548348"
 ---
-# <a name="wait-for-approval-in-microsoft-flow"></a>Microsoft Flow'da onay bekleme
+# <a name="wait-for-approval-in-microsoft-flow"></a>Microsoft Flow onay bekle
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
 
-SharePoint'te öğe oluşturduğunuzda size bir onay e-postası gönderecek ve ardından öğenizin onaylandığını veya reddedildiğini bildirecek bir akış oluşturun. Bu öğreticiyi tam olarak uygulamak için, tetikleyici eylem olarak basit bir SharePoint listesi oluşturun; Dropbox veya OneDrive gibi farklı bir veri kaynağı kullanabilirsiniz.
+SharePoint 'te bir öğe oluşturursanız, onay e-postası gönderdiğinde ve sonra öğenin onaylanmış veya reddedildi olduğunu bildiren bir akış oluşturun. Bu öğreticiyi izlemek için tetikleyici eylemi olarak basit bir SharePoint listesi oluşturun, ancak Dropbox veya OneDrive gibi başka bir veri kaynağını kullanabilirsiniz.
 
-**Önkoşullar**
+**Kaynakları**
 
-* **Project Tracker** (Proje İzleyici) adlı basit bir SharePoint listesi oluşturun, **Title** (Başlık) adlı bir sütun ekleyin ve daha sonra **Assigned To** (Atanan) adlı bir Kişi veya Grup sütunu ekleyin.
+* **Proje izleyici**adlı basit bir SharePoint listesi oluşturun, **title**adlı bir sütun ekleyin ve ardından **atanan**adlı bir kişi veya grup sütunu ekleyin.
 
-   ![Project Tracker (Proje İzleyici) SPO listesinin görüntüsü](./media/wait-for-approvals/project-tracker.png)
+   ![Proje Izleyici SPO listesinin görüntüsü](./media/wait-for-approvals/project-tracker.png)
 
-## <a name="add-an-event-to-trigger-the-flow"></a>Akışı tetiklemek için bir olay ekleme
+## <a name="add-an-event-to-trigger-the-flow"></a>Akışı tetiklemek için bir olay ekleyin
 
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın, üst gezinti çubuğunda bulunan **Akışlarım**'ı ve sonra **Boş akış oluştur**'u seçin.
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın, üst gezinti çubuğunda **Akışlarım** ' ı seçin ve sonra **boş oluştur**' u seçin.
 
-1. **Yüzlerce bağlayıcı ve tetikleyicide arama yapın** kutusunu seçin, **yeni öğe** girin ve daha sonra **SharePoint - when an item is created** (SharePoint - bir öğe oluşturulduğunda) seçeneğine gidin.
+1. **Yüzlerce bağlayıcı ve tetikleyici ara** kutusunu seçin, **Yeni öğe**girin ve ardından **SharePoint-bir öğe oluşturulduğunda SharePoint**'e gidin.
 
-1. İstenirse SharePoint'te oturum açın.
-1. **Site Adresi** kutusuna, listenizi içeren SharePoint sitesi URL'sini girin.
+1. İstenirse, SharePoint 'te oturum açın.
+1. **Site adresi**altında, listenizi içeren SharePoint sitesinin URL 'sini girin.
 
-1. **Liste Adı** bölümünde, daha önce oluşturduğunuz listeyi seçin. Daha önceki adımları uyguladıysanız listenin adı **Project Tracker** (Proje İzleyici) şeklindedir.
+1. **Liste adı**altında, daha önce oluşturduğunuz listeyi seçin. ' Yi takip ediyorsanız, ad **Proje izleyici**olur.
 
-    ![SPO liste adının görüntüsü](./media/wait-for-approvals/SPO-list-name.png)
+    ![SPO listesi adının görüntüsü](./media/wait-for-approvals/SPO-list-name.png)
 
-## <a name="add-the-resulting-action"></a>Sonuç eylemini ekleme
+## <a name="add-the-resulting-action"></a>Ortaya çıkan eylemi ekleyin
 
-1. **Yeni adım** düğmesini ve sonra **Eylem ekle**’yi seçin.
+1. **Yeni adım** düğmesini seçin ve ardından **Eylem Ekle** ' yi seçin.
 
-1. **Tüm bağlayıcılar ve eylemler içinde arayın** yazılı kutuya **e-posta gönder** yazın veya bu ifadeyi yapıştırın, daha sonra **Office 365 Outlook - Send email with options** (Office 365 Outlook - Seçeneklerin bulunduğu bir e-posta gönder) seçeneğini belirleyin.
+1. **Tüm bağlayıcıları ve eylemleri ara** kutusuna **e-posta gönder**yazın veya yapıştırın ve ardından **Office 365 Outlook-e-posta Gönder seçeneklerini**belirleyin.
 
-1. İstenirse Office 365 Outlook’ta oturum açın.
+1. İstenirse, Office 365 Outlook 'Ta oturum açın.
 
-1. **Kime** alanını ve sonra **Atanan E-postası** belirtecini seçin.
+1. **To** alanını seçin ve ardından **atanan e-posta** belirtecini seçin.
 
-    **Atanan** sütunundaki kullanıcı, öğeleri onaylayabileceği veya reddedebileceği bir e-posta alır. Akışı test etmek için bir öğe oluşturduğunuzda, bu alanda kendinizi belirtin. Bu şekilde, hem öğeyi onaylayabilir veya reddedebilir hem de bildirim e-postasını alırsınız.
+    **Atanan** sütunundaki Kullanıcı, öğeleri onaylamak veya reddetmek için e-postayı alır. Akışı test etmek için bir öğe oluşturduğunuzda, bu alanda kendinizi belirtin. Bu şekilde, yalnızca öğeyi onaylayıp reddetmezsiniz, ancak bildirim e-postasını de alırsınız.
 
     > [!NOTE]
-    > **Konu** ve **Kullanıcı Seçenekleri** alanlarını, ihtiyaçlarınıza uygun şekilde özelleştirebilirsiniz.
+    > **Konu** ve **Kullanıcı seçenekleri** alanlarını gereksinimlerinize uyacak şekilde özelleştirebilirsiniz.
 
     ![Alana onay e-postası gönder görüntüsü](./media/wait-for-approvals/send-approval-email-to.png)
 
 ## <a name="add-a-condition"></a>Koşul ekleme
 
-1. **Yeni adım** düğmesini ve sonra **Koşul ekle**’yi seçin.
+1. **Yeni adım** düğmesini seçin ve ardından **Koşul Ekle**' yi seçin.
 
-    ![Koşul ekle görüntüsü](./media/wait-for-approvals/add-a-condition.png)
-1. İlk kutuyu ve sonra **Belirlenen Seçenek** belirtecini seçin.
-1. Son kutuyu seçin ve sonra **Onayla** yazın.
+    ![Koşul ekleme görüntüsü](./media/wait-for-approvals/add-a-condition.png)
+1. İlk kutuyu seçin ve ardından **SelectedOption** belirtecini seçin.
+1. Son kutuyu seçin ve ardından **Onayla**yazın.
 
-    ![Koşul kartı görüntüsü](./media/wait-for-approvals/condition-card-2.png)
+    ![Koşul kartının görüntüsü](./media/wait-for-approvals/condition-card-2.png)
 
-1. **Evet ise** alanında, **Eylem ekle**'yi seçin.
+1. **Evet** alanında **Eylem Ekle**' yi seçin.
 
-1. **Tüm bağlayıcılar ve eylemler içinde arayın** yazılı kutuya **e-posta gönder** yazın veya bu ifadeyi yapıştırın, sonra **Office 365 Outlook - E-posta gönder**’i seçin.
+1. **Tüm bağlayıcıları ve eylemleri ara** kutusuna **e-posta gönder**' i yazın veya yapıştırın ve ardından **Office 365 Outlook-e-posta gönder**' i seçin.
 
-1. **Kime** alanına **Created by Email** (Oluşturan E-posta) gibi bir alıcı girin.
+1. **Kime** alanına, **e-posta ile oluşturulan**gibi bir alıcı girin.
 
 1. **Konu** kutusunda bir konu belirtin.
 
-    Örneğin, **Assigned To DisplayName**'i (Atanan Görünen Adı) seçip her iki tarafında boşluk olacak şekilde **has approved** (şunu onayladı:) yazın ve ardından **Title**'ı (Başlık) seçin.
+    Örneğin, **atanan DisplayName**' i seçin, türü her tarafta bir boşluk ile **onaylanır** ve **başlık**' ı seçin.
 
-1. **Gövde** kutusunda, **Projenin bir sonraki aşamasına geçilebilir** gibi bir e-posta gövdesi belirtin.
+1. **Gövde** kutusunda, **projenin sonraki aşamasına devam etmek için hazırlanma** gibi bir e-posta gövdesi belirtin.
 
     > [!NOTE]
-    > SharePoint listesinde öğeyi oluşturan kullanıcıya, projenin onaylandığı veya reddedildiği bildirilir.
+    > SharePoint listesinde öğeyi oluşturan kişiye projenin onaylanıp reddedildiğini bildirilir.
 
-    ![Evet-e-posta gönder görüntüsü](./media/wait-for-approvals/if-yes-send-email-card-3.png)
+    ![Evet-Gönder-e-posta resmi](./media/wait-for-approvals/if-yes-send-email-card-3.png)
 
-1. **Hayır ise** alanında, projenin reddedildiğini belirtmek için **Konu** ve **Gövde**'yi değiştirme dışındaki son beş adımı tekrar edin.
+1. **Hayır ise** alanında, projenin reddedildiğini yansıtacak şekilde **konuyu** ve **gövdesini** değiştirme haricinde son beş adımı yineleyin.
 
-     ![Hayır-e-posta gönder görüntüsü](./media/wait-for-approvals/no-send-email-2.png)
+     ![Gönder-e-posta görüntüsü](./media/wait-for-approvals/no-send-email-2.png)
 
-## <a name="finish-and-test-your-flow"></a>Akışınızı sonlandırma ve test etme
+## <a name="finish-and-test-your-flow"></a>Akışınızı tamamlama ve test etme
 
-1. Akışınıza bir ad verin ve ardından **Akış oluştur**'u seçin.
+1. Akışınıza bir ad verin ve ardından **akış oluştur**' u seçin.
 
-     ![Akış-oluştur görüntüsü](./media/wait-for-approvals/create-flow.png)
+     ![Oluşturma-akış görüntüsü](./media/wait-for-approvals/create-flow.png)
 1. SharePoint listenizde bir öğe oluşturun.
 
-    Belirttiğiniz alıcıya bir onay e-postası gönderilir. Alıcı, e-postadaki **Onayla** veya **Reddet** seçeneğini belirlediğinde alıcının yanıtını gösteren bir e-posta alırsınız.
+    Belirttiğiniz alıcıya bir onay e-postası gönderilir. Alıcı bu e-postadaki **Onayla** veya **Reddet** seçeneğini belirlediğinde, yanıtı belirten bir e-posta alırsınız.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-* [Tek onaylayan modern onayları incelemesi](modern-approvals.md)
+* [Tek onaylayan modern onaylar Kılavuzu](modern-approvals.md)
 * [Sıralı onaylar](sequential-modern-approvals.md) oluşturma
-* [Paralel onaylar](parallel-modern-approvals.md) oluşturma
-* [İstekleri hareket halinde](mobile-approvals.md) onaylama
+* [Paralel onaylar](parallel-modern-approvals.md) oluştur
+* [Go 'da istekleri](mobile-approvals.md) onaylama

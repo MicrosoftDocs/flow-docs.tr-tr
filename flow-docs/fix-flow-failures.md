@@ -1,6 +1,6 @@
 ---
-title: Bir akışla ilgili sorunları giderme | Microsoft Docs
-description: Akışların başarısız olmasına yol açan en yaygın sorunları çözümleyin
+title: Akışta sorun giderme | Microsoft Docs
+description: Akışların başarısız olmasının en yaygın nedenlerinden bazılarını çözümleyin
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,86 +20,87 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0e151f3c5cd69fe07263e5fa36d46eb3b8be19f5
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2981c125d722cb766a1cc840f404d84dfa57ac96
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64992697"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547866"
 ---
-# <a name="troubleshooting-a-flow"></a>Bir akışla ilgili sorunları giderme
+# <a name="troubleshooting-a-flow"></a>Flow sorunlarını giderme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-## <a name="repair-tips-in-email"></a>E-postada onarım ipuçları
+## <a name="repair-tips-in-email"></a>E-postadaki onarma ipuçları
 
-Akış başarısız olduğunda onarım ipuçları akış sahiplerine e-postayla gönderilir. Bu onarım ipucu e-postaları bazı hatalarla ilgili belirli, eyleme dönüştürülebilir geri bildirimler içerir. Örneğin, Office 365'te bir kişinin yöneticisini almaya çalışan bir akış oluşturulması ama Azure Active Directory'de (Azure AD) yapılandırılmış bir yönetici olmaması yaygın hatalardan biridir. Bu veya başka bazı koşullar akışınızın başarısız olmasına neden olursa, aşağıdaki gibi bir onarım ipuçları e-postası alırsınız:
+Bir akış başarısız olduğunda onarım ipuçları, akış sahiplerine e-posta yoluyla gönderilir. Bu onarım ipuçları e-postaları, belirli hatalar hakkında belirli ve eyleme dönüştürülebilir geri bildirimler içerir Örneğin, yaygın olarak karşılaşılan bir hata, Office 365 ' te bir kişinin yöneticisini almayı deneyen bir akış ayarlıyor, ancak Azure Active Directory (Azure AD) içinde yapılandırılmış bir yönetici yok. Bu veya birkaç başka koşul da akışın başarısız olmasına neden olursa aşağıdakine benzer bir onarım ipuçları e-postası alırsınız:
 
-![Onarım ipuçları](media/fix-flow-failures/repair-tips-email.png)
+![Onarma ipuçları](media/fix-flow-failures/repair-tips-email.png)
 
-Onarım ipuçları e-postasında aşağıdaki bölümler bulunur:
+Onarım İpuçları e-postası aşağıdaki bölümleri içerir:
 
-Ad|Açıklama
+Ada|Açıklaması
 ---|---
-Saat|Akışın ilk başarısız olduğu saati görüntüler.
-Olanlar|Akışta hataya neden olan sorunun açıklamasını sağlar.
-Nasıl düzeltebilirim?|Akışta hataya neden olan sorunu çözmeye yönelik ipuçları sağlar.
-Sorun Giderme İpuçları|Akışın kaç kez başarısız olduğu gibi ayrıntılar ve aynı giriş verileriyle akışı yeniden deneme bağlantısı sağlar.
+Işınızda|Akışın ilk başarısız olduğu zamanı görüntüler.
+Ne oldu|Akıştaki hataya neden olan soruna ilişkin bir açıklama sağlar.
+Nasıl yaparım? düzeltilmesi|Akışta hataya neden olan sorunu çözmek için ipuçları sağlar.
+Sorun giderme Ipuçları|Akışın kaç kez başarısız olduğunu ve akışı aynı giriş verileriyle yeniden denemek için bir bağlantıyı içeren ayrıntıları sağlar.
 
-Raporlanan hataları düzeltmek için **Akışımı düzelt**'i seçin ve onarım ipuçları e-postasında verilen adımları izleyin.
+Bildirilen hataları gidermek için **akışımı** Onar ' ı seçin ve onarım ipuçları e-postasında adımları izleyin.
 
-Onarım ipuçları e-postaları isteğe bağlıdır. Bunları almak istemiyorsanız, belirli bir akışın özellikler menüsünden bu özelliği kapatmanız yeterli olur.
+Onarma ipuçları e-postaları isteğe bağlıdır. Bunları almak istemiyorsanız, söz konusu akışın Özellikler menüsünden devre dışı bırakın.
 
-Akışınız başarısız olursa sorun giderme işlemlerini doğrudan Microsoft Flow'dan da yapabilirsiniz.  Burada birkaç yaygın hata senaryosu ve bunları düzeltme ipuçları verilmiştir.
+Akışınız başarısız olursa, doğrudan Microsoft Flow de sorun giderebilirsiniz.  Yaygın olarak karşılaşılan birkaç hata senaryosu ve bunların nasıl düzeltileceğini gösteren ipuçları aşağıda verilmiştir.
 
-## <a name="identify-the-error"></a>Hatayı belirleme
-Bir akışı düzeltebilmek için önce akışın neden başarısız olduğunu belirlemeniz gerekir. Web portalının üst kısmındaki bildirimler simgesine dokunun veya tıklayın (veya mobil uygulamadaki **Etkinlik** sekmesini açın) ve açılan listeden akışınıza tıklayın veya dokunun.
+## <a name="identify-the-error"></a>Hatayı tanımla
+Bir akışı çözebilmeniz için önce neden başarısız olduğunu belirlemeniz gerekir. Web portalının üst kısmındaki bildirimler simgesine tıklayın veya dokunun (veya mobil uygulamadaki **etkinlik** sekmesini açın) ve ardından görüntülenen listede akışınıza tıklayın veya dokunun.
 
-![Bildirimler](./media/fix-flow-failures/notifications-toolbar.png)
+![bildirimi](./media/fix-flow-failures/notifications-toolbar.png)
 
-Akışla ilgili ayrıntılara ek olarak, en az bir adımda kırmızı bir ünlem işareti gösterilir. Bu adımı açıp hata iletisini gözden geçirin.
+Akış hakkındaki ayrıntılar görünür ve en az bir adım kırmızı bir ünlem simgesi gösterir. Bu adımı açın ve hata iletisini gözden geçirin.
 
 ![Hata iletisi](./media/fix-flow-failures/flow-run-failure.png)
 
 
-## <a name="authentication-failures"></a>Kimlik doğrulama hataları
-Çoğu durumda, akışların başarısız olmasının nedeni bir kimlik doğrulama hatasıdır. Bu tür bir hata aldıysanız, hata iletisi **Yetkisiz** ifadesini içerir veya **401** ya da **403** hata kodu görüntülenir. Kimlik doğrulama hatalarını genellikle bağlantıyı güncelleştirerek düzeltebilirsiniz.
+## <a name="authentication-failures"></a>Kimlik doğrulama sorunları
+Birçok durumda, akış bir kimlik doğrulama hatası nedeniyle başarısız olur. Bu tür bir hata varsa, hata iletisi **yetkisiz** veya **401** veya **403** hata kodu görüntülenir. Bağlantıyı güncelleştirerek bir kimlik doğrulama hatasını genellikle çözebilirsiniz:
 
-1. Web portalının üst kısmından dişli simgesine tıklayarak veya dokunarak **Ayarlar** menüsünü açın ve **Bağlantılar**’a tıklayın.
-2. **Yetkisiz** hata iletisinin görüntülendiği bağlantıya gidin.
-3. Bağlantının yanında bulunan ve bağlantı kimliğinin doğrulanmadığıyla ilgili olan iletideki **Parolayı doğrula** bağlantısına tıklayın.
-4. Görüntülenen yönergeleri izleyerek kimlik bilgilerinizi doğrulayın, akış çalıştırma hatasına dönün ve **Yeniden gönder**’e tıklayın veya dokunun.
+1. Web portalının üst kısmındaki dişli simgesine tıklayarak veya dokunarak **Ayarlar** menüsünü açın ve **Bağlantılar**' a tıklayın veya dokunun.
+2. **Yetkisiz** hata iletisini gördüğünüz bağlantıya ilerleyin.
+3. Bağlantının yanında, kimlik doğrulamasından geçirilmediğinden, iletideki **Parolayı Doğrula** bağlantısına tıklayın veya dokunun.
+4. Görüntülenen yönergeleri izleyerek kimlik bilgilerinizi doğrulayın, akış çalıştırma arızasına geri dönün ve ardından yeniden **Gönder**' e tıklayın veya dokunun.
    
-    Akışın beklendiği şekilde çalışması gerekir.
+    Akışın artık beklenen şekilde çalışması gerekir.
 
-## <a name="action-configuration"></a>Eylem yapılandırma
-Akış eylemlerinin ayarlardan birinin beklendiği şekilde çalışmaması da akışların başarısız olmasına yol açabilir. Böyle bir durumda, hata iletisi **Hatalı istek** veya **Bulunamadı** ifadesini içerir ya da **400** veya **404** hata kodu görüntülenir.
+## <a name="action-configuration"></a>Eylem yapılandırması
+Flow eyleminde bir ayar beklendiği gibi çalışmazsa akışlar da başarısız olur. Bu durumda, hata iletisi **Hatalı istek** içeriyor veya **bulunamadı**ya da **400** veya **404** hata kodu görünür.
 
-Hata iletisi, hatanın nasıl düzeltileceğini belirtmelidir. **Düzenle** düğmesine tıklamanız veya dokunmanız ve ardından akış tanımındaki sorunu düzeltmeniz gerekir. Güncelleştirilen akışı kaydedin ve sonra **Yeniden gönder**’e tıklayarak veya dokunarak güncel yapılandırmayla yeniden çalıştırmayı deneyin.
+Hata iletisinde hatanın nasıl düzeltiyapılacağı belirtilmelidir. **Düzenle** düğmesine tıklamanız veya dokunmanız ve ardından akış tanımındaki sorunu düzeltmeniz gerekir. Güncelleştirilmiş akışı kaydedin ve sonra yeniden **Gönder** ' e tıklayarak veya dokunarak güncelleştirilmiş yapılandırmayla tekrar çalıştırmayı deneyin.
 
-## <a name="other-failures"></a>Diğer hatalar
-**500** veya **502** hata kodu görüntüleniyorsa hata geçicidir. Akışı yeniden denemek için **Yeniden gönder**’e tıklayın veya dokunun.
+## <a name="other-failures"></a>Diğer sorunlar
+**500** veya **502** hata kodu görüntülenirse, hata geçicidir veya geçicidir. Akışı yeniden denemek için yeniden **Gönder** ' e tıklayın veya dokunun.
 
-## <a name="getting-help-from-support-or-the-community"></a>Destekten veya topluluktan yardım alma
+## <a name="getting-help-from-support-or-the-community"></a>Destek veya toplulukla yardım alma
 
-Yardıma ihtiyacınız olduğunda **Kendi Kendine Yardım** seçeneklerimizi kullanabilir veya diğer kişilerden **Yardım isteyebilirsiniz**.
+Yardıma ihtiyacınız olduğunda **kendi kendine yardım** seçeneklerimizi kullanabilir veya diğerlerinin **yardımını isteyebilirsiniz** .
 
 ### <a name="self-help"></a>Kendi kendine yardım 
 
-1. [Destek sitesine](https://flow.microsoft.com/support/) gidin.
-1. **Kendi Kendine Yardım** kategorisine gidin ve kendi kendine yardım seçeneklerinden birini belirtin.
+1. [Destek sitesine](https://flow.microsoft.com/support/)gidin.
+1. **Kendi kendine yardım** kategorisine gidin ve kendi kendine yardım seçeneklerinden birini seçin.
 
-    ![Yardım isteyin bölümü. Desteğe başvurun.](media/fix-flow-failures/self-help-section.png)
-### <a name="ask-for-help-from-others"></a>Diğer kişilerden yardım isteme
+    ![Yardım için sorun bölümüne bakın. Desteğe başvurun.](media/fix-flow-failures/self-help-section.png)
+### <a name="ask-for-help-from-others"></a>Başkalarından yardım isteyin
 
-1. [Destek sitesine](https://flow.microsoft.com/support/) gidin.
-1. **Yardım isteyin** bölümünde **Desteğe Başvurun** seçeneğini belirtin.
+1. [Destek sitesine](https://flow.microsoft.com/support/)gidin.
+1. **Yardım Için sor** bölümünde **desteğe başvurun** ' i seçin.
     
-    ![Yardım isteyin bölümü. Desteğe başvurun.](media/fix-flow-failures/ask-for-help.png)
+    ![Yardım için sorun bölümüne bakın. Desteğe başvurun.](media/fix-flow-failures/ask-for-help.png)
 
-1. **Sorun türü**, **Kategori** ve **Hangi konuda yardıma ihtiyacınız olduğunu bize bildirin**  alanlarını doldurun ve **Çözümlere bakın**'ı seçin. 
+1. **Sorun türünü**, **kategorisini**doldurun ve alanlarla **ilgili yardıma ihtiyacınız olduğunu söyleyin** ve ardından **çözümleri göster**' i seçin. 
 
-1. **Çözümler** bölümünün siz **Çözümlere bakın**'ı seçtikten sonra görüntülendiğine dikkat edin. Bu bölümde karşılaştığınız sorunun çözümünde size yardımcı olacak bir sonuç listesi yer alır. 
+1. Çözümleri **göster**' i seçtikten sonra **çözüm** bölümünün görüntülendiğine dikkat edin. Bu, karşılaştığınız sorunu ele almak için kullanabileceğiniz sonuçların bir listesini içerir. 
 
-    ![Tümleşik yardımcı ayrıntıları](media/fix-flow-failures/integrated-helper-details.png)
+    ![Tümleşik yardımcı Ayrıntılar](media/fix-flow-failures/integrated-helper-details.png)
 
-Bir sorunla ilgili yardıma ihtiyacınız varsa, [topluluğumuzdan](https://go.microsoft.com/fwlink/?LinkID=787467) ve Microsoft'tan yardım sağlanır. 
+Bir sorunla ilgili yardıma ihtiyacınız varsa [Community](https://go.microsoft.com/fwlink/?LinkID=787467) ve Microsoft 'tan yardım sağlanır. 
 

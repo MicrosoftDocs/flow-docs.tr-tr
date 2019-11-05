@@ -1,6 +1,6 @@
 ---
-title: Telefonunuzdan akış oluşturma | Microsoft Docs
-description: Şablon kullanarak, belirttiğiniz bir adresten e-posta aldığınızda anında iletme bildirimi gönderen bir akış oluşturma
+title: Telefonunuzdaki bir akış oluşturun | Microsoft Docs
+description: Bir şablondan akış oluşturma Örneğin, belirttiğiniz bir adresten e-posta aldığınızda anında iletme bildirimi gönderir
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,78 +20,79 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 095b3a7f6565afff0a944bb08aee8f3a06ea114b
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468791"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73549056"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Microsoft Flow kullanarak telefonunuzdan akış oluşturma
-Hizmetler listesinde arayarak, kategorilere göz atarak veya anahtar sözcükler belirterek bulabileceğiniz bir şablon kullanarak telefonunuzdan akış oluşturun. Bu konu başlığındaki adımları uygulayarak, yöneticinizden e-posta aldığınızda telefonunuza anında iletme bildirimi gönderen bir akış oluşturun.
+# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Microsoft Flow kullanarak telefonunuzdaki bir akış oluşturun
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Bir şablon kullanarak telefonunuzdaki bir akış oluşturun, bu, bir hizmet listesini arayarak, kategorilere göz atarak veya anahtar sözcükleri belirterek bulabilirsiniz. Yöneticisinden posta alırken telefonunuza anında iletme bildirimi gönderen bir akış oluşturmak için bu konudaki adımları izleyin.
 
-Daha önce Microsoft Flow kullanmadıysanız [genel bakış edinin](getting-started.md).
+Microsoft Flow [hakkında bilgi sahibi değilseniz genel bakış alın](getting-started.md).
 
-## <a name="prerequisites"></a>Önkoşullar
-* Bir [Microsoft Flow hesabı](sign-up-sign-in.md).
-* [Desteklenen bir cihazda](getting-started.md#use-the-mobile-app) [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulaması. Bu konu başlığında kullanılan grafikler, uygulamanın iPhone sürümünden alınmıştır ancak Android cihazları ve Windows Phone için de benzer bir arabirim sunulur.
-* Bu konu başlığında gösterilen şablonu kullanmak için ayrıca şunlar gerekir:
+## <a name="prerequisites"></a>Kaynakları
+* [Microsoft Flow için bir hesap](sign-up-sign-in.md).
+* [Desteklenen bir cihazda](getting-started.md#use-the-mobile-app) [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows) için mobil uygulama Microsoft Flow. Bu konudaki grafikler uygulamanın iPhone sürümünü yansıtır, ancak bir Android cihazındaki veya Windows Phone arabirim benzerdir.
+* Bu konuda gösterilen şablonu kullanmak için şunları da yapmanız gerekir:
   
   * Office 365 kimlik bilgileri.
-  * Telefonunuzda etkinleştirilmiş anında iletme bildirimleri.
+  * Telefonunuzdaki anında iletme bildirimleri etkinleştirildi.
 
 ## <a name="find-a-template"></a>Şablon bulma
-1. Mobil uygulamayı açın ve ekranın altındaki **Gözat** düğmesine dokunun.
+1. Mobil uygulamayı açın ve ardından ekranın alt kısmındaki **Araştır** ' a dokunun.
    
-    ![Gözat simgesi](./media/mobile-create-flow/browse-icon.png)
+    ![Simgeye gözatamıyorum](./media/mobile-create-flow/browse-icon.png)
    
-    Şu adımlardan herhangi birini uygulayarak şablon bulabilirsiniz:
+    Bir şablonu şu yollarla bulabilirsiniz:
    
-   * Ekranın üstündeki arama kutusunda bir anahtar sözcük belirtin.
-   * Hizmetler listesindeki bir seçeneğe dokunun.
-   * Çeşitli kategorileri göstermek için aşağı kaydırın ve herhangi bir kategorideki bir şablona dokunun.
+   * Ekranın üst kısmındaki arama kutusunda bir anahtar sözcük belirtin.
+   * Hizmetler listesinde bir seçeneğe dokunun.
+   * Farklı kategorileri göstermek için aşağı kaydırın ve ardından herhangi bir kategoride bir şablona dokunun.
      
-       ![Gözat sekmesi](./media/mobile-create-flow/browse-tab.png)
+       ![Sekmeye gözatamazsınız](./media/mobile-create-flow/browse-tab.png)
      
-     Bu öğreticide, yöneticinizden e-posta aldığınızda anında iletme bildirimi gönderen şablonu açacaksınız.
-2. Hizmetler listesinde, **Tümünü göster**'e dokunun.
+     Bu öğreticide, yöneticisinden posta aldığınızda anında iletme bildirimi gönderen şablonu açarsınız.
+2. Hizmetler listesinde **Tümünü göster**' e dokunun.
    
-    ![Hizmetler listesini gösterme](./media/mobile-create-flow/list-services.png)
-3. **Anında iletme bildirimi** simgesine dokunun.
+    ![Hizmet listesini göster](./media/mobile-create-flow/list-services.png)
+3. **Anında iletme bildirimi**simgesine dokunun.
    
     ![Anında iletme bildirimleri](./media/mobile-create-flow/push-notifications.png)
-4. Arama çubuğuna **e-posta** yazın ve ardından yöneticinizden bir ileti aldığınızda anında iletme bildirimi gönderecek şablona dokunun.
+4. Yönetim çubuğunda, **e-posta**yazın ve ardından, yöneticisinden bir ileti aldığınızda anında iletme bildirimi göndermek için şablona dokunun.
    
-    ![Şablon seçme](./media/mobile-create-flow/choose-template.png)
-5. Seçtiğiniz şablonla ilgili ayrıntıların bulunduğu ekranda, **Bu şablonu kullan**'a dokunun.
+    ![Şablon seç](./media/mobile-create-flow/choose-template.png)
+5. Seçtiğiniz şablonla ilgili ayrıntıları veren ekranda **Bu şablonu kullan**' a dokunun.
    
-    ![Şablonu onaylama](./media/mobile-create-flow/confirm-template.png)
+    ![Şablonu Onayla](./media/mobile-create-flow/confirm-template.png)
 
-## <a name="finish-the-flow"></a>Akışı sonlandırma
-1. İstenirse **Oturum aç**'a dokunup Office 365 Outlook, Office 365 Kullanıcıları veya her ikisi için kullandığınız kimlik bilgilerinizi sağlayın.
+## <a name="finish-the-flow"></a>Akışı tamamlama
+1. İstenirse **oturum aç**' a dokunun ve Office 365 Outlook, Office 365 kullanıcıları veya her ikisi için kimlik bilgilerinizi sağlayın.
    
-    ![Office 365'te oturum açma](./media/mobile-create-flow/office-signin.png)
+    ![Office 365 ' de oturum açın](./media/mobile-create-flow/office-signin.png)
    
-    Aynı bağlantıları, başka akışlar oluşturduğunuzda da kullanabilirsiniz.
-2. Sağ üst köşede bulunan **İleri**'ye dokunun.
+    Diğer akışları oluştururken aynı bağlantıları kullanabilirsiniz.
+2. Sağ üst köşede **İleri**' ye dokunun.
    
-    ![İleri'ye dokunun](./media/mobile-create-flow/next.png)
+    ![Ileri 'ye dokunun](./media/mobile-create-flow/next.png)
    
-    Sonraki ekranda, tetikleyici olayı ve sonucunda oluşan tüm eylemler gösterilir.
+    Sonraki ekranda tetikleme olayı ve sonuçta elde edilen tüm eylemler gösterilmektedir.
    
-    ![Tetikleyici olay ve eylemler](./media/mobile-create-flow/flow-structure.png)
+    ![Etkinliği ve eylemleri tetikleme](./media/mobile-create-flow/flow-structure.png)
    
-    Bu şablonda, yeni e-posta akışı tetiklenerek (yöneticinizin adresini de içeren) bilgileriniz alınır ve bu adresten e-posta aldığınızda size bir anında iletme bildirimi gönderilir. Bazı şablonların düzgün şekilde çalışması için bir takım özelleştirmeler gerekir ancak bu şablonda bunlara gerek yoktur.
-3. (isteğe bağlı) Ekranın üst kısmına akış için farklı bir ad yazın.
+    Bu şablon için, yeni posta, bilgilerinizi alan (yöneticinizin adresi dahil) akışı tetikler ve bu adresten e-posta aldığınızda size bir anında iletme bildirimi gönderir. Bazı şablonların düzgün çalışması için bazı özelleştirmeler gerekir, ancak bu şablon değildir.
+3. seçim Ekranın üst kısmındaki akış için farklı bir ad yazın.
    
-    ![Akışı yeniden adlandırma](./media/mobile-create-flow/rename-flow.png)
-4. Sağ üst köşedeki **Oluştur** düğmesine dokunun.
+    ![Akışı yeniden adlandır](./media/mobile-create-flow/rename-flow.png)
+4. Sağ üst köşedeki **Oluştur**' a dokunun.
    
-    ![Akış oluşturma](./media/mobile-create-flow/create-flow.png)
+    ![akış oluştur](./media/mobile-create-flow/create-flow.png)
    
-    Akışınız oluşturuldu ve siz akışı durdurana veya silene kadar yöneticinizden gelen e-postaları denetleyecek.
+    Akışınız oluşturulur ve akışı duraklatana veya silme işlemi yapılıncaya kadar yöneticinizin yöneticisinden posta olup olmadığını denetler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-* [Akış etkinliğinizi izleme](mobile-monitor-activity.md).
-* [Akışlarınızı yönetme](mobile-manage-flows.md).
+* [Flow etkinliğinizi izleyin](mobile-monitor-activity.md).
+* [Akışlarınızı yönetin](mobile-manage-flows.md).
 

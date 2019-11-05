@@ -20,63 +20,64 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 19eb7d051c4d1438ec45305620e369b5499252a0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465281"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548553"
 ---
-# <a name="overview"></a>Genel bakış
+# <a name="overview"></a>Bakýþ
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir [çözümde](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) barındırdığınız akışlar taşınabilir hale gelir, böylece akışlarınızı ve tüm bileşenlerini zahmetsizce bir ortamdan diğerine taşıyabilirsiniz. Bir bağımsız yazılım satıcısı (ISV) için genel bir kullanım örneği, akışları korumalı alan ortamında geliştirip daha sonra test ortamına taşımaktır. Test edildikten sonra, ISV bu akışları satın alan müşteriler için bir üretim ortamına taşır. Bu işlem, akışları çözümlerin içinde oluşturup daha sonra çözümleri ve içeriklerini taşıdığınızda çok daha kolaydır.
+Akışlarınızı bir [çözümde](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)barındırdığınızda, taşınabilir hale gelir ve tüm bileşenlerini bir ortamdan diğerine taşımayı daha kolay hale getirir. Tipik kullanım durumu, bağımsız bir yazılım satıcısı (ISV) için bir korumalı alan ortamında akış geliştirme ve ardından bu akışları bir test ortamına taşıma içindir. Sınama sonrasında, ISV bu akışları satın alan istemciler için akışları bir üretim ortamına taşır. Bu süreç, çözümlerinde akışlarınızı oluşturduğunuzda ve ardından çözümleri ve bunların içeriğini taşırken çok daha kolay hale getirir.
 
-Bir çözümün içinde oluşturduğunuz akışlar *çözüm kullanan* akışlar olarak bilinir. Tek bir çözüme birden fazla akış ekleyebilirsiniz.
+Bir çözüm içinde oluşturduğunuz akışlar *çözüm kullanan* akışlar olarak bilinir. Tek bir çözümde birden çok akış ekleyebilirsiniz.
 
 > [!NOTE] 
-> Çözüm kullanmayan akışları (bir çözümün içinde oluşturulmamış akışları) bir çözüme taşıyamazsınız.
+> Çözüme duyarlı olmayan akışları (bir çözümde oluşturulmamış akışlar) bir çözüme taşıyamazsınız.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-Çözümler ve çözüm kullanan akışlar oluşturmak için aşağıdaki bileşenlere sahip olmanız gerekir.
+Çözümler oluşturmak ve çözüm kullanan akışlar için aşağıdaki bileşenlere sahip olmanız gerekir:
 
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- 9.1.0.267 veya sonraki sürüme sahip bir ortam.
+- Sürüm 9.1.0.267 veya üzerini içeren bir ortam.
 
-  Sürümünüzü denetlemek için, [Microsoft Flow Yönetim merkezine](https://admin.flow.microsoft.com) gidin, **Ortamlar**’ı seçin, ilgilendiğiniz ortamı seçin ve ardından **Ayrıntılar** sekmesini seçin.
+  Sürümünüzü denetlemek için [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com)' ne gidin, **ortamlar**' ı seçin, Ilgilendiğiniz ortamı seçin ve **Ayrıntılar** sekmesini seçin.
 
 ## <a name="create-a-solution"></a>Çözüm oluşturma
 
 Çözüm oluşturmak için aşağıdaki adımları izleyin:
 
-1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın.
-1. Gezinti çubuğundan **Çözümler**’i seçin.
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
+1. Gezinti çubuğundan **çözümler** ' i seçin.
 
    ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
 
-1. **+ Yeni çözüm**’ü seçin.
+1. **+ Yeni çözüm**' i seçin.
 
    ![](./media/overview-solution-flows/select-new-solution.png)
 
-1. Yeni çözümünüz için **Görünen Ad**, **Yayımcı**, **Sürüm** ve **Ad** dahil olmak üzere tüm gerekli bilgileri sağlayın. Çözümünüze bir açıklama eklemek de iyi bir fikirdir.
+1. Yeni çözümünüz için, **görünen ad**, **Yayımcı**, **Sürüm**ve **ad**gibi tüm gerekli bilgileri sağlayın. Çözümünüz için bir açıklama sağlamak da iyi bir fikirdir.
 
    ![](./media/overview-solution-flows/new-solution.png)
 
-1. Üstteki menüden **Kaydet ve Kapat**’ı seçin.
+1. Üstteki menüden **Kaydet ve Kapat ' ı** seçin.
 
    ![](./media/overview-solution-flows/save-and-close-solution.png)
 
-   Yeni çözümünüz bu resimdeki gibi görünebilir:
+   Yeni çözümünüz şu görüntü gibi görünebilir:
 
    ![](./media/overview-solution-flows/new-solution-created.png)
 
    > [!TIP]
-   > Yeni çözümünüz görüntülenmezse çözüm listesini yenilemek için **Çözümler**’i seçin.
+   > Yeni çözümünüz görünmezse çözüm listesini yenilemek için **çözümler** ' i seçin.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 - [Çözümde akış oluşturma](./create-flow-solution.md)
-- [Çözümü dışarı aktarma](./export-flow-solution.md)
-- [Çözümü içeri aktarma](./import-flow-solution.md)
-- [Çözüm kullanan bir akışı düzenleme](./edit-solution-aware-flow.md)
-- [Çözüm kullanan bir akışı kaldırma](./remove-solution-aware-flow.md)
+- [Bir çözümü dışarı aktarma](./export-flow-solution.md)
+- [Bir çözümü içeri aktarma](./import-flow-solution.md)
+- [Çözüm kullanan akışı düzenleme](./edit-solution-aware-flow.md)
+- [Çözümle uyumlu akışı kaldırma](./remove-solution-aware-flow.md)

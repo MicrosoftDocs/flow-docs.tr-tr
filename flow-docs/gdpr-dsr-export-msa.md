@@ -1,11 +1,11 @@
 ---
-title: Microsoft Hesapları (MSA) için Microsoft Flow GDPR Veri Sahibi Dışarı Aktarma İstekleri | Microsoft Docs
-description: Microsoft Flow’u kullanarak Microsoft Hesapları için GDPR Veri Sahibi Dışarı Aktarma İsteklerini yanıtlamayı öğrenin.
+title: Microsoft hesapları için Microsoft Flow GDPR Data Subject dışarı aktarma Istekleri (MSA) | Microsoft Docs
+description: Microsoft hesapları için GMBU veri sahibine yönelik dışarı aktarma Isteklerini yanıtlamak üzere Microsoft Flow nasıl kullanacağınızı öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,105 +14,106 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
-ms.author: keweare
+ms.author: Deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 253d6785228fb28b5c78d0cae629a237a2e176da
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035025"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548143"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Dışarı Aktarma İstekleri’ni yanıtlama
+# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR veri sahibine dışarı aktarma Isteklerine yanıt verme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Genel Veri Koruma Yönetmeliği (GDPR) yolculuğunuzda sizinle iş ortaklığına girme bağlılığımız kapsamında, hazırlanmanıza yardımcı olması için belgeler geliştirdik. Bu belgeler, yalnızca GDPR’ye hazırlanmak için neler yaptığımızı açıklamakla kalmıyor, aynı zamanda Microsoft Flow kullanırken GDPR uyumluluğunu desteklemek için Microsoft ile bir an önce atabileceğiniz adımların örneklerini paylaşıyor.
+Genel Veri Koruma Yönetmeliği (GDPR) ile ilgili yolculukta sizinle iş ortağı taahhüdünün bir parçası olarak, hazırlanmanıza yardımcı olacak belgeler geliştirdik. Belgeler, yalnızca GDPR için hazırlanmak için yaptığımız şeyleri değil, ayrıca Microsoft Flow kullanırken GDPR uyumluluğunu desteklemek için Microsoft ile bu adımları da paylaşacağınızı açıklamaktadır.
 
 ## <a name="manage-export-requests"></a>Dışarı aktarma isteklerini yönetme
 
-*Veri taşınabilirliği hakkı*, veri sahiplerine kişisel verilerinin elektronik biçimde (yani “yapılandırılmış, yaygın olarak kullanılan, makine tarafından okunabilir ve birlikte çalışabilen bir biçim”) bir kopyasını isteme olanağı sağlar. Bu kopya da başka bir veri sorumlusuna aktarılabilir.
+*Veri taşınabilirliği hakkı* , veri ilgilileri, başka bir veri denetleyicisine aktarılabilecek elektronik bir biçimde ("yapılandırılmış, yaygın olarak kullanılan, makine tarafından okunabilen ve birlikte çalışabilen bir biçimde") kişisel verilerinin bir kopyasını talep etmesine olanak tanır.
 
-Belirli bir kullanıcıya yönelik kişisel verileri bulmak veya dışarı aktarmak için [Microsoft gizlilik panosu](https://account.microsoft.com/privacy/)’nu veya [Microsoft Flow](https://flow.microsoft.com/)’u kullanın.
+Belirli bir kullanıcı için kişisel verileri bulmak veya dışarı aktarmak için [Microsoft Gizlilik panosu](https://account.microsoft.com/privacy/)'nu veya [Microsoft Flow](https://flow.microsoft.com/) kullanın.
 
-|Kişisel veriler|Konum|
+|Kişisel veriler|Konumuna|
 |-----------------|-------------------|
-|Ürün ve hizmet etkinliği|Microsoft gizlilik panosu|
-|Akışlar|Microsoft Flow oluşturucu portalı|
-|Çalıştırma geçmişi|Microsoft Flow oluşturucu portalı|
-|Etkinlik Akışı|Microsoft Flow oluşturucu portalı|
-|Bağlantılar|Microsoft Flow oluşturucu portalı|
+|Ürün ve hizmet etkinliği|Microsoft Gizlilik panosu|
+|Var|Microsoft Flow Oluşturucu portalı|
+|çalıştırma geçmişi|Microsoft Flow Oluşturucu portalı|
+|Etkinlik akışı|Microsoft Flow Oluşturucu portalı|
+|Bağlantının|Microsoft Flow Oluşturucu portalı|
 
 ## <a name="export-product-and-service-activity"></a>Ürün ve hizmet etkinliğini dışarı aktarma
 
-1. Microsoft Hesabınızı (MSA) kullanarak [Microsoft gizlilik panosunda](https://account.microsoft.com/privacy/) oturum açın.
-1. **Etkinlik geçmişi**’ni seçin.
+1. Microsoft hesabınızı (MSA) kullanarak [Microsoft Gizlilik panosu](https://account.microsoft.com/privacy/) 'nda oturum açın.
+1. **Etkinlik geçmişini**seçin.
 
-    ![Etkinlik Geçmişi](./media/gdpr-dsr-export-msa/activityhistory.png) Kullandığınız farklı Microsoft uygulamaları ve hizmetleri için etkinlik geçmişinize göz atabilirsiniz.
-1. **Ürün ve Hizmet Etkinliği** verilerini dışarı aktarmak için sırayla **Verilerinizi indirin** ve **YENİ ARŞİV OLUŞTUR** seçeneğini belirleyin.
+    ![etkinlik geçmişi](./media/gdpr-dsr-export-msa/activityhistory.png) kullandığınız farklı Microsoft uygulamaları ve hizmetleri için etkinlik geçmişinize gözatabilmeniz gerekir.
+1. **Ürün ve hizmet etkinlik** verilerini dışarı aktarmak Için **verilerinizi indir**' i SEÇIN ve ardından **Yeni Arşiv oluştur**' u seçin.
 
     ![Verilerinizi indirin](./media/gdpr-dsr-export-msa/downloaddata.png)
 
-1. **Uygulama ve hizmet kullanımı**’nı ve sonra **Arşiv oluştur**’u seçin.
+1. **Uygulama & hizmeti kullanımı**' nı seçin ve ardından **Arşiv oluştur**' u seçin.
 
     ![Verilerinizi indirin](./media/gdpr-dsr-export-msa/create-archive.png)
-1. Yeni bir arşiv oluşturulur. **İndir**’i seçerek dışa aktardığınız ürün ve hizmet etkinliği verilerini alın.
+1. Yeni bir arşiv oluşturulur. Verdiğiniz ürün ve hizmet etkinliği verilerinizi almak için **İndir** ' i seçin.
 
-    ![İndir](./media/gdpr-dsr-export-msa/download.png)
+    ![İndirme](./media/gdpr-dsr-export-msa/download.png)
 
 ## <a name="export-a-flow"></a>Akışı dışarı aktarma
 
-Bir akışa erişim izni olan bir son kullanıcı aşağıdaki adımları izleyerek akışı dışarı aktarabilir:
+Bir akışa erişimi olan Son Kullanıcı şu adımları izleyerek akışı dışarı aktarabilir:
 
-1. [Microsoft Flow](https://flow.microsoft.com/)'da oturum açın.
+1. [Microsoft Flow](https://flow.microsoft.com/)oturum açın.
 
-1. **Akışlarım**’ı ve ardından dışarı aktarılacak akışı seçin.
+1. **Akışlarımı**seçin ve ardından dışarı aktarılacak akışı seçin.
 
-1. **... Diğer** ve ardından **Dışarı aktar** seçeneklerini belirleyin.
+1. Seç **... Daha fazla**ve ardından **dışarı aktar**' ı seçin.
 
-    ![Akışı dışarı aktarma](./media/gdpr-dsr-export/export-flow.png)
+    ![Akışı dışarı aktar](./media/gdpr-dsr-export/export-flow.png)
 
-1. **Paket (.zip)** seçeneğini belirleyin.
+1. **Paket (. zip)** öğesini seçin.
 
-Akışınız artık sıkıştırılmış bir paket olarak kullanılabilir. Daha fazla bilgi için [akışı dışarı ve içeri aktarma](https://flow.microsoft.com/blog/import-export-bap-packages/) ile ilgili blog gönderisine bakın.
+Akışınız artık daraltılmış bir paket olarak kullanılabilir olacaktır. Daha fazla bilgi için bkz. [bir akışı dışarı ve içeri aktarma](https://flow.microsoft.com/blog/import-export-bap-packages/)hakkında blog gönderisi.
 
-## <a name="export-run-history"></a>Çalıştırma geçmişini dışarı aktarma
+## <a name="export-run-history"></a>Çalıştırma geçmişini dışarı aktar
 
-Çalıştırma geçmişi, bir akış için tüm çalıştırmaların listesini içerir. Bu veriler, tetikleyiciler ve eylemler için akışın durumunu, başlangıç saatini, süresini ve giriş/çıkış verilerini içerir.
+Çalıştırma geçmişi, bir akış için tüm çalıştırmaların bir listesini içerir. Bu veriler, Tetikleyiciler ve eylemler için akışın durum, başlangıç saati, süre ve giriş/çıkış verilerini içerir.
 
-Akışa erişim izni olan bir son kullanıcı aşağıdaki adımları izleyerek bu verileri dışarı aktarabilir:
+Akışa erişimi olan bir son kullanıcı, bu verileri dışarı aktarmak için şu adımları izleyebilir:
 
-1. [Microsoft Flow](https://flow.microsoft.com/)'da oturum açın.
-1. **Akışlarım** bağlantısını ve ardından çalıştırma geçmişini dışarı aktarmak istediğiniz akışı seçin.
-1. **ÇALIŞTIRMA GEÇMİŞİ** bölmesinde **Tümünü görüntüle**’yi seçin.
+1. [Microsoft Flow](https://flow.microsoft.com/)oturum açın.
+1. **Akışlarım** bağlantısını seçin ve ardından çalıştırma geçmişini dışarı aktarmak istediğiniz akışı seçin.
+1. **Çalıştırma geçmişi** bölmesinde **Tümünü gör**' ü seçin.
 
-    ![Çalıştırma geçmişi](./media/gdpr-dsr-export/run-history.png)
+    ![çalıştırma geçmişi](./media/gdpr-dsr-export/run-history.png)
 
-1. **CSV'yi İndir**’i seçin.
+1. **CSV 'Yi indir**' i seçin.
 
-    ![CSV'yi İndir](./media/gdpr-dsr-export/download-csv.png)
+    ![CSV 'yi indir](./media/gdpr-dsr-export/download-csv.png)
 
-Çalıştırma geçmişi, Microsoft Excel’de veya bir metin düzenleyicide açabilmeniz ve sonuçları daha fazla analiz edebilmeniz için bir .csv dosyası olarak indirilir.
+Çalışma geçmişi bir. csv dosyası olarak indirilir, böylece sonuçları çözümlemek için Microsoft Excel 'de veya bir metin düzenleyicisinde açabilirsiniz.
 
-## <a name="export-a-users-activity-feed"></a>Bir kullanıcının etkinlik akışını dışarı aktarma
+## <a name="export-a-users-activity-feed"></a>Kullanıcının etkinlik akışını dışarı aktarma
 
-[Microsoft Flow](https://flow.microsoft.com/)’da, etkinlik akışı bir kullanıcının etkinlik, hata ve bildirim geçmişini gösterir. Kullanıcılar etkinlik akışlarını şu adımları izleyerek görüntüleyebilir:
+[Microsoft Flow](https://flow.microsoft.com/), etkinlik akışı kullanıcının etkinlik, başarısızlık ve bildirimlerin geçmişini gösterir. Kullanıcılar, aşağıdaki adımları izleyerek etkinlik akışını görüntüleyebilir:
 
-1. [Microsoft Flow](http://flow.microsoft.com/)’da oturum açın, sağ üst köşenin yakınında bulunan zil simgesini ve ardından **Tüm etkinliği göster**’i seçin.
+1. [Microsoft Flow](https://flow.microsoft.com/)oturum açın, sağ üst köşenin yakınındaki zil simgesini seçin ve ardından **Tüm etkinliği göster**' i seçin.
 
     ![Etkinlik akışını göster](./media/gdpr-dsr-export/show-activity-feed.png)
 
-1. **Etkinlik** ekranında, sonuçları kopyalayın ve Microsoft Word gibi bir metin düzenleyicisine yapıştırın.
+1. **Etkinlik** ekranında sonuçları kopyalayın ve Microsoft Word gibi bir metin düzenleyicisine yapıştırın.
 
     ![Etkinlik akışını göster](./media/gdpr-dsr-export/export-activity-feed.png)
 
-## <a name="export-a-users-connections"></a>Bir kullanıcının bağlantılarını dışarı aktarma
+## <a name="export-a-users-connections"></a>Kullanıcının bağlantılarını dışarı aktarma
 
-Bağlantılar, akışların API’lere, SaaS uygulamalarına ve üçüncü taraf sistemlerine bağlanmasına olanak sağlar. Bağlantılarınızı görüntülemek için şu adımları izleyin:
+Bağlantılar, akışların API 'lere, SaaS uygulamalarına ve diğer üçüncü taraf sistemlere bağlanmasına imkan tanır. Bağlantılarınızı görüntülemek için şu adımları izleyin:
 
-1. [Microsoft Flow](http://flow.microsoft.com/)’da oturum açın, sağ üst köşenin yakınında bulunan dişli simgesini ve ardından **Bağlantılar**’ı seçin.
+1. [Microsoft Flow](https://flow.microsoft.com/)oturum açın, sağ üst köşenin yakınındaki dişli simgesini seçin ve ardından **Bağlantılar**' ı seçin.
 
-    ![Bağlantılar sekmesini göster](./media/gdpr-dsr-export/show-connections.png)
+    ![Bağlantıları göster](./media/gdpr-dsr-export/show-connections.png)
 1. Sonuçları kopyalayın ve Microsoft Word gibi bir metin düzenleyicisine yapıştırın.

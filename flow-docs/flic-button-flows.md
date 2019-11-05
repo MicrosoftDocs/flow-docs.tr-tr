@@ -1,6 +1,6 @@
 ---
-title: Flic düğmeleriyle akış başlatma | Microsoft Docs
-description: Shortcut Labs’in Flic aracından fiziksel düğmelerle akışları kolayca başlatın.
+title: Flik düğmeleriyle akışları başlatın | Microsoft Docs
+description: Kısayol laboratuvarlarına göre Flik 'in fiziksel düğmeleriyle düğme akışlarını kolayca başlatın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,131 +20,132 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e6430f78ad2eccecc5af7f6606bb56e1a7eb4599
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455630"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544796"
 ---
-# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Flic akıllı düğmesine basarak akışlarınızı çalıştırma (Önizleme)
-Shortcut Labs’in Flic olarak bilinen fiziksel düğmesine basarak akışlarınızı tetikleyin. Örneğin, Flic düğmesine basarak çalışma saatlerinizi izleyebilir, takviminizi engelleyebilir, bir olayın ziyaretçilerini sayabilir veya coğrafi konumları kaydedebilirsiniz.
+# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Bir Flik akıllı düğmesine basarak akışlarınızı çalıştırın (Önizleme)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Kısayol laboratuvarlarından, Flik olarak bilinen bir fiziksel düğmeye basarak akışlarınızı tetikleyin. Örneğin, çalışma saatlerinizi izlemek, takviminizi engellemek, bir olayda ziyaretçi saymak veya coğrafi konumları kaydetmek için bir Flik tuşuna basın.
 
 > [!IMPORTANT]
-> Akışınızı oluşturmadan önce, Flic’in [Android](https://play.google.com/store/apps/details?id=io.flic.app) veya [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) için mobil uygulamasını kullanarak tüm Flic özelliklerini yapılandırın.
+> Akışınızı oluşturmadan önce Flik 'in [Android](https://play.google.com/store/apps/details?id=io.flic.app) veya [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) için mobil uygulamasını kullanarak tüm Flik özelliklerini yapılandırın.
 > 
 > 
 
-## <a name="prerequisites"></a>Önkoşullar
-Flic’leri Microsoft Flow’la kullanmak için:
+## <a name="prerequisites"></a>Kaynakları
+Microsoft Flow ile tis 'yi kullanmak için şunları yapmanız gerekir:
 
-* [Microsoft Flow](https://flow.microsoft.com)’a erişiminiz olmalıdır.
-* Flic'in [Android](https://play.google.com/store/apps/details?id=io.flic.app) veya [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobil uygulamasını indirmiş ve bunu kullanarak bir veya birden çok Flic’i eşleştirmiş olmalısınız.
+* [Microsoft Flow](https://flow.microsoft.com)erişim.
+* Flik 'in [Android](https://play.google.com/store/apps/details?id=io.flic.app) veya [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobil uygulaması indirildi ve bir veya daha fazla titreşme eşleştirmek için kullanılır.
 
-## <a name="configure-flic-properties"></a>Flic özelliklerini yapılandırma
-Flic’in olaylarını programlamak için Flic'in mobil uygulamasını kullanın. Olaylar şunlardır:
+## <a name="configure-flic-properties"></a>Flik özelliklerini yapılandırma
+Flik 'in olaylarını programlamak için Flik 'in mobil uygulamasını kullanın. Olaylar şunlardır:
 
-* tıklama (bir kez hızla basma)
-* çift tıklama (iki kez hızla basma)
-* tutma (bir kez uzun basma)
+* tıklama (bir hızlı basma)
+* Çift tıklama (iki hızlı basma)
+* Hold (bir uzun basma)
 
-Bu ekran görüntüsünde Flic yapılandırma işleminizin nasıl olabileceğine ilişkin bir örnek gösterilir:
+Bu ekran görüntüsünde, Flik yapılandırma sürecinizin nasıl benzebileceğini gösteren bir örnek gösterilmektedir:
 
-![Flic’leri yapılandırma](./media/flic-button-flows/configure-flic-actions.png)
+![Titreşleri Yapılandır](./media/flic-button-flows/configure-flic-actions.png)
 
-Bir Flic olayını Microsoft Flow’a bağladıktan sonra, akışlarınızın tetikleyicisi olarak o Flic’i seçebilirsiniz. Bu yönergelerin ilerleyen bölümünde tetikleyicileri seçeceksiniz.
+Microsoft Flow için bir Flik olayını bağladıktan sonra, akışlarınız için bir tetikleyici olarak bu Flik 'i seçebilirsiniz. Bu izlenecek yolda daha sonra Tetikleyiciler ' i seçersiniz.
 
-## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Flic tarafından tetiklenen bir akış oluşturma
-Bu yönergelerde, bir danışmanın her müşteride ne kadar zaman harcadığını kaydeden bir akış çalıştırmak için Flic kullanıyoruz. Danışman müşteriye geldiğinde Flic’e bir kez basıyor ve müşteriden ayrılmadan hemen önce yeniden basıyor. Flic’e her basıldığında, bağlantılı olduğunu akışın bir çalıştırması başlatılıyor. Akış, geçerli zamanı Google E-Tablolarına kaydediyor ve ardından bir e-posta bildirimi gönderiyor. E-posta, akış çalıştırması hakkındaki ayrıntıları içeriyor.
+## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Flik tarafından tetiklenen bir akış oluşturma
+Bu kılavuzda, bir danışman her istemcide harcadığı zamanı kaydeden bir akışı çalıştırmak için bir Flik kullanıyoruz. Danışman, varolduktan sonra bir kez daha basar ve istemciye ayrılmadan hemen önce bu, yeniden basar. Flik 'in her bir basması, bağlandığı akışın bir çalıştırmasını başlatır. Akış geçerli saati Google sayfalarına kaydeder ve sonra bir e-posta bildirimi gönderir. E-posta, akış çalıştırması hakkındaki ayrıntıları içerir.
 
-Not: Flic mobil uygulamasını kullandınız ve en az bir yapılandırma mutlaka **tıklayın** tetikleyici Microsoft Flow için eylem. Bu ekran görüntüsünde, Microsoft Flow’u tetiklemek için **tıklama** eylemini yapılandırdım. Bu yönergenin devamında akışımızı Flic’e bir kez basıldığında (tıklandığında) tetiklenecek şekilde yapılandırıyoruz.
+Note: Flik mobil uygulamasını eşleştirmek için kullandığınızdan emin olun ve Microsoft Flow tetiklemek için en az bir **tıklama** eylemi yapılandırın. Bu ekran görüntüsünde, Microsoft Flow tetiklemek için **tıklama** eylemini yapılandırdım. Bu kılavuzda daha sonra, Flik bir kez basıldığında (tıklandı) akışımızın tetikleneceğini yapılandıracağız.
 
-   ![flic yapılandırın](./media/flic-button-flows/flic-configured-for-flow.png)
+   ![Flik yapılandırması](./media/flic-button-flows/flic-configured-for-flow.png)
 
-Şimdi akışımızı oluşturmaya başlayalım.
+Şimdi akışımızı oluşturmaya başlaalım.
 
-### <a name="start-with-a-template"></a>Şablonla başlama
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
+### <a name="start-with-a-template"></a>Şablon ile başlama
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
    
-    ![Oturum açın](./media/flic-button-flows/sign-into-flow.png)
-2. Arama kutusuna **flic** girin ve arama simgesini seçin.
+    ![Oturum Aç](./media/flic-button-flows/sign-into-flow.png)
+2. Arama kutusuna **Flik** yazın ve arama simgesini seçin.
    
-    ![flic arayın](./media/flic-button-flows/search-flic.png)
-3. **Flic akıllı düğmesiyle çalışma saatlerinizi izleme** şablonunu seçin.
+    ![ara](./media/flic-button-flows/search-flic.png)
+3. **Çalışma saatlerinizi Flik akıllı düğme şablonuyla izleyin** .
    
-    ![şablonu seçin](./media/flic-button-flows/flic-templates.png)
+    ![Şablon seç](./media/flic-button-flows/flic-templates.png)
 
-### <a name="create-a-spreadsheet-in-google-sheets"></a>Google E-Tabloları’nda bir elektronik tablo oluşturma
-1. Şablonun ayrıntılarını gözden geçirin ve bu şablon için Google E-Tabloları’nda bir elektronik tablo gerektiğine dikkat edin.
+### <a name="create-a-spreadsheet-in-google-sheets"></a>Google sayfalarında elektronik tablo oluşturma
+1. Şablonun ayrıntılarını gözden geçirin ve bu şablonun Google sayfalarında bir elektronik tablo gerektirdiğini unutmayın.
    
-   ![şablon ayrıntılarını gözden geçirin](./media/flic-button-flows/flic-template-details.png)
-2. Google E-Tabloları’nda, **ClickType** ve **TimeStamp** adlı sütunların bulunduğu bir sayfa içeren bir elektronik tablo oluşturun.
+   ![Şablon ayrıntılarını gözden geçirme](./media/flic-button-flows/flic-template-details.png)
+2. Google sayfalarında, **Clicktype** ve **timestamp**adlı sütunlara sahip bir sayfa içeren bir elektronik tablo oluşturun.
    
-      İpucu: Google e-tablolar, sütunlar, sütunun üst sütun adı girerek adlandırın. Bu durumda, sayfanız şu ekran görüntüsündeki gibi görünecektir:
+      İpucu: sütunun üst kısmına sütun adını girerek Google sayfalarında sütunları adlandırın. Bu nedenle, aşağıdaki ekran görüntüsünde yer almalıdır:
    
-   ![Google E-Tablosu](./media/flic-button-flows/flic-google-sheet.png)
+   ![Google sayfası](./media/flic-button-flows/flic-google-sheet.png)
    
-   Not: Bu kılavuzda daha sonra bu sayfayı kullanırsınız.
+   Note: Bu sayfayı daha sonra Bu izlenecek yolda kullanacaksınız.
 
-### <a name="add-the-flic-trigger-to-your-flow"></a>Flic tetikleyicisini akışınıza ekleme
-1. Şablonun hizmetlerinde oturum açın ve **Devam**’ı seçin.
+### <a name="add-the-flic-trigger-to-your-flow"></a>Flik tetikleyicisini akışla ekleyin
+1. Şablonun hizmetlerinde oturum açın ve ardından **devam**' ı seçin.
    
-     Siz şablon için gerekli olan hizmetlerde oturum açtıktan sonra **Devam** seçeneği etkinleştirilir.
+     Şablon için gerekli tüm hizmetlerde oturum açtıktan sonra **devam et** özelliği etkinleştirilir.
    
-    ![kimlik bilgilerini sağlayın](./media/flic-button-flows/flic-template-services-sign-in.png)
-2. Arama kutusuna **flic** girin ve **Flic - Flic’e basıldığında** tetikleyicisini seçin.
+    ![kimlik bilgilerini belirtin](./media/flic-button-flows/flic-template-services-sign-in.png)
+2. Arama kutusuna **Flik** ' i girin ve ardından **bir Flik tuşuna basıldığında fara** ' yı seçin.
    
-    ![flic tetikleyicisini arayın](./media/flic-button-flows/flic-search-trigger.png)
-3. **Flic - Flic’e basıldığında** kartındaki **Flic düğmesi** listesinde, kullanmak istediğiniz Flic’i seçin.
-4. Flic’e bir kez basıldığında akışı tetiklemek istediğinizi belirtmek için **Olaylar** listesinde **tıklama** öğesini seçin.
+    ![Flik tetikleyicisi ara](./media/flic-button-flows/flic-search-trigger.png)
+3. Flik **'e basıldığında** , Flik 'teki Flik **düğme** listesinden kullanmak istediğiniz fınlik 'i seçin.
+4. Flik 'e bir kez basıldığında akışı tetiklemek istediğinizi belirtmek için **Olaylar** listesinden **tıklayın ' ı** seçin.
    
-    ![flic eylemini seçin](./media/flic-button-flows/select-flic.png)
+    ![Flik eylemini seçin](./media/flic-button-flows/select-flic.png)
    
-   İsteğe bağlı olarak, her Flic olayının (tıklama, çift tıklama veya tutma) akışı tetikleyeceğini belirtmek için **herhangi biri** öğesini seçebilirsiniz.
+   İsteğe bağlı olarak, her bir Flik olayının (tıklama, Çift tıklama veya bekletme) akışı tetikleyeceğini belirtmek için **herhangi bir** seçim yapabilirsiniz.
    
-   **Çift tıklama**, Flic’e hızla iki kez basıldığında akışın tetikleneceğini belirtir. **Tutma**, Flic’e uzun süre basıldığında akışın tetikleneceğini belirtir.
+   **Çift tıklama** , Flik 'in iki kez hızla basıldığında akışın tetikleyeceğini belirtir. **Hold** , Flik 'teki uzun bir basın akışı tetikleyeceğini belirtir.
    
-   Başka akışlar oluşturup bunları **Olaylar** listesindeki diğer olayları kullanarak tetikleme özgürlüğüne sahipsiniz. Örneğin, müşteriden ayrıldığınız saati kaydetmek için **çift tıklama** olayını kullanabilirsiniz.
+   Başka akışlar oluşturmak ve **Olaylar** listesindeki diğer olayları kullanarak bunları tetiklemeniz ücretsizdir. Örneğin, bir istemciyi bıraktığınız saati kaydetmek için **çift tıklama** olayını kullanabilirsiniz.
 
-### <a name="configure-the-sheet"></a>Sayfayı yapılandırın
+### <a name="configure-the-sheet"></a>Sayfayı yapılandırma
    **Satır ekle** kartında:
 
-1. **Dosya** listesinde, daha önce oluşturmuş olduğunuz elektronik tabloyu seçin.
-2. **Çalışma Sayfası** listesinde, sayfayı seçin.
+1. **Dosya** listesinden daha önce oluşturduğunuz elektronik tabloyu seçin.
+2. **Çalışma sayfası** listesinden sayfayı seçin.
    
-   Not: İki kutu görünmez **Satır Ekle** siz sayfayı seçtikten sonra kartı. Bu kutular, daha önce oluşturduğunuz sayfadaki iki sütunu temsil eder.
-3. **ClickType** kutusunu ve sonra da **Tıklama türü** belirtecini seçin.
-4. **Timestamp** kutusunu ve sonra da **Tıklama zamanı** belirtecini seçin.
+   Note: sayfayı seçtikten sonra **satır ekle** kartında iki ek kutu belirir. Bu kutular, daha önce oluşturduğunuz sayfada iki sütunu temsil eder.
+3. **Tıklama türü** kutusunu seçin ve ardından tür belirtecini Seç **' i** seçin.
+4. **Zaman damgası** kutusunu seçin ve ardından **tıklama zaman** belirtecini seçin.
    
-    ![Google E-Tabloları verilerini yapılandırın](./media/flic-button-flows/flick-insert-row-card.png)
+    ![Google sayfa verilerini yapılandırma](./media/flic-button-flows/flick-insert-row-card.png)
 
-### <a name="confirm-the-email-settings-are-correct"></a>E-posta ayarlarının doğru olduğunu onaylama
-1. **Bana e-posta bildirimi gönder** kartının bu ekran görüntüsündeki gibi göründüğünü onaylayın.
+### <a name="confirm-the-email-settings-are-correct"></a>E-posta ayarlarının doğru olduğunu onaylayın
+1. **Bana e-posta bildirimi gönder** kartının bu ekran görüntüsüne benzediğini onaylayın.
    
-    ![e-posta bildirimini onaylayın](./media/flic-button-flows/email-settings.png)
+    ![e-posta bildirimini Onayla](./media/flic-button-flows/email-settings.png)
 
-### <a name="save-your-flow-and-test-it"></a>Akışınızı kaydetme ve test etme
-1. Akışınıza bir ad verin ve akışı kaydedin.
+### <a name="save-your-flow-and-test-it"></a>Akışınızı kaydedin ve test edin
+1. Akışınıza bir ad verin ve sonra kaydedin.
    
-    ![akışınızı kaydedin](./media/flic-button-flows/save.png)
+    ![akışınızı kaydetme](./media/flic-button-flows/save.png)
 
-Buradaki adımları izlediyseniz, Flic’e bir kez basıldığında akış tetiklenir. Ardından akış, tıklama türünü ve geçerli zamanı sayfaya kaydeder ve size bir e-posta gönderir.
+Bunu takip ediyorsanız, Flik 'e basmak akışı tetikler. Akış daha sonra tıklama türünü ve geçerli saati sayfaya kaydeder ve size bir e-posta gönderir.
 
-1. Flic’inize bir kez basın.
-2. Google E-Tabloları’nda çalışma sayfanızı açın. **ClickType** ve **Timestamp** sütunlarının sırasıyla “tıklama” ve zaman bilgisiyle doldurulduğunu görüyor olmalısınız.
+1. Flik tuşlarına basın.
+2. Çalışma sayfanızı Google sayfalarında açın. **Clicktype** ve **timestamp** sütunlarının sırasıyla "Click" ve Time ile doldurulmuş olduğunu görmeniz gerekir.
    
-    ![çalıştırma sonuçlarını görün](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. Çalıştırma sonuçlarını Microsoft Flow web sitesinde veya Microsoft Flow mobil uygulamasında da görebilirsiniz. İşte benim test çalıştırmamın ekran görüntüsü.
+    ![bkz. çalıştırma sonuçları](./media/flic-button-flows/flic-google-sheet-after-run.png)
+3. Çalıştırmanın sonuçlarını Microsoft Flow web sitesinden veya Microsoft Flow mobil uygulamadan da görebilirsiniz. Test çalıştırımın bir ekran görüntüsü aşağıda verilmiştir.
    
-    ![akışınızı kaydedin](./media/flic-button-flows/flic-test-run-results-portal.png)
-4. Akışın çalıştırılması sonucu aldığım bildirim e-postasının gövdesi de şöyle görünüyor.
+    ![akışınızı kaydetme](./media/flic-button-flows/flic-test-run-results-portal.png)
+4. İşte, akışın çalıştırıldıklarından aldığım bildirim e-postası gövdesi şöyle görünür.
    
-    ![akışınızı kaydedin](./media/flic-button-flows/flic-email-body.png)
+    ![akışınızı kaydetme](./media/flic-button-flows/flic-email-body.png)
 
-İşi biraz daha ileri götürmek için, Flic’e basıldığındaki konumunuzu (enlem ve boylam) otomatik olarak kaydedecek şekilde akışın kapsamını genişletmeyi düşünebilirsiniz.
+Ek kredi için, Flik tuşuna basıldığında konumunuzu (Enlem ve Boylam) otomatik olarak kaydetmek için akışı genişletmeyi göz önünde bulundurun.
 
-## <a name="more-information"></a>Ek bilgi
-* [Düğme akışları paylaşın](share-buttons.md).
-* Düğme akışlarınız yürütüldüğünde güncel verilerin gönderilmesi için [düğme tetikleyici belirteçleri](introduction-to-button-trigger-tokens.md) kullanmayı öğrenin.
-* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını yükleyin.
+## <a name="more-information"></a>Daha fazla bilgi
+* [Düğme akışlarını paylaşma](share-buttons.md).
+* Düğme akışlarınız yürütüldüğünde geçerli verileri göndermek için [düğme tetikleyici belirteçleri](introduction-to-button-trigger-tokens.md) kullanmayı öğrenin.
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)için Microsoft Flow Mobile App 'i yükler.
 

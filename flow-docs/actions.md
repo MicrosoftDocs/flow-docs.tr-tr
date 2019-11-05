@@ -1,45 +1,47 @@
 ---
-title: Eylem kullanma | MicrosoftDocs
-description: Eylemler ile; Oluşturma, Güncelleştirme, Silme, Atama veya Eylem Gerçekleştirme gibi işlemleri uygulayabilirsiniz. İçsel olarak bir eylem özel bir ileti oluşturur
+title: Eylemleri kullanma | MicrosoftDocs
+description: Eylemlerle, oluşturma, güncelleştirme, silme, atama veya eylem gerçekleştirme gibi işlemleri gerçekleştirebilirsiniz. Dahili olarak, bir eylem özel bir ileti oluşturur
 ms.custom: ''
 ms.date: 08/07/2018
 ms.reviewer: ''
 ms.service: flow
+author: MSFTMAN
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1475985f-d3c4-429d-beac-cb455965e792
 caps.latest.revision: 20
-ms.author: matp
+ms.author: DEONHE
 manager: kvivek
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cf5c0e488f1d01c514f509b9d2a8afae265cf487
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: eb4fa4040611241dd2bd81706736738ad6774d38
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455929"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544596"
 ---
-# <a name="use-actions"></a>Eylemler kullanma
+# <a name="use-actions"></a>Kullanım eylemleri
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Eylemler, iş mantığı kurmak için bir dizi olanak sunar. Eylemler ile; Oluşturma, Güncelleştirme, Silme, Atama veya Eylem Gerçekleştirme gibi işlemleri uygulayabilirsiniz. İçsel olarak bir eylem özel bir ileti oluşturur. Geliştiriciler bu eylemleri "ileti" olarak adlandırır. Bu iletilerin her biri bir varlık kaydı üzerinde gerçekleştirilen eylemleri temel alır. Bir işlemin amacı bir kayıt oluşturmak, sonra bu kaydı güncelleştirmek ve daha sonra da atamak ise, bu, üç ayrı adımdan oluşur. Her adım zorunlu olarak iş süreçlerinizle değil varlığın yapabilecekleriyle tanımlanır.  
+Eylemler, iş mantığı oluşturmaya yönelik bir dizi olasılık açar. Eylemlerle, oluşturma, güncelleştirme, silme, atama veya eylem gerçekleştirme gibi işlemleri gerçekleştirebilirsiniz. Dahili olarak, bir eylem özel bir ileti oluşturur. Geliştiriciler bu eylemlere "iletiler" olarak başvurur. Bu mesajların her biri, bir varlık kaydında gerçekleştirilen eylemlere dayalıdır. Bir işlemin hedefi bir kayıt oluşturmak, sonra güncelleştirmek ve sonra atamak ise, üç ayrı adım vardır. Her adım, iş sürecinizi değil, varlığın özelliklerine göre tanımlanır.  
   
-Eylemler, işletmeniz için yapmanız gereken bir işlemle eşleşen tek bir fiil (yani ileti) tanımlama olanağı sunar. Bu yeni iletiler, bir varlıkla yapılabilecek şeylerden çok bir süreç veya davranış tarafından yönlendirilir. Bu iletiler Yükselt, Dönüştür, Zamanla, Yönlendir veya Onayla veya ihtiyacınız olan başka bir şey gibi fiillere karşılık gelir. Bu fiillerin eklenmesi, işletme süreçlerinizi akıcı bir şekilde tanımlamanız için daha zengin bir kavram dağarcığı sunmaya yardımcı olur. Bu daha zengin kavram dağarcığını, eylemi istemciler içinde yazmak zorunda kalmak yerine istemcilerden veya tümleştirmelerden uygulayabilirsiniz. Bu, tüm eylemin tek bir birimdeki başarısını ya da başarısızlığını yönetip günlüğe kaydedebileceğiniz için kolaylık sağlar.  
+Eylemler, işiniz için gerçekleştirmeniz gereken bir işlemle eşleşen tek bir fiil (veya ileti) tanımlama olanağı sağlar. Bu yeni iletiler, bir varlıkla yapılabilecekleri yerine bir işlem veya davranışla çalıştırılır. Bu iletiler, ihtiyacınız olan her şey, Ilerleme, dönüştürme, zamanlama, yönlendirme veya onaylama gibi fiillere karşılık gelir. Bu fiillerin eklenmesi, iş süreçlerinizi akıcı bir şekilde tanımlayabilmeniz için daha zengin bir sözlük sağlanmasına yardımcı olur. Bu daha zengin bir sözlüğü, işlemleri istemcilere yazmak zorunda kalmadan, istemcilerden veya tümleştirmelerle uygulayabilirsiniz. Bu Ayrıca, tüm eylemin başarısını veya başarısızlığını tek bir birim olarak yönetip günlüğe kaydetmek için de daha kolay hale gelir.  
   
 <a name="BKMK_ConfigurableMessages"></a>   
 ## <a name="configurable-messages"></a>Yapılandırılabilir iletiler  
- Bir eylem bir kez tanımlanıp etkinleştirildikten sonra bir geliştirici bu iletiyi platformun sunduğu diğer iletiler gibi kullanabilir. Burada önemli bir fark, artık geliştirici olmayan birisinin de bir ileti kullanılırken yapılması gerekenlerde değişiklik yapabilmesidir. İşletme süreciniz değiştikçe eylemi adımları değiştirmek üzere yapılandırabilirsiniz. Süreç bağımsız değişkenleri değişmediği sürece iletiyi kullanan herhangi bir özel kodda değişiklik yapılması gerekmez.  
+ Bir eylem tanımlandıktan ve etkinleştirildikten sonra, geliştirici bu iletiyi platform tarafından sunulan diğer iletilerden herhangi biri gibi kullanabilir. Bununla birlikte, önemli bir farklılık, artık geliştirici olmayan birisinin, bu ileti kullanıldığında yapılması gereken değişiklikleri uygulayabilidir. İş işlemleriniz değiştikçe adımları değiştirmek için eylemi yapılandırabilirsiniz. Bu iletiyi kullanan özel kodların, işlem bağımsız değişkenleri değişmedikçe değiştirilmesi gerekmez.  
   
- İş akışı süreçleri ve eklentiler de otomasyon tanımlamak için benzer olanaklar sunmaya devam eder. İş akışı süreçleri hala geliştirici olmayan birisinin de değişiklik yapabilmesi olanağını sunmaktadır. Ancak buradaki fark, işletme süreçlerinin nasıl birleştirildiği ve bir geliştiricinin kodunu nasıl yazabileceğidir. Bir eylem, platform tarafından sunulan herhangi bir ileti ile aynı düzeyde işlem gören bir iletidir. Geliştiriciler Eylemler için eklentiler kaydedebilir.  
+ İş akışı işlemleri ve eklentiler, Otomasyonu tanımlamaya yönelik benzer yetenekler sağlamaya devam eder. İş akışı işlemi, geliştirici olmayan değişikliklerin uygulanması için hala yetenek sağlar. Ancak fark, iş işlemlerinin nasıl oluşturulduğu ve bir geliştiricinin kendi kodlarını nasıl yazacağı ile aynıdır. Eylem, platformun sunduğu iletilerle aynı düzeyde çalışan bir iletidir. Geliştiriciler, eylemler için eklentileri kaydedebilir.  
   
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Genel iletiler 
  
- Bir eylem, Common Data Service iş akışlarından ya da [eklentilerden](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) farklı olarak belirli bir varlıkla ilişkilendirilmek zorunda değildir. Kendi başlarına çağrılabilen "genel" eylemler tanımlayabilirsiniz.
+ Common Data Service iş akışlarının veya [eklentilerin](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in)aksine, bir eylemin belirli bir varlıkla ilişkilendirilmesi gerekmez. Kendi kendilerine çağrılabilecek "genel" eylemleri tanımlayabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

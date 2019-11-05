@@ -1,6 +1,6 @@
 ---
-title: Kaydolma ve oturum açma | Microsoft Docs
-description: Microsoft Flow'a kaydolun, oturum açın ve bu işlemle ilgili sorunları giderin.
+title: Kaydolun ve oturum açın | Microsoft Docs
+description: Microsoft Flow kaydolun ve oturum açın ve bu işlemle ilgili sorunları giderin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,53 +20,56 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1088408c3c226d64b4475c18e38729d5814c0305
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 9bf07a8c6ec2b5076d806670aa7d61f1086d4dd2
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464863"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548785"
 ---
-# <a name="sign-up-and-sign-in-for-microsoft-flow"></a>Microsoft Flow'a kaydolma ve oturum açma
+# <a name="sign-up-and-sign-in-for-microsoft-flow"></a>Microsoft Flow için kaydolun ve oturum açın
+
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Microsoft Flow’u bireysel olarak kullanmaya başlamak çok kolaydır! Akış oluşturmak için herhangi bir e-posta adresi kullanarak kaydolun. İlgili adresle daha önce herhangi bir çevrimiçi Microsoft ürününü kullanmadıysanız adresi kaydetmek için birkaç dakikanızı ayırmanız gerekir.
+Microsoft Flow başlayarak, bireysel olarak kolayca! Bir akış oluşturabilmeniz için önce herhangi bir e-posta adresi kullanarak kaydolun. Bu adresle bir çevrimiçi Microsoft ürününü hiç kullanmadıysanız, kaydolmanız için birkaç dakika gerçekleştirmeniz gerekir.
 
 ## <a name="sign-up-free"></a>Ücretsiz kaydolun
-Daha önce diğer çevrimiçi Microsoft ürünlerini kullanmadıysanız kaydolmanız gerekir.
+Diğer çevrimiçi Microsoft ürünlerini kullanmadıysanız kaydolmanız gerekir.
 
-1. [flow.microsoft.com](https://flow.microsoft.com)'da, sağ üst köşede bulunan **Ücretsiz kaydolun**'a tıklayın veya dokunun.
+1. [Flow.Microsoft.com](https://flow.microsoft.com)' de sağ üst köşedeki **ücretsiz kaydolun** ' a tıklayın veya dokunun.
 2. E-posta adresinizi girin.
 3. Sağ oka tıklayın veya dokunun.
 
     ![Kaydolma bağlantısı](./media/sign-up-sign-in/signup.png)
 
-## <a name="sign-in"></a>Oturum açma
-Daha önce iş için veya kendiniz için diğer Microsoft çevrimiçi ürünlerini kullandıysanız tek yapmanız gereken oturum açmaktır.
+## <a name="sign-in"></a>Oturum Aç
+İş veya kendiniz için diğer Microsoft çevrimiçi ürünlerini kullandıysanız, tek yapmanız gereken, oturum açmanız gerekir.
 
-1. [flow.microsoft.com](https://flow.microsoft.com)'da, sağ üst köşede bulunan **Oturum aç**'a tıklayın veya dokunun.
+1. [Flow.Microsoft.com](https://flow.microsoft.com)' de sağ üst köşedeki **oturum aç** ' a tıklayın veya dokunun.
 
     ![Oturum açma bağlantısı](./media/sign-up-sign-in/signin.png)
 2. E-posta adresinizi girin.
-3. Oturum açma sayfasında e-posta adresinizi ve parolanızı girin.
+3. Oturum açma sayfasında, e-posta adresinizi ve parolanızı girin.
 
 ## <a name="using-paid-features"></a>Ücretli özellikleri kullanma
-Herkes Microsoft Flow için kaydolabilir ve ücretsiz bir plan edinebilir. Kuruluşunuz sizin için Office 365 veya Dynamics 365 satın aldıysa Microsoft Flow için ek özelliklere erişebilirsiniz. Ayrıca, ücretli özellikleri kullanmak isterseniz 90 günlük ücretsiz deneme sürümünü başlatabilir ya da Microsoft Flow Plan 1 veya Plan 2’yi satın alabilirsiniz. [Faturalama hakkında daha fazla bilgi edinin](billing-questions.md).
+Herkes kaydolup Microsoft Flow ücretsiz bir plan alabilir. Kuruluşunuz sizin için Office 365 veya Dynamics 365 satın almışsa, Microsoft Flow için ek özelliklere erişebilirsiniz. Ücretli özellikleri kullanmak isterseniz 90 günlük ücretsiz deneme sürümünü başlatabilir veya Microsoft Flow plan 1 veya plan 2 ' i satın alabilirsiniz. [Faturalandırma hakkında daha fazla bilgi edinin](billing-questions.md).
 
-Yönetim bilgileri için bkz. [Kuruluşunuzda akışlar ile ilgili soru-cevap](organization-q-and-a.md).
+Yönetim bilgileri için bkz. [kuruluşunuzdaki akışlar soru-cevap &](organization-q-and-a.md).
 
-## <a name="troubleshooting"></a>Sorun giderme
-Birçok durumda, bu konu başlığında daha önceden açıklanan basit işlemleri uygulayarak Microsoft Flow'a kaydolabilirsiniz. Ancak bu tabloda, kaydolamamanıza ilişkin en yaygın nedenlerle birlikte uygulayabileceğiniz geçici çözümler özetlenmiştir.
+## <a name="troubleshooting"></a>Sorunu
+Çoğu durumda, bu konuda daha önce açıklanan basit süreci izleyerek Microsoft Flow için kaydolabilirsiniz. Ancak, bu tablo, kaydolmamanızın en yaygın nedenlerini özetler ve kullanılabilir geçici çözümleri açıklar.
 
 
-|                                                                                                                                                                                       Belirti/Hata İletisi                                                                                                                                                                                        |                                                                                                                                                                              Neden ve Geçici Çözüm                                                                                                                                                                              |
+|                                                                                                                                                                                       Belirti/hata Iletisi                                                                                                                                                                                        |                                                                                                                                                                              Neden ve geçici çözüm                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                       **Henüz Microsoft hesabı oluşturulmamış** <br> Kayıt sırasında e-postanızı girdikten sonra bir ileti alırsınız:<br><br> *Bu Microsoft hesabı mevcut değil. Farklı bir hesap girin veya yeni bir hesap oluşturun.*                                                                                       |                                              Henüz Microsoft hesabı oluşturulmamış bir e-postayla kaydoldunuz. Sayfada **Şimdi kaydol**’u tıklayarak e-postanız için yeni bir Microsoft hesabı oluşturabilirsiniz. Microsoft hesabı oluşturmak için mevcut e-postanızı kullanabilirsiniz.                                               |
-|                                                  **.gov veya .mil ile biten e-posta adresleri**<br>Kaydolma sırasında şuna benzer bir ileti alırsınız:<br><br>*Microsoft Flow kullanılamıyor: Microsoft Flow şu anda .gov veya .mil ile biten e-posta adreslerine sahip kullanıcılar için kullanılabilir değil. Başka bir iş e-posta adresi kullanın veya daha sonra tekrar deneyin.*                                                  |                                                                                            Şu anda .gov veya .mil adresiyle Microsoft Flow için kaydolamazsınız. Bunun yerine, *\@outlook.com* adresi gibi herhangi bir Microsoft Hesabı e-posta adresiyle oturum açabilirsiniz.                                                                                             |
-| **Self servis kaydolma devre dışı**<br><br>Kaydolma sırasında şuna benzer bir ileti alırsınız:<br>*Kaydolma işleminizi tamamlayamıyoruz. BT departmanınız, Microsoft Flow'a kaydolma olanağını devre dışı bırakmış. Kaydolma işlemini tamamlamak için BT departmanınızla iletişime geçin.* <br>veya<br> *Kaydolma işleminizi tamamlayamıyoruz. Microsoft Flow'un şu anda işiniz veya okulunuz için kullanılamadığı görülüyor.* |                                                                                        **Oturum aç** yerine **Kaydol**’u seçmişsinizdir. Giriş sayfasının en üstünde **Oturum aç**’ı seçerseniz Microsoft Flow’a erişebilirsiniz.                                                                                        |
-|                                                   **E-posta adresi, bir Office 365 kimliği değil**<br><br>Kaydolma sırasında şuna benzer bir ileti alırsınız:<br>*Sizi contoso.com'da bulamıyoruz.  İşte veya okulda farklı bir kimlik mi kullanıyorsunuz? İlgili kimlikle oturum açmayı deneyin, sorun çözülmezse BT departmanınızla iletişime geçin.*                                                    | Kuruluşunuz, Office 365 ve diğer Microsoft hizmetlerinde oturum açmak için bir takım kimlikler kullanır ve bu kimlikler, e-posta adresinizden farklıdır. Örneğin, e-posta adresiniz Nancy.Smith@contoso.com, ama kimliğiniz nancys@contoso.com olabilir. Kaydolma işlemini tamamlamak için, kuruluşunuzun size Office 365 ve diğer Microsoft hizmetlerinde oturum açmanız için atadığı kimliği kullanın. |
+|                                                                                       **Henüz Microsoft hesabı oluşturulmadı** <br> Kayıt sırasında e-postanızı girdikten sonra bir ileti alırsınız:<br><br> *Bu Microsoft hesabı yok. Farklı bir hesap girin veya yeni bir hesap alın.*                                                                                       |                                              Henüz kendisi için oluşturulmuş bir Microsoft hesabı olmayan bir e-posta ile kaydoldınız. Bu sayfada **Şimdi kaydolun** bağlantısını seçin ve e-postanız için yeni bir Microsoft hesabı oluşturabileceksiniz. Mevcut e-postanızı bir Microsoft hesabı oluşturmak için kullanabilirsiniz.                                               |
+|                                                  **. gov veya. mil e-posta adresleri**<br>Kayıt sırasında aşağıdakiler gibi bir ileti alırsınız:<br><br>*Microsoft Flow kullanılamıyor: Şu anda. gov veya. mil e-posta adreslerine sahip kullanıcılar için Microsoft Flow kullanılamaz. Başka bir iş e-posta adresi kullanın veya daha sonra tekrar denetleyin.*                                                  |                                                                                            Şu anda. gov veya. mil adresiyle Microsoft Flow kaydolabilir. Bunun yerine, *\@Outlook.com* adresi gibi herhangi bir Microsoft hesabı e-posta adresiyle oturum açabilirsiniz.                                                                                             |
+| **Self Servis kaydolma devre dışı**<br><br>Kayıt sırasında aşağıdakiler gibi bir ileti alırsınız:<br>*Oturumunuzu bitiriyoruz. BT departmanınız Microsoft Flow kaydolma işlemini kapattı. Kaydolma işlemini tamamlamaya yönelik iletişim kurun.* <br>veya<br> *Oturumunuzu bitiriyoruz. Microsoft Microsoft Flow Şu anda iş veya okulunuz için kullanılamıyor gibi görünüyor.* |                                                                                        Oturum açmak yerine **kaydolun** **'** i seçtiniz. Giriş sayfasının üst kısmında **oturum aç** ' ı seçerseniz Microsoft Flow erişebilirsiniz.                                                                                        |
+|                                                   **E-posta adresi bir Office 365 KIMLIĞI değil**<br><br>Kayıt sırasında aşağıdakiler gibi bir ileti alırsınız:<br>*Sizi contoso.com adresinde bulamıyoruz.  İş veya okul sırasında farklı bir KIMLIK mi kullanıyorsunuz? Bu kimlikle oturum açmayı deneyin ve işe yaramazsa BT bölümünüze başvurun.*                                                    | Kuruluşunuz kimlikleri Office 365 ve diğer Microsoft hizmetlerinde oturum açmak için kullanır ve bu kimlikler e-posta adresinizden farklıdır. Örneğin, e-posta adresiniz Nancy.Smith@contoso.comolabilir, ancak KIMLIĞINIZ nancys@contoso.comolabilir. Kaydolma işlemini gerçekleştirmek için, kuruluşunuzun Office 365 veya diğer Microsoft hizmetlerinde oturum açmak üzere size atadığı KIMLIĞI kullanın. |
 
 ## <a name="next-steps"></a>Sonraki adımlar
-* Sizin için önceden oluşturulmuş akış niteliğinde [bir şablonla başlayın](get-started-logic-template.md).
-* Aklınızda zaten bir işlem varsa ve buna uygun bir şablon bulamıyorsanız [boş akış oluşturarak başlayın](get-started-logic-flow.md).
+* Sizin için ayarlanmış önceden oluşturulmuş bir akış olan [bir şablon Ile başlayın](get-started-logic-template.md).
+* Zaten bir işleme sahipseniz ve kendisi için bir şablon bulamıyorsanız [boş](get-started-logic-flow.md) bir işlem yapın.
 

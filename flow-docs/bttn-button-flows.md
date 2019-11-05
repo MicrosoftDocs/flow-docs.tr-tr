@@ -1,6 +1,6 @@
 ---
-title: Bttn ile akış başlatma | Microsoft Docs
-description: bttn kullanarak akış başlatmayı öğrenin
+title: Bttn ile akışları başlatma | Microsoft Docs
+description: Akışlarınıza bir bttn ile nasıl başlayacağınızı öğrenin
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,110 +20,111 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 5835593c7bd020cdfce5f463a7fc198907c4ba6c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64462214"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545682"
 ---
-# <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Button Corporation tarafından tasarlanan fiziksel düğmelerle akışlarınızı çalıştırın (Önizleme)
-Bir bttn'ye ([The Button Corporation](https://my.bt.tn/) tarafından tasarlanan fiziksel bir düğme) basarak akışlarınızı tetikleyin. Örneğin, akış tetikleyen bir bttn'ye basarak şu görevleri gerçekleştirebilirsiniz:
+# <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>(Önizleme) düğme şirketinin fiziksel düğmeleriyle (bttns) akışlarınızı çalıştırma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Bir bttn tuşuna basarak akışlarınızı tetikleyin ( [Button Corporation](https://my.bt.tn/)tarafından yapılan fiziksel bir düğme). Örneğin, bu görevleri gerçekleştirmek için bir akışı tetikleyen bir bttn tuşlarına basabilirsiniz:
 
-* konum bilgilerinizle birlikte yardım masanızla iletişime geçme
-* ekibinize e-posta gönderme
-* takviminizi engelleme
-* yeni malzeme siparişi verme
+* konum bilgileri ile yardım masanızla iletişim kurar
+* ekibinize bir e-posta gönderir
+* Takviminizi engeller
+* yeniden sipariş malzemeleri
 
 > [!IMPORTANT]
-> bttn'nizi bir akışta kullanabilmek için [kaydetmeniz](https://my.bt.tn/) gerekir.
+> Bir akışta kullanabilmeniz için bttn 'nizi [kaydetmeniz](https://my.bt.tn/) gerekir.
 > 
 > [!TIP]
-> Akışınızı oluşturmadan önce [bttn web sitesinde](https://my.bt.tn/) ad, konum ve e-posta adresi gibi tüm bttn özelliklerini yapılandırın.
+> Akışınızı oluşturmadan önce [bttn Web sitesinde](https://my.bt.tn/) ad, konum ve e-posta adresi gibi tüm bttn özelliklerini yapılandırın.
 > 
 > 
 
-Ayrıca [Flic fiziksel düğmesi](flic-button-flows.md) kullanarak da akış tetikleyebilirsiniz.
+Ayrıca, [Flik fiziksel düğmesini](flic-button-flows.md)kullanarak da bir akış tetikleyebilirsiniz.
 
-## <a name="prerequisites"></a>Önkoşullar
-* [Microsoft Flow](https://flow.microsoft.com)’a erişiminiz olmalıdır.
+## <a name="prerequisites"></a>Kaynakları
+* [Microsoft Flow](https://flow.microsoft.com)erişim.
 * En az bir [kayıtlı bttn](https://my.bt.tn/).
 
-## <a name="create-a-flow-thats-triggered-from-a-bttn"></a>bttn tarafından tetiklenen bir akış oluşturma
-Bu incelemede, bir [bttn](https://my.bt.tn/)'ye yalnızca bir kez basarak tetikleyebileceğimiz bir akış oluşturmak için yardım masası şablonu kullanacağız. Akış çalıştığında bir destek isteği oluşturur ve bu isteği yardım masasına gönderir. Destek isteği, yardım gereken yerin konumunu destek masasına bildirir. Bu incelemede bir şablondan bu akışın nasıl oluşturulacağı gösterilmektedir ancak akışınızın tüm yönleri üzerinde size tam denetim sağlayan boş şablonu da kullanabilirsiniz.
+## <a name="create-a-flow-thats-triggered-from-a-bttn"></a>Bir bttn tarafından tetiklenen bir akış oluşturma
+Bu kılavuzda, bir [bttn](https://my.bt.tn/)'nin tek bir basma ile tetikleyebileceğiniz bir akış oluşturmak için bir yardım masası şablonu kullanırız. Akış çalıştırıldığında, bir destek isteği oluşturur ve ardından yardım masasına gönderir. Destek isteği, yardım 'ın gerekli olduğu odanın konumunu sağlar. Bu izlenecek yol, bir şablondan bu akışın nasıl oluşturulacağını gösterir, ancak akışlarınızın tüm yönleri üzerinde size tam denetim sağlayan boş şablonu kullanabilirsiniz.
 
-bttn'niz için hızlı bir şekilde akış oluşturmak ve Zendesk, Google, SharePoint ve daha birçok hizmete bağlanmak için şu şablonlardan herhangi birini kullanabilirsiniz:
+Bttn 'niz için hızlı bir şekilde akış oluşturmak ve Zendesk, Google ve SharePoint 'e bağlanmak için şu şablonlardan herhangi birini kullanabilirsiniz:
 
 ![bttn şablonları](./media/bttn-button-flows/bttn-templates.png)
 
-İpucu: Bu izlenecek yolda amacı doğrultusunda bttn'nize tipik bir ofis binasındaki bir konferans salonunu temsil eden bir ad verin.
+İpucu: Bu izlenecek yol Için, bttn 'ye tipik bir ofis binasında bir konferans odasını temsil eden bir ad verin.
 
-bttn'nizin ayarları şu örnekteki (bttn sitesinden) gibi olmalıdır:
+Bttn 'nizin ayarlarının bu örneğe benzer olması gerekir (bttn Web sitesinden):
 
 ![bttn şablonları](./media/bttn-button-flows/bttn-config.png)
 
-bttn'nizi kaydedip yapılandırdığınıza göre akışımızı oluşturmaya başlayabiliriz.
+Bttn 'nizi kaydoldığınıza ve yapılandırdığınıza göre, akışımızı oluşturmaya başlaalım.
 
 ### <a name="sign-in-and-select-a-template"></a>Oturum açın ve bir şablon seçin
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
    
-    ![Oturum açın](./media/bttn-button-flows/sign-into-flow.png)
+    ![Oturum Aç](./media/bttn-button-flows/sign-into-flow.png)
    
-    Not: Alternatif olarak, Microsoft Flow mobil uygulamasını akışlar oluşturabilirsiniz [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), veya [Windows Phone](https://aka.ms/flowmobilewindows).
-2. Arama kutusuna **bttn** yazın ve arama simgesini seçin.
+    Göz: Alternatif olarak, [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)için Microsoft Flow mobil uygulamasında akış oluşturabilirsiniz.
+2. Arama kutusuna **bttn** girin ve arama simgesini seçin.
    
-    ![Arama](./media/bttn-button-flows/bttn-search-template.png)
+    ![aramanız](./media/bttn-button-flows/bttn-search-template.png)
    
-    Arama simgesini seçtikten sonra bttn'lerle kullanabileceğiniz tüm şablonlar görünür.
-3. **Toplantı odasına yönelik teknik destek ekibini aramak için bttn kullanın** şablonunu seçin.
+    Arama simgesini seçtikten sonra bttn ile kullanabileceğiniz tüm şablonlar görünür.
+3. **Toplantı odası şablonu için teknik destek çağırmak Için bttn kullanın** seçeneğini belirleyin.
    
     ![Destek şablonu](./media/bttn-button-flows/bttn-select-template.png)
 
-### <a name="authorize-microsoft-flow-to-connect-to-your-bttn"></a>Microsoft Flow'u bttn'nize bağlanması için yetkilendirin
-1. İstenirse bttn'de ve Office 365 Outlook hizmetlerinde oturum açın, bunu yaptığınızda **Devam** düğmesi etkinleşir.
+### <a name="authorize-microsoft-flow-to-connect-to-your-bttn"></a>Bttn 'nize bağlanmak için Microsoft Flow yetkilendirme
+1. İstenirse, bttn ve Office 365 Outlook hizmetlerinde oturum açın, bu işlem **devam** düğmesini etkinleştirir.
    
-    ![Kimlik bilgileri](./media/bttn-button-flows/bttn-provide-credentials.png)
-2. bttn hizmetinde oturum açtığınızda, Microsoft Flow'u bttn'lerinizi kullanması için yetkilendirin.
+    ![Credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
+2. Bttn hizmetinde oturum açtığınızda, bttns 'yi kullanmak için Microsoft Flow yetkilendirin.
    
-    **Önemli**: Microsoft Flow bttn'lerinizi kullanması için yetkilendirmezseniz bakın veya Microsoft Flow bağlamak.
+    **Önemli**: bttns 'yi kullanmak için Microsoft Flow yetkilendirmezseniz, Microsoft Flow buradan göremez veya bunlara bağlanamazsınız.
    
-    ![Yetkilendir](./media/bttn-button-flows/authorize-bttn.png)
-3. Her iki hizmette de oturum açtıktan sonra **Devam**'ı seçin.
+    ![yetki](./media/bttn-button-flows/authorize-bttn.png)
+3. Her iki hizmeti de oturum açtıktan sonra **devam**' ı seçin.
    
     ![Devam](./media/bttn-button-flows/continue.png)
 
-### <a name="select-the-bttn-that-triggers-the-flow"></a>Akışı tetikleyen bttn'yi seçin
-1. **Bir bttn'ye basıldığında** kartında, bttn kimliklerinin listesini açın ve ardından kullanmak istediğiniz bttn'yi seçin.
+### <a name="select-the-bttn-that-triggers-the-flow"></a>Akışı tetikleyen bttn 'yi seçin
+1. **Bir bttn 'ye basıldığında** , bttn kimlikleri listesini açın ve sonra kullanmak istediğiniz bttn 'yi seçin.
    
-    ![bttn seçin](./media/bttn-button-flows/bttn-id.png)
+    ![bttn 'yi seçin](./media/bttn-button-flows/bttn-id.png)
    
-    Akışınız artık şu örnekteki gibi olacaktır.
+    Akışınız artık bu örneğe benzemelidir.
    
-    ![Akışa genel bakış](./media/bttn-button-flows/bttn-done.png)
-2. Akışınıza bir ad verin ve ardından **Akış oluştur**'u seçin.
+    ![akışa genel bakış](./media/bttn-button-flows/bttn-done.png)
+2. Akışınıza bir ad verin ve ardından **akış oluştur** ' u seçerek kaydedin.
    
-    ![Akışı kaydedin](./media/bttn-button-flows/save.png)
+    ![akışı Kaydet](./media/bttn-button-flows/save.png)
 
-## <a name="test-your-flow-and-confirm-results"></a>Akışınızı test edin ve sonuçları onaylayın
-1. bttn'nizin üzerindeki düğmeye basın.
-2. Başarıyla çalıştığını doğrulamak için akışınızın çalıştırma geçmişini görüntüleyin.
+## <a name="test-your-flow-and-confirm-results"></a>Akışınızı test etme ve sonuçları doğrulama
+1. Bttn 'inizdeki düğmeye basın.
+2. Akışının başarıyla çalıştığını onaylamak için akışınızın çalıştırma geçmişini görüntüleyin.
    
-    Microsoft Flow Web sitesinde veya mobil cihazınızda çalıştırma geçmişi kontrol edebilirsiniz.
+    Microsoft Flow web sitesinde veya mobil cihazınızda çalıştırma geçmişini kontrol edebilirsiniz.
    
-    Not: Çalıştırma durumu kümesine **çalıştıran** birisi seçene kadar **kabul** destek isteği e-posta.
-3. Ayrıca e-postanın, destek ekibine gönderilip gönderilmediğini de doğrulayabilirsiniz.
+    Note: çalışma durumu, birisi destek-istek e-postasında **Onayla** ' yı seçinceye kadar **çalışıyor** olarak ayarlanır.
+3. Ayrıca, e-postanın destek ekibine gönderildiğini de doğrulayabilirsiniz.
    
-    Tüm adımları uyguladıysanız destek e-postası şu örnekteki gibi görünür:
+    Bunu takip ediyorsanız, destek e-postası Şu örneğe benzer şekilde görünür:
    
     ![](./media/bttn-button-flows/support-request-email.png)
 
-## <a name="troubleshooting"></a>Sorun giderme
-* Akışınız tetiklenmediyse The Button Corporation'ın sitesinde oturum açın ve düğme etkinliğinin (basma eylemleri) kaydedilip kaydedilmediğini kontrol edin.
-* Ayrıca Microsoft Flow sitesinde çalıştırma etkinliğinin ayrıntılarını inceleyebilir ve hata iletilerini kontrol edebilirsiniz.
+## <a name="troubleshooting"></a>Sorunu
+* Akışınız tetiklenmediyse, Button Corporation 'ın sitesinde oturum açın ve düğme etkinliğinin (basışlar) kaydedilip kaydedilmediğini onaylayın.
+* Ayrıca, Microsoft Flow sitesinde Çalıştır etkinliğinin detayına gidebilir ve hata iletilerini kontrol edebilirsiniz.
 
-## <a name="more-information"></a>Ek bilgi
-* [Düğme akışları paylaşın](share-buttons.md).
-* Düğme akışlarınız çalıştığında geçerli verileri göndermek için [düğme tetikleyici belirteçlerini](introduction-to-button-trigger-tokens.md) kullanmayı öğrenin.
-* [Android için Microsoft Flow uygulamasını yükleyin](https://aka.ms/flowmobiledocsandroid).
-* [iOS için Microsoft Flow uygulamasını yükleyin](https://aka.ms/flowmobiledocsios).
+## <a name="more-information"></a>Daha fazla bilgi
+* [Düğme akışlarını paylaşma](share-buttons.md).
+* Düğme akışlarınız çalıştırıldığında geçerli verileri göndermek için [düğme tetikleyici belirteçlerini](introduction-to-button-trigger-tokens.md) kullanmayı öğrenin.
+* [Android için Microsoft Flow uygulamasını yükler](https://aka.ms/flowmobiledocsandroid).
+* [İOS için Microsoft Flow uygulamasını yükler](https://aka.ms/flowmobiledocsios).
 

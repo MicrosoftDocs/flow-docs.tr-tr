@@ -1,11 +1,11 @@
 ---
 title: Common Data Service ile otomatik akış oluşturma | Microsoft Docs
-description: Common Data Service bağlantısı ve Microsoft Flow kullanarak iş akışları oluşturma
+description: Common Data Service bağlantı ve Microsoft Flow kullanarak iş akışları oluşturun
 services: ''
 suite: flow
 documentationcenter: na
-author: brandonsimons
-manager: ryjones
+author: MSFTMAN
+manager: KVIVEK
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,100 +14,101 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2019
-ms.author: brandonsimons
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 110f3947cf7ece97bfd9b83ca6a12ee46d04b4d6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456990"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547127"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service"></a>Common Data Service'i kullanarak otomatik akış oluşturma
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Common Data Service kullanarak otomatik akış oluşturma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Common Data Service bağlayıcısıyla Common Data Service veritabanınızın içinde oluşturma ve güncelleştirme olayları tarafından başlatılan iş akışları oluşturabilirsiniz. Buna ek olarak, Common Data Service veritabanının içindeki kayıtlar üzerinde oluşturma, güncelleştirme, alma ve silme eylemleri de gerçekleştirebilirsiniz.
+Common Data Service Bağlayıcısı ile Common Data Service veritabanınızda olayları oluşturma ve güncelleştirme ile başlatılan akışlar oluşturabilirsiniz. Ayrıca, Common Data Service veritabanı içindeki kayıtlar üzerinde oluşturma, güncelleştirme, alma ve silme işlemleri gerçekleştirebilirsiniz.
 
-## <a name="initiate-a-flow-from-common-data-service"></a>Common Data Service'den akış başlatma
+## <a name="initiate-a-flow-from-common-data-service"></a>Common Data Service akış başlatma
 
-Akışınızı başlatmak için aşağıdaki tetikleyicilerden birini kullanabilirsiniz:
+Akışınızı başlatmak için aşağıdaki tetikleyicilerden herhangi birini kullanabilirsiniz:
 
-- Kayıt seçildiğinde
-- Kayıt oluşturulduğunda
-- Kayıt silindiğinde
-- Kayıt güncelleştirildiğinde
+- Bir kayıt seçildiğinde
+- Bir kayıt oluşturulduğunda
+- Bir kayıt silindiğinde
+- Bir kayıt güncelleştirilirken
 
-
-> [!div class="mx-imgBorder"]
-> ![Tetikleyici seçin](./media/cds-connector/Triggers.png)
-
-Seçilen tetikleyici için ortam seçilmesi gerekiyorsa, her zaman Microsoft Flow'un çalıştırıldığı ortamın içindeki veritabanını kullanan `(Current)` ayarını seçebilirsiniz. Akışınızın her zaman belirli bir ortamdaki bir olayla tetiklenmesini istiyorsanız, söz konusu ortamı seçin.
 
 > [!div class="mx-imgBorder"]
-> ![Ortam seçin](./media/cds-connector/Environments.png)
+> tetikleyici ![seçin](./media/cds-connector/Triggers.png)
 
-Akışınızın yeni kayıt oluşturduğunuzda, departmanınızdaki bir kullanıcı kayıt oluşturduğunda veya kuruluşunuzdaki herhangi bir kullanıcı kayıt oluşturduğunda çalıştırılacağını belirlemek için kapsamları kullanabilirsiniz.
+Seçili tetikleyici bir ortamın seçilmesini gerektiriyorsa, veritabanını her zaman Microsoft Flow çalıştığı ortam içinde kullanılacak `(Current)`öğesini seçebilirsiniz. Akışın belirli bir ortamdaki bir olaya göre her zaman tetiklenmesi istiyorsanız, o ortamı seçin.
 
 > [!div class="mx-imgBorder"]
-> ![Kapsam seçin](./media/cds-connector/Scopes.png)
+> ortam](./media/cds-connector/Environments.png) ![seçin
 
-|Kapsam|Tetikleyici zamanlaması|
+Yeni bir kayıt oluşturursanız, iş biriminizdeki bir kullanıcı tarafından yeni bir kayıt oluşturulduysa veya kuruluşunuzdaki herhangi bir kullanıcı tarafından yeni bir kayıt oluşturulduysa, akışın çalışıp çalışmamadığını öğrenmek için kapsamları kullanabilirsiniz.
+
+> [!div class="mx-imgBorder"]
+> kapsam seçin ![](./media/cds-connector/Scopes.png)
+
+|Kapsam|Tetikleme zamanlaması|
 | --- | --- |
-|Departman|Departmanınızın sahip olduğu bir kayıt üzerinde eylem yapıldı|
-|Kuruluş|Kuruluşunuzun veya veritabanınızın içindeki biri tarafından eylem yapıldı|
-|Üst Öğe: Alt departman|Departmanınızın veya alt departmanın sahip olduğu bir kayıt üzerinde eylem yapıldı|
-|Kullanıcı|Sizin sahip olduğunuz bir kayıt üzerinde eylem yapıldı|
+|İş birimi|İşlem, iş biriminiz tarafından sahip olunan bir kayıt üzerinde gerçekleştirilir|
+|Kuruluşunuzun|Eylem, kuruluş veya veritabanı içindeki herkes tarafından alındı|
+|Üst öğe: alt departman|İşlem, iş biriminiz veya bir alt iş birimi tarafından sahip olunan bir kayıt üzerinde gerçekleştirilir|
+|Kullanıcısını|Eylem size ait bir kayıt üzerinde alındı|
 
-Bir kayıt güncelleştirildiğinde çalıştırılan tetikleyiciler filtre özniteliklerini de kullanabilir. Bu sayede akışın yalnızca tanımlanan özniteliklerden biri güncelleştirildiğinde çalıştırılması sağlanır.
+Bir kayıt güncelleştirilirken çalışan Tetikleyiciler, filtreleme özniteliklerini de kullanabilir. Bu, akışın yalnızca tanımlı özniteliklerden herhangi biri güncelleştirilirken çalışmasını sağlar.
 
 > [!IMPORTANT]
-> Akışınızın gereksiz çalıştırılmasını önlemek için filtre özniteliklerini kullanın.
+> Flow 'un gereksiz çalışma yapmasını engellemek için filtre özniteliklerini kullanın.
 
-Akış kullanıcısının kişilerinden birini adı veya soyadı her güncelleştirildiğinde bu akış tetiklenir.
-
-> [!div class="mx-imgBorder"]
-> ![Filtre öznitelikleri](./media/cds-connector/FilterAttributes.png)
-
-## <a name="trigger-privileges"></a>Tetikleyici ayrıcalıkları
-
-Kayıt üzerindeki oluşturma, güncelleştirme veya silme eylemleriyle tetiklenen bir akış oluşturmak için, kullanıcının Callback Registration varlığı üzerinde oluşturma, okuma, yazma ve silme eylemleri için kullanıcı düzeyi izinlerine sahip olması gerekir. Ayrıca, tanımlanan kapsamlara bağlı olarak kullanıcının aynı varlık üzerinde en azından aynı düzeyde okuma izni de olmalıdır.  Ortam güvenliği hakkında [daha fazla bilgi edinin](https://docs.microsoft.com/power-platform/admin/database-security).
-
-## <a name="write-data-into-common-data-service"></a>Common Data Service'e veri yazma
-
-Common Data Service'e veri yazarken aşağıdaki eylemlerden birini kullanın:
-
-- Yeni kayıt oluşturma
-- Kaydı güncelleştirme
-
-Burada, belirlenen kullanıcı yeni hesap kaydı oluşturduğunda bir izleme görevi oluşturma örneği verilmiştir.  
+Bu akış, akış kullanıcısının sahip olduğu ilk veya son kişi adının güncelleştirildiği her seferinde tetiklenir.
 
 > [!div class="mx-imgBorder"]
-> ![İzleme görevi](./media/cds-connector/Regarding.png)
+> Filtre özniteliklerini ![](./media/cds-connector/FilterAttributes.png)
+
+## <a name="trigger-privileges"></a>Tetikleme ayrıcalıkları
+
+Kayıt üzerinde oluşturma, güncelleştirme veya silme işlemini temel alan bir akış oluşturmak için, kullanıcının geri çağırma kayıt varlığı üzerinde oluşturma, okuma, yazma ve silme için Kullanıcı düzeyinde izinleri olması gerekir. Ek olarak, tanımlanan kapsamlara bağlı olarak, kullanıcının en azından aynı varlık üzerinde okuma düzeyi gerekebilir.  Ortam güvenliği hakkında [daha fazla bilgi edinin](https://docs.microsoft.com/power-platform/admin/database-security) .
+
+## <a name="write-data-into-common-data-service"></a>Common Data Service veri yazma
+
+Common Data Service veri yazmak için aşağıdaki eylemlerden herhangi birini kullanın:
+
+- Yeni bir kayıt oluştur
+- Kayıt güncelleştirme
+
+Verilen Kullanıcı yeni bir hesap kaydı oluşturduğunda bir izleme görevi oluşturma örneği aşağıda verilmiştir.  
+
+> [!div class="mx-imgBorder"]
+> ![Izleme görevi](./media/cds-connector/Regarding.png)
 
 ## <a name="advanced-concepts"></a>Gelişmiş kavramlar
 
-### <a name="write-data-into-customer-owner-and-regarding-fields"></a>Müşteri, sahip ve ilgili alanlarına veri yazma
+### <a name="write-data-into-customer-owner-and-regarding-fields"></a>Verileri müşteri, sahip ve ilgili alanlara yazma
 
-Müşteri, sahip ve ilgili alanlarına veri yazmak için iki alanın doldurulması gerekir.
+Müşteri, sahip ve ilgili alanlara veri yazmak için iki alanın doldurulması gerekir.
 
-| Alan kategorisi | Örnek ayarlar |
+| Alan kategorisi | örnek ayarlar |
 | --- | --- |
-| İlgili | İlgili = kaydın kimliği (örneğin, hesap kimliği) ve listeden seçilen İlgili Türü. |
-| Müşteri | Kaydın kimliğini ve listeden seçilen müşteri türünü temsil eder. |
-| Sahip | Sistem kullanıcısının veya takımın kimliğini ve listeden seçilen sahip türünü temsil eder. |
+| İnizle | İlgili = kaydın KIMLIĞI (örneğin, hesap KIMLIĞI) ve Ilgili türü listeden seçili olarak. |
+| Müşterisi | Kayıt KIMLIĞINI ve listeden seçilen müşteri türünü temsil eder. |
+| İnde | Listeden seçilen sistem kullanıcısının veya ekibin KIMLIĞINI ve sahip türünü temsil eder. |
 
-### <a name="enable-upsert-behavior"></a>Upsert davranışını etkinleştir
+### <a name="enable-upsert-behavior"></a>Büyük davranışı etkinleştir
 
-Varsa kaydı güncelleştiren veya yeni kayıt oluşturan upsert eylemleri sağlamak için **kaydı güncelleştir** komutundan yararlanabilirsiniz. Upsert çağrısı yapmak için varlığı ve GUID anahtarını sağlayın. Belirtilen türe ve anahtara sahip bir kayıt varsa, güncelleştirme yapılır. Aksi takdirde, belirtilen anahtarla bir kayıt oluşturulur.
+Zaten varsa kaydı güncelleştiren veya yeni bir kayıt oluşturduğunda, ön Ekle eylemlerini sağlamak için **bir kaydı güncelleştir** komutunu kullanabilirsiniz. Upsert çağırmak için, varlığı ve bir GUID anahtarını sağlayın. Belirtilen türe ve anahtara sahip kayıt varsa, bir güncelleştirme oluşur. Aksi halde, belirtilen anahtara sahip bir kayıt oluşturulur.
 
-### <a name="trigger-behavior"></a>Tetikleyici davranışı
+### <a name="trigger-behavior"></a>Tetikleme davranışı
 
-Kaydın güncelleştirmesine kaydedilmiş bir tetikleyici varsa, belirlenen kayıtta *işlenen* her güncelleştirmede akış çalıştırılır. Hizmet akışınızı zaman uyumsuz olarak ve çağrı yapıldığı zaman yakaladığı yükle birlikte çağırır.
+Bir kaydın güncelleştirmesinde kayıtlı bir Tetikleyiciniz varsa, akış, verilen kayıttaki her *işlenmiş* güncelleştirme için çalışır. Hizmet, akışınızı zaman uyumsuz olarak ve çağrının gerçekleştiği sırada yakaladığı yük ile çağırır.
 
 > [!NOTE]
-> Birkaç saniye arayla gerçekleşen iki güncelleştirmeniz varsa, içeriğin en son sürümüyle akış birden çok kez tetiklenebilir.
+> Her birinin saniye içinde iki güncelleştirme varsa, akış en son sürümlü içerikle birden çok kez tetiklenebilir.
 
-Ortamınızda bir sistem işleri kapsamı varsa akış çalıştırmaları geciktirilebilir.  Böyle bir gecikme olursa, akışı çağıran sistem işi çalıştırıldığında akış tetiklenir.
+Ortamınızda Sistem işlerinin bir biriktirme listesi varsa akış çalıştırmaları gecikebilir.  Bu gecikme gerçekleşirse, akışı çağırmak için sistem işi çalıştırıldığında akışınız tetiklenir.

@@ -1,6 +1,6 @@
 ---
-title: Özel yanıtlarla onay akışları oluşturma | Microsoft Docs
-description: Özel yanıtlarla onay akışları oluşturma
+title: Özel yanıtlarla onay akışları oluşturun | Microsoft Docs
+description: Özel yanıtlarla onay akışları oluşturun.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,90 +20,91 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d1f4b6d6dad3138bf935947076be4fe75661e36e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: eaaa87f9213c5ed04aee65e37ee642436e49dfca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061722"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547219"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Onay akışları için özel yanıt seçenekleri oluşturma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Çalışan SharePoint'e her gider raporu yüklediğinde bir onay isteği göndermek ve ardından onaylayanın üç seçenekten biriyle yanıt vermesini sağlamak istediğinizi varsayalım: Kabul et, Daha fazla bilgi gerekiyor, Reddet.
+Bir çalışan, SharePoint 'e bir gider raporu yükleyen her seferinde onay isteği göndermek istediğinizi ve onaylayanın üç seçenekten biriyle yanıt vermesini sağlar: kabul etme, daha fazla bilgi gerekli veya Reddet.
 
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-- Plan 2 lisansına sahip Microsoft Flow hesabı (Üst düzey özellikleri kullanmak için Plan 2 gerekir. Onaylar üst düzey bir özelliktir.)
-- Çalışanların gider raporlarını girecekleri SharePoint listesi.
+- Microsoft Flow hesabı.
+- Çalışanların gider raporlarını girmesi için bir SharePoint listesi.
 
-## <a name="create-approval-flow"></a>Onay akışı oluşturma
-1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın.
-1. Sol gezinti çubuğunda **Akışlarım**'ı seçin.
-1. **Yeni** > **Boş akış oluştur**'u seçin.
+## <a name="create-approval-flow"></a>Onay akışı oluştur
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
+1. Sol gezinti çubuğundan **akışlarımı** seçin.
+1. **Yeni** > oluştur ' u seçerek **boş bırakın**.
 
-    ![Boş akış oluştur seçeneği](media/create-approval-response-options/create-approval-response-options.png)
+    ![Boş seçenekten oluştur](media/create-approval-response-options/create-approval-response-options.png)
 
-1. Açılan ekranda **Boş akış oluştur**'u seçin. 
+1. Açılan ekranda, **boş oluştur**' u seçin. 
 
-    ![Boş akış oluştur’u seçin](media/create-approval-response-options/create-from-blank.png)
+    ![Boş oluştur ' u seçin](media/create-approval-response-options/create-from-blank.png)
 
-1. **Sharepoint** için arama yapın ve tetikleyiciler listesinden **Bir öğe oluşturulduğunda** tetikleyicisini seçin. 
+1. **SharePoint** araması yapın ve ardından tetikleyiciler listesinden **bir öğe oluşturulduğunda öğesini** seçin. 
 
-1. SharePoint **Site Adresi** ve **Liste Adı** bilgilerini sağlayın. 
+1. SharePoint **sitesi adresini** ve **liste adını**belirtin. 
 
-1. **Yeni adım**'ı seçin, **Onay** için arama yapın ve ardından **Başlat ve onay bekle (V2)** öğesini seçin.
+1. **Yeni adım**' ı seçin, **onay**araması yapın ve ardından **Başlat ' ı seçin ve onay için bekleyin (v2)** .
 
-1. **Başlat ve onay bekle (V2)** kartında **Onay türü** listesini seçin.
+1. **Bir onay Için başlangıç ve bekleme (v2)** kartında **onay türü** listesini seçin.
 
     ![Onay türü](media/create-approval-response-options/select-approval-type.png)
 
-1. **Özel Yanıtlar - Bir yanıtı bekleyin (Premium)** öğesini seçin.
+1. **Özel yanıtları seçin-bir yanıt Için bekleyin (Premium)** .
 
     ![Özel yanıtlar](media/create-approval-response-options/select-custom-responses.png)
 
-    Bundan sonra onaylayanlarınızın, bir çalışan giderine yönelik onay isteğine yanıt verirken kullanacakları özel yanıtları oluşturursunuz.
+    Ardından, onaylayanlarınızın bir çalışan gideri için onay isteğine yanıt vermesi durumunda kullanacağı özel yanıtları oluşturacaksınız.
 
 
-1. **Yanıt seçenekleri Öğe - 1** kutusuna **Kabul Et** girin ve **Yeni öğe ekle**'yi seçin. 
+1. **Yanıt seçenekleri öğesi-1** kutusunda **kabul et** ' i girin ve ardından **Yeni öğe Ekle**' yi seçin. 
 
     ![Özel yanıt 1](media/create-approval-response-options/enter-response-1.png)
 
-1. **Yanıt seçenekleri Öğe - 2** kutusuna **Reddet** girin ve **Yeni öğe ekle**'yi seçin.
+1. **Yanıt seçenekleri öğesi-2** kutusuna **Reddet** ' i girin ve ardından **Yeni öğe Ekle**' yi seçin.
 
     ![Özel yanıt 2](media/create-approval-response-options/enter-response-2.png)
 
-1. **Yanıt seçenekleri Öğe - 3** kutusuna **Daha fazla bilgi gerekiyor** girin.
+1. **Yanıt seçenekleri öğesi-3** kutusuna **daha fazla bilgi gerekiyor**yazın.
 
     ![Özel yanıt 3](media/create-approval-response-options/enter-response-3.png)   
     
 
-1. **Başlık**, **Atanan** (onaylayan için e-posta) ve **Ayrıntılar**'ı (onay isteğine dahil edilecek ayrıntılar) girin.
+1. Bir **başlık**girin, bu kişiye **atandı** (onaylayan için e-posta) ve **Ayrıntılar** (onay isteğinde yer alan ayrıntılar).
 
-    Aşağıda kuruluşunuz için neler ekleyebileceğinize ilişkin bir örnek verilmiştir.
+    Kuruluşunuz için neleri dahil edebileceğinize ilişkin bir örnek aşağıda verilmiştir.
 
     ![Özel yanıt ayrıntıları](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
 
-Artık özel yanıtlarınızı oluşturduğunuza göre, onaylayandan gelen yanıta bağlı olarak akışınızda farklı işler yapmak isteyebilirsiniz.
+Özel yanıtlarınızı oluşturduğunuza göre, Onaylayandan alınan yanıta bağlı olarak, akışınızda farklı şeyler yapmak isteyebilirsiniz.
 
 
 ## <a name="use-approval-responses"></a>Onay yanıtlarını kullanma 
 
-İsteğe **Kabul Et** yanıtı verilirse, muhasebe bölümüne çalışanın giderinin karşılanmasını isteyen bir e-posta göndermek isteyebilirsiniz. 
+İstek yanıtı **kabul**ediyorsanız, hesap departmanına bir e-posta göndermek isteyebilirsiniz, bu da çalışanların gider için tarafımızca kuruluşlarımız olmasını ister. 
 
-İsteğe **Reddet** yanıtı verilirse, çalışana isteğin reddedildiğini bildiren bir e-posta göndermek isteyebilirsiniz.
+Yanıt reddedildiğinde, çalışana bir e-posta **göndermeniz ve isteğin**reddedildiğini bildirmek isteyebilirsiniz.
 
-Son olarak, onaylayandan gelen yanıt **Daha fazla bilgi gerekiyor** olduğunda, çalışana daha fazla bilgi sağlamasını istemek için bir e-posta göndermek isteyebilirsiniz.
+Son olarak, onaylayanın yanıtı **daha fazla bilgiye Ihtiyaç duydıysa**çalışana bir e-posta göndermek ve daha fazla bilgi sağlamak için çalışanı istemek isteyebilirsiniz.
 
-Akışta bunlardan herhangi birini yapmak için, akışınıza [**Koşul**](add-condition.md) veya **Geçiş** eylemi ekleyebilir ve ardından dinamik içerik seçiciden onay isteğinin **Sonuç** alanını seçin. Değerin Kabul Et, Daha fazla bilgi gerekiyor veya Reddet olduğunu onayladığınızdan emin olun.
+Akışta bunlardan herhangi birini yapmak için akışınıza bir [**koşul**](add-condition.md) veya bir **geçiş** eylemi ekleyin ve ardından dinamik içerik seçicisinden onay isteğinin **sonuç** alanını seçin. Değerin kabul edilip edilmeyeceğini doğrulayın, daha fazla bilgi gerekiyor veya Reddet.
 
-## <a name="respond-to-approval-requests-with-a-custom-response"></a>Onay isteklerini müşteri yanıtıyla yanıtlama
+## <a name="respond-to-approval-requests-with-a-custom-response"></a>Özel bir Yanıt ile onay isteklerine yanıt verme
 
-Onaylayanlar onay isteklerini e-postayla alır. İstekler Microsoft Flow'daki onay merkezinde de görüntülenir. 
+Onaylayanlar e-postada onay istekleri alır. Ayrıca, istekler Microsoft Flow onay merkezinde de görüntülenir. 
 
 ![Onay isteği e-postası](media/create-approval-response-options/approval-request-email.png)
 
-## <a name="learn-more"></a>Daha fazla bilgi
-- [Tek onaylayan akışları](modern-approvals.md) oluşturma
-- [Sıralı onay akışları](sequential-modern-approvals.md) oluşturma
+## <a name="learn-more"></a>Daha fazla bilgi edinin
+- [Tek onaylayan akışları](modern-approvals.md) oluştur
+- [Sıralı onaylayan akışları](sequential-modern-approvals.md) oluşturma

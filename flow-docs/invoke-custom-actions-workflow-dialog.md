@@ -1,6 +1,6 @@
 ---
-title: Bir iş akışından özel eylemler çağırma | Microsoft Docs
-description: İş akışından özel eylem çağırmayı öğrenin
+title: Bir iş akışından özel eylemleri çağırma | MicrosoftDocs
+description: Bir iş akışından özel bir eylemi çağırmayı öğrenin
 ms.custom: ''
 ms.date: 11/22/2018
 ms.reviewer: ''
@@ -22,52 +22,53 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 938410cf4484f8bed6509beee1d36c8cb3718e6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 9ed3c2114bfb167eb8d4d6a5670ccec8050ee9d0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64461371"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547430"
 ---
-# <a name="invoke-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemler çağırma
+# <a name="invoke-custom-actions-from-a-workflow"></a>Bir iş akışından özel eylemleri çağırma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-İş akışları, iş senaryolarını destekleyen birçok özelliğe sahiptir. Bir iş akışından bir kayıt için oluşturma, güncelleştirme ve silme gibi temel veri işlemi eylemlerini çağırmak birçok iş senaryosu için gerekli çözümleri sunacaktır. Ancak iş akışlarının özelliklerini doğrudan iş akışından çağrılan özel eylemlerin gücüyle birleştirdiğinizde kod yazmaya ihtiyaç duymadan uygulamanıza yepyeni iş senaryoları eklemiş olursunuz.  
+İş akışlarının iş senaryolarını destekleyen çok sayıda özelliği vardır. Bir iş akışı içinde oluşturma, güncelleştirme ve silme gibi temel veri işlemi eylemlerinin çağrılması, çok sayıda iş senaryosunu çözer. Ancak, iş akışlarının yeteneklerini doğrudan bir iş akışının içinden çağrılan özel eylemlerin gücüyle birlikte kullanırsanız, kod yazmak zorunda kalmadan uygulamanıza yeni bir iş senaryosu aralığı eklersiniz.  
   
- Şimdi iş akışından özel eylemin çağrıldığı bir senaryoya bakalım. Belirli bir fırsat için uygulanan indirim %20'yi aştığında yöneticinin onayını almak için özel bir eylem çağıracağız.  
+ Bir iş akışından özel bir eylemin çağrıldığı senaryoya göz atalım. Belirli bir fırsatın indirimi %20 ' sini aştığında yöneticinin onayını istemek için özel bir eylem çağıracağız.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Dynamics 365 müşteri katılımı örneği: Fırsat varlığını kullanarak özel eylem oluşturma
+## <a name="example-create-a-custom-action-using-the-opportunity-entity"></a>Örnek: fırsat varlığını kullanarak özel bir eylem oluşturma
   
-1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer)'nde **İşlemler**'i seçin.  
+1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) ' nde **işlem**' ı seçin.  
   
-2.  Gezinti çubuğunda, **Yeni**'yi seçin. İşlem bir ad verin ve **Eylem** kategorisini seçin.  
+2.  Gezinti çubuğunda **Yeni**' yi seçin. İşleme bir ad verin ve **eylem** kategorisini seçin.  
   
- İndirim durumunda onay almak için **Onay Süreci** adlı özel bir eylemi kullanacağız. Aşağıda görebileceğiniz gibi **SpecialNotes** adlı bir giriş parametresi ve yeni ileti oluşturup yöneticinin onayını almak üzere göndermek için **E-posta gönder** adımı ekledik.  
+ İndirimle ilgili bir onay istemek için, **onay işlemi**adlı özel bir eylem kullanıyoruz. Burada gösterildiği gibi, yeni bir ileti oluşturmak ve yöneticinin onayı için bir istek göndermek üzere bir giriş parametresi, **Specialnotes**ve **e-posta gönder** adımı ekledik.  
   
- ![Adım ekleme - e-posta gönder](media/enable-custom-action-approval-proces-sadd-email.png "Adım ekleme - e-posta gönder")  
+ ![Adım &#45; Gönder e-postası ekleme](media/enable-custom-action-approval-proces-sadd-email.png "Bir adım Gönder e-postası ekleyin")  
   
- E-posta iletisini yapılandırmak için **Özellikleri Ayarla**'yı seçin. Form açıldığında ekran görüntüsünde gördüğünüz gibi e-postaya özel notları ve diğer bilgileri eklemek için **Form Yardımcısı**'nı kullanın. Özel notları eklemek için imleci iletide görünmesini istediğiniz yere götürün ve **Form Yardımcısı**'nın **Ara** bölümündeki ilk açılan listeden **Bağımsız Değişkenler**'i, ikinci açılan listeden **SpecialNotes** değerini ve ardından **Tamam**'ı seçin.  
+ E-posta iletisini yapılandırmak için **Özellikleri ayarla**' yı seçin. Form açıldığında, ekran görüntüsünde vurgulanan şekilde e-postaya özel notlar ve diğer bilgileri eklemek için **Form Yardımcısını** kullanın. Özel notları eklemek için, imleci iletide görünmesini istediğiniz yere yerleştirin ve ardından **Form Yardımcısı**' nda, **Ara**' nın altında, Ilk açılan listede **bağımsız değişkenler** ' i seçin ve ikinci olarak **özelleştirilmiş notlar** ' ı seçin açılan liste ve sonra **Tamam**' ı seçin.  
   
- ![E-posta ayarlar](media/enable-custom-action-approval-process-setup-email.png "E-posta ayarları")  
+ ![E-postayı ayarlama](media/enable-custom-action-approval-process-setup-email.png "E-postayı ayarlama")  
   
- Eylemi bir iş akışından çağırabilmek için etkinleştirmeniz gerekir. Eylemi etkinleştirdikten sonra **Özellikleri görüntüle**'yi seçerek özelliklerini görüntüleyebilirsiniz.  
+ Bir iş akışından eylemi çağırabilmeniz için önce etkinleştirmeniz gerekir. Eylemi etkinleştirdikten sonra özellikleri **görüntüle**' yi seçerek özelliklerini görüntüleyebilirsiniz.  
   
- ![Özel eylemi etkinleştirme - onay süreci](media/enable-custom-action-approval-process-activate-action.png "Özel eylemi etkinleştirme - onay süreci")  
+ ![Özel eylem &#45; onay işlemini etkinleştir](media/enable-custom-action-approval-process-activate-action.png "Özel eylemi etkinleştirme-onay işlemi")  
   
 <a name="workflow"></a>   
-## <a name="invoke-a-custom-action-from-a-workflow"></a>Özel eylemi iş akışından çağırma  
+## <a name="invoke-a-custom-action-from-a-workflow"></a>Bir iş akışından özel bir eylem çağırma  
   
-1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer)'nde **İşlemler**'i seçin.   
+1. [Çözüm Gezgini](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) ' nde **işlem**' ı seçin.   
   
-2.  Gezinti çubuğunda, **Yeni**'yi seçin. İşlem bir ad verin ve **İş akışı** kategorisini seçin.  
+2.  Gezinti çubuğunda **Yeni**' yi seçin. İşleme bir ad verin ve **Iş akışı** kategorisini seçin.  
   
- Bir fırsat için indirim oranı %20'yi aştığında yöneticiden onay isteyen **Onay Süreci** özel eylemini çağıran bir iş akışı oluşturduk.  
+ Yöneticinin bir fırsat için %20 ' den fazla indirimle ilgili onayı gerektiğinde **onay süreci** özel eylemini çağıran bir iş akışı oluşturduk.  
   
  ![İş akışından eylem özelliklerini ayarlama](media/enable-custom-action-from-workflow.png "İş akışından eylem özelliklerini ayarlama")  
   
- Eylemin giriş özelliklerini **Özellikleri Ayarla**'yı seçerek belirleyebilirsiniz. Özel notlara fırsatın ilgili olduğu hesabın adını ekledik. **Form Yardımcısı**'nın **Ara** bölümündeki ilk açılan listeden **Hesap**, ikinci açılan listeden **Hesap Adı**'nı ve ardından **Tamam**'ı seçin. **Hedef** özelliği gereklidir ve sistem tarafından doldurulur. **Hedef** özelliğindeki **{Fırsat(Fırsat)}**, çağıran iş akışının üzerinde çalıştığı fırsattır. Alternatif olarak arama seçeneğiyle hedef özelliği için belirli bir fırsatı seçebilirsiniz.  
+ **Özelliği ayarla**' yı seçerek eylemin giriş özelliklerini ayarlayabilirsiniz. Özel notlardaki fırsatla ilgili bir hesap adı ekledik. **Form Yardımcısı**' nda, **Ara**' nın altında, ilk açılan listede **Hesap** ' ı seçin, ikinci açılan listede **Hesap adı** ' nı seçin ve ardından **Tamam**' ı seçin. **Target** özelliği gereklidir ve sistem tarafından doldurulur. **Target** özelliğindeki **{fırsat (Fırsat)}** , çağıran iş akışının üzerinde çalıştığı fırsatla aynı fırsattır. Alternatif olarak, arama kullanarak hedef özelliği için belirli bir fırsat seçebilirsiniz.  
   
- ![Onay Süreci eylemi için giriş parametrelerini ayarlama](media/enable-customaction-workflow-set-properties.png "Onay Süreci eylemi için giriş parametrelerini ayarlama")  
+ ![ApprovalProcess eylemi için giriş parametrelerini ayarla](media/enable-customaction-workflow-set-properties.png "ApprovalProcess eylemi için giriş parametrelerini ayarla")  
   
 
 

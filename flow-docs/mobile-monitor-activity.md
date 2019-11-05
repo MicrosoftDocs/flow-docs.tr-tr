@@ -1,6 +1,6 @@
 ---
-title: Etkinlikleri telefonunuzdan izleme | Microsoft Docs
-description: Her bir akışın kaç kez başarılı veya başarısız olduğunu, her bir çalıştırmanın ne zaman gerçekleştiğini ve ne kadar sürdüğünü görüntüleme
+title: Cihazınızı telefonunuzdan izleme | Microsoft Docs
+description: Her bir akışın kaç kez başarılı veya başarısız olduğunu, her bir çalıştırmanın ne kadar sürdüğünü ve ne kadar sürdüğünü görüntüleyin
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,75 +20,76 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 9696ff09f41822b9daeb84b748f32e1babaf5af1
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64467942"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73549012"
 ---
-# <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki etkinlikleri telefonunuzdan izleme
-Her bir akışın bugün, dün ve önceki günlerde kaç kez başarılı veya başarısız olduğunun bir özetini görüntüleyin. Her bir çalıştırmayla ilgili ayrıntıları (örneğin, çalıştırılma zamanı; her bir adımın ne kadar sürdüğü ve başarısız olduysa başarısız olma nedeni) keşfedin.
+# <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Telefonunuzdaki Microsoft Flow etkinliğini izleme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Her akışın bugün, dün ve önceki günlerde kaç kez başarılı veya başarısız olduğunu gösteren bir Özet görüntüleyin. Her çalıştırma hakkında, ne zaman çalıştığı, her adımın ne kadar süreceğine ilişkin ayrıntıları ve neden başarısız olursa, nedenini keşfet.
 
-**Önkoşullar**
+**Kaynakları**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZuYZ64K3tI?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-* [Desteklenen bir cihazda](getting-started.md#use-the-mobile-app) [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını yükleyin. Bu konu başlığında kullanılan grafikler, uygulamanın iPhone sürümünden alınmıştır ancak Android ve Windows Phone için de benzer grafikler sunulur.
-* Akışınız yoksa [Microsoft Flow'un web sitesinde](https://flow.microsoft.com/) bir akış oluşturun. Daha kolay test edebilmek için, bir dış olay beklemek yerine kendi kendinize tetikleyebileceğiniz bir akış kullanın.
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamayı [desteklenen bir cihaza](getting-started.md#use-the-mobile-app)yükler. Bu konudaki grafikler uygulamanın iPhone sürümünü yansıtır, ancak Android ve Windows Phone grafikleri benzerdir.
+* Zaten bir akışınız yoksa, [Microsoft Flow web sitesinde](https://flow.microsoft.com/)bir tane oluşturun. Daha kolay test için, bir dış olay beklemek yerine kendi kendinize tetikleyebileceğiniz bir tane kullanın.
 
 Bu öğreticideki akış, belirli bir adresten e-posta aldığınızda çalıştırılır:
 
-![Belirli adreslerden e-posta alındığında akış tetikleme](./media/mobile-monitor-activity/create-trigger.png)
+![Belirli bir adresten posta alındığında akış Tetikle](./media/mobile-monitor-activity/create-trigger.png)
 
-Bu tür bir akışı; test etme amaçlı olarak kişisel e-posta adresinizle ve akış hazır olduğunda gerçek kullanım için farklı bir adresle (örneğin, yöneticinizin adresi) yapılandırabilirsiniz.
+Bu tür bir akışı, test için kişisel e-posta adresiniz ve bir akış, gerçek kullanıma hazırlandığınızda farklı bir adres (örneğin, yöneticinizin) ile yapılandırabilirsiniz.
 
-Akış çalıştırıldığında telefonunuza şu söz diziminin bulunduğu özel bir anında iletme bildirimi gönderilir:
+Akış çalıştırıldığında, telefonunuza bu söz dizimi ile özel bir anında iletme bildirimi gönderilir:
 
-![Anında iletme bildirimi gönderme](./media/mobile-monitor-activity/create-event.png)
+![Anında iletme bildirimi gönder](./media/mobile-monitor-activity/create-event.png)
 
-**Not:** Ayrıca [akışlarınızı yönetin](mobile-manage-flows.md) mobil uygulamadan alınan.
+**Note:** Ayrıca, mobil uygulamadan [akışlarınızı yönetebilirsiniz](mobile-manage-flows.md) .
 
-## <a name="display-a-summary-of-activity"></a>Etkinlik özetini görüntüleme
+## <a name="display-a-summary-of-activity"></a>Etkinliğin özetini görüntüleme
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-1. Akışınız daha önce çalıştırılmadıysa veri oluşturmak için bir çalıştırma tetikleyin.
+1. Akışınız daha önce çalıştırılmadıysa, veri oluşturmak için bir çalıştırma tetikleyin.
    
     Verilerin uygulamada görünmesi biraz zaman alabilir.
-2. Mobil uygulamayı açtığınızda, **Etkinlik** sekmesi varsayılan olarak gösterilir.
+2. Varsayılan olarak **etkinlik** sekmesini gösteren mobil uygulamayı açın.
    
-    Bu sekme, bugünün verileri en üstte olacak şekilde verileri güne göre düzenler.
+    Bu sekme, verileri güne göre, bugünün verileri en üstte olacak şekilde düzenler.
    
-    ![Güne göre düzenlenen etkinlikler](./media/mobile-monitor-activity/activity-day2.png)
+    ![Güne göre düzenlenen etkinlik](./media/mobile-monitor-activity/activity-day2.png)
    
-    Her bir giriş, tetikleyici olaylarına ve eylemlerine karşılık gelen simgelerle birlikte bir akışın adını gösterir.
+    Her giriş, tetikleyici olaylarına ve eylemlerine karşılık gelen simgelerle birlikte bir akışın adını gösterir.
    
-    ![Her bir akışa ilişkin ad ve simgeler](./media/mobile-monitor-activity/activity-flow-name.png)
+    ![Her akış için ad ve simgeler](./media/mobile-monitor-activity/activity-flow-name.png)
    
-    Bir gün içinde en az bir akış çalıştırması başarılı olduysa bir giriş, akışın başarılı olma sayısını ve en son ne zaman başarılı olduğunu gösterir. Akış başarısız olduysa farklı bir giriş, buna ilişkin benzer bilgiler gösterir.
+    Bir gün içinde en az bir akış çalıştırması başarılı olduysa, bir giriş başarı sayısını ve en son başarılı olma süresini gösterir. Bir akış başarısız olursa, farklı bir giriş benzer bilgiler gösterir.
    
-    ![Başarılı ve başarısız olma özeti](./media/mobile-monitor-activity/activity-summary.png)
+    ![Başarı veya başarısızlık Özeti](./media/mobile-monitor-activity/activity-summary.png)
    
-    Akış bir anında iletme bildirimi gönderirse girişin altında, başarılı çalıştırmalar için gönderilen en son bildirimin metni görünür.
+    Akış bir anında iletme bildirimi gönderdiğinde en son bildirimin metni, başarılı çalıştırmalar için girişin en altında görünür.
    
     ![Anında iletme bildirimi örneği](./media/mobile-monitor-activity/activity-notification.png)
-3. Bir gün içinde birden fazla anında iletme bildirimi gönderilmişse son üç çalıştırmaya ilişkin bildirimleri görüntülemek için bildirim üzerinde sola kaydırın. Bir gün içinde dörtten fazla bildirim gönderilmişse **Daha fazla** seçeneği görünene kadar sola kaydırın ve tüm bildirimlerin listesini görüntülemek için bu seçeneğe dokunun.
+3. Günde birden fazla anında iletme bildirimi gönderildiyse, en fazla üç önceki çalıştırmanın bildirimlerini görüntülemek için bildirimde sola kaydırın. Günde dörtten fazla bildirim gönderildiyse, **daha fazla** bilgi görünene kadar sola kaydırın ve ardından tüm bildirimlerin listesini görüntülemek için bu seçeneğe dokunun.
    
     ![Anında iletme bildirimi örneği](./media/mobile-monitor-activity/activity-notification-list.png)
-4. Etkinlik özetine dönmek için **Geri**'ye dokunun.
+4. Etkinlik özetine dönmek için **geri** ' ye dokunun.
 5. Etkinlik özetini filtrelemek için sağ üst köşedeki simgeye dokunun.
    
-    Tüm girişleri, yalnızca başarısız olunan girişleri veya yalnızca anında iletme bildirimi içeren girişleri görüntüleyebilirsiniz.
+    Tüm girişleri, yalnızca hata girdilerini veya anında iletme bildirimleri içeren girdileri gösterebilirsiniz.
    
-    ![Tüm çalıştırmaları, yalnızca başarısız olunan durumları veya yalnızca bildirimleri gösterme](./media/mobile-monitor-activity/activity-filter.png)
+    ![Tüm çalıştırmaları, yalnızca arızaları veya yalnızca bildirimleri göster](./media/mobile-monitor-activity/activity-filter.png)
 
-## <a name="show-details-of-a-run"></a>Çalıştırma ayrıntılarını gösterme
-1. Etkinlik özetinde, en son çalıştırmaya ilişkin ayrıntıları göstermek için bir girişe dokunun.
+## <a name="show-details-of-a-run"></a>Bir çalıştırmanın ayrıntılarını göster
+1. Etkinlik özetinde, en son çalıştırmanın ayrıntılarını göstermek için bir girişe dokunun.
    
-     Her bir olay ve eylemle birlikte bunların başarılı veya başarısız olduğunu belirten bir simge görünür. Başarılı olduysa işlemin süresi de (saniye cinsinden) görünür.
+     Her olay ve eylem, olay veya eylemin başarılı veya başarısız olduğunu belirten bir simgeyle görüntülenir. Başarılı olduysa, geçen süre (saniye cinsinden) de görüntülenir.
    
-    ![Çalıştırma ayrıntıları](./media/mobile-monitor-activity/activity-icons.png)
-2. Ekranın alt kısmında, akışın tüm çalıştırmalarını listelemek için **See previous runs**'a (Önceki çalıştırmaları göster) ve ardından ayrıntılarını görüntülemek için bir çalıştırmaya dokunun.
+    ![Bir çalıştırmanın ayrıntıları](./media/mobile-monitor-activity/activity-icons.png)
+2. Ekranın alt kısmında, akışın tüm çalıştırmalarını listelemek için **önceki çalıştırmaları görüntüle** ' ye dokunun ve sonra ayrıntılarını göstermek için bir çalıştırmaya dokunun.
    
     ![Başarı/başarısızlık geçmişi](./media/mobile-monitor-activity/history-mixed.png)
 

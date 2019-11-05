@@ -1,11 +1,11 @@
 ---
-title: Kurumsal geliştiriciler, ISV’ler ve iş ortakları için Microsoft Flow | Microsoft Docs
-description: Microsoft Flow için çözüm geliştirmeye giriş.
+title: Kurumsal geliştiriciler, ISV 'Ler ve iş ortakları için Microsoft Flow | Microsoft Docs
+description: Microsoft Flow çözümleri geliştirmeye giriş.
 services: ''
 suite: flow
 documentationcenter: na
-author: mgblythe
-manager: anneta
+author: MSFTMan
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,76 +14,77 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
-ms.author: mblythe
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: f26143533e84bc3ea8bc0784fef3c56eeb0551e1
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455880"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547823"
 ---
-# <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Kurumsal geliştiriciler, ISV’ler ve iş ortakları için Microsoft Flow
+# <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Kurumsal geliştiriciler, ISV 'Ler ve iş ortakları için Microsoft Flow
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Bir geliştirici olarak Microsoft Flow’u genişleterek kuruluşlar ve müşteriler için çok daha güçlü çözümler sağlayabilirsiniz.
+Bir geliştirici olarak, kuruluşlar ve müşteriler için daha da güçlü çözümler sağlayan Microsoft Flow genişletebilirsiniz.
 
 ## <a name="microsoft-flow-for-enterprise-developers"></a>Kurumsal geliştiriciler için Microsoft Flow
 
-Bir kurumsal geliştirici olarak, Microsoft Flow’da sağlam, gereksinimlere uyarlanmış çözümler oluşturma yönünde kuruluşunuzu güçlendirin:
+Kurumsal bir geliştirici olarak, Microsoft Flow üzerinde güçlü özel çözümler oluşturmak için kuruluşunuzu güçlendirin:
 
-- **Özel bağlayıcılar derleme**: Microsoft Flow üzerinden kuruluşunuzun verilerine ve web hizmetlerine bağlanmak üzere özel bağlayıcılar geliştirin. [Daha fazla bilgi](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Özel bağlayıcılar oluşturun**: Microsoft Flow aracılığıyla kuruluşunuzun verilerine ve Web hizmetlerine bağlanmak için özel bağlayıcılar geliştirin. [Daha fazla bilgi edinin](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Azure işlevleri oluşturma**: Özel sunucu tarafı mantığıyla uygulamaların kapsamını genişletmek için Azure İşlevleri hazırlayın. [Daha fazla bilgi](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Azure Işlevleri oluşturun**: uygulamaları özel sunucu tarafı mantığıyla genişletmek Için Azure işlevleri oluşturun. [Daha fazla bilgi edinin](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
-- **Microsoft Flow ekleme**: Tümleşik çözümler oluşturmak, iş akışlarının veya süreçlerin kuruluşunuzdaki kişilerin zaten çalışmakta olduğu yerlerde görünmesini sağlamak için Microsoft Flow’u doğrudan web siteyi deneyimlerinize ekleyin. [Daha fazla bilgi](embed-flow-dev.md)
+- **Microsoft Flow ekleyin**: doğrudan Web sitenizin deneyimlerinizde, Tümleşik çözümler oluşturmak, iş akışları veya süreçlerinizi kuruluşunuzdaki kişilerin zaten yaptıkları yerde kullanıma sunmak için Microsoft Flow ekleyin. [Daha fazla bilgi edinin](embed-flow-dev.md)
 
-## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>ISS’ler ve Microsoft iş ortakları için Microsoft Flow
+## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>ISV 'Ler ve Microsoft iş ortakları için Microsoft Flow
 
-Bir Microsoft iş ortağı veya Bağımsız Yazılım Satıcısı (ISV) olarak ürünlerinizi müşterilerinizin verileriyle ve iş süreçleriyle tümleştirilecek şekilde genişleterek müşteriler tarafından benimsenme hızınızı artırın ve uygulamanızın bir parçası olarak iş süreçlerini otomatikleştirmeye yönelik iş akışları ekleyip bunları özelleştirin. Aşağıdaki yedi adımı tamamladığınızda, uygulamanız 200’ün üzerindeki farklı hizmete bağlanabilen, bulut ölçekli sağlam bir iş akışı yapısından yararlanma olanağına sahip olacak.
+Bir Microsoft iş ortağı veya bağımsız yazılım satıcısı (ISV) olarak, ürünlerinizi müşterilerinizin verileri ve iş süreçlerinizle tümleşecek şekilde genişleterek müşteri benimsemesini hızlandırın ve iş süreçlerini bir parçası olarak otomatikleştirmek için iş akışları ekleyin ve özelleştirin. Uygulamanızı. Aşağıdaki yedi adımı tamamladıktan sonra, uygulamanız 200 ' den farklı hizmetlere bağlanabilecek sağlam bir bulut ölçeğinde iş akışı altyapısından faydalanmanıza olanak sağlar.
 
-| Aşama | Adım | Gerektiği durumlar |
+| Aşaması | Indan | Gerektiğinde? |
 | --- | --- | --- |
-| Geliştirme | 1. Verilerinize yönelik özel bağlayıcı oluşturun | Kendi ISV verilerinizi PowerApps veya Microsoft Flow’da kullanıma sunmak istiyorsanız |
-| Geliştirme | 2. Kullanıcıların kimliklerini Azure Active Directory (Azure AD) ile doğrulamak için uygulamanıza yönelik destek ekleyin | Microsoft Flow kullanıcı arabirimini eklemek veya çözümünüzü Microsoft AppSource’ta listelemek istiyorsanız | 
-| Geliştirme | 3. Web tabanlı iframe’imizi kullanarak uygulamanıza Microsoft Flow kullanıcı arabirimini ekleyin | Uygulamanıza akış oluşturma veya yönetme özelliği eklemek istiyorsanız | 
-| Geliştirme | 4. Akış şablonları oluşturun ve yayınlayın | Müşterilerinize yönelik akışları önceden oluşturmak istiyorsanız | 
-| Geliştirme | 5. Programlı olarak akış dağıtmak için uygulama mantığı ekleyin | Müşterileriniz için önceden oluşturulmuş akışlarınızı otomatik olarak dağıtmak istiyorsanız | 
-| Dağıtım | 6. Microsoft Bulut Çözümü Sağlayıcısı programı aracılığıyla müşterilerinize Microsoft Flow lisansları verin | Müşterilerinizin Office 365 veya Dynamics 365 lisansları yoksa |
-| Dağıtım | 7. Çözümünüzü Microsoft AppSource’da listeleyin | ISV çözümünüzün görünürlüğünü artırmak için önerilir |
+| Geliştirmeye | 1. verilerinize özel bir bağlayıcı oluşturun | Kendi ISV verilerinizi PowerApps veya Microsoft Flow kullanıma sunmak istiyorsanız |
+| Geliştirmeye | 2. Azure Active Directory (Azure AD) ile kullanıcıların kimliğini doğrulamak için uygulamanıza yönelik destek ekleyin | Microsoft Flow Kullanıcı arabirimini veya listeyi eklemek istiyorsanız Microsoft AppSource | 
+| Geliştirmeye | 3. Web tabanlı iframe 'imizi kullanarak Microsoft Flow Kullanıcı arabirimini uygulamanıza ekleyin | Uygulamanızda akış oluşturmayı veya yönetimini eklemek istiyorsanız | 
+| Geliştirmeye | 4. akış şablonları oluşturma ve yayımlama | Müşterileriniz için akışları önceden oluşturmak istiyorsanız | 
+| Geliştirmeye | 5. program aracılığıyla akışları dağıtmak için uygulama mantığı ekleyin | Müşterileriniz için önceden oluşturulmuş akışlarınızı otomatik olarak dağıtmak istiyorsanız | 
+| Dağılı | 6. müşterilerinizin Microsoft Bulut çözüm sağlayıcısı programı aracılığıyla Microsoft Flow için lisanslarına izin verin | Müşterilerinizin Office 365 veya Dynamics 365 lisansı yoksa |
+| Dağılı | 7. Microsoft AppSource çözümünüzü listeleyin | ISV çözümünüzün görünürlüğünü artırmak için önerilir |
 
-### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. API’lerinize bağlanma VEYA müşterilerin API’lerinize bağlanmasını mümkün kılma
+### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. API 'lerinize bağlanma veya müşterilerin API 'lerinize bağlanmasını sağlama
 
-Bir ISV olarak genellikle müşterilerin akışlarınız aracılığıyla erişmesini istediğiniz özel verileriniz olur. Özel bir bağlayıcı üzerinden tüm verilerinizi erişime açabilirsiniz. [Daha fazla bilgi](https://docs.microsoft.com/connectors/custom-connectors/)
+ISV olarak, genellikle müşterilerin akışlarınızla erişmesini istediğiniz özel verileriniz vardır. Özel bir bağlayıcı aracılığıyla verilerinizin herhangi birine erişmesini sağlayabilirsiniz. [Daha fazla bilgi edinin](https://docs.microsoft.com/connectors/custom-connectors/)
 
-Oluşturduğunuz bir bağlayıcı müşterilerinizin kullanımına sunmanın iki yolu vardır:
-- Bağlayıcı, REST API’ler veya PowerShell aracılığıyla müşterinin kiracısına dağıtılabilir.
-- Özel bağlayıcının tüm kullanıcılar tarafından genel olarak kullanılabilir olmasını istiyorsanız sertifika almak için bağlayıcınızı gönderebilirsiniz. [Daha fazla bilgi](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+Oluşturulduktan sonra, bağlayıcıyı müşterileriniz için kullanılabilir hale getirmek için iki yol vardır:
+- Bağlayıcı, REST API 'Leri veya PowerShell aracılığıyla Müşterinin kiracısına dağıtılabilir.
+- Özel bağlayıcıyı tüm kullanıcılar için genel olarak kullanılabilir hale getirmek için bağlayıcınızı sertifika için gönderebilirsiniz. [Daha fazla bilgi edinin](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-### <a name="2-authentication"></a>2. Kimlik doğrulaması 
+### <a name="2-authentication"></a>2. kimlik doğrulaması 
 
-Uygulamanızın REST API’leri çağırması ve kimliği doğrulanmış kullanıcı arabirimi eklemesi için son kullanıcıların ve müşterilerin kimliğini Azure AD federasyon çoklu oturum açma kullanarak doğrulaması gerekir. AAD federasyon SSO’yu etkinleştirme hakkında bilgi edinmek için [buraya gidin](https://identity.microsoft.com/). Kimlik doğrulamasız erişimi veya Azure AD dışındaki kimlik sağlayıcıları ile erişimi desteklemiyoruz. 
+REST API 'Leri çağırmak ve kimliği doğrulanmış kullanıcı arabirimini eklemek için, uygulamanızın son kullanıcıların ve müşterilerin kimliğini doğrulamak için Azure AD Federasyon çoklu oturum açma 'yı kullanması gerekir. AAD Federal SSO 'Yu etkinleştirme hakkında daha fazla bilgi için [buraya gidin](https://identity.microsoft.com/) . Kimliği doğrulanmamış erişim veya Azure AD 'den farklı kimlik sağlayıcılarıyla erişim desteğiniz yok. 
 
-### <a name="3-embedding-ui-components"></a>3. Kullanıcı arabirimi bileşenleri ekleme
+### <a name="3-embedding-ui-components"></a>3. UI bileşenlerini katıştırma
 
-Uygulamanıza Microsoft Flow'u ekleyerek uygulamanız ile Microsoft Flow'un desteklediği tüm diğer hizmetler arasında derin ve bağlam içi bir tümleştirme sağlayabilirsiniz. [Daha fazla bilgi](embed-flow-dev.md)
+Uygulamanız ile Microsoft Flow desteklediği tüm diğer hizmetler arasında derin ve bağlam içi tümleştirmeyi sağlamak için Microsoft Flow ekleyin. [Daha fazla bilgi edinin](embed-flow-dev.md)
 
-### <a name="4-create-and-publish-flow-templates"></a>4. Akış şablonları oluşturun ve yayınlayın
+### <a name="4-create-and-publish-flow-templates"></a>4. akış şablonları oluşturma ve yayımlama
 
-Bağlayıcınız olduktan sonra, hizmetinizin nasıl kullanılacağını gösteren şablonlar yayımlamalısınız. Bu şablonlar, kullanıcıların öğrenmek ve ardından kendi benzersiz iş akışlarına genişletmek için kullanabilecekleri örnekler olmalıdır. [Daha fazla bilgi](../publish-a-template.md)
+Bir Bağlayıcınız olduktan sonra, hizmetinizin nasıl kullanılacağını gösteren şablonlar yayımlamanız gerekir. Bu şablonlar, kullanıcıların kendi benzersiz iş akışlarına öğrenmek ve daha sonra genişletmek için kullanabileceği örnekler olarak görev yapar. [Daha fazla bilgi edinin](../publish-a-template.md)
 
-### <a name="5-deployment"></a>5. Dağıtım
+### <a name="5-deployment"></a>5. dağıtım
 
-Son kullanıcıların otomatik olarak kullanabilecekleri akışlara erişebilmesini sağlamak için akışları kullanıcının Azure AD kiracısına dağıtın. REST API'lerimizi veya PowerShell’i kullanarak dağıttığınız bir dağıtım paketi kullanın. [Daha fazla bilgi](https://docs.microsoft.com/powerapps/export-import-packages)
+Son kullanıcılara otomatik olarak kullanabilecekleri akışlara erişim sağlamak için akışları kullanıcının Azure AD kiracısına dağıtın. REST API 'lerimizi veya PowerShell 'i kullanarak dağıttığınız bir dağıtım paketi kullanın. [Daha fazla bilgi edinin](https://docs.microsoft.com/powerapps/export-import-packages)
 
 ### <a name="6-licensing"></a>6. Lisanslama
 
-Müşterilerinizin zaten Office 365 veya Dynamics 365 lisansı varsa, bu lisanslar kullanıcıların Azure AD’de oturum açmak için kullandığı kimliklerle ilişkilendirilir ve sizin başka bir lisanslama işlemi yapmanız gerekmez. Bununla birlikte, müşterileriniz Office 365 veya Dynamics 365 kullanmıyorsa Microsoft Flow için müşterileriniz adına kullanım hakları edinmeniz ve uygulamanızdaki ekli bileşenlerden yararlanabilmeleri için lisanslı olmalarını sağlamanız gerekir.
+Müşterileriniz zaten Office 365 veya Dynamics 365 ' ye sahipseniz ve bu lisanslar kullanıcıların Azure AD ile oturum açmasını sağlayan kimliklerle ilişkiliyse, sizin için ek lisans gereksinimleri yoktur. Ancak, müşterileriniz Office 365 veya Dynamics 365 ' i kullanıyorsa, uygulamanızda bu ekli bileşenlerden faydalanmak için lisanslanmalarını sağlamak üzere Microsoft Flow için kullanım hakları edinmeniz gerekir.
 
-Müşterileriniz adına lisans edinebilmeniz için [Microsoft Bulut Çözümü Sağlayıcısı](https://partner.microsoft.com/cloud-solution-provider) programını sunuyoruz. Microsoft Flow için plan ve özellik ayrıntılarını öğrenmek üzere göz atmanız gereken iki farklı [fiyatlandırma planı](https://flow.microsoft.com/pricing/) sunulmaktadır.
+Müşterilerinizin adına lisans almak için [Microsoft bulut çözüm sağlayıcısı](https://partner.microsoft.com/cloud-solution-provider) programı sunuyoruz. Microsoft Flow için kullanılabilen iki farklı [fiyatlandırma planı](https://flow.microsoft.com/pricing/) vardır ve bu, plan ve özellik ayrıntılarını denetlemeniz gerekir.
 
-### <a name="7-list-on-appsource"></a>7. AppSource’ta listeleme
+### <a name="7-list-on-appsource"></a>7. AppSource üzerinde listeleme
 
-Microsoft Flow’u uygulamanızla tümleştirdikten sonra uygulamanızı AppSource’ta listeleyebilirsiniz. AppSource sayesinde bir uygulama oluşturup bu uygulamayı yeni müşterilerin test sürüşü yapması için AppSource’ta yayımlayarak işletmenize yeni müşteri adayları kazandırabilirsiniz. [Daha fazla bilgi](dev-appsource-test-drive.md)
+Uygulamanıza Microsoft Flow tümleştirdikten sonra, bunu AppSource 'ta listeleyebilirsiniz. AppSource ile, bir uygulama oluşturup yeni müşterilerin test sürüşi için AppSource 'ta yayımlayarak, işletmenize yeni müşteri adayları oluşturabilirsiniz. [Daha fazla bilgi edinin](dev-appsource-test-drive.md)

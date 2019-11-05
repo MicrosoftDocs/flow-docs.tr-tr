@@ -1,6 +1,6 @@
 ---
-title: PowerApps’te iş akışı aşamalarını ve adımlarını yapılandırma | MicrosoftDocs
-description: İş akışı adımlarının nasıl yapılandırılacağını öğrenin
+title: PowerApps 'teki iş akışı aşamalarını ve adımlarını yapılandırma | MicrosoftDocs
+description: İş akışı adımlarını yapılandırmayı öğrenin
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -18,22 +18,23 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 4239e939f9522b4b3a22e56dfc69275482b017a7
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456153"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547063"
 ---
-# <a name="configure-workflow-stages-and-steps"></a>İş akışı aşamalarını ve adımlarını yapılandırma
+# <a name="configure-workflow-stages-and-steps"></a>İş akışı aşamalarını ve adımları yapılandırın
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-İş akışlarını tasarlarken, aşamalarda ve adımlarda gerçekleştirmek istediğiniz mantığı dahil etme seçeneğiniz vardır.  
+İş akışları tasarladığınızda, aşamalar ve adımlarda gerçekleştirmek istediğiniz mantığı içeren seçeneğiniz vardır.  
   
- **Aşamalar**  
- Aşamalar, iş akışı mantığının okunmasını kolaylaştırır ve iş akışı mantığını açıklar. Ancak aşamalar, iş akışlarının mantığını veya davranışını etkilemez. Bir işlemin aşamaları varsa, işlemdeki tüm adımlar bir aşamada yer almalıdır.  
+ **Verisi**  
+ Aşamalar, iş akışı mantığını daha kolay okunabilir hale getirir ve iş akışı mantığını açıklar. Ancak aşamalar, iş akışlarının mantığını veya davranışını etkilemez. Bir işlemde aşamalar varsa, işlemdeki tüm adımlar bir aşama ile birlikte bulunmalıdır.  
   
- **Adımlar**  
- Adımlar, bir iş akışındaki iş mantığı birimidir. Adımlar, koşulları, eylemleri, diğer adımları veya bu öğelerin birleşimini içerebilir.  
+ **Olanları**  
+ Adımlar, iş akışı içindeki bir iş mantığı birimidir. Adımlar koşulları, eylemleri, diğer adımları veya bu öğelerin birleşimini içerebilir.  
   
 <a name="BKMK_ActionsWorkflowProcessesCanPerform"></a>  
  
@@ -41,78 +42,78 @@ ms.locfileid: "64456153"
 
  İş akışı işlemleri, aşağıdaki tabloda listelenen eylemleri gerçekleştirebilir.  
   
-|Eylem|Açıklama|  
+|Ön|Açıklaması|  
 |------------|-----------------|  
-|**Kayıt Oluştur**|Bir varlık için yeni bir kayıt oluşturur ve özniteliklere seçtiğiniz değerleri atar.|  
-|**Kaydı Güncelleştir**|İş akışının çalışmakta olduğu kaydı, N:1 ilişkilerinde bu kayıtla bağlantılı herhangi bir kaydı veya önceki adımlar tarafından oluşturulan tüm kayıtları güncelleştirebilirsiniz.|  
-|**Kaydı Ata**|İş akışının çalışmakta olduğu kaydı, N:1 ilişkisinde bu kayıtla bağlantılı herhangi bir kaydı veya önceki adımlar tarafından oluşturulan tüm kayıtları atayabilirsiniz.|  
-|**E-posta Gönder**|Bir e-posta gönderir. Yeni bir e-posta iletisi oluşturmayı veya iş akışının çalışmakta olduğu kaydın varlığı ya da varlık ile N:1 ilişkisi olan varlıklar veya önceki adımlar tarafından oluşturulan kayıtların varlığı için yapılandırılmış bir e-posta şablonunu kullanmayı seçebilirsiniz.|  
-|**Alt İş Akışını Başlat**|Alt iş akışı olarak yapılandırılmış bir iş akışı işlemi başlatır.|  
-|**Durumu Değiştir**|İşlemin çalışmakta olduğu kaydın, N:1 ilişkisinde bu kayıtla bağlantılı herhangi bir kaydın veya önceki adımlar tarafından oluşturulan tüm kayıtların durumunu değiştirir.|  
-|**İş Akışını Durdur**|Geçerli iş akışını durdurur. **Başarılı Oldu** veya **İptal Edildi** durumunu ayarlayabilir ve bir durum iletisi belirtebilirsiniz.<br /><br /> Bir olay için gerçek zamanlı iş akışları yapılandırıldığında, iptal edildi durumundaki bir iş akışı durdurulduğunda olay eyleminin tamamlanması engellenir. Daha fazla bilgi için bkz. [Gerçek zamanlı iş akışlarını kullanma](configure-workflow-steps.md#BKMK_SynchronousWorkflows).|  
-|**Özel Adım**|Geliştiriciler, eylemleri tanımlayan özel iş akışı adımları oluşturabilir. Varsayılan olarak, kullanılabilir bir özel adım yoktur.|  
+|**Kayıt oluştur**|Bir varlık için yeni bir kayıt oluşturur ve öznitelikleri seçtiğiniz değerleri atar.|  
+|**Kaydı güncelleştir**|İş akışının üzerinde çalıştığı kaydı, bir N:1 ilişkilerde bu kayıtla bağlantılı kayıtlardan herhangi birini veya önceki adımlarla oluşturulan kayıtları güncelleştirebilirsiniz.|  
+|**Kayıt ata**|İş akışının üzerinde çalıştığı kaydı, bir N:1 ilişkisi ile ilgili kayda bağlı kayıtlardan herhangi birini veya önceki adımlarla oluşturulmuş kayıtları atayabilirsiniz.|  
+|**E-posta gönder**|Bir e-posta gönderir. Yeni bir e-posta iletisi oluşturmayı veya iş akışının üzerinde çalıştığı kaydın varlığı için yapılandırılmış bir e-posta şablonunu ya da varlıkla bir N:1 ilişkisine sahip olan herhangi bir varlık ya da önceki adımlarla oluşturulan tüm kayıtlar için varlığı kullanmayı seçebilirsiniz.|  
+|**Alt Iş akışını Başlat**|Alt iş akışı olarak yapılandırılmış bir iş akışı işlemini başlatır.|  
+|**Değişiklik durumu**|İşlemin üzerinde çalıştığı kaydın durumunu, bir N:1 ilişkisiyle ilgili kayıtla bağlantılı kayıtlardan herhangi birini veya önceki adımlarla oluşturulmuş kayıtları değiştirir.|  
+|**Iş akışını durdur**|Geçerli iş akışını sonlandırır. **Başarılı** ya da **iptal edildi** durumunu ayarlayabilir ve bir durum iletisi belirtebilirsiniz.<br /><br /> Bir olay için gerçek zamanlı iş akışları yapılandırıldığında, durumu iptal edildi olan bir iş akışını durdurmak olay eyleminin tamamlanmasını önler. Daha fazla bilgi için bkz. [gerçek zamanlı iş akışları kullanma](configure-workflow-steps.md#BKMK_SynchronousWorkflows) .|  
+|**Özel adım**|Geliştiriciler, eylemleri tanımlayan özel iş akışı adımları oluşturabilir. Varsayılan olarak kullanılabilir özel bir adım yoktur.|  
   
 ### <a name="setting-record-values"></a>Kayıt değerlerini ayarlama  
 
- Bir kayıt oluşturduğunuzda, kayıt için değerler ayarlayabilirsiniz. Bir kaydı güncelleştirdiğinizde, değerleri ayarlayabilir, ekleyebilir, artırabilir, azaltabilir, çarpabilir veya temizleyebilirsiniz.  
+ Bir kayıt oluşturduğunuzda kayıt değerlerini ayarlayabilirsiniz. Bir kaydı güncelleştirdiğinizde, değerleri ayarlayabilir, ekleyebilir, arttırıp azaltacak, çarpmanız veya temizleyemezsiniz.  
   
- **Özellikleri Ayarla** seçeneğini belirlediğinizde, size varlık için varsayılan formu gösteren bir iletişim kutusu açılır.  
+ **Özellikleri ayarla**' yı seçtiğinizde, varlık için varsayılan formu gösteren bir iletişim kutusu açılır.  
   
- İletişim kutusunun alt kısmında, formda yer almayan ek alanların bir listesini görebilirsiniz.  
+ İletişim kutusunun alt kısmında, formda bulunmayan ek alanların bir listesini görebilirsiniz.  
   
- Tüm alanlar için bir statik değer ayarlayabilirsiniz; bu, iş akışı tarafından ayarlanacaktır.  
+ Herhangi bir alan için, bir statik değer ayarlayabilirsiniz ve bu, iş akışı tarafından ayarlanır.  
   
- İletişim kutusunun sağ tarafındaki **Form Yardımcısı**, size geçerli kaydın bağlamından dinamik değerler ayarlama veya ekleme yeteneği sunar. Bu, varlık için N:1 (çok-bir) ilişkilerinden erişilebilen ilgili kayıtlardaki değerleri içerir.  
+ İletişim kutusunun sağ tarafında **Form Yardımcısı** , geçerli kayıt bağlamından dinamik değerler ayarlama veya ekleme olanağı sunar. Bu, varlığa yönelik N:1 (çoktan bire) ilişkilerinden erişilebilen ilgili kayıtlardan değerler içerir.  
   
- **Form Yardımcısı**’nda kullanılabilir olan seçenekler, formda seçtiğiniz alana bağlıdır. Bir dinamik değer ayarladığınızda, dinamik verilerin nereye dahil edileceğini gösteren, ‘dinamik veri alanı’ olarak da bilinen sarı bir yer tutucu görürsünüz. Değeri kaldırmak istiyorsanız, tek yapmanız gereken dinamik veri alanını seçip silmektir. Metin alanları için, statik ve dinamik verilerin bileşimini kullanabilirsiniz.  
+ **Form Yardımcısı** 'nda bulunan seçenekler, formda seçtiğiniz alana göre değişir. Dinamik bir değer ayarladığınızda, dinamik verilerin nereye ekleneceğini gösteren bir ' başlık ' olarak bilinen sarı bir yer tutucu görürsünüz. Değeri kaldırmak istiyorsanız, yalnızca başlık ' ı seçin ve silin. Metin alanları için statik ve dinamik verilerin bir bileşimini kullanabilirsiniz.  
   
- Dinamik değerler olduğunda, bir alanın veya ilgili varlığın ayarlamak istediğiniz değeri içerdiğinden emin olamazsınız. Aslında denemelik birkaç alan ayarlayabilir ve değeri ayarlayıp yeşil okları kullanarak bunları sıralayabilirsiniz. İlk alan veri içermiyorsa ikinci alan denenir ve bu şekilde devam eder. Alanlardan herhangi bir veri içermiyorsa, kullanılacak varsayılan bir değer belirtebilirsiniz.  
+ Dinamik değerlerle, bir alanın veya ilgili varlığın ayarlamak istediğiniz değere sahip olduğunu bilemezsiniz. Gerçekten denemek için bir dizi alan ayarlayabilir ve değeri ayarlayabilir ve yeşil okları kullanarak bunları sırayla sıralayabilirsiniz. İlk alan veri içermiyorsa ikinci alan denenir ve bu şekilde devam eder. Alanların hiçbirinde veri yoksa, kullanılacak varsayılan bir değer belirtebilirsiniz.  
   
 <a name="BKMK_SettingConditionsForWorkflowActions"></a>   
 
 ## <a name="setting-conditions-for-workflow-actions"></a>İş akışı eylemleri için koşulları ayarlama  
 
- Uygulayacağınız eylemler çoğu zaman koşullara bağlıdır. İş akışı işlemleri, koşulları ayarlamanın ve istediğiniz sonuçları almak için dallanma mantığı oluşturmanın birçok yolunu sağlar. İş akışı işleminin çalıştırıldığı kaydın, N:1 ilişkisi olan bu kayıtla bağlantı herhangi bir kaydın değerlerini veya işlemin içindeki değerleri denetleyebilirsiniz  
+ Uyguladığınız eylemler genellikle koşullara bağlıdır. İş akışı işlemi, istediğiniz sonuçları almak için koşullar ayarlamak ve dallanma mantığı oluşturmak için çeşitli yollar sağlar. İş akışı işleminin çalıştırıldığı kaydın değerlerini, bir N:1 ilişkisiyle ilgili kayda bağlı kayıtlardan herhangi birini veya işlemin kendisi içindeki değerleri kontrol edebilirsiniz  
   
-|Koşul Türü|Açıklama|  
+|Koşul türü|Açıklaması|  
 |--------------------|-----------------|  
-|**Denetim Koşulu**|Mantıksal bir "if-\<condition> then" deyimi.<br /><br /> İş akışının çalışmakta olduğu kayıt, N:1 ilişkilerinde bu kayıtla bağlantılı herhangi bir kayıt veya önceki adımlar tarafından oluşturulan tüm kayıtlar için geçerli değerleri denetleyebilirsiniz. Bu değerlere göre, koşul true olduğunda ek adımlar tanımlayabilirsiniz.<br /><br /> "if-\<condition> then" deyiminde aşağıdaki işleçleri kullanabilirsiniz: **Eşittir**, **Eşit Değildir**, **Veri İçerir**, **Veri İçermez**, **Altındadır** ve **Altında Değildir**. **Not:**  **Altındadır** ve **Altında Değildir**, hiyerarşik işleçlerdir. Yalnızca bir hiyerarşik ilişki tanımlanmış olan varlıklarda kullanılabilir. Tanımlı hiyerarşik ilişkisi olmayan varlıklarda bu işleçleri kullanmayı denerseniz şu hata iletisini görürsünüz: “Tanımlı bir hiyerarşik ilişkisi bulunmayan bir varlıkta hiyerarşik işleç kullanıyorsunuz. Varlığı hiyerarşik yapın (bir ilişkiyi hiyerarşik olarak işaretleyerek) veya farklı bir işleç kullanın.” Hiyerarşik ilişkiler hakkında daha fazla bilgi için bkz. [Hiyerarşik olarak ilgili verileri tanımlama ve sorgulama](/powerapps/maker/common-data-service/define-query-hierarchical-data). Tablonun altındaki ekran görüntüsü, **Altındadır** ve **Altında Değildir** hiyerarşik işleçlerini kullanan iş akışı işleminin tanımına bir örnektir.|  
-|**Koşullu Dal**|Mantıksal bir "else-if-then" deyimi, düzenleyici, “Otherwise, if \<condition> then:” metnini kullanır.<br /><br /> Önceden tanımladığınız bir denetim koşulu seçin; böylece denetim koşulu false değerini döndürdüğünde ek adımlar tanımlamak için bir koşullu dal ekleyebilirsiniz.|  
-|**Varsayılan Eylem**|Mantıksal bir "else" deyimi. düzenleyici “Otherwise:” metnini kullanır.<br /><br /> Önceden tanımladığınız bir denetim koşulu, koşullu dal, bekleme koşulu veya paralel bekleme dalı seçin; böylece koşul veya dal öğelerinde tanımlanan ölçütlerle eşleşmeyen tüm durumlara yönelik adımlar tanımlamak için varsayılan bir eylem kullanabilirsiniz.|  
-|**Bekleme Koşulu**|Arka plan iş akışının, koşul tarafından tanımlanan ölçütler yerine getirilinceye kadar kendisini duraklatmasını sağlar. Bekleme koşulundaki ölçütler karşılandığında iş akışı otomatik olarak yeniden başlar.<br /><br /> Gerçek zamanlı iş akışları, bekleme koşullarını kullanamaz.|  
-|**Paralel Bekleme Dalı**|Yalnızca ilk ölçüt karşılandığında gerçekleştirilen ilgili bir dizi ek adım ile bir arka plan iş akışı için alternatif bir bekleme koşulu tanımlar. İş akışı mantığınızda zaman sınırları oluşturmak için paralel bekleme dalları kullanabilirsiniz. Bunlar, iş akışının bir bekleme koşulunda tanımlanan ölçütler karşılanıncaya kadar süresiz olarak beklemesinin engellenmesine yardımcı olur.|  
-|**Özel Adım**|Geliştiriciler, koşulları tanımlayan özel iş akışı adımları oluşturabilir. Varsayılan olarak, kullanılabilir bir özel adım yoktur.|  
+|**Koşulu denetle**|Mantıksal bir "if-\<koşulu > then" deyimidir.<br /><br /> İş akışının üzerinde çalıştığı kayıt için geçerli değerleri, N:1 ilişkilerde bu kayıtla bağlantılı kayıtlardan herhangi birini veya önceki adımlarla oluşturulmuş kayıtları kontrol edebilirsiniz. Bu değerlere bağlı olarak, koşul doğru olduğunda ek adımlar tanımlayabilirsiniz.<br /><br /> "If-\<Condition > then" ifadesinde, şu işleçleri kullanabilirsiniz: **eşittir**, **eşit değildir**, **veri Içerir** **, altında** **değil**, **veri içermez**. **Note:**  Altında **ve** **altında değil** hiyerarşik işleçlerdir. Bunlar yalnızca tanımlanmış hiyerarşik bir ilişkiye sahip olan varlıklarda kullanılabilir. Hiyerarşik ilişkiye sahip olmayan varlıklarda bu işleçleri kullanmaya çalışıyorsanız, "hiyerarşik bir ilişkiye sahip olmayan bir varlık üzerinde hiyerarşik bir operatör kullanıyorsunuz" hata iletisini görürsünüz. Varlığı hiyerarşik yapın (bir ilişkiyi hiyerarşik olarak işaretleyerek) veya farklı bir işleç kullanın. " Hiyerarşik ilişkiler hakkında daha fazla bilgi için bkz. [hiyerarşik olarak ilgili verileri tanımlama ve sorgulama](/powerapps/maker/common-data-service/define-query-hierarchical-data). Tablo takip eden bir ekran görüntüsü, hiyerarşik işleçler **altında değil** **, öğesini** kullanan iş akışı işleminin tanımına bir örnektir.|  
+|**Koşullu dal**|"Else-if-then" ifadesinde, düzenleyici "Aksi takdirde, \<koşulu >"<br /><br /> Daha önce tanımladığınız bir denetim koşulunu seçin ve denetim koşulu false değerini döndürdüğünde ek adımlar tanımlamak için koşullu bir dal ekleyebilirsiniz.|  
+|**Varsayılan eylem**|Mantıksal bir "Else" deyimidir. Düzenleyici "Aksi takdirde:" metnini kullanır<br /><br /> Daha önce tanımladığınız bir denetim koşulu, koşullu dal, bekleme koşulu veya paralel bekleme dalı seçin ve koşul veya dal öğelerinde tanımlanan ölçütlerle eşleşmeyen tüm durumlar için adımları tanımlamak üzere varsayılan bir eylem kullanabilirsiniz.|  
+|**Bekleme koşulu**|Koşul tarafından tanımlanan kriterler karşılanana kadar arka plan iş akışının kendisini duraklatmasını sağlar. Bekleme koşulunda ölçüt karşılandığında iş akışı otomatik olarak yeniden başlar.<br /><br /> Gerçek zamanlı iş akışları bekleme koşullarını kullanamaz.|  
+|**Paralel bekleme dalı**|Yalnızca ilk ölçüt karşılandığında gerçekleştirilen ilgili ek adımlar kümesine sahip bir arka plan iş akışı için alternatif bir bekleme koşulu tanımlar. İş akışı mantığınızdaki zaman sınırlarını oluşturmak için paralel bekleme dallarını kullanabilirsiniz. Bir bekleme koşulunda tanımlanan kriterler karşılanana kadar, iş akışının süresiz olarak beklemesini önlemeye yardımcı olurlar.|  
+|**Özel adım**|Geliştiriciler, koşulları tanımlayan özel iş akışı adımları oluşturabilir. Varsayılan olarak kullanılabilir özel bir adım yoktur.|  
   
- Aşağıdaki ekran görüntüsü, **Altındadır** ve **Altında Değildir** hiyerarşik işleçlerini içeren iş akışı işlemi tanımının bir örneğini içerir. Bizim örneğimizde, iki hesap grubuna iki farklı indirim uygularız. **Adım Ekle** bölümünde, **Altındadır** veya **Altında Değildir** işleçlerini içeren **if-then** koşulunu belirtmek için **Denetim Koşulu** seçeneğini belirledik. Birinci **if-then** koşulu, Alpine Ski House hesabı **Altında** olan tüm hesaplar için geçerlidir. Bu hesaplar, satın alınan mal ve hizmetlerde %10 indirim kazanır. İkinci **if-then** koşulu, Alpine Ski House hesabı **Altında Olmayan** tüm hesaplar için geçerlidir ve %5 indirim kazanır. Daha sonra koşula dayalı olarak gerçekleştirilecek eylemi tanımlamak için **Kaydı Güncelleştir** seçeneğini belirledik.  
+ Aşağıdaki ekran görüntüsünde, hiyerarşik işleçler **altında değil** , **altında** olan iş akışı işlemi tanımının bir örneği bulunur. Bizim örneğimizde, iki hesap grubuna iki farklı indirim uygulayacağız. **Ekle adımında** **, işleç** **altında değil** işlecini içeren **If-Then** koşulunu belirtmek için **Denetim koşulunu** seçtik. İlk **if-then** koşulu, Alp kayak House hesabı **altındaki** tüm hesaplar için geçerlidir. Bu hesaplar satın alınan iyi ve hizmetlere ilişkin %10 indirim alır. İkinci **if-then** koşulu, Alp kayak House hesabı **altında olmayan** tüm hesaplara uygulanır ve %5 indirim alırlar. Ardından, koşula göre gerçekleştirilecek eylemi tanımlamak için **kaydı güncelleştir** ' i seçtik.  
   
- ![Altındadır&#47;Altında Değildir işleçleri ile iş akışı işlemi](media/wfp-under-not-under.PNG "Altındadır/Altında Değildir işleçleri ile iş akışı işlemi")  
+ ![İşleçleri altında değil altında&#47;olan iş akışı işlemi](media/wfp-under-not-under.PNG "İşleci altında/değil, iş akışı işlemi")  
   
 <a name="BKMK_SynchronousWorkflows"></a>   
 
-## <a name="using-real-time-workflows"></a>Gerçek zamanlı iş akışları kullanma  
+## <a name="using-real-time-workflows"></a>Gerçek zamanlı iş akışlarını kullanma  
 
- Gerçek zamanlı iş akışları yapılandırabilirsiniz, ancak bunları dikkatli kullanmanız gerekir. Sunucuda kaynaklar kullanılabilir oldukça sistemin bunları uygulamasına izin verdiğinden, arka plan iş akışları genellikle önerilir. Bu, sunucunun yapması gereken işi sorunsuz hale getirir ve sistemi kullanan herkes için en iyi performansın korunmasına yardımcı olur. Dezavantajı, arka plan iş akışları tarafından tanımlanan eylemlerin hemen olmamasıdır. Ne zaman uygulanacağını tahmin edemezsiniz, ancak genellikle birkaç dakika sürer. Sistemi kullanan kişilerin, işlemin çalıştığını bilinçli olarak bilmesi gerekmediğinden, İş süreçlerinin çoğu otomasyonu için bu iyidir.  
+ Gerçek zamanlı iş akışlarını yapılandırabilirsiniz, ancak bunları dikkatli bir şekilde kullanmanız gerekir. Arka plan iş akışları genellikle önerilir çünkü sunucu üzerindeki kaynaklar kullanılabilir. Bu, sunucunun yapması için sahip olduğu işi düzgünleştirmenize ve sistemi kullanan herkes için en iyi performansı korumanıza yardımcı olur. Dezavantajı, arka plan iş akışları tarafından tanımlanan eylemlerin anında değil. Ne zaman uygulanacağını tahmin edemeyecektir, ancak bu işlem genellikle birkaç dakika sürer. İş süreçlerinin çoğu otomasyonu için, sistemin kullandığı kişilerin işlemin çalıştığını consciously farkında olması gerekmez.  
   
- Bir iş süreci, birisinin işlemin sonuçlarını hemen görmesini gerektirdiğinde veya bir işlemi iptal etme yeteneğini istiyorsanız gerçek zamanlı iş akışlarını kullanın. Örneğin, ilk kez kaydedildiğinde bir kayıt için belirli varsayılan değerleri ayarlamak isteyebilir veya bazı kayıtların silinmediğinden emin olmak isteyebilirsiniz.  
+ Bir iş süreci, birisinin işlem sonuçlarını hemen görmesini gerektirdiğinde veya bir işlemi iptal etmek istiyorsanız gerçek zamanlı iş akışları kullanın. Örneğin, bir kayıt için belirli varsayılan değerleri ilk kaydedildiğinde ayarlamak veya bazı kayıtların silinmediğinden emin olmak isteyebilirsiniz.  
   
-### <a name="converting-between-real-time-and-background-workflows"></a>Gerçek zamanlı iş akışları ve arka plan iş akışları arasında dönüştürme  
+### <a name="converting-between-real-time-and-background-workflows"></a>Gerçek zamanlı ve arka plan iş akışları arasında dönüştürme  
 
- Araç çubuğundaki **Arka plan iş akışına dönüştür** seçeneğini belirleyerek gerçek zamanlı iş akışını bir arka plan iş akışına dönüştürebilirsiniz.  
+ Araç çubuğundaki **bir arka plan iş akışına dönüştür** ' i seçerek gerçek zamanlı bir iş akışını arka plan iş akışında değiştirebilirsiniz.  
   
- Araç çubuğundaki **Gerçek zamanlı iş akışına dönüştür** seçeneğini belirleyerek arka plan iş akışını bir gerçek zamanlı iş akışına dönüştürebilirsiniz. Arka plan iş akışı bir bekleme koşulu kullanıyorsa geçersiz olur ve siz bekleme koşulunu kaldırıncaya kadar arka plan iş akışını etkinleştiremezsiniz.  
+ Araç çubuğunda **gerçek zamanlı bir iş akışına dönüştür** ' ü seçerek arka plan iş akışını gerçek zamanlı bir iş akışına değiştirebilirsiniz. Arka plan iş akışı bekleme koşullarını kullanıyorsa, geçersiz hale gelir ve bekleme koşulunu kaldırana kadar etkinleştiremeyeceksiniz.  
   
-### <a name="initiating-real-time-workflows-before-or-after-status-changes"></a>Durum değişmeden önce veya durum değiştikten sonra gerçek zamanlı iş akışları başlatma  
+### <a name="initiating-real-time-workflows-before-or-after-status-changes"></a>Durum değişikliklerinden önce veya sonra gerçek zamanlı iş akışları başlatma  
 
- Gerçek zamanlı iş akışları için **Otomatik İşlemler için Seçenekler**’i yapılandırdığınızda, durum değişiklikleri olayı için **Başlangıç Zamanı** seçenekleri, durum değiştiğinde **Sonra** veya **Önce** seçeneğini belirlemenize olanak sağlar. Varsayılan seçenek **Sonra**’dır.  
+ Gerçek zamanlı iş akışları için **Otomatik işlemlere yönelik seçenekleri** yapılandırdığınızda, durum değişiklikleri olayı için seçenekler, durum değiştiğinde **Başlangıç** **veya daha** **önce** seçmenizi sağlar. Varsayılan seçenek daha **sonra**olur.  
   
- **Önce**’yi seçtiğinizde, durumu değiştiren verilerden önce uygulanacak iş akışındaki mantığın kaydedilmesini istediğinizi belirtmiş olursunuz. Bu size işlemden sonra diğer mantık uygulanmadan önceki değerleri denetleme ve daha fazla mantığın gerçekleştirilmesini engelleme yeteneği sağlar. Örneğin, başka bir sistemde eylemler başlatabilecek bir eklenti veya özel iş akışı eyleminde ek mantığınız olabilir. Daha fazla işlemi durdurarak, harici sistemlerin etkilenmesi durumunu önleyebilirsiniz. Bu olaydan önce gerçek zamanlı iş akışları uygulanması, işlem iptal edildiğinde, verileri kaydetmiş olabilecek diğer iş akışı veya eklenti eylemlerinin “geri alınması” gerekmediği anlamına gelir.  
+ ' İ seçtiğinizde, durumu **değiştirmeden önce iş** akışındaki mantığın uygulanmasını istediğinizi söyleyerek. Bu, işlemden sonra diğer mantığdan önce değerleri denetleyebilme ve daha fazla mantık gerçekleştirilmesini önlemeye olanak sağlar. Örneğin, bir eklenti veya özel iş akışı eyleminde, başka bir sistem üzerinde eylemler başlatabilecek ek mantığa sahip olabilirsiniz. Daha fazla işleme durdurulduğunda, dış sistemlerin etkilenmesinden kaçınabilirsiniz. Bu olaydan önce gerçek zamanlı iş akışları uygulamak, işlem iptal edildiğinde, verileri kaydetmiş olabilecek diğer iş akışı veya eklenti eylemlerinin "geri alındı" olması gerekmediği anlamına da gelir.  
   
-### <a name="using-the-stop-workflow-action-with-real-time-workflows"></a>Gerçek zamanlı iş akışlarıyla İş Akışını Durdur eylemini kullanma  
+### <a name="using-the-stop-workflow-action-with-real-time-workflows"></a>Gerçek zamanlı iş akışlarıyla Iş akışını durdur eylemini kullanma  
 
- Bir iş akışında **İş Akışını Durdur** eylemini uyguladığınızda, **Başarılı Oldu** veya **İptal Edildi** şeklinde bir durum koşulu belirtme seçeneğiniz vardır. İptal edilecek durumu ayarladığınızda, işlemi engellemiş olursunuz. Kullanıcıya, **İş Süreci Hatası** başlığıyla birlikte durdurma eylemi durum iletisindeki metni içeren bir hata iletisi görüntülenir.  
+ Bir iş akışı içinde bir iş **akışını durdur** eylemini uyguladığınızda, **başarılı** veya **iptal**edilebilir bir durum koşulu belirtme seçeneğiniz vardır. Durumu iptal edildi olarak ayarladığınızda, işlemi önleyin. Durdurma eylemi durum iletisindeki metni içeren bir hata iletisi, **Iş süreci hatası**başlığına sahip kullanıcıya görüntülenecektir.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
- [İşlemler ile özel iş mantığı oluşturma](guide-staff-through-common-tasks-processes.md)   
- [İş akışı süreçlerine genel bakış](workflow-processes.md)   
+ [İşlemlerle özel iş mantığı oluşturun](guide-staff-through-common-tasks-processes.md)   
+ [Iş akışı işlemlerine genel bakış](workflow-processes.md)   
  [İş akışı süreçlerini izleme ve yönetme](monitor-manage-processes.md)   
- [İş akışı süreçleri için en iyi uygulamalar](best-practices-workflow-processes.md)
+ [İş akışı işlemleri için en iyi uygulamalar](best-practices-workflow-processes.md)

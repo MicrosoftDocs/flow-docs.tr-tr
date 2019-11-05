@@ -1,11 +1,12 @@
 ---
-title: Microsoft Flow GDPR Veri Sahibi Silme İstekleri | Microsoft Docs
-description: Microsoft Flow’u kullanarak GDPR Veri Sahibi Silme İstekleri’ni yanıtlamayı öğrenin.
+title: Microsoft Flow GDPR veri konusu silme Istekleri | Microsoft Docs
+description: GUZ veri konu silme Isteklerini yanıtlamak için Microsoft Flow nasıl kullanacağınızı öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,75 +15,75 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ddf0aadfa66b68e25246dd6cb5f50dc957d05074
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 53e33d1c202b05854401573ca16040f17eb138c9
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455039"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548091"
 ---
-# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Silme İstekleri’ni yanıtlama
+# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR veri sahibine yönelik silme Isteklerini yanıtlama
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir kuruluşun Müşteri Verilerinden kişisel verilerin kaldırılması işleminin yapıldığı “silme hakkı”, GDPR’de önemli bir korunma yöntemidir. Kaldırılan kişisel veriler, denetim günlüğü bilgileri dışında tüm kişisel verileri ve sistem tarafından oluşturulmuş günlükleri kapsar.
+Kuruluşun müşteri verilerinden kişisel verilerin kaldırılmasına yönelik "sağdan ERASURE", GDPR içinde önemli bir koruma sağlar. Kişisel verilerin kaldırılması, denetim günlüğü bilgileri hariç tüm kişisel verileri ve sistem tarafından oluşturulan günlükleri kaldırmayı içerir.
 
-Microsoft Flow, kullanıcıların kuruluşunuzun günlük işlemleri için önem teşkil eden otomasyon iş akışlarını oluşturmasına olanak sağlar. Bir kullanıcı kuruluşunuzdan ayrıldığında, bir yöneticinin el ile inceleyip kullanıcının oluşturduğu belirli verileri ve kaynakları silip silmeyeceğine karar vermesi gerekir. Kullanıcının hesabı Azure Active Directory’den silindiğinde otomatik olarak silinen diğer kişisel veriler vardır.
+Microsoft Flow, kullanıcıların kuruluşunuzun günlük işlemlerinin önemli bir parçası olan Otomasyon iş akışları oluşturmasına olanak tanır. Bir Kullanıcı kuruluşunuzdan ayrıldığında, yöneticinin, kullanıcının oluşturduğu belirli veri ve kaynakların silinip silmeyeceğini el ile gözden geçirmesi ve silmesi gerekir. Kullanıcı hesabının Azure Active Directory silindiği her seferinde otomatik olarak silinen başka kişisel veriler de vardır.
 
-Aşağıdaki tabloda, hangi kişisel verilerin otomatik olarak silindiği ve hangi verilerin bir yönetici tarafından el ile incelenip silinmesi gerektiği gösterilmektedir:
+Aşağıdaki tabloda, hangi kişisel verilerin otomatik olarak silineceği ve hangi verilerin bir yöneticinin el ile gözden geçirmesi ve silmesini gerektirdiğini gösterilmektedir:
 
-|El ile incelenip silinmesi gerekir|Kullanıcı Azure Active Directory'den silindiğinde otomatik olarak silinir|
+|El ile inceleme ve silme gerektirir|Kullanıcı Azure Active Directory silindiği zaman otomatik olarak silinir|
 |------|------|
-|Ortam*|Sistem tarafından oluşturulan günlükler|
-|Ortam izinleri**|Çalıştırma geçmişi|
-|Akışlar|Etkinlik Akışı|
-|Akış izinleri|Ağ geçidi |
-|Kullanıcı ayrıntıları|Ağ geçidi izinleri|
-|Bağlantılar*||
+|Ortamınızın|Sistem tarafından oluşturulan Günlükler|
+|Ortam izinleri * *|çalıştırma geçmişi|
+|Var|Etkinlik akışı|
+|Akış izinleri|Geçidinde |
+|Kullanıcı ayrıntıları|Ağ Geçidi izinleri|
+|Bağlantının||
 |Bağlantı izinleri||
-|Özel bağlayıcı*||
+|Özel bağlayıcı *||
 |Özel bağlayıcı izinleri||
 
-*Bu kaynakların her biri, kişisel verileri içeren “Oluşturan” ve “Değiştiren” kayıtlarını içerir. Güvenlik nedenleriyle, bu kayıtlar kaynak silinene kadar korunur.
+\* Bu kaynakların her biri, kişisel verileri içeren "oluşturan" ve "değiştiren" kayıtlarını içerir. Güvenlik nedenleriyle, bu kayıtlar kaynak silinene kadar tutulur.
 
-**Common Data Service veritabanını içeren ortamlar için, ortam izinleri (örn. hangi kullanıcıların Ortam Oluşturucu ve Yönetici rollerine atandığı) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+\* * Common Data Service veritabanı içeren ortamlar için, ortam izinleri (örneğin, ortam Oluşturucu ve yönetici rollerine atanmış kullanıcılar) Common Data Service veritabanında kayıt olarak depolanır. Common Data Service kullanan kullanıcılar için DSRs 'ye nasıl yanıt verileceğini gösteren yönergeler için lütfen [Common Data Service müşteri verilerine karşı DSRS yürütme](https://go.microsoft.com/fwlink/?linkid=872251)konusuna bakın.
 
-El ile inceleme gerektiren veriler ve kaynaklar için, Microsoft Flow belirli bir kullanıcının kişisel verilerini bulmaya veya değiştirmeye yönelik olarak aşağıdaki deneyimleri sunar:
+El ile inceleme gerektiren veri ve kaynaklar için Microsoft Flow, belirli bir kullanıcının kişisel verilerini bulmak veya değiştirmek için aşağıdaki deneyimleri sunar:
 
-* **Web sitesi erişimi:** [PowerApps Yönetim Merkezi](https://admin.powerapps.com/) veya [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com/)’nde oturum açın
+* **Web sitesi erişimi:** [PowerApps yönetim merkezinde](https://admin.powerapps.com/)veya [Microsoft Flow Yönetim merkezinde](https://admin.flow.microsoft.com/) oturum açın
 
-* **PowerShell erişimi:**  [PowerApps Yönetici PowerShell cmdlet'leri](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell erişimi:**  [PowerApps Yöneticisi PowerShell cdmizin](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-Bir yöneticinin her bir kaynak türündeki her bir kişisel veriyi silmek için kullanabileceği deneyimlerin dökümü şöyledir:
+Aşağıda, bir yöneticinin her bir kaynak türü içindeki her bir kişisel veri türünü silmesi için kullanılabilen deneyimlerin dökümü verilmiştir:
 
-|Kişisel verileri kapsayan kaynaklar|Web sitesi erişimi|PowerShell erişimi|Otomatik Silme|
+|Kişisel verileri içeren kaynaklar|Web sitesi erişimi|PowerShell erişimi|Otomatik silme|
 |-----|----|----|----|
-|Sistem tarafından oluşturulan günlükler|[Office 365 Hizmet Güveni Portalı](https://servicetrust.microsoft.com/)|||
-|Ortam|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet'leri||
-|Ortam izinleri*|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet'leri||
-|Çalıştırma geçmişi||| 28 günlük bekletme ilkesi aracılığıyla silindi|
-|Etkinlik akışı |||28 günlük bekletme ilkesi aracılığıyla silindi|
+|Sistem tarafından oluşturulan Günlükler|[Office 365 hizmet güveni portalı](https://servicetrust.microsoft.com/)|||
+|Ortamınızın|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet 'leri||
+|Ortam izinleri *|Microsoft Flow Yönetim Merkezi|PowerApps cmdlet 'leri||
+|çalıştırma geçmişi||| 28 günlük bekletme ilkesi üzerinden silindi|
+|Etkinlik akışı |||28 günlük bekletme ilkesi üzerinden silindi|
 |Kullanıcı işleri|| ||
-|Akışlar|Microsoft Flow Oluşturucu Portalı**|||
-|Akış izinleri|Microsoft Flow Oluşturucu Portalı|||
-|Kullanıcı ayrıntıları||PowerApps cmdlet'leri||
-|Bağlantılar|Microsoft Flow Oluşturucu Portalı| ||
-|Bağlantı izinleri|Microsoft Flow Oluşturucu Portalı| ||
-|Özel bağlayıcı|Microsoft Flow Oluşturucu Portalı| ||
-|Özel bağlayıcı izinleri|Microsoft Flow Oluşturucu Portalı| ||
-|Onay Geçmişi|Microsoft PowerApps Oluşturucu Portalı*|||
+|Var|Microsoft Flow Oluşturucu portalı * *|||
+|Akış izinleri|Microsoft Flow Oluşturucu portalı|||
+|Kullanıcı ayrıntıları||PowerApps cmdlet 'leri||
+|Bağlantının|Microsoft Flow Oluşturucu portalı| ||
+|Bağlantı izinleri|Microsoft Flow Oluşturucu portalı| ||
+|Özel bağlayıcı|Microsoft Flow Oluşturucu portalı| ||
+|Özel bağlayıcı izinleri|Microsoft Flow Oluşturucu portalı| ||
+|Onay geçmişi|Microsoft PowerApps Oluşturucu portalı *|||
 
-*Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, ortam izinleri ve model tabanlı uygulama izinleri, Common Data Service veritabanı örneğinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+\* Common Data Service kapsamında, ortamda bir veritabanı oluşturulursa, ortam izinleri ve model temelli uygulama izinleri, Common Data Service veritabanı örneği içinde kayıt olarak depolanır. Common Data Service kullanan kullanıcılar için DSRs 'ye nasıl yanıt verileceğini gösteren yönergeler için lütfen [Common Data Service müşteri verilerine karşı DSRS yürütme](https://go.microsoft.com/fwlink/?linkid=872251)konusuna bakın.
 
-\*\* Yöneticiye Microsoft Flow Yönetim Merkezi’nden erişim atandıysa, yönetici bu kaynaklara yalnızca Microsoft Flow Oluşturucu Portalı’ndan erişebilir.
+\*\* yönetici yalnızca Microsoft Flow yönetim merkezinden erişim atanırsa Microsoft Flow Oluşturucu portalından bu kaynaklara erişebilir.
 
 ## <a name="manage-delete-requests"></a>Silme isteklerini yönetme
 
-Aşağıdaki adımlar yönetim işlevlerinin GDPR için silme isteklerini sunmak üzere var olduğunu açıklar. Bu adımlar aşağıda açıklanan sırayla gerçekleştirilmelidir.
+Aşağıdaki adımlar, GDPR için silme isteklerini sağlamak üzere yönetim işlevlerinin nasıl mevcut olduğunu açıklamaktadır. Bu adımlar aşağıda özetlenen sırada gerçekleştirilmelidir.
 
 > [!IMPORTANT]
 > Veri bozulmasını önlemek için bu adımları sırasıyla izleyin.
@@ -91,72 +92,72 @@ Aşağıdaki adımlar yönetim işlevlerinin GDPR için silme isteklerini sunmak
 
 ## <a name="list-and-re-assign-flows"></a>Akışları listeleme ve yeniden atama
 
-Bu adımlar, ayrılan bir kullanıcı için mevcut akışları kopyalar. Kopyalara yeni sahiplik atadığınızda, bu akışlar mevcut iş süreçlerini desteklemeye devam edebilir. Bu akışları kopyalamak, ayrılan kullanıcıya yönelik kişisel tanımlayıcı bağlantılarını silmede önemlidir ve akışın diğer API’lerle ve SaaS uygulamalarıyla bağlantı kurması için yeni bağlantılar oluşturulmalıdır.
+Bu adımlar, bir kullanıcı için mevcut akışları kopyalar. Kopyalara yeni sahiplik atarsanız, bu akışlar mevcut iş süreçlerini desteklemeye devam edebilir. Bu akışların kopyalanması, kişisel tanımlayıcı bağlantılarını silmek için önemlidir ve akışın diğer API 'Ler ve SaaS uygulamalarıyla bağlanması için yeni bağlantılar oluşturulmalıdır.
 
-1. [Microsoft Flow yönetim merkezinde](https://admin.flow.microsoft.com/) oturum açın ve ardından silinen kullanıcının sahip olduğu akışları kapsayan ortamı seçin.
+1. [Microsoft Flow Yönetim merkezinde](https://admin.flow.microsoft.com/)oturum açın ve ardından silinen kullanıcının sahip olduğu akışları içeren ortamı seçin.
 
-    ![Ortamları görüntüleme](./media/gdpr-dsr-delete/view-environments.png)
+    ![ortamları görüntüle](./media/gdpr-dsr-delete/view-environments.png)
 
-1. **Kaynaklar** > **Akışlar**’ı ve ardından yeniden atamak istediğiniz akışın başlığını seçin.
+1. **Kaynakları**, > **akışları**' nı seçin ve ardından yeniden atamak istediğiniz akışın başlığını seçin.
 
-    ![Akışları görüntüleme](./media/gdpr-dsr-delete/admin-view-flows.png)
+    ![Akışları görüntüle](./media/gdpr-dsr-delete/admin-view-flows.png)
 
-1. **Paylaşımı yönetin**’i seçin.
+1. **Paylaşımı Yönet**' i seçin.
 
-    ![Paylaşımı yönetin](./media/gdpr-dsr-delete/admin-manage-sharing.png)
+    ![Paylaşımı Yönet](./media/gdpr-dsr-delete/admin-manage-sharing.png)
 
-1. Sağ kenarda görünen **Paylaş** panelinde kendinizi sahip olarak ekleyin ve **Kaydet**’i seçin.
+1. Sağ kenarda görüntülenen **paylaşma** panelinde, kendinizi bir sahip olarak ekleyin ve ardından **Kaydet**' i seçin.
 
-    ![Akışı paylaşma](./media/gdpr-dsr-delete/flow-sharing-save.png)
+    ![Akış paylaşma](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
-1. [Microsoft Flow](https://flow.microsoft.com/)’da oturum açın, **Akışlarım**’ı ve sonra **Ekip akışları**’nı seçin.
+1. [Microsoft Flow](https://flow.microsoft.com/)oturum açın, **Akışlarım**' ı seçin ve ardından **ekip akışları**' nı seçin.
 
-1. Kopyalamak istediğiniz akış için üç noktayı **(… )** ve ardından **Farklı Kaydet**’i seçin.
+1. Kopyalamak istediğiniz akışın üç nokta **(...)** simgesini seçin ve **farklı kaydet**' i seçin.
 
-    ![Akışı farklı kaydet](./media/gdpr-dsr-delete/flow-save-as.png)
+    ![Flow farklı kaydet](./media/gdpr-dsr-delete/flow-save-as.png)
 
-1. Bağlantıları gerektiği şekilde yapılandırın ve **Devam**’ı seçin.
+1. Gerektiğinde bağlantıları yapılandırıp **devam**' ı seçin.
 
-1. Yeni bir ad sağlayın ve **Kaydet**’i seçin.
+1. Yeni bir ad belirtin ve ardından **Kaydet**' i seçin.
 
-    ![Akışın kopyasını oluşturma](./media/gdpr-dsr-delete/create-copy-flow.png)
+    ![Akışın kopyasını oluştur](./media/gdpr-dsr-delete/create-copy-flow.png)
 
-1. Akışın bu yeni sürümü, isterseniz diğer kullanıcılarla paylaşabileceğiniz **Akışlarım** bölümünde görünür.
+1. Akışın bu yeni sürümü, isterseniz ek kullanıcılarla paylaşabileceğiniz **Akışlarım**halinde görünür.
 
     ![Ekip akışları](./media/gdpr-dsr-delete/team-flows.png)
 
-1. Özgün akışı silmek için akışın üç noktasını **(…)**, **Sil**’i ve istenildiğinde yeniden **Sil**’i seçin. Bu adımlar, kullanıcı ile Microsoft Flow arasındaki sistem bağımlılıklarının içerdiği temel alınan kişisel tanımlayıcıları da kaldırır.
+1. Özgün akışı, onun için üç nokta **(...)** ve ardından **Sil**' i seçerek silin ve istendiğinde yeniden **Sil** ' i seçin. Bu adım Ayrıca, Kullanıcı ve Microsoft Flow arasındaki sistem bağımlılıklarında bulunan temel kişisel tanımlayıcıları da kaldırır.
 
-    ![Akış onayını silme](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
+    ![Akış onayını Sil](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
-1. Akışın kopyasını etkinleştirmek için **Akışlarım**’ı açın ve iki durumlu denetimi **Açık** durumuna getirin.
+1. **Akışlarımı** açıp geçiş denetimini **Açık**olarak açarak akışın kopyasını etkinleştirin.
 
-    ![Akışı etkinleştirme](./media/gdpr-dsr-delete/toggle-on.png)
+    ![Akışı etkinleştir](./media/gdpr-dsr-delete/toggle-on.png)
 
-1. Kopya artık özgün sürümle aynı iş akışı mantığını gerçekleştirir.
+1. Şimdi kopya, özgün sürümle aynı iş akışı mantığını gerçekleştirir.
 
-## <a name="delete-approval-history-from-microsoft-flow"></a>Microsoft Flow’dan onay geçmişini silme
+## <a name="delete-approval-history-from-microsoft-flow"></a>Microsoft Flow onay geçmişini sil
 
- Microsoft Flow onay verileri, Common Data Service’in şu anki veya bir önceki sürümünde depolanır. Kişisel bilgiler onay içinde bir onay yanıtının içerdiği onay atamaları ve açıklamaları formunda bulunur. Yöneticiler aşağıdaki adımları izleyerek bu verilere erişebilir:
+ Microsoft Flow için onay verileri, Common Data Service geçerli veya önceki sürümü içinde depolanır. Bir onay içinde, kişisel bilgiler onay yanıtında bulunan onay atamaları ve açıklamalar biçiminde bulunur. Yöneticiler, bu verilere aşağıdaki adımları izleyerek erişebilir:
 
-1. [PowerApps](https://web.powerapps.com/)’te oturum açın.
+1. [PowerApps](https://web.powerapps.com/)'te oturum açın.
 
-1. **Veri** ve ardından **Varlıklar**’ı seçin.
+1. **Verileri**seçin ve ardından **varlıklar**' ı seçin.
 
-1. **Akış onayı** varlığına ait üç noktayı seçin **(…)** ve verileri Microsoft Excel’de açın.
+1. **Flow onay** varlığı için üç nokta **(...)** simgesini seçin ve ardından verileri Microsoft Excel 'de açın.
 
-1. Microsoft Excel’de onay verilerini gerektiği gibi arayın, filtreleyin ve silin.
+1. Microsoft Excel 'de, gerekli olduğu gibi onay verilerini arayın, filtreleyin ve silin.
 
-Common Data Service kullanan kullanıcılara yönelik DSR’lerin nasıl yanıtlanacağı hakkında ek rehberlik için lütfen [Common Data Service Müşteri Verileri’ne karşı DSR’leri yürütme](https://go.microsoft.com/fwlink/?linkid=872251) konusuna bakın.
+Common Data Service kullanan kullanıcılar için DSRs 'ye yanıt verme hakkında daha fazla bilgi için lütfen bkz. [Common Data Service müşteri verilerine karşı DSRS yürütme](https://go.microsoft.com/fwlink/?linkid=872251).
 
 
 ## <a name="delete-connections-created-by-a-user"></a>Bir kullanıcı tarafından oluşturulan bağlantıları silme
 
-Bağlantılar, diğer API'ler ve SaaS sistemleriyle bağlantı kurmak için bağlayıcılar ile birlikte kullanılır.  Bağlantılar, onları oluşturan kullanıcılara yönelik başvuruları içerir ve bunun sonucu olarak da kullanıcıya yönelik tüm başvuruları kaldırmak amacıyla silinebilir.
+Bağlantılar, diğer API 'Ler ve SaaS sistemleriyle bağlantı kurmak için bağlayıcılarla birlikte kullanılır.  Bağlantılar, onları oluşturan kullanıcıya başvurular içerir ve sonuç olarak kullanıcıya tüm başvuruları kaldırmak için silinebilir.
 
-PowerApps Oluşturucu PowerShell cmdlet'leri
+PowerApps Oluşturucu PowerShell cmdlet 'leri
 
-Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet'lerinden](https://go.microsoft.com/fwlink/?linkid=871448) Remove-Connection işlevini kullanarak bağlantılarının tümünü silebilir:
+Bir Kullanıcı [PowerApps Oluşturucu PowerShell cmdlet 'Lerinden](https://go.microsoft.com/fwlink/?linkid=871448)Remove-Connection işlevini kullanarak tüm bağlantılarını silebilir:
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -165,7 +166,7 @@ Add-PowerAppsAccount
 Get-AdminPowerAppConnection | Remove-Connection
 ```
 
-PowerApps Yönetici PowerShell cmdlet'leri
+PowerApps Yöneticisi PowerShell cmdlet 'leri
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -176,11 +177,11 @@ Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
 
 ```
 
-## <a name="delete-the-users-permissions-to-shared-connections"></a>Kullanıcının paylaşılan bağlantılara yönelik izinlerini silme
+## <a name="delete-the-users-permissions-to-shared-connections"></a>Kullanıcının paylaşılan bağlantı izinlerini silme
 
-PowerApps Oluşturucu PowerShell cmdlet'leri
+PowerApps Oluşturucu PowerShell cmdlet 'leri
 
-Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet'lerindeki](https://go.microsoft.com/fwlink/?linkid=871448) Remove-ConnectionRoleAssignment işlevini kullanarak paylaşılan bağlantılar için bağlantı rolü atamalarının tümünü silebilir:
+Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet 'lerinde](https://go.microsoft.com/fwlink/?linkid=871448)paylaşılan bağlantılar Remove-Connectionroleatama işlevi için tüm bağlantı rol atamalarını silebilir:
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -189,7 +190,7 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
-PowerApps Yönetici PowerShell cmdlet'leri
+PowerApps Yöneticisi PowerShell cmdlet 'leri
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -200,17 +201,17 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 
 ```
 > [!NOTE]
-> Bağlantı kaynağı silinmeden sahip rolü atamaları silinemez.
+> Sahip rol atamaları, bağlantı kaynağı silinmeden silinemez.
 >
 >
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Kullanıcı tarafından oluşturulan özel bağlayıcıları silme
 
-Özel Bağlayıcılar sistemde bulunmayan mevcut bağlayıcıları tamamlar ve diğer API’lere, SaaS’a ve özel olarak geliştirilmiş sistemlere bağlantı olanağı sağlar. Özel Bağlayıcılar, onları oluşturan kullanıcılara yönelik başvuruları içerir ve bunun sonucu olarak da kullanıcıya yönelik tüm başvuruları kaldırmak amacıyla silinebilir.
+Özel Bağlayıcılar, mevcut kullanıma hazır bağlayıcılarını tamamlar ve diğer API 'Ler, SaaS ve özel geliştirilmiş sistemlerle bağlantı sağlar. Özel Bağlayıcılar, onları oluşturan kullanıcıya başvurular içerir ve sonuç olarak kullanıcıya tüm başvuruları kaldırmak için silinebilir.
 
-PowerApps Oluşturucu PowerShell cmdlet'leri
+PowerApps Oluşturucu PowerShell cmdlet 'leri
 
-Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet'lerinden](https://go.microsoft.com/fwlink/?linkid=871448) Remove-Connection işlevini kullanarak özel bağlayıcılarının tümünü silebilir:
+Bir Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet 'Lerinde](https://go.microsoft.com/fwlink/?linkid=871448)Remove-Connector işlevinin tüm özel bağlayıcılarını silebilir:
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -219,7 +220,7 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
-PowerApps Yönetici PowerShell cmdlet'leri
+PowerApps Yöneticisi PowerShell cmdlet 'leri
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -231,9 +232,9 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 ## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Kullanıcının paylaşılan özel bağlayıcılara yönelik izinlerini silme
 
-PowerApps Oluşturucu PowerShell cmdlet'leri
+PowerApps Oluşturucu PowerShell cmdlet 'leri
 
-Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet'lerindeki](https://go.microsoft.com/fwlink/?linkid=871448) Remove-ConnectorRoleAssignment işlevini kullanarak paylaşılan özel bağlayıcı için bağlayıcı rolü atamalarının tümünü silebilir:
+Kullanıcı, [PowerApps Oluşturucu PowerShell cmdlet 'Lerinde](https://go.microsoft.com/fwlink/?linkid=871448)Remove-Connectorroleatama işleviyle paylaşılan özel bağlayıcı için bağlayıcı rolü atamalarını silebilir:
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -242,7 +243,7 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
-PowerApps Yönetici PowerShell cmdlet'leri
+PowerApps Yöneticisi PowerShell cmdlet 'leri
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -253,69 +254,69 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 ```
 
 > [!NOTE]
-> Bağlantı kaynağı silinmeden sahip rolü atamaları silinemez.
+> Sahip rol atamaları, bağlantı kaynağı silinmeden silinemez.
 >
 >
 
 
 ## <a name="delete-or-reassign-all-environments-created-by-the-user"></a>Kullanıcı tarafından oluşturulan tüm ortamları silme veya yeniden atama
 
-Bir yönetici olarak, bir kullanıcı için kullanıcı tarafından oluşturulmuş ortamların her birinde bir DSR silme isteği işlerken almanız gereken iki karar vardır:
+Yönetici olarak, Kullanıcı tarafından oluşturulan ortamların her biri için bir DSR silme isteğini işlerken yapmanız gereken iki karar vardır:
 
-1. Kuruluşunuzdan başka kimsenin ortamı kullanmadığını belirledikten sonra ortamı silmeyi seçebilirsiniz
-1. Ortamın hala gerekli olduğunu belirlerseniz, ortamı silmemeyi seçebilir ve kendinizi (veya kuruluşunuzdaki başka bir kullanıcıyı) Ortam Yöneticisi olarak ekleyebilirsiniz.
+1. Ortamın kuruluşunuzda başka hiç kimse tarafından kullanılmadığını belirlerseniz, ortamı silmeyi tercih edebilirsiniz
+1. Ortamın hala gerekli olduğunu belirlerseniz, ortamı silmeyi ve kendinizi (veya kuruluşunuzdaki başka bir kullanıcıyı) ortam yöneticisi olarak eklemeyi tercih edebilirsiniz.
 > [!IMPORTANT]
-> Bir ortamı silmek, tüm uygulamalar, akışlar, bağlantılar vb. dahil ortamın içindeki tüm kaynakları kalıcı olarak siler. Bu nedenle lütfen silmeden önce ortamın içeriklerini gözden geçirin.
+> Bir ortamın silinmesi, tüm uygulamalar, akışlar, bağlantılar vb. dahil olmak üzere ortamdaki tüm kaynakları kalıcı olarak siler. bu nedenle, silmeden önce lütfen bir ortamın içeriğini gözden geçirin.
 >
 >
 
-## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Microsoft Flow Yönetim Merkezi’nden kullanıcının ortamlarına erişim izni verme
+## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Microsoft Flow yönetim merkezinden bir kullanıcının ortamlarına erişim verme
 
-Bir yönetici, [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com/)’ndeki belirli bir kullanıcı tarafından oluşturulmuş bir ortama Yönetici erişimi hakkı verebilir. Ortamları yönetme hakkında daha fazla bilgi için lütfen [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
+Yönetici, [Microsoft Flow yönetim merkezinden](https://admin.flow.microsoft.com/)belirli bir kullanıcı tarafından oluşturulan bir ortama yönetici erişimi verebilir. Ortamları yönetme hakkında daha fazla bilgi için lütfen [Microsoft Flow içindeki ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin)sayfasına gidin.
 
-## <a name="delete-the-users-permissions-to-all-other-environments"></a>Kullanıcının diğer tüm ortamlara yönelik izinlerini silme
+## <a name="delete-the-users-permissions-to-all-other-environments"></a>Kullanıcının tüm diğer ortamlara yönelik izinlerini silme
 
-Kullanıcılara bir ortamda izinler atanabilir (Ortam Yöneticisi, Ortam Oluşturucu vb. gibi) ve bu izinler de Microsoft Flow hizmetinde “rol ataması” olarak depolanır.
+Kullanıcılara (Ortam Yöneticisi, ortam Oluşturucu vb.), Microsoft Flow hizmetinde "rol ataması" olarak depolanan izinler atanabilir.
 
-Common Data Service’e giriş ile, bir veritabanı ortam içinde oluşturulduysa, bu “rol atamaları”, Common Data Service veritabanı örneğinde kayıt olarak depolanır.
+Common Data Service giriş ile, ortamda bir veritabanı oluşturulursa, bu "rol atamaları" Common Data Service veritabanı örneği içinde kayıt olarak depolanır.
 
-Bir ortamda kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow’da ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin) konusuna gidin.
+Bir ortamdaki kullanıcının iznini kaldırma hakkında daha fazla bilgi için [Microsoft Flow içindeki ortamları kullanma](https://docs.microsoft.com/flow/environments-overview-admin)bölümüne gidin.
 
-## <a name="delete-gateway-settings"></a>Ağ Geçidi Ayarlarını Silme
+## <a name="delete-gateway-settings"></a>Ağ Geçidi ayarlarını silme
 
-Şirket İçi Veri Ağ Geçitleri için Veri Sahibi Silme İsteklerine verilen yanıta [buradan](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration) erişilebilir.
+Şirket Içi veri ağ geçitleri için veri sahibine yönelik silme Isteklerini yanıtlama, [burada](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration)bulunabilir.
 
-## <a name="delete-user-details"></a>Kullanıcı Ayrıntılarını Silme
+## <a name="delete-user-details"></a>Kullanıcı ayrıntılarını silme
 
-Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. İşlem tamamlandıktan sonra bir yönetici, **Remove-AdminFlowUserDetails** cmdlet’ini çağırıp kullanıcı için Nesne Kimliğini ileterek kullanıcı ayrıntılarını silebilir.
+Kullanıcı ayrıntıları, bir kullanıcı ile belirli bir kiracı arasında bağlantı sağlar. Bu komutu çalıştırmadan önce, bu kullanıcı için tüm akışların yeniden atandığından ve/veya silindiğinden emin olun. Bu tamamlandığında yönetici, **Remove-AdminFlowUserDetails** cmdlet 'ini çağırarak ve Kullanıcı IÇIN nesne kimliğini geçirerek Kullanıcı ayrıntılarını silebilir.
 
-PowerApps Yönetici PowerShell cmdlet'leri
+PowerApps Yöneticisi PowerShell cmdlet 'leri
 ```PowerShell
 Add-PowerAppsAccount
 Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 > [!IMPORTANT]
-> Bir kullanıcı halen bireysel akışlara veya takım akışlarına sahipse bu komut bir hata döndürür. Çözümlemek için, bu kullanıcıya yönelik takım akışlarını veya kalan tüm akışları silin ve komutu yeniden çalıştırın.
+> Bir Kullanıcı, bireysel veya ekip akışlarına sahip olmaya devam ediyorsa, bu komut bir hata döndürür. Sorunu gidermek için, bu kullanıcı için tüm kalan akışları veya ekip akışlarını silin ve komutu yeniden çalıştırın.
 >
 >
 
-## <a name="delete-the-user-from-azure-active-directory"></a>Azure Active Directory’den kullanıcıyı silme
+## <a name="delete-the-user-from-azure-active-directory"></a>Kullanıcıyı Azure Active Directory Sil
 
-Yukarıdaki adımlar tamamlandıktan sonra son adım, [Office 365 Hizmet Güveni Portalı](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)’nda bulunabilecek Azure Veri Sahibi İsteği GDPR belgelerinde açıklanan adımları izleyerek Azure Active Directory için kullanıcının hesabını silmektir.
+Yukarıdaki adımlar tamamlandıktan sonra son adım, [Office 365 hizmet güven portalı](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)'Nda bulunan Azure Data Subject isteği GDPR belgelerinde özetlenen adımları izleyerek kullanıcının Azure Active Directory hesabını silmektir.
 
-## <a name="delete-the-user-from-unmanaged-tenant"></a>Yönetilmeyen Kiracıdan kullanıcıyı silme
+## <a name="delete-the-user-from-unmanaged-tenant"></a>Kullanıcıyı yönetilmeyen kiracıdan silme
 
-Yönetilmeyen bir kiracının üyesi olmanız durumunda, [İş ve Okul Gizliliği portalından](https://go.microsoft.com/fwlink/?linkid=873123) bir **Hesap kapatma** eylemi gerçekleştirmeniz gerekir.
+Yönetilmeyen bir kiracının üyesi olduğunuz olayda [iş ve okul gizlilik portalından](https://go.microsoft.com/fwlink/?linkid=873123)bir **Hesap kapatma** eylemi gerçekleştirmeniz gerekir.
 
-Yönetilen kiracının mı yoksa yönetilmeyen kiracının mu kullanıcısı olduğunuzu belirlemek için aşağıdaki eylemleri gerçekleştirin:
+Yönetilen veya yönetilmeyen bir kiracının kullanıcısı olup olmadığınızı anlamak için aşağıdaki eylemleri gerçekleştirin:
 
-1. Şu URL’yi bir tarayıcıda açın ve URL’deki e-posta adresinizi değiştirdiğinizden emin olun:[ https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
-1. **Yönetilmeyen kiracının** üyesiyseniz, yanıtta bir `"IsViral": true` görürsünüz.
+1. Aşağıdaki URL 'yi bir tarayıcıda açarak URL adresi:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1)yerine e-posta adresinizi değiştirdiğinizden emin olun.
+1. **Yönetilmeyen bir kiracının** üyesiyse yanıtta bir `"IsViral": true` görürsünüz.
 
     {
 
-     "Login": "foobar@unmanagedcontoso.com",
+     "Oturum açma": "foobar@unmanagedcontoso.com",
 
     "DomainName": "unmanagedcontoso.com",
 
@@ -323,4 +324,4 @@ Yönetilen kiracının mı yoksa yönetilmeyen kiracının mu kullanıcısı old
     
     }
 
-1. Aksi takdirde, yönetilen bir kiracıya aitsiniz demektir.
+1. Aksi takdirde, yönetilen bir kiracıya ait olursunuz.

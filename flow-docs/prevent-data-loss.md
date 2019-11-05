@@ -20,124 +20,125 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 46f646fb81fcf7043ff612a240528fed72638048
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64950499"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548540"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Veri kaybı önleme (DLP) ilkeleri
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bu belgede size veri kaybı önleme ilkeleri sunulur. Bu ilkeler, kuruluş verilerinizin tanımladığınız bağlayıcıların bir listesiyle paylaşılmasını önleme konusunda size yardımcı olur.
+Bu belgede, veri kaybı önleme ilkeleri sunulmaktadır. Bu, kurumsal verilerinizin tanımladığınız bağlayıcıların bir listesiyle paylaşılmalarına yardımcı olur.
 
 ## <a name="whats-a-data-loss-prevention-policy"></a>Veri kaybı önleme ilkesi nedir?
 
-Bir kuruluşun başarısı için verileri önemlidir. Kuruluşun verilerinin karar alma süreci için kullanıma hazır olması gerekir ve erişim sahibi olmaması gereken kitlelerle paylaşımın önlenmesi amacıyla bu veriler koruma altına alınmalıdır. Bu verilerin korunması için Microsoft Flow, hangi tüketici bağlayıcılarının iş verilerine erişebileceğini ve bunları paylaşabileceğini tanımlayan ilkeler oluşturup uygulamanıza olanak sağlar. Verilerin nasıl paylaşılabileceğini tanımlayan bu ilkeler, veri kaybı önleme (DLP) ilkeleri olarak adlandırılır.
+Kuruluşun verileri, başarısı için kritik öneme sahiptir. Verilerin karar verme için hazır olması gerekir, ancak erişimi olmayan izleyiciler ile paylaşılmaması için korunması gerekir. Bu verileri korumak için Microsoft Flow, hangi tüketici bağlayıcılarının iş verilerine erişebileceğini ve bunları paylaşabileceğini tanımlayan ilkeler oluşturma ve zorunlu kılabilirsiniz. Verilerin nasıl paylaşılacağını tanımlayan bu ilkeler, veri kaybı önleme (DLP) ilkeleri olarak adlandırılır.
 
-## <a name="why-create-a-dlp-policy"></a>Neden DLP ilkesi oluşturulmalıdır?
+## <a name="why-create-a-dlp-policy"></a>Neden DLP İlkesi oluşturulsun?
 
-Hangi tüketici bağlayıcılarının iş verilerinize erişebileceğini ve bunları paylaşabileceğini açıkça tanımlamak için DLP ilkesi oluşturursunuz. Örneğin, Microsoft Flow kullanan bir kuruluş, SharePoint’teki iş verilerinin Twitter akışında otomatik olarak yayımlanmasını istemeyebilir. Bunu önlemek için, SharePoint verilerinin tweet kaynağı olarak kullanılmasını engelleyen bir DLP ilkesi oluşturursunuz.
+Hangi tüketici bağlayıcılarının iş verilerinize erişebileceğini ve bunları paylaşabileceğini açıkça tanımlamak için DLP İlkesi oluşturursunuz. Örneğin, Microsoft Flow kullanan bir kuruluş, SharePoint 'teki iş verilerinin Twitter akışında otomatik olarak yayımlanmasını istemiyor olabilir. Bunu engellemek için SharePoint verilerinin, kaynak olarak kullanılabilir olmasını engelleyen bir DLP İlkesi oluşturursunuz.
 
-## <a name="benefits-of-a-dlp-policy"></a>DLP ilkesinin yararları
+## <a name="benefits-of-a-dlp-policy"></a>DLP ilkesinin avantajları
 
-* Verilerin kuruluş genelinde tek bir yolla yönetilmesini sağlar.
+* Verilerin kuruluş genelinde tek bir şekilde yönetilmesini sağlar.
 * Önemli iş verilerinin sosyal medya siteleri gibi bağlayıcılarda yanlışlıkla yayımlanmasını engeller.
 
 ## <a name="managing-dlp-policies"></a>DLP ilkelerini yönetme
 
-### <a name="prerequisites-for-managing-dlp-policies"></a>DLP ilkelerini yönetmeye ilişkin önkoşullar
+### <a name="prerequisites-for-managing-dlp-policies"></a>DLP ilkelerini yönetmek için Önkoşullar
 
-* Ortam yöneticisi veya kiracı yöneticisi izinleri.
+* Ortam Yöneticisi ya da Kiracı Yöneticisi izinleri.
 
-    [Ortamlar makalesinde](environments-overview-admin.md) izinler hakkında daha fazla bilgi edinebilirsiniz.
+    [Ortamlar makalesindeki](environments-overview-admin.md)izinler hakkında daha fazla bilgi edinebilirsiniz.
 * Bir [Microsoft Flow P2 lisansı](billing-questions.md).
 
-## <a name="create-a-dlp-policy"></a>DLP ilkesi oluşturma
+## <a name="create-a-dlp-policy"></a>DLP İlkesi oluşturma
 
-### <a name="prerequisites-for-creating-dlp-policies"></a>DLP ilkesi oluşturmaya ilişkin önkoşullar
+### <a name="prerequisites-for-creating-dlp-policies"></a>DLP ilkeleri oluşturma önkoşulları
 
-DLP ilkesi oluşturmak için en az bir ortamın izinlerine sahip olmanız gerekir.
+DLP İlkesi oluşturmak için en az bir ortam için izinleriniz olmalıdır.
 
-Şirketinizin SharePoint sitesindeki verilerin Twitter’da yayınlanmasını engelleyen bir DLP ilkesi oluşturmak için şu adımları uygulayın:
+Şirketinizin SharePoint sitesindeki verilerin Twitter 'da yayımlanmasını önleyen bir DLP İlkesi oluşturmak için şu adımları izleyin:
 
-1. [Microsoft Flow Yönetim Merkezi](https://admin.flow.microsoft.com)’nde (Yönetim merkezi) oturum açın.
+1. [Microsoft Flow Yönetim merkezinde](https://admin.flow.microsoft.com) (Yönetim Merkezi) oturum açın.
 
-1. Veri İlkeleri sekmesini ve sonra **Yeni ilke** bağlantısını seçin:
+1. Veri Ilkeleri sekmesini seçin ve ardından **Yeni ilke** bağlantısını seçin:
 
-    ![Oturum açma](./media/prevent-data-loss/create-policy-1.png)
+    ![Oturum Aç](./media/prevent-data-loss/create-policy-1.png)
 1. **Veri grupları** sekmesini seçin.
 
-1. Sayfanın üst kısmındaki **Veri İlkesi Adı** etiketinde DLP ilkesinin adını *Contoso için Güvenli Veri Erişimi* olarak girin:
+1. Sayfanın üst kısmındaki **veri Ilkesi adı** etiketinde DLP Ilkesinin adını *contoso Için güvenli veri erişimi* olarak girin:
 
-    ![Oturum açma](./media/prevent-data-loss/create-policy-2.png)
+    ![Oturum Aç](./media/prevent-data-loss/create-policy-2.png)
 
-1. **Ortamlar** sekmesinde [ortam](environments-overview-admin.md) seçeneğini belirleyin.
+1. **Ortamlar** sekmesinde [ortamı](environments-overview-admin.md) seçin.
 
     > [!NOTE]
-    > Ortam yöneticisi olarak yalnızca tek bir ortam için geçerli olan ilkeler oluşturabilirsiniz. Kiracı yöneticisi olarak, ortamların herhangi bir bileşimi için geçerli olan ilkeler oluşturabilirsiniz.
+    > Ortam Yöneticisi olarak yalnızca tek bir ortam için uygulanan ilkeler oluşturabilirsiniz. Bir kiracı yöneticisi olarak, tüm ortamların birleşimine uygulanan ilkeler oluşturabilirsiniz:
     >
     >
 
-    ![Ortam seçme](./media/prevent-data-loss/create-policy-3.png)
+    ![Ortam seçin](./media/prevent-data-loss/create-policy-3.png)
 
 1. **Veri grupları** sekmesini seçin:
 
-    ![veri grupları sekmesini seçme](./media/prevent-data-loss/create-policy-4.png)
+    ![veri grupları seçin](./media/prevent-data-loss/create-policy-4.png)
 
-1. **Yalnızca iş verileri** grup kutusunun içinde bulunan **Ekle** bağlantısını seçin:
+1. **Yalnızca iş verileri** Grup kutusunun içinde yer alan **Ekle** bağlantısını seçin:
 
-    ![ekle bağlantısını seçme](./media/prevent-data-loss/create-policy-5.png)
+    ![Ekle 'yi seçin](./media/prevent-data-loss/create-policy-5.png)
 
-1. **Bağlayıcı ekle** sayfasından **SharePoint** ve **Salesforce** bağlayıcılarını seçin:
+1. **Bağlayıcı Ekle** sayfasından **SharePoint** ve **Salesforce** bağlayıcılarını seçin:
 
-   ![bağlayıcıları seçme](./media/prevent-data-loss/create-policy-6.png)
+   ![bağlayıcıları seçin](./media/prevent-data-loss/create-policy-6.png)
 
-1. İş verilerini paylaşabilen bağlayıcıları eklemek için **Bağlayıcı ekle** seçeneğini belirleyin.
+1. İş verilerini paylaşabilen bağlayıcıları eklemek için **Bağlayıcılar Ekle** düğmesini seçin.
 
-1. Ekranın sağ üst köşesinde **İlkeyi Kaydet** seçeneğini belirleyin.
+1. Ekranın sağ üst köşesindeki **Ilkeyi kaydet** ' i seçin.
 
-1. Birkaç dakika sonra yeni DLP ilkeniz veri kaybı önleme ilkeleri listesinde gösterilir:
+1. Birkaç dakika sonra, veri kaybı önleme ilkeleri listesinde yeni DLP ilkeniz görüntülenir:
 
     ![DLP listesi](./media/prevent-data-loss/create-policy-9.png)
 
-1. **İsteğe bağlı** Yeni bir DLP ilkesinin mevcut olduğunu bildirmek için ekibinize e-posta gönderin veya başka bir iletişim yoluyla ulaşın.
+1. **Isteğe bağlı** Ekibinize bir e-posta veya başka bir iletişim gönderin, yeni bir DLP ilkesinin artık kullanılabilir olduğunu uyarır.
 
-Tebrikler, uygulamanın SharePoint ile Salesforce arasında veri paylaşmasını sağlayan ve diğer hizmetlerle veri paylaşımını engelleyen bir DLP ilkesi oluşturdunuz.
+Tebrikler, uygulamanın SharePoint ile Salesforce arasında veri paylaşmasını sağlayan ve diğer hizmetlerle veri paylaşımını engelleyen bir DLP İlkesi oluşturdunuz.
 
 > [!NOTE]
-> Bir hizmeti bir veri grubuna eklemek, hizmeti otomatik olarak diğer veri grubundan kaldırır. Örneğin, Twitter şu anda **yalnızca iş verileri** veri grubunda bulunuyorsa ve iş verilerinin Twitter ile paylaşılmasına izin vermek istemiyorsanız Twitter hizmetini **iş verilerine izin verilmez** adlı veri grubuna eklemeniz yeterlidir. Bu işlem Twitter’ı yalnızca iş verileri grubundan kaldırır.
+> Bir hizmeti bir veri grubuna eklemek, otomatik olarak diğer veri grubundan kaldırır. Örneğin, Twitter şu anda **yalnızca iş verileri** veri grubunda bulunuyorsa ve Iş verilerinin Twitter ile paylaşılmasına izin vermek Istemiyorsanız, Twitter hizmetini **iş verilerine izin verilmez** veri grubuna eklemeniz yeterlidir. Bu işlem Twitter 'ı yalnızca iş verileri veri grubundan kaldırır.
 >
 >
 
 ## <a name="data-sharing-violations"></a>Veri paylaşımı ihlalleri
 
-Ana hatları yukarıda belirtilen DLP ilkesini oluşturduğunuzu varsayalım. Bir kullanıcı, Salesforce (veri grubu: **yalnızca iş verileri**) ile Twitter (veri grubu: **iş verileri kullanılamaz**) arasında veri paylaşımı yapan bir akış oluşturursa kullanıcıya, oluşturduğunuz veri kaybı önleme ilkesiyle çakışma olması nedeniyle akışın **askıya alındığı** bildirilir.
+Yukarıda özetlenen DLP ilkesini oluşturduğunuz varsayılarak, bir Kullanıcı Salesforce ( **yalnızca iş** verileri veri grubunda bulunur) ve Twitter ( **iş verilerine izin verilmez** veri grubunda bulunur) arasında veri paylaşan bir akış oluşturursa, Kullanıcı oluşturduğunuz veri kaybı önleme ilkesiyle çakışma nedeniyle akışın **askıya alındığını** bildirdi.
 
-![akış oluşturma](./media/prevent-data-loss/10.png)
+![akış oluştur](./media/prevent-data-loss/10.png)
 
-Kullanıcılarınız askıya alınan akışlarla ilgili olarak sizinle iletişime geçerse, şunları yapabilirsiniz:
+Kullanıcılarınız, askıya alınmış akışlar hakkında sizinle iletişim kuradıysanız göz önünde bulundurmanız gereken birkaç nokta vardır:
 
-1. Bu örnekte, iş verilerini SharePoint ile Twitter arasında paylaşmak için işle ilgili geçerli bir neden varsa, DLP ilkesini düzenleyebilirsiniz.
+1. Bu örnekte, iş verilerini SharePoint ile Twitter arasında paylaşmak için geçerli bir iş nedeni varsa, DLP ilkesini düzenleyebilirsiniz.
 
-1. Kullanıcıdan, akışı DLP ilkesine uyacak şekilde düzenlemesini isteyebilirsiniz.
+1. Kullanıcıdan, DLP ilkesiyle uyum sağlamak için akışı düzenlemesini isteyin.
 
-1. Kullanıcıdan, bu iki varlık arasında veri paylaşımı hakkında bir karar alınana kadar akışı askıya alınma durumunda bırakmasını isteyebilirsiniz.
+1. Bu iki varlık arasında veri paylaşımıyla ilgili bir karar yapana kadar kullanıcıdan akışı askıya alınma durumunda bırakmasını isteyin.
 
-## <a name="find-a-dlp-policy"></a>DLP ilkesi bulma
+## <a name="find-a-dlp-policy"></a>DLP İlkesi bulma
 
-### <a name="admins"></a>Yöneticiler
+### <a name="admins"></a>Mins
 
-Yöneticiler belirli DLP ilkelerini bulmak için Yönetim merkezindeki arama özelliğini kullanabilir.
+Yöneticiler, belirli DLP ilkelerini bulmak için yönetim merkezindeki arama özelliğini kullanabilir.
 
 > [!NOTE]
-> Yöneticiler, kuruluştaki kullanıcıların akış oluşturmadan önce ilkelerden haberdar olması için tüm DLP ilkelerini yayımlamalıdır.
+> Yöneticiler, tüm DLP ilkelerini yayımlayarak kuruluştaki kullanıcıların akış oluşturmadan önce ilkelerden haberdar olmasını sağlar.
 >
 >
 
-### <a name="makers"></a>Oluşturucular
+### <a name="makers"></a>Cıları
 
-Yönetici izinlerine sahip değilseniz ve kuruluşunuzdaki DLP ilkeleri hakkında daha fazla bilgi edinmek istiyorsanız yöneticinize başvurun. Ayrıca [oluşturucu ortamları makalesinde](environments-overview-maker.md) daha fazla bilgi edinebilirsiniz
+Yönetici izinleriniz yoksa ve kuruluşunuzdaki DLP ilkeleri hakkında daha fazla bilgi edinmek istiyorsanız yöneticinize başvurun. Ayrıca, [Oluşturucu ortamları makalesinden](environments-overview-maker.md) daha fazla bilgi edinebilirsiniz
 
 > [!NOTE]
 > DLP ilkeleri yalnızca yöneticiler tarafından düzenlenebilir veya silinebilir.
@@ -146,70 +147,70 @@ Yönetici izinlerine sahip değilseniz ve kuruluşunuzdaki DLP ilkeleri hakkınd
 
 ## <a name="edit-a-dlp-policy"></a>DLP ilkesini düzenleme
 
-1. [Yönetim merkezini](https://admin.flow.microsoft.com) başlatın.
+1. [Yönetim merkezini](https://admin.flow.microsoft.com)başlatın.
 
-1. Açılan Yönetim merkezinde sol taraftaki **Veri ilkeleri**’ni seçin.
+1. Başlatan Yönetim merkezinde, sol taraftaki **veri ilkeleri** bağlantısını seçin.
 
-    ![veri ilkelerini seçme](./media/prevent-data-loss/2.png)
+    ![veri ilkelerini seçin](./media/prevent-data-loss/2.png)
 
-1. Mevcut DLP ilkeleri listesinde arama yapın ve düzenlemek istediğiniz ilkenin yanındaki düzenle düğmesini seçin.
+1. Mevcut DLP ilkeleri listesinde arama yapın ve düzenlemek istediğiniz ilkenin yanındaki Düzenle düğmesini seçin.
 
-1. İlkede gerekli değişiklikleri yapın. Örneğin ortamı veya veri gruplarındaki hizmetleri değiştirebilirsiniz.
+1. İlkede gerekli değişiklikleri yapın. Örneğin, ortamı veya veri gruplarındaki Hizmetleri değiştirebilirsiniz.
 
-1. Değişikliklerinizi kaydetmek için **İlkeyi Kaydet**’i seçin.
+1. Değişikliklerinizi kaydetmek için **Ilkeyi kaydet** ' i seçin.
 
 > [!NOTE]
-> Kiracı yöneticileri tarafından oluşturulan DLP ilkeleri, ortam yöneticileri tarafından görüntülenebilir, ancak düzenlenemez.
+> Kiracı yöneticileri tarafından oluşturulan DLP ilkeleri, ortam yöneticileri tarafından görüntülenebilir, ancak ortam yöneticileri tarafından düzenlenemez.
 >
 >
 
 ## <a name="delete-a-dlp-policy"></a>DLP ilkesini silme
 
-1. [Yönetim merkezini](https://admin.flow.microsoft.com) başlatın.
+1. [Yönetim merkezini](https://admin.flow.microsoft.com)başlatın.
 
-1. Sol taraftaki **Veri ilkeleri** sekmesini seçin.
+1. Sol taraftaki **veri ilkeleri** sekmesini seçin.
 
-    ![veri ilkeleri sekmesini seçme](./media/prevent-data-loss/2.png)
+    ![Veri İlkeleri sekmesini seçin](./media/prevent-data-loss/2.png)
 
-1. Mevcut DLP ilkeleri listesinde arama yapın ve sonra silmek istediğiniz ilkenin yanındaki sil düğmesini seçin:
+1. Mevcut DLP ilkeleri listesinde arama yapın ve silmek istediğiniz ilkenin yanındaki Sil düğmesini seçin:
 
-    ![sil düğmesini seçme](./media/prevent-data-loss/3-delete.png)
+    ![Sil düğmesini seçin](./media/prevent-data-loss/3-delete.png)
 
-1. **Sil** düğmesini seçerek ilkeyi silmek istediğinizi onaylayın:
+1. **Sil** düğmesini seçerek ilkeyi gerçekten silmek istediğinizi onaylayın:
 
-    ![ilkeyi silmek istediğinizi onaylama](./media/prevent-data-loss/4.png)
+    ![ilkeyi gerçekten silmek istediğinizi onaylayın](./media/prevent-data-loss/4.png)
 
-## <a name="dlp-policy-permissions"></a>DLP ilkesi izinleri
+## <a name="dlp-policy-permissions"></a>DLP İlkesi izinleri
 
-DLP ilkeleri yalnızca kiracı ve ortam yöneticileri tarafından oluşturulup değiştirilebilir. [Ortamlar](environments-overview-admin.md) makalesinde izinler hakkında daha fazla bilgi edinebilirsiniz.
+DLP ilkeleri yalnızca kiracı ve ortam yöneticileri tarafından oluşturulabilir ve değiştirilebilir. [Ortamlar](environments-overview-admin.md) makalesindeki izinler hakkında daha fazla bilgi edinin.
 
 
-## <a name="custom-and-http-connectors"></a>Özel bağlayıcılar ve HTTP bağlayıcıları
+## <a name="custom-and-http-connectors"></a>Özel ve HTTP bağlayıcıları
 
-Özel bağlayıcılarla HTTP bağlayıcıları, Microsoft Flow şablonu veya PowerShell kullanılarak DLP'lere eklenmelidir.
+Özel ve HTTP bağlayıcıları, bir Microsoft Flow şablonu veya PowerShell kullanılarak DLCI 'Ler 'e eklenmelidir.
 
 > [!TIP]
-> Şemanın 2018-11-01 sürümünden eski sürüme düşüremezsiniz. İlkeden HTTP desteği kaldırılamaz. HTTP desteğini kaldırmayı denerseniz DLP ilkesi bozulabilir. Üstelik DLP ilkesi HTTP bağlayıcılarını destekleyecek şekilde güncelleştirildiyse bu HTTP özelliklerini kullanan geçerli akışlar kapatılabilir.
+> Şema sürümü 2018-11-01 ' den düşürülemiyor. HTTP desteği bir ilkeden kaldırılamaz. HTTP desteğini kaldırmaya çalışırsanız, DLP İlkesi bozulmuş olabilir. Ayrıca, bir DLP İlkesi HTTP bağlayıcılarını destekleyecek şekilde güncelleştirilirse, bu HTTP özelliklerini kullanan geçerli akışlar kapatılabilir.
 
-İlkeye ekleyebileceğiniz HTTP bağlayıcıları şunlardır:
+Bir ilkeye ekleyebileceğiniz HTTP bağlayıcıları aşağıda verilmiştir:
 
 - HTTP (ve HTTP + Swagger)
-- HTTP Web Kancası
-- HTTP İsteği
+- HTTP Web kancası
+- HTTP Isteği
 
-## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Özel bağlayıcıları ve HTTP bağlayıcılarını şablonlarla ekleme
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Özel Bağlayıcılar ve şablonlar ile HTTP bağlayıcıları ekleme
 
-[Şablon](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/) kullanarak ilkeye özel bir bağlayıcı eklemek için ilke adını, bağlayıcının ekleneceği grubu, bağlayıcının adını, kimliğini ve türünü girin. Akışı bir kez çalıştırarak özel bağlayıcıyı belirtilen ilkeye ve gruba ekleyin.
+Bir [şablonu](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/)kullanarak bir ilkeye özel bağlayıcı eklemek için, ilke adını, bağlayıcının ekleneceği grubu ve bağlayıcının adı, kimliği ve türünü girin. Özel bağlayıcıyı verilen ilkeye ve gruba eklemek için akışı bir kez çalıştırın.
 
-[Şablon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/) yoluyla mevcut ilkeye HTTP bağlayıcıları eklemek için, bunların eklenmesini istediğiniz ilkenin adını girin ve akışı çalıştırın.
+HTTP bağlayıcılarını [şablon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/)aracılığıyla mevcut bir ilkeye eklemek için, eklemek istediğiniz ilkenin adını girin ve ardından akışı çalıştırın.
 
-## <a name="add-custom-and-http-connectors-with-powershell"></a>Özel bağlayıcıları ve HTTP bağlayıcılarını PowerShell'le ekleme
+## <a name="add-custom-and-http-connectors-with-powershell"></a>PowerShell ile özel ve HTTP bağlayıcıları ekleme
 
-PowerShell kullanarak ilkeye özel bağlayıcılar ve/veya HTTP bağlayıcıları desteği eklemek için, en son PowerApps PowerShell betiklerini [indirip](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) içeri aktarın ve sonra ilkede değişiklik yapmak için şu cmdlet'leri kullanın:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’ ve ‘Remove-CustomConnectorFromPolicy’. Başvuru olarak ‘Get-Help -detailed’ cmdlet'ini kullanın.
+PowerShell kullanarak bir ilkeye özel bağlayıcılar ve/veya HTTP bağlayıcıları desteği eklemek için, en son PowerApps PowerShell betiklerini [indirip](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) içeri aktarın ve ardından Şu cmdlet 'leri kullanın: ' New-AdminDlpPolicy ', ' set-AdminDlpPolicy ', ' İlkeyi değiştirmek için Add-CustomConnectorToPolicy ' ve ' Remove-CustomConnectorFromPolicy '. ' Get-Help-Detailed ' cmdlet 'ini başvuru olarak kullanın.
 
 
 > [!IMPORTANT]
-> HTTP bağlayıcıları eklemek amacıyla bir DLP ilkesini oluşturur veya güncelleştirirken 2018-11-01 şema sürümünü kullanın. Şablon veya PowerShell kullanılarak HTTP desteği eklenmesi, yalnızca belirtilen ilkeyi etkiler. Yönetim Merkezi aracılığıyla oluşturulan yeni ilkeler HTTP bağlayıcılarını içermeyecektir.
+> HTTP bağlayıcıları içerecek bir DLP İlkesi oluştururken veya güncelleştirirken şema sürüm 2018-11-01 ' yı kullanın. Şablonu veya PowerShell 'i kullanarak HTTP desteği eklemek, yalnızca belirtilen ilkeyi etkiler. Yönetim Merkezi ile oluşturulan yeni ilkeler HTTP bağlayıcılarını içermez.
 
 
 
@@ -217,5 +218,5 @@ PowerShell kullanarak ilkeye özel bağlayıcılar ve/veya HTTP bağlayıcılar�
 
 * [Ortamlar hakkında daha fazla bilgi edinin](environments-overview-admin.md)
 * [Microsoft Flow hakkında daha fazla bilgi edinin](getting-started.md)
-* [Yönetim merkezi hakkında daha fazla bilgi edinin](admin-center-introduction.md)
-* [Veri tümleştirmesi hakkında daha fazla bilgi edinin](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)
+* [Yönetim Merkezi hakkında daha fazla bilgi edinin](admin-center-introduction.md)
+* [Veri tümleştirme hakkında daha fazla bilgi edinin](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

@@ -21,87 +21,88 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 007caa66731870f359e8cb33ba0919390d3196cd
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 00d20d361dd7b3db9f55d6b975c472bea0c4160e
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465807"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73549002"
 ---
 # <a name="monitor-and-manage-workflow-processes"></a>İş akışı süreçlerini izleme ve yönetme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-İşlemleri izlemek ve yönetmek için, işlemi bulmanız, durumunu değerlendirmeniz ve sorunları gidermek için gerekli eylemleri gerçekleştirmeniz gerekir.  
+İşlemleri izlemek ve yönetmek için, işlemi bulmanız, durumu değerlendirmeniz ve sorunları gidermek için gereken tüm eylemleri gerçekleştirmeniz gerekir.  
   
 <a name="BKMK_MonitorAsyncWorkflows"></a>   
 ## <a name="monitoring-background-workflows"></a>Arka plan iş akışlarını izleme  
- Arka plan iş akışları, durumlarını izlemek için Sistem İş kayıtları oluşturur. Uygulama içinde çeşitli yerlerde bu sistem işleri hakkındaki bilgilere erişebilirsiniz:  
+ Arka plan iş akışları, durumlarını izlemek için sistem Işi kayıtları oluşturur. Bu sistem işleriyle ilgili bilgilere uygulamanın içindeki çeşitli konumlarda erişebilirsiniz:  
   
- **[Ayarlar](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Sistem İşleri**  
- Bu tüm sistem işi türlerini içerir. Kayıtları **Sistem İşi Türü** **İş Akışı** olanlara filtrelemeniz gerekir.  
+ **Sistem Işlerinin [ayarları](/powerapps/maker/model-driven-apps/advanced-navigation#settings) >**  
+ Bu, tüm sistem işleri türlerini içerir. Kayıtları, **sistem Işi türünün** **iş akışı**olduğu yere filtrelemeniz gerekir.  
   
- **İş Akışı İşleminden**  
- Arka plan iş akışı tanımını açın ve **İşlem Oturumu** sekmesine gidin. Bu yalnızca bu arka plan iş akışı için sistem işlerini gösterir.  
+ **Iş akışı Işleminden**  
+ Arka plan iş akışı tanımını açın ve **Işlem oturumu** sekmesine gidin. Bu, yalnızca bu arka plan iş akışı için sistem işlerini gösterir.  
   
  **Kayıttan**  
- Varlık formunu gezinti **Arka Plan İşlemleri** ilişkisini içerecek şekilde düzenleyebilirsiniz. Bu, kayıt bağlamında başlatılan tüm sistem işlerini gösterir.  
+ Varlık formunu, gezintinin **arka plan işlemi** ilişkisini içerecek şekilde düzenleyebilirsiniz. Bu, kayıt bağlamında başlatılan tüm sistem işlerini gösterir.  
   
 > [!NOTE]
->  Zaman uyumsuz bir sistem işi (iş akışı) birkaç kez art arda başarısız olursa, yönetici veya uygulama oluşturucusunun sorunu belirleyip çözebilmesi için sistem bu işin yürütülmesini giderek artan aralıklarla erteler. İş yeniden başarılı olmaya başladıktan sonra normal olarak yürütülmeye devam eder.  
+>  Zaman uyumsuz bir sistem işi (iş akışı) birkaç kez art arda başarısız olursa, sistem, yöneticinin veya uygulama Oluşturucu sorunu araştırıp çözebilmesi için o işin yürütülmesini daha uzun ve daha uzun zaman aralıklarıyla erteleyecek şekilde başlatılır. İş yeniden başarılı bir şekilde başladıktan sonra normal yürütmeyi sürdürür.  
   
 <a name="BKMK_ActionsOnRunningWorkflows"></a>   
-### <a name="actions-on-running-background-workflows"></a>Çalışan arka plan iş akışları üzerinde gerçekleştirilen eylemler  
- Bir arka plan iş akışı çalışırken, iş akışı için **İptal**, **Duraklat** veya **Ertele** seçeneklerini kullanabilirsiniz. Daha önce bir iş akışını duraklattıysanız, bunu **Sürdürebilirsiniz**.  
+### <a name="actions-on-running-background-workflows"></a>Arka plan iş akışları çalıştırma eylemleri  
+ Arka plan iş akışı çalışırken, iş akışını **Iptal etme**, **duraklatma**veya **erteleme** seçenekleriniz vardır. Daha önce bir iş akışını durakladıysanız, bunu **sürdürebilirsiniz** .  
   
 <a name="BKMK_MonitorSyncWorkflows"></a>   
 ## <a name="monitoring-real-time-workflows-and-actions"></a>Gerçek zamanlı iş akışlarını ve eylemleri izleme  
- Gerçek zamanlı iş akışları ve eylemleri hemen gerçekleştirildiği için Sistem İşi kayıtlarını kullanmaz. Oluşan herhangi bir hata uygulama içinde **İş süreci Hatası** başlığıyla kullanıcıya gösterilir.  
+ Gerçek zamanlı iş akışları ve eylemler hemen gerçekleştiğinden sistem Işi kayıtlarını kullanmaz. Oluşan herhangi bir hata, uygulamada **Iş süreci hatası**başlıklı Kullanıcı tarafından görüntülenir.  
   
- Başarılı işlemler için günlük yoktur. İşlem için **Yönetim** sekmesinin altında **İş Akışı Günlüğü Bekletme** alanında **Hatalarla karşılaşılan iş akışı işleri için Günlükleri sakla** seçeneğini işaretleyerek hatalar için günlüğe kaydetmeyi etkinleştirebilirsiniz.  
+ Başarılı işlemler için günlük yok. İşlem için **Yönetim** sekmesinin alt kısmındaki **Iş akışı günlüğü tutma** alanında **hatalarla karşılaşan Iş akışı işleri için günlükleri tut** seçeneğini işaretleyerek hatalara yönelik günlük kaydını etkinleştirebilirsiniz.  
   
- Belirli bir işlem için hata günlüğünü görüntülemek için, gerçek zamanlı iş akışı veya eylem tanımını açın ve **İşlem Oturumu** sekmesine gidin. Bu, yalnızca bu işlem için günlüğe kaydedilmiş olan hataları gösterir.  
+ Belirli bir işlemin hata günlüğünü görüntülemek için gerçek zamanlı iş akışını veya eylem tanımını açın ve **Işlem oturumu** sekmesine gidin. Bu, yalnızca bu işlem için günlüğe kaydedilen hataları gösterir.  
   
- Herhangi bir işlem için tüm hataların bir görünümünü istiyorsanız, **Gelişmiş Bulma**’ya giderek işlem oturumu varlığında hataları gösteren bir görünüm oluşturun.  
+ Herhangi bir işlem için tüm hataların bir görünümünü istiyorsanız **Gelişmiş bul** ' a gidin ve işlem oturumu varlığındaki hataları gösteren bir görünüm oluşturun.  
   
 <a name="BKMK_StatusOfWorkflowProcesses"></a>   
 ## <a name="status-of-workflow-processes"></a>İş akışı işlemlerinin durumu  
- İş akışı işlemlerinin listesini görüntülediğinizde, herhangi bir işlem aşağıdaki **Durum** ve **Durum Nedeni** değerlerinden birine sahip olabilir:  
+ İş akışı işlemlerinin bir listesini görüntülediğinizde, her bir işlem aşağıdaki **durum** ve **durum nedeni** değerlerinden birine sahip olabilir:  
   
-|Eyalet|Durum Nedeni|  
+|Durumunda|Durum nedeni|  
 |-----------|-------------------|  
-|Hazır|Kaynaklar Bekleniyor|  
-|Askıya Alındı|Bekleniyor|  
-|Kilitli|Sürüyor<br /><br /> Duraklatılıyor<br /><br /> İptal Ediliyor|  
-|Tamamlandı|Başarılı Oldu<br /><br /> Başarısız<br /><br /> İptal Edildi|  
+|Geldiğinizde|Kaynak bekleniyor|  
+|Alın|Bekleniyor|  
+|Kilitlenecek|Devam ediyor<br /><br /> Duraklatılıyor<br /><br /> İptali|  
+|dım|Baarı<br /><br /> başaramadı<br /><br /> Edilmesi|  
 
 ## <a name="deleting-process-log-records"></a>İşlem günlüğü kayıtlarını silme
 
-Kuruluşunuz sık sık çalıştırılan arka plan iş akışları veya iş süreci akışları kullanıyorsa, işlem kaydı günlüklerinin miktarı performans sorunlarına yol açabilecek ve önemli miktarda alan kullanabilecek kadar büyük olabilir. Standart toplu kayıt silme işlerinden biri tarafından yeterli bir şekilde kaldırılmayan işlem günlüğü kayıtlarını silmek üzere özel bir toplu kayıt silme işi oluşturmak için sistem işlerini toplu silme özelliğini kullanabilirsiniz.
+Kuruluşunuz sık çalıştırılan arka plan iş akışlarını veya iş süreci akışlarını kullanıyorsa, işlem günlüğü kayıtlarının miktarı performans sorunlarına neden olacak kadar büyük olabilir ve önemli miktarda depolama alanı tüketir. Standart toplu kayıt silme işlerinin bir üyesi tarafından yeterince kaldırılmayan işlem günlüğü kayıtlarını silmek için, özel bir toplu kayıt silme işi oluşturmak üzere sistem işlerini toplu silme özelliğini kullanabilirsiniz.
 
-1. **Ayarlar** > **Veri Yönetimi** > **Toplu Kayıt Silme** seçeneğine gidin.
-2. **Toplu Kayıt Silme** alanında **Yeni** seçeneğini belirleyin. 
-3. **Toplu Silme Sihirbazı** başlangıç sayfasında, **Sonraki** seçeneğini belirleyin.
-4. **Ara** listesinde **Sistem İşleri** seçeneğini belirleyin.
-5. İşlem kaydı günlüklerini silmek üzere bir toplu kayıt silme işi oluşturmak için aşağıdaki koşullar kullanılır. 
- - **Sistem İş Türü Eşittir İş Akışı**. Bu iş akışı kayıtlarını hedefler. 
- - **Durum Eşittir Tamamlandı**. İş yalnızca tamamlanan iş akışlarına karşı çalıştırılabilir.
- - **Durum Nedeni Eşittir Başarılı**. Başarılı, iptal edilen ve başarısız olan işleri silin.
- - **X 30 Günden Daha Eski Tamamlanma Zamanı**. Yalnızca 30 günden daha eski iş akışı işlem günlüğü kayıtlarını silmek için Tamamlanma alanını kullanın.
- ![custom-bulk-record-deletion.png](media/custom-bulk-record-deletion.png)
-6. **Sonraki** seçeneğine tıklayın.
-7. Toplu silme işinizin çalıştırılacağı sıklığı ayarlayın. İşinizi belirlenen aralıklarla çalıştırmak için zamanlayabilir veya [Hemen seçeneğini kullanarak](#using-the-immediately-option) tek seferlik bir toplu silme işi oluşturabilirsiniz. Bu örnekte, yinelenen bir iş 21 Mayıs 2018 tarihinde ve bundan sonra 30 günde bir çalışacak şekilde ayarlanmış. 
-![Toplu kayıt silme seçenekleri](media/custom-bulk-record-delete-options.png)
+1. **Toplu kayıt silme** > **veri yönetimi** > **Ayarlar** ' a gidin.
+2. **Toplu kayıt silme** alanından **Yeni**' yi seçin. 
+3. **Toplu Silme Sihirbazı** başlangıç sayfasında **İleri**' yi seçin.
+4. **Ara** listesinde **Sistem işleri**' ni seçin.
+5. İşlem günlüğü kayıtlarını silmek için bir toplu kayıt silme işi oluşturmak için aşağıdaki koşullar kullanılır. 
+ - **Sistem Işi türü Iş akışına eşittir**. Bu, iş akışı kayıtlarını hedefler. 
+ - **Durum eşittir tamamlandı**. İşi çalıştırmak için yalnızca tamamlanan iş akışları geçerlidir.
+ - **Durum açıklaması başarılı oldu**. Başarılı, iptal edilmiş ve başarısız işleri silin.
+ - **X gün 30 ' dan daha eski bir süre Içinde tamamlandı**. Yalnızca 30 günden eski olan iş akışı işlem günlüğü kayıtlarını silmek için tamamlandı alanını kullanın.
+ ![Custom-Bulk-Record-Deletion. png](media/custom-bulk-record-deletion.png)
+6. **İleri**' ye tıklayın.
+7. Toplu silme işinizin çalışacağı sıklığı ayarlayın. İşinizi ayarlanan aralıklarda çalışacak şekilde zamanlayabilir veya [anında seçeneği kullanarak](#using-the-immediately-option)bir kerelik toplu silme işi oluşturabilirsiniz. Bu örnekte, yinelenen bir iş 21 Mayıs 2018 tarihinde ve sonrasında 30 günde bir çalışacak şekilde ayarlanır. 
+Toplu kayıt silme seçeneklerini ![](media/custom-bulk-record-delete-options.png)
 
 ### <a name="using-the-immediately-option"></a>Hemen seçeneğini kullanma
 
-**Hemen** seçeneğini belirleyerek kayıtları zaman uyumlu toplu silme işlemini hemen gerçekleştirme seçeneğiniz olduğunu fark edeceksiniz. Bu silme işlemi, her bir kaydı ortamı işlem hattından geçirmek yerine doğrudan SQL Server yürütmesi ile gerçekleştirilir ve sistem performansına etkiyi azaltabilir. İşleme için zaman uyumsuz kuyrukta bekleyen toplu silme işlemi yerine fazla iş akışı kayıtlarını hızlı bir şekilde temizlemek istiyorsanız bu iyi bir seçenektir. 
+**Hemen** seçeneğini belirleyerek kayıtların anında zaman uyumlu toplu silme işlemini gerçekleştirme seçeneğiniz olduğuna dikkat edin. Bu silme işlemi, her bir kaydı silme olayı ardışık düzeni aracılığıyla geçirmek yerine, sistem performansının etkilerini azaltan doğrudan SQL Server yürütme ile gerçekleştirilir. İşlem için zaman uyumsuz Kuyrukta bekleyen toplu silme işi yerine ek iş akışı kayıtlarını hızlıca temizlemek istiyorsanız bu iyi bir seçenektir. 
 
-**Hemen** seçeneği aşağıdaki koşullar doğru olduğunda etkinleştirilir: 
-- Toplu silme işlemi, Sistem İşleri varlığı içindir.
-- Arama ölçütlerinde sistem iş türü eşittir iş akışı koşulu vardır. 
-- Toplu silme işini oluşturan kullanıcı AsyncOperation varlığında silme ayrıcalığı için genel derinliğe sahiptir. Sistem yöneticisi güvenlik rolü bu ayrıcalığa sahiptir.  
+Aşağıdaki koşullar doğru olduğunda **hemen** seçenek etkinleştirilir: 
+- Toplu silme işi, sistem Işleri varlığına yöneliktir.
+- Arama ölçütlerinde, sistem işi türü iş akışına eşit bir durum vardır. 
+- Toplu silme işini oluşturan kullanıcı, zaman uyumsuz coperation varlığındaki silme ayrıcalığının genel derinliğine sahiptir. Sistem Yöneticisi güvenlik rolünde bu ayrıcalık vardır.  
 
-Zaman uyumlu toplu silme yalnızca tamamlanmış durumdaki AsyncOperation kayıtlarını siler. Her çağrı için en fazla bir milyon kayıt işlenir. Ortamınızda kaldırılması gereken bir milyondan fazla kayıt varsa, işin birden çok kez yürütülmesi gerekir.  
+Zaman uyumlu toplu silme işlemi, yalnızca zaman uyumsuz coperation kayıtlarını tamamlanmış durumunda siler. Her çağırma için en fazla 1.000.000 kayıt işlenir. Ortamınızda kaldırmak üzere 1.000.000 'den fazla kayıt varsa, işi birden çok kez yürütmeniz gerekecektir.  
   
 ## <a name="next-steps"></a>Sonraki adımlar   
- [İş akışı süreçleri için en iyi uygulamalar](best-practices-workflow-processes.md) <br />
+ [İş akışı işlemleri için en iyi uygulamalar](best-practices-workflow-processes.md) <br />
 

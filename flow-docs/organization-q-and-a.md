@@ -1,6 +1,6 @@
 ---
-title: Kuruluşunuzda Flow’a kaydolma hakkında soru ve cevaplar | Microsoft Docs
-description: Office 365 kiracınızdaki lisanslar, yönetim ve Flow hizmetine kaydolan kullanıcılar hakkında sık sorulan sorular ve yanıtları
+title: Kuruluşunuzda akış kaydolma soru-cevap & | Microsoft Docs
+description: Office 365 kiracınızda Flow 'a kaydolan lisanslar, yönetim ve kullanıcılar hakkında sık sorulan sorular ve yanıtlar
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,150 +20,151 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 750386a4a90a0b8dfb0f1e1f4320de3afee8db6f
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468973"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548919"
 ---
-# <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda Flow ile ilgili soru-cevap
-Bu konu başlığında, kuruluşunuzdaki kullanıcıların Flow’u nasıl kullanacağı ve Flow hizmetini nasıl denetleyeceğiniz açıklanmıştır.
+# <a name="flow-in-your-organization-qa"></a>Kuruluşunuzda akış Q &
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Bu konu, kuruluşunuzdaki kullanıcıların Flow 'u nasıl kullanabileceğinizi ve Flow hizmetini nasıl denetleyebileceğinizi açıklamaktadır.
 
-## <a name="signing-up-for-flow"></a>Flow’a kaydolma
+## <a name="signing-up-for-flow"></a>Flow 'a kaydolma
 ### <a name="what-is-microsoft-flow"></a>Microsoft Flow nedir?
-Microsoft Flow, kişilerin ve ekiplerin eşitleme yapmak, bildirimler almak, veri toplamak ve daha fazlası için sık kullandığı uygulama ve hizmetler arasında otomatik iş akışları oluşturmasına yardımcı olan bir genel bulut hizmetidir. 
+Microsoft Flow, kişilere ve takımlara, sık kullanılan uygulamalar ve hizmetler arasında eşitlenmek, bildirimler almak, veri toplamak ve daha fazlasını yapmak için otomatik iş akışları ayarlamaya yardımcı olan bir genel bulut hizmetidir. 
 
-### <a name="how-do-people-sign-up-for-flow"></a>Kullanıcılar Flow’a nasıl kaydolabilir?
-Kullanıcılar Web portalı üzerinden Flow’a iki şekilde kaydolabilir:
+### <a name="how-do-people-sign-up-for-flow"></a>İnsanlar Flow 'a nasıl kaydolabilir?
+Kişilerin Web portalı aracılığıyla Flow 'a kaydolması için iki yol vardır:
 
 #### <a name="option-1"></a>Seçenek 1
-Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip **Ücretsiz kaydolun**’u seçerek ve ardından [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) veya [signup.live.com](https://signup.live.com) üzerinden Flow’a kaydolma işlemini tamamlayarak kayıt yapabilir.
+Herkes, [Flow.Microsoft.com](https://flow.microsoft.com)' a giderek, **ücretsiz kaydolun**' ı seçerek ve ardından [admin.Microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) veya [signup.Live.com](https://signup.live.com)aracılığıyla Flow için kaydolma işlemini tamamlayarak kaydolabilir.
 
 #### <a name="option-2"></a>Seçenek 2
-Kullanıcılar [flow.microsoft.com](https://flow.microsoft.com) sayfasına gidip **Oturum Aç**’ı seçtikten sonra iş, okul veya kişisel e-posta adresleri ile oturum açıp Flow kullanım koşullarını kabul ederek kaydolabilir.    
+Herkes, [Flow.Microsoft.com](https://flow.microsoft.com)adresine gidip **oturum aç**' ı seçerek, iş, okul veya kişisel e-postalarıyla oturum açıp akış kullanım koşullarını kabul ederek kaydolabilir.    
 
-Kuruluşunuzdaki bir kullanıcı Seçenek 2 ile Flow’a kaydolduğunda bu kullanıcıya otomatik olarak bir Microsoft Flow Ücretsiz lisansı atanır.
+Kuruluşunuzdaki bir Kullanıcı, seçenek 2 ile Flow 'a kaydolduğunda, bu kullanıcıya otomatik olarak Microsoft Flow ücretsiz lisans atanır.
 
-[Flow’a kaydolma](sign-up-sign-in.md) bölümünde daha ayrıntılı bilgi verilmektedir.
+[Flow 'A kaydolma](sign-up-sign-in.md) , daha fazla ayrıntı içerir.
 
-### <a name="what-is-the-microsoft-flow-free-plan"></a>Microsoft Flow Ücretsiz Planı nedir?
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Microsoft Flow Ücretsiz plan nedir?
 
-Microsoft Flow Ücretsiz Planı yalnızca izleme amaçlı kullanılır. Etkinleştirilmesi veya devre dışı bırakılması, kullanıcının akış oluşturma olanağını etkilemez. Microsoft Flow Ücretsiz Planı devre dışı bırakıldığında, kullanıcının oturum açmasıyla birlikte plan yeniden etkinleştirilir. Bu beklenen bir davranıştır.
+Microsoft Flow Ücretsiz plan yalnızca izleme amacıyla kullanılır. Kullanıcının akış oluşturma özelliğini etkinleştirme veya devre dışı bırakma özelliği bir etkiye sahip değildir. Microsoft Flow ücretsiz planı devre dışı bırakırsanız, Kullanıcı oturum açtığında yeniden etkinleşir. Bu beklenen davranıştır.
 
-### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Bir kullanıcının Flow’a kaydolmasını engelleyebilir miyim?
-Microsoft Flow tamamen genel bir bulut hizmetidir. Dünyadaki herkes kaydolup günlük görevlerini otomatik hale getirmek için bu programı kullanabilir. Microsoft Flow’u kullanmak için kullanıcıların bir Office 365 hesabına sahip olması veya bu hesabı kullanması şart değildir. Bu nedenle, şu anda başka bir kişinin Flow kullanmasını (e-posta adresine bakılmaksızın dünyadaki herkes kullanabilir) engellemenize yönelik bir mekanizma bulunmamaktadır.
+### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Başka bir kişinin Flow 'a kaydolmasını engelleyebilir miyim?
+Microsoft Flow, tam olarak genel bir bulut hizmetidir ve dünyanın her yerindeki herkes bunu gündelik görevlerini otomatikleştirmek için kullanabilir. Microsoft Flow kullanmak için, kullanıcıların Office 365 hesabı bulunan veya kullanması gereken bir gereksinim yoktur. Bu nedenle, şu anda başka bir kişinin Flow 'u (e-posta adresinden bağımsız olarak, dünyanın herkes tarafından) kullanmasını engellemeniz için hiçbir mekanizma yoktur.
 
-Ancak, bir kullanıcı Microsoft Flow’a kaydolursa ve bu kullanıcıyı kuruluşunuzda desteklememeyi seçerseniz kullanıcının bu programı kullanımından doğan maliyetler şirketinize yansıtılamaz. Bir kişi Microsoft Flow’a kaydolduğunda, Microsoft tarafından sunulan diğer birçok bulut hizmetinde olduğu gibi (ör. Bing, Wunderlist, OneDrive veya Outlook.com ) kişi ile Microsoft arasındaki bir ilişki oluşturulur. Bir kişinin Microsoft Flow kullanımı, hiçbir şekilde bu hizmetin kuruluşunuz tarafından sağlandığı anlamına gelmez.
+Ancak, bir kişi Microsoft Flow için kaydolursa ve kuruluşunuzun içinden desteklemeyi tercih ediyorsanız, şirketiniz hiçbir şekilde maliyetlendirilebilirsiniz. Bireysel bir Microsoft Flow için kaydolduğunda ilişki, Microsoft 'un Bing, Wunderlist, OneDrive veya Outlook.com gibi diğer birçok bulut hizmeti gibi, bireysel ve Microsoft arasında yapılır. Bireysel Microsoft Flow kullanımı, hizmetin kuruluşunuz tarafından sağlandığı anlamına gelmez.
 
-Son olarak, şirketiniz Microsoft Flow içindeki yalnızca kurumsal verilerin kullanımını kısıtlamak istiyorsa bunun Veri kaybı önleme (DLP) ilkeleri aracılığıyla yapılmanız mümkündür.
+Son olarak, şirketiniz Microsoft Flow içinde yalnızca kurumsal verilerin kullanımını kısıtlamak isterse veri kaybı önleme (DLP) ilkeleri aracılığıyla mümkündür.
 
-### <a name="how-can-people-gain-access-to-the-paid-features-of-microsoft-flow"></a>Kullanıcılar ücretli Microsoft Flow özelliklerine nasıl erişebilir?
-Kişiler ücretli Microsoft Flow özelliklerine üç farklı şekilde erişebilir:
+### <a name="how-can-people-gain-access-to-the-paid-features-of-microsoft-flow"></a>Kullanıcıların Microsoft Flow ücretli özelliklerine nasıl erişim elde edebilir?
+Bireyler Microsoft Flow ücretli özelliklerine üç farklı yolla erişim elde edebilir:
 
-1. Bireysel olarak 90 günlük ücretsiz Flow Planı 1 veya Flow Planı 2 denemesi için kaydolabilirler
-2. Kişilere Office 365 yönetici portalından bir Flow lisansı atayabilirsiniz.
-3. Kullanıcıya Flow hizmetine erişim içeren bir Office 365 ve Dynamics 365 planı atanmış olabilir. Flow özelliklerini içeren Office 365 ve Dynamics 365 planlarının listesi için [Flow fiyatlandırma sayfasına](https://flow.microsoft.com/pricing/) bakın.
+1. Akış planı 1 veya Flow planı 2 deneme 90 gün için tek tek kaydolabilir
+2. Office 365 yönetim portalı 'nda kendilerine bir akış lisansı atayabilirsiniz.
+3. Kullanıcıya, Flow hizmetine erişim içeren bir Office 365 ve Dynamics 365 planı atandı. Flow özelliklerini içeren Office 365 ve Dynamics 365 planlarının listesi için [akış fiyatlandırma sayfasına](https://flow.microsoft.com/pricing/) bakın.
 
-### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>Bir kullanıcının ücretli Flow özelliklerini kullanmasını engelleyebilir miyim?
-Herhangi bir kullanıcı ücretli Microsoft Flow özelliklerini 90 gün boyunca herhangi bir maliyet oluşmadan kullanabilir. Ancak, kuruluşunuz içinde kalıcı ücretli lisansların atamasını Office 365 yönetici portalından tam olarak yönetebilirsiniz.
+### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>Başka bir kişinin, Flow 'un ücretli özelliklerini kullanmasını engelleyebilir miyim?
+Herhangi bir kişi, 90 gün boyunca Microsoft Flow ücretli özellikleri deneyebilir ve hiçbir ücret ödemenize neden olabilir. Ancak, Office 365 Yönetici portalı aracılığıyla kuruluşunuzun içinde kalıcı olarak ücretli lisansların atanmasını tamamen yönetebilirsiniz.
 
-Ücretsiz tekliflerde olduğu gibi, bir kişi deneme için kaydolmayı seçerse bu, ilgili kişi ile Microsoft arasındaki bir ilişkidir ve şirketiniz tarafından onaylanmış olması gerekmez.
+Ücretsiz tekliflerde olduğu gibi, bireysel ve Microsoft arasında doğrudan bir ilişki olan deneme için kaydolmayı seçerse, şirketiniz tarafından onaylanmış olması gerekmez.
 
-## <a name="administration-of-flow"></a>Flow yönetimi
-### <a name="why-has-the-flow-icon-appeared-in-the-office-365-app-launcher"></a>Flow simgesi neden Office 365 uygulama başlatıcıda görüntüleniyor?
-Ağustos ayında duyurulduğu gibi Microsoft Flow, artık Office 365 paketinin temel bir parçasıdır. Bu duyurudan üç ay sonra Microsoft Flow, tüm mevcut Office 365 SKU'ları kapsamındaki bir hizmet olarak etkinleştirilmiştir. Dünyanın her yerinden kullanıcılar artık Microsoft Flow’u kullanabildiği için Flow bu kişiler için uygulama başlatıcıda görüntülenmektedir.
+## <a name="administration-of-flow"></a>Akışın yönetimi
+### <a name="why-has-the-flow-icon-appeared-in-the-office-365-app-launcher"></a>Office 365 uygulama başlatıcısı 'nda akış simgesi neden görünüyor?
+Ağustos ayında duyurulduğu gibi Microsoft Flow artık Office 365 Suite 'in temel bir parçasıdır. Bu duyurudan sonraki üç ay, mevcut Office 365 SKU 'sunun bir parçası olarak hizmet olarak etkinleştirildi Microsoft Flow. Dünyanın her yerindeki kullanıcılar artık Microsoft Flow kullanabilir, bu, uygulama başlatıcısı 'nda görünüyor.
 
-Flow kutucuğunu uygulama başlatıcıdan varsayılan olarak kaldırmak istiyorsanız aşağıdaki bölüme bakın.
+Akış kutucuğunu uygulama başlatıcıdan varsayılan olarak kaldırmak istiyorsanız aşağıdaki bölüme bakın.
 
-### <a name="how-do-i-remove-microsoft-flow-from-the-app-launcher-for-my-organization"></a>Microsoft Flow’u kuruluşum için uygulama başlatıcıdan nasıl kaldırabilirim?
-Bir kullanıcıya bir Flow Planı 1 veya Flow Planı 2 lisansı atandıysa bu kullanıcı için Flow lisansını kaldırarak Flow simgesini uygulama başlatıcıdan kaldırmak için aşağıdaki adımları izleyebilirsiniz:
+### <a name="how-do-i-remove-microsoft-flow-from-the-app-launcher-for-my-organization"></a>Kuruluşumun uygulama başlatıcıdan Microsoft Flow Nasıl yaparım? kaldırmak istiyor musunuz?
+Bir kullanıcıya Flow plan 1 veya Flow plan 2 lisansı atanmışsa, bu kullanıcıya ait Flow lisansını kaldırmak için aşağıdaki adımları uygulayabilirsiniz; bu işlem, uygulama başlatıcıdan akış simgesini kaldırır:
 
-1. [Office 365 Yönetici Portalı](https://portal.microsoftonline.com/)’na gidin.
-2. Sol gezinti çubuğunda, **Kullanıcılar**’ı ve ardından **Etkin Kullanıcılar**’ı seçin.
-3. Lisansını kaldırmak istediğiniz kullanıcıyı bulun ve kullanıcının adını seçin.
-4. Kullanıcı ayrıntıları bölmesinde, **Ürün lisansları** bölümünde **Düzenle**’yi seçin.
-5. **Microsoft Flow Planı 1** veya **Microsoft Flow Planı 2** adlı lisansı bulun, iki durumlu düğmeyi **Kapalı** olarak ayarlayın ve ardından **Kaydet**’i seçin.
+1. [Office 365 Yönetici portalına](https://portal.microsoftonline.com/)gidin.
+2. Sol gezinti çubuğunda **Kullanıcılar**' ı seçin ve ardından **etkin kullanıcılar**' ı seçin.
+3. Lisansını kaldırmak istediğiniz kullanıcıyı bulun ve ardından adını seçin.
+4. Kullanıcı ayrıntıları bölmesinde, **ürün lisansları** bölümünde **Düzenle**' yi seçin.
+5. **Microsoft Flow plan 1** veya **Microsoft Flow planı 2**adlı lisans bulun, geçişi **kapalı** olarak ayarlayın ve ardından **Kaydet**' i seçin.
    
    ![](./media/organization-q-and-a/remove-license.png)
 
-Kullanıcı Flow’a Office 365 ve Dynamics 365 plan lisansı üzerinden erişiyorsa, aşağıdaki adımları izleyerek kullanıcının bu plana dahil olan ek özelliklere erişimini devre dışı bırakabilirsiniz:
+Bir kullanıcının Office 365 ve Dynamics 365 Plan lisansı aracılığıyla akışa erişimi varsa, aşağıdaki adımları uygulayarak bu plana dahil olan ek özelliklere erişimini devre dışı bırakabilirsiniz:
 
-1. [Office 365 Yönetici Portalı](https://portal.microsoftonline.com/)’na gidin.
-2. Sol gezinti çubuğunda, **Kullanıcılar**’ı ve ardından **Etkin Kullanıcılar**’ı seçin.
-3. Erişimi kaldırmak istediğiniz kullanıcıyı bulun ve kullanıcının adını seçin.
-4. Kullanıcı ayrıntıları bölmesinde, **Ürün lisansları** bölümünde **Düzenle**’yi seçin.
-5. Kullanıcının Office 365 veya Dynamics 365 lisansını genişletin, **Office 365 için Flow** veya **Dynamics 365 için Flow** adlı hizmete erişimi devre dışı bırakın ve ardından **Kaydet**’i seçin.
+1. [Office 365 Yönetici portalına](https://portal.microsoftonline.com/)gidin.
+2. Sol gezinti çubuğunda **Kullanıcılar**' ı seçin ve ardından **etkin kullanıcılar**' ı seçin.
+3. Erişimini kaldırmak istediğiniz kullanıcıyı bulun ve ardından adını seçin.
+4. Kullanıcı ayrıntıları bölmesinde, **ürün lisansları** bölümünde **Düzenle**' yi seçin.
+5. Kullanıcının Office 365 veya Dynamics 365 lisansını genişletin, **office 365 Için Flow** veya **Dynamics 365 için** Flow adlı hizmete erişimi devre dışı bırakın ve ardından **Kaydet**' i seçin.
    
    ![](./media/organization-q-and-a/remove-service-plan.png)
 
-PowerShell aracılığıyla lisansları toplu olarak kaldırmak da mümkündür. Ayrıntılı bir örnek için [Office 365 PowerShell ile kullanıcı hesaplarından lisansları kaldırma](https://technet.microsoft.com/library/dn771774.aspx) konusuna bakın.   Son olarak, bir lisans içindeki hizmetlerin toplu olarak kaldırılması hakkında daha ayrıntılı yönergeleri [Office 365 PowerShell ile hizmetlere erişimi devre dışı bırakma](https://technet.microsoft.com/library/dn771769.aspx) konusunda bulabilirsiniz.
+Lisansları PowerShell aracılığıyla topluca kaldırma de mümkündür. Ayrıntılı bir örnek için bkz. [Office 365 PowerShell ile Kullanıcı hesaplarından lisansları kaldırma](https://technet.microsoft.com/library/dn771774.aspx) .   Son olarak, bir lisandaki hizmetlerin toplu olarak kaldırılması hakkında daha fazla rehberlik, [Office 365 PowerShell ile hizmetlere erişimi devre dışı bırakma](https://technet.microsoft.com/library/dn771769.aspx)konusunda da bulunabilir.
 
-Kuruluşunuzdaki bir kullanıcı için Flow lisansının kaldırılması, bu kullanıcı için Flow simgesinin aşağıdaki konumlardan kaldırılmasına neden olur:
+Şirket içindeki bir kullanıcı için Flow lisansının veya hizmetin kaldırılması, bu kullanıcı için aşağıdaki konumlardan akış simgesinin kaldırılmasına neden olur:
 
 1. [Office.com](https://office.com)
    
    ![](./media/organization-q-and-a/office-home.png)
-2. Office 365 Uygulama Başlatıcı
+2. Office 365 uygulama başlatıcısı
    
    ![](./media/organization-q-and-a/office-waffle.png)
 
-Bunun varsayılan olarak yalnızca Flow kutucuğunu kaldıracağını unutmayın. Kullanıcı bireysel olarak Microsoft Flow kullanmayı seçebilir.
+Bunun yalnızca akış kutucuğunu varsayılan olarak kaldıracağına unutmayın. Kullanıcı Microsoft Flow bireysel olarak kullanmayı yine de tercih edebilir.
 
-### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Neden Office 365 kiracımda Microsoft Flow için 10.000 lisans görüntülendi?
-Dileyen herkes Microsoft Flow Planı 1 veya 2’yi 90 gün boyunca deneyebilir ve bu deneme lisansları kiracınızdaki yeni Flow kullanıcıları için mevcut kapasiteyi gösterir. Bu lisanslar için herhangi bir ücret alınmaz. Özellikle, Office 365 yönetici portalında Flow için 10.000 (deneme) lisansı kapasitesi görmenizin iki olası nedeni vardır:
+### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Microsoft Flow 10.000 lisansı neden Office 365 kiracımda gösteriliyor?
+Herhangi bir kişi, 90 gün boyunca Microsoft Flow planı 1 veya 2 ' yi deneyebilir ve bu deneme lisansları kiracınızdaki yeni Flow kullanıcıları için kullanılabilir kapasiteyi temsil eder. Bu lisanslar için ücret alınmaz. Özellikle, Office 365 yönetim portalında akış için bir kapasite 10.000 (deneme) lisansı görmenizin iki olası nedeni vardır:
 
-1. Kiracınızdaki en az bir kullanıcı Nisan 2016 ile Ekim 2016 arasında gerçekleşen Flow genel önizlemesine katıldıysa "Microsoft PowerApps ve Mantık akışları" olarak etiketlenen 10.000 lisans görürsünüz
+1. Kiracınızdaki en az bir Kullanıcı 2016 Nisan 'dan 2016 Ekim 'e yayılmış akış genel önizlemesine katıldıysanız, "Microsoft PowerApps ve Logic Flow" olarak etiketlenen 10.000 lisans görürsünüz.
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Kiracınızdaki en az bir kullanıcı [Kullanıcılar PowerApps için nasıl kaydolabilir?](#how-do-people-sign-up-for-flow) bölümünde özetlenen deneme kaydı **Seçenek 1**’i kullanarak bir Flow Planı 2 için kaydolduysa "Microsoft Power Apps & Flow" olarak etiketlenen 10.000 lisans görürsünüz
+2. Kiracınızdaki en az bir Kullanıcı, [Kullanıcılar PowerApps 'e kaydolma](#how-do-people-sign-up-for-flow) bölümünde özetlenen deneme kayıt **seçeneği 1** ' i inceleyerek Flow planı 2 deneme sürümü için Kaydolmışsa, "Microsoft Power Apps & Flow" etiketli 10.000 lisans görürsünüz.
    
     ![](./media/organization-q-and-a/licenses1.png)
 
-Kullanıcılara Office 365 yönetici portalını kullanarak kendiniz ek lisanslar atamayı seçebilirsiniz, ancak bunların Microsoft Flow Planı 2 için deneme lisansı olduğunu ve sürelerinin bir kullanıcıya atandıktan 90 gün sonra dolacağını unutmayın.
+Office 365 Yönetici portalı aracılığıyla kullanıcılara daha fazla lisans atamayı seçebilirsiniz, ancak bunların Microsoft Flow plan 2 için deneme lisansları olduğunu ve bir kullanıcıya atanan 90 gün sonra süresi dolacağını lütfen unutmayın.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Ücretsiz mi? Bu lisanslar için benden ücret alınacak mı?
-Kullanıcılar açık izniniz olmadıkça kuruluşunuza maliyet yansımasına neden olamaz, yani ücretsiz lisanslar veya deneme lisansları kuruluşunuzun ücretlendirilmesine yol açmaz. Ayrıca, bu lisanslarda çalıştırma kotası gibi kotaları kullanılmaz.
+### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Bu ücretsizdir mi? Bu lisanslar için ücretlendirilmem gerekir mi?
+Herhangi bir Kullanıcı, Express izniniz olmadan kuruluşunuz için herhangi bir ücret ödemez, bu nedenle ücretsiz veya deneme lisansları kuruluşunuzun ücretlerine neden olabilir. Üstelik, Ayrıca, çalıştırma kotaları gibi kotalar de kullanmaz.
 
-### <a name="i-removed-the-microsoft-flow-free-license-and-users-can-still-access-flow"></a>Microsoft Flow Ücretsiz lisansını kaldırdım, ancak kullanıcılar hala Flow’a erişebiliyor.
-Microsoft Flow Ücretsiz lisansı yalnızca izleme amaçlı eklenir. İlk bölümde bahsedildiği gibi, başka bir kullanıcının Microsoft Flow’u bireysel amaçlarla kullanmasını önlemek mümkün değildir. Bu nedenle, Microsoft Flow Ücretsiz lisansının var olması gerçekte herhangi bir özellik eklemez veya kaldırmaz.
+### <a name="i-removed-the-microsoft-flow-free-license-and-users-can-still-access-flow"></a>Microsoft Flow ücretsiz lisans kaldırdım ve kullanıcılar akışa erişmeye devam edebilir mi?
+Microsoft Flow ücretsiz lisans yalnızca izleme amacıyla dahil edilir. İlk bölümde kapsanmış olduğu gibi, başka bir kişinin bireysel amaçlar için Microsoft Flow kullanmasını engellemek mümkün değildir. Bu nedenle, Microsoft Flow ücretsiz bir lisansın varlığı aslında hiçbir özelliği vermez veya kaldırmaz.
 
-### <a name="why-cant-i-see-all-flow-licenses-in-the-office-365-admin-portal"></a>Office 365 Yönetim portalında tüm Flow lisanslarını neden göremiyorum?
-Kullanıcılar, Microsoft Flow’u bireysel olarak veya kuruluşlarının bir parçası olarak kullanabilir. Kuruluş düzeyindeki lisanslar, Office 365 portalında her zaman görünür. Ancak, bir kullanıcı deneme sürümüne bireysel kullanıcı olarak kaydolursa, bu lisans kullanıcının Office 365 yöneticisi tarafından yönetilmez ve portalda görünmez.
+### <a name="why-cant-i-see-all-flow-licenses-in-the-office-365-admin-portal"></a>Office 365 yönetici portalındaki tüm akış lisanslarını neden göremiyorum?
+Kullanıcılar, Microsoft Flow bireyler veya kuruluşunuzun bir parçası olarak kullanabilir. Kuruluş düzeyindeki lisanslar her zaman Office 365 portalında görünür olacaktır. Ancak, bir Kullanıcı bir deneme sürümüne kaydolursa Office 365 Yöneticisi tarafından yönetilmez ve portalda gösterilmez.
 
-### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>Bir kişi hangi planı kullandığını nasıl öğrenebilir?
-Kişiler, sahip oldukları planı Flow fiyatlandırma sayfasını ([https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing)) ziyaret ederek görebilir. Kullandıkları plan veya deneme sürümü bu sayfada gösterilir.
+### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>Bir kişi ne olduğunu fark ettikleri?
+[https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing)konumundaki Flow fiyatlandırması sayfasını ziyaret ederek herkes sahip oldukları planı görebilirler. Şu anda açık olan plan veya deneme burada gösterilir.
 
-### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>Microsoft Flow’a kaydolmak kuruluşumdaki kimlikleri etkileyecek mi?
-Kuruluşunuzda bir Office 365 ortamı zaten varsa ve kuruluşunuzdaki tüm kullanıcılar Office 365 hesabına sahipse kimlik yönetimi etkilenmez.
+### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>Microsoft Flow kuruluşumdaki kimlikleri etkileyecek mi?
+Kuruluşunuzun bir Office 365 ortamı zaten varsa ve kuruluşunuzdaki tüm kullanıcılar Office 365 hesabına sahipse, kimlik yönetimi etkilenmez.
 
-Kuruluşunuzda bir Office 365 olmasına rağmen kuruluşunuzdaki tüm kullanıcılar Office 365 hesabına sahip değilse, bu durumda kiracıda bir kullanıcı oluşturulur ve kullanıcının iş ya da okul e-posta adresine göre lisans atanır. Bu durum, kuruluşunuzdaki kullanıcılar hizmete kaydoldukça herhangi bir zamanda yönetmekte olduğunuz kullanıcı sayısının artacağı anlamına gelir.
+Kuruluşunuzda zaten bir Office 365 ortamı varsa ancak kuruluşunuzdaki tüm kullanıcılar Office 365 hesabına sahip değilse, kiracıda bir kullanıcı oluşturup kullanıcının iş veya okul e-posta adresine göre lisanslar atarsınız. Bu, kuruluşunuzdaki kullanıcılar hizmete kaydoldukça, belirli bir zamanda yönettiğiniz kullanıcı sayısının büyüeceği anlamına gelir.
 
-Kuruluşunuzda e-posta etki alanınıza bağlı bir Office 365 ortamı yoksa, kimlik yönetme yönteminizde bir değişiklik olmaz. Kullanıcılar yeni bir sadece bulut kullanıcı dizinine eklenir ve kiracı yöneticisi olarak bunları devralıp yönetme seçeneğine sahip olursunuz.
+Kuruluşunuzun e-posta etki alanına bağlı bir Office 365 ortamı yoksa, kimlik yönetme sırasında değişiklik yapılmaz. Kullanıcılar yeni, yalnızca bulut kullanıcı dizinine eklenir ve kiracı yöneticisi olarak alma ve yönetme seçeneğine sahip olursunuz.
 
-### <a name="a-new-tenant-was-created-by-microsoft-flow-how-do-i-manage-this"></a>Microsoft Flow tarafından yeni bir kiracı oluşturuldu, bunu nasıl yönetirim?
-Microsoft Flow tarafından yeni bir kiracı oluşturulduysa aşağıdaki adımları kullanarak bu kiracıyı talep edip yönetebilirsiniz:
+### <a name="a-new-tenant-was-created-by-microsoft-flow-how-do-i-manage-this"></a>Microsoft Flow tarafından yeni bir kiracı oluşturuldu, bunu nasıl yönetebilirim?
+Microsoft Flow tarafından yeni bir kiracı oluşturulduysa, aşağıdaki adımları kullanarak bu kiracıyı talep edebilir ve yönetebilirsiniz:
 
-1. Kiracıya katılmak için, yönetmek istediğiniz kiracı etki alanıyla eşleşen bir e-posta adresi etki alanı kullanarak Flow’a kaydolun. Örneğin, Microsoft contoso.com kiracısını oluşturduysa @contoso.com ile sona eren bir e-posta adresi kullanarak kiracıya katılın.
-2. Etki alanı sahipliğini doğrulayarak yönetici denetimini talep edin: kiracıya girdikten sonra etki alanı sahipliğini doğrulayarak kendinizi yönetici rolüne yükseltebilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin:    
+1. Yönetmek istediğiniz kiracı etki alanıyla eşleşen bir e-posta adresi etki alanı kullanarak Flow 'a kaydolarak kiracıya katın. Örneğin, Microsoft contoso.com kiracısı oluşturduysanız, @contoso.comile biten bir e-posta adresiyle kiracıya katın.
+2. Etki alanı sahipliğini doğrulayarak yönetici denetimini talep edin: kiracıya girdikten sonra etki alanı sahipliğini doğrulayarak kendinizi yönetici rolüne yükseltebilirsiniz. Bunu yapmak için şu adımları izleyin:    
    
-   1. [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) adresine gidin.
-   2. Sol üst köşedeki uygulama başlatıcısı simgesini ve Yönetici öğesini seçin.
-   3. **Yönetici olun** sayfasındaki yönergeleri okuyun ve ardından **Evet, yönetici olmak istiyorum**’u seçin.  
+   1. [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free)gidin.
+   2. Sol üst köşedeki uygulama başlatıcısı simgesini seçin ve yönetici ' yi seçin.
+   3. **Yönetici olma** sayfasında yönergeleri okuyun ve ardından **Evet, yönetici**olmak istiyorum ' u seçin.  
       
-       **NOT**: Bu seçenek görünmezse bir Office 365 yöneticisi zaten mevcut olabilir.
+       **Note**: Bu seçenek görüntülenmezse bir Office 365 Yöneticisi zaten bulunur.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Birden fazla etki alanım varsa kullanıcıların ekleneceği Office 365 kiracısını denetleyebilir miyim?
-Hiçbir şey yapmazsanız her kullanıcı e-posta etki alanı ve alt etki alanı için bir kiracı oluşturulur.
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Birden çok etki alanım varsa, kullanıcıların eklendiği Office 365 kiracısını denetleyebilir miyim?
+Hiçbir şey yapmazsanız, her kullanıcı e-posta etki alanı ve alt etki alanı için bir kiracı oluşturulur.
 
-E-posta adresi uzantılarına bakılmaksızın tüm kullanıcıların aynı kiracıda olmasını istiyorsanız:  
+E-posta adresi uzantılarından bağımsız olarak tüm kullanıcıların aynı kiracıda olmasını istiyorsanız:  
 
-* Önceden bir hedef kiracı oluşturun veya var olan bir kiracıyı kullanın. Kiracıyla birleştirmek istediğiniz tüm mevcut etki alanlarını ve alt etki alanlarını ekleyin. Bundan sonra e-postaları bu etki alanları ve alt etki alanları ile sona eren tüm kullanıcılar kaydolduklarında otomatik olarak hedef kiracıya eklenir.
+* Önceden bir hedef kiracı oluşturun veya mevcut bir kiracıyı kullanın. Bu kiracı içinde birleştirilme yapmak istediğiniz tüm mevcut etki alanlarını ve alt etki alanlarını ekleyin. Ardından, bu etki alanları ve alt etki alanları ile biten e-posta adreslerine sahip tüm kullanıcılar, kaydolduklarında otomatik olarak hedef kiracıya katılır.
 
-**ÖNEMLİ**: Kiracılar oluşturulduktan sonra kullanıcıları kiracılara taşımaya yönelik desteklenen otomatik bir mekanizma yoktur. Tek bir Office 365 kiracısına etki alanları ekleme hakkında daha fazla bilgi için bkz. [Office 365’e kullanıcı ve etki alanı ekleme](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+**Önemli**: bir kez oluşturulduktan sonra kullanıcıları kiracılar arasında taşımak için desteklenen otomatik bir mekanizma yoktur. Tek bir Office 365 kiracısına etki alanı ekleme hakkında bilgi edinmek için bkz. [kullanıcılarınızı ve etki alanınızı office 365 ' e ekleme](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
-### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Kullanıcıların, kuruluşumun iş verilerine erişim olanağını nasıl kısıtlayabilirim?
-Microsoft Flow aşağıda gösterildiği gibi iş verileri ve iş dışındaki veriler için veri bölgeleri oluşturmanıza olanak sağlar. Bu veri kaybı önleme ilkeleri uygulandığında kullanıcıların, iş verilerini ve iş dışı verileri birleştiren Akışlar tasarlaması veya çalıştırması engellenir. Daha ayrıntılı bilgi için bkz. [Veri kaybı önleme (DLP) ilkeleri](prevent-data-loss.md).
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Kullanıcılarınızın Kuruluşumun iş verilerine erişme yeteneğini nasıl kısıtlayabilirim?
+Microsoft Flow, aşağıda gösterildiği gibi iş ve iş dışı veriler için veri bölgeleri oluşturmanıza olanak sağlar. Bu veri kaybı önleme ilkeleri uygulandıktan sonra, kullanıcıların iş ve iş dışı verileri birleştiren bir akış tasarlaması veya çalıştırması önlenir. Daha ayrıntılı bilgi için bkz. [veri kaybı önleme (DLP) ilkeleri](prevent-data-loss.md).
 
   ![](./media/organization-q-and-a/data-loss-prevention-policy.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Çözümü içeri aktarmayı öğrenin | Microsoft Docs
-description: Çözümü içeri aktarmayı öğrenin.
+title: Bir çözümün nasıl içeri aktarılacağını öğrenin | Microsoft Docs
+description: Bir çözümün nasıl içeri aktarılacağını öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,48 +20,50 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7b0b809b30e59cbdb4ffa66d39fede89a6124548
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: db90ed07e4c5b6da858782e496d6b47df2ecb0cd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460741"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548295"
 ---
-# <a name="import-a-solution"></a>Çözümü içeri aktarma
+# <a name="import-a-solution"></a>Bir çözümü içeri aktarma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Çözümünüzü dışarı aktardıktan sonra, önkoşulları karşılayan herhangi bir ortama aktarabilirsiniz. Bir çözümü içeri aktarmak için şu adımları izleyin:
+> [!TIP]
+> Bir çözümü içeri aktardıktan sonra akışlarınızın otomatik olarak başlamasını istiyorsanız, oluşturduğunuz zaman akışınızda Common Data Service (geçerli ortam) bağlayıcısını kullanın.
 
-1. Microsoft Flow’da oturum açın ve gezinti çubuğundan **Çözümler**’i seçin.
+Çözümünüzü dışarı aktardıktan sonra, önkoşulları karşılayan herhangi bir ortama içeri aktarabilirsiniz. Bir çözümü içeri aktarmak için aşağıdaki adımları izleyin:
+
+1. Microsoft Flow oturum açın ve ardından Gezinti çubuğundan **çözümler** ' i seçin.
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
-
-<!--from editor: I don't think you need the symbols on the left of Import, below. They don't look like the arrow icon, and I think Import is clear enough. -->
-
-1. **<- İçeri aktar**’ı seçin.
+1. **Içeri aktar**' ı seçin.
 
    ![](./media/import-flow-solution/select-import.png)
 
-1. Açılan **Çözümü İçeri Aktar** sayfasından **Gözat**’ı seçin.
-1. İçeri aktarmak istediğiniz çözümü bulup seçin.
-1. **Aç**’ı seçin.
+1. Açılan **çözümü Içeri aktar** sayfasından **tarayıcı** ' yı seçin.
+1. İçeri aktarmak istediğiniz çözümü bulun ve seçin.
+1. **Aç**' ı seçin.
 
-   Resimdekine benzer **Çözüm Paketi Seçin** sayfasını görürsünüz:
+   Şimdi bu görüntüyle benzer **Çözüm Paketi Seç** sayfasını görmeniz gerekir:
 
    ![](./media/import-flow-solution/import-solution.png)
 
-1. **İleri**’yi seçin.
+1. **İleri ' yi**seçin.
 
-   Herhangi bir hata yoksa, içeri aktarma işlemi birkaç dakika içinde tamamlanır.
+   Hata yoksa, içe aktarılması işlemini birkaç dakika içinde tamamlanır.
 
 > [!NOTE]
-> Çözümü, çözümün zaten mevcut olduğu bir ortama aktaramazsınız.
+> Çözümün zaten bulunduğu bir ortama bir çözüm aktaramazsınız.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
 - [Çözüm oluşturma](./overview-solution-flows.md)
 - [Çözümde akış oluşturma](./create-flow-solution.md)
-- [Çözümü dışarı aktarma](./export-flow-solution.md)
-- [Çözüm kullanan bir akışı düzenleme](./edit-solution-aware-flow.md)
+- [Bir çözümü dışarı aktarma](./export-flow-solution.md)
+- [Çözüm kullanan akışı düzenleme](./edit-solution-aware-flow.md)

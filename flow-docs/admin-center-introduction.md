@@ -1,6 +1,6 @@
 ---
-title: Yönetim merkezini kullanarak ortamları ve veri ilkelerini yönetin. | Microsoft Docs
-description: Microsoft Flow yönetim merkezi, kiracı ve ortam yöneticileri tarafından Microsoft Flow dağıtımlarına yönelik veri ilkelerini ve ortamları yönetmek için kullanılır.
+title: Ortamları ve veri ilkelerini yönetmek için yönetim merkezini kullanın. | Microsoft Docs
+description: Microsoft Flow Yönetim Merkezi, kiracı ve ortam yöneticileri tarafından, Microsoft Flow dağıtımlara yönelik veri ilkelerini ve ortamları yönetmek için kullanılır.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,30 +20,31 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 60688ef8290caae516793326bd487c291f1f0a83
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 669097f5519ad8bfcecac666984102f67629e433
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456030"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545143"
 ---
 # <a name="the-admin-center"></a>Yönetim Merkezi
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Yönetim merkezi kiracı yöneticilerinin ve ortam yöneticilerinin bir kuruluşa ait veri ilkelerini ve ortamları yönetebileceği merkezi konumdur. Yönetim merkezinde yaptığınız tüm değişiklikler kuruluşunuzdaki kullanıcılar tarafından hemen kullanılabilir.
+Yönetim Merkezi, kiracı yöneticilerinin ve ortam yöneticilerinin bir kuruluşun veri ilkelerini ve ortamlarını yönetçalıştığı merkezi konumdur. Yönetim merkezinde yaptığınız tüm değişiklikler, kuruluştaki kullanıcılar için hemen kullanılabilir.
 
-![genel bakış](./media/admin-center-introduction/overview.png)
+![Bakýþ](./media/admin-center-introduction/overview.png)
 
-## <a name="access-the-admin-center"></a>Yönetim merkezine erişim
+## <a name="access-the-admin-center"></a>Yönetim merkezine erişin
 
-* Konumuna giderek Microsoft Flow https://admin.flow.microsoft.com yönetim merkezine erişin.
+* Microsoft Flow yönetim merkezine erişmek için https://admin.flow.microsoft.com gidin.
 
-## <a name="environments"></a>Ortamlar
+## <a name="environments"></a>Lý
 
-[Ortamların](environments-overview-admin.md) kullanıcı, izin ve rolleri yönetmek için kullanılması hakkında daha fazla bilgi edinin.
+Kullanıcıları, izinleri ve rolleri yönetmek için [ortamları](environments-overview-admin.md) kullanma hakkında daha fazla bilgi edinin.
 
-## <a name="data-policies"></a>Veri ilkeleri
+## <a name="data-policies"></a>Veri İlkeleri
 
-İş verilerinin akışlardaki hizmetler arasında nasıl paylaşılacağını yöneten kurallar oluşturmak için [veri ilkelerini](prevent-data-loss.md) kullanma hakkında daha fazla bilgi edinin.
+İş verilerinin akışlardaki hizmetler arasında nasıl paylaşılacağını yöneten kurallar oluşturmak için [veri ilkeleri](prevent-data-loss.md) kullanma hakkında daha fazla bilgi edinin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

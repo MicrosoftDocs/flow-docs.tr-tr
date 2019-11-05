@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow onaylarını biçimlendirmek için markdown kullanma | Microsoft Docs
-description: Microsoft Flow onay isteklerini biçimlendirmek için markdown kullanmayı öğrenin.
+title: Microsoft Flow onaylarını biçimlendirmek için markaşağı kullanma | Microsoft Docs
+description: Microsoft Flow onay isteklerini biçimlendirmek için markaşağı kullanmayı öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,24 +20,25 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
-ms.translationtype: HT
+ms.openlocfilehash: b82ac7c53c8c018b5e61011e4c1d8b9cdabe9747
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58656143"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545311"
 ---
-# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markdown kullanma
+# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Microsoft Flow onay isteklerinde Markaşağı kullanma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bu makalede [Markdown](https://en.wikipedia.org/wiki/Markdown) söz dizimi kullanarak onay isteklerinize zengin biçimlendirme ve tablo ekleme öğretilir.
+Bu makalede, onay istekleriniz için zengin biçimlendirme ve tablolar eklemek üzere [markın](https://en.wikipedia.org/wiki/Markdown) söz dizimini nasıl kullanabileceğiniz öğretilir.
 
-## <a name="headers"></a>Üst Bilgiler
+## <a name="headers"></a>Bilgisinde
 
-Üst bilgileri kullanarak açıklamalarınızı yapılandırın. Üst bilgiler daha uzun açıklamalar oluşturarak okunmalarını daha kolay hale getirir.
+Üstbilgileri kullanarak yorumlarınızı yapısını yapın. Üst bilgiler segmenti daha uzun Yorumlar, daha kolay okunabilir hale getirir.
 
-Bir başlık ayarlamak için satıra kare karakteriyle `#` başlayın. Satıra `####` gibi ek kare karakterleriyle başlayarak açıklamalarınızı alt başlıklarla düzenleyin. En fazla altı düzeyde başlık desteklenir.
+Bir başlık ayarlamak için karma karakter `#` bir satır başlatın. Ek karma karakterleri olan bir satır başlatarak (örneğin `####`) açıklamaları alt başlıklar ile düzenleyin. En fazla altı düzey başlık desteklenir.
 
-**Örnek:**
+**Örneğinde**
 
 ```Markdown
 # This is a H1 header
@@ -47,44 +48,44 @@ Bir başlık ayarlamak için satıra kare karakteriyle `#` başlayın. Satıra `
 ##### This is a H5 header
 ```
 
-**Sonuç:**
+**Kaynaklanan**
 
-![Akışı dışarı aktarma](./media/approvals-markdown-support/mrkdown-headers.png)
+![Akışı dışarı aktar](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## <a name="paragraphs-and-line-breaks"></a>Paragraflar ve satır sonları
 
-Metninizi paragraflar ve satır sonlarıyla ayırarak daha kolay okunur hale getirin. Yeni bir paragrafa başlamak için satır sonundan önce iki boşluk girin veya art arda iki satır sonu girin.   
+Paragraf veya satır sonları ile ayırarak metninizi daha kolay okunabilir hale getirin. Yeni bir paragrafa başlamak için satır sonundan önce iki boşluk girin veya yeni bir paragrafa başlamak için art arda iki satır sonu girin.   
    
-**Örnek**
+**Örneğinde**
 
-Enter tuşu ile metinlerinizin arasına satırlar ekleyin.
-Bu sayede metninizdeki boşluklar daha net hale gelir ve metin daha kolay okunur.
+ENTER tuşu ile metninizdeki satırları ekleyin.
+Bu, metninizi daha iyi ve okumayı kolaylaştırır.
 
 **Sonuç:**    
-Enter tuşu ile metinlerinizin arasına satırlar ekleyin.      
-Bu sayede metninizdeki boşluklar daha net hale gelir ve metin daha kolay okunur.
+ENTER tuşu ile metninizdeki satırları ekleyin.      
+Bu, metninizi daha iyi ve okumayı kolaylaştırır.
 
 
 **Örnek 2**
 
-Satır sonundan önce iki boşluk ekleyin.(boşluk, boşluk)     
-Bu, paragraflar arasına boşluk ekler.
+Satırın sonundan önce iki boşluk ekleyin. (boşluk, boşluk)     
+Bu, paragraflar arasında boşluk ekler.
 
-**Sonuç:**  
-Satır sonundan önce iki boşluk ekleyin.   
+**Kaynaklanan**  
+Satırın sonundan önce iki boşluk ekleyin.   
 
-Bu, paragraflar arasına boşluk ekler.
+Bu, paragraflar arasında boşluk ekler.
   
 
-## <a name="lists"></a>Listeler
+## <a name="lists"></a>Liste
 
-İlgili öğeleri listelerle düzenleyin. Numaralı sıralı listeler veya yalnızca madde işaretli sırasız listeler ekleyebilirsiniz.
+İlgili öğeleri listelerle düzenleyin. Numaralarla sıralı listeler veya yalnızca madde işaretleriyle sıralanmamış listeler ekleyebilirsiniz.
 
-Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla başlar. Sırasız listeler `*` ile başlar. Her liste öğesine yeni bir satırda başlayın. Bir Markdown dosyası veya widget’ta, yeni bir paragrafa başlamak için satır sonundan önce iki boşluk girin veya art arda iki satır sonu girin.   
+Sıralı listeler, her liste öğesi için bir sayı ile başlar. Sırasız listeler bir `*`başlar. Her liste öğesini yeni bir satırda başlatın. Bir Markaşağı dosyası veya pencere öğesinde, yeni bir paragrafa başlamak için satır sonundan önce iki boşluk girin veya yeni bir paragrafa başlamak için art arda iki satır sonu girin.   
 
-### <a name="ordered-or-numbered-lists"></a>Sıralı veya numaralı listeler
+### <a name="ordered-or-numbered-lists"></a>Sıralı veya numaralandırılmış listeler
 
-**Örnek:**
+**Örneğinde**
 
 ```Markdown
 0. First item.
@@ -92,15 +93,15 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 0. Third item.
 ```
 
-**Sonuç:**
+**Kaynaklanan**
 
-1. First item.
-2. Second item.
-3. Third item.
+1. İlk öğe.
+2. İkinci öğe.
+3. Üçüncü öğe.
 
 ### <a name="bullet-lists"></a>Madde işareti listeleri
 
-**Örnek:**
+**Örneğinde**
 
 <pre>
 
@@ -110,15 +111,15 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 
 </pre>
 
-**Sonuç:**
+**Kaynaklanan**
 
-- Item 1
-- Item 2
-- Item 3
+- Öğe 1
+- Öğe 2
+- Öğe 3
 
 ### <a name="nested-lists"></a>İç içe listeler
 
-**Örnek:**
+**Örneğinde**
 <pre>
 
 1. First item.
@@ -132,43 +133,43 @@ Sıralı listeler her bir liste öğesinde bir sayı ve ardından bir noktayla b
 
 </pre>
 
-**Sonuç:**  
+**Kaynaklanan**  
 
-1. First item.
+1. İlk öğe.
 
-    - Item 1
-    - Item 2
-    - Item 3
-2. Second item.
-    - Nested item 1
-    - Nested item 2
-    - Nested item 3
+    - Öğe 1
+    - Öğe 2
+    - Öğe 3
+2. İkinci öğe.
+    - İç içe öğe 1
+    - İç içe öğe 2
+    - İç içe öğe 3
 
 
-## <a name="links"></a>Bağlantılar
+## <a name="links"></a>Köprü
 
-HTTP ve HTTPS URL’leri otomatik olarak bağlantı gibi biçimlendirilir. 
+HTTP ve HTTPS URL 'Leri otomatik olarak bağlantılar olarak biçimlendirilir. 
 
-Standart markdown bağlantı söz dizimini kullanarak URL’niz için metin köprüleri ayarlayabilirsiniz:
+Standart markaşağı bağlantı sözdizimini kullanarak URL 'niz için metin köprüleri ayarlayabilirsiniz:
 
 ```Markdown
 [Link Text](Link URL)
 ```
 
-**Örnek:**
+**Örneğinde**
 <pre>
 &#91;Microsoft Flow](https://flow.microsoft.com)
 </pre>
 
-**Sonuç:**
+**Kaynaklanan**
 
 [Microsoft Flow](https://flow.microsoft.com)
 
-### <a name="anchor-links"></a>Yer işareti bağlantıları
+### <a name="anchor-links"></a>Bağlantı bağlantıları
 
-Yer işareti kimlikleri HTML olarak işlendiğinde tüm üst bilgilere atanır. Kimlik, boşlukların çizgilerle (-) değiştirildiği ve tüm harflerin küçük olduğu başlık metnidir.
+Yer işareti kimlikleri HTML olarak işlendiğinde tüm başlıklara atanır. Bu KIMLIK, boşluk (-) ve tüm küçük harf olarak değişen boşluklar içeren başlık metinidir.
 
-**Örnek:**
+**Örneğinde**
 
 <pre>
 ###Link to a heading in the page
@@ -176,29 +177,29 @@ Yer işareti kimlikleri HTML olarak işlendiğinde tüm üst bilgilere atanır. 
 
 <br/>
 
-**Sonuç:**
+**Kaynaklanan**
 
-Bir bölümün yer işareti bağlantısına ait söz dizimi...
+Bölüm için bir bağlama bağlantısı sözdizimi...
 
 <pre>
 [Link to a heading in the page](#link-to-a-heading-in-the-page)
 </pre> 
 <br/>
-Kimliğin tüm harfleri küçük ve bağlantı büyük/küçük harfe duyarlı olduğundan, başlığın kendisi büyük harf kullansa bile küçük harf kullandığınızdan emin olun.
+KIMLIğIN hepsi küçük harfle indirilir ve bağlantı büyük/küçük harfe duyarlıdır; bu nedenle, başlığın kendisi büyük harf kullanıyor olsa da küçük harf ayrımına dikkat edin.
 
 
-## <a name="tables"></a>Tablolar
+## <a name="tables"></a>Takvimleri
 
 Yapılandırılmış verileri tablolarla düzenleyin. 
 
-- Her tablo satırını kendi satırına yerleştirin 
-- Dikey çubuk karakterini `|` kullanarak tablo hücrelerini ayırın 
-- Tablodaki ilk iki satır, sütun üst bilgilerini ve tablodaki öğelerin hizalarını ayarlar
-- Sütun hizasını (sol, orta, sağ) belirlemek için tabloların üst bilgi ve gövdesini bölerken iki nokta (`:`) kullanın 
-- Yeni bir satıra başlatmak için HTML sonu etiketi (`<br/>`) kullanın (Wiki dışında başka yerde çalışmaz)  
-- Her satırı bir CR veya LF ile sonlandırdığınızdan emin olun. 
+- Her tablo satırını kendi satırına yerleştir 
+- Çizgi karakterini kullanarak tablo hücrelerini ayırın `|` 
+- Tablonun ilk iki satırı, sütun üst bilgilerini ve tablodaki öğelerin hizalamasını ayarlar
+- Sütun hizalamasını (sol, orta, sağ) belirtmek için tabloların üst bilgisini ve gövdesini bölmek için iki nokta üst üste (`:`) kullanın 
+- Yeni bir satır başlatmak için HTML kesme etiketini (`<br/>`) kullanın (bir wiki içinde çalışmaz ancak başka bir yerde değil)  
+- Her satırı CR veya LF ile sonlandırdığınızdan emin olun. 
 
-**Örnek:**
+**Örneğinde**
 
 ```
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -210,24 +211,24 @@ Yapılandırılmış verileri tablolarla düzenleyin.
 
 
 
-**Sonuç:**  
+**Kaynaklanan**  
 
-| Heading 1 | Heading 2 | Heading 3 |  
+| Başlık 1 | Başlık 2 | Başlık 3 |  
 |-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| A1 hücresi | A2 hücresi | Hücre a3 |  
+| Hücre B1 | B2 hücresi | Hücre B3<br/>metnin ikinci satırı |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Vurgu (kalın, italik, üstü çizili)  
 
-Karakterlere kalın, italik veya üstü çizgili biçimler uygulayarak metni vurgulayabilirsiniz: 
-- İtalik stil uygulamak için: metnin başına ve sonuna bir yıldız işareti `*` veya alt çizgi `_` koyun   
-- Kalın stil uygulamak için: metnin başına ve sonuna çift yıldız `**` koyun.    
-- Üstü çizili stil uygulamak için: metnin başına ve sonuna çift tilde karakteri `~~` koyun.   
+Karakterleri kalın, italik veya üstü çizili olarak uygulayarak metni vurgulayabilirsiniz: 
+- İtalik uygulamak için: metni bir yıldız işareti `*` veya alt çizgi ile çevreleyin `_`   
+- Kalın uygulamak için: metni çift yıldız `**`çevreleyin.    
+- Üstü çizili uygulamak için: metni çift tilde karakterlerle çevreleyin `~~`.   
 
 Metne birden çok vurgu uygulamak için bu öğeleri birleştirin.    
 
-**Örnek:**
+**Örneğinde**
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
@@ -237,11 +238,11 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 <br/>
 
-**Sonuç:**
+**Kaynaklanan**
 
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**    
-**~~Bold, strike-through text~~**  
+Açıklamalarda _vurgu_ kullanarak **güçlü** OPTA ve <s>düzeltme</s> noktaları hakkında bilgi edinin   
+**_Kalın, italik metin_**    
+**~~Kalın, çizili metin~~**  
 
 
 ## <a name="special-characters"></a>Özel karakterler
@@ -249,7 +250,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 <table width="650px">
 <tbody valign="top">
 <tr>
-<th width="300px">Söz dizimi</th>
+<th width="300px">Sözdizimi</th>
 <th width="350px">Örnek/notlar</th>
 </tr>
 
@@ -257,7 +258,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 <tr>
 <td>
-<p>Aşağıdaki karakterlerden birini eklemek için, ters eğik çizgiyle birlikte ön ek koyun:</p>
+<p>Aşağıdaki karakterlerden birini eklemek için ters eğik çizgiyle önek:</p>
 
 <p style="margin-bottom:2px;">```\   backslash ``` </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
@@ -273,13 +274,13 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 
 </td>
-<td>Özel karakter eklemeyle ilgili bazı örnekler
-<p>\\ elde etmek için ```\\``` girin </p>
-<p>_ elde etmek için ```\_``` girin </p>
-<p>\# elde etmek için ```\#``` girin </p>
-<p>\( elde etmek için ```\(``` girin </p>
-<p>\. elde etmek için ```\.``` girin </p>
-<p>\! elde etmek için ```\!``` girin </p>
+<td>Özel karakterler ekleme hakkında bazı örnekler
+<p>\\ almak için ```\\``` girin </p>
+<p>_ Almak için ```\_``` girin </p>
+<p>\# almak için ```\#``` girin </p>
+<p>\( almak için ```\(``` girin </p>
+<p>\. almak için ```\.``` girin </p>
+<p>\! almak için ```\!``` girin </p>
 </td>
 </tr>
 

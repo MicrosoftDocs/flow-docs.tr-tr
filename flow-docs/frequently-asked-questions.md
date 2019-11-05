@@ -1,6 +1,6 @@
 ---
 title: Sık sorulan sorular | Microsoft Docs
-description: Microsoft Flow hakkında sıkça sorulan birkaç sorunun cevabı
+description: Microsoft Flow hakkında birkaç yaygın soruya yanıtlar
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,143 +20,144 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 269ede2cdd01c609c1f2c5a1225bf0451ab12aaf
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64453992"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548043"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## <a name="audience-and-strategy"></a>Hedef kitle ve strateji
 ### <a name="what-is-microsoft-flow"></a>Microsoft Flow nedir?
-Microsoft Flow, iş kolu kullanıcılarının zaman harcayan iş görevlerinin yanı sıra uygulama ve hizmetlerdeki süreçleri otomatikleştirmesini pratik ve kolay hale getiren bulut tabanlı bir hizmettir.
+Microsoft Flow, iş kolu kullanıcılarının uygulamalar ve hizmetler arasında zaman alan iş görevlerini ve süreçlerini otomatikleştiren iş akışları oluşturmak için pratik ve basit hale getiren bulut tabanlı bir hizmettir.
 
-### <a name="who-is-the-intended-audience-for-microsoft-flow"></a>Microsoft Flow’un hedef kitlesi kimdir?
+### <a name="who-is-the-intended-audience-for-microsoft-flow"></a>Microsoft Flow için amaçlanan hedef kitle kim?
 Microsoft Flow iki ayrı hedef kitleye sahiptir:
 
-* İş çözümleri sorumluluğunu işletmeye yaklaştırmak için BT ile ortaklık kuran kuruluşlardaki iş kolu “Kullanıcı Tümleştiricileri”.
-* BT uzmanları ve tümleştirme uzmanlarının, Azure Logic Apps gibi daha gelişmiş tümleştirme araçlarına odaklanabilmesini sağlamak amacıyla iş kolu ortaklarına kendi çözümlerini oluşturma yetkisi vermek isteyen, BT karar alma mekanizmaları.
+* İş çözümlerinin sorumluluğunu işletmenin kendisine yakın bir şekilde taşımak için iş ortağı olan Kurumsal kuruluşlarda iş kolu "vatandaşlık tümleştiricileri".
+* BT uzmanlarının ve tümleştirme uzmanlarının uzmanlığı Azure Logic Apps gibi daha gelişmiş tümleştirme araçlarına odaklanabilmesi için iş kolu iş ortaklarına kendi çözümlerini oluşturma yetkisi vermek isteyen BT karar mekanizmaları.
 
-### <a name="how-do-microsoft-flow-and-logic-apps-relate-to-each-other"></a>Microsoft Flow ile Logic Apps arasındaki ilişki nedir?
-Microsoft Flow, iş kolu kullanıcılarının otomatik iş akışları oluşturmasına yardımcı olan özellikler sağlar. Logic Apps, Microsoft Flow’daki harika özelliklere ek olarak, Azure Resource Manager ve Azure portalı ile tümleştirme, PowerShell ve xPlat CLI, Visual Studio ve diğer bağlayıcıları kullanma gibi olanaklar sunan bir Azure hizmetidir. [Logic Apps hakkında daha fazla bilgi edinin](https://azure.microsoft.com/services/app-service/logic/).
+### <a name="how-do-microsoft-flow-and-logic-apps-relate-to-each-other"></a>Microsoft Flow ve Logic Apps birbirleriyle nasıl ilişkilidir?
+Microsoft Flow, iş kolu kullanıcılarının otomatik iş akışları oluşturmalarına yardımcı olan özellikler sağlar. Logic Apps, Microsoft Flow aynı harika özelliklerin yanı sıra Azure Resource Manager ve Azure portalı, PowerShell ve xPlat CLı, Visual Studio ve ek bağlayıcılar ile tümleştirme gibi özellikler sunan bir Azure hizmetidir. [Logic Apps hakkında daha fazla bilgi edinin](https://azure.microsoft.com/services/app-service/logic/).
 
-### <a name="how-does-microsoft-flow-fit-in-microsofts-overall-business-application-platform-strategy"></a>Microsoft Flow, Microsoft’un genel iş uygulaması platformu stratejisine ne kadar uygundur?
-Microsoft Flow; PowerApps, Common Data Service, Dynamics 365 ve Office 365’i kapsayan güçlü ve uyarlanabilir bir iş uygulaması platformunun parçasıdır. Bu platform müşterilerimiz, ortaklarımız ve ISV ortaklarımızın kendi şirketleri, sektörleri, işlevsel rolleri ve hatta belirli coğrafyalar için amaca uygun çözümler oluşturmasını sağlar. İş gereksinimlerini en iyi şekilde anlayan iş kolu kullanıcıları artık veri ve süreçleri kolayca çözümleyebilir, oluşturabilir ve kolaylaştırabilir. Profesyonel geliştiriciler, otomasyon, analiz ve uygulama iş kolu süreçlerini kolayca genişleterek İşlevler, App Service ve Logic Apps gibi Azure hizmetlerinden yararlanabilir. API bağlayıcıları, ağ geçitleri ve Microsoft Common Data Service, bulutta veya şirket içinde kullanılmakta olan hizmetlerden veya verilerden daha iyi yararlanmayı mümkün hale getirmektedir.
+### <a name="how-does-microsoft-flow-fit-in-microsofts-overall-business-application-platform-strategy"></a>Microsoft 'un genel iş uygulaması platformu stratejisine nasıl uyum Microsoft Flow?
+Microsoft Flow PowerApps, Common Data Service, Dynamics 365 ve Office 365 içeren güçlü ve uyarlanabilir bir iş uygulaması platformunun bir parçasıdır. Bu platform, müşterilerimizin, iş ortaklarımızın ve ISV iş ortaklarımızın kendi şirketleri, sektör, işlevsel roller ve hatta belirli coğrafi kuruluşlar için amaca özgü çözümler oluşturmalarına olanak tanır. İş ihtiyaçlarını en iyi şekilde anlayan iş kolu kullanıcıları artık verileri ve süreçlerini kolayca çözümleyebilir, oluşturabilir ve kolaylaştırabilir. Profesyonel geliştiriciler, otomasyon, analiz ve uygulama iş kolu Işlevlerini kolayca genişletebilen Işlevler, App Service ve Logic Apps gibi Azure hizmetlerinden faydalanır. API bağlayıcıları, ağ geçitleri ve Microsoft Common Data Service, bulutta veya şirket içinde zaten kullanımda olan hizmetlerden veya verilerden daha fazla değer almanızı olanaklı kılar.
 
-## <a name="functionality"></a>İşlevsellik
-### <a name="what-do-i-need-to-use-microsoft-flow"></a>Microsoft Flow kullanmak için neler gerekir?
-Microsoft Flow’u kullanmak için yalnızca bir web tarayıcısı ve bir e-posta adresi gereklidir.
+## <a name="functionality"></a>İşlevin
+### <a name="what-do-i-need-to-use-microsoft-flow"></a>Microsoft Flow kullanmak için ne yapmam gerekir?
+Microsoft Flow kullanmak için, bir Web tarayıcısı ve bir e-posta adresiniz olması yeterlidir.
 
-### <a name="what-browsers-and-devices-can-i-use-with-microsoft-flow"></a>Microsoft Flow ile hangi tarayıcıları ve cihazları kullanabilirim?
+### <a name="what-browsers-and-devices-can-i-use-with-microsoft-flow"></a>Microsoft Flow hangi tarayıcıları ve cihazları kullanabilirim?
 
-Microsoft Flow’u tüm modern cihazlar ve tarayıcılarda çalıştırabilirsiniz.
+Tüm modern cihazlarda ve tarayıcılarda Microsoft Flow çalıştırabilirsiniz.
 
 #### <a name="supported-devices"></a>Desteklenen cihazlar
 
-Microsoft Flow modern cihazlarda harika çalışır. Microsoft Flow’u bir mobil cihazdan yönetmeniz gerekiyorsa, [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) ve [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab)’da kullanılabilir Microsoft Flow mobil uygulamasını deneyin.
+Microsoft Flow modern cihazlarda harika bir şekilde çalışır. Bir mobil cihazdan Microsoft Flow yönetmeniz gerekiyorsa [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)ve [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab)'de bulunan Microsoft Flow mobil uygulamayı deneyin.
 
 #### <a name="supported-browsers"></a>Desteklenen tarayıcılar
 
-İşletim sisteminizle uyumlu en güncel tarayıcıyı kullanmanızı öneririz. Aşağıdaki tarayıcılarım destekliyoruz:
+İşletim sisteminizle uyumlu olan en güncel tarayıcıyı kullanmanızı öneririz. Aşağıdaki tarayıcıları destekliyoruz:
 
 * Microsoft Edge
 * Internet Explorer 11
-* Safari
-* Chrome
-* Firefox
+* Uygulamasını
+* Mu
+* 'U
 
 ### <a name="which-email-addresses-are-supported"></a>Hangi e-posta adresleri desteklenir?
-Microsoft Flow; .gov ve .mil dışındaki etki alanlarıyla biten e-posta adreslerini destekler.  
+Microsoft Flow,. gov ve. mil dışında herhangi bir şeyle biten e-posta adreslerini destekler.  
 
-### <a name="is-microsoft-flow-available-on-premises"></a>Microsoft Flow, şirket içinde kullanılabilir mi?
-Microsoft Flow yalnızca bir genel bulut hizmetidir. Ancak, şirket içi veri ağ geçidi ile kendi şirket içi hizmetlerinize güvenli bir şekilde bağlanabilirsiniz.
+### <a name="is-microsoft-flow-available-on-premises"></a>Microsoft Flow şirket içinde kullanılabilir mi?
+Microsoft Flow yalnızca genel bir bulut hizmetidir. Ancak şirket içi veri ağ geçidi aracılığıyla kendi şirket içi hizmetlerinize güvenli bir şekilde bağlanabilirsiniz.
 
-### <a name="what-services-can-microsoft-flow-connect-to"></a>Microsoft Flow hangi hizmetlere bağlanabilir?
-Microsoft Flow, 100’den fazla veri kaynağına (sürekli olarak yenileri eklenmektedir) hiçbir yapılandırma gerektirmeden bağlanır. Veri kaynakları ve hizmetler için bazı örnekler şunlardır:
+### <a name="what-services-can-microsoft-flow-connect-to"></a>Hangi hizmetlere Microsoft Flow bağlanabilir?
+Microsoft Flow, kutudan 100 ' den fazla veri kaynağına bağlanır ve her zaman daha fazla ekliyoruz. Bazı veri kaynaklarına ve hizmetlerine örnek olarak şunlar verilebilir:
 
 * SharePoint
 * Dynamics 365
-* OneDrive
-* OneDrive İş
+* Klasör
+* OneDrive Iş
 * Google Drive
-* Google E-Tablolar
+* Google sayfaları
 * Trello
 * Twitter
-* Box
-* Facebook
+* Kutudaki
+* 'a
 * SalesForce.com
-* Mailchimp
-* Müşteri API'leri
+* MailChimp
+* Müşteri API 'Leri
 
-Kullanılabilir bağlayıcıların tam listesini [burada](https://go.microsoft.com/fwlink/?LinkId=832211) bulabilirsiniz.
+Kullanılabilir bağlayıcıların tam listesini [burada](https://go.microsoft.com/fwlink/?LinkId=832211)bulabilirsiniz.
 
-Kendi BT altyapınızdaki veri kaynaklarına [şirket içi veri ağ geçidi](gateway-manage.md) üzerinden erişebilirsiniz.
+[Şirket içi veri ağ geçidi](gateway-manage.md)aracılığıyla kendi BT altyapınızdaki veri kaynaklarına erişebilirsiniz.
 
-### <a name="what-are-templates"></a>Şablon nedir?
-Şablonlar, popüler ve yaygın senaryolar için önceden oluşturulmuş akışlardır. Şablon kullanmak için yalnızca ilgili şablondaki hizmetlere erişiminizin olması ve gerekli ayarların hepsini doldurmanız gerekir.
+### <a name="what-are-templates"></a>Şablonlar nelerdir?
+Şablonlar popüler ve yaygın senaryolar için önceden oluşturulmuş akışlardır. Bir şablon kullanmak için yalnızca şablondaki hizmetlere erişiminizin olması ve gerekli tüm ayarları doldurmanız gerekir.
 
 ### <a name="what-data-sources-will-i-be-able-to-connect-to"></a>Hangi veri kaynaklarına bağlanabilirim?
-Microsoft ve üçüncü taraflarca sağlanan Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server gibi 100’den fazla standart hizmete bağlanabilirsiniz. Ayrıca, Salesforce ve PowerApps için Common Data Service gibi premium hizmetlere de bağlanabilirsiniz.
+Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server gibi Microsoft ve üçüncü taraflardan 100 ' den fazla standart hizmete bağlanabilirsiniz. Ayrıca Salesforce gibi Premium hizmetlere ve PowerApps için Common Data Service bağlanabilirsiniz.
 
-### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Akışımda bir REST API'ye nasıl bağlanırım?
-[Özel bir bağlayıcı ](developer/register-custom-api.md) oluşturarak JSON kullanan ve 10’dan fazla kimlik doğrulama yönteminden en az birini destekleyen tüm REST API'lere bağlanabilirsiniz.
+### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Nasıl yaparım? akışdaki bir REST API bağlansın mı?
+JSON kullanan ve [özel bir bağlayıcı](developer/register-custom-api.md)oluşturarak 10 ' dan fazla kimlik doğrulama yönteminden en az birini destekleyen REST API bağlayabilirsiniz.
 
-### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>SQL Server ve diğer şirket içi veri kaynaklarına nasıl bağlanırım?
-Yerel ağınızdaki hizmetlere [şirket içi veri ağ geçidini](gateway-manage.md) kullanarak bağlanabilirsiniz.
+### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>Nasıl yaparım? SQL Server ve diğer şirket içi veri kaynaklarına bağlanmak mı istiyorsunuz?
+Şirket [içi veri ağ geçidini](gateway-manage.md)kullanarak yerel ağınızdaki hizmetlere bağlanabilirsiniz.
 
 ### <a name="can-i-share-the-flows-i-create"></a>Oluşturduğum akışları paylaşabilir miyim?
-Aşağıdaki iki yoldan birini kullanarak akış paylaşabilirsiniz:
+Akışları şu yollarla paylaşabilirsiniz:
 
-* Kuruluşunuzdaki çalışma arkadaşlarını veya grupları akışlarınıza sahip olarak ekleyebilir ve onların da akışı düzenlemesini ve yönetmesini sağlayabilirsiniz.
-* El ile çalıştırılabilen akışlar için kuruluşunuzdaki diğer kişi veya gruplara akışı yalnızca çalıştırma izni de verebilirsiniz.
+* Ortak çalışanları veya grupları akışlarınıza sahipler olarak ekleyebilir ve bu sayede akışı düzenleyebilir ve yönetebilir.
+* El ile çalıştırılabilen akışlar için kuruluşunuzdaki diğer kişilere veya gruplara yalnızca akışı çalıştırmak için izin verebilirsiniz.
 
-### <a name="how-many-flows-can-i-have"></a>Kaç akışa sahip olabilirim?
-Microsoft Flow, 50 akışla birlikte teslim edilir. Daha fazla gerekirse isteyebilirsiniz.
+### <a name="how-many-flows-can-i-have"></a>Kaç akışa ihtiyacım olabilir?
+Microsoft Flow en fazla 50 akış ile gelir. Daha fazlasına ihtiyacınız varsa, bunları isteyebilirsiniz.
 
-### <a name="where-do-i-get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya nasıl başlarım?
-Şu kaynakları kullanarak başlayabilirsiniz:
+### <a name="where-do-i-get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama
+Aşağıdaki kaynakları kullanmaya başlayın:
 
-* [Blog](https://flow.microsoft.com)
+* [Lenemeyen](https://flow.microsoft.com)
 * [YouTube kanalı](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
-* [Konu başlığı](getting-started.md)
-* [Topluluk](https://powerusers.microsoft.com)
+* [İlerde](getting-started.md)
+* [Topluluğundan](https://powerusers.microsoft.com)
 
-### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Microsoft Flow mobil uygulaması hangi işletim sistemlerini destekler?
-Microsoft Flow mobil uygulaması [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows)’da kullanılabilir.
+### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Microsoft Flow mobil uygulama hangi işletim sistemlerini destekler?
+Microsoft Flow Mobile App, [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)üzerinde kullanılabilir.
 
 ### <a name="can-flows-be-turned-off-or-disabled"></a>Akışlar kapatılabilir veya devre dışı bırakılabilir mi?
 
-Evet, her akışın, istekleri işlemesini durdurmanızı sağlayan bir açma/kapatma düğmesi vardır.
+Evet, her akışta akışı işleme isteklerini durdurmanızı sağlayan bir açık/kapalı anahtarı vardır.
 
-Akışınızın geri açıldığında nasıl yanıt vereceğini anlamak için aşağıdaki tabloya bakın.
+Akışınızın yeniden açılmasının nasıl yanıt verdiğini anlamak için aşağıdaki tabloya bakın.
 
-Tetikleyici türü|Açıklama
+Tetikleyici türü|Açıklaması
 -------|--------
-**Yineleme** tetikleyicisi gibi yoklama|Akış tekrar açıldığında, işlenmeyen/beklemedeki tüm olaylar işlenir. Bekleyen öğeleri işlemek istemiyorsanız akışınızı silin.
-Web kancası|Akış tekrar açıldığında yalnızca akış açıldıktan sonra oluşturulan yeni olayları işler.
+**Yineleme** tetikleyicisi gibi yoklama|Akış tekrar açıldığında, işlenmemiş/bekleyen tüm olaylar işlenir. Bekleyen öğeleri işlemek istemiyorsanız akışınızı silin.
+Web kancası|Akış tekrar açıldığında, yalnızca akış açıldıktan sonra oluşturulan yeni olayları işler.
 
-### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Microsoft Flow hangi bölgeleri ve dilleri destekler?
-Microsoft Flow 42 dilde ve [altı bölgede](regions-overview.md) kullanılabilir.
+### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Hangi bölgeler ve diller Microsoft Flow destekler?
+Microsoft Flow, 42 dilde ve [altı bölgede](regions-overview.md)kullanılabilir.
 
-### <a name="how-does-microsoft-flow-compare-to-sharepoint-designer-2013"></a>Microsoft Flow’un SharePoint Designer 2013’ten farkı nedir?
-Microsoft Flow onaylar, belge inceleme ve ekleme/çıkarma gibi birçok yaygın iş senaryosu için SharePoint Designer’ın yerine geçmiştir. Gelecekte SharePoint’te iş otomasyonu oluşturmaya yönelik varsayılan araç olacaktır.
+### <a name="how-does-microsoft-flow-compare-to-sharepoint-designer-2013"></a>Microsoft Flow SharePoint Designer 2013 ile nasıl karşılaştırılır?
+Microsoft Flow, onaylar, belge incelemesi ve ekleme/çıkarma gibi birçok yaygın iş senaryosu için SharePoint Designer 'ın ardıl bir sürümü. SharePoint 'te daha sonra iş Otomasyonu oluşturmaya yönelik varsayılan araç olacaktır.
 
-### <a name="how-does-microsoft-flow-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Microsoft Flow, kurumsal verilerin yanlışlıkla sosyal medya hizmetlerinde yayınlanmasını nasıl önler?
-Yöneticiler, Microsoft Flow’da yalnızca tasdikli hizmetlerin kullanıldığından emin olmak [veri kaybı önleme ilkeleri](prevent-data-loss.md) oluşturabilir.
+### <a name="how-does-microsoft-flow-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Microsoft Flow kurumsal verilerin yanlışlıkla sosyal medya Hizmetleri 'ne çıkarılmamasını nasıl sağlar?
+Yöneticiler, Microsoft Flow yalnızca tasdikli hizmetlerin kullanıldığından emin olmak için [veri kaybı önleme ilkeleri](prevent-data-loss.md) oluşturabilir.
 
-### <a name="does-microsoft-flow-support-service-accounts"></a>Microsoft Flow hizmet hesaplarını destekliyor mu?
+### <a name="does-microsoft-flow-support-service-accounts"></a>Hizmet hesaplarını Microsoft Flow destekler mi?
 
-Bir hizmet hesabıyla akışlar oluşturabilimenize rağmen, hizmet hesabının kimlik bilgileri paylaşılmışsa bunu yapmanızı önermeyiz.
+Hizmet hesabı ile akışlar oluşturabileceğiniz gibi, hizmet hesabı için kimlik bilgileri paylaşıldığında bunu yapmanızı önermiyoruz.
 
-## <a name="licensing"></a>Lisanslama
-### <a name="will-microsoft-flow-still-have-a-free-or-trial-option"></a>Microsoft Flow’da ücretsiz veya deneme sürümü seçeneği olacak mı?
-Evet. Sınırlı kullanıcı hakları sunan ücretsiz teklifimizden yararlanabilir ya da Microsoft Flow’un 90 günlük ücretsiz deneme sürümüne kaydolabilirsiniz. Deneme sürümü boyunca aboneliğinizi istediğiniz zaman etkinleştirebilirsiniz.
+## <a name="licensing"></a>Lisans
+### <a name="will-microsoft-flow-still-have-a-free-or-trial-option"></a>Microsoft Flow hala ücretsiz veya deneme sürümüne sahip olacak mı?
+Yes. Sınırlı kullanıcı haklarına sahip ücretsiz teklifimizi kullanabilir veya Microsoft Flow ücretsiz 90 günlük deneme sürümüne kaydolabilirsiniz. Aboneliğinizi deneme süreniz boyunca dilediğiniz zaman etkinleştirebilirsiniz.
 
-### <a name="what-pricing-plans-do-you-offer"></a>Sunduğunuz fiyatlandırma planları nelerdir?
-Microsoft Flow, hem ücretsiz hem de ücretli hizmet düzeyleri sunar. [Fiyatlandırma hakkında daha fazla bilgi edinin](billing-questions.md).
+### <a name="what-pricing-plans-do-you-offer"></a>Hangi fiyatlandırma planlarını sundunuz?
+Microsoft Flow hem ücretsiz hem de ücretli hizmet düzeyleri sunar. [Fiyatlandırma hakkında daha fazla bilgi edinin](billing-questions.md).
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-* Microsoft Flow’a ilişkin [kılavuzlu öğrenme turuna](https://docs.microsoft.com/learn/paths/automate-process-using-flow) katılın
-* [Başlangıç kılavuzu](getting-started.md) ile Microsoft Flow hakkında temel bilgiler öğrenin
+* Microsoft Flow [kılavuzlu bir öğrenme turuna katılın](https://docs.microsoft.com/learn/paths/automate-process-using-flow)
+* [Başlarken kılavuzundaki](getting-started.md) Microsoft Flow temel bilgilerini öğrenin

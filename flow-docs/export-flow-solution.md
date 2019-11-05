@@ -1,6 +1,6 @@
 ---
 title: Çözüm kullanan akışları dışarı aktarmayı öğrenin | Microsoft Docs
-description: Çözüm kullanan akışları dışarı aktarmayı öğrenin.
+description: Çözüm kullanan akışların nasıl dışarı aktarılacağını öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,34 +20,35 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ffc83e99be227257a97d514f3238d52a7627d8ab
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 377bc56c16200cc30492ee279b8d0179d1167bcd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455940"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547888"
 ---
-# <a name="export-a-solution"></a>Çözümü dışarı aktarma
+# <a name="export-a-solution"></a>Bir çözümü dışarı aktarma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Çözümünüzü ve bağımlılıklarını yeni bir ortama taşımak için aşağıdaki adımları izleyin:
+Çözümünüzü ve bağımlılıklarını yeni bir ortama taşımak için şu adımları izleyin:
 
-1. Gezinti çubuğundan **Çözümler**’i seçin.
+1. Gezinti çubuğundan **çözümler** ' i seçin.
 1. Dışarı aktarmak istediğiniz çözümü seçin.
-1. Üstteki menüden **Dışarı Aktar**’ı seçin.
-1. **Yönetilmeyen olarak** seçeneğini belirleyin.
+1. Üstteki menüden **dışarı aktar** ' ı seçin.
+1. **Yönetilmeyen olarak**öğesini seçin.
 
    ![](./media/export-flow-solution/flow-export-options.png)
 
-1. Çözümü tercih ettiğiniz bir adla kaydedin.
+1. Çözümü dilediğiniz bir adla kaydedin.
 
    > [!NOTE]
-   > **Yönetilen olarak** seçeneği şu anda desteklenmemektedir.
+   > **Yönetilen olarak** Şu anda desteklenmiyor.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
 * [Çözüm oluşturma](./overview-solution-flows.md)
 * [Çözümde akış oluşturma](./create-flow-solution.md)
-* [Çözümü içeri aktarma](./import-flow-solution.md)
-* [Çözüm kullanan bir akışı düzenleme](./edit-solution-aware-flow.md)
+* [Bir çözümü içeri aktarma](./import-flow-solution.md)
+* [Çözüm kullanan akışı düzenleme](./edit-solution-aware-flow.md)

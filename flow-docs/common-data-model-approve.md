@@ -1,6 +1,6 @@
 ---
-title: Common Data Service ile onay döngüsü oluşturma | Microsoft Docs
-description: Gözden geçirenlerin Dropbox'a eklenen dosyaları onaylayabilmesi veya reddedebilmesi için birlikte çalışan bir varlık, akış ve uygulama oluşturun.
+title: Common Data Service bir onay döngüsü oluşturun | Microsoft Docs
+description: Gözden geçirenlerin Dropbox 'a eklenen dosyaları onaylamasını veya reddedebilmesi için birlikte çalışan bir varlık, akış ve uygulama oluşturun.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,313 +20,314 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 4f58e5b3095769349e71e9ba8b203ea678981391
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64470122"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546842"
 ---
-# <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Microsoft Flow'u ve Microsoft Common Data Service'ı kullanarak bir onay döngüsü oluşturma
-Common Data Service, bilgilerin akıştan bağımsız olarak bir veritabanında depolandığı akışlar oluşturmanızı sağlayabilir. Bunun en iyi örneği onaylardır. Onay durumunu bir varlıkta depolarsanız, ek olarak akışınız da çalışabilir.
+# <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Microsoft Flow ve Microsoft Common Data Service kullanarak bir onay döngüsü oluşturun
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Common Data Service, bir akıştan bağımsız olarak bir veritabanında depolanan bilgiler içeren akışlar oluşturmak için bir yol sağlayabilir. Bunun en iyi örneği onaylarla aynıdır. Onay durumunu bir varlıkta depolarsanız, akışınız üzerinde çalışabilir.
 
-Bu örnekte, kullanıcının Dropbox'a dosya eklemesiyle başlayan bir onay işlemi oluşturacaksınız. Dosya eklendiğinde, dosya ile ilgili bilgiler bir uygulamada görüntülenir. Burada, gözden geçirenler değişikliği onaylayıp reddedebilir. Gözden geçiren, değişikliği onayladığında veya reddettiğinde bildirim e-postası gönderilir ve reddedilen dosyalar Dropbox'tan silinir.
+Bu örnekte, bir Kullanıcı Dropbox 'a dosya eklediğinde başlayan bir onay işlemi oluşturacaksınız. Dosya eklendiğinde, bir gözden geçirenin değişikliği onaylayabileceği veya reddedebildiği bir uygulamada, onunla ilgili bilgiler görüntülenir. Gözden geçiren değişikliği onayladığında veya reddettiğinde, bildirim postası gönderilir ve reddedilen dosyalar Dropbox 'tan silinir.
 
-Bu bölümdeki adımları uygulayarak şunları oluşturacaksınız:
+Bu bölümdeki adımları izleyerek şunları oluşturacaksınız:
 
-* Dropbox'a eklenen her dosyayla ilgili bilgilerin yanı sıra, dosyaların durumuyla (onaylandı, reddedildi veya beklemede) ilgili bilgiler içeren bir **özel varlık**.
-* Dropbox'a bir dosya eklendiğinde özel varlığa bilgi ekleyen, dosya onaylandığında veya reddedildiğinde e-posta gönderen ve reddedilen dosyaları silen bir **akış**. Bu adımlarda bir akışı sıfırdan nasıl oluşturacağınız gösterilmektedir ancak bir şablon kullanarak da buna benzer bir akış oluşturabilirsiniz.
-* gözden geçirenin, Dropbox'a eklenen dosyaları onaylayıp reddedebileceği bir **uygulama**. Bu uygulamayı, özel varlıkta bulunan alanlara göre otomatik olarak oluşturmak için PowerApps'i kullanacaksınız.
+* Dropbox 'a eklenen her dosya ve dosyanın durumunun onaylanmış, reddedildi veya beklemede olup olmadığı hakkında bilgi içeren **özel bir varlık** .
+* Dropbox 'a bir dosya eklendiğinde özel varlığa bilgi ekleyen bir **akış** , Dosya onaylandığında veya reddedildiğinde e-posta gönderir ve reddedilen dosyaları siler. Bu adımlarda, bu tür bir akışın sıfırdan nasıl oluşturulacağı gösterilmektedir, ancak şablondan benzer bir akış oluşturabilirsiniz.
+* Gözden geçirenin Dropbox 'a eklenen dosyaları onaylayabileceği veya reddedebileceği bir **uygulama** . Bu uygulamayı özel varlıktaki alanlara göre otomatik olarak oluşturmak için PowerApps 'i kullanacaksınız.
 
-**Önkoşullar**
+**Kaynakları**
 
-* [Microsoft Flow](sign-up-sign-in.md)’a ve [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/)'e kaydolun.
-* [Bağlantılarınızı yönetme](https://powerapps.microsoft.com/tutorials/add-manage-connections/) bölümünde açıklanan şekilde, Dropbox ve Office 365 Outlook'a yönelik bağlantılar oluşturun.
+* [Microsoft Flow](sign-up-sign-in.md) ve [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/)'e kaydolun.
+* [Bağlantılarınızın](https://powerapps.microsoft.com/tutorials/add-manage-connections/) açıklandığı şekilde Dropbox ve Office 365 Outlook bağlantıları oluşturun.
 
 ## <a name="build-the-entity"></a>Varlığı oluşturma
-1. [powerapps.com](https://web.powerapps.com)'da oturum açın.
-2. Sol gezinti çubuğu varsayılan olarak görüntülenmezse sol üst köşede bulunan ve üç yatay çizgiden oluşan simgeye tıklayın veya dokunun.
+1. [PowerApps.com](https://web.powerapps.com)'de oturum açın.
+2. Sol gezinti çubuğu varsayılan olarak görünmezse, sol üst köşedeki üç yatay çizgi ile simgeye tıklayın veya dokunun.
    
-    ![Sol gezinti çubuğunu açma](./media/common-data-model-approve/hamburger-icon.png)
-3. Sol gezinti çubuğunda, **Yönet**'e ve ardından **Varlıklar**'a tıklayın veya dokunun.
+    ![Sol gezinti çubuğunu aç](./media/common-data-model-approve/hamburger-icon.png)
+3. Sol gezinti çubuğunda, **Yönet**' e ve ardından **varlıklar**' a tıklayın veya dokunun.
    
-    ![Varlıkları yönetme](./media/common-data-model-approve/manage-entities.png)
-4. İstenirse **Veritabanımı oluştur**'a tıklayın veya dokunun.
+    ![Varlıkları Yönet](./media/common-data-model-approve/manage-entities.png)
+4. İstenirse **veritabanımı oluştur**' a tıklayın veya dokunun.
    
-    ![Veritabanı oluşturma](./media/common-data-model-approve/create-database.png)
-5. Sağ üst köşenin yakınında bulunan **Yeni varlık**'a tıklayın veya dokunun.
+    ![Veritabanı oluştur](./media/common-data-model-approve/create-database.png)
+5. Sağ üst köşedeki **yeni varlık**' a tıklayın veya dokunun.
    
-    ![Varlık oluşturma](./media/common-data-model-approve/new-entity.png)
+    ![Varlık oluştur](./media/common-data-model-approve/new-entity.png)
    
-    Tarayıcı pencereniz ekranı kaplamıyorsa bu düğme farklı bir yerde görünebilir.
-6. **Varlık adı** alanında, boşluk içermeyen ve veritabanınızdaki diğer varlık adlarından farklı bir ad belirtin.
+    Tarayıcı pencereniz ekranı kaplamıyorsa, bu düğme farklı bir yerde görünebilir.
+6. **Varlık adı**altında, boşluk içermeyen ve veritabanınızda başka bir varlık olmayan bir ad belirtin.
    
-    Bu örneği tümüyle uygulamak için, adı **ReviewDropboxFiles** olarak belirtin.
+    Bu örneği tam olarak izlemek için, **Belgelerdropboxfiles**' ı belirtin.
    
-    ![Varlık adı belirtme](./media/common-data-model-approve/entity-name.png)
-7. **Görünen ad** alanında bir kolay ad belirtin.
+    ![Varlık adını belirtin](./media/common-data-model-approve/entity-name.png)
+7. **Görünen ad**' ın altında, bir kolay ad belirtin.
    
-    ![Görünen ad belirtme](./media/common-data-model-approve/display-name.png)
-8. **İleri**'ye tıklayın veya dokunun.
+    ![Görünen ad belirtin](./media/common-data-model-approve/display-name.png)
+8. **İleri**' ye tıklayın veya dokunun.
    
     ![İleri düğmesi](./media/common-data-model-approve/next-button.png)
 
 ## <a name="add-fields-to-the-entity"></a>Varlığa alan ekleme
-1. Sağ üst köşede bulunan **Alan ekle**'ye tıklayın veya dokunun.
+1. Sağ üst köşedeki **alan Ekle**' ye tıklayın veya dokunun.
    
-    ![Alan ekleme](./media/common-data-model-approve/add-field.png)
-2. Alanlar listesinin en altında görünen boş satırda, **Approver** alanının özelliklerini ayarlayın. (Bu özellikleri ayarladıktan sonra Tab tuşuna basarak bir sonraki sütuna geçebilirsiniz.)
+    ![Alan Ekle](./media/common-data-model-approve/add-field.png)
+2. Alan listesinin en altında görünen boş satırda, **onaylayan** alanının özelliklerini ayarlayın. (Bu özellikleri ayarlarsanız Tab tuşuna basarak bir sonraki sütuna geçebilirsiniz.)
    
-   * **Görünen Ad** sütununa **Approver** (Onaylayan) yazın.
-   * **Ad** sütununa **ApproverEmail** (Onaylayan E-postası) yazın.
-   * **Tür** sütununda **Email** (E-posta) seçeneğine tıklayın veya dokunun.
+   * **Görünen ad** sütununda **onaylayan**yazın.
+   * **Ad** sütununda **approveremail**yazın.
+   * **Tür** sütununda **e-posta** seçeneğine tıklayın veya dokunun.
    * **Gerekli** sütununda onay kutusunu seçin.
      
-     ![Approver (Onaylayan) alanı](./media/common-data-model-approve/approver-field.png)
-3. Bir sonraki satırda, **Status** (Durum) alanının özelliklerini ayarlayın:
+     ![Onaylayan alanı](./media/common-data-model-approve/approver-field.png)
+3. Bir sonraki satırda, bir **durum** alanının özelliklerini ayarlayın:
    
-   * **Görünen Ad** sütununa **Status** (Durum) yazın.
-   * **Ad** sütununa **Status** (Durum) yazın.
-   * **Tür** sütununda, **Text** (Metin) seçeneğine tıklayın veya dokunun.
-   * **Özellikler** sütununda varsayılan değeri bırakın.
+   * **Görünen ad** sütununda **durum**yazın.
+   * **Ad** sütununda **durum**yazın.
+   * **Tür** sütununda, **metin** seçeneğine tıklayın veya dokunun.
+   * **Özellikler** sütununda, varsayılan değeri bırakın.
    * **Gerekli** sütununda onay kutusunu seçin.
      
-     ![Status (Durum) alanı](./media/common-data-model-approve/status-field.png)
-4. Bir sonraki satırda, **FileID** (Dosya kimliği) alanının özelliklerini ayarlayın:
+     ![Durum alanı](./media/common-data-model-approve/status-field.png)
+4. Sonraki satırda, bir **FileId** alanının özelliklerini ayarlayın:
    
-   * **Görünen Ad** sütununa **File identifier** (Dosya tanımlayıcısı) yazın.
-   * **Ad** sütununa **FileID** (Dosya kimliği) yazın.
-   * **Tür** sütununda, **Text** (Metin) seçeneğine tıklayın veya dokunun.
-   * **Özellikler** sütununda varsayılan değeri bırakın.
+   * **Görünen ad** sütununda **dosya tanımlayıcısı**yazın.
+   * **Ad** sütununa **FileId**yazın.
+   * **Tür** sütununda, **metin** seçeneğine tıklayın veya dokunun.
+   * **Özellikler** sütununda, varsayılan değeri bırakın.
    * **Benzersiz** sütununda onay kutusunu seçin.
    * **Gerekli** sütununda onay kutusunu seçin.
      
-     ![FileID alanı](./media/common-data-model-approve/fileid-field.png)
-5. **FileID** (Dosya kimliği) alanı için sağ kenardaki üç noktaya (...) ve ardından **Başlık alanı olarak ayarla**'ya tıklayın veya dokunun.
+     ![FileId alanı](./media/common-data-model-approve/fileid-field.png)
+5. Sağ kenarda, **FileId** alanı için üç nokta işaretine (...) ve ardından **başlık alanı olarak ayarla**' ya tıklayın veya dokunun.
    
-    ![Başlık alanı ayarlama](./media/common-data-model-approve/set-title-field.png)
-6. Sol alt köşedeki **Oluştur**'a tıklayın veya dokunun.
+    ![Başlık alanını ayarla](./media/common-data-model-approve/set-title-field.png)
+6. Sol alt köşedeki **Oluştur**' a tıklayın veya dokunun.
    
     ![Varlık oluşturma](./media/common-data-model-approve/create-button.png)
-7. (isteğe bağlı) Varlıklar listesi yeniden görüntülendiğinde, ekranı kaplamıyorsa tarayıcı pencerenize ekranı kaplatın ve ardından **Tür** sütun başlığına tıklayın veya dokunun. Liste, özel varlıklar (az önce oluşturduğunuz varlık gibi) üstte görüntülenecek şekilde sıralanır.
+7. seçim Varlıkların listesi yeniden görüntülenirse, zaten ekranı kaplamıyorsa tarayıcı pencerenizi en üst düzeye çıkarın ve ardından **tür** sütun başlığına tıklayın veya dokunun. Liste, az önce oluşturduğunuz ve en üstte görünen özel varlıklarla sıralanır.
 
-## <a name="sign-in-and-create-a-flow"></a>Oturum açma ve akış oluşturma
-1. [Microsoft Flow portalını](https://flow.microsoft.com) açın.
-2. Ekranı kaplamıyorsa, tarayıcı pencerenize ekranı kaplatın ve ardından sağ üst köşede bulunan **Oturum aç**'a tıklayın veya dokunun.
+## <a name="sign-in-and-create-a-flow"></a>Oturum açın ve akış oluşturun
+1. [Microsoft Flow portalını](https://flow.microsoft.com)açın.
+2. Zaten ekranı kaplamamışsa tarayıcı pencerenizi en üst düzeye çıkarın ve sağ üst köşedeki **oturum aç** ' a tıklayın veya dokunun.
    
     ![Microsoft Flow için oturum açma düğmesi](./media/common-data-model-approve/signin-flow.png)
-3. Sağ üst köşedeki menüden, powerapps.com’da veritabanını oluşturduğunuz ortamı seçersiniz.
+3. Sağ üst taraftaki menüde, powerapps.com 'de veritabanını oluşturduğunuz ortamı seçersiniz.
    
-    **Not**: Aynı ortamı seçmezseniz varlığınızı göremezsiniz.
-4. Sol üst köşenin yakınında bulunan **Akışlarım**'a tıklayın veya dokunun.
+    **Not**: aynı ortamı seçmezseniz, varlığınızı görmezsiniz.
+4. Sol üst köşenin yakınında bulunan **Akışlarım**' a tıklayın veya dokunun.
    
     ![Akışlarım düğmesi](./media/common-data-model-approve/myflows-button.png)
-5. Sağ üst köşenin yakınında bulunan **Yeni akış oluştur**'a tıklayın veya dokunun.
+5. Sağ üst köşenin yakınında **Yeni akış oluştur**' a tıklayın veya dokunun.
    
     ![Yeni akış oluştur düğmesi](./media/common-data-model-approve/create-flow.png)
 
-## <a name="start-when-a-file-is-added"></a>Dosya eklendiğinde başlama
-1. **Daha fazla tetikleyici arayın** yazılı kutuya **Dropbox** yazın veya yapıştırın ve ardından **Dropbox - Bir dosya oluşturulduğunda**'ya tıklayın veya dokunun.
+## <a name="start-when-a-file-is-added"></a>Bir dosya eklendiğinde Başlat
+1. **Daha fazla tetikleyici ara**' yı Içeren kutuya **Dropbox**yazın veya yapıştırın ve ardından **Dropbox-bir dosya oluşturulduğunda**ya da dokunun.
    
-    ![Tetikleyici oluşturma](./media/common-data-model-approve/create-trigger.png)
-2. **Klasör** alanında klasör simgesine tıklayın veya dokunun ve ardından dosyaların ekleneceği klasöre göz atın.
+    ![Tetikleyici oluştur](./media/common-data-model-approve/create-trigger.png)
+2. **Klasör**' ün altında, klasör simgesine tıklayın veya dokunun ve ardından dosyaların ekleneceği klasöre gidin.
    
-    ![Klasör seçme](./media/common-data-model-approve/folder-icon.png)
+    ![Klasör Seç](./media/common-data-model-approve/folder-icon.png)
 
 ## <a name="add-data-to-the-entity"></a>Varlığa veri ekleme
-1. **Yeni adım**'a ve ardından **Eylem ekle**'ye tıklayın veya dokunun.
+1. **Yeni adım**' a ve ardından **Eylem Ekle**' ye tıklayın veya dokunun.
    
     ![Eylem ekleme](./media/common-data-model-approve/add-action.png)
-2. **Daha fazla eylem arayın** yazılı kutuya **Common Data Service** yazın veya yapıştırın, ardından **Common Data Service - Nesne oluştur**'a tıklayın ya da dokunun.
+2. **Daha fazla eylem ara**' yı içeren kutuya **Common Data Service**yazın veya yapıştırın ve ardından **Common Data Service-nesne oluştur**' a tıklayın veya dokunun.
    
-    ![Common Data Service'ta nesne oluşturma](./media/common-data-model-approve/cdm-create-object.png)
-3. **The entity** (Varlık) alanına **Review** (Gözden geçir) yazın veya yapıştırın ve ardından **Review Dropbox files**'a.(Dropbox dosyalarını gözden geçir) tıklayın veya dokunun.
+    ![Common Data Service bir nesne oluşturun](./media/common-data-model-approve/cdm-create-object.png)
+3. **Varlık**altında, **Gözden geçirme**yazın veya yapıştırın ve ardından **Dropbox dosyalarını gözden geçir**' e tıklayın veya dokunun.
    
-    ![Varlığı seçme](./media/common-data-model-approve/choose-entity-flow.png)
-4. **Title** (Başlık) alanında, kutuya tıklayın veya dokunun ve ardından parametre belirteçleri listesindeki **Dosya adı**'na tıklayarak veya dokunarak bu belirteci alana ekleyin.
+    ![Varlığı seçin](./media/common-data-model-approve/choose-entity-flow.png)
+4. **Başlık**' ın altında, kutuya tıklayın veya dokunun ve ardından bu belirteci alana eklemek için parametre belirteçleri listesindeki **dosya adı** ' na tıklayın veya dokunun.
    
-    ![Dosya adı belirteci ekleme](./media/common-data-model-approve/add-filename-token.png)
-5. **Approver** (Onaylayan) alanına, dosyaları gözden geçirecek kişinin e-posta adresini yazın veya yapıştırın.
+    ![Dosya adı belirteci Ekle](./media/common-data-model-approve/add-filename-token.png)
+5. **Onaylayan**altında, dosyaları gözden geçibileceğiniz kişinin e-posta adresini yazın veya yapıştırın.
    
-    **Not**: Daha kolay akış test yapmak için kendi adresinizi belirtin. Bunu, daha sonra akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
+    **Unutmayın**: akışın sınamasını daha kolay hale getirmek için kendi adresinizi belirtin. Daha sonra, akış fiili kullanım için hazırlandığınızda bu işlemi değiştirebilirsiniz.
    
-    ![Onaylayan ekleme](./media/common-data-model-approve/add-approver.png)
-6. **Status** (Durum) alanına **Pending** (Beklemede) yazın veya yapıştırın.
+    ![Onaylayan Ekle](./media/common-data-model-approve/add-approver.png)
+6. **Durum**' ın altında, **bekleyen**yazın veya yapıştırın.
    
-    ![Varsayılan durum ekleme](./media/common-data-model-approve/add-default-status.png)
-7. **File identifier** (Dosya Tanımlayıcısı) alanında, kutuya tıklayın veya dokunun ve ardından parametre belirteçleri listesindeki **Dosya tanımlayıcısı**'na tıklayarak veya dokunarak bu belirteci alana ekleyin.
+    ![Varsayılan durum Ekle](./media/common-data-model-approve/add-default-status.png)
+7. **Dosya tanımlayıcısı**' nın altında, kutuya tıklayın veya dokunun ve ardından bu belirteci alana eklemek için parametre belirteçleri listesindeki **dosya tanımlayıcısı** ' na tıklayın veya dokunun.
    
-    ![Dosya tanımlayıcısı belirteci ekleme](./media/common-data-model-approve/add-file-identifier.png)
+    ![Dosya tanımlayıcı belirteci Ekle](./media/common-data-model-approve/add-file-identifier.png)
 
-## <a name="check-whether-the-file-has-been-reviewed"></a>Dosyanın gözden geçirilip geçirilmediğini denetleme
-1. **Create object** (Nesne oluştur) eyleminin altında; **Yeni adım**'a, ardından **Daha fazla**'ya ve **Do until ekle**'ye tıklayın veya dokunun.
+## <a name="check-whether-the-file-has-been-reviewed"></a>Dosyanın gözden geçirilip geçirilmediğini denetleyin
+1. **Nesne oluştur** eyleminin altında **yeni adım**' a tıklayın veya dokunun, **daha fazla**' ya tıklayın veya dokunun ve ardından işlem **Ekle**' ye tıklayın veya dokunun.
    
-    ![Do until ekleme](./media/common-data-model-approve/add-do-until.png)
-2. **Do until** eyleminin sol üst köşesinde, **Bir değer seçin** yazılı kutuya tıklayın veya dokunun.
+    ![Ekle](./media/common-data-model-approve/add-do-until.png)
+2. **Do Until** eyleminin sol üst köşesinde, **bir değer seçin**' in bulunduğu kutuya tıklayın veya dokunun.
    
-    ![Değer seçme](./media/common-data-model-approve/choose-value.png)
+    ![Bir değer seçin](./media/common-data-model-approve/choose-value.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı üst kutuya **bir değer seçin**.
-3. **Create object çıkışları** (Nesne oluştur çıkışları) altında bulunan **Status**'a (Durum) tıklayarak veya dokunarak bu parametre belirtecini alana ekleyin.
+    **Note**: tarayıcı pencereniz ekranı kaplamıyorsa, **bir değer seçin**' in bulunduğu üstteki kutuya tıklayın veya dokunun.
+3. **Nesne oluştur**' un altında, bu parametre belirtecini alana eklemek için **durum** ' a tıklayın veya dokunun.
    
-    ![Status (Durum) belirteci ekleme](./media/common-data-model-approve/add-status.png)
-4. **Do until** eyleminin ortasında bulunan listeyi açın ve ardından **eşit değildir**'e tıklayın veya dokunun.
+    ![Durum belirteci Ekle](./media/common-data-model-approve/add-status.png)
+4. **Do Until** eyleminin merkezinin yakınında bulunan listeyi açın ve ardından **eşit değildir**' e tıklayın veya dokunun.
    
-    ![Eşit değildir belirtme](./media/common-data-model-approve/is-not-equal.png)
-5. **Do until** eyleminin sağ üst köşesinde, **Bir değer seçin** yazılı kutuya **Pending** (Beklemede) yazın veya yapıştırın.
+    ![Şuna eşit değildir belirt](./media/common-data-model-approve/is-not-equal.png)
+5. **Do Until** eyleminin sağ üst köşesinde, **bir değer seçin**' in bulunduğu kutuya **bekleyen** yazın veya yapıştırın.
    
     ![İzlenecek durumu belirtin](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı alt kutuya **bir değer seçin**.
-6. **Do until** eyleminin altındaki **Eylem ekle**'ye tıklayın veya dokunun.
+    **Note**: tarayıcı pencereniz ekranı kaplamıyorsa, **bir değer seçin**' in bulunduğu alt kutuya tıklayın veya dokunun.
+6. **Yapılacaklar** eyleminin alt kısmına yakın **bir eylem Ekle**' ye tıklayın veya dokunun.
    
-    ![Do until'e eylem ekleme](./media/common-data-model-approve/add-action-in-dountil.png)
-7. **Daha fazla eylem arayın** yazılı kutuya **Common** yazın ve ardından **Common Data Service - Nesne al**'a tıklayın veya dokunun.
+    ![Eyleme işlem Ekle](./media/common-data-model-approve/add-action-in-dountil.png)
+7. **Daha fazla eylem ara**' yı Içeren kutuya **ortak**yazın ve ardından **Common Data Service-nesne al**' a tıklayın veya dokunun.
    
-    ![Nesne alma](./media/common-data-model-approve/get-object.png)
-8. **The namespace** (Ad alanı) alanında, veritabanınıza tıklayın veya dokunun.
-9. **The entity** (Varlık) alanına **Review** (Gözden geçir) yazın veya yapıştırın ve ardından **Review Dropbox files**'a.(Dropbox dosyalarını gözden geçir) tıklayın veya dokunun.
+    ![Bir nesne al](./media/common-data-model-approve/get-object.png)
+8. **Ad alanı**altında veritabanınıza tıklayın veya dokunun.
+9. **Varlık**altında, **Gözden geçirme**yazın veya yapıştırın ve ardından **Dropbox dosyalarını gözden geçir**' e tıklayın veya dokunun.
    
-    ![Varlık seçme](./media/common-data-model-approve/choose-entity-flow.png)
-10. **Object id** (Nesne kimliği) alanında, kutuya tıklayın veya dokunun ve ardından **Dosya tanımlayıcısı** parametre belirtecine tıklayarak veya dokunarak alana ekleyin.
+    ![Varlık Seç](./media/common-data-model-approve/choose-entity-flow.png)
+10. **Nesne kimliği**' nin altında, kutuya tıklayın veya dokunun ve ardından alana eklemek için **dosya tanımlayıcısı** parametre belirtecine tıklayın veya dokunun.
     
-     ![Nesne tanımlayıcısı ekleme](./media/common-data-model-approve/add-object-id.png)
+     ![Nesne tanımlayıcısı Ekle](./media/common-data-model-approve/add-object-id.png)
 
-## <a name="check-whether-the-item-has-been-approved"></a>Öğenin onaylanıp onaylanmadığını denetleme
-1. **Do-Until** eyleminin altında bulunan **Yeni adım**'a ve ardından **Koşul ekle**'ye tıklayın veya dokunun.
+## <a name="check-whether-the-item-has-been-approved"></a>Öğenin onaylanıp onaylanmadığını denetleyin
+1. **Do-Until** eyleminin altında, **yeni adım**' a ve ardından **Koşul Ekle**' ye tıklayın veya dokunun.
    
-    ![Koşul ekleme](./media/common-data-model-approve/add-condition.png)
-2. Koşulun sol üst köşesinde, **Bir değer seçin** yazılı kutuya tıklayın veya dokunun.
+    ![Koşul Ekle](./media/common-data-model-approve/add-condition.png)
+2. Koşulun sol üst köşesinde, **bir değer seçin**' in bulunduğu kutuya tıklayın veya dokunun.
    
     ![Koşulun sol üst köşesi](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa tıklayın veya dokunun yazılı üst kutuya **bir değer seçin**.
-3. **Get object çıkışları** (Nesne al çıkışları) altında yer alan **Status** (Durum) parametre belirtecini alana eklemek için üzerine tıklayın veya dokunun.
+    **Note**: tarayıcı pencereniz ekranı kaplamıyorsa, **bir değer seçin**' in bulunduğu üstteki kutuya tıklayın veya dokunun.
+3. **Get nesnesinden çıktılar**altında, alana eklemek için **durum** parametresinin simgesine tıklayın veya dokunun.
    
     ![Koşula durum ekleme](./media/common-data-model-approve/add-status-to-condition.png)
-4. Koşulun sağ üst köşesinde, **Bir değer seçin** yazılı kutuya **Approved** (Onaylandı) yazın veya kopyalayın.
+4. Koşulun sağ üst köşesinde, **bir değer seçin**' in bulunduğu kutuya **onaylanmış** yazın veya yapıştırın.
    
-    ![Durumun onaylandı olarak ayarlandığını doğrulayın](./media/common-data-model-approve/status-equals-approved.png)
+    ![Durumun Onaylandı olarak ayarlandığını doğrulayın](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Not**: Tarayıcı pencereniz ekranı kaplamıyorsa yazın veya yapıştırın **Onaylandı** yazılı alt kutuya içinde **bir değer seçin**.
+    **Note**: tarayıcı pencereniz ekranı kaplamıyorsa, **bir değer seçin**' ın bulunduğu alt kutuya **onaylanmış** yazın veya yapıştırın.
 
-## <a name="send-notification-mail"></a>Bildirim e-postası gönderme
-1. **Evet ise, hiçbir şey yapma**'nın altında bulunan **Eylem ekle**'ye tıklayın veya dokunun.
+## <a name="send-notification-mail"></a>Bildirim postası gönder
+1. **Evet ise, hiçbir şey yapmayın**, **Eylem Ekle**' ye tıklayın veya dokunun.
    
-    ![Evet ise eylem ekleme](./media/common-data-model-approve/if-yes-action.png)
-2. **Daha fazla eylem arayın** yazılı kutuya **e-posta gönder** yazın veya yapıştırın ve ardından **Office 365 Outlook - E-posta gönder**'e tıklayın veya dokunun.
+    ![Yanıt Evet ise, bir eylem ekleyin](./media/common-data-model-approve/if-yes-action.png)
+2. **Daha fazla eylem ara**' yı içeren kutuya **posta gönder**yazın veya yapıştırın ve ardından **Office 365 Outlook-e-posta gönder ' e**tıklayın veya dokunun.
    
-    ![Evet ise e-posta gönder](./media/common-data-model-approve/if-yes-send-mail.png)
-3. **Kime** alanına, bir öğe onaylandığında bildirim almasını istediğiniz kullanıcının adresini yazın veya yapıştırın.
+    ![Yanıt Evet ise, posta gönder](./media/common-data-model-approve/if-yes-send-mail.png)
+3. ' **In**altında, bir öğe kabul edildiğinde bildirmek istediğiniz kişinin adresini yazın veya yapıştırın.
    
-    **Not**: Daha kolay akış test yapmak için kendi adresinizi belirtin. Bunu, akış gerçek kullanım için hazır olduğunda değiştirebilirsiniz.
+    **Unutmayın**: akışın sınamasını daha kolay hale getirmek için kendi adresinizi belirtin. Akış, fiili kullanım için hazırsa bunu değiştirebilirsiniz.
    
     ![Onay alıcısı](./media/common-data-model-approve/approval-recipient.png)
-4. **Konu** altındaki kutuya tıklayın ve ardından **Dosya adı** parametre belirtecini alana eklemek için üzerine tıklayın veya dokunun.
+4. **Konu**' ın altında, kutuya tıklayın veya dokunun ve ardından alana eklemek için **dosya adı** parametre belirtecine tıklayın veya dokunun.
    
-    ![Dosya adını e-posta konusu olarak belirtme](./media/common-data-model-approve/subject-is-file-name.png)
-5. **Gövde**'nin altına **Öğe onaylandı** yazın veya yapıştırın.
+    ![E-posta konusu olarak dosya adını belirtin](./media/common-data-model-approve/subject-is-file-name.png)
+5. **Gövde**' ın altında, **öğe onaylanmış** olarak yazın veya yapıştırın.
    
     ![Onay e-postası gövdesi](./media/common-data-model-approve/approval-body.png)
-6. **Hayır ise, hiçbir şey yapma**'nın altında e-posta iletisinin gövdesini **Öğe reddedildi** olarak belirtmek dışında bu yordamın 1-5 adımlarını yineleyin.
+6. **Hayır ise, hiçbir şey yapmayın**, **öğe reddedildiğinde** e-posta iletisinin gövdesini belirt dışında bu yordamda 1-5 arasındaki adımları yineleyin.
    
     ![Reddetme e-postası gövdesi](./media/common-data-model-approve/rejection-body.png)
 
-## <a name="delete-rejected-files"></a>Reddedilen dosyaları silme
-1. Reddetme e-postası alanları altındaki **Eylem ekle**'ye tıklayın veya dokunun.
+## <a name="delete-rejected-files"></a>Reddedilen dosyaları sil
+1. Reddetme e-postası alanları altında **Eylem Ekle**' ye tıklayın veya dokunun.
    
-    ![Silme eylemi ekleme](./media/common-data-model-approve/add-delete-action.png)
-2. **Daha fazla eylem arayın** yazılı kutuya **Dropbox** yazın veya yapıştırın ve ardından **Dropbox - Dosyayı sil**'e tıklayın veya dokunun.
+    ![Silme eylemi Ekle](./media/common-data-model-approve/add-delete-action.png)
+2. **Daha fazla eylem ara**' yı Içeren kutuya **Dropbox**yazın veya yapıştırın ve ardından **Dropbox-dosyayı Sil**' e tıklayın veya dokunun.
    
-    ![Dropbox'tan dosya silme](./media/common-data-model-approve/dropbox-delete-file.png)
-3. **Dosya**'nın altındaki kutuya tıklayın veya dokunun ve ardından **Dosya tanımlayıcısı** parametre belirtecini alana eklemek için üzerine tıklayın veya dokunun.
+    ![Dropbox 'tan Dosya Sil](./media/common-data-model-approve/dropbox-delete-file.png)
+3. **Dosya**' nın altında, kutuya tıklayın veya dokunun ve ardından alana eklemek için **dosya tanımlayıcı** belirteci parametresine tıklayın veya dokunun.
    
-    ![Silinecek dosyayı tanımlama](./media/common-data-model-approve/identify-file-delete.png)
+    ![Silinecek dosyayı tanımla](./media/common-data-model-approve/identify-file-delete.png)
 
 ## <a name="save-the-flow"></a>Akışı kaydetme
-1. Ekranın üstünde, oluşturmakta olduğunuz akış için bir ad yazın veya yapıştırın ve ardından **Akış Oluştur**'a tıklayın veya dokunun.
+1. Ekranın üst kısmında oluşturmakta olduğunuz akış için bir ad yazın veya yapıştırın ve ardından **akış oluştur**' a tıklayın veya dokunun.
    
-    ![Akışı kaydetme](./media/common-data-model-approve/save-flow.png)
-2. **Kapat**'a ve ardından **Bitti**'ye tıklayın veya dokunun.
-3. Dropbox'ta belirttiğiniz klasöre, biri onayı diğeri ise reddi test etmek için kullanılacak şekilde en az iki dosya ekleyin.
+    ![akışı Kaydet](./media/common-data-model-approve/save-flow.png)
+2. **Kapat** ' a ve ardından **bitti**' ye tıklayın veya dokunun.
+3. Dropbox 'ta, belirttiğiniz klasöre en az iki dosya ekleyin: bir tane, onayı test etmek ve diğeri de ret etmek için.
 
 ## <a name="build-the-app"></a>Uygulamayı oluşturma
-1. [powerapps.com](https://web.powerapps.com)'da oturum açın ve ardından sol gezinti çubuğunun altında bulunan **Yeni uygulama**'ya tıklayın veya dokunun.
+1. [PowerApps.com](https://web.powerapps.com)' da oturum açın ve ardından sol gezinti çubuğunun alt kısmında bulunan **Yeni uygulama** ' ya tıklayın veya dokunun.
    
     ![Tarayıcıda uygulama oluşturma](./media/common-data-model-approve/new-app-button.png)
-2. Görüntülenen iletişim kutusunda, Windows için PowerApps Studio veya Web için PowerApps Studio'dan birini açma seçeneğine tıklayın veya dokunun.
-3. Windows için PowerApps Studio'yu açtıysanız sol gezinti çubuğunda.bulunan **Yeni**'ye tıklayın veya dokunun.
-4. **Verilerinizden uygulama oluşturun** altında, **Common Data Service** kutucuğunda bulunan **Telefon düzeni**'ne tıklayın veya dokunun.
+2. Görüntülenen iletişim kutusunda, Windows için PowerApps Studio veya Web için PowerApps Studio açma seçeneğine tıklayın veya dokunun.
+3. Windows için PowerApps Studio açtıysanız sol gezinti çubuğunda **Yeni** ' ye tıklayın veya dokunun.
+4. **Verilerden uygulama oluşturma**altında **Common Data Service** kutucuğunda **Telefon düzeni** ' ne tıklayın veya dokunun.
    
-    ![Uygulama oluşturma](./media/common-data-model-approve/afd-cdm.png)
-5. **Search** (Ara) kutusuna **Review** (Gözden geçir) yazın veya yapıştırın.
+    ![Uygulama oluştur](./media/common-data-model-approve/afd-cdm.png)
+5. **Arama** kutusuna **Gözden geçirme**yazın veya yapıştırın.
    
     ![Varlık arama](./media/common-data-model-approve/search-entities.png)
-6. **Choose an entity** (Varlık seçin) altında, **Review Dropbox Files**'a (Dropbox Dosyalarını Gözden Geçir) tıklayın veya dokunun.
+6. **Varlık seçin**altında **Dropbox dosyalarını incele**' ye tıklayın veya dokunun.
    
-    ![Varlık seçme](./media/common-data-model-approve/choose-entity.png)
-7. Sağ alt köşenin yakınında bulunan **Connect**'e (Bağlan) tıklayın veya dokunun.
+    ![Bir varlık seçin](./media/common-data-model-approve/choose-entity.png)
+7. Sağ alt köşenin yakınında, **Bağlan**' a tıklayın veya dokunun.
    
-    ![Connect (Bağlan) düğmesi](./media/common-data-model-approve/connect-button.png)
-8. Tanıtım turunun açılış ekranı görüntülenirse PowerApps'i daha yakından tanımak için turu başlatın.(veya **Skip**'e (Atla) tıklayın veya dokunun).
+    ![Bağlan düğmesi](./media/common-data-model-approve/connect-button.png)
+8. Giriş turu açılış ekranı görüntülenirse PowerApps 'i (veya **Atla**' ya tıklayın veya dokunun) öğrenmeye yönelik tura katılın.
    
     ![Tanıtım turu](./media/common-data-model-approve/quick-tour.png)
    
-    Sol üst köşenin yakınında bulunan soru işareti simgesine ve ardından **Take the intro tour**'a (Tanıtım turuna katıl) tıklayarak veya dokunarak tura daha sonra istediğiniz zaman katılabilirsiniz.
-9. (isteğe bağlı) Ekranın alt kısmında bulunan kaydırıcıyı sürükleyerek uygulamayı daha kolay bir şekilde görebilirsiniz.
+    Turu daha sonra, sol üst köşedeki soru işareti simgesine tıklayarak veya dokunarak ve ardından **tanıtım turuna katılarak**veya dokunarak istediğiniz zaman alabilirsiniz.
+9. seçim Ekranın alt kısmındaki kaydırıcıyı sürükleyerek uygulamanın daha kolay görünmesi için kaydırıcıyı sürükleyin.
    
     ![Yakınlaştırma denetimi](./media/common-data-model-approve/zoom-control.png)
 
 ## <a name="customize-the-app"></a>Uygulamayı özelleştirme
-1. Sağ gezinti çubuğunda, bir başlık ve açıklama içeren düzene tıklayın veya dokunun.
+1. Sağ gezinti çubuğunda bir başlık ve açıklama içeren düzene tıklayın veya dokunun.
    
-    ![Connect (Bağlan) düğmesi](./media/common-data-model-approve/choose-layout.png)
-2. **BrowseScreen** alanında, daha büyük metin kutusu denetimini seçmek için arama çubuğunun tam altına tıklayın veya dokunun.
+    ![Bağlan düğmesi](./media/common-data-model-approve/choose-layout.png)
+2. **BrowseScreen**üzerinde, daha büyük metin kutusu denetimini seçmek için arama çubuğunun hemen altına tıklayın veya dokunun.
    
-    ![Başlık seçme](./media/common-data-model-approve/select-header.png)
-3. Sağ bölmede, daha altta bulunan listenin aşağı okuna tıklayarak veya dokunarak listeyi açın.
+    ![Üst bilgi Seç](./media/common-data-model-approve/select-header.png)
+3. Sağ bölmede, aşağı okuna tıklayarak veya dokunarak aşağı açılan listeyi açın.
    
-    ![Açılan listeyi açma](./media/common-data-model-approve/open-dropdown.png)
-4. Daha altta bulunan listede, eklenen dosyaların dosya adlarını görüntülemek için **Title**'a (Başlık) tıklayın veya dokunun.
+    ![Açılan menüyü aç](./media/common-data-model-approve/open-dropdown.png)
+4. Alt listede, **başlık** ' a tıklayın veya dokunun. bu nedenle, eklenen dosyaların dosya adını gösterin.
    
     ![Başlık verilerini ayarlama](./media/common-data-model-approve/set-heading.png)
-5. Sağ bölmede, daha üstte bulunan listeyi açın ve ardından her bir dosyanın durumunu görüntülemek için **Status**'a (Durum) tıklayın veya dokunun.
+5. Sağ bölmede, üstteki listeyi açın ve ardından **durum** ' a tıklayarak veya dokunarak her bir dosyanın durumunu görüntüleyin.
    
     ![Gövde verilerini ayarlama](./media/common-data-model-approve/set-body.png)
 
 ## <a name="test-the-overall-solution"></a>Genel çözümü test etme
-1. PowerApps'te, sol üst köşede bulunan oynat düğmesine tıklayarak veya dokunarak Önizleme modunu açın.
+1. PowerApps 'te, sol üst köşedeki Oynat düğmesine tıklayarak veya dokunarak Önizleme modunu açın.
    
-    ![Önizleme modunu açma](./media/common-data-model-approve/open-preview.png)
-2. Listedeki ilk dosya ile ilgili ayrıntıları görüntülemek için oka tıklayın veya dokunun.
+    ![Önizleme modunu aç](./media/common-data-model-approve/open-preview.png)
+2. Listedeki ilk dosya için oka tıklayın veya dokunun ve bu dosya hakkındaki ayrıntıları gösterin.
    
-    ![Ayrıntılar ekranını açma](./media/common-data-model-approve/open-details.png)
-3. Sağ üst köşede, dosya ile ilgili ayrıntıları değiştirmek için kalem simgesine tıklayın veya dokunun.
+    ![Ayrıntılar ekranını aç](./media/common-data-model-approve/open-details.png)
+3. Dosya hakkındaki ayrıntıları değiştirmek için sağ üst köşedeki kalem simgesine tıklayın veya dokunun.
    
-    ![Düzenleme ekranını açma](./media/common-data-model-approve/edit-record.png)
-4. **Status** (Durum) kutusuna **Approved** (Onaylandı) yazın veya yapıştırın.
+    ![Düzenleme ekranını aç](./media/common-data-model-approve/edit-record.png)
+4. **Durum** kutusuna **Onaylandı**yazın veya yapıştırın.
    
     ![Bir dosyayı onaylama](./media/common-data-model-approve/change-status.png)
-5. Sağ üst köşede, değişikliklerinizi kaydedip ayrıntılar ekranına dönmek için onay işareti simgesine tıklayın veya dokunun.
+5. Değişikliklerinizi kaydetmek ve Ayrıntılar ekranına geri dönmek için sağ üst köşedeki onay işareti simgesine tıklayın veya dokunun.
    
-    ![Değişiklikleri kaydetme](./media/common-data-model-approve/save-record.png)
+    ![Değişiklikleri Kaydet](./media/common-data-model-approve/save-record.png)
    
-    Birkaç dakika içinde dosyanın onaylandığını bildiren bir e-posta alırsınız.
-6. Gözatma ekranına dönmek için sağ üst köşede bulunan geri düğmesine tıklayın veya dokunun.
+    Birkaç dakika içinde, dosyanın onaylanmış olduğunu belirten bir e-posta alacaksınız.
+6. Sağ üst köşedeki geri düğmesine tıklayarak veya dokunarak gezinme ekranına geri dönün.
    
-    ![Gözatma ekranına dönme](./media/common-data-model-approve/back-arrow.png)
-7. Listedeki diğer dosya ile ilgili ayrıntıları görüntülemek için oka tıklayın veya dokunun.
+    ![Tarama ekranına dön](./media/common-data-model-approve/back-arrow.png)
+7. Listedeki diğer dosya için oka tıklayın veya dokunun ve bu dosya hakkındaki ayrıntıları gösterin.
    
-    ![Ayrıntılar ekranını açma](./media/common-data-model-approve/open-details.png)
-8. Sağ üst köşede, dosya ile ilgili ayrıntıları değiştirmek için kalem simgesine tıklayın veya dokunun.
+    ![Ayrıntılar ekranını aç](./media/common-data-model-approve/open-details.png)
+8. Dosya hakkındaki ayrıntıları değiştirmek için sağ üst köşedeki kalem simgesine tıklayın veya dokunun.
    
-    ![Düzenleme ekranını açma](./media/common-data-model-approve/edit-record.png)
-9. **Status** (Durum) kutusuna **Rejected** (Reddedildi) (veya **Aproved** ya da **Approoved** da dahil olmak üzere **Approved** (Onaylandı) dışında herhangi bir ifade) yazın veya yapıştırın.
+    ![Düzenleme ekranını aç](./media/common-data-model-approve/edit-record.png)
+9. **Durum** kutusunda, **reddedildi** (veya **onaylanan veya onay** **dahil olmak** **üzere) ' i yazın veya yapıştırın**.
    
-    ![Dosyayı reddetme](./media/common-data-model-approve/reject-file.png)
-10. Sağ üst köşede, değişikliklerinizi kaydedip ayrıntılar ekranına dönmek için onay işareti simgesine tıklayın veya dokunun.
+    ![Dosyayı Reddet](./media/common-data-model-approve/reject-file.png)
+10. Değişikliklerinizi kaydetmek ve Ayrıntılar ekranına geri dönmek için sağ üst köşedeki onay işareti simgesine tıklayın veya dokunun.
     
-     ![Değişiklikleri kaydetme](./media/common-data-model-approve/save-record.png)
+     ![Değişiklikleri Kaydet](./media/common-data-model-approve/save-record.png)
     
-     Birkaç dakika içinde dosyanın reddedildiğini ve dosyanın Dropbox'tan silineceğini belirten bir e-posta alırsınız.
+     Birkaç dakika içinde, dosyanın reddedildiğini belirten bir e-posta alacaksınız ve dosya Dropbox 'tan silinir.
 

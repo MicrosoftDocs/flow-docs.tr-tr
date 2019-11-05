@@ -1,6 +1,6 @@
 ---
-title: Başlarken | Microsoft Docs
-description: İşlerinizi ve yaşamınızı Microsoft Flow ile otomatik hale getirmeye başlamanın hızlı yolları
+title: Kullanmaya başlayın | Microsoft Docs
+description: Power otomatikleştirmek ile işinizi ve hayatınızı otomatik hale getirmeye başlamak için hızlı yollar
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: hero-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
@@ -20,117 +20,134 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 54d1478f34743b6059692b927da8baf2c49a35a7
+ms.sourcegitcommit: 53f049dc7e7cad652e728941ee426b7ad2a116da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035203"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73589846"
 ---
-# <a name="get-started-with-microsoft-flow"></a>Microsoft Flow ile çalışmaya başlama #
+# <a name="get-started-with-power-automate"></a>Power otomatikleştirmek ile çalışmaya başlama
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Hoş Geldiniz! Microsoft Flow sık kullandığınız uygulamalar ile hizmetler arasında otomatik iş akışları oluşturarak dosyaları eşitlemenize, bildirimler almanıza, veri toplamanıza ve daha fazlasını yapmanıza yardımcı olan bir hizmettir.
+<br>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ana akış türleri; [otomatik](get-started-logic-flow.md), [düğme](introduction-to-button-flows.md), [zamanlanmış](run-scheduled-tasks.md) ve [iş süreci](business-process-flows-overview.md) akışlarıdır.
+Hoş geldiniz! Güç otomatikleştirme, dosyaları senkronize etmek, bildirimler almak, veri toplamak ve daha fazlası için sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturmanıza yardımcı olan bir hizmettir.
 
-Bir Dynamics 365 müşteri etkileşimi özelleştiricisiyseniz; [iş akışları](configure-workflow-steps.md), [eylemler](create-actions.md), [mobil görev akışları](create-mobile-task-flow.md) ve [iletişim kutularını](use-cds-for-apps-dialogs.md) içeren klasik Common Data Service işlemlerini de biliyor olabilirsiniz.
+Ana akış türleri [Otomatik](get-started-logic-flow.md), [düğme](introduction-to-button-flows.md), [Zamanlanmış](run-scheduled-tasks.md)ve [iş süreci](business-process-flows-overview.md) akışıdır.
 
-İlk adım olarak [kaydolmanız](sign-up-sign-in.md) gerekir. Zaten bir Microsoft Flow hesabınız varsa tabletinizde, masaüstü bilgisayarınızda ve hatta telefonunuzda [oturum açabilirsiniz](https://flow.microsoft.com/signin).
+## <a name="types-of-flows"></a>Akış türleri
 
-## <a name="check-out-the-start-page"></a>Başlangıç sayfasını gözden geçirin ##
+Güç otomatikleştirme, güç platformunun üç tek bir değerinden biridir. İş akışı ve süreç otomasyonu için düşük bir kod platformu sağlar. Farklı akış türlerinin listesi aşağıda verilmiştir:
 
-Microsoft Flow’un [başlangıç sayfasında](https://flow.microsoft.com), [çok çeşitli şablonları keşfedebilir](https://flow.microsoft.com/templates) ve Microsoft Flow’un bazı temel özellikleri hakkında bilgi edinebilirsiniz. Microsoft Flow ile neler yapabileceğiniz ve Microsoft Flow'un işinizi ve hayatınızı nasıl kolaylaştırabileceği hakkında hızlı bir fikir edinebilirsiniz.
+| **Akış türü**                                                                       | **Kullanım örneği**                                                                                  | **Hedef**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Otomatik akışlar](get-started-logic-flow.md)                 | Bir olay tarafından tetiklendikten sonra bir veya daha fazla görevi otomatik olarak gerçekleştiren bir akış oluşturun. | Bulut veya şirket içi hizmetler için [Bağlayıcılar](https://docs.microsoft.com/connectors/) . |
+| [Düğme akışları](introduction-to-button-flows.md)              | Dilediğiniz zaman, mobil cihazınız aracılığıyla herhangi bir yerde yinelenen görevleri çalıştırın.                        |                                                                                        |
+| [Zamanlanan akışlar](run-scheduled-tasks.md)                    | Bir zamanlamaya göre bir veya daha fazla görev gerçekleştiren bir akış oluşturun.             |                                                                                        |
+| [İş süreci akışları](business-process-flows-overview.md) | Kişilerin istedikleri sonuca gelmesi için takip etmek üzere bir adım kümesi tanımlayın.                 | İnsan süreçleriniz                                                                        |
+| [UI akışları (Önizleme)](ui-flows/overview.md)                                                | Eski yazılımda el ile gerçekleştirilen adımların kayıttan yürütülmesini kaydedin ve otomatikleştirin.                    | Otomasyon için kullanılabilir API 'Ler bulunmayan masaüstü ve Web uygulamaları.    |
 
-Microsoft Flow ile yapabilecekleriniz:
+Power otomatikleştirmede **Akışlarım** sekmesinden tüm akışları oluşturabilir ve yönetebilirsiniz.
 
-- Kolayca şablonları ve hizmetleri arama.
+Dynamics 365 kullanıcısı kullanıyorsanız, [iş akışları](configure-workflow-steps.md), [Eylemler](create-actions.md), [mobil görev akışları](create-mobile-task-flow.md)ve [iletişim kutuları](use-cds-for-apps-dialogs.md)da dahil olmak üzere klasik Common Data Service işlemler hakkında bilgi sahibi olabilirsiniz.
+
+İlk adım [kaydolup](sign-up-sign-in.md), Power otomatikleştirmeye sahip bir hesabınız zaten varsa tabletinizde, masaüstü bilgisayarınızda veya hatta telefonunuzda [oturum açın](https://flow.microsoft.com/signin) .
+
+## <a name="check-out-the-start-page"></a>Başlangıç sayfasına göz atın ##
+
+Power otomatikleştirmek için [Başlangıç sayfasında](https://flow.microsoft.com) , [farklı bir şablon kümesini araştırabilir](https://flow.microsoft.com/templates) ve Power otomatikleştirmek için önemli özellikler hakkında bilgi edinebilirsiniz. Mümkün olduğunca hızlı bir fikir edinebilirsiniz ve Power otomatikleştirmenin işletmenize ve hayatınızı nasıl yardımcı olduğunu öğrenin.
+
+Power otomatikleştirmede şunları yapabilirsiniz:
+
+- Şablonlar ve hizmetler için kolayca arama yapın.
 
     ![Akış başlangıç sayfası 1](./media/getting-started/flowhome1.png)
 
-- En popüler hizmetler arasından seçim yapma.
+- En popüler hizmetler arasından seçim yapın.
 
     ![Akış başlangıç sayfası 2](./media/getting-started/flowhome2.png)
 
-- Her akışa yönelik bir genel bakışı görüntüleme.
+- Her bir akışa genel bakış konusuna bakın.
 
     ![Akış başlangıç sayfası 3](./media/getting-started/flowhome3.png)
 
-Her şablon belirli bir amaç için tasarlanmıştır. Örneğin, patronunuzdan e-posta geldiğinde size kısa mesaj göndermeye, Twitter’daki potansiyel müşterileri Dynamics 365’e eklemeye veya dosyalarınızı yedeklemeye yönelik şablonlar vardır. Bu şablonlar buz dağının görünen ucudur. Bunlar tam da ihtiyaç duyduğunuz süreçler için özelleştirilmiş akışlar oluşturmanız amacıyla ilham vermek için tasarlanmıştır.
+Her şablon belirli bir amaç için tasarlanmıştır. Örneğin, patronunuzdan e-posta göndermek, Twitter 'nın Dynamics 365 ' e müşteri adayı eklemek veya dosyalarınızı yedeklemek için bir kısa mesaj göndermeye yönelik şablonlar vardır. Bu şablonlar yalnızca Iceberg 'nin ipucu. Bu kişiler, ihtiyacınız olan eksiksiz süreçler için özelleştirilmiş akışlar oluşturmanızı amaçlar.
 
 ## <a name="create-your-first-flow"></a>İlk akışınızı oluşturma ##
 
-1. Sizin için kullanışlı olan bir şablon seçin. Örneğin, [**E-postayla günlük anımsatıcılar alın**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) basit bir şablondur:
+1. Sizin için yararlı olan bir şablon seçin. Basit bir şablon, [**e-posta ile günlük anımsatıcıları alır**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
     ![günlük anımsatıcı şablonu](./media/getting-started/template-details.png)
 
-1. **Devam**’ı seçin.
+1. **Devam**' ı seçin.
 
-    ![Bağlantı oluşturma](./media/getting-started/create-connection.png)
+    ![Bağlantı oluştur](./media/getting-started/create-connection.png)
 
-1. Günlük anımsatıcının gönderileceği e-posta adreslerini girin. Ardından, anımsatıcı iletisini girin. Son olarak, **Akış oluştur**'u seçin ve ardından akışınızın beklendiği gibi çalıştığını doğrulayın.
+1. Günlük anımsatıcının gönderileceği e-posta adreslerini girin. Sonra, anımsatıcı iletisini girin. Son olarak, **akış oluştur**' u seçin ve akışın beklendiği gibi çalıştığını doğrulayın.
 
-    ![Bağlantı için kimlik bilgilerini sağlayın](./media/getting-started/configure-email-details.png)
+    ![Bağlantı için kimlik bilgilerini girin](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > Akışı tetikleyen koşulları ve bu olayın sonucunda oluşan eylemi keşfedebilirsiniz. Akışı kendinize göre özelleştirmek için ayarlarla oynayabilirsiniz. Hatta eylemler ekleyebilir veya silebilirsiniz.
+    > Akışı tetikleyen koşulları ve bu olayın sonucunda oluşan eylemi inceleyebilirsiniz. Akışın kendinizinkini oluşturmak için, ayarlarla birlikte oynayın. Hatta eylemler ekleyebilir veya silebilirsiniz.
 
-1. **Bitti**’yi seçin.
+1. **Bitti**' yi seçin.
 
-Şablonlardan akışlar oluşturma hakkında daha fazla bilgi edinmek için [bu öğreticiyi izleyin](get-started-logic-template.md).
+Şablonlardan akış oluşturma hakkında daha fazla bilgi edinmek için [Bu öğreticiyi izleyin](get-started-logic-template.md) .
 
-## <a name="get-creative"></a>Yaratıcı olun ##
+## <a name="get-creative"></a>Yaratıcı yararlanın ##
 
-Bir şablondan ilk akışınızı oluşturduğunuza göre, [sıfırdan kendi akışlarınızı oluşturmak](get-started-logic-flow.md) için Microsoft Flow’un desteklediği [150’den fazla veri kaynağından](https://flow.microsoft.com/connectors/) herhangi birini kullanabilirsiniz.
+Bir şablondan ilk akışınızı oluşturduğunuza göre, [sıfırdan kendi akışlarınızı oluşturmak](get-started-logic-flow.md)Için Power otomatikleştirmenin desteklediği 150 'den fazla [veri kaynağından](https://flow.microsoft.com/connectors/) birini kullanın.
 
 ![Akış oluşturma](./media/getting-started/build-a-flow.png)
 
-Sıfırdan bir akış oluşturduğunuzda, iş akışının tamamını denetlersiniz. Başlamanız için birkaç fikir:
+Sıfırdan bir akış oluşturduğunuzda, tüm iş akışını kontrol edersiniz. Başlamanızı sağlamak için birkaç fikir aşağıda verilmiştir:
 
-- [Çok adımlı akışlar](multi-step-logic-flow.md).
-- [Görevleri bir zamanlamaya göre çalıştırma](run-scheduled-tasks.md).
-- [Bir onay akışı oluşturma](wait-for-approvals.md).
-- [Akışı çalıştırılırken izleme](see-a-flow-run.md).
-- [Şablon yayımlama](publish-a-template.md).
-- [Bir Microsoft Teams şablonundan akışlar oluşturma](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Birçok adımla akar](multi-step-logic-flow.md).
+- [Görevleri bir zamanlamaya göre çalıştırın](run-scheduled-tasks.md).
+- [Bir onay akışı oluşturun](wait-for-approvals.md).
+- [Bir akışı eylemde izleyin](see-a-flow-run.md).
+- [Şablon yayımlayın](publish-a-template.md).
+- [Microsoft ekipleri şablonundan akışlar oluşturun](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
-## <a name="peek-at-the-code"></a>Koda göz atma
+## <a name="peek-at-the-code"></a>Koda göz atın
 
-Akış oluşturmak için geliştirici olmanız gerekmez. Bununla birlikte Microsoft Flow akıştaki tüm eylemler ve tetikleyiciler için oluşturulan koda daha yakından bakmanızı sağlayan bir **Koda göz at** özelliği sağlar. Koda göz atmak, tetikleyiciler ve eylemler tarafından kullanılan verileri daha net anlamanızı sağlayabilir. Microsoft Flow tasarımcısının içinden sizin için oluşturulan koda göz atmak için şu adımları izleyin: 
+Akış oluşturmak için geliştirici olmanız gerekmez, ancak Power otomatikleştirmek, herkesin bir akıştaki tüm eylemler ve Tetikleyiciler için oluşturulan koda daha yakından bakabilen bir **kod Özeti** sağlar. Koda göz atma, Tetikleyiciler ve eylemler tarafından kullanılan veriler hakkında daha net bir fikir verebilir. Power otomatikleştir Tasarımcısı içinden akışlarınız için oluşturulan koda gözatmak için aşağıdaki adımları izleyin: 
 
-1. Herhangi bir **eylemin** veya **tetikleyicinin** sağ üst köşesindeki **...** menü öğesini seçin. 
-1. **Koda göz at**'ı seçin.
+1. Herhangi bir **eylemin** veya **tetikleyicinin**sağ üst köşesindeki **...** menü öğesini seçin. 
+1. **Kodu Gözat**' ı seçin.
 
-    ![Koda göz at](media/getting-started/peek-code.png)
+    ![Koda göz atın](media/getting-started/peek-code.png)
 
-1. Eylemlerin ve tetikleyicilerin tam JSON gösterimine dikkat edin. Doğrudan girdiğiniz metinler gibi tüm girişleri ve kullanılan ifadeleri içerir. Burada ifadeleri seçebilir ve ardından bunları **Dinamik İçerik** ifade düzenleyicisine yapıştırabilirsiniz. Bu size beklediğiniz verilerin akışta var olduğunu doğrulamanın da bir yolunu sağlar.
+1. Eylemlerin ve tetikleyicilerin tam JSON gösterimine dikkat edin. Bu, doğrudan girdiğiniz metin ve kullanılan ifadeler gibi tüm girişleri içerir. Burada ifadeleri seçip **dinamik içerik** ifade düzenleyicisine yapıştırabilirsiniz. Bu, Ayrıca, seçtiğiniz verileri akışta doğrulamanızı sağlayacak bir yol da sağlayabilir.
 
-    ![Koda göz at](media/getting-started/peek-code-details.png)
+    ![Koda göz atın](media/getting-started/peek-code-details.png)
    
 
-## <a name="find-your-flows-easily"></a>Akışlarınızı kolayca bulma
+## <a name="find-your-flows-easily"></a>Akışlarınızı kolayca bulun
 
-Yaratıcılığınız harekete geçip fikirler *akmaya* başladığında birçok akış oluşturabilirsiniz. Kaygılanmayın, akışlarınızı kolayca bulabilirsiniz. **Akışlarım**, **Ekip akışları**, **Bağlantılar** veya **Çözümler** ekranın arama kutusunu kullanıp yalnızca girdiğiniz arama terimleriyle eşleşen akışları görüntülemeniz yeterli olur.
+Creative juıces *akışa başladığınızda*, birçok akış oluşturabilirsiniz. Endişelenmeyin, akışlarınızı bulmak kolaydır, yalnızca girdiğiniz arama terimleriyle eşleşen akışları göstermek için **Akışlarım**, **Takım akışları**, **Bağlantılar**veya **çözümler** ekranındaki arama kutusunu kullanın.
 
 ![Akışları filtreleme veya arama](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> Arama filtresi yalnızca sayfaya yüklenen akışları bulur. Akışınızı bulamazsanız, sayfanın alt kısmında **Daha fazla yükle**'yi seçin.
+> Arama filtresi yalnızca sayfaya yüklenmiş olan akışları bulur. Akışınızı bulamazsanız sayfanın alt kısmında **daha fazla yükle** seçimini yapmayı deneyin.
 
-## <a name="get-notifications-when-somethings-wrong"></a>Bir şeyler yanlış gittiğinde bildirim alma
+## <a name="get-notifications-when-somethings-wrong"></a>Yanlış bir sorun olduğunda bildirim alın
 
-Son zamanlarda başarısız olan akışların listesini hızla görmek için Microsoft Flow bildirim merkezini (tasarımcının sağ üst kısmında yer alır) kullanın. Bildirim merkezinde son zamanlarda başarısız olan akışların sayısını gösteren bir sayı görüntülenir.
+Kısa süre önce başarısız olan akışların listesini hızlıca görmek için Power otomatikleştir bildirim merkezini (tasarımcının sağ üst kısmında bulunur) kullanın. Bildirim Merkezi, yakın zamanda başarısız olan akış sayısını belirten bir sayı görüntüler.
 
-Son zamanlarda çalıştırılmış, bildirim göndermiş veya başarısız olmuş tüm akışlarınızı görmek için bildirim merkezinde Microsoft Flow'un **Etkinlik** sayfasına gidebilirsiniz.
+Bildirim merkezinden, son zamanlarda çalıştırılan, gönderilen bildirimler veya başarısız olan tüm akışlarınızı görmek için Power otomatikleştirmede **etkinlik** sayfasına gidebilirsiniz.
 
-![Bildirim merkezi](media/getting-started/notification-center.png)
+![Bildirim Merkezi](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Mobil uygulamayı kullanma ##
 
-[Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını indirin. Bu uygulama ile [akış etkinliğini izleyebilir](mobile-monitor-activity.md), [akışlarınızı yönetebilir](mobile-manage-flows.md) ve [şablonlardan akışlar oluşturabilirsiniz](mobile-create-flow.md).
+[Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)için Power otomatikleştir mobil uygulamasını indirin. Bu uygulamayla, [akış etkinliğini izleyebilir](mobile-monitor-activity.md), [akışlarınızı yönetebilir](mobile-manage-flows.md) ve [şablonlardan akışlar oluşturabilirsiniz](mobile-create-flow.md).
 
-## <a name="were-here-to-help"></a>Size yardımcı olmak için buradayız ##
+## <a name="were-here-to-help"></a>Yardımcı olmaya çalışıyoruz ##
 
-Microsoft Flow ile yapabileceklerinizi görmek için heyecanlanıyoruz ve mükemmel bir deneyim yaşadığınızdan emin olmak istiyoruz. Sorularınızı sormak ve fikirlerinizi paylaşmak için [destekli öğrenim](https://flow.microsoft.com/guided-learning/) öğreticilerimize göz atın ve [topluluğumuza katılın](http://go.microsoft.com/fwlink/?LinkID=787467). Herhangi bir sorunla karşılaşırsanız [destek ekibi ile iletişime geçin](http://go.microsoft.com/fwlink/?LinkID=787479).
+Power otomatikleştirmede yapabileceklerinizi görmek için heyecanlıyız ve harika bir deneyiminizin olduğundan emin olmak istiyoruz. [Kılavuzlu öğrenme](https://flow.microsoft.com/guided-learning/) öğreticilerimize göz atın ve sorularınızı sormak ve fikirlerinizi paylaşmak için [topluluğumuza katılarak](https://go.microsoft.com/fwlink/?LinkID=787467) emin olun. Herhangi bir sorunla karşılaşırsanız [desteğe başvurun](https://go.microsoft.com/fwlink/?LinkID=787479) .

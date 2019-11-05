@@ -1,6 +1,6 @@
 ---
-title: Mobil cihazdan istekleri onaylama | Microsoft Docs
-description: Microsoft Flow’da oluşturulan istekleri onaylamak için bir mobil cihaz kullanın.
+title: Mobil cihazdaki istekleri onaylama | Microsoft Docs
+description: Microsoft Flow ' de oluşturulan istekleri onaylamak için bir mobil cihaz kullanın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,66 +20,67 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a71d1e53199f0dacfc2086812cc3cd2fd9585f4d
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468161"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548688"
 ---
-# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Microsoft Flow ile mobil cihazınızdan istekleri onaylayın
-Bir akış, sizi onaylayan olarak tanımlıyorsa ve Microsoft Flow için mobil uygulamayı yüklediyseniz, onayınız gerektiğinde bir anında iletme bildirimi alırsınız.
+# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Microsoft Flow kullanarak mobil cihazınızdaki istekleri onaylama
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Bir akış sizi onaylayan olarak tanımlar ve mobil uygulamayı Microsoft Flow yüklediyseniz, onaylamanız istendiğinde anında iletme bildirimi alırsınız.
 
-Bu makalede Microsoft Flow için mobil uygulamada onay isteklerini yönettiğiniz sırada karşılaşabileceğiniz bazı yaygın senaryolar açıklanmaktadır.
+Bu makalede, Microsoft Flow için mobil uygulamadaki onay isteklerini yönetirken karşılaşabileceğiniz bazı yaygın senaryolar açıklanmaktadır.
 
 > [!NOTE]
-> Bu konu başlığındaki resimler bir Android cihazdan alınmıştır, ancak iOS’taki süreç de bununla benzerlik göstermektedir.
+> Bu konudaki görüntüler bir Android cihazından; Ancak iOS deneyimi benzerdir.
 > 
 > 
 
-## <a name="prerequisites"></a>Önkoşullar
-İzlenecek yolu tamamlamanız için şunlara ihtiyaç duyarsınız:
+## <a name="prerequisites"></a>Kaynakları
+Bu yönergeyi tamamlamak için şunlar gerekir:
 
-* Microsoft Flow mobil uygulamasını çalıştıran bir [Android](https://aka.ms/flowmobiledocsandroid) veya [iOS](https://aka.ms/flowmobiledocsios) cihaz.
-* Bir onay akışında onaylayan olarak belirlenmek.
-* Onay bekleyen istekler.
+* Microsoft Flow için mobil uygulamayı çalıştıran bir [Android](https://aka.ms/flowmobiledocsandroid) veya [iOS](https://aka.ms/flowmobiledocsios) cihazı.
+* Bir onay akışında onaylayan olarak atanmak üzere.
+* Onay için bekleyen istekler.
 
-## <a name="view-pending-requests"></a>Bekleyen istekleri görüntüleme
-1. Microsoft Flow mobil uygulamasını açın.
+## <a name="view-pending-requests"></a>Bekleyen istekleri görüntüle
+1. Microsoft Flow için mobil uygulamayı açın.
    
-    ![mobil uygulamayı başlatma](./media/mobile-approvals/open-app.png)
-2. Sağ üst köşeden **ONAYLAR** seçeneğini belirleyin.
+    ![mobil uygulamayı Başlat](./media/mobile-approvals/open-app.png)
+2. Sağ üst köşedeki **onaylar** ' ı seçin.
    
-    ![onayları seçme](./media/mobile-approvals/select-approvals.png)
-3. Bekleyen tüm onayları görüntüleyin:
+    ![onayları seçin](./media/mobile-approvals/select-approvals.png)
+3. Bekleyen tüm onayları görüntüle:
    
-    ![bekleyen onay isteklerini görüntüleme](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![Bekleyen onay isteklerini gör](./media/mobile-approvals/show-pending-approval-requests.png)
 
-Bekleyen onay isteği yoksa, bir [onay akışı](modern-approvals.md) oluşturup kendinizi onaylayan olarak belirleyin ve akışı tetikleyin. Akış tetiklendikten ve onay isteği gönderdikten birkaç saniye sonra onay istekleri, onay merkezinde görünür.
+Bekleyen onay isteğiniz yoksa, bir [onay akışı](modern-approvals.md)oluşturun, kendinizi onaylayan olarak ayarlayın ve ardından akışı tetikleyin. Onay istekleri, akış tetiklendikten ve onay için bir istek gönderdikten sonra, onay merkezinde birkaç saniye sonra görünür.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>İstekleri onaylama ve isteğe bağlı bir açıklama bırakma
-1. Böyle yapmadıysanız, [bekleyen istekleri görüntülemek](mobile-approvals.md#view-pending-requests) için önceki adımları takip edin.
-2. Onaylamak istediğiniz istekte **ONAYLA** seçeneğini belirleyin.
+1. Bunu yapmadıysanız, [bekleyen istekleri görüntülemek](mobile-approvals.md#view-pending-requests)için yukarıdaki adımları izleyin.
+2. Onaylamak istediğiniz istekte **Onayla** ' yı seçin.
    
-    ![onayla seçeneğini belirleme](./media/mobile-approvals/select-approve.png)
-3. **Açıklama ekle (isteğe bağlı)**  seçeneğini belirleyin (isteğe bağlı).
+    ![Onayla seçeneğini belirleyin](./media/mobile-approvals/select-approve.png)
+3. (İsteğe bağlı) **Açıklama Ekle (isteğe bağlı)** seçeneğini belirleyin.
    
-    ![açıklama ekle seçeneğini belirleme](./media/mobile-approvals/select-add-comment.png)
+    ![Açıklama Ekle ' yi seçin](./media/mobile-approvals/select-add-comment.png)
    
-    **Açıklama ekle** ekranına bir açıklama girin.
+    **Yorum Ekle** ekranına bir açıklama girin.
    
-    ![açıklamanızı girme](./media/mobile-approvals/enter-comment-for-approval.png)
-4. Sağ üst köşeden **ONAYLA** seçeneğini belirleyin.
+    ![yorumunuzu girin](./media/mobile-approvals/enter-comment-for-approval.png)
+4. Sağ üst köşede **Onayla** ' yı seçin.
    
-    ![işiniz bittiğinde onaylama](./media/mobile-approvals/tap-confirm-button.png)
+    ![bittiğini onaylayın](./media/mobile-approvals/tap-confirm-button.png)
    
-    Akış, kararınızı kayıt altına aldıktan sonra işlem başarılı ekranı görüntülenir.
+    Akış kararınızı kaydettikten sonra başarı ekranı görüntülenir.
    
-    ![işlem başarılı ekranı](./media/mobile-approvals/approved.png)
+    ![başarı ekranı](./media/mobile-approvals/approved.png)
 
 ## <a name="reject-requests-and-leave-an-optional-comment"></a>İstekleri reddetme ve isteğe bağlı bir açıklama bırakma
-[Bir isteği onaylama adımları](mobile-approvals.md#approve-requests-and-leave-an-optional-comment)nı takip edin, ancak ikinci adımda **REDDET** seçeneğini belirleyin.
+[Bir isteği onaylamak için adımları](mobile-approvals.md#approve-requests-and-leave-an-optional-comment)izleyin, ancak Ikinci adımda **Reddet** ' i seçin.
 
-## <a name="learn-more"></a>Daha fazla bilgi
-[Modern onay akışları oluşturma](modern-approvals.md).
+## <a name="learn-more"></a>Daha fazla bilgi edinin
+[Modern onay akışları oluşturun](modern-approvals.md).
 

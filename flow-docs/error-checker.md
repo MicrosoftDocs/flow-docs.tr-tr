@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow denetleyicisiyle hataları bulma ve düzeltme | Microsoft Docs
-description: Microsoft Flow denetleyicisiyle hataları hızla bulun ve düzeltin.
+title: Microsoft Flow denetleyicisi ile hataları bulma ve giderme | Microsoft Docs
+description: Microsoft Flow denetleyicisi ile hataları hızla bulun ve onarın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,39 +20,40 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2751b914c9f1afcab9cc5eee8c55e3b85ea07716
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060871"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547914"
 ---
 # <a name="the-microsoft-flow-checker"></a>Microsoft Flow denetleyicisi
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Microsoft Flow denetleyicisi akışları tasarlarken en iyi yöntemleri izlemenizi sağlayarak yüksek kaliteli akışları destekler. Denetleyiciyi çalıştırdığınızda "akışımın uygulama alanlarından hangisi performans veya güvenilirlik riski doğuruyor?" gibi sorularla ilgili içgörüler elde edersiniz.
+Microsoft Flow denetleyicisi, akış tasarlarken en iyi yöntemleri izlemenizi sağlayarak daha yüksek kaliteli akışlar yükseltir. Denetleyiciyi çalıştırdığınızda, "Flow 'un uygulamamın hangi alanlarının bir performans veya güvenilirlik riski oluşturur?" gibi sorulara Öngörüler elde edersiniz.
 
-Denetleyicinin belirlediği her soru için, denetleyici akış içinde geliştirmeler yapmayı düşünmeniz gereken belirli oluşumlara işaret eder. Ayrıca ayrıntılı yönergeleri izleyerek bu geliştirmeleri nasıl hayata geçireceğinizi öğrenirsiniz.
+Denetleyicinin tanımladığı her bir sorun için, denetleyici geliştirme yapmak için göz önünde bulundurmanız gereken akış içindeki belirli oluşumları işaret eder. Ve ayrıntılı kılavuzdan yararlanarak bu geliştirmeleri nasıl uygulayacağınızı öğreneceksiniz.
 
-Denetleyici her zaman etkindir, tasarımcı tarafından komut çubuğunda gösterilir. Denetleyici akışınızda bir veya birden fazla hata veya olası hata bulduğunda kırmızı nokta gösterir.
+Denetleyici her zaman etkindir ve tasarımcıda komut çubuğunda görünür. Denetleyici, akışınızda bir veya daha fazla hata veya olası hata bulduğunda kırmızı bir nokta gösterir.
 
-![Denetleyici](media/checker/checker-in-designer.png "Denetleyici")
+![Denetimc](media/checker/checker-in-designer.png "Denetimc")
 
 
-## <a name="view-errors-in-the-checker"></a>Denetleyicide hataları görüntüleme
+## <a name="view-errors-in-the-checker"></a>Denetleyicinin hatalarını görüntüleme
 
-Akışınızı tasarlarken Akış Denetleyicisi düğmesini seçerek denetleyiciyi açıp hataları ve uyarıları görüntüleyebilirsiniz. 
+Akışınızı tasarlarken, hataları ve uyarıları görüntülemek için denetleyiciyi açmak üzere akış denetleyicisi düğmesini seçebilirsiniz. 
 
-Akışı kaydederken hata veya uyarılar olduğunda da denetleyici otomatik olarak açılır.  Denetleyici açıldıktan sonra akışınızdaki tüm hataları ve uyarıları gösterir. Her bölümde, denetleyici hatanın veya uyarının oluştuğu eylemlere işaret eder. 
+Hata veya uyarı varsa, akış kaydettiğinizde, denetleyici de otomatik olarak açılır.  Denetleyici açıldıktan sonra, akışdaki tüm hataları ve uyarıları gösterir. Her bölümde, denetleyici hata veya uyarının gerçekleştiği eylemleri çağırır. 
 
-## <a name="learn-to-fix-errors-and-warnings"></a>Hataları ve uyarıları düzeltmeyi öğrenin
+## <a name="learn-to-fix-errors-and-warnings"></a>Hataları ve uyarıları gidermeyi öğrenin
 
-Hatanın nasıl düzeltileceği hakkında daha fazla bilgi edinmek için her bölümü genişletin.
+Bir hata çözme hakkında daha fazla bilgi edinmek için her bölümü genişletin.
 
 ![Denetleyici ayrıntıları](media/checker/checker-detail.png "Denetleyici ayrıntıları")
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-[Microsoft Flow ile çalışmaya başlama](getting-started.md)
+[Microsoft Flow kullanmaya başlayın](getting-started.md)
 
 
 

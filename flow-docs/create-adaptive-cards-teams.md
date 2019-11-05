@@ -1,6 +1,6 @@
 ---
-title: Microsoft Teams'e uyarlamalı kartlar gönderen akışlar oluşturmayı öğrenme | Microsoft Docs
-description: Microsoft Teams'e uyarlamalı kartlarla zengin biçimlendirmeli içerik gönderen akışlar oluşturmayı öğrenin.
+title: Microsoft ekiplerine Uyarlamalı kartlar veren akışlar oluşturmayı öğrenin | Microsoft Docs
+description: Uyarlamalı kartlara sahip zengin biçimli içerikleri Microsoft ekiplerine nakletmekte olan akışlar oluşturmayı öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,49 +15,50 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0aa5b4727bea569732fe5b76f717a87d8d7ddb02
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061584"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546490"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Microsoft Teams'de uyarlamalı kartları kullanma
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Microsoft ekiplerinde Uyarlamalı kartlar kullanma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Microsoft Teams kanalına [uyarlamalı kartlar](https://adaptivecards.io) gönderen bir akış oluşturabilirsiniz. Uyarlamalı kartlarla, gönderilerinizi daha net, etkileşimli ve cazip hale getirecek zengin biçimlendirme kullanabilirsiniz. Uyarlamalı kartlar resim, grafik ve zengin biçimlendirmeli metin gibi bileşenler içerebilir.
+Microsoft ekipleri kanalına [Uyarlamalı kartlar](https://adaptivecards.io) gönderen bir akış oluşturabilirsiniz. Uyarlamalı kartlarla, Gönderimlerinizi daha açık, etkileşimli ve ilgi çekici hale getirmek için zengin biçimlendirme kullanabilirsiniz. Uyarlamalı kartlar görüntüler, grafikler, zengin biçimli metin ve daha fazlası gibi bileşenler içerebilir.
 
-## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Ekibe uyarlamalı kartlar gönderen bir akış oluşturma
+## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Bir takıma Uyarlamalı kartlar gönderen bir akış oluşturma
 
-Strategy and Planning takımında genel kanala uyarlamalı bir kart gönderen bir akış oluşturmak için aşağıdaki adımları izleyin. Oluşturduğumuz akış, uyarlamalı kartın içeriğini her hafta takımın kanalına göndermek için **Kendi uyarlamalı kartınızı Flow botu olarak bir kanala gönderin (önizleme)** eylemini kullanır.
+Strateji ve planlama ekibinizdeki genel kanala Uyarlamalı kart gönderen bir akış oluşturmak için bu adımları izleyin. Oluşturduğumuz akış, uyarlamalı kartın içeriğini kuruluşun kanalına haftalık olarak göndermek için **kendi Uyarlamalı kartınızı kanal (Önizleme) eyleminde akış bot 'ı olarak** kullanır.
 
-1. Microsoft Teams'de oturum açın.
-1. Sol taraftaki gezinti çubuğunda **Takımlar** simgesini seçin ve sonra da **Strategy and Planning** takımını seçin.
+1. Microsoft ekiplerinde oturum açın.
+1. Sol taraftaki Gezinti çubuğunda **takımlar** simgesini seçin ve ardından **stratejiyi ve planlama** ekibini seçin.
 
-    ![Takımlar'ı seçin](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Takımları Seç](media/create-adaptive-cards-teams/select-teams-team.png)
 
-1. Ekranın en üstündeki **Akış** sekmesini seçin.
-1. **+** (Boş akış oluştur) simgesini seçin.
-1. **Yinelenme** için arama yapın ve **Yinelenme** tetikleyicisini seçin.
+1. Ekranın üst kısmındaki **akış** sekmesini seçin.
+1. **+** (boş oluştur) simgesini seçin.
+1. **Yinelenme**araması yapın ve sonra **yinelenme** tetikleyicisini seçin.
 
     ![Yinelenme kartı](media/create-adaptive-cards-teams/select-recurrence.png)
 
-1. Tercih ettiğiniz saatte ve saat diliminde her hafta tekrarlamak için zamanlamayı aşağıdaki gibi ayarlayın:
+1. İstediğiniz zaman ve saat diliminde her hafta yinelemek için zamanlamayı aşağıdaki şekilde ayarlayın:
     
     ![Yinelenme kartı](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. **Yeni adım**’ı seçin.
-1. **Uyarlamalı** için arama yapın, **Microsoft Teams**'i seçin ve sonra da **Kendi uyarlamalı kartınızı Flow botu olarak bir kanala gönderin (önizleme)** eylemini seçin.
+1. **Yeni adım**' ı seçin.
+1. **Uyarlamalı**arama yapın, **Microsoft ekipleri**' i seçin ve ardından **kendi Uyarlamalı kartınızı kanal (Önizleme) için akış bot olarak gönder** eylemini seçin.
 
    ![Uyarlamalı kart](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
-1. **Kendi uyarlamalı kartınızı Flow botu olarak bir kanala gönderin (Önizleme)** kartında bir **Takım**, **Kanal** ve **İleti** seçerek uyarlamalı kart **iletisinin** gönderileceği takımı ve kanalı belirtin.
+1. Uyarlamalı kart **iletisinin** nakledileceği ekibi ve kanalı göstermek için **kendi Uyarlamalı kartınızı kanal (Önizleme) kartına gönder** sayfasında bir **ekip**, **Kanal**ve **ileti** sağlayın.
 
    ![Uyarlamalı kart](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
-   **İletiniz** için şu örnek JSON içeriğini kullanabilirsiniz:
+   **İleti**için bu örnek JSON içeriğini kullanabilirsiniz:
 
     ````
         {
@@ -129,19 +130,19 @@ Strategy and Planning takımında genel kanala uyarlamalı bir kart gönderen bi
     ````
 
 
-1. Akışınıza bir ad verip akışı kaydedin.
+1. Akışınıza bir ad verin ve kaydedin.
 
 
 ## <a name="run-the-flow"></a>Akışı çalıştırma
 
-Yineleme saati geçtikten sonra akışın uyarlamalı kart içeriğini sizin tanımladığınız takım kanalına gönderdiğine dikkat edin.
+Yinelenme süresi dolduktan sonra akış, uyarlamalı kartın içeriğini tanımladığınız ekip kanalına gönderir.
 
 ![Akışı çalıştırma](media/create-adaptive-cards-teams/flow-run-result.png)
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-- [Uyarlamalı kart örneklerini](https://adaptivecards.io/samples/) kullanmaya başlayın.
-- Kolay yoldan [uyarlamalı kart içeriği](https://adaptivecards.io) oluşturun.
+- [Uyarlamalı kart örnekleri](https://adaptivecards.io/samples/)ile çalışmaya başlayın.
+- [Uyarlamalı kart içeriğini](https://adaptivecards.io) kolay bir şekilde oluşturun.
 
 
 

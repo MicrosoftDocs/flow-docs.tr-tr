@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow'la SharePoint sayfa onaylarını yönetme | Microsoft Docs
-description: Microsoft Flow'la SharePoint sayfa onaylarını yönetmeyi öğrenin.
+title: SharePoint sayfa onaylarını Microsoft Flow yönetme | Microsoft Docs
+description: Microsoft Flow ile SharePoint sayfa onaylarını yönetmeyi öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,65 +15,66 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d5e01a3d2e13cc48107e19e0e2bbea3821437273
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 1b328b604f9b199c2303dde3a0aa00898f188ada
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061354"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547645"
 ---
-# <a name="manage-sharepoint-page-approvals-with-microsoft-flow"></a>Microsoft Flow'la SharePoint sayfa onaylarını yönetme
+# <a name="manage-sharepoint-page-approvals-with-microsoft-flow"></a>SharePoint sayfa onaylarını Microsoft Flow yönetme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-SharePoint sitesi yöneticileri yeni veya güncelleştirilmiş site sayfalarının yayımlanmadan önce onaylanmasını istemek için Microsoft Flow'u kullanabilir.
+SharePoint site yöneticileri, yeni veya güncelleştirilmiş Site sayfalarının yayımlanmadan önce onaylanmasını gerektirmek için Microsoft Flow kullanabilir.
 
-Bu makalede SharePoint sitenizi, sitede yapılan değişikliklerin canlı yayına geçmeden önce onaylanmasını istemek için bir akış kullanacak şekilde yapılandırmayı öğreneceksiniz.
+Bu makalede, SharePoint sitenizi, canlı çalışmadan önce sitede değişiklik yapılmasını gerektirmek üzere bir akış kullanmak üzere nasıl yapılandıracağınızı öğreneceksiniz.
 
-## <a name="configure-sharepoint-for-page-approvals"></a>Sayfa onayları için SharePoint'i yapılandırma
+## <a name="configure-sharepoint-for-page-approvals"></a>SharePoint 'i sayfa onayları için yapılandırma
 
-### <a name="prerequisites"></a>Önkoşullar 
+### <a name="prerequisites"></a>Kaynakları 
 
-Bu makaledeki etkinlikleri gerçekleştirmek için SharePoint sitesinin yöneticisi olmalısınız.
+Bu makaledeki etkinlikleri gerçekleştirmek için bir SharePoint site yöneticisi olmanız gerekir.
 
-1. SharePoint'te site yöneticisi olarak oturum açın.
-1. Gezinti çubuğundan **Sayfalar**’ı seçin.
+1. SharePoint 'te bir site yöneticisi olarak oturum açın.
+1. Gezinti çubuğundan **Sayfalar** ' ı seçin.
 
-    ![Sayfa onay akışını seçme](media/customize-sharepoint-page-approvals/pages.png)
+    ![Sayfa onay akışını seçin](media/customize-sharepoint-page-approvals/pages.png)
 
-1. **Akış**'ı ve ardından **Sayfa onay akışını yapılandır**'ı seçin.
+1. **Flow** ' u ve ardından **sayfa onay akışını Yapılandır**' ı seçin.
     
-    ![Sayfa onay akışını seçme](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
+    ![Sayfa onay akışını seçin](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
 
-1. **Akış adı**'nı sağlayın, **Onaylayanlar** kutusuna en az bir ad girin ve **Oluştur**'ı seçin.
+1. **Onaylayanlar** kutusuna bir **akış adı**, en az bir ad girin ve ardından **Oluştur**' u seçin.
     
-    ![Sayfa onay akışını seçme](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
+    ![Sayfa onay akışını seçin](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
 
-Hepsi bu! Artık her sayfa eklendiğinde veya değiştirildiğinde akışta listelediğiniz **Onaylayanlara** bir onay isteği gider.
+İşte bu kadar! Artık bir sayfa eklendiğinde veya değiştirildiğinde, bir onay isteği akışta listelenen **onaylayanlara** gider.
 
-Sayfa onay akışı aynı diğer akışlar gibidir; dolayısıyla **Akışlarım** sekmesinde listelenir.
+Sayfa onay akışı tıpkı diğer akışlara benzer, bu nedenle **Akışlarım** sekmesinde listelenir.
 
-![Sayfa onay akışını seçme](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
+![Sayfa onay akışını seçin](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
 
-## <a name="submit-a-page-for-approval"></a>Sayfayı onay için gönderme
+## <a name="submit-a-page-for-approval"></a>Bir sayfayı onaya gönder
 
-Artık bir sayfa onay akışı oluşturduğunuza göre, sayfa ekleyen veya sayfayı değiştiren herkesin aşağıdakileri yapması gerekir:
+Artık bir sayfa onay akışı oluşturduğunuza göre, bir sayfayı ekleyen veya değiştiren herkesin şunları yapması gerekir:
 
- - Sitede bir değişiklik yapın (örneğin, yeni sayfa ekleyin) ve ardından değişikliği kaydedin.
+ - Sitede bir değişiklik yapın (örneğin, yeni bir sayfa ekleyin) ve değişikliği kaydedin.
 
-     ![Sayfayı onay için gönderme](media/customize-sharepoint-page-approvals/create-new-page.png)
+     ![Sayfayı onaya gönder](media/customize-sharepoint-page-approvals/create-new-page.png)
      
- - Birinin bu değişikliği onaylamasını bekleyin.
+ - Birisinin değişikliği onaylamasını bekleyin.
     
-    ![Sayfayı onay için gönderme](media/customize-sharepoint-page-approvals/wait-for-approval.png)
+    ![Sayfayı onaya gönder](media/customize-sharepoint-page-approvals/wait-for-approval.png)
     
-## <a name="approve-a-page"></a>Sayfayı onaylama
+## <a name="approve-a-page"></a>Bir sayfayı onaylama
 
-Her sayfa onay isteği söz konusu olduğunda onaylayanlar bir e-posta alır. İstekleri doğrudan e-postada onaylayabilecekleri gibi (e-posta istemcileri işlem yapılabilir iletileri destekliyorsa) veya e-postadaki sayfayı gözden geçirmek üzere açabilir sonra bu sayfayı SharePoint'te onaylayabilirler.
+Onaylayanlar bir sayfa onay isteği olduğunda bir e-posta alır. İstekleri doğrudan e-postada onaylayabilir (e-posta istemcisi uygulanabilir iletileri destekliyorsa) veya gözden geçirmek için e-postadaki sayfayı açıp SharePoint 'teki sayfayı onaylayabilir.
 
 ## <a name="customize-page-approval-flows"></a>Sayfa onay akışlarını özelleştirme
 
-Sayfa onayları arka planda Microsoft Flow'u kullandığından, sayfa onay akışı site sahiplerinin akışta özel iş mantığını eklemelerine ve değiştirmelerine olanak tanır. Akışta değişiklik yapmak için site sahibi **Akışlar**'ı ve ardından sayfa kitaplığında **Akışlarınızı görün**'ü seçerek sayfa onay akışını bulabilir.
+Sayfa onayları arka planda Microsoft Flow kullandığından, sayfa onay akışı site sahiplerinin, akışta özel iş mantığını değiştirmek ve eklemek için kullanılabilir. Akışı değiştirmek için, site sahibi **akışları** seçebilir ve ardından sayfa onay akışını bulmak için sayfalar kitaplığındaki **akışlarınızı görüntüleyin** ' i seçin.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 - [Sayfa onay akışı](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
 - [Sayfa onayını yapılandırma](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)

@@ -1,6 +1,6 @@
 ---
-title: Bir öğe dizisi üzerinde döngü oluşturmak için Her birine uygula eylemini kullanın. | Microsoft Docs
-description: Bir öğe dizisi üzerinde birden çok koşulu denetleyen ve bu koşullara bağlı olarak eylem gerçekleştiren bir döngü oluşturmak için Microsoft Flow’u kullanın.
+title: Bir dizi öğe aracılığıyla döngü gerçekleştirmek için her bir eylemi Uygula eylemini kullanın. | Microsoft Docs
+description: Birden çok koşulu denetlemek ve bu koşullara göre eylemler gerçekleştirmek için bir öğe dizisinde döngü yapmak üzere Microsoft Flow kullanın.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,161 +20,162 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 914fe6d84bb63e1f3e184794d34fbfd58ad30963
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e2852de959f62d5c0ee76fabc9841e3fc9663f73
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64459883"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545996"
 ---
-# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Bir öğe listesini düzenli aralıklarla işlemek için Microsoft Flow’daki Her birine uygula eylemini kullanın.
-Birçok tetikleyici, bir olaya (örneğin, gelen kutunuza yeni bir e-posta gelmesi) bağlı olarak anında akış başlatabilir. Bu tetikleyiciler kullanışlı olsa da bazen önceden tanımlanmış bir zamanlamaya göre bir veri kaynağını sorgulayan ve veri kaynağındaki öğelerin özelliklerine göre belirli eylemler gerçekleştiren bir akış çalıştırmak istersiniz. Bunu yapmak için akışınız bir zamanlamaya (günde bir kere gibi) göre başlatılabilir ve **Her birine uygula** gibi bir döngü eylemini kullanarak bir öğe listesini işleyebilir. Örneğin, **Her birine uygula** eylemini kullanarak bir veritabanından alınan kayıtları ya da Microsoft SharePoint’ten alınan bir öğe listesini güncelleştirebilirsiniz.
+# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Öğelerin bir listesini düzenli aralıklarla işlemek için Microsoft Flow her bir eyleme Uygula eylemini kullanın
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Birçok tetikleyici, gelen kutunuza yeni bir e-posta geldiğinde olduğu gibi bir olaya bağlı olarak bir akışı hemen başlatabilir. Bu Tetikleyiciler harika, ancak bazen, veri kaynağındaki öğelerin özelliklerine göre belirli eylemleri gerçekleştirerek önceden tanımlanmış bir zamanlamaya göre bir veri kaynağını sorgulayan bir akış çalıştırmak istersiniz. Bunu yapmak için, akışınız bir zamanlamaya göre (günde bir kez) başlayabilir ve öğelerin listesini işlemek için **her birine Uygula** gibi bir döngü eylemi kullanabilirsiniz. Örneğin, Microsoft SharePoint 'teki bir veritabanından veya öğe listesinden kayıtları güncelleştirmek için **her birine Uygula** ' yı kullanabilirsiniz.
 
-Bu kılavuzda, 15 dakikada bir çalışan ve aşağıdakini yapan bir akış oluşturacağız:
+Bu kılavuzda, 15 dakikada bir çalışan bir akış oluşturacağız ve şunları yapar:
 
-1. Office 365 Outlook Gelen Kutunuzdaki son 10 okunmamış iletiyi getirir.
-2. 10 iletinin her birini denetleyerek konusunda **hemen toplanıyoruz** ifadesi geçip geçmediğini doğrular.
-3. E-postanın müdürünüz tarafından ya da yüksek önem derecesiyle gönderilip gönderilmediğini denetler.
-4. Konusunda **hemen toplanıyoruz** yazan ve müdürünüz tarafından ya da yüksek önem derecesiyle gönderilen tüm e-postaları okundu olarak işaretler ve bir anında iletme bildirimi gönderir.
+1. Office 365 Outlook gelen kutunuzda son 10 okunmamış iletiyi alır.
+2. Konunun **Şimdi karşılayıp karşılamadığını** onaylamak için 10 iletinin her birini denetler.
+3. E-postanın patronunuzdan mı ait olduğunu veya yüksek önem derecesiyle gönderilip gönderilmediğini denetler.
+4. Bir anında iletme bildirimi gönderir ve **Şu anda konu içinde tanışan** bir e-posta okur ve patronunuzdan ya da yüksek önem derecesiyle gönderilmiştir.
 
-Bu kılavuzda oluşturacağımız akışın ayrıntıları bu diyagramda gösterilmiştir:
+Bu diyagramda, bu kılavuzda oluşturacağımız akışın ayrıntıları gösterilmektedir:
 
-![Oluşturulmakta olan akışa genel bakış](./media/apply-to-each/foreach-flow-visio.png)
+![oluşturulan akışa genel bakış](./media/apply-to-each/foreach-flow-visio.png)
 
-## <a name="prerequisites"></a>Önkoşullar
-Bu kılavuzdaki adımların başarılı bir şekilde uygulanabilmesi için gereksinimler şunlardır:
+## <a name="prerequisites"></a>Kaynakları
+Bu kılavuzda adımları başarıyla gerçekleştirmeye yönelik gereksinimler şunlardır:
 
-* [Microsoft Flow](https://flow.microsoft.com)’u kullanmak için kayıtlı bir hesap.
-* Bir Office 365 Outlook hesabı.
-* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulaması.
-* Office 365 Outlook’a ve anında iletme bildirimi hizmetine bağlantı.
+* [Microsoft Flow](https://flow.microsoft.com)kullanmak için kayıtlı bir hesap.
+* Office 365 Outlook hesabı.
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)için mobil uygulama Microsoft Flow.
+* Office 365 Outlook ve anında iletme bildirimi hizmeti bağlantıları.
 
 ## <a name="create-a-flow"></a>Akış oluşturma
-1. [Microsoft Flow](https://flow.microsoft.com)’da oturum açın:
-2. **Akışlarım** sekmesini seçin ve boş bir akış oluşturun:
+1. [Microsoft Flow](https://flow.microsoft.com)oturum aç:
+2. **Akışlarım** sekmesini seçin ve ardından boş bir akış oluşturun:
    
-    ![Boş akış oluştur](./media/apply-to-each/foreach-1.png)
-3. Zamanlamayla ilgili tüm hizmetleri ve tetikleyicileri bulmak için arama kutusuna "zamanlama" yazın.
-4. Akışınızın bir sonraki adımda sağlayacağınız bir zamanlamaya göre çalıştırılacağını belirtmek için **Zamanlama - Yineleme** tetikleyicisini seçin:
+    ![boş oluştur](./media/apply-to-each/foreach-1.png)
+3. Zamanlama ile ilgili tüm hizmetleri ve Tetikleyicileri aramak için arama kutusuna "Schedule" yazın.
+4. Akışınızı, daha sonra sağlayacağımız bir zamanlamaya göre çalışacağını göstermek için **zamanlama-yinelenme** tetikleyicisini seçin:
    
-    ![Zamanlama yineleme eylemi](./media/apply-to-each/foreach-2.png)
-5. Zamanlamayı her 15 dakikada bir çalışacak biçimde ayarlayın:
+    ![Yinelenme zamanlaması eylemi](./media/apply-to-each/foreach-2.png)
+5. Zamanlamayı 15 dakikada bir çalışacak şekilde ayarlayın:
    
-    ![Zamanlamanın çalışması](./media/apply-to-each/foreach-3.png)
-6. **+ Yeni adım**’ı seçip **Eylem ekle**’yi seçin ve sonra Microsoft Outlook ile ilgili tüm eylemleri aramak için arama kutusuna **outlook** yazın.
-7. **Office 365 Outlook - E-postaları al** eylemini seçin:
+    ![çalıştırma zamanlaması](./media/apply-to-each/foreach-3.png)
+6. **+ Yeni adım**' ı seçin, **eylem ekleyin**ve sonra Microsoft Outlook ile ilgili tüm eylemleri aramak için arama kutusuna **Outlook** yazın.
+7. **Office 365 Outlook-e-postaları al** eylemini seçin:
    
-    ![E-postaları al eylemini seçin](./media/apply-to-each/foreach-4.png)
-8. Bunu yaptığınızda **E-postaları al** kartı açılır. **E-postaları al** kartını Gelen Kutusu klasörünün en üstündeki 10 okunmamış e-postayı seçecek şekilde yapılandırın. Ekler akışta kullanılmayacağından ekleri dahil etmeyin:
+    ![e-posta al eylemini seçin](./media/apply-to-each/foreach-4.png)
+8. Bu işlem **e-posta al** kartını açar. **E-postaları al** kartını, gelen kutusu klasöründeki ilk 10 okunmamış e-postayı seçmek üzere yapılandırın. Akışta kullanılmayacağından ekleri eklemeyin:
    
-    ![E-posta kartını yapılandırma](./media/apply-to-each/foreach-5.png)
+    ![e-posta kartını yapılandırma](./media/apply-to-each/foreach-5.png)
    
    > [!NOTE]
-   > Bu noktada, gelen kutunuzdan bazı e-postaları getiren basit bir akış oluşturmuş oldunuz. Bu e-postalar bir dizi halinde döndürülür; **Her birine uygula** eylemi için bir dizi gerektiğinden, tam olarak ihtiyacınız olan şey de budur.
+   > Şimdiye kadar, gelen kutunuzdan bazı e-postalar alan basit bir akış oluşturdunuz. Bu e-postalar bir dizide döndürülür; **her eyleme Uygula** bir dizi gerektirir, bu nedenle bu tam olarak gereklidir.
    > 
    > 
 
-## <a name="add-actions-and-conditions"></a>Eylem ve koşul ekleme
-1. **+ Yeni adım**’ı, **Diğer**’i ve sonra **Her birine uygula ekle** eylemini seçin:
+## <a name="add-actions-and-conditions"></a>Eylemler ve koşullar ekleme
+1. **+ Yeni adım**, **daha fazla**' yı seçin ve ardından **her eyleme bir Uygula ekleyin** :
    
-    ![Her birine uygula’yı seçin](./media/apply-to-each/foreach-6.png)
-2. **Her birine uygula** kartındaki **Önceki adımlardan bir çıkış seçin** kutusuna **Gövde** belirtecini ekleyin. Bu, **Her birine uygula** eyleminde kullanılacak e-postaların gövdelerini alır:
+    ![her birine Uygula ' yı seçin](./media/apply-to-each/foreach-6.png)
+2. Her bir karta **Uygula** sayfasındaki **önceki adımlardan çıkış seçin** kutusuna **gövde** belirtecini ekleyin. Bu, her bir eyleme **Uygula** bölümünde kullanılacak e-postaların gövdesini çeker:
    
-    ![Gövde belirteci ekleme](./media/apply-to-each/foreach-7.png)
-3. **Koşul ekle**’yi seçin:
+    ![gövde belirteci Ekle](./media/apply-to-each/foreach-7.png)
+3. **Koşul Ekle**' yi seçin:
    
-    ![Koşul ekleme](./media/apply-to-each/foreach-8.png)
-4. **Koşul** kartını her e-postanın konusunda “hemen toplanıyoruz” sözcüklerini arayacak şekilde yapılandırın:
+    ![Koşul Ekle](./media/apply-to-each/foreach-8.png)
+4. **Koşul** kartını, her bir e-postanın konusunu "şimdi buluşmak" kelimelerinizle arayacak şekilde yapılandırın:
    
-   * **Nesne Adı** kutusuna **Konu** belirtecini ekleyin.
-   * **İlişki** listesinden **İçerir**’i seçin.
-   * **Değer** kutusuna **hemen toplanıyoruz** yazın.
+   * **Nesne adı** kutusuna **Konu** belirtecini ekleyin.
+   * **İlişki** listesinde **Contains** ' i seçin.
+   * **Değer** kutusuna **Şimdi buluşın** girin.
      
-     ![Koşulu yapılandırma](./media/apply-to-each/foreach-subject-condition.png)
-5. **Diğer**’i seçip **EVET İSE, HİÇBİR ŞEY YAPMA** dalından **Koşul ekle**’yi seçin. Bunu yaptığınızda **Koşul 2** kartı açılır. Bu kartı aşağıdaki gibi yapılandırın:
+     ![koşulu Yapılandır](./media/apply-to-each/foreach-subject-condition.png)
+5. **Daha fazla**' yı SEÇIN ve **Evet Ise, hiçbir şey yapma** dalından **Koşul Ekle** ' yi seçin. Bu **durum 2** kartını açar; Bu kartı şu şekilde yapılandırın:
    
-   * **Nesne Adı** kutusuna **Önem** belirtecini ekleyin.
-   * **İlişki** listesinden **Eşittir**’i seçin.
-   * **Değer** kutusuna **Yüksek** yazın.
+   * **Nesne adı** kutusuna **önem** belirtecini ekleyin.
+   * **İlişki** listesinde **eşittir** ' i seçin.
+   * **Değer** kutusuna **yüksek** girin.
      
-     ![Koşul ekleme](./media/apply-to-each/foreach-importance-condition.png)
-6. **EVET İSE, HİÇBİR ŞEY YAPMA** bölümünden **Eylem ekle**’yi seçin. Bunu yaptığınızda açılan **Eylem seçin** kartında, arama koşulunun (yüksek önem derecesiyle gönderilen **hemen toplanıyoruz** e-postası) doğru olması durumunda gerçekleşmesi gereken eylemi tanımlayabilirsiniz:
+     ![Koşul Ekle](./media/apply-to-each/foreach-importance-condition.png)
+6. **Evet, HIÇBIR şey yapma** bölümünden **Eylem Ekle** ' yi seçin. Bu işlem, arama koşulunun ( **Şimdi karşılanacak** e-postanın yüksek önem derecesine sahip olduğu) doğru olması durumunda ne olacağını tanımlayabileceğiniz **bir eylem seçin** kartını açar:
    
-    ![Eylem ekleme](./media/apply-to-each/foreach-9.png)
-7. **Bildirim** sözcüğünü arayın ve **Bildirimler - Bana mobil bildirim gönder** eylemini seçin:
+    ![Eylem Ekle](./media/apply-to-each/foreach-9.png)
+7. **Bildirim**araması yapın ve ardından **bildirimleri seçin-bir mobil bildirim gönder** eylemi:
    
-    ![Bildirimi arama ve seçme](./media/apply-to-each/foreach-10.png)
-8. **Bana mobil bildirim gönder** kartında, bir e-postanın konusu "hemen toplanıyoruz" ifadesini içeriyorsa gönderilecek anında iletme bildirimin ayrıntılarını sağlayın ve **Eylem ekle**’yi seçin:
+    ![Arama ve seçme bildirimi](./media/apply-to-each/foreach-10.png)
+8. **Bana mobil bildirim gönder** kartında, bir e-postanın konusu "Şimdi tanışın" içeriyorsa gönderilecek anında iletme bildiriminin ayrıntılarını girin ve ardından **Eylem Ekle**' yi seçin:
    
-    ![Bildirimi yapılandırma](./media/apply-to-each/foreach-11.png)
-9. Arama terimi olarak **okundu** yazın ve **Office 365 Outlook - Okundu olarak işaretle** eylemini seçin. Bunu yaptığınızda, anında iletme bildirimi gönderildikten sonra e-posta okundu olarak işaretlenir:
+    ![Bildirimi Yapılandır](./media/apply-to-each/foreach-11.png)
+9. Arama terimi olarak **Oku** yazın ve ardından **Office 365 Outlook-okundu olarak işaretle** eylemini seçin. Bu işlem, anında iletme bildirimi gönderildikten sonra her e-postayı okundu olarak işaretler:
    
-    ![Okundu olarak işaretle eylemini ekleme](./media/apply-to-each/foreach-12.png)
-10. **Okundu olarak işaretle** kartının **İleti Kimliği** kutusuna **İleti Kimliği** belirtecini ekleyin. **İleti Kimliği** belirtecini bulmak için **Daha fazla görüntüle**’yi seçmeniz gerekebilir. Bu, okundu olarak işaretlenecek iletinin kimliğini belirtir:
+    ![okundu eylemi olarak işaretle ekleme](./media/apply-to-each/foreach-12.png)
+10. **Ileti kimliği** belirtecini **okundu olarak Işaretle** kartının **ileti kimliği** kutusuna ekleyin. **Ileti kimliği** belirtecini bulmak için **daha fazla görüntüle** ' yi seçmeniz gerekebilir. Bu, okundu olarak işaretlenecek iletinin kimliğini belirtir:
     
-     ![İleti kimliği ekleme](./media/apply-to-each/foreach-13.png)
-11. **Koşul 2** kartına dönün ve **HAYIR İSE, HİÇBİR ŞEY YAPMA** dalında:
+     ![ileti kimliği Ekle](./media/apply-to-each/foreach-13.png)
+11. **Koşul 2** kartına geri dönerek, **Hayır, hiçbir şey yapma** Dalı:
     
-    * **Eylem ekle**’yi seçip arama kutusuna **yöneticiyi al** yazın.
-    * Sonuç listesinden **Office 365 Kullanıcıları - Yöneticiyi al** eylemini seçin.
-    * **Yöneticiyi Al** kartının **Kullanıcı** kutusuna *tam* e-posta adresinizi girin.
+    * **Eylem Ekle**' yi seçin ve sonra arama kutusuna **yöneticiyi al** yazın.
+    * Arama sonuçları listesinden **Office 365 kullanıcıları-yöneticiyi al** eylemini seçin.
+    * **Yönetici al** kartının **Kullanıcı** kutusuna *tam* e-posta adresinizi girin.
       
-      ![Yöneticiyi alma eylemini ekleme ve yapılandırma](./media/apply-to-each/foreach-get-manager.png)
-12. **Diğer**’i seçip **HAYIR İSE** dalından **Koşul ekle**’yi seçin. Bunu yaptığınızda **Koşul 3** kartı açılır. Kartı, e-postayı gönderenin e-posta adresinin (Kimden belirteci), müdürünüzün e-posta adresi (E-posta belirteci) ile aynı olup olmadığını denetleyecek şekilde yapılandırın:
+      ![Yöneticiyi al eylemini ekleme ve yapılandırma](./media/apply-to-each/foreach-get-manager.png)
+12. **Daha fazla**' yı seçin ve **ardından dal '** dan **Koşul Ekle** ' yi seçin. Bu **durum 3** kartını açar; e-posta gönderenin e-posta adresi (Kimden belirteci), patron e-posta adresiniz (e-posta belirteci) ile aynı olup olmadığını denetlemek için kartı yapılandırın:
     
-    * **Nesne Adı** kutusuna **Kimden** belirtecini ekleyin.
-    * **İlişki** listesinden **İçerir**’i seçin.
-    * **Değer** kutusuna **E-posta** belirtecini girin.
+    * **Nesne adı** kutusuna **from** belirtecini ekleyin.
+    * **İlişki** listesinde **Contains** ' i seçin.
+    * **Değer** kutusuna **e-posta** belirtecini girin.
       
-      ![Arama koşulunu yapılandırma](./media/apply-to-each/foreach-condition3-card.png)
-13. **Koşul 3** kartının **EVET İSE, HİÇBİR ŞEY YAPMA** bölümünden **Eylem ekle**’yi seçin. Bunu yaptığınızda açılan **EVET İSE** kartında, arama koşulunun (müdürünüz tarafından gönderilen e-posta) doğru olması durumunda gerçekleşmesi gereken eylemi tanımlayabilirsiniz:
+      ![arama koşulunu yapılandırma](./media/apply-to-each/foreach-condition3-card.png)
+13. **Koşul 3** kartının **Evet, hiçbir şey yapma** bölümünden **Eylem Ekle** ' yi seçin. Bu işlem, arama koşulu (e-posta, patronunuzdan gönderildiyse) doğru olduğunda ne olması gerektiğini tanımlayacağınızı belirleyen **Evet** kartını açar:
     
-     ![Koşulu yapılandırma](./media/apply-to-each/foreah-condition3-add-action.png)
-14. **Bildirim** sözcüğünü arayın ve **Bildirimler - Bana mobil bildirim gönder** eylemini seçin:
+     ![koşulu Yapılandır](./media/apply-to-each/foreah-condition3-add-action.png)
+14. **Bildirim**araması yapın ve ardından **bildirimleri seçin-bir mobil bildirim gönder** eylemi:
     
-     ![Bildirim arama eylemi](./media/apply-to-each/foreach-10.png)
-15. **Bana mobil bildirim gönder 2** kartında, e-posta müdürünüzden geldiyse gönderilecek anında iletme bildiriminin ayrıntılarını sağlayın ve **Eylem ekle**’yi seçin:
+     ![bildirim eylemi ara](./media/apply-to-each/foreach-10.png)
+15. **Bana mobil bildirim gönder 2** kartında, e-posta, patronunuzdan alıyorsa gönderilecek anında iletme bildiriminin ayrıntılarını girin ve ardından **Eylem Ekle**' yi seçin:
     
-     ![Bildirim kartını yapılandırma](./media/apply-to-each/foreach-boss-notification.png)
-16. **Office 365 Outlook - Okundu olarak işaretle** eylemini ekleyin. Bunu yaptığınızda, anında iletme bildirimi gönderildikten sonra e-posta okundu olarak işaretlenir:
+     ![bildirim kartını yapılandırma](./media/apply-to-each/foreach-boss-notification.png)
+16. **Office 365 Outlook-okundu olarak işaretle** eylemini ekleyin. Bu işlem, anında iletme bildirimi gönderildikten sonra her e-postayı okundu olarak işaretler:
     
-     ![Okundu olarak işaretle eylemini ekleme](./media/apply-to-each/foreach-12.png)
-17. **Okundu olarak işaretle 2** kartına **İleti Kimliği** belirtecini ekleyin. **İleti Kimliği** belirtecini bulmak için **Daha fazla görüntüle**’yi seçmeniz gerekebilir. Bu, okundu olarak işaretlenecek iletinin kimliğini belirtir:
+     ![okundu eylemi olarak işaretle ekleme](./media/apply-to-each/foreach-12.png)
+17. **Ileti kimliği** belirtecini **okundu 2 kartı olarak işaretle** ' ye ekleyin. **Ileti kimliği** belirtecini bulmak için **daha fazla görüntüle** ' yi seçmeniz gerekebilir. Bu, okundu olarak işaretlenecek iletinin kimliğini belirtir:
     
-     ![Okundu olarak işaretle eylemini yapılandırma](./media/apply-to-each/foreach-mark-as-read2.png)
-18. Akışınızı adlandırın ve sonra oluşturun:
+     ![okundu olarak işaretle eylemini yapılandırma](./media/apply-to-each/foreach-mark-as-read2.png)
+18. Akışınızı adlandırın ve ardından oluşturun:
     
-     ![Akışınıza bir ad verip akışı kaydedin](./media/apply-to-each/foreach-14.png)
+     ![akışınıza bir ad verin ve kaydedin](./media/apply-to-each/foreach-14.png)
 
-Buraya kadar iyi takip ettiyseniz, akışınız şu diyagrama benzemelidir:
+Daha sonra, akışınız şu diyagrama benzer görünmelidir:
 
-![Oluşturulan akışa genel bakış](./media/apply-to-each/foreach-flow-finished.png)
+![oluşturulan akışa genel bakış](./media/apply-to-each/foreach-flow-finished.png)
 
 ## <a name="run-the-flow"></a>Akışı çalıştırma
-1. Kendinize, konusunda **hemen toplanıyoruz** yazan yüksek önem dereceli bir e-posta gönderin (veya kuruluşunuzdaki bir kişiden böyle bir e-posta göndermesini isteyin).
-2. E-postanın gelen kutunuzda ve okunmamış olduğunu doğrulayın.
-3. Microsoft Flow’da oturum açın, **Akışlarım**’ı ve sonra **Şimdi çalıştır**’ı seçin:
+1. Kendinize konu içinde **Şimdi buluşla** (veya kuruluşunuzdaki bir e-posta göndermesini sağlayan) yüksek öneme sahip bir e-posta gönderin.
+2. E-postanın gelen kutunuzda olduğunu ve okunmamış olduğunu doğrulayın.
+3. Microsoft Flow oturum açın, **Akışlarım**' ı seçin ve **Şimdi Çalıştır**' ı seçin:
    
-    ![hemen çalıştırma](./media/apply-to-each/foreach-run-1.png)
-4. Akışı gerçekten çalıştırmak istediğinizi onaylamak için **Akışı çalıştır**’ı seçin:
+    ![Şimdi Çalıştır](./media/apply-to-each/foreach-run-1.png)
+4. Akışı gerçekten çalıştırmak istediğinizi onaylamak için **akışı Çalıştır** ' ı seçin:
    
-    ![Çalıştırmayı onaylama](./media/apply-to-each/foreach-run-2.png)
-5. Birkaç dakika sonra başarılı çalıştırma işleminin sonuçlarını görmeniz gerekir:
+    ![çalıştırmayı Onayla](./media/apply-to-each/foreach-run-2.png)
+5. Birkaç dakika sonra başarılı çalıştırmanın sonuçlarını görmeniz gerekir:
    
-    ![Çalıştırma sonuçları](./media/apply-to-each/foreach-run-3.png)
+    ![sonuçları Çalıştır](./media/apply-to-each/foreach-run-3.png)
 
-## <a name="view-results-of-the-run"></a>Çalıştırma işleminin sonuçlarını görüntüleme
-Artık akışı başarıyla çalıştırdığınıza göre mobil cihazınızda anında iletme bildirimini almanız gerekir.
+## <a name="view-results-of-the-run"></a>Çalıştırmanın sonuçlarını görüntüleme
+Akışı başarıyla çalıştırdığınıza göre, mobil cihazınızda anında iletme bildirimini almalısınız.
 
-1. Mobil cihazınızda Microsoft Flow uygulamasını açıp **Etkinlik** sekmesini seçin. Toplantıyla ilgili anında iletme bildirimini görürsünüz:
+1. Mobil cihazınızda Microsoft Flow uygulamasını açın ve **etkinlik** sekmesini seçin. Toplantı hakkında anında iletme bildirimi görürsünüz:
    
-    ![Etkinlik sekmesini seçme](./media/apply-to-each/foreach-notification-1.png)
-2. Bildirimin içeriğini tam olarak görmek için bildirimi seçmeniz gerekebilir. Bildirimin aşağıdakine benzeyen tam halini görürsünüz:
+    ![Etkinlik sekmesini seçin](./media/apply-to-each/foreach-notification-1.png)
+2. Bildirimin tüm içeriğini görmek için bildirimi seçmeniz gerekebilir. Aşağıdakine benzer şekilde tam bildirimi görürsünüz:
    
     ![Bildirim ayrıntıları](./media/apply-to-each/foreach-notification-2.png)
    
    > [!NOTE]
-   > Anında iletme bildirimini almazsanız mobil cihazınızın çalışan bir veri bağlantısı olduğunu doğrulayın.
+   > Anında iletme bildirimi almazsanız, mobil cihazınızın çalışan bir veri bağlantısı olduğunu doğrulayın.
    > 
    > 
 

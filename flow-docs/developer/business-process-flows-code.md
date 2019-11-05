@@ -1,6 +1,6 @@
 ---
-title: Kod kullanarak iş süreci akışları ile çalışma | MicrosoftDocs
-description: İş süreci akışlarıyla program aracılığıyla çalışıp daha verimli ve sorunsuz iş süreçleri oluşturmayı öğrenin.
+title: Kod kullanarak iş süreci akışlarıyla çalışma | MicrosoftDocs
+description: Daha verimli ve kolaylaştırılmış iş süreçlerini oluşturmak için iş süreci akışlarıyla programlı olarak nasıl çalışacağınızı öğrenin.
 ms.custom: ''
 ms.date: 07/09/2018
 ms.reviewer: ''
@@ -14,78 +14,79 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 5ce11084cb9a430899fd0a4b672e009c0dc22d25
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054075"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547742"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışları ile çalışma
+# <a name="work-with-business-process-flows-using-code"></a>Kod kullanarak iş süreci akışlarıyla çalışma
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-*İş süreci akışı* daha verimli ve sorunsuz bir satış süreci, hizmet süreci ve başka iş süreçleri oluşturmanıza olanak tanır. Varlık formlarının üst kısmına özel denetimler yerleştirerek iş sürecinizin görselleştirmesini oluşturur. Kullanıcılara satış, pazarlama veya hizmet süreçlerinin çeşitli aşamalarından tamamlanma aşamasına kadar yol gösterilir. Her süreç çeşitli aşamaları ve adımları destekler. Adımları ekleyip kaldırabilir, aşamaların sırasını değiştirebilir veya iş süreci akışına yeni varlıklar ekleyebilirsiniz.  
+*İş süreci akışı* , daha verimli ve kolaylaştırılmış satış, hizmet ve diğer iş süreçlerini oluşturmanızı sağlar. Varlık formlarının üst kısmına özel denetimler yerleştirerek iş sürecinizin bir görselleştirmesi oluşturur. Kullanıcılar, çeşitli satış, pazarlama veya hizmet işlemlerinin tamamlama aşamasına göre yapılır. Her işlem birden çok aşama ve adımı destekler. Adımları ekleyebilir veya kaldırabilir, aşamaların sırasını değiştirebilir veya iş süreci akışına yeni varlıklar ekleyebilirsiniz.  
   
-Aynı varlık kaydında farklı iş süreci akış örnekleri eş zamanlı olarak çalıştırılabilir. Kullanıcılar eş zamanlı iş süreci örnekleri arasında geçiş yapabilir ve sürecin geçerli aşamasındaki çalışmalarını sürdürebilir. 
+Farklı iş süreci akış örnekleri aynı varlık kaydında aynı anda çalışabilir. Kullanıcılar eşzamanlı iş süreci örnekleri arasında geçiş yapabilir ve işleri işlemdeki geçerli bir aşamada sürdürür. 
 
-Bu konuda, iş süreci akışlarıyla program aracılığıyla nasıl çalışabileceğiniz hakkında bilgi sağlanır.
+Bu konuda iş süreci akışlarıyla programlama yoluyla nasıl çalışabilmeniz hakkında bilgi verilmektedir.
 
 > [!NOTE]
-> İş süreci akışlarıyla çalışmak için kod yazmanız gerekmez. Kullanıcı arabirimini kullanarak iş süreci akışlarını oluşturma ve yönetme hakkında bilgi için bkz. [İş Süreci Akışlarına genel bakış](../business-process-flows-overview.md)  
+> İş süreci akışlarıyla çalışmak için kod yazmanız gerekmez. İş süreci akışları oluşturmak ve yönetmek için Kullanıcı arabirimini kullanma hakkında bilgi için bkz. [Iş süreci akışlarına genel bakış](../business-process-flows-overview.md)  
 
 <a name="PrereqsBPF"></a>   
-## <a name="prerequisites-for-business-process-flow"></a>İş süreci akışı için önkoşullar 
+## <a name="prerequisites-for-business-process-flow"></a>İş işlem akışı önkoşulları 
 
-Özel varlıklar ve güncelleştirilmiş kullanıcı arabirimi formları olan varlıklar iş süreci akışına katılabilir. Güncelleştirilmiş kullanıcı arabirimi varlıklarının <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> özelliği `true` olarak ayarlanmıştır. 
+Kullanıcı arabirimi formlarını güncelleştiren özel varlıklar ve varlıklar iş süreci akışına katılabilir. Güncelleştirilmiş Kullanıcı arabirimi varlıklarının <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> özelliği `true`olarak ayarlanmıştır. 
 
-İş süreci akışında varlığı etkinleştirmek için <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> özelliği `true` olarak ayarlayın.
+İş süreci akışı için bir varlığı etkinleştirmek üzere <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> özelliğini `true`olarak ayarlayın.
 
 > [!IMPORTANT]
->  İş süreci akışı için varlığı etkinleştirmek tek yönlü bir işlemdir. Geri alamazsınız.
+>  İş süreci akışı için bir varlığın etkinleştirilmesi tek yönlü bir işlemdir. Geri alamazsınız.
 
    
 <a name="DefineBPF"></a>   
 ## <a name="define-business-process-flow"></a>İş süreci akışını tanımlama
   
-İş süreci akışı tanımlamak için görsel iş süreci akışı tasarımcısını kullanın. Daha fazla bilgi: [İş süreci akışı oluşturma](../create-business-process-flow.md)
+İş süreci akışını tanımlamak için Visual Business Process Flow tasarımcısını kullanın. Daha fazla bilgi: [iş süreci akışı oluşturma](../create-business-process-flow.md)
 
-Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.  
+Varsayılan olarak, `Draft` durumunda bir iş süreci akış kaydı oluşturulur.  
 
-İş süreci akışı tanımı <xref:Microsoft.Dynamics.CRM.workflow> varlığında depolanır ve iş süreci akışı için aşama bilgileri de <xref:Microsoft.Dynamics.CRM.processstage> varlığında depolanır.
+Bir iş süreci akış tanımı <xref:Microsoft.Dynamics.CRM.workflow> varlığında depolanır ve iş süreci akışı için aşama bilgileri <xref:Microsoft.Dynamics.CRM.processstage> varlığında depolanır.
   
 <a name="ActivateBPF"></a>   
-## <a name="activate-business-process-flow"></a>İş süreci akışını etkinleştirme  
- İş sürecini kullanabilmeniz için önce etkinleştirmelisiniz. Etkinleştirmek için `Workflow` varlığı üzerinde `prvActivateBusinessProcessFlow` ayrıcalığınızın olması gerekir. `Workflow` varlık kaydının durumunu `Activated` olarak ayarlamak için <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> iletisini kullanın. Daha fazla bilgi: [Güncelleştirme kullanarak özel işlemler gerçekleştirme](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
+## <a name="activate-business-process-flow"></a>İş süreci akışını etkinleştir  
+ İşlem akışını kullanabilmeniz için etkinleştirmeniz gerekir. Etkinleştirmek için, `Workflow` varlık için `prvActivateBusinessProcessFlow` ayrıcalığına sahip olmanız gerekir. `Workflow` varlık kaydının durumunu `Activated`olarak ayarlamak için <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> iletisini kullanın. Daha fazla bilgi: [güncelleştirme kullanarak özel Işlemler gerçekleştirme](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
- > İş süreci akışı tasarımcısını kullanarak da iş süreci akışını etkinleştirebilirsiniz. 
+ > İş süreci akışını etkinleştirmek için iş süreci akış tasarımcısını da kullanabilirsiniz. 
 
 <a name="BPFEntity"></a>   
-## <a name="business-process-flow-entity"></a>İş süreci akışı varlığı 
- İlgili `Workflow` varlığı kaydının durumunu değiştirerek veya iş süreci akışı tasarımcısını kullanarak iş süreci akışı tanımını etkinleştirdikten sonra, etkinleştirilmiş iş süreci akışı örneklerini depolamak üzere şu adda özel bir varlık otomatik olarak oluşturulur: "*\<activesolutionprefix>*_*\<uniquename>*"; burada uniquename, sizin belirttiğiniz addan türetilir.  
+## <a name="business-process-flow-entity"></a>İş süreci akış varlığı 
+ Karşılık gelen `Workflow` varlık kaydının durumunu değiştirerek veya iş süreci akış tasarımcısını kullanarak bir iş süreci akış tanımını etkinleştirdikten sonra, etkinleştirilen işi depolamak için aşağıdaki ada sahip bir özel varlık otomatik olarak oluşturulur işlem akışı örnekleri: " *\<activesolutionprefix >* _ *\<UniqueName >* ", burada UniqueName, belirttiğiniz adından türetilir.  
   
- Örneğin, iş süreci akışı tanımının adı olarak "My Custom BPF" belirttiyseniz ve yeni etkin çözümünüz için varsayılan yayımcıyı (new) kullanıyorsanız, süreç örneklerini depolamak için oluşturulan özel varlığın adı "new_mycustombpf" olacaktır.  
+ Örneğin, iş süreci akış tanımının adı olarak "My Custom BPF" belirttiyseniz ve etkin çözümünüz için varsayılan yayımcıyı (yeni) kullanıyorsanız, işlem örneklerinin depolanması için oluşturulan özel varlığın adı "new_mycustombpf" olacaktır.  
   
- İş süreci akışı tanımı için `uniquename` değeri yoksa, örneğin iş süreci akışı önceki sürümden bir çözümün parçası olarak içeri aktarıldıysa, özel varlığın varsayılan adı "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>` olur:  
+ `uniquename` değeri bir iş işlemi akış tanımı için kullanılabilir değilse, örneğin iş süreci akışı önceki bir sürümden çözümün parçası olarak içeri aktarıldıysa, özel varlığın varsayılan adı "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`" olacaktır:  
   
 > [!IMPORTANT]
->  Örnek iş süreci akışı kayıtları, ilgili iş süreci akışı örneği kayıtlarını depolamak için sistem varlıklarını kullanır.  
+>  Örnek iş süreci akışı kayıtları, ilgili iş süreci akış örneği kayıtlarını depolamak için sistem varlıklarını kullanır.  
 >   
->  Öte yandan, oluşturduğunuz tüm yeni iş süreci akışı tanımları daha önce açıklandığı gibi örnek kayıtlarını depolamak için özel varlıkları kullanır. 
+>  Ancak, oluşturduğunuz tüm yeni iş süreci akış tanımları, daha önce açıklandığı gibi örnek kayıtlarını depolamak için özel varlıklar kullanır. 
 
-İş süreci akışı varlığınızın adını almak için aşağıdaki yollardan birini kullanabilirsiniz:
+Aşağıdaki yollarla iş süreci akışı varlığınızın adını alabilirsiniz:
 
-- **Kullanıcı arabirimini kullanma**: Özelleştirme kullanıcı arabirimini kullanarak iş süreci akışı varlığınıza göz atın:
+- **Kullanıcı arabirimini kullanma**: iş süreci akışı varlığınıza gitmek için özelleştirme Kullanıcı arabirimini kullanın:
 
     ![](media/bpf-entity-name.png)
-- **Web API'sini kullanma**: Aşağıdaki isteği kullanın:
+- **Web API 'Sini kullanarak**: aşağıdaki isteği kullanın:
 
-    **İstek**
+    **İsteyen**
 
     ```
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Yanıt**
+    **Yanıtıyla**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -98,7 +99,7 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
       ]
     }
     ```
-- **Kuruluş hizmetini kullanma**: Aşağıdaki kod örneğini kullanın:
+- **Kuruluş hizmetini kullanarak**: Aşağıdaki kod örneğini kullanın:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -121,60 +122,60 @@ Varsayılan olarak, iş süreci akış kaydı `Draft` durumunda oluşturulur.
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
     ```
 > [!NOTE]
-> İş süreci akışı varlıkları için <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> özelliğinin değeri `true` olur. Aşağıdaki Web API'si isteğini çalıştırarak örneğinizdeki tüm iş süreci akışı varlıklarını alabilirsiniz:
+> <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> özelliği, iş süreci akış varlıkları için `true`. Aşağıdaki Web API isteğini çalıştırarak, örneğiniz içindeki tüm iş işlem akışı varlıklarını alabilirsiniz:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## <a name="manage-security-for-business-process-flows"></a>İş süreci akışları için güvenliği yönetme
+## <a name="manage-security-for-business-process-flows"></a>İş işlem akışları için güvenliği yönetme
 
-İş süreci akışı etkinleştirildiğinde iş süreci akış örneklerini depolamak üzere otomatik olarak oluşturulan özel varlık, aynı Müşteri Bağlantısı'ndaki diğer tüm özel varlıklar gibi standart güvenlik modeline uyar. Bunun anlamı, bu varlıklara verilen ayrıcalıkların iş süreci akışlarına ilişkin kullanıcı çalışma zamanı izinlerini tanımladığıdır.
+İş süreci akış örneklerinin depolanması için bir iş süreci akışını etkinleştirmek üzere otomatik olarak oluşturulan özel varlık, Common Data Service ' deki diğer tüm özel varlıklar için standart güvenlik modeline uyar. Bu, bu varlıklarda verilen ayrıcalıkların iş için Kullanıcı işlem akışları için çalışma zamanı izinlerini tanımladığını gösterir.
 
-Özel iş süreci akışı varlığı kuruluş kapsamına sahiptir. Bu varlık üzerindeki normal oluşturma, alma, güncelleştirme ve silme ayrıcalıkları, kullanıcıların kendilerine atanmış rolleri temel alabilecek izni tanımlar. Varsayılan olarak, iş süreci akışı özel varlığı oluşturulduğunda yalnızca **Sistem Yöneticisi** ve **Sistem Özelleştiricisi** güvenlik rollerine erişim verilir ve gerekirse diğer güvenlik rolleri için yeni iş süreci akışı varlığına açıkça izin vermeniz gerekir (örneğin, **My Custom BPF**).
+Özel iş süreci akış varlığı kuruluş kapsamına sahiptir. Bu varlıktaki normal oluşturma, alma, güncelleştirme ve silme ayrıcalıkları, kullanıcıların kendilerine atanan rollerine göre sahip olacağı izni tanımlar. Varsayılan olarak, iş süreci akışı özel varlığı oluşturulduğunda, yalnızca **Sistem Yöneticisi** ve **Sistem Özelleştirici** güvenlik rollerine erişim verilir ve yeni iş süreci akışı varlığına (için) açıkça izin vermeniz gerekir. Örneğin, **özel BPF**), diğer güvenlik rolleri için gereken şekilde.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>İş süreci akışı varlık kayıtlarını (süreç örnekleri) oluşturma, alma, güncelleştirme ve silme  
- İş süreci akışı tanımı etkinleştirildiğinde otomatik olarak oluşturulan özel varlık, iş süreci akışı tanımı için tüm süreç örneklerini depolar. Özel varlık, Web API ve CRM 2011 uç noktasının kullanımıyla kayıtların (süreç örnekleri) standart programlama yoluyla oluşturulmasını ve yönetimini destekler.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>İş süreci akışı varlık kayıtlarını oluşturma, alma, güncelleştirme ve silme (işlem örnekleri)  
+ Bir iş işlemi akış tanımını etkinleştirmede otomatik olarak oluşturulan özel varlık, iş süreci akış tanımı için tüm işlem örneklerini depolar. Özel varlık, Web API 'SI ve CRM 2011 uç noktası kullanılarak kayıtların standart programsal olarak oluşturulmasını ve yönetimini (işlem örnekleri) destekler.
 
 > [!IMPORTANT]
-> Bir varlık kaydı için başka bir süreç örneğine geçmek, bu bölümde sağlanan bilgiler kullanılarak yalnızca kullanıcı arabirimi (istemci) aracılığıyla veya programlama yoluyla yapıldığında desteklenir. Hedef varlık kaydı için programlama yoluyla süreçleri değiştirmek (etkin süreç örneği olarak başka bir iş süreci akışını ayarlamak) amacıyla artık `SetProcess` iletisini (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> veya <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) kullanamazsınız. 
+> Bir varlık kaydı için başka bir işlem örneğine geçiş yapmak yalnızca kullanıcı arabirimi (istemci) veya bu bölümde bulunan bilgiler kullanılarak programlı bir şekilde desteklenir. Artık `SetProcess` iletisini (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> veya <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>), hedef varlık kaydı için programlı olarak işlemleri değiştirmek (etkin işlem örneği olarak başka bir iş işlem akışı ayarlamak) için kullanamazsınız. 
 
- Şimdi 3 aşamalı bir varlıklar arası iş süreci akışımızın ("My Custom BPF") olduğu aşağıdaki örneği gözden geçirelim: S1:Account S2:Account ve S3:Contact. 
+ 3 aşamada "My Custom BPF" adlı bir varlık arası iş süreci akışımız olan aşağıdaki örneği göz önünde bulundurun: S1: Account, S2: Account ve S3: Contact. 
 
  ![](media/sample-bpf.png)
  
-### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>İş süreci akışı varlığı için tüm kayıtları (örnekleri) alma
- İş süreci akışı varlığınızın adı "new_mycustombpf" ise, aşağıdaki sorguyu kullanarak iş süreci akışı varlığınız için tüm kayıtları (süreç örneklerini) alabilirsiniz:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Bir iş süreci akış varlığının tüm kayıtlarını (örneklerini) alma
+ İş süreci akışı varlığınızın adı "new_mycustombpf" ise, iş süreci akışı varlığınızın tüm kayıtlarını (işlem örnekleri) almak için aşağıdaki sorguyu kullanın:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
 ```
 
-Bu noktada, hiç örnek olmadığından yanıtınızda hiç örnek almayabilirsiniz. Bu isteği, bu konunun ilerleyen bölümlerinde iş süreci akışı tanımınızın bir örneğini oluşturduktan sonra çalıştırın.
+Bu noktada, herhangi bir örnek yok olduğu için yanıtınıza herhangi bir örnek alınamaz. Bu konunun ilerleyen kısımlarında iş süreci akış tanımınızın bir örneğini oluşturduktan sonra bu isteği çalıştırın.
 
 > [!NOTE]
-> İş süreci akışı varlığınızın adını nasıl alacağınızı öğrenmek için, daha önceki [İş süreci akışı varlığı](#business-process-flow-entity) bölümüne bakın.
+> İş süreci akışı varlığınızın adını nasıl alacağınızı öğrenmek için önceki bölüm olan [iş süreci akışı varlığına](#business-process-flow-entity)bakın.
   
-### <a name="create-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı kaydı (süreç örneği) oluşturma 
+### <a name="create-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı varlık kaydı oluşturma (işlem örneği) 
 
-Kullanıcı arabirimini kullanmadan bir varlık kaydı için başka bir iş süreci akışına geçmek istiyorsanız, program aracılığıyla bir iş süreci akışı varlık kaydı (süreç örneği) oluşturun. 
+Kullanıcı arabirimini kullanmadan bir varlık kaydı için başka bir iş işlem akışına geçiş yapmak istiyorsanız, programlı olarak bir iş süreci akışı varlık kaydı (işlem örneği) oluşturun. 
 
-İş süreci akışı varlık kaydını oluşturmak için, aşağıdaki değerleri belirtmelisiniz: 
-- `@odata.bind` ek açıklamasını kullanıp tek değerli gezinti özelliğini ayarlayarak, iş süreci akışı varlık kaydını birincil varlık kaydıyla ilişkilendirin. İş süreci akışı tanımınızın birincil varlık kaydına işaret eden gezinti özelliğinin adını bulmak için [CSDL $metadata belgesini](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document) kullanın. 
-- `@odata.bind` ek açıklamasını kullanıp tek değerli gezinti özelliğini ayarlayarak, iş süreci akışı varlık kaydını iş süreci akışı tanımında belirtilen geçerli bir aşamayla ilişkilendirin. İş süreci akışı tanımınızın aşama kaydına işaret eden gezinti özelliğinin adını (normalde `activestageid`) bulmak için [CSDL $metadata belgesini](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document) kullanın.
+Bir iş süreci akışı varlık kaydı oluşturmak için aşağıdaki değerleri belirtmeniz gerekir: 
+- `@odata.bind` ek açıklamasını kullanarak, tek değerli gezinti özelliğini ayarlayarak, iş süreci akışı varlık kaydını bir birincil varlık kaydıyla ilişkilendirin. İş süreci akış tanımınızın birincil varlık kaydına işaret eden gezinti özelliği adını bulmak için, [CSDL $Metadata belgesini](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document)kullanın. 
+- `@odata.bind` ek açıklamasını kullanarak tek değerli gezinti özelliğini ayarlayarak iş süreci akışı varlık kaydını iş süreci akış tanımında belirtilen geçerli bir aşamaya ilişkilendirin. İş süreci akış tanımınızın aşama kaydına işaret eden gezinti özelliği adını (genellikle `activestageid`) bulmak için, [CSDL $Metadata belgesini](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document)kullanın.
 
-    Ayrıca, aşağıdaki Web API'si isteğini kullanarak iş süreci akışı tanımının tüm aşamaları hakkında bilgi alabilirsiniz. Burada iş süreci akışı tanımınızın kimliğinin 2669927e-8ad6-4f95-8a9a-f1008af6956f olduğu varsayılmıştır:
+    Ayrıca, iş süreci akış tanımınızın KIMLIĞININ 2669927e-8ad6-4f95-8a9a-f1008af6956f olduğunu varsayarak aşağıdaki Web API isteğini kullanarak bir iş süreci akış tanımına ait tüm aşamalar hakkında bilgi alabilirsiniz:
 
-    **İstek**
+    **İsteyen**
 
     ```http
     GET [Organization URI]/api/data/v9.0/processstages?$select=stagename&$filter=processid/workflowid eq 2669927e-8ad6-4f95-8a9a-f1008af6956f HTTP/1.1
     ```
 
-    **Yanıt**
+    **Yanıtıyla**
 
     ```http
     {
@@ -199,9 +200,9 @@ Kullanıcı arabirimini kullanmadan bir varlık kaydı için başka bir iş sür
     }
     ```
 
-Ardından, bir hesap kaydı (ID=a176be9e-9a68-e711-80e7-00155d41e206) için iş süreci akışı tanımınızın örneğini oluşturmak üzere aşağıdaki isteği kullanın. Burada etkin aşama olarak süreç örneğinin ilk aşaması olan S1 (ID=9a9185f5-b75b-4bbb-9c2b-a6626683b99b) ayarlanmıştır:
+Ardından, bir hesap kaydı için iş süreci akış tanımınızın bir örneğini oluşturmak için aşağıdaki isteği kullanın, S1 (ID = a176be9e-9a68-E711-80e7-00155d41e206) ve işlem örneğinin ilk aşaması olarak ayarlanan etkin aşamada 9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
 
-**İstek**
+**İsteyen**
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -216,7 +217,7 @@ Accept: application/json
 }
 ```
 
-**Yanıt**
+**Yanıtıyla**
 
 ```http
 HTTP/1.1 204 No Content
@@ -224,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-İş süreci akışı tanımınızın örneğini oluştururken etkin aşama olarak ilk aşama ***dışında*** bir aşama ayarlanmasını istiyorsanız, isteğinizde `traversedpath` değerini de sağlamalısınız. Geçilen yol (traversed path) virgülle ayrılmış süreç aşaması kimlikleri dizesidir ve iş süreci akışı örneğinin ziyaret edilen aşamalarını temsil eder. Aşağıdaki istek, bir hesap kaydı (ID=679b2464-71b5-e711-80f5-00155d513100) için örnek oluşturur ve etkin aşama olarak ikinci aşamayı (S2) (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b) ayarlar.
+Etkin aşama kümesi olan iş süreci akış tanımınızın bir örneğini ilk ***aşama dışında bir aşama olarak*** oluşturmak isterseniz, isteğinize `traversedpath` de sağlamanız gerekir. Yol içine geçilen işlem, iş süreci akış örneğinin ziyaret edilen aşamalarını temsil eden, işlem aşaması kimliklerinin virgülle ayrılmış dizesidir. Aşağıdaki istek, bir hesap kaydı (ID = 679b2464-71b5-E711-80f5-00155d513100) için bir örnek oluşturur ve ikinci aşama olarak bir etkin aşama kümesi, S2 (ID = 19a11fc0-3398-4214-8522-cb2a97f66e4b).
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -240,17 +241,17 @@ Accept: application/json
 }
 ```
 
-### <a name="update-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı kaydını (süreç örneği) güncelleştirme
+### <a name="update-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı varlık kaydını güncelleştirme (işlem örneği)
 
-Bir süreç örneğini güncelleştirerek sonraki veya önceki aşamaya geçebilir, süreç örneğini bırakabilir, süreç örneğini yeniden etkinleştirebilir veya süreç örneğini bitirebilirsiniz. 
+Bir işlem örneğini bir sonraki veya önceki aşamaya geçmek, bir işlem örneğini bırakmak, bir işlem örneğini yeniden etkinleştirmek veya bir işlem örneğini işlemek için güncelleyebilirsiniz. 
 
 #### <a name="stage-navigation"></a>Aşama gezintisi
 
-Farklı bir aşamaya gitmek için, süreç örneği kaydını güncelleştirerek etkin aşama kimliğini değiştirmeniz ve geçilen yolu buna uygun olarak güncelleştirmeniz gerekir. İş süreci akışı örneğini güncelleştirirken yalnızca bir sonraki veya bir önceki aşamaya geçmeniz gerektiğini unutmayın.
+Farklı bir aşamaya gitmek için, bir işlem örneği kaydını, etkin aşama KIMLIĞINI değiştirmek ve geçiş yolunu uygun şekilde güncelleştirmek için güncelleştirmeniz gerekir. Bir iş süreci akış örneğini güncelleştirirken yalnızca bir sonraki veya önceki aşamaya geçmeniz gerektiğini unutmayın.
 
-Aşama gezintisi yapmak için, güncelleştirmek istediğiniz iş süreci akışı örneğinin kimliğini bilmeniz gerekir. İş süreci akışınızın tüm örneklerini almak için, daha önceki [İş süreci akışı varlığının tüm kayıtlarını (örneklerini) alma](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) başlığına bakın.
+Aşama gezintisi gerçekleştirmek için, güncelleştirmek istediğiniz iş süreci akışı örneğinin KIMLIĞI gerekir. İş süreci akışınızın tüm örneklerini almak için, bkz. [bir iş süreci akış varlığının tüm kayıtlarını alma (örnekler)](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) daha önce.
 
-Güncelleştirmek istediğiniz süreç örneği kimliğinin dc2ab599-306d-e811-80ff-00155d513100 olduğunu varsayarak, S1 olan etki aşamayı S2 olarak güncelleştirmek için aşağıdaki isteği kullanın:
+Güncelleştirmek istediğiniz işlem örneğinin KIMLIĞI dc2ab599-306d-e811-80ff-00155d513100 olduğunu varsayarsak, etkin aşamayı S1 'ten S2 'ye güncelleştirmek için aşağıdaki isteği kullanın:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
@@ -264,26 +265,26 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Süreç örneğinin durumunu değiştirme: Durdurma, Yeniden Etkinleştirme veya Tamamlama 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>İşlem örneğinin durumunu değiştirme: durdurma, yeniden etkinleştirme veya bitiş 
 
-Süreç örneğinin durumu şunlardan biri olabilir: **Etkin**, **Tamamlandı** veya **İptal Edildi**. Durum, süreç örneği kaydında aşağıdaki öznitelikler tarafından belirlenir:
+Bir işlem örneği şu durumlardan birine sahip olabilir: **etkin**, **tamamlandı**veya **durduruldu**. Durum, işlem örneği kaydındaki aşağıdaki özniteliklere göre belirlenir:
 
-- **statecode**: Süreç örneğinin durumunu görüntüler.
+- **StateCode**: işlem örneğinin durumunu görüntüler.
 
-    |Değer|Etiket|
+    |deeri|etiketin|
     |-----|-----|
-    |0    |Etkin|
-    |1    |Devre dışı|
+    |0    |Bkz|
+    |1    |Olmadan|
 
-- **statuscode**: Süreç örneğinin durumu hakkındaki bilgileri görüntüler.
+- **StatusCode**: işlem örneğinin durumu hakkındaki bilgileri görüntüler.
 
-    |Değer|Etiket|
+    |deeri|etiketin|
     |-----|-----|
-    |1    |Etkin|
-    |2    |Bitti|
-    |3    |Durduruldu|
+    |1    |Bkz|
+    |iki    |Bitirdikten|
+    |03    |Kesilmiş|
 
-Dolayısıyla, süreç örneğini **durdurmak** için, aşağıdaki örneği kullanın ve `statecode` ile `statuscode` değerlerini uygun şekilde ayarlayın:
+Bu nedenle, bir işlem örneğini **durdurmak** için aşağıdaki isteği kullanın `statecode` ve `statuscode` değerlerini uygun şekilde ayarlayın:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -298,15 +299,15 @@ OData-Version: 4.0
 ```
  
 > [!NOTE]
-> Bir süreç örneğini herhangi bir aşamada durdurabilirsiniz.
+> Herhangi bir aşamada bir işlem örneğini iptal edebilirsiniz.
 
-Benzer biçimde, süreç örneğini yeniden etkinleştirmek için, yukarıdaki kodda yer alan `statecode` ve `statuscode` değerlerini sırasıyla **0** ve **1** olarak değiştirin.
+Benzer şekilde, bir işlem örneğini yeniden etkinleştirmek için yukarıdaki koddaki `statecode` ve `statuscode` değerlerini sırasıyla **0** ve **1** ile değiştirin.
 
-Son olarak, süreç örneğinin durumunu **Bitti** olarak ayarlamak için (bu yalnızca süreç örneğinin en son aşamasında mümkündür), yukarıdaki kodda yer alan `statecode` ve `statuscode` değerlerini sırasıyla **0** ve **2** olarak değiştirin.
+Son olarak, işlem örneğinin durumunu **tamamlandı**olarak ayarlamak için, yalnızca bir işlem örneğinin son aşamasında olabilecek, yukarıdaki koddaki `statecode` ve `statuscode` değerlerini sırasıyla **0** ve **2** ile değiştirin.
 
 #### <a name="cross-entity-navigation"></a>Çapraz varlık gezintisi
 
-Bu örnekte çapraz varlık gezintisi için, süreç örneğinin etkin aşaması olarak son aşamayı (S3) (ID=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a) ayarlamalı, geçilen yolu buna göre güncelleştirmeli ve iş süreci akışı tanımına uygun olarak birincil varlık kaydı olarak bir kişi kaydı ayarlamalısınız.
+Bu örnekteki çapraz varlık gezintisi için, işlem örneğinin etkin aşamasını son aşama, S3 (ID = a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a) olarak ayarlamanız, geçiş yolunu uygun şekilde güncelleştirmeniz ve bir kişi kaydını birincil varlık kaydı olarak bu şekilde ayarlamanız gerekir iş süreci akış tanımı.
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -321,72 +322,72 @@ OData-Version: 4.0
 }
 ``` 
 
-### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı kaydını (süreç örneği) silme
+### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>İş süreci akışı varlık kaydını silme (işlem örneği)
 
-Aşağıdaki Web API'si isteğini kullanın:
+Aşağıdaki Web API isteğini kullanın:
 
-**İstek**
+**İsteyen**
 
 ```http
 DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
 ```  
 
-**Yanıt**
+**Yanıtıyla**
 
-Kayıt varsa, silme işleminin başarılı olduğunu göstermek için 204 durum değeriyle normal bir yanıt alırsınız. Varlık bulunamazsa, 404 durum değeriyle bir yanıt alırsınız.
+Kayıt varsa, silme işleminin başarılı olduğunu belirtmek için durum 204 olan normal bir yanıt alırsınız. Varlık bulunmazsa 404 durumuna sahip bir yanıt alırsınız.
 
-## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>RetrieveProcessInstances ve RetrieveActivePath iletilerini kullanma
+## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>Retrieveprocessınstances ve RetrieveActivePath iletilerini kullanma
 
-Tüm iş süreci tanımları genelinde bir varlık kaydının tüm iş süreci akışı örneklerini almak için `RetrieveProcessInstances` iletisini (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> veya <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) kullanın. Bir varlık için döndürülen iş süreci akışı örnekleri, örneğin `modifiedon` özniteliği temel alınarak sıralanır. Örneğin en son değiştirilen iş süreci akışı örneği, döndürülen koleksiyonun *ilk* kaydı olacaktır. En son değiştirilen iş süreci akışı örneği, varlık kaydı için kullanıcı arabiriminde etkin olan örnektir.  
+Tüm iş süreci tanımlarında bir varlık kaydı için tüm iş işlem akışı örneklerini almak üzere `RetrieveProcessInstances` iletisini (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> veya <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) kullanın. Bir varlık için döndürülen iş süreci akış örnekleri, örneğin `modifiedon` özniteliğine göre sıralanır. Örneğin, en son değiştirilen iş süreci akış örneği, döndürülen koleksiyondaki *ilk* kayıt olacaktır. En son değiştirilen iş süreci akış örneği, bir varlık kaydı için Kullanıcı arabiriminde etkin olan bir işlemdir.  
   
-`RetrieveProcessInstances` iletisinin kullanılması sonucunda varlık kaydı için döndürülen her iş süreci akışı örnek kaydı, `processstageid` özniteliğinde etkin aşamanın kimliğini depolar. Bu kimlik, etkin aşamayı bulmak ve ardından önceki veya sonraki aşamaya geçmek için kullanılabilir. Bunu yapmak için, önce `RetrieveActivePath` iletisini (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> veya <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>) kullanarak iş süreci akışı örneğinin ve süreç akışı örneğinde var olan aşamaların etkin yolunu bulmanız gerekir.   
+`RetrieveProcessInstances` iletisinin kullanılması sonucunda bir varlık kaydı için döndürülen her iş süreci akış örneği kaydı, etkin aşamanın KIMLIĞINI, etkin aşamayı bulmak için kullanılabilecek `processstageid` özniteliğinde depolar ve ardından önceki veya sonraki aşamaya geçer. Bunu yapmak için, önce bir iş süreci akış örneğinin etkin yolunu ve işlem akışı örneğinde bulunan aşamaları `RetrieveActivePath` iletisini kullanarak bulmanız gerekir (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> veya <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
- İş süreci akışı örneğinin etkin aşama ve etkin yol bilgilerine sahip olduktan sonra, bu bilgileri kullanarak etkin yolda önceki veya sonraki aşamaya geçebilirsiniz. Aşamalarda ileriye gitme işlemi sırayla yapılmalıdır; başka bir deyişle, etkin yolda yalnızca bir sonraki aşamaya ilerlemelisiniz.   
+ Bir iş işlemi akış örneği için etkin aşamasına ve etkin yol bilgilerine sahip olduktan sonra, etkin yoldaki önceki veya sonraki aşamaya geçmek için bu bilgileri kullanabilirsiniz. Aşamaların ileri gezinmesinin sırayla yapılması gerekir, diğer bir deyişle, yalnızca etkin yoldaki bir sonraki aşamaya geçmeniz gerekir.   
   
- Bu iki yöntemin kullanımını ve [Kuruluş hizmeti](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata)'ni kullanarak aşama gezintisini gösteren eksiksiz bir örnek kod için bkz. [Örnek: İş süreci akışlarıyla çalışma](sample-work-business-process-flows.md) 
+ Kodun, bu iki yöntemin kullanımını ve [kuruluş hizmetini](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata)kullanarak aşama gezinmesini gösterdiği tüm örnek için bkz. [örnek: Iş süreci akışlarıyla çalışma](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
-## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Varlık kaydını oluştururken iş süreci akışı uygulama
+## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Varlık kaydı oluştururken iş süreci akışını uygulama
 
-Bu bölümde Müşteri Etkileşimi'nde oluşturulan yeni varlık kayıtlarına iş süreci akışlarını otomatik olarak uygulamaya yönelik varsayılan davranış hakkında bilgi sağlanır ve yeni varlık kayıtlarına seçtiğiniz iş süreci akışını uygulamak için bu davranışı nasıl geçersiz kılabileceğiniz açıklanır.
+Bu bölümde, iş süreci akışlarını Common Data Service ' de oluşturulan yeni varlık kayıtlarına otomatik olarak uygulamak için varsayılan davranış ve yeni varlık kayıtları için tercih ettiğiniz iş süreci akışını uygulamak üzere nasıl geçersiz kılabileceğiniz hakkında bilgi verilmektedir.
 
-Varsayılan olarak, kendisine birden çok iş süreci akışı tanımlanmış olan bir varlık için, sistem yeni varlık kaydına iş süreci akışını uygularken aşağıdaki çok adımlı mantığı izler:
-1. İş süreci akışı tanım kayıtlarının **Workflow.PrimaryEntity** özniteliği temelinde, yeni varlık kaydına uygulanabilecek tüm iş süreci akışlarını belirleyin.
-2. Geçerli kullanıcının erişebildiği iş süreci akışı tanımlarını belirleyin. İş süreci akışına erişimi saptama ve yönetme hakkında bilgi için, bu konu başlığının önceki kısımlarında [İş süreci akışları için güvenliği yönetme](#BPFSecurity) bölümüne bakın.<br/>  
-3. Sistemdeki tüm iş süreci akışı tanımları varlık başına genel düzene tabidir. İş süreci akışının düzeni **Workflow.ProcessOrder** özniteliğinde depolanır. Varlığın iş süreci akışı tanımları bu düzene göre sıralanır ve sıralama değeri en düşük olan tanım seçilir.
-4. Son olarak, varlık kaydı bir iş uygulamasından (uygulama modülü) oluşturulduysa, yeni varlık kaydına otomatik olarak uygulanacak iş süreci akışını seçmek için bir filtreleme düzeyi daha uygulanır. Kullanıcılar bir uygulamada çalışırken, iş uygulamasına atanmış olan güvenlik rollerinden dolayı yalnızca erişimleri olan ilgili varlıklara, iş süreci akışlarına, görünümlere ve formlara erişebilir. 
-    - İş uygulamasının hiç iş süreci akışı yoksa, iş süreci akışı 3. adımda açıklandığı gibi uygulanır.
-    - İş uygulamasının bir veya birden çok iş süreci akışı varsa, yalnızca uygulamada var olan iş süreci akışları uygulanabilir. Bu durumda, kullanıcı bir iş uygulaması bağlamında çalışırken, 3. adımdaki iş süreci akışlarının listesi yine filtrelenerek uygulama modülünün içindeki iş uygulamasının parçası olan iş süreci akışları bırakılır ve bunlar süreç düzeni temelinde sıralanır. 
-    - İş uygulamasında varlık için iş süreci akışı yoksa veya kullanıcının erişebildiği bir iş süreci akışı yoksa, yeni varlık kaydına hiçbir iş süreci akışı uygulanmaz.
+Varsayılan olarak, için birden çok iş süreci akışı tanımlanmış bir varlık için, sistem aşağıdaki çok adımlı mantığı kullanarak yeni varlık kaydına bir iş süreci akışı uygular:
+1. İş süreci akış tanımı kayıtlarının **Iş akışı.** sın yenisliği özniteliğini temel alarak yeni varlık kaydı için geçerli olan tüm iş süreci akışlarını belirler.
+2. Geçerli kullanıcının erişimi olan iş süreci akış tanımlarını tanımlama. Bir iş süreci akışına erişimin nasıl belirlendiği ve yönetildiği hakkında bilgi için, bu konunun önceki kısımlarında yer alarak [iş için güvenlik işlem akışlarını yönetme](#BPFSecurity) bölümüne bakın.<br/>  
+3. Sistemdeki tüm iş süreci akış tanımları, varlık başına küresel bir sıraya tabidir. İş süreci akışının sırası **Iş akışı. ProcessOrder** özniteliğinde saklanır. Bir varlık için iş süreci akış tanımları bu sıraya göre sıralanır ve en az sipariş değerine sahip olan değer çekilir.
+4. Son olarak, bir iş uygulamasından (uygulama modülü) varlık kaydı oluşturulduysa, yeni varlık kaydına otomatik olarak uygulanacak iş süreci akışını seçmek için bir veya daha fazla filtreleme düzeyi uygulanır. Kullanıcılar, bir uygulamada çalışırken, yalnızca ilgili varlıklara, iş süreci akışlarına, görünümlere ve formlarına, iş uygulamasına atanmış güvenlik rollerinin sanallarından erişimi olan formlara erişebilirler. 
+    - İş uygulaması herhangi bir iş süreci akışı içermiyorsa, iş süreci akışı 3. adım kadar açıklandığı şekilde uygulanır.
+    - İş uygulamasında bir veya daha fazla iş işlemi akışı varsa, yalnızca uygulamada bulunan iş süreci akışları uygulanabilir. Bu durumda, Kullanıcı bir iş uygulaması bağlamında çalışırken, adım 3 ' ten iş süreci akışları, uygulama modülünde bulunan iş uygulamasının bir parçası olan ve işlem sırasına göre sıralanmış olan iş kolu listesine göre filtrelenmiştir. 
+    - Varlık için bir iş uygulaması akışı yoksa veya kullanıcının erişimi olan bir iş süreci yoksa, yeni varlık kaydı için hiçbir iş süreci akışı uygulanmaz.
 
-Yeni varlık kayıtlarına otomatik olarak iş süreci akışlarının varsayılan mantığını uygulamayı geçersiz kılabilirsiniz. Bunu yapmak için, yeni varlık kaydı oluştururken varlığın **ProcessId** özniteliğini şu değerlerden birine ayarlayın:
-- Yeni varlık kayıtlarına iş süreci akışı ayarlamayı atlamak için **Guid.Empty** olarak ayarlayın. Varlık kayıtlarını toplu olarak oluşturuyorsanız ama bunlara iş süreci akışı uygulanmasını istemiyorsanız, bunu yapmak isteyebilirsiniz.
-- Belirli bir iş süreci akışı varlığı ayarlayın (varlık başvurusu olarak). Bu durumda, sistem varsayılan mantık yerine belirtilen iş süreci akışını uygular.
+Yeni varlık kayıtlarına otomatik olarak uygulanan iş süreci akışlarının varsayılan mantığını geçersiz kılabilirsiniz. Bunu yapmak için, yeni bir varlık kaydı oluştururken varlığın **ProcessId** özniteliğini aşağıdaki değerlerden birine ayarlayın:
+- Yeni varlık kayıtları için bir iş süreci akışını ayarlamayı atlamak için **Guid. Empty** olarak ayarlayın. Varlık kayıtlarını toplu olarak oluşturuyorsanız ancak iş süreci akışının bunlara uygulanmasını istemiyorsanız bunu yapmak isteyebilirsiniz.
+- Belirli bir iş süreci akışı varlığına (bir varlık başvurusu olarak) ayarlayın. Bu durumda, sistem varsayılan mantık yerine belirtilen iş süreci akışını uygular.
 
-Yeni varlık kaydını oluştururken **ProcessId** özniteliği için değer ayarlamazsanız, sistem daha önce açıklandığı gibi varsayılan mantığı uygular.
+Yeni bir varlık kaydı oluştururken **ProcessId** özniteliği için bir değer ayarlanmamışsa, sistem, daha önce açıklandığı gibi varsayılan mantığı uygular.
 
 > [!NOTE]
-> Yeni varlık kayıtlarına otomatik olarak iş süreci akışlarının varsayılan mantığını uygulamanın geçersiz kılınması, yalnızca program aracılığıyla desteklenir. Kullanıcı arabirimini kullanarak bunu yapamazsınız.
+> Yeni varlık kayıtlarına otomatik olarak uygulanan iş süreci akışlarının varsayılan mantığını geçersiz kılmak yalnızca program aracılığıyla desteklenir. Bunu Kullanıcı arabirimini kullanarak yapamezsiniz.
 
-## <a name="legacy-process-related-attributes-in-entities"></a>Varlıklardaki eski süreçle ilgili öznitelikler
+## <a name="legacy-process-related-attributes-in-entities"></a>Varlıklarda işle ilgili eski öznitelikler
 
-Varlıklarda iş süreci akışları için etkinleştirilmiş eski süreçle ilgili öznitelikler (**ProcessId**, **StageId** ve **TraversedPath** gibi) zaten kullanım dışı bırakılmıştır. Hedef varlık kayıtları için bu eski süreçle ilgili özniteliklerin işlenmesi iş süreci akışı durumunun tutarlılığını garanti etmez ve desteklenen bir senaryo ***değildir***. İş süreci akışı varlığının özniteliklerinin, daha önce [İş süreci akışı varlık kayıtlarını oluşturma, alma, güncelleştirme ve silme (süreç örnekleri)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances) bölümünde açıklandığı gibi kullanılması önerilir.
+İş süreci akışları için etkinleştirilen varlıklarda işle ilgili eski öznitelikler ( **ProcessId**, **Yüklemekimliği**ve **TraversedPath**gibi) zaten kullanım dışıdır. Hedef varlık kayıtları için bu eski işlemle ilgili öznitelikleri işlemek, iş süreci akış durumunun tutarlılığını garanti etmez ve desteklenen bir senaryo ***değildir*** . Önerilen yol, iş süreci akışı varlık [kayıtlarını oluşturma, alma, güncelleştirme ve silme](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances) bölümünde açıklandığı gibi iş süreci akış varlığının özniteliklerini kullanmaktır (işlem örnekleri)
 
-Bunun tek istisnası, yeni kayda iş süreci akışının varsayılan olarak uygulanmasını geçersiz kılmak için varlık kaydını oluştururken program aracılığıyla **ProcessId** özniteliğini değiştirmektir. Bu, önceki bölümde ([Varlık kaydını oluştururken iş süreci akışını uygulama](#ApplyBPF)) açıklanmıştır.
+Bunun tek istisnası, önceki bölümde açıklandığı gibi iş süreci akışının varsayılan uygulamasını yeni kayda geçersiz kılmak üzere bir varlık kaydı oluştururken program aracılığıyla **ProcessId** özniteliğini program aracılığıyla değiştiriyor: [iş Uygula bir varlık kaydı oluşturulurken işlem akışı](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>İş süreci akışları için istemci tarafı programlama desteği  
- Form betiklerinizde iş süreci akışlarıyla etkileşimli çalışmak için kullanabileceğiniz bir istemci tarafı nesnesi vardır. İş süreci akışları, kayda bir süreç uygulandığında, aşama değiştirildiğinde ya da durumu `Active`, `Finished` veya `Aborted` olarak değiştirildiğinde istemci tarafı olaylarını tetikler. Daha fazla bilgi: [formContext.data.process (İstemci API başvurusu)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
+ Form betiklerinizde iş süreci akışlarıyla etkileşim kurmak için kullanabileceğiniz bir istemci tarafı nesnesi vardır. İş süreci akışları bir işleme her uygulandığında istemci tarafı olaylarını tetikler, aşama değişir veya durum `Active`, `Finished`veya `Aborted`olarak değişir. Daha fazla bilgi: [FormContext. Data. Process (ISTEMCI API Başvurusu)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
   
 <a name="BKMK_MaxSettings"></a>   
-## <a name="maximum-number-of-processes-stages-and-steps"></a>Süreç, aşama ve adım sayısı üst sınırı  
- Varlığa göre, etkinleştirilmiş iş süreci akışları sayısı üst sınırı için varsayılan değer 10'dur. `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity` özniteliğini kullanarak farklı bir değer belirtebilirsiniz. Öte yandan değer 10'dan büyük olursa, süreçlerde geçiş yaptığınızda veya atanmış bir iş süreci akışı olan bir kaydı açtığınızda sisteminizin performansında düşüş yaşanabilir. Süreçler birden çok varlığa yayıldığında bu durum özellikle fark edilir olabilir.  
+## <a name="maximum-number-of-processes-stages-and-steps"></a>En fazla işlem, aşama ve adım sayısı  
+ Varlık başına, en fazla etkinleştirilen iş işlemi akışı sayısı için varsayılan değer 10 ' dur. `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity` özniteliğini kullanarak farklı bir değer belirtebilirsiniz. Ancak değer 10 ' dan büyükse, işlemleri değiştirdiğinizde sisteminizin performansında bir azalma veya atanan iş süreci akışına sahip bir kayıt açarsınız. Bu, özellikle birden çok varlık yayılane olursa fark edilebilir.  
   
- Aşağıdaki ayarlar özelleştirilebilir değildir:  
+ Aşağıdaki ayarlar özelleştirilemez:  
   
--   Süreçteki varlık başına aşama sayısı üst sınırı 30'dur.  
+-   İşlemdeki varlık başına en fazla aşama sayısı 30 ' dur.  
   
--   Her aşamadaki adım sayısı üst sınırı 30'dur.  
+-   Her bir aşamadaki en yüksek adım sayısı 30 ' dur.  
   
--   Süreç akışına katılabilen varlık sayısı üst sınırı da 5'tir.  
+-   İşlem akışına katılabileceğiniz en fazla varlık sayısı 5 ' tir.  
 

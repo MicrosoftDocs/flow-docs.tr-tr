@@ -1,11 +1,11 @@
 ---
-title: Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme | Microsoft Docs
-description: Microsoft Flow deneyimlerini web sitenize veya uygulamanıza ekleyin.
+title: Microsoft Flow web siteleri ve uygulamalarla tümleştirin | Microsoft Docs
+description: Microsoft Flow deneyimlerini Web sitenize veya uygulamanıza ekleyin.
 services: ''
 suite: flow
 documentationcenter: na
-author: bbarath
-manager: erikre
+author: MSFTMAN
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,63 +14,65 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2019
-ms.author: barathb
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 47d44b2c97275add492153d85138b7d11b554530
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: cf2f14826670cf221411fa2204ee9b2c5581222e
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457409"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547721"
 ---
-# <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow’u web siteleri ve uygulamalarla tümleştirme
+# <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow web siteleri ve uygulamalarla tümleştirin
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Kullanıcılarınıza, kişisel veya profesyonel görevlerini otomatik hale getirmeleri için kolay bir yol sunmak üzere, *akış pencere öğelerini* kullanarak Microsoft Flow'u uygulamanıza veya web sitenize ekleyin.
+Kullanıcılarınıza kişisel veya profesyonel görevlerini otomatik hale getirmek için basit bir yol sağlamak üzere *akış pencere* öğelerini kullanarak uygulamanıza veya web sitenize Microsoft Flow ekleyin.
 
-Akış pencere öğeleri konak belgesinde yer alan iframe'lerdir. Bu belgede Microsoft Flow tasarımcısındaki bir sayfaya işaret edilir. Bu pencere öğeleri belirli Microsoft Flow işlevlerini üçüncü taraf uygulamayla tümleştirir.
+Akış pencere öğeleri, bir konak belgesinde yer alan iframe 'lardır. Bu belge Microsoft Flow tasarımcısında bir sayfaya işaret eder. Bu pencere öğeleri, belirli Microsoft Flow işlevselliğini üçüncü taraf uygulamayla tümleştirir.
 
-Pencere öğeleri basit olabilir. Örneğin, konakla iframe arasında hiçbir iletişim olmadan şablon listesini işleyen pencere öğesi basit bir pencere öğesidir. Pencere öğeleri karmaşık da olabilir. Örneğin, bir şablondan akış sağlayan ve ardından konakla pencere öğesi arasında iki yönlü iletişim üzerinden akışı tetikleyen pencere öğesi karmaşıktır.
+Pencere öğeleri basit olabilir. Örneğin, ana bilgisayar ve iframe arasında iletişimi olmayan şablonların bir listesini oluşturan bir pencere öğesi. Pencere öğeleri de karmaşık olabilir. Örneğin, bir şablondan akış sağlayan ve ardından ana bilgisayar ve pencere öğesi arasında iki yönlü iletişim aracılığıyla akışı tetikleyen bir pencere öğesi.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-- **Microsoft Hesabı** ya da
-- İş veya okul hesabı
+- Bir **Microsoft hesabı** veya
+- Bir iş veya okul hesabı
 
-## <a name="use-the-unauthenticated-widget"></a>Kimliği doğrulanmamış pencere öğesi kullanma
-Kimliği doğrulanmış bir şablon kullanmak için, bunu iframe'de doğrudan konak uygulamaya ekleyin. JS SDK'sı veya erişim belirtecine ihtiyacınız yoktur. 
+## <a name="use-the-unauthenticated-widget"></a>Kimliği doğrulanmamış pencere öğesini kullan
+Kimliği doğrulanmamış şablonlar pencere öğesini kullanmak için, bir iframe kullanarak doğrudan konak uygulamasına ekleyin. JS SDK veya erişim belirtecine ihtiyacınız yoktur. 
 
-### <a name="show-templates-for-your-scenarios"></a>Senaryolarınıza ilişkin şablonları gösterme
-Başlangıç olarak, Microsoft Flow şablonlarını web sitenizde göstermek için şu kodu ekleyin:
+### <a name="show-templates-for-your-scenarios"></a>Senaryolarınız için şablonları gösterme
+Başlamak için, Web sitenizde Microsoft Flow şablonları göstermek üzere bu kodu ekleyin:
 
 ```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
-&pagesize={number of templates}&destination={destination}"></iframe>
+&pagesize={number of templates}&destination={destination}&category={category}"></iframe>
 ```
 
-| Parametre | Açıklama |
+| parametresinin | Açıklaması |
 | --- | --- |
-| yerel ayar |Şablon görünümü için dört harfli dil ve bölge kodu. Örneğin, `en-us` Amerikan İngilizcesi'ni ve `de-de`, Almanca'yı temsil eder. |
-| arama terimi |Görünümde göstermek istediğiniz şablonlara ilişkin arama terimi. Örneğin, Wunderlist şablonlarını göstermek için `wunderlist` öğesini arayın. |
+| ayarlar |Şablon görünümü için dört harfli dil ve bölge kodu. Örneğin, `en-us` Amerikan Ingilizce 'yi temsil eder ve `de-de` Almanca 'yı temsil eder. |
+| arama terimi |Görünümde göstermek istediğiniz şablonların arama terimi. Örneğin, Wunderlist şablonlarını göstermek için `wunderlist` aratın. |
 | şablon sayısı |Görünümde göstermek istediğiniz şablon sayısı. |
-| hedef |Kullanıcılar şablonu seçtiğinde açılan sayfa. Şablonla ilgili ayrıntıları göstermek için `details` girin veya Microsoft Flow tasarımcısını açmak için `new` girin. |
-| parameters.{name} |Akışa geçirmek için ek bağlam. |
-| templateCategory | Belirtilen şablon kategorisini filtreler                     | 
+| Hedefine |Kullanıcılar şablonu seçerken açılan sayfa. Şablonla ilgili ayrıntıları göstermek için `details` girin veya Microsoft Flow tasarımcısını açmak için `new` girin. |
+| alan |Verilen şablon kategorisine filtreler. | 
+| parametrelere. ada |Akışa geçirilecek ek bağlam. |
 
-Hedef parametre `new` olursa, kullanıcı bir şablon seçtiğinde Microsoft Flow tasarımcısı açılır. Ardından kullanıcılar tasarımcıda akış oluşturabilir. Pencere öğesiyle ilgili eksiksiz bir deneyim elde etmek istiyorsanız bir sonraki bölüme bakın.
 
-### <a name="passing-additional-parameters-to-the-flow-template"></a>Akış şablonuna ek parametreleri geçirme
+Hedef parametre `new`, kullanıcılar bir şablon seçerken Microsoft Flow tasarımcı açılır. Kullanıcılar daha sonra Tasarımcıda bir akış oluşturabilir. Pencere öğesinde tam deneyimin olmasını istiyorsanız sonraki bölüme bakın.
 
-Kullanıcı, web sitenizde veya uygulamanızda belirli bir bağlamda ise bu bağlamı akışa geçirmek isteyebilirsiniz. Örneğin, bir kullanıcı Wunderlist'te belirli bir listeye bakarken *Notify me when an item is added to a list* (Listeye bir öğe eklendiğinde bana bildir) için bir şablon açabilir. Liste kimliğini akışa bir *parametre* olarak geçirmek için bu adımları izleyin:
+### <a name="passing-additional-parameters-to-the-flow-template"></a>Akış şablonuna ek parametreler geçirme
 
-1. Yayımlamadan önce, akış şablonunda parametreyi tanımlayın. Parametre şöyle görünür: `@{parameters('parameter_name')}`.
-1. Parametreyi iframe src içine alın. Örneğin, **listName** adlı bir parametreniz varsa `&parameters.listName={the name of the list}` öğesini ekleyin.
+Kullanıcı Web sitenizde veya uygulamanızda belirli bir bağlamda yer alıyorsa, bu bağlamı akışa geçirmek isteyebilirsiniz. Örneğin, bir Kullanıcı bir *listeye bir öğe eklendiğinde* , Wunderlist 'te belirli bir listeye bakarken bana bir şablon açabilir. Liste KIMLIĞINI akışa *parametre* olarak geçirmek için şu adımları izleyin:
+
+1. Bir parametreyi yayımlamadan önce akış şablonunda tanımlayın. Bir parametre `@{parameters('parameter_name')}`gibi görünür.
+1. Parametreyi iframe src 'nin sorgu dizesinde geçirin. Örneğin, " **" adlı bir**parametreye sahipseniz `&parameters.listName={the name of the list}` ekleyin.
 
 ### <a name="full-sample"></a>Tam örnek
 
-İlk dört Almanca Wunderlist şablonunu görüntülemek ve kullanıcıyı **myCoolList** ile başlatmak için bu kodu kullanın:
+Almanya 'da ilk dört Wunderlist şablonunu göstermek ve kullanıcıyı **Mycoollist**ile başlatmak için şu kodu kullanın:
 
 ```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
@@ -79,73 +81,73 @@ Kullanıcı, web sitenizde veya uygulamanızda belirli bir bağlamda ise bu bağ
 
 ## <a name="use-the-authenticated-flow-widgets"></a>Kimliği doğrulanmış akış pencere öğelerini kullanma
 
-Aşağıdaki tabloda kullanıcı kimlik doğrulaması erişim belirteci kullanılarak pencere öğesinin içinde tam deneyimi destekleyen Microsoft Flow pencere öğelerinin listesi gösterilir. Pencere öğelerini eklemek ve gerekli kullanıcı erişim belirtecini sağlamak için Microsoft Flow'un Javascript Yazılım Geliştirme Seti'ni (JS SDK) kullanmanız gerekir.
+Aşağıdaki tabloda, Kullanıcı kimlik doğrulaması erişim belirtecini kullanarak pencere öğesi içindeki tam deneyimi destekleyen Microsoft Flow Pencere öğelerinin listesi gösterilmektedir. Pencere öğelerini eklemek ve gerekli Kullanıcı erişim belirtecini sağlamak için Microsoft Flow JavaScript yazılım geliştirici seti 'ni (JS SDK) kullanmanız gerekir.
 
 | Pencere öğesi türü    | Desteklenen özellik                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| Akışlar          | Kişisel ve paylaşılan akışlar için bir sekmede akış listesini gösterir. Mevcut şablonu düzenleyin ya da şablondan veya sıfırdan yeni akış oluşturun. | 
-| FlowCreation   | Konak uygulamanın sağladığı şablon kimliğinden bir akış oluşturur.                                                                | 
-| Runtime        | Konak uygulamanın sağladığı el ile veya karma tetikleyiciyi tetikler.                                                        | 
-| ApprovalCenter | Onay istekleri ekler ve onayları gönderir.                                                                                        | 
-| Şablonlar      | Şablon listesi gösterir. Kullanıcı yeni akış oluşturmak için bir şablon seçer.                                                                         | 
+| Var          | Kişisel ve paylaşılan akışlar için bir sekmedeki akışların listesini gösterir. Mevcut bir akışı düzenleyin veya bir şablondan veya boş olarak yeni bir akış oluşturun. | 
+| Flowoluşturma   | Ana bilgisayar uygulamasının sağladığı şablon kimliğinden bir akış oluşturur.                                                                | 
+| çalışma zamanı        | Ana bilgisayar uygulamasının sağladığı bir el ile veya karma tetikleme akışını tetikler.                                                        | 
+| approvalCenter | Onay isteklerini ve gönderilen onayları gömer.                                                                                        | 
+| şablondan      | Şablonların listesini gösterir. Kullanıcı yeni bir akış oluşturmak için bir tane seçer.                                                                         | 
 
-Kullanıcıların, (Microsoft Flow'a gitmek yerine) doğrudan web sitenizden veya uygulamanızdan akış oluşturmasını ve yönetmesini sağlamak için, kimliği doğrulanmış Flow SDK'sını kullanın. Kimliği doğrulanmış SDK'yı kullanmak için Microsoft Hesabı'nda veya Azure Active Directory'de kullanıcının oturumunu açmanız gerekir.
+Kullanıcıların doğrudan Web siteniz veya uygulamanızdan akış oluşturmalarına ve yönetmesine izin vermek için kimliği doğrulanmış akış SDK 'sını kullanın (Microsoft Flow gezinmek yerine). Kimliği doğrulanmış SDK 'Yı kullanmak için kullanıcıyı Microsoft hesabıyla veya Azure Active Directory oturum açmanız gerekir.
 
 > [!NOTE]
-> Pencere öğelerini kullanırken Microsoft Flow markasını gizlemenin hiçbir yolu yoktur.
+> Pencere öğeleri kullanırken Microsoft Flow markalamayı gizlemenin bir yolu yoktur.
 
-## <a name="widget-architecture"></a>Pencere öğesi mimarisi
+## <a name="widget-architecture"></a>pencere öğesi mimarisi
 
-Microsoft Flow pencere öğeleri, Microsoft Flow'a başvuran bir iframe'i konak uygulamaya ekleme yoluyla çalışır. Konak, Microsoft Flow pencere öğesine gereken erişim belirtecini sağlar. Microsoft Flow'un JS SDK'sı konak uygulamanın pencere öğesi yaşam döngüsünü başlatmasına ve yönetmesine olanak tanır.
+Microsoft Flow pencere öğeleri, bir konak uygulamasına Microsoft Flow başvuran bir iframe katıştırarak çalışır. Ana bilgisayar Microsoft Flow pencere öğesi için gereken erişim belirtecini sağlar. Microsoft Flow JS SDK 'Sı, ana bilgisayar uygulamasının pencere öğesi yaşam döngüsünü başlatmasını ve yönetmesini sağlar.
 
 ![pencere öğesi mimarisi](../media/embed-flow-dev/Architecture.png)
 
 ### <a name="js-sdk-details"></a>JS SDK ayrıntıları
 
-Microsoft Flow takımı JS SDK'yı, Flow pencere öğelerini üçüncü taraf uygulamalara tümleştirmeyi kolaylaştırmak için sağlar. Flow hizmetinde genel bağlantı olarak sağlanan Flow JS SDK'sı, konak uygulamanın pencere öğesinden olayları işlemesine ve pencere öğesine eylemler göndererek Flow uygulamasıyla etkileşim kurmasına olanak tanır. Pencere öğesi olayları ve eylemleri pencere öğesinin türüne özgüdür.
+Microsoft Flow ekibi, üçüncü taraf uygulamalarda akış Pencere öğelerinin tümleştirilmesine yardımcı olmak için JS SDK 'sını sağlar. Flow JS SDK 'Sı, Flow hizmetinde ortak bir bağlantı olarak kullanılabilir ve konak uygulamanın pencere öğesi üzerindeki olayları işlemesini ve pencere öğesine eylemler göndererek akış uygulamasıyla etkileşime geçmesini sağlar. Pencere öğesi olayları ve eylemleri pencere öğesi türüne özeldir.
 
 ### <a name="widget-initialization"></a>Pencere öğesi başlatma
 
-Pencere öğesini başlatmadan önce konak uygulamaya Flow JS SDK'sı başvurusu eklenmelidir.
+Pencere öğesi başlatılmadan önce Flow JS SDK başvurusunun konak uygulamasına eklenmesi gerekir.
 
 ```html
 <script src="https://flow.microsoft.com/Content/msflowsdk-1.1.js"></script>
 ```
 
-JSON nesnesinde isteğe bağlı hostName ve locale değerlerini geçirerek bir JS SDK örneği oluşturun.
+Bir JSON nesnesinde isteğe bağlı konak adı ve yerel ayar değerlerini geçirerek bir JS SDK örneği oluşturun.
 
 ```javascript
 var sdk = new MsFlowSdk({
     hostName:'https://flow.microsoft.com',
-    locale:'en-US',
+    locale:'en-US'
 }); 
 ```
 
-| Ad     | Gerekli/İsteğe Bağlı | Açıklama                                                    | 
+| Ada     | Gerekli/Isteğe bağlı | Açıklaması                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
-| `hostName` | İsteğe bağlı          | Microsoft Flow konak adı, örneğin https://flow.microsoft.com        | 
-| `locale`   | İsteğe bağlı          | Pencere öğesi için istemcinin yerel ayarı (geçirilmezse varsayılan olarak `en-Us` kullanılır) | 
+| `hostName` | Seçim          | Microsoft Flow ana bilgisayar adı, örneğin https://flow.microsoft.com        | 
+| `locale`   | Seçim          | Pencere öğesinin istemci yerel ayarı (belirtilmemişse `en-Us` varsayılan olarak) | 
 
 
-JS SDK örneği oluşturulduktan sonra konak uygulamadaki bir üst öğede Microsoft Flow pencere öğesini başlatabilir ve ekleyebilirsiniz. Bunu yapmak için HTML div'i ekleyin:
+JS SDK örneği oluşturulduktan sonra konak uygulamasındaki üst öğe içinde bir Microsoft Flow pencere öğesi başlatabilir ve ekleyebilirsiniz. Bunu yapmak için bir HTML div ekleyin:
 
 ```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
-Ardından Microsoft Flow pencere öğesini JS SDK renderWidget() yöntemiyle başlatın. Pencere öğesi türünü ve buna karşılık gelen ayarları sağlamayı unutmayın.
+Sonra, Microsoft Flow pencere öğesini JS SDK `renderWidget()` yöntemiyle başlatın. Pencere öğesi türünü ve bunlara karşılık gelen ayarları sağladığınızdan emin olun.
 
 ```javascript
 var widget = sdk.renderWidget('<widgettype>', {
-        container: 'flow-div',
+        container: 'flowDiv',
         flowsSettings: {},
         templatesSettings: {},
         approvalSettings: {},
-        widgetStyleSettings: {},
+        widgetStyleSettings: {}
 });
 ```
 
-Burada konak uygulamanın boyutlarıyla eşleşecek şekilde değiştirebileceğiniz kapsayıcı için örnek stil gösterilmiştir.
+Burada, ana bilgisayar uygulamasının boyutlarıyla eşleşecek şekilde değiştirebileceğiniz kapsayıcı için örnek bir stil verilmiştir.
 
 ```html
 <head>
@@ -160,19 +162,19 @@ Burada konak uygulamanın boyutlarıyla eşleşecek şekilde değiştirebileceğ
 </head>
 ```
 
-Bunlar, `renderWidget()` yönteminin parametreleridir: 
+`renderWidget()`için parametreler şunlardır: 
 
-| Parametre        | Gerekli/İsteğe Bağlı | Açıklama                                                                                 | 
+| parametresinin        | Gerekli/Isteğe bağlı | Açıklaması                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
-| `container`        | Gerekli          | Pencere öğesinin ekleneceği konak sayfasındaki DIV öğesinin kimliği                      | 
-| `environmentId`    | İsteğe bağlı          | Pencere öğelerine bir ortam kimliği gerekir. Kimlik sağlamazsanız, varsayılan ortam kullanılır. | 
-| `flowsSettings`    | İsteğe bağlı          | Microsoft Flow ayarları nesnesi                                                                        | 
-| `templateSettings` | İsteğe bağlı          | Şablon ayarları nesnesi                                                                    | 
-| `approvalSettings` | İsteğe bağlı          | Onay ayarları nesnesi                                                                    | 
+| `container`        | Gerekli          | Pencere öğesinin katıştırılacağı konak sayfasındaki DIV öğesinin kimliği.                   | 
+| `environmentId`    | Seçim          | Pencere öğelerinin bir ortam kimliği olması gerekir. Bir kimlik sağlamazsanız, varsayılan bir ortam kullanılır. | 
+| `flowsSettings`    | Seçim          | Microsoft Flow Settings nesnesi                                                                        | 
+| `templateSettings` | Seçim          | Şablon Ayarları nesnesi                                                                    | 
+| `approvalSettings` | Seçim          | Onay Ayarları nesnesi                                                                    | 
 
 ### <a name="access-tokens"></a>Erişim belirteçleri
 
-JS SDK `renderWidget()` çalıştırıldıktan sonra, JS SDK Microsoft Flow pencere öğesi URL'sine işaret eden bir iframe başlatır. Bu URL, sorgu dizesi parametrelerinde tüm ayarları içerir. Konak uygulamanın pencere öğesini başlatmadan önce kullanıcı için bir Microsoft Flow erişim belirteci (hedef kitle https://service.flow.microsoft.com) ile Azure Active Directory JWT belirteci) alması gerekir. Pencere öğesi konaktan erişim belirteci istemek için bir `GET_ACCESS_TOKEN` olayı tetikler. Konak olayı işlemeli ve belirteci pencere öğesine geçirmelidir:
+JS SDK `renderWidget()` çalıştıktan sonra, JS SDK, Microsoft Flow pencere öğesi URL 'sine işaret eden bir IFRAME başlatır. Bu URL, sorgu dizesi parametrelerinin tüm ayarlarını içerir. Konak uygulamasının, pencere öğesini başlatılmadan önce Kullanıcı için bir Microsoft Flow erişim belirteci alması gerekir (hedef kitle https://service.flow.microsoft.com) Azure Active Directory JWT belirteci. Pencere öğesi, konaktan bir erişim belirteci istemek için `GET_ACCESS_TOKEN` bir olay oluşturur. Konağın olayı işlemesi ve belirteci pencere öğesine geçirmesi gerekir:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
@@ -182,11 +184,11 @@ widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
 });
 ```
 
-Belirtecin bakımı ve istendiğinde geçerli bir süre sonu tarihiyle pencere öğesine geçirilmesi konak uygulamanın sorumluluğundadır. Pencere öğesi daha uzun süre açık kalırsa, konak belirtecin süresinin dolup dolmadığını denetlemeli ve pencere öğesine geçirmeden önce gerekiyorsa belirteci yenilemelidir.
+Ana bilgisayar uygulaması, belirtecin korunmasından ve istendiği sırada pencere öğesine geçerli bir süre sonu tarihiyle geçirilmesinden sorumludur. Pencere öğesi daha uzun süreler için açıksa, ana bilgisayar belirtecin süresi dolup dolduğunu denetlemelidir ve onu pencere öğesine geçirmeden önce gerekliyse belirteci yenileyebilir.
 
-### <a name="detecting-if-the-widget-is-ready"></a>Pencere öğesinin hazır olup olmadığını algılama
+### <a name="detecting-if-the-widget-is-ready"></a>Pencere öğesinin Ready olup olmadığı algılanıyor
 
-Başarılı bir başlatma işleminden sonra, pencere öğesi hazır olduğunu bildirmek için bir olay tetikler. Konak `WIDGET_READY` olayını dinleyebilir ve ek konak kodunu yürütebilir.
+Başlatma başarılı olduktan sonra pencere öğesi, pencere öğesinin kullanıma hazırlanmasının olduğunu bildirmek için bir olay oluşturur. Ana bilgisayar `WIDGET_READY` olayını dinleyebilir ve ek ana bilgisayar kodu yürütebilir.
 
 ```javascript
 widget.listen("WIDGET_READY", function() {
@@ -199,7 +201,7 @@ widget.listen("WIDGET_READY", function() {
 
 ### <a name="flowssettings"></a>FlowsSettings 
 
-FlowsSettings, Microsoft Flow pencere öğesinin işlevselliğini özelleştirmek için kullanılabilir.
+FlowsSettings, Microsoft Flow pencere öğesinin işlevlerini özelleştirmek için kullanılabilir.
 
 ```javascript
 flowsSettings?: {
@@ -209,15 +211,15 @@ flowsSettings?: {
 };
  ```
 
-| Parametre | Gerekli/İsteğe Bağlı | Açıklama | 
+| parametresinin | Gerekli/Isteğe bağlı | Açıklaması | 
 |-----------|-------------------|-------------| 
-| `createFromBlankTemplateId` | Gerekli | Kullanıcı Flow pencere öğesinde **Boş akış oluştur** düğmesini seçtiğinde şabonun GUID değerini kullanın | 
-| `flowsFilter` | İsteğe bağlı | Microsoft Flow pencere öğesi akışları listelerken sağlanan filtreyi uygular. Örneğin, belirli bir SharePoint sitesine başvuran akışları gösterebilirsiniz. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
-| `tab` | İsteğe bağlı | Microsoft Flow pencere öğesinde varsayılan olarak etkin sekmeyi gösterir. <br /> Örneğin, <br /> ```tab:'sharedFlows' ``` Takım sekmesini görüntüler<br /> ve ``` tab:'myFlows' ``` da Akışlarım sekmesini görüntüler. |   
+| `createFromBlankTemplateId` | Gerekli | Kullanıcı akış pencere öğesinde **boş oluştur** düğmesini seçtiğinde şablonun GUID 'ini kullanın | 
+| `flowsFilter` | Seçim | Microsoft Flow pencere öğesi, akışlar listelenirken belirtilen filtreyi uygular. Örneğin, belirli bir SharePoint sitesine başvuran akışları gösterin. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `tab` | Seçim | Microsoft Flow pencere öğesinde göstermek için etkin sekmesini varsayılan olarak belirler. <br /> Örneğin, <br /> Takım sekmesini ```tab:'sharedFlows' ``` görüntüler<br /> ve ``` tab:'myFlows' ``` Akışlarım sekmesini görüntüler. |   
 
-### <a name="templatessettings"></a>TemplatesSettings 
+### <a name="templatessettings"></a>Templates ayarları 
 
-Bu Flows, FlowCreation ve Templates pencere öğeleri gibi şablondan akış oluşturmanıza olanak tanıyan tüm pencere öğelerine uygulanır.
+Bu, akışlar, Flowoluşturma ve şablonlar pencere öğeleri gibi bir şablondan akış oluşturmanıza olanak sağlayan tüm pencere öğeleri için geçerlidir.
 
 ```javascript
 templatesSettings?: {
@@ -231,17 +233,17 @@ templatesSettings?: {
 };
  ```
 
-| Parametre |Gerekli/İsteğe Bağlı | Açıklama                                                                        
+| parametresinin |Gerekli/Isteğe bağlı | Açıklaması                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | İsteğe bağlı          | Şablondan akış oluştururken kullanılacak tasarım zamanı parametreleri, örneğin: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
-| `destination` | İsteğe bağlı          | Geçerli değerler 'new' veya 'details' değerleridir. Bu 'details' olarak ayarlandığında, şablondan akış oluştururken ayrıntı sayfası gösterilir.     |
-| `pageSize` | İsteğe bağlı          | Görüntülenecek şablon sayısı. Varsayılan boyut = 6 | 
-| `searchTerm` | İsteğe bağlı          | Sağlanan arama terimiyle eşleşen şablonları görüntüler| 
-| `templateCategory` | İsteğe bağlı          | Belirli bir kategorideki şablonları görüntüler| 
+|`defaultParams` | Seçim          | Şablondan akış oluştururken kullanılacak tasarım zamanı parametreleri, örneğin: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+| `destination` | Seçim          | Geçerli değerler ' New ' veya ' details '. ' Details ' olarak ayarlandığında, bir şablondan akış oluştururken bir ayrıntı sayfası gösterilir.     |
+| `pageSize` | Seçim          | Görüntülenecek şablon sayısı. Varsayılan boyut = 6 | 
+| `searchTerm` | Seçim          | Belirtilen arama terimiyle eşleşen şablonları görüntüle| 
+| `templateCategory` | Seçim          | Belirli bir kategoride şablonları görüntüleme| 
  
-### <a name="approvalcentersettings"></a>ApprovalCenterSettings
+### <a name="approvalcentersettings"></a>Approvalcenterayarları
 
-ApprovalCenter pencere öğelerine uygulanır.
+ApprovalCenter pencere öğeleri için geçerlidir.
 
  ```javascript
  approvalCenterSettings?: {
@@ -252,22 +254,22 @@ ApprovalCenter pencere öğelerine uygulanır.
     hideLink?: boolean
 };
  ```
-| Parametre | Gerekli/İsteğe Bağlı | Açıklama | 
+| parametresinin | Gerekli/Isteğe bağlı | Açıklaması | 
 |------------|-------------------|--------------| 
-| `hideLink`| İsteğe bağlı | Bu `true` olarak ayarlandığında, pencere öğesi alınan ve gönderilen onay bağlantılarını gizler | 
-| `autoNavigateToDetails`| İsteğe bağlı | Bu `true` olarak ayarlandığında ve tek bir onay olduğunda, pencere öğesi onay ayrıntılarını otomatik olarak açar | 
-| `approvalsFilter`| İsteğe bağlı | Onay pencere öğesi onayları listelerken belirtilen onay filtresini uygular, örneğin:    Onay pencere öğesi onayları listelerken belirtilen onay filtresini uygular, örneğin: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
-| `tab`| İsteğe bağlı | Flow pencere öğesinde varsayılan olarak gösterilecek etkin sekme. <br/> Geçerli değerler: 'receivedApprovals', 'sentApprovals' | 
-| `showSimpleEmptyPage`| İsteğe bağlı | Hiç onay olmadığında boş bir sayfa gösterir | 
-| `hideInfoPaneCloseButton` | İsteğe bağlı | Bilgi bölmesi Kapat düğmesini gizler (veya konağın zaten bir Kapat düğmesi vardır) | 
+| `hideLink`| Seçim | `true`olarak ayarlandığında pencere öğesi alındı ve gönderilen onay bağlantılarını gizler | 
+| `autoNavigateToDetails`| Seçim | `true`olarak ayarlandığında pencere öğesi yalnızca bir onay mevcut olduğunda onay ayrıntılarını otomatik olarak açar | 
+| `approvalsFilter`| Seçim | Onay pencere öğesi onayları listelerken belirtilen onay filtresini uygular, örneğin: onay pencere öğesi onayları listelerken belirtilen onay filtresini uygular, örneğin: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `tab`| Seçim | Akış pencere öğesinde gösterilecek varsayılan etkin sekme. <br/> Geçerli değerler: ' Receivedapproışları ', ' Sentapproışları ' | 
+| `showSimpleEmptyPage`| Seçim | Onay olmadığında boş bir sayfa gösterir | 
+| `hideInfoPaneCloseButton` | Seçim | Bilgi bölmesi kapatma düğmesini gizler (veya konağın zaten bir kapatma düğmesi var) | 
 
 <!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
 
 ## <a name="widget-events"></a>Pencere öğesi olayları
 
-Microsoft Flow pencere öğesi, konağın pencere öğesi yaşam döngüsü olaylarını dinlemesini sağlayan olayları destekler. Microsoft Flow pencere öğesi iki tür olayı destekler: tek yönlü bildirim olayları (örneğin, PencereÖğesi\_Hazır) ve konaktan verileri getirmek için pencere öğesinden tetiklenen olaylar (Erişim\_Belirteci\_Al). Konağın pencere öğesinden tetiklenen belirli olayları dinlemek için widget.listen() yöntemini kullanması gerekir.
+Microsoft Flow pencere öğesi, ana bilgisayarın yaşam döngüsü olaylarını bir şekilde dinlemesine olanak sağlayan olayları destekler. Microsoft Flow pencere öğesi iki tür olayı destekler: tek yönlü bildirim olayları (örneğin, pencere öğesi\_için) ve konaktan veri getirmek için pencere öğesinden oluşturulan olaylar (\_erişim\_belirteci). Konağın pencere öğesinde oluşturulan belirli olayları dinlemek için pencere öğesi. listen () yöntemini kullanması gerekir.
 
-### <a name="usage"></a>Kullanım
+### <a name="usage"></a>Kullanımıyla
 
 ```javascript
 widget.listen("<WIDGET_EVENT>", function() {
@@ -275,55 +277,55 @@ widget.listen("<WIDGET_EVENT>", function() {
 });
 ```
 
-### <a name="supported-events-by-widget-type"></a>Pencere öğesi türünün desteklediği olaylar
+### <a name="supported-events-by-widget-type"></a>Pencere öğesi türüne göre desteklenen olaylar
 
-| Pencere öğesi olayı      | Ayrıntılar                                                         | 
+| Pencere öğesi olayı      | Bilgileri                                                         | 
 |-------------------|-----------------------------------------------------------------| 
 | `WIDGET_READY`      | Pencere öğesi başarıyla yüklendi                                      | 
-| `WIDGET_RENDERED`   | Pencere öğesi yüklendi ve kullanıcı arabirimi işlemesi tamamlandı                      | 
-| `GET_ACCESS_TOKEN`  | Kullanıcı erişim belirtecini eklemek için pencere öğesi isteği                      | 
-| `GET_STRINGS`       | Konağın pencere öğesinde gösterilen bir dizi kullanıcı arabirimi dizesini geçersiz kılmasına izin verir | 
+| `WIDGET_RENDERED`   | Pencere öğesi yüklendi ve Kullanıcı arabirimi işleme tamamlanmıştır                      | 
+| `GET_ACCESS_TOKEN`  | Kullanıcı erişim belirteci ekleme için pencere öğesi isteği                      | 
+| `GET_STRINGS`       | Konağın pencere öğesinde gösterilen UI dizeleri kümesini geçersiz kılmasına izin verir | 
 
 ### <a name="runtime-widget"></a>Çalışma zamanı pencere öğesi
 
-| Pencere öğesi olayı                    | Ayrıntılar                                     | Veriler                                              | 
+| Pencere öğesi olayı                    | Bilgileri                                     | Verileri                                              | 
 |---------------------------------|---------------------------------------------|-----------| 
-| `RUN_FLOW_STARTED`                | Tetiklendi ve akış çalıştırması başlatıldı      |           | 
+| `RUN_FLOW_STARTED`                | Tetiklendi ve Flow çalıştırması başlatıldı      |           | 
 | `RUN_FLOW_COMPLETED`              | Akış çalıştırması başarıyla tetiklendi             |           | 
-| `RUN_FLOW_DONE_BUTTON_CLICKED`    | Akış çalıştırmasında kullanıcı Bitti düğmesini seçti       |           | 
-| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | Akış çalıştırmasında kullanıcı İptal düğmesini seçti     |           | 
+| `RUN_FLOW_DONE_BUTTON_CLICKED`    | Akış çalıştırmasında Kullanıcı tarafından seçilen bitti düğmesi       |           | 
+| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | Kullanıcı akış çalıştırmasında Iptal düğmesini seçti     |           | 
 | `FLOW_CREATION_SUCCEEDED`         | Akış başarıyla oluşturuldu           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
-| `WIDGET_CLOSE`                    | Konağın pencere öğesini kapatması gerektiğinde tetiklendi |       | 
+| `WIDGET_CLOSE`                    | Ana bilgisayar pencere öğesini kapatması gerektiğinde tetiklenir |       | 
 
-### <a name="flow-creation-widget"></a>Akış Oluşturma pencere öğesi
+### <a name="flow-creation-widget"></a>Akış oluşturma pencere öğesi
 
-| Pencere öğesi olayı             | Ayrıntılar                                  | Veriler  | 
+| Pencere öğesi olayı             | Bilgileri                                  | Verileri  | 
 |--------------------------|------------------------------------------|-------| 
-| `FLOW_CREATION_FAILED`     | Akış oluşturulamadı                     |       | 
-| `WIDGET_CLOSE`             | Konağın pencere öğesini kapatması gerektiğinde tetiklendi  |       | 
+| `FLOW_CREATION_FAILED`     | Akış oluşturma başarısız oldu                     |       | 
+| `WIDGET_CLOSE`             | Konağın pencere öğesini kapatması gerektiğinde harekete geçirildi  |       | 
 | `TEMPLATE_LOAD_FAILED`     | Şablon yüklenemedi              |       | 
 | `FLOW_CREATION_SUCCEEDED`  | Akış başarıyla oluşturuldu        |` { flowUrl: string, flowId: string,fromTemplate?: string } `| 
 
 ### <a name="approval-widget"></a>Onay pencere öğesi
 
-| Pencere öğesi olayı                      | Ayrıntılar                             | 
+| Pencere öğesi olayı                      | Bilgileri                             | 
 |-----------------------------------|-------------------------------------| 
 | `RECEIVED_APPROVAL_STATUS_CHANGED`  | Alınan onay durumu değiştirildi  | 
 | `SENT_APPROVAL_STATUS_CHANGED`      | Gönderilen onay durumu değiştirildi      | 
 
-**GET\_STRINGS** olayı, pencere öğesinde gösterilen kullanıcı arabirimi öğelerinden bazılarının metnini özelleştirmenize olanak tanır. Aşağıdaki dizeler özelleştirilebilir:
+**\_dizeleri al** olayı, pencere öğesinde gösterilen bazı Kullanıcı arabirimi öğeleri için metin özelleştirmenize olanak sağlar. Aşağıdaki dizeler özelleştirilebilir:
 
-| Dize anahtarı                     | Pencere öğesinde kullanımı                                                                                                                  | 
+| Dize anahtarı                     | Pencere öğesinde kullan                                                                                                                  | 
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| `FLOW_CREATION_CREATE_BUTTON`    | Hem akış oluşturma hem de çalışma zamanı pencere öğesinde, akış oluşturma düğmesinde görüntülenen metin                                                | 
-| `FLOW_CREATION_CUSTOM_FLOW_NAME` | Akış oluşturma pencere öğesinde akış adı olarak kullanılacak ilk değer. Yalnızca allowCustomFlowName ayarı etkinleştirildiğinde kullanılır. | 
-| `FLOW_CREATION_HEADER`           | Hem akış oluşturma hem de çalışma zamanı pencere öğesinde akış oluşturulurken kullanılacak üst bilgi                                                    | 
-| `INVOKE_FLOW_HEADER`             | Çalışma zamanı pencere öğesinde akışı çağırırken kullanılacak üst bilgi                                                                           | 
-| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Çalışma zamanı pencere öğesinde akışı çağırmak/çalıştırmak için kullanılan düğmede görüntülenen metin                                                       | 
+| `FLOW_CREATION_CREATE_BUTTON`    | Akış oluşturma düğmesinde hem akış oluşturma hem de çalışma zamanı pencere öğesinde görünen metin                                                | 
+| `FLOW_CREATION_CUSTOM_FLOW_NAME` | Akış oluşturma pencere öğesinde akış adı için kullanılacak başlangıç değeri. Yalnızca allowCustomFlowName ayarı etkinleştirildiğinde kullanılır. | 
+| `FLOW_CREATION_HEADER`           | Akış oluşturma ve çalışma zamanı pencere öğesinde akış oluştururken kullanılacak üst bilgi                                                    | 
+| `INVOKE_FLOW_HEADER`             | Çalışma zamanı pencere öğesinde bir akış çağrılırken kullanılacak üst bilgi                                                                           | 
+| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Çalışma zamanı pencere öğesinde bir akışı çağırmak/çalıştırmak için kullanılan düğme üzerinde görünen metin                                                       | 
 
-### <a name="example"></a>Örnek
+### <a name="example"></a>Örneğinde
 
-Varsayılan değeri geçersiz kılmak için dize anahtarı ve metninden oluşan bir anahtar-değer çiftinin bulunduğu JSON nesnesini geçirerek `widgetDoneCallback` çağrısı yapın.
+Varsayılan değeri geçersiz kılmak için anahtar-değer çiftleri ile bir JSON nesnesi geçirerek çağırın `widgetDoneCallback`.
 
 ```javascript
 widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
@@ -336,9 +338,9 @@ widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
 
 ## <a name="widget-actions"></a>Pencere öğesi eylemleri
 
-Konak pencere öğesine belirli bir eylem veya ileti göndermek için pencere öğesi eylemlerini kullanır. Pencere öğesi JS SDK'sı pencere öğesine ileti veya JSON yükü göndermek için `notify()` yöntemini sağlar. Her pencere öğesi belirli bir yük imzasını destekler.
+Konak, pencere öğesine belirli bir eylem veya ileti göndermek için pencere öğesi eylemlerini kullanır. Pencere öğesi JS SDK 'Sı, bir ileti veya JSON yükünü pencere öğesine göndermek için `notify()` yöntemi sağlar. Her pencere öğesi eylemi belirli bir yük imzasını destekler.
 
-### <a name="usage"></a>Kullanım
+### <a name="usage"></a>Kullanımıyla
 
 ```javascript
 widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
@@ -346,9 +348,9 @@ widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
     .catch(error => console.log(error))
  ```
 
-### <a name="example"></a>Örnek 
+### <a name="example"></a>Örneğinde 
 
-Çalışma zamanı pencere öğesine aşağıdaki komutu göndererek bir akış çağırın 
+Bir çalışma zamanı pencere öğesine aşağıdaki komutu göndererek bir akış çağırın 
 
 ```javascript
 widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });  
@@ -356,145 +358,144 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="runtime-widget"></a>Çalışma zamanı pencere öğesi
 
-| Pencere öğesi eylemi                               | Ayrıntılar                                                      | Parametre arabirimi  | 
+| Pencere öğesi eylemi                               | Bilgileri                                                      | Parametre arabirimi  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `triggerFlow`                                 | Akışın çalıştırılmasını tetikler                                          | `{ flowName: string, implicitData?: string } `| 
-| `triggerFlowByTemplate`                       | Şablon tarafından akışın çalıştırılmasını tetikler                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
-| `getTriggerSchema`                            | Akışın tetikleyici şemasını alır                               | `{   flowName: string, }` | 
-| `closeWidget`                                 | Bekleyen etkinlikleri iptal eder ve bir WIDGET_CLOSE olayı tetikler |                      | 
+| `triggerFlow`                                 | Akış çalıştırmasını tetikler                                          | `{ flowName: string, implicitData?: string } `| 
+| `triggerFlowByTemplate`                       | Şablon tarafından çalıştırılan akışı tetikler                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
+| `getTriggerSchema`                            | Akış için tetikleyici şemasını alır                               | `{   flowName: string, }` | 
+| `closeWidget`                                 | Bekleyen etkinlikleri iptal eder ve bir WIDGET_CLOSE olayı başlatır |                      | 
 
-### <a name="flow-creation-widget"></a>Akış Oluşturma pencere öğesi
+### <a name="flow-creation-widget"></a>Akış oluşturma pencere öğesi
 
-| Pencere öğesi eylemi                               | Ayrıntılar                                                      | Parametre arabirimi  | 
+| Pencere öğesi eylemi                               | Bilgileri                                                      | Parametre arabirimi  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `createFlowFromTemplate`                      | Seçilen şablon için bir akış oluşturur                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
-| `createFlowFromTemplateDefinition`            | Seçilen şablon tanımı için bir akış oluşturur          | `{ templateDefinition: string }` | 
-| `closeWidget`                                 | Bekleyen etkinlikleri iptal eder ve bir WIDGET_CLOSE olayı tetikler |                      | 
+| `createFlowFromTemplate`                      | Seçili şablon için bir akış oluşturur                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
+| `createFlowFromTemplateDefinition`            | Seçili şablon tanımı için bir akış oluşturur          | `{ templateDefinition: string }` | 
+| `closeWidget`                                 | Bekleyen etkinlikleri iptal eder ve bir WIDGET_CLOSE olayı başlatır |                      | 
 
 ### <a name="approval-widget"></a>Onay pencere öğesi
 
-| Pencere öğesi eylemi  | Ayrıntılar                                           | Parametre arabirimi  | 
+| Pencere öğesi eylemi  | Bilgileri                                           | Parametre arabirimi  | 
 |----------------|---------------------------------------------------|----------------------| 
-| `closeInfoPane`  | Onay ayrıntılarının görüntülendiği bilgi bölmesini kapatır  | Yok                  | 
+| `closeInfoPane`  | Onay ayrıntılarını görüntüleyen bilgi bölmesini kapatır  | yok                  | 
 
 ## <a name="configuring-your-client-application"></a>İstemci uygulamanızı yapılandırma
 
-İstemci uygulamanızı Flow Hizmeti Kapsamları (Temsilci İzinleri) ile yapılandırmanız gerekir. Pencere öğesi tümleştirmesinde kullanılan Azure Active Directory (AAD) uygulaması 'code grant' yetkilendirme akışını kullanıyorsa, AAD uygulamasının Microsoft Flow tarafından desteklenen temsilci izinleriyle önceden yapılandırılması gerekir. Bu, uygulamanın şunları yapmasını sağlayan temsilci izinleri verir:
+İstemci uygulamanızı Flow hizmeti kapsamları (temsilci Izinleri) ile yapılandırmanız gerekir. Pencere öğesi tümleştirmesi için kullanılan Azure Active Directory (AAD) uygulaması ' kod verme ' yetkilendirme akışı kullanıyorsa, AAD uygulamasının Microsoft Flow tarafından desteklenen temsilci izinleri ile önceden yapılandırılmış olması gerekir. Bu, uygulamaya izin veren temsilci izinleri sağlar:
 
--   Onayları yönetme
--   Onayları okuma
--   Etkinlikleri okuma
--   Akışları yönetme
--   Akışları okuma
+-   Onayları Yönet
+-   Onayları oku
+-   Etkinlikleri okuyun
+-   Akışları Yönet
+-   Akışları oku
 
-Bir veya birden çok temsilci izni seçmek için şu adımları izleyin:
+Bir veya daha fazla temsilci izni seçmek için şu adımları izleyin:
 
-1.  Git https://portal.azure.com 
-2.  **Azure Active Directory**'yi seçin.
-3.  **Yönet**'in altında **Uygulama kayıtları**'nı seçin.
-4.  Flow hizmeti kapsamları için yapılandırılacak üçüncü taraf uygulamasını girin.
-5.  **Ayarlar**'ı seçin.
+1.  https://portal.azure.com git 
+2.  **Azure Active Directory**seçin.
+3.  **Yönet**altında **uygulama kayıtları** seçin.
+4.  Flow hizmeti kapsamları için yapılandırılacak üçüncü taraf uygulamayı girin.
+5.  **Ayarlar**' ı seçin.
       ![pencere öğesi mimarisi](../media/embed-flow-dev/AAD-App-Settings.png)
-6. **API erişimi**/ alanında **Gerekli izinler**'i seçin.
-7. **Ekle**'yi seçin.
-8. **API seçin** öğesini seçin.
+6. **API erişimi** altında **gerekli izinleri** seçin/
+7. **Ekle**' yi seçin.
+8. **BIR API seçin**öğesini seçin.
       ![pencere öğesi mimarisi](../media/embed-flow-dev/AAD-App-Select-an-API.png)
-9. **Microsoft Flow hizmeti** için arama yapın ve bu hizmeti seçin. Not: Microsoft Flow hizmetini görebilmeniz için, kiracınızın en az bir AAD kullanıcısının Flow portalında (<https://flow.microsoft.com>) oturum açmış olması gerekir.
-10. Uygulamanız için gerekli Flow kapsamlarını seçtikten sonra **Kaydet**'i seçin.
+9. **Microsoft Flow hizmeti** araması yapın ve seçin. Note: Microsoft Flow hizmeti görebilmeniz için, kiracınızın Flow portalında (<https://flow.microsoft.com>) en az bir AAD kullanıcısının oturum açması gerekir
+10. Uygulamanız için gerekli akış kapsamlarını seçin ve ardından **Kaydet**' i seçin.
       ![pencere öğesi mimarisi](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
-Şimdi uygulamanız JWT belirtecinde \'scp' talebindeki temsilci izinlerini içeren bir Flow Hizmeti belirteci alacaktır.
+Uygulamanız artık JWT belirtecindeki \'SCP ' talebinde temsilci izinleri içeren bir akış hizmeti belirteci alacak.
 
-## <a name="sample-application-embedding-flow-widgets"></a>Akış pencere öğelerinin eklendiği örnek uygulama 
+## <a name="sample-application-embedding-flow-widgets"></a>Örnek uygulama katıştırma akış pencere öğeleri 
 
-Konak sayfasına akış pencere öğeleri eklemeyi deneyebilmeniz için, kaynaklar bölümünde örnek bir JavaScript Tek Sayfalı Uygulaması (SPA) sağlanmıştır. Örnek uygulamayı kullanmak için örtük onay akışının etkinleştirildiği bir AAD uygulamasının kaydedilmesi gerekir.
+Kaynaklar bölümünde örnek bir JavaScript tek sayfalı uygulama (SPA) sağlanır. bu sayede akış pencere öğelerini bir konak sayfasına katıştırmayı deneyebilirsiniz. Örnek uygulamanın kullanılması için örtük izin akışı etkinleştirilmiş bir AAD uygulamasının kaydedilmesi gerekir.
 
-### <a name="registering-an-aad-app"></a>AAD uygulamasını kaydetme
+### <a name="registering-an-aad-app"></a>AAD uygulaması kaydetme
 
-1.  [Azure portalında](https://portal.azure.com/) oturum açın.
-2.  Sol gezinti bölmesinde **Azure Active Directory**'yi seçin ve sonra da **Uygulama kayıtları** (Önizleme) \> Yeni kayıt seçeneğini belirtin.
-3.  **Uygulamayı kaydet** sayfası görüntülendiğinde, uygulamanız için ad girin.
-4.  **Desteklenen hesap türleri**'nin altında, herhangi bir kuruluş dizinindeki **Hesaplar**'ı seçin.
-5.  **Yeniden yönlendirme URL'si** bölümünde web platformunu seçin ve değeri, web sunucunuz temelinde uygulamanın URL'sine ayarlayın.  Örnek uygulamayı çalıştırmak için bu değeri http://localhost:30662/ olarak yapılandırın.
-6.  **Kaydet**'i seçin.
-7.  Uygulamanın **Genel Bakış** sayfasında uygulama (istemci) kimliği değerini not alın.
-8.  Örneğin etkinleştirilmesi için [örtük onay akışı](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) gerekir. Kayıtlı uygulamanın sol gezinti bölmesinde **Kimlik doğrulaması**'nı seçin.
-9.  **Gelişmiş ayarlar**'daki **Örtük onay**'ın altında hem **Kimlik belirteçleri** hem de **Erişim belirteçleri** onay kutularını etkinleştirin. Bu uygulama kullanıcıların oturumunu açacağı ve Flow API'yi çağıracağı için, kimlik belirteçleri ve erişim belirteçleri gereklidir.
-10. **Kaydet**’i seçin.
+1.  [Azure Portal](https://portal.azure.com/)oturum açın.
+2.  Sol gezinti bölmesinde **Azure Active Directory**' yi seçin ve sonra yeni kayıt \> **uygulama kayıtları** (Önizleme) öğesini seçin.
+3.  **Bir uygulamayı kaydet** sayfası göründüğünde, uygulamanız için bir ad girin.
+4.  **Desteklenen hesap türleri**altında, herhangi bir kuruluş dizininde **hesaplar** ' ı seçin.
+5.  **Yeniden yönlendirme URL 'si** bölümünde Web platformu ' nu seçin ve değeri Web sunucunuza göre uygulama\'s URL 'si olarak ayarlayın.  Örnek uygulamayı çalıştırmak için bu değeri http://localhost:30662/ olarak yapılandırın.
+6.  **Kaydol**' u seçin.
+7.  Uygulamaya **genel bakış** sayfasında, uygulama (ISTEMCI) kimliği değerini aklınızda edin.
+8.  Örnek, [örtük verme akışının](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) etkinleştirilmesini gerektirir. Kayıtlı uygulamanın sol gezinti bölmesinde **kimlik doğrulaması**' nı seçin.
+9.  **Gelişmiş ayarlar**' da, **örtük izin**' ın altında, **kimlik belirteçlerini** ve **erişim belirteçleri** onay kutularını etkinleştirin. Bu uygulamanın kullanıcılar oturum açması ve Flow API çağrısı yapması gerektiğinden, KIMLIK belirteçleri ve erişim belirteçleri gereklidir.
+10. **Kaydet**' i seçin.
 
-### <a name="running-the-sample"></a>Örneği çalıştırma
+### <a name="running-the-sample"></a>Örnek çalıştırma
 <!-- todo where should I download from? -->
-<!-- todo is this a misspelling: applicaionConfig -->
-1.  Örneği indirin ve bilgisayarınızdaki yerel bir klasöre kopyalayın.
-2.  FlowSDKSample klasörünün altındaki index.html dosyasını açın ve `clientID` değerini daha önce kaydettiğiniz uygulama kimliğiyle güncelleştirmek için `applicaionConfig` ayarını değiştirin.
+1.  Örneği indirin ve cihazınızdaki yerel bir klasöre kopyalayın.
+2.  FlowSDKSample klasörünün altında index. html dosyasını açın ve `clientID` daha önce kaydettiğiniz uygulama KIMLIĞINE güncelleştirmek için `applicationConfig` değiştirin.
     ![pencere öğesi mimarisi](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  Örnek uygulama **Flows.Read.All** ve **Flow.Manage.All** Flow kapsamlarını kullanacak şekilde yapılandırılmıştır. **applicationConfig** nesnesinde **flowScopes** özelliğini güncelleştirerek ek kapsamlar yapılandırabilirsiniz.
+3.  Örnek uygulama, akış kapsamları akışlarını kullanacak şekilde yapılandırılmıştır **. Read. All** ve **Flow. Manage. ALL.** **Applicationconfig** nesnesindeki **flowscopes** özelliğini güncelleştirerek ek kapsamları yapılandırabilirsiniz.
 4.  Bağımlılığı yüklemek ve örnek uygulamayı çalıştırmak için şu komutları çalıştırın:
-    > \> npm install \> node server.js
-5. Tarayıcıyı açın ve http://localhost:30662 girin.
-6. AAD'de kimlik doğrulaması yapmak ve bir akış erişim belirteci almak için **Oturum aç** düğmesini seçin.
-7. **Erişim Belirteci** metin kutusunda erişim belirteci vardır.
+    > \> NPM install \> node Server. js
+5. Tarayıcıyı açın ve ardından http://localhost:30662 girin
+6. AAD 'de kimlik doğrulaması yapmak ve bir akış erişim belirteci almak için **oturum aç** düğmesini seçin.
+7. Erişim **belirteci** metin kutusu erişim belirtecini içerir.
     ![pencere öğesi mimarisi](../media/embed-flow-dev/SampleApp-AccessToken.png)
-8. İlgili pencere öğelerini eklemek için **Akışları Yükle pencere öğesi**'ni veya **Şablonları Yükle pencere öğesi**'ni seçin.
+8. İlgili pencere öğelerini eklemek için **akışları Yükle pencere öğesini** veya **şablon Yükle pencere öğesini** seçin.
     ![pencere öğesi mimarisi](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
 Örnek uygulama [indirme bağlantısı](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
-## <a name="resources"></a>Kaynaklar
+## <a name="resources"></a>Kaynakların
 
 ### <a name="widget-test-pages"></a>Pencere öğesi test sayfaları
 
-Pencere öğesi tümleştirmesi ve ayarları hakkında daha fazla bilgi edinin:
+Pencere öğesi tümleştirme ve ayarları hakkında daha fazla bilgi edinin:
 
-- Templates pencere öğesi: <[https://flow.microsoft.com/en-us/test/templateswidget/](https://flow.microsoft.com/en-us/test/templateswidget/)>
-- FlowCreation pencere öğesi: <[https://flow.microsoft.com/en-us/test/flowcreationwidget/](https://flow.microsoft.com/en-us/test/flowcreationwidget/)>
-- Runtime pencere öğesi: <[https://flow.microsoft.com/en-us/test/runtimewidget/](https://flow.microsoft.com/en-us/test/runtimewidget/)>
-- Approvals center pencere öğesi: <[https://flow.microsoft.com/en-us/test/approvalcenterwidget/](https://flow.microsoft.com/en-us/test/approvalcenterwidget/)>
-- Flows pencere öğesi: <[https://flow.microsoft.com/en-us/test/managewidget/](https://flow.microsoft.com/en-us/test/managewidget/)>
+- Şablonlar pencere öğesi: <[https://flow.microsoft.com/test/templateswidget/](https://flow.microsoft.com/test/templateswidget/)>
+- Flowoluşturma pencere öğesi: <[https://flow.microsoft.com/test/flowcreationwidget/](https://flow.microsoft.com/test/flowcreationwidget/)>
+- Çalışma zamanı pencere öğesi: <[https://flow.microsoft.com/test/runtimewidget/](https://flow.microsoft.com/test/runtimewidget/)>
+- Onaylar Merkezi pencere öğesi: <[https://flow.microsoft.com/test/approvalcenterwidget/](https://flow.microsoft.com/test/approvalcenterwidget/)>
+- Akışlar pencere öğesi: <[https://flow.microsoft.com/test/managewidget/](https://flow.microsoft.com/test/managewidget/)>
 
 ### <a name="supported-widget-locales"></a>Desteklenen pencere öğesi yerel ayarları
 
-Başlatılan yerel ayar listelenmiyorsa, Flow varsayılan olarak desteklenen en yakın yerel ayarı kullanacaktır.
+Başlatılmış yerel ayar listelenmiyorsa, akış varsayılan olarak en yakın desteklenen yerel ayara sahip olur.
 
-| Yerel ayar     | Dil                   | 
+| ayarlar     | Dildir                   | 
 |------------|----------------------------| 
 | bg-bg      | Bulgarca (Bulgaristan)       | 
-| ca-es      | Katalanca (İspanya)            | 
-| cs-cz      | Çekçe (Çek Cumhuriyeti)     | 
+| ca-es      | Katalanca (Ispanya)            | 
+| CS-CZ      | Çekçe (Çek Cumhuriyeti)     | 
 | da-dk      | Danca (Danimarka)           | 
-| de-de      | Almanca (Almanya)           | 
+| De-de      | Almanca (Almanya)           | 
 | el-gr      | Yunanca (Yunanistan)             | 
-| en-Us      | İngilizce (Amerika Birleşik Devletleri)    | 
-| es-es      | İspanyolca (Kastilya)        | 
-| et-ee      | Estonca (Estonya)         | 
-| eu-es      | Bask dili (İspanya)             | 
-| fi-fi      | Fince (Finlandiya)          | 
-| fr-fr      | Fransızca (Fransa)            | 
-| gl-es      | Galiçya dili (İspanya)           | 
-| hi-HU      | Macarca (Macaristan)        | 
-| hi-in      | Hintçe (Hindistan)              | 
-| hr-hr      | Hırvatça (Hırvatistan)         | 
-| id-Id      | Endonezce (Endonezya)     | 
-| it-It      | İtalyanca (İtalya)            | 
-| jp-Jp      | Japonca (Japonya)           | 
-| kk-kz      | Kazakça (Kazakistan)        | 
-| ko-kr      | Korece (Kore)             | 
+| en-US      | İngilizce (Birleşik Devletler)    | 
+| Es-es      | İspanyolca (CAStilian)        | 
+| et-Ee      | Estonya dili (Estonya)         | 
+| AB-es      | Bask dili (Ispanya)             | 
+| Fi-Fi      | Fince (Finlandiya)          | 
+| Fr-fr      | Fransızca (Fransa)            | 
+| GL-ES      | Galicia (Ispanya)           | 
+| Merhaba-HU      | Macarca (Macaristan)        | 
+| Merhaba      | Hintçe (Hindistan)              | 
+| HR-SA      | Hırvatça (Hırvatistan)         | 
+| kimlik kimliği      | Endonezya dili (Endonezya)     | 
+| BT BT      | İtalyanca (Italya)            | 
+| JP-JP      | Japonca (Japonya)           | 
+| kk-KZ      | Kazakça (Kazakistan)        | 
+| Ko-KR      | Kore dili (Kore)             | 
 | lt-LT      | Litvanca (Litvanya)     | 
-| lv-lv      | Letonca (Letonya)           | 
-| ms-my      | Malayca (Malezya)           | 
-| nb-no      | Norveççe (Bokmål)         | 
-| nl-nl      | Felemenkçe (Hollanda)        | 
-| pl-pl      | Lehçe (Polonya)            | 
-| pt-br      | Portekizce (Brezilya)        | 
-| pt-pt      | Portekizce (Portekiz)      | 
-| ro-ro      | Rumence (Romanya)         | 
-| ru-ru      | Rusça (Rusya)           | 
-| sk-sk      | Slovakça (Slovakya)          | 
-| sl-si      | Slovence (Slovenya)       | 
-| sr-cyrl-rs | Sırpça (Kiril, Sırbistan) | 
-| sr-latn-rs | Sırpça (Latin, Sırbistan)    | 
-| sv-se      | İsveççe (İsveç)           | 
-| th-th      | Tayca (Tayland)            | 
-| tr-tr      | Türkçe (Türkiye)           | 
-| uk-ua      | Ukraynaca (Ukrayna)        | 
-| vi-vn      | Vietnamca (Vietnam)      |
+| LV-LV      | Letonca (Letonya)           | 
+| MS-My      | Malay dili (Malezya)           | 
+| NB-hayır      | Norveççe (Bokmål)         | 
+| nl-nl      | Hollanda dili (Hollanda)        | 
+| Pl-pl      | Lehçe (Polonya)            | 
+| Pt-br      | Portekizce (Brezilya)        | 
+| PT NK      | Portekizce (Portekiz)      | 
+| Ro-Ro      | Rumence (Romanya)         | 
+| Ru-ru      | Rusça (Rusya)           | 
+| SK-SK      | Slovakça (Slovakya)          | 
+| SL-si      | Slovence (Slovenya)       | 
+| SR-Cyrl-RS | Sırpça (Kiril, Sırbistan) | 
+| sr-Latn-RS | Sırpça (Latin, Sırbistan)    | 
+| ZF-s      | İsveççe (Isveç)           | 
+| TH-TH      | Tay dili (Tayland)            | 
+| Tr-tr      | Türkçe (Türkiye)           | 
+| UK-UA      | Ukrayna dili (Ukrayna)        | 
+| vi-VN      | Vietnam dili (Viet Nam)      |

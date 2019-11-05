@@ -1,6 +1,6 @@
 ---
-title: Düğmelerinizi diğerleriyle paylaşın. | Microsoft Docs
-description: Düğmelerinizi diğer kullanıcılarla paylaşarak, onları kullanmalarını ve zaman kazanmalarını sağlayın.
+title: Düğmelerinizi başkalarıyla paylaşabilirsiniz. | Microsoft Docs
+description: Düğmelerinizi kullanabilmeniz ve zamandan tasarruf etmek için düğmelerinizi başkalarıyla paylaşabilirsiniz.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,127 +20,128 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 77b46d10ec3856054dcc8e1734b327bac9a01596
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 098ebf9d8e02ede22a7914a2458375eb3641544a
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465710"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548427"
 ---
-# <a name="share-button-flows-in-microsoft-flow"></a>Microsoft Flow’da düğme akışlarını paylaşma
-Microsoft Flow’un mobil uygulamasıyla, [düğme akışlarını](introduction-to-button-flows.md) (düğmeleri) kuruluşunuzdaki diğer kullanıcı veya gruplarla paylaşabilirsiniz. Düğmeyi paylaştığınızda, paylaştığınız kişi veya grup aynı kendi düğmelerini çalıştırdığı gibi düğmenizi çalıştırabilir. Ayrıca başka birinin sizinle paylaştığı düğmelere yönlendiren [bir bağlantı paylaşabilirsiniz](share-buttons.md#re-share-a-button). İstediğiniz zaman düğmelerinizi [paylaşmayı durdurabilirsiniz](share-buttons.md#stop-sharing-a-button).
+# <a name="share-button-flows-in-microsoft-flow"></a>Düğme akışlarını Microsoft Flow içinde paylaşma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Microsoft Flow mobil uygulamada, [düğme akışlarını](introduction-to-button-flows.md) (düğmeleri) kuruluşunuzdaki diğer Kullanıcı veya gruplarla paylaşabilirsiniz. Bir düğmeyi paylaştığınızda, paylaştığınız kişi veya Grup, kendi düğmelerini çalıştırdıkları gibi düğmenizi de çalıştırabilir. Ayrıca, başka bir kişinin sizinle paylaştığı düğmelere [bir bağlantı paylaşabilirsiniz](share-buttons.md#re-share-a-button) . İstediğiniz zaman düğmelerinizi [paylaşmayı durdurabilirsiniz](share-buttons.md#stop-sharing-a-button) .
 
-> Bu belgede kullanılan ekran görüntüleri bir Android cihazından alınmıştır. iPhone kullanıyorsanız, görüntüler farklı olabilir ama işlevsellik aynıdır.
+> Bu belgede kullanılan ekran görüntüleri bir Android aygıtından alındı. İPhone kullanıyorsanız, görüntüler farklı görünebilir, ancak işlevsellik aynıdır.
 > 
 > 
 
-Başka birinin sizinle paylaştığı düğmeyi kullanmak için [bu adımları](share-buttons.md#use-shared-buttons) izleyin.
+Birisinin sizinle paylaştığı bir düğmeyi kullanmak için [aşağıdaki adımları](share-buttons.md#use-shared-buttons) izleyin.
 
-## <a name="prerequisites"></a>Önkoşullar
-Düğme paylaşmak için gerekenler:
+## <a name="prerequisites"></a>Kaynakları
+Düğmeleri paylaşmak için şunlar gerekir:
 
-* [Microsoft Flow](https://flow.microsoft.com) erişimi olan bir hesap.
-* Paylaşılacak bir akış.
-* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasının yüklü olduğu bir mobil cihaz.
-* Kuruluşunuzda düğmenizi paylaşacağınız bir grup veya kullanıcı.
+* [Microsoft Flow](https://flow.microsoft.com)erişimi olan bir hesap.
+* Paylaşılacak akış.
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows)için Microsoft Flow mobil uygulamasına sahip bir mobil cihaz.
+* Kuruluşunuzun içindeki düğmenizi paylaşmak için bir grup veya Kullanıcı.
 
-## <a name="share-a-button"></a>Düğmeyi paylaşma
-Microsoft Flow mobil uygulamasının **Düğmeler** sekmesinde düğme paylaşabilirsiniz.
+## <a name="share-a-button"></a>Düğme paylaşma
+Microsoft Flow mobil uygulamanın **düğmeler** sekmesinden bir düğme paylaşabilirsiniz.
 
 1. Paylaşmak istediğiniz düğmenin yanındaki küçük simgeye dokunun.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-buttons-tab.png)
-2. **Düğme kullanıcıları** sayfasından **Başkalarını davet et**’e dokunun.
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-buttons-tab.png)
+2. **Düğme kullanıcıları** sayfasından **diğerlerini davet et** ' e dokunun.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-button-users.png)
-3. Düğmeyi paylaşmak istediğiniz grubu veya kişiyi arayın ve seçin.
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-button-users.png)
+3. Öğesini arayın ve ardından düğmeyi paylaşmak istediğiniz grubu veya kişiyi seçin.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-invite-others-select.png)
-4. **Başkalarını davet et** sayfasında **GÖNDER**’e dokunun.
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-invite-others-select.png)
+4. Başkalarını **davet et** sayfasında **Gönder** ' e dokunun.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-invite-others-send.png)
-5. Düğme paylaşma işleminin başarıyla tamamlandığını belirten sayfada **BİTTİ**’ye dokunun.
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-invite-others-send.png)
+5. Düğme paylaşma işleminin başarıyla tamamlandığını belirten sayfada **bitti** ' ye dokunun.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-invite-others-done.png)
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-invite-others-done.png)
 
-## <a name="require-users-to-use-their-own-connections"></a>Kullanıcıların kendi bağlantılarını kullanmasını gerekli kılma
+## <a name="require-users-to-use-their-own-connections"></a>Kullanıcıların kendi bağlantılarını kullanmasını gerektir
 > [!NOTE]
-> Bir düğmeyi paylaştığınız kişilerin, düğmenizin kullandığı tüm bağlantıları kullanmasına izin verebilirsiniz. Ayrıca kendi bağlantılarını kullanmalarını da isteyebilirsiniz. Diğer kişilerin bağlantılarınızı kullanmasına izin verirseniz, bağlantınızdaki kimlik bilgilerine erişebilir ve bunları diğer akışlarda yeniden kullanabilirler.
+> Bir düğmeyi paylaştığınızda, düğmeyi paylaştığınız kişilere düğme tarafından kullanılan tüm bağlantıları kullanma izni verebilirsiniz. Ayrıca, kendi bağlantılarını kullanmalarını da zorunlu kılabilirsiniz. Başkalarının bağlantılarınızı kullanmasına izin verirseniz, bağlantılarınızda kimlik bilgilerine erişemez veya bunları başka bir akışta yeniden kullanabilirler.
 > 
 > 
 
-Düğmelerinizi paylaştığınız kişilerin kendi bağlantılarını kullanmasını gerekli kılmak için bu adımları izleyin.
+Kendi bağlantılarını kullanmak üzere düğmelerinizi paylaştığınız kişileri gerektirmek için bu adımları izleyin.
 
-1. Bir düğme paylaştıktan hemen sonra görüntülenen ekranda **BAĞLANTILARI YÖNET**’i seçin.
-2. Yönetmek istediğiniz düğmede **DÜZENLE**’yi seçin.
-3. **Kullanıcı tarafından sağlanan** seçeneğini veya e-posta adresinizi seçin.
+1. Bir düğmeyi paylaştıktan hemen sonra görüntülenen ekranda **Bağlantıları Yönet** ' i seçin.
+2. Yönetmek istediğiniz düğme üzerinde **Düzenle** ' yi seçin.
+3. Kullanıcı veya e-posta adresiniz **tarafından sağlanmış** ' ı seçin.
    
-    Paylaşılan düğmede kimin bağlantısının kullanılması gerektiğini belirtebilirsiniz.
+    Seçiminiz, bağlantıları paylaşılan düğmesinde kullanılması gereken anlamına gelir.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-select-connection-provided-by-user.png)
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-select-connection-provided-by-user.png)
    
-    Seçiminizi istediğiniz zaman görüntüleyebilir veya değiştirebilirsiniz. Bunu yapmak için, **Akışlar** sekmesi > paylaştığınız akış > **Kullanıcılar ve bağlantılar** > **BAĞLANTILAR** sekmesi > yönetmek istediğiniz düğmede **DÜZENLE** seçeneklerini belirleyin.
+    Seçiminizi dilediğiniz zaman görüntüleyebilir veya değiştirebilirsiniz. Bunu yapmak için, **Kullanıcılar ve bağlantılar** > paylaştığınız Flow > **akışlar** **sekmesini seçin** > yönetmek istediğiniz düğme üzerinde **düzenleme** >.
    
-    ![paylaş düğmesi](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
+    ![Paylaşma düğmesi](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
 ## <a name="view-the-list-of-button-users"></a>Düğme kullanıcılarının listesini görüntüleme
-**Düğmeler** sekmesinde bu adımları izleyerek, düğmenin paylaşıldığı tüm grupları veya kullanıcıları görüntüleyebilirsiniz:
+**Düğmeler** sekmesinden aşağıdaki adımları izleyerek bir düğmenin paylaşıldığı tüm grupları veya kullanıcıları görüntüleyebilirsiniz:
 
-1. İstediğiniz düğmenin yanındaki küçük simgeye dokunun.
+1. İlgilendiğiniz düğmenin yanındaki küçük simgeye dokunun.
 2. **Düğme kullanıcıları** sayfasında, düğmenin paylaşıldığı tüm grupları veya kullanıcıları görüntüleyin.
    
-    ![düğme kullanıcılarını görüntüleme](./media/share-buttons/share-button-flows-button-users-list.png)
+    ![düğme kullanıcılarını görüntüle](./media/share-buttons/share-button-flows-button-users-list.png)
 
-## <a name="stop-sharing-a-button"></a>Bir düğmeyi paylaşmayı durdurma
-**Düğmeler** sekmesinde bu adımları izleyerek düğmeyi paylaşmayı durdurabilirsiniz:
+## <a name="stop-sharing-a-button"></a>Düğme paylaşmayı durdur
+**Düğmeler** sekmesinden bu adımları izleyerek bir düğme paylaşmayı durdurabilirsiniz:
 
 1. Artık paylaşmak istemediğiniz düğmenin yanındaki küçük simgeye dokunun.
-2. **Düğme kullanıcıları** sayfasında, düğmeyi paylaşmayı durdurmak istediğiniz kullanıcı veya gruba dokunun.
+2. **Düğme kullanıcıları** sayfasında, düğme paylaşımını durdurmak istediğiniz kullanıcıya veya gruba dokunun.
    
-    ![düğmeyi paylaşmayı durdurma](./media/share-buttons/share-button-flows-remove-user-list.png)
-3. Kullanıcının sayfası görüntülendiğinde **Kullanıcıyı kaldır**’a dokunun.
+    ![Paylaşımı Durdur düğmesi](./media/share-buttons/share-button-flows-remove-user-list.png)
+3. Kullanıcının sayfası görüntülendiğinde **kullanıcıyı kaldır** ' a dokunun.
    
-    ![düğmeyi paylaşmayı durdurma](./media/share-buttons/share-button-flows-remove-user.png)
-4. Kaldırma işleminin tamamlanmasını bekleyin. **Düğme kullanıcıları** listesinin yenilendiğini ve kaldırdığınız kullanıcı ya da grubun artık listede olmadığını fark edebilirsiniz.
+    ![Paylaşımı Durdur düğmesi](./media/share-buttons/share-button-flows-remove-user.png)
+4. Kaldırma işleminin tamamlanmasını bekleyin. **Kullanıcıların** listesi yenilendiğine ve kaldırdığınız Kullanıcı veya grup artık listelenmediğine dikkat edin.
    
-    ![düğmeyi paylaşmayı durdurma](./media/share-buttons/share-button-flows-remove-user-result.png)
+    ![Paylaşımı Durdur düğmesi](./media/share-buttons/share-button-flows-remove-user-result.png)
 
 ## <a name="monitor-the-run-history"></a>Çalıştırma geçmişini izleme
-Düğmenin paylaşıldığı kişiler tarafından başlatılan çalıştırmaları da kapsayan çalıştırma geçmişinin tamamı yalnızca, düğmeyi oluşturan kişinin Microsoft Flow mobil uygulamasındaki **Etkinlik** sekmesinde görüntülenir.
+Bir düğmenin paylaşıldığı bir kişi tarafından başlatılan çalıştırmalar da dahil olmak üzere tüm çalıştırma geçmişi yalnızca düğme oluşturucusunun Microsoft Flow mobil uygulamasının **etkinlik** sekmesinde görünür.
 
 ## <a name="use-shared-buttons"></a>Paylaşılan düğmeleri kullanma
-Birinin sizinle paylaştığı bir düğmeyi çalıştırabilmek için, önce bunu **Düğmeleri ekleme** sayfasındaki **Düğmeler** sekmenize eklemeniz gerekir.
+Birisinin sizinle paylaştığı bir düğmeyi çalıştırmadan önce **düğmeleri ekle** sayfasından **düğmeler** sekmesine eklemeniz gerekir.
 
-1. **Düğmeler** sekmesinde **DAHA FAZLASINI EDİNİN**’e (veya gösteriliyorsa **Yeni düğmeler kullanımda** başlığına) dokunun.
+1. **Düğmeler** sekmesinde **daha fazla al** (veya varsa **yeni düğmeler kullanılabilir** başlık) seçeneğine dokunun.
    
-    ![sizinle paylaşılan yeni düğme](./media/share-buttons/share-button-flows-banner.png)
+    ![benimle paylaşılan yeni düğme](./media/share-buttons/share-button-flows-banner.png)
 2. Kullanmak istediğiniz düğmeye dokunun.
    
-    Dokunulan düğme hemen Microsoft Flow uygulamasının **Düğmeler** sekmesine eklenir. Daha sonra, bu düğmeyi **Düğmeler** sekmesinde listelenen diğer tüm düğmeler gibi bu sekmeden kullanabilirsiniz.
+    Dokunduğunuz düğme, Microsoft Flow uygulamasının **düğmeler** sekmesine hemen eklenir. Daha sonra düğme sekmesinden, burada listelenen diğer tüm **düğmelerde** olduğu gibi düğmeyi de kullanabilirsiniz.
    
-    ![sizinle paylaşılan yeni düğme](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+    ![benimle paylaşılan yeni düğme](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
-## <a name="re-share-a-button"></a>Düğmeyi yeniden paylaşma
-Sizinle paylaşılan bir düğmeyi yeniden paylaşabilirsiniz.
+## <a name="re-share-a-button"></a>Bir düğmeyi yeniden paylaşma
+Sizinle paylaşılan bir düğmeye bir bağlantı paylaşabilirsiniz.
 
-1. Paylaşmak istediğiniz düğmenin yanındaki **...** seçeneğini belirleyin.
-2. **Düğmeyi paylaş bağlantısını** seçin.
+1. Paylaşmak istediğiniz düğmenin yanındaki **..** . seçeneğini belirleyin.
+2. **Paylaşma düğme bağlantısını**seçin.
    
-    ![düğmeyi yeniden paylaş bağlantısı](./media/share-buttons/re-share-button.png)
+    ![düğme bağlantısını yeniden paylaşma](./media/share-buttons/re-share-button.png)
 3. Düğmeyi paylaşmak için kullanmak istediğiniz uygulamayı seçin ve ardından düğmeyi paylaşmak istediğiniz kişiye göndermek için adımları izleyin.
 
-## <a name="stop-using-a-shared-button"></a>Paylaşılan düğmeyi kullanmayı durdurma
-Sizinle paylaşılan bir düğmeyi artık kullanmak istemiyorsanız, aşağıdaki adımları izleyerek bu düğmeyi **Düğmeler** sekmesinden kaldırın:
+## <a name="stop-using-a-shared-button"></a>Paylaşılan bir düğme kullanmayı durdur
+Sizinle paylaşılan bir düğmeyi artık kullanmak istemiyorsanız, aşağıdaki adımları uygulayarak **düğmeleri Düğmeler** sekmesinden kaldırın:
 
-1. **Düğmeler** sekmesinde, artık kullanmak istemediğiniz düğmenin yanındaki **...** işaretine dokunun.
+1. **Düğmeler** sekmesinde, artık kullanmak istemediğiniz düğmenin yanındaki **...** seçeneğine dokunun.
    
-    ![düğmeyi kaldırma](./media/share-buttons/share-button-flows-added-shared-button.png)
-2. Açılan menüden **Kaldır**’a dokunun.
+    ![Kaldır düğmesi](./media/share-buttons/share-button-flows-added-shared-button.png)
+2. Görüntülenen menüden **Kaldır** ' a dokunun.
 
-Hepsi bu. Düğme, Microsoft Flow uygulamasının **Düğmeler** sekmesinde artık görünmez.
+Bu,. Düğme, Microsoft Flow uygulamasının **düğmeler** sekmesinde artık görünmez.
 
 > [!NOTE]
-> Paylaşılan bir düğmeyi kaldırdıktan sonra, **Düğmeler** sekmesinde **DAHA FAZLA EDİNİN**’i seçerek bu düğmeyi yeniden ekleyebilirsiniz.
+> Paylaşılan bir düğmeyi kaldırdıktan sonra **düğmeler** sekmesinden **daha fazla al** seçeneğini belirleyerek geri ekleyebilirsiniz.
 > 
 > 
 

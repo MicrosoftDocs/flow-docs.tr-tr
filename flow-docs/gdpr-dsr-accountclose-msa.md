@@ -1,11 +1,12 @@
 ---
-title: Microsoft Hesapları (MSA) için Microsoft Flow GDPR Veri Sahibi Hesap Kapatma İstekleri | Microsoft Docs
-description: Microsoft Flow’u kullanarak Microsoft Hesapları için GDPR Veri Sahibi Hesap Kapatma İsteklerini yanıtlamayı öğrenin.
+title: Microsoft hesapları için Microsoft Flow GDPR Data Subject hesabı kapatma Istekleri (MSA) | Microsoft Docs
+description: Microsoft hesapları için GMBU veri konu hesabı kapatma Isteklerini yanıtlamak üzere Microsoft Flow kullanmayı öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,56 +15,56 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8665148baf4d752f1f384670b296a66bbfca6163
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035087"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548012"
 ---
-# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR Veri Sahibi Hesap Kapatma İsteklerini yanıtlama
+# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Microsoft Flow için GDPR veri konu hesabı kapatma Isteklerini yanıtlama
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Kişisel verileri **silme hakkı**, GDPR’de önemli bir korunma yöntemidir. Bu hak, denetim günlüğü bilgileri dışında tüm kişisel verilerin kaldırılmasını kapsar. Kullanıcılar Microsoft Hesabını (MSA) kapatmaya karar verdiğinde kullanıcının temel alınan verileri de silinir.
+Kişisel verilerin bir **hakkı** , GDPR içinde önemli bir korumasından oluşur. Bu hak, denetim günlüğü bilgileri hariç tüm kişisel verileri kaldırmayı içerir. Kullanıcılar kendi Microsoft hesaplarını (MSA) kapatmaya karar verirse, kullanıcının temel alınan verileri de silinir.
 
-Bu kaynaklar, bir kullanıcı MSA’yı kapattığında otomatik olarak silinen kişisel veriler içeriyor:
+Bu kaynaklar, bir Kullanıcı bir MSA kapattığında otomatik olarak silinen kişisel verileri içerir:
 
-|Kişisel verileri kapsayan kaynaklar|
+|Kişisel verileri içeren kaynaklar|
 |------|
 |Ürün ve hizmet etkinliği|
-|Çalıştırma geçmişi|
-|Akışlar|
-|Etkinlik Akışı|
+|çalıştırma geçmişi|
+|Var|
+|Etkinlik akışı|
 |Kullanıcı ayrıntıları|
-|Bağlantılar|
+|Bağlantının|
 
-## <a name="account-close-requests"></a>Hesap Kapatma istekleri
+## <a name="account-close-requests"></a>Hesap kapatma istekleri
 
-Bu adımlarda, GDPR için Hesap Kapatma isteklerine nasıl self servis sunulacağı açıklanmaktadır.
+Bu adımlar, GDPR için hesap kapatma isteklerini kendi kendine sunma hakkında açıklamaktadır.
 
-1. Microsoft Hesabınızı kullanarak [Microsoft Hesap Kapatma Portalı](http://go.microsoft.com/fwlink/?LinkId=523898)’nda oturum açın ve **İleri**’yi seçin.
+1. Microsoft hesabınızı kullanarak [Portal ' ı kapatıp Microsoft](https://go.microsoft.com/fwlink/?LinkId=523898) hesabı ' nı açın ve ardından **İleri**' yi seçin.
 
     > [!NOTE]
-    > Mevcut abonelikleri iptal etmeniz ve abone olmuş olabileceğiniz mevcut hizmetlerden verileri dışarı aktarmanız hatırlatılır.
+    > Mevcut abonelikleri iptal etmeniz veya abone olduğunuz mevcut hizmetlerden verileri dışarı aktarmanız hatırlatıyorsunuz.
     >
     >
 
-    ![Abonelikleri iptal etme](./media/gdpr-dsr-delete-msa/accountclose.png)
+    ![Abonelikleri iptal et](./media/gdpr-dsr-delete-msa/accountclose.png)
 
-1. Yönetilen hizmet hesabınızı kapatmanın oluşturacağı etkiyi anladığınızı kabul edin ve sonra **Hesabı kapatılmak üzere işaretle** seçeneğini belirleyin.
+1. MSA ' ı kapatmanın etkisini anladığınızı ve sonra **hesabı kapatılmak üzere işaretle**' yi seçtiğinizi kabul edin.
 
-    Hesabınızın 30 gün içinde kapatılacağını belirten bir bildirim görüntülenir. Bu 30 günlük süre boyunca herhangi bir zamanda bu hesabı yeniden açabilirsiniz.
+    Hesabınızın 30 gün içinde kapalı olacağını belirten bir bildirim görüntülenir. Bu hesabı, bu 30 günlük süre boyunca dilediğiniz zaman yeniden açabilirsiniz.
 
-    ![Hesap Kapatıldı](./media/gdpr-dsr-delete-msa/accountclosed.png)
+    ![Hesap kapatıldı](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
-    Bu 30 günlük süre sonunda bu MSA için tüm Microsoft Flow kaynaklarını silme işlemi başlar.
+    Bu 30 günlük pencerenin sonunda, bu MSA için tüm Microsoft Flow kaynaklarını silme işlemi başlar.
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-* [Microsoft Flow](getting-started.md) ile çalışmaya başlama
-* Microsoft Flow ile ilgili [yenilikleri](release-notes.md) öğrenin
+* [Microsoft Flow](getting-started.md) kullanmaya başlayın
+* Microsoft Flow [yenilikleri öğrenin](release-notes.md)

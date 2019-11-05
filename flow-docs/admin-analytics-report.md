@@ -1,6 +1,6 @@
 ---
-title: Paylaşım ve bağlayıcı yönetici analizi raporlarına giriş | Microsoft Docs
-description: Microsoft Flow için paylaşım ve bağlayıcı yönetici analizi raporlarına giriş.
+title: Paylaşım ve bağlayıcılar yönetici Analizi raporlarına giriş | Microsoft Docs
+description: Microsoft Flow için paylaşım ve bağlayıcılar yönetici Analizi raporlarına giriş.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,54 +20,55 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9ed37c8ce1d2b031fbfb2f3bf7bcf77a359f47f4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: bdcce7e54b6661d308c87c661089e5648a0ff35c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061400"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544435"
 ---
-# <a name="sharing-and-connectors-admin-analytics-reports"></a>Paylaşım ve bağlayıcı yönetici analizi raporları
+# <a name="sharing-and-connectors-admin-analytics-reports"></a>Paylaşım ve bağlayıcılar yönetici analizi raporları
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Kuruluşlara uygulamaların nasıl kullanıldığı ve bunları kimlerin kullandığı konusunda içgörüler gerekir. Yönetici analizi paylaşım ve bağlayıcı raporları Microsoft Flow'un kiracınızda nasıl kullanıldığı konusunda içgörü sağlar. 
+Kuruluşların uygulamaların nasıl kullanıldığı ve bunları kimin kullandığı hakkında Öngörüler olması gerekir. Yönetici Analizi paylaşımı ve bağlayıcılar raporları, kiracınızda Microsoft Flow kullanılma şekli hakkında öngörüler sağlar. 
 
-Paylaşım açısından bakıldığında uygulama şampiyonlarınızın kimler olduğunu öğrenebilir ve onları kuruluşunuz için daha da fazla otomatik çözümler sağlama yönünde güçlendirebilirsiniz. Bağlayıcı raporu kuruluşunuzda kullanımda olan Microsoft, üçüncü taraf ve özel bağlayıcıları belirler.
+Paylaşım açısından, uygulamanızın esyonunuzun kim olduğunu öğrenebilir ve daha sonra kuruluşunuz için daha fazla otomatikleştirilmiş çözüm sağlamaya ikna edebilirsiniz. Bağlayıcılar raporu, kuruluşunuzda kullanımda olan Microsoft, üçüncü taraf ve özel bağlayıcıları tanımlar.
 
-![Tümünü içeren rapor](media/admin-analytics-report/default-report.png)
+![Tüm rapor](media/admin-analytics-report/default-report.png)
 
 ## <a name="view-shared-flows-reports"></a>Paylaşılan akış raporlarını görüntüleme
 
-1. [Power Platformu Yönetim Merkezi](https://admin.powerplatform.microsoft.com/)'nde oturum açın:
-1. Sol taraftaki gezinti çubuğunda **Analiz**'i seçin.
+1. [Power Platform Yönetim merkezinde](https://admin.powerplatform.microsoft.com/)oturum açın.
+1. Sol taraftaki Gezinti çubuğundan **analiz** ' ı seçin.
 1. **Paylaşılan** sekmesini seçin ve kuruluşunuzda paylaşılan akışların listesini görüntüleyin.
  
     ![Paylaşılan bağlayıcılar görünümü](media/admin-analytics-report/shared-tab.png)
 
 
-## <a name="view-connectors-report"></a>Bağlayıcılar raporunu görüntüleme
+## <a name="view-connectors-report"></a>Bağlayıcılar raporunu görüntüle
 
-1. [Power Platformu Yönetim Merkezi](https://admin.powerplatform.microsoft.com/)'nde oturum açın:
-1. Sol taraftaki gezinti çubuğunda **Analiz**'i seçin.
-1. **Bağlayıcılar** sekmesini seçin ve kuruluşunuzda kullanılmakta olan bağlayıcıların listesini görüntüleyin.
+1. [Power Platform Yönetim merkezinde](https://admin.powerplatform.microsoft.com/)oturum açın.
+1. Sol taraftaki Gezinti çubuğundan **analiz** ' ı seçin.
+1. **Bağlayıcılar** sekmesini seçin ve kuruluşunuzda kullanımda olan bağlayıcıların listesini görüntüleyin.
  
     ![Paylaşılan bağlayıcılar görünümü](media/admin-analytics-report/connectors-tab.png)
 
-## <a name="filter-views"></a>Görünümleri filtreleme
+## <a name="filter-views"></a>Görünümleri filtrele
 
-Bu raporların sonuçları seçtiğiniz ortama bağlıdır. Ortamı değiştirmek için:
+Bu raporların sonuçları, seçtiğiniz ortama dayalıdır. Ortamı değiştirmek için:
 
 1. **Filtreleri Değiştir** bağlantısını seçin.
     
-    ![Filtreleri değiştirme](media/admin-analytics-report/filters.png)
+    ![Filtreleri Değiştir](media/admin-analytics-report/filters.png)
 
-1. Raporlarını görüntülemekle ilgilendiğiniz **Ortam**'ı ve **Zaman Aralığı**'nı seçin.
+1. Raporları görüntülemek için ilgilendiğiniz **ortamı** ve **zaman dilimini** seçin.
 1. **Uygula** düğmesini seçin.
 
-    ![Filtreleri değiştirme](media/admin-analytics-report/filters-detail.png)
+    ![Filtreleri Değiştir](media/admin-analytics-report/filters-detail.png)
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
-[Microsoft Flow ile çalışmaya başlama](getting-started.md)
+[Microsoft Flow kullanmaya başlayın](getting-started.md)
 
 
 

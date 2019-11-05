@@ -1,11 +1,12 @@
 ---
-title: Microsoft Hesapları (MSA) için GDPR Veri Sahibi İstekleri Özeti| Microsoft Docs
-description: Microsoft Flow için GDPR Veri Sahibi İstekleri’ni yanıtlamayı öğrenin.
+title: Microsoft hesapları için GDPR veri konu Isteği Özeti (MSA) | Microsoft Docs
+description: Microsoft Flow için GMBU veri konu taleplerini nasıl yanıtleyeceğinizi öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,54 +15,54 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/16/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: bff3e050db40c60622496202a092f94cc1d36fca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460303"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548174"
 ---
-# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>GDPR Veri Sahibi Hakları (DSR) isteklerine yanıt verme
+# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>GDPR veri konu hakları (DSRs) isteklerini yanıtlama
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bu makalede, Avrupa Birliği’nin Genel Veri Koruma Yönetmeliği (GDPR) açıklanmakta ve Microsoft Hesapları (MSA) ile kimlik doğrulaması yapan Microsoft Flow kullanıcıları için GDPR uyumluluğunu desteklemek amacıyla uygulayabileceğiniz adımlar sağlanmaktadır.
+Bu makalede, Avrupa Birliği 'nin Genel Veri Koruma Yönetmeliği (GDPR) açıklanır ve Microsoft hesaplarıyla (MSA) kimlik doğrulayan Microsoft Flow kullanıcılar için GDPR uyumluluğunu desteklemek üzere uygulayabileceğiniz adımlar sağlanmaktadır.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-Bu makaledeki adımları gerçekleştirmek için [ücretsiz Microsoft Flow lisansı](https://flow.microsoft.com/pricing/) ile bir MSA gerekir.
+Bu makaledeki adımları gerçekleştirmek için [ücretsiz bir Microsoft Flow lisansa](https://flow.microsoft.com/pricing/) sahıp bir MSA gerekir.
 
 >[!TIP]
-> GDPR uyumluluk bilgileri, [Azure Active Directory hesapları](gdpr-dsr-summary.md) ile kimlik doğrulaması yapan kullanıcılar için de kullanılabilir.
+> GDPR uyumluluk bilgileri, [Azure Active Directory hesaplarıyla](gdpr-dsr-summary.md)kimlik doğrulayan kullanıcılar için de kullanılabilir.
 >
 >
 
-## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Microsoft Flow müşteri verileri için DSR’leri yanıtlama
+## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Microsoft Flow müşteri verileri için DSRs 'ye yanıt verme
 
-Bir veri sahibinin bir sorumludan kişisel verileri üzerinde bir işlem yapmak üzere resmi istekte bulunmasına Veri Sahibi Hakları (DSR) isteği adı verilir. GDPR, kişisel verileri, **tanımlı veya tanımlanabilir bir gerçek kişiyle ilişkili tüm veriler** olarak tanımlar. GDPR, kişilere (veri sahipleri olarak bilinir) bir işveren, acente veya kuruluş (veri sorumlusu ya da yalnızca sorumlu olarak bilinir) tarafından toplanan kişisel verileri yönetme hakkı verir. Bu haklar şunları kapsar:
+Veri konusunun kişisel verilerinde bir işlem yapması için bir denetleyiciye yönelik resmi istek, veri konu hakları (DSR) isteği olarak adlandırılır. GDPR, kişisel verileri **tanımlanan veya tanımlanabilen doğal bir kişiyle ilgili herhangi bir veri**olarak tanımlar. GDPR, bir işveren, kurum veya kuruluş tarafından toplanan kişisel verileri (veri denetleyicisi veya denetleyici olarak bilinir) yönetmek için kişiler (veri konuları olarak bilinir) hakları sağlar. Bu haklar şunları içerir:
 
 * Kişisel verilerin kopyalarını alma.
-* Kişisel veriler üzerinde düzeltme isteme.
-* Kişisel verilerin işlenmesini kısıtlama.
+* Kişisel verilerde düzeltmeler isteme.
+* Kişisel verilerin işlenmesini sınırlandırma.
 * Kişisel verileri silme.
-* Başka bir sorumluya taşınabilmesi için kişisel verileri elektronik biçimde alma.
+* Kişisel verileri başka bir denetleyiciye taşınabilmesi için elektronik biçimde alma.
 
-Microsoft, sorumluların bulutta bulunan veriler için DSR isteklerini yanıtlarken kişisel verileri bulup bu veriler üzerinde işlem yapmasına yardımcı olmak için ürünler, hizmetler ve araçlar sağlar.
+Microsoft, denetleyicilerin bulutta bulunan veriler için DSRs isteklerine yanıt verme sırasında kişisel verileri bulmasına ve üzerinde işlem yapması için ürünleri, hizmetleri ve araçları sağlar.
 
-Bu kılavuzda gösterilen işlemlerin genel bakışını burada bulabilirsiniz:
+Bu kılavuzda özetlenen işlemlere genel bakış aşağıda verilmiştir:
 
-1. **Bulma**: Bir DSR isteğinin konusu olabilecek müşteri verilerini kolayca bulmak için arama ve bulma araçlarını kullanın. Topladığınız belgelerin, işlem uygulamaya yönelik denetleyici yönergelerini karşıladığını belirlerseniz, aşağıdaki adımlarda açıklanan DSR eylemlerinden birini veya daha fazlasını gerçekleştirebilirsiniz. [Microsoft Hesapları için Microsoft Flow DSR Bulma belgelerinden](gdpr-dsr-discovery-msa.md) daha fazla bilgi edinebilirsiniz. Alternatif olarak, isteğin sorumlunuzun DSR isteklerini yanıtlama yönergelerini karşılamadığını belirleyebilirsiniz.
+1. **Keşfet**: bir DSR isteğinin konusu olabilecek müşteri verilerini kolayca bulmak için arama ve bulma araçlarını kullanın. Topladığınız belgelerin işlem yapmak için denetleyici kılavuzlarınızı karşıladığını belirlerseniz, aşağıdaki adımlarda açıklanan DSR eylemlerinden birini veya birkaçını gerçekleştirebilirsiniz. [Microsoft hesapları için MICROSOFT Flow DSR bulma belgeleri](gdpr-dsr-discovery-msa.md)hakkında daha fazla bilgi edinin. Alternatif olarak, isteğin DSR isteklerine yanıt vermek için denetleyici kılavuzlarınızı karşılamadığını belirleyebilirsiniz.
 
-1. **Erişim**: Microsoft bulutunda yer alan kişisel verileri alın ve istenirse, veri sahibine kullanılabilir şekilde bir kopyasını oluşturun.
+1. **Erişim**: Microsoft bulutunda bulunan kişisel verileri alın ve istenirse, veri konusunun kullanabilmesi için bir kopyasını oluşturun.
 
-1. **Düzeltme**: Uygunsa kişisel veriler üzerinde değişiklikler yapın veya istenen diğer eylemleri uygulayın.
+1. **Rectify**: uygun olduğunda, kişisel veriler üzerinde değişiklikler yapın veya istenen diğer eylemleri uygulayın.
 
-1. **Kısıtlama**: Mümkün olduğunca çeşitli çevrimiçi hizmetlerin lisanslarını kaldırarak veya istenen hizmetleri kapatarak kişisel verilerin işlenmesini kısıtlayın. Ayrıca verileri Microsoft bulutundan kaldırabilir ve şirket içinde ya da başka bir konumda saklayabilirsiniz.
+1. **Kısıtla**: çeşitli çevrimiçi hizmetler lisanslarını kaldırarak veya mümkün olduğunca istenen Hizmetleri kapatarak kişisel verilerin işlenmesini kısıtlayın. Ayrıca Microsoft bulutundaki verileri kaldırabilir ve şirket içinde veya başka bir konumda saklayabilirsiniz.
 
-1. **Silme**: Microsoft’un bulutunda yer alan kişisel verileri kalıcı olarak kaldırın. [Microsoft Hesapları için kişisel verileri silme](gdpr-dsr-delete-msa.md) hakkında daha fazla bilgi edinin. [Microsoft Hesabını kapatma](gdpr-dsr-accountclose-msa.md) hakkında daha fazla bilgi edinin.
+1. **Sil**: Microsoft 'un bulutunda bulunan kişisel verileri kalıcı olarak kaldırın. [Microsoft hesapları için kişisel verileri silme](gdpr-dsr-delete-msa.md)hakkında daha fazla bilgi edinin. [Bir Microsoft hesabı kapatma](gdpr-dsr-accountclose-msa.md)hakkında daha fazla bilgi edinin.
 
-1. **Dışarı aktarma**: Kişisel verilerin elektronik kopyasını (makine tarafından okunabilir biçimde) sağlayın. [Microsoft Hesapları için kişisel verileri dışarı aktarma hakkında daha fazla bilgi edinin](gdpr-dsr-export-msa.md).
+1. **Dışarı aktar**: kişisel verilerin elektronik bir kopyasını (makine tarafından okunabilen bir biçimde) sağlayın. [Microsoft hesapları için kişisel verileri dışarı aktarma hakkında daha fazla bilgi edinin](gdpr-dsr-export-msa.md).

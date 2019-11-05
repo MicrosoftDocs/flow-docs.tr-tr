@@ -1,10 +1,11 @@
 ---
-title: Kılavuzlu işlemler için Common Data Service iletişim kutularını kullanma (Kullanım Dışı) | Microsoft Docs
-description: İletişim kutuları, bir işlem boyunca kullanıcıları yönlendirmek için adım adım betikleri kullanarak bilgi toplayan ve işleyen eş zamanlı veya etkileşimli işlemlerdir.
+title: Kılavuzlu süreçler için Common Data Service iletişim kutularını kullan (kullanım dışı) | MicrosoftDocs
+description: İletişim kutuları, kullanıcıları bir işlem üzerinden yönlendirmek için adım adım betikleri kullanarak bilgileri toplayıp işleyen zaman uyumlu veya etkileşimli işlemlerdir.
 ms.custom: ''
 ms.date: 10/31/2017
 ms.reviewer: ''
 ms.topic: article
+ms.service: flow
 ms.assetid: d17f8ae2-854b-4f67-a115-5a03d4f0b8ce
 caps.latest.revision: 25
 author: msftman
@@ -15,30 +16,31 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 05f0b9b72f2f9e2d7f02356ec40eeb520214a0cb
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463650"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548755"
 ---
-# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Kılavuzlu işlemler için Common Data Service iletişim kutularını kullanma (Kullanım Dışı)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Kılavuzlu süreçler için Common Data Service iletişimleri kullanma (kullanım dışı)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-[İletişim kutuları kullanım dışı bırakılmıştır](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). İletişim kutularını, iş süreci akışları veya tuval uygulamalarıyla değiştirmelisiniz. Daha fazla bilgi: [İletişim kutularını iş süreci akışları veya tuval uygulamalarıyla değiştirme](replace-dialogs.md) 
+[Iletişim kutuları kullanım dışı bırakılmıştır](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). İletişim kutularını iş süreci akışları veya tuval uygulamaları ile değiştirmelisiniz. Daha fazla bilgi: [iletişim kutularını iş süreci akışlarıyla veya tuval uygulamalarıyla değiştirin](replace-dialogs.md) 
 
-İletişim kutuları, bir işlem boyunca kullanıcıları yönlendirmek için adım adım betikleri kullanarak bilgi toplayan ve işleyen Common Data Service uygulamasındaki zamanlı uyumlu veya etkileşimli işlemlerdir. Örneğin, servis talebi çözümü ve servis talebi yükseltme için hizmet temsilcilerinize yönelik bir kılavuz olarak hareket etmesi için iletişim kutuları oluşturabilirsiniz. Benzer şekilde, fırsat nitelendirmesi ve müşteri adayı puanlaması gibi satış işlemlerini standartlaştırmak için de iletişim kutuları oluşturabilirsiniz. Daha fazla bilgi için Dynamics 365 Customer Engagement Geliştirici Kılavuzu’nda [Kılavuzlu işlemler için iletişim kutularını kullanma](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) bölümüne bakın.
+İletişim kutuları, kullanıcıları bir işlem üzerinden yönlendirmek için adım adım betikleri kullanarak bilgi toplayıp işleyen Common Data Service zaman uyumlu veya etkileşimli işlemlerdir. Örneğin, servis temsilcileriniz için büyük/küçük/küçük harf yükseltme için bir kılavuz olarak davranacak iletişim kutuları oluşturabilirsiniz. Benzer şekilde, fırsat niteliği ve müşteri adayı puanlama gibi satış süreçlerini standartlaştırmaya yönelik iletişim kutuları da oluşturabilirsiniz.
 
-## <a name="differences-between-workflows-and-dialogs"></a>İş akışları ile iletişim kutuları arasındaki farklar
+## <a name="differences-between-workflows-and-dialogs"></a>İş akışları ve iletişim kutuları arasındaki farklar
 
-Aşağıdaki tabloda, Common Data Service iş akışları ile iletişim kutuları arasındaki farklarla ilgili bilgi sağlanmaktadır.  
+Aşağıdaki tabloda Common Data Service iş akışları ve iletişim kutuları arasındaki farklılıklar hakkında bilgi verilmektedir.  
 
 
-| İş Akışları     |    İletişim Kutuları      |
+| sürdürülen     |    İletişimlerinin      |
 |---------------|--------------|
-|                                                                                                  Bir kullanıcı tarafından başlatılabilir veya otomatikleştirilebilir.                                                                                                   |                                                                                          Bir kullanıcı tarafından başlatılmalıdır.                                                                                          |
-|                                  Zaman uyumsuz veya gerçek zamanlı işlemlerdir ve tamamlanıncaya kadar çalışması için kullanıcı girişi gerekmez. Gerçek zamanlı işlemler anında çalıştırılırken, zaman uyumsuz süreçler ise arka planda çalıştırılır.                                   | Tamamlanıncaya kadar çalışması için kullanıcı girişi gerektiren gerçek zamanlı işlemlerdir. Bu işlemleri çalıştırdığınızda, işlemleri çalıştırmak için uygun seçimleri yapabilmeniz için size sihirbaza benzer bir arabirim sunulur. |
-|                                                    Zaman uyumsuz iş akışını çalıştırmaya yönelik ayrıntıları depolayan varlık `AsyncOperation` iken, gerçek zamanlı iş akışı için `Process` kullanılır.                                                     |                                                       Çalıştırılan bir iletişim kutusu tarafından oluşturulan bilgileri depolayan varlık, `ProcessSession` varlığıdır.                                                       |
-|                  İş akışları için tetikleyiciler desteklenir. Desteklenen tetikleyicilerin listesi için bkz. [İşlemler için Desteklenen Türler, Tetikleyiciler ve Varlıklar](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes).                   |                                                                                   İletişim kutuları için tetikleyiciler desteklenmez.                                                                                    |
+|                                                                                                  , Bir kullanıcı tarafından başlatılabilir veya otomatikleştirilebilir.                                                                                                   |                                                                                          Bir kullanıcı tarafından başlatılmış olmalıdır.                                                                                          |
+|                                  Zaman uyumsuz veya gerçek zamanlı işlemlerdir ve Kullanıcı girişinin tamamlanmasını gerektirmez. Zaman uyumsuz süreçler, gerçek zamanlı süreçler hemen çalıştırılırken arka planda çalışır.                                   | , Kullanıcı girişinin tamamlanmasını gerektiren gerçek zamanlı süreçlerdir. Bu süreçler çalıştırıldığında, işlem çalıştırmak için uygun seçimler yapabilmeniz için bir sihirbaz benzeri arabirim size sunulur. |
+|                                                    Çalışan bir zaman uyumsuz iş akışı hakkındaki ayrıntıları depolayan varlık, bir `Process` gerçek zamanlı bir iş akışı için kullanıldığında `AsyncOperation`.                                                     |                                                       Çalışan bir iletişim kutusu tarafından oluşturulan bilgileri depolayan varlık `ProcessSession` varlıktır.                                                       |
+|                  Tetikleyiciler, iş akışları için desteklenir. Desteklenen tetikleyicilerin listesi için bkz. [desteklenen türler, Tetikleyiciler ve süreçler Için varlıklar](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes).                   |                                                                                   İletişim kutuları için Tetikleyiciler desteklenmez.                                                                                    |
   
 ### <a name="see-also"></a>Ayrıca bkz.
-[İletişim kutularını iş süreci akışları veya tuval uygulamalarıyla değiştirme](replace-dialogs.md)
+[İletişim kutularını iş süreci akışlarıyla veya tuval uygulamalarıyla değiştirin](replace-dialogs.md)

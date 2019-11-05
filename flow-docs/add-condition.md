@@ -1,6 +1,6 @@
 ---
 title: Akışa koşul ekleme | Microsoft Docs
-description: Bir akışın, yalnızca bir koşulun doğru olması durumunda bir veya daha fazla görev gerçekleştirmesini belirtebilirsiniz.
+description: Bir akışın yalnızca bir koşulun doğru olması durumunda bir veya daha fazla görev gerçekleştireceğini belirtin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,65 +20,66 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b4407238f9d1782db802b47060b156b8b77c328b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3c67991a008047b2c8c58de3b9ae8833a5874543
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456377"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544708"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Akışa koşul ekleme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir akışın, yalnızca bir koşulun doğru olması durumunda bir veya daha fazla görev gerçekleştirmesini belirtebilirsiniz. Örneğin, anahtar sözcük içeren bir tweet'in yalnızca en az 10 kez retweetlenmesi durumunda bir e-posta alacağınızı belirtin.
+Bir akışın yalnızca bir koşulun doğru olması durumunda bir veya daha fazla görev gerçekleştireceğini belirtin. Örneğin, yalnızca bir anahtar sözcük içeren bir tweet, en az 10 kez yeniden kullanılabilir olduğunda bir e-posta alınacağını belirtin.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 
-* Şablondan [akış oluşturma](get-started-logic-template.md) - Bu öğreticide örnek olarak [bu şablon kullanılır](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/)
+* Şablondan [akış oluşturma](get-started-logic-template.md) -Bu öğretici [Bu şablonu](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) örnek olarak kullanır
 
 ## <a name="add-a-condition"></a>Koşul ekleme
 
-1. [Microsoft Flow](https://flow.microsoft.com)'da, üst gezinti çubuğundan **Akışlarım**'ı seçin.
+1. [Microsoft Flow](https://flow.microsoft.com), üst gezinti çubuğunda **Akışlarım** ' ı seçin.
 
     Henüz oturum açmadıysanız oturum açmanız gerekebilir.
 
-1. Akış listesinde oluşturduğunuz akışlardan birini seçin.
+1. Akışlar listesinde, oluşturduğunuz akışlardan birini seçin.
 
-    Bu öğreticide, bir Twitter tetikleyicisi ve SharePoint eylemi içeren bir örnek kullanılmıştır.
+    Bu öğreticide Twitter tetikleyicisi ve SharePoint eylemiyle birlikte bir örnek kullanılmıştır.
 
-1. **Akışı düzenle**'yi seçin.
+1. **Akışı Düzenle**' yi seçin.
 
-1. Son eylem altında, **Yeni adım**’ı seçin.
+1. Son eylem altında **yeni adım**' ı seçin.
 
-1. **Koşul ekle**'yi seçin.
+1. **Koşul Ekle**' yi seçin.
 
     ![Koşul düğmesi](./media/add-condition/add-condition.png)
 
-1. **Koşul** kartında, sol taraftaki kutudan boş bir alan seçin.
+1. **Koşul** kartında, sol taraftaki kutuda boş bir alan seçin.
 
     **Dinamik içerik** listesi açılır.
 
-1. Kutuya eklemek üzere **Retweet sayısı** parametresini seçin.
+1. Kutuya eklemek için **retweet Count** parametresini seçin.
 
-1. **Koşul** kartının ortasındaki kutudan **büyük veya eşit** öğesini seçin.
+1. **Koşul** kartının ortasındaki kutudan **büyük veya eşittir**' i seçin.
 
-1. Sağ taraftaki kutuya **10** değerini girin.
+1. Sağ taraftaki kutuya **10**girin.
 
-    ![Parametre içeren OBJECT NAME (NESNE ADI) kutusu](./media/add-condition/specify-condition.png)
+    ![Bir parametre içeren nesne adı kutusu](./media/add-condition/specify-condition.png)
 
-1. Koşulun içinde kullanmak istediğiniz eylemin (**Create item** gibi) üst bilgisine tıklayın ve **If yes** yazan metnin altına sürükleyin.
+1. Koşul içinde kullanmak istediğiniz eylemin üst bilgisini (örneğin, **öğe oluştur**) seçin ve **Evet ise**okuyan metnin altına sürükleyin.
 
-    İmleci serbest bıraktığınızda eylem bu kutuya taşınır.
+    İmleci serbest bırakırsanız, eylem bu kutuya gider.
 
-    ![Sürükleme eylemi](./media/add-condition/drag-action.png)
+    ![Sürükle eylemi](./media/add-condition/drag-action.png)
 
-1. Eylem gereken şekilde yapılandırın.
+1. Eylemi gereken şekilde yapılandırın.
 
 1. Akışı kaydedin.
 
-## <a name="edit-in-advanced-mode"></a>Gelişmiş modda düzenleme
+## <a name="edit-in-advanced-mode"></a>Gelişmiş modda Düzenle
 
-Daha gelişmiş koşullar yazmak için **Gelişmiş modda düzenle** öğesini de seçebilirsiniz. Gelişmiş moddaki *İş akışı tanımlama dili* içinden herhangi bir ifadeyi kullanabilirsiniz. Tüm kullanılabilir [ifadeler](https://msdn.microsoft.com/library/azure/mt643789.aspx) hakkında bilgi edinin.
+Daha gelişmiş koşullar yazmak için **Gelişmiş modda Düzenle '** yi de seçebilirsiniz. Herhangi bir ifadeyi gelişmiş modda *Iş akışı Tanım dilinden* kullanabilirsiniz. Kullanılabilir tüm [ifadeler](https://msdn.microsoft.com/library/azure/mt643789.aspx)hakkında bilgi edinin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Gelişmiş moddaki koşullarda [ifadeleri kullanma](use-expressions-in-conditions.md) hakkında bilgi edinin.
+İfadeleri gelişmiş modda koşullarda nasıl [kullanacağınızı](use-expressions-in-conditions.md) öğrenin.

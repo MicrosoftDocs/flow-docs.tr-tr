@@ -1,9 +1,10 @@
 ---
-title: İş süreci akışlarına genel bakış | MicrosoftDocs
+title: İş işleme akışlarına genel bakış | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
 ms.service: flow
+author: MSFTMAN
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -13,171 +14,172 @@ applies_to:
 - PowerApps
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
-ms.author: matp
+ms.author: DEONHE
 manager: kvivek
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 230c35947c4e499c5e26fc37bb87828ec787a469
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464961"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545511"
 ---
-# <a name="business-process-flows-overview"></a>İş süreci akışlarına genel bakış
+# <a name="business-process-flows-overview"></a>İş işleme akışlarına genel bakış
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir iş süreci akışı oluşturarak, kişilerin sürekli veri girmelerine ve bir müşteri ile her çalıştıklarında aynı adımları izlemelerine yardım olursunuz. Örneğin, herkesin müşteri hizmetleri isteklerini aynı şekilde ele alması veya kişilerin bir sipariş göndermeden önce fatura onayı istemesini zorunlu hale getirmek için bir iş süreci akışı oluşturmak isteyebilirsiniz. İş süreci akışları diğer süreçlerle aynı temel teknolojiyi kullanır, ancak sağladıkları yetenekler, süreçleri kullanan diğer özelliklerden çok farklıdır. Bir iş süreci akışı oluşturmayı veya düzenlemeyi öğrenmek için, bkz. [Bir iş süreci akışı oluşturma](create-business-process-flow.md).  
+Kişilerin verileri sürekli olarak girmelerini ve bir iş süreci akışı oluşturarak müşteriyle çalıştıkları her seferinde aynı adımları izlemesini sağlamaya yardımcı olabilirsiniz. Örneğin, herkesin müşteri hizmet taleplerini aynı şekilde işlemesini sağlamak ya da bir siparişi göndermeden önce kişilerin bir faturaya onay almasını istemek için bir iş süreci akışı oluşturmak isteyebilirsiniz. İş süreci akışları diğer işlemlerle aynı temel teknolojinin aynısını kullanır, ancak sağladıkları yetenekler, işlemleri kullanan diğer özelliklerden çok farklıdır. İş süreci akışını oluşturma veya düzenleme hakkında bilgi edinmek için bkz. [iş süreci akışı oluşturma](create-business-process-flow.md).  
   
  [İş süreci akışları hakkında kısa bir video (4:49) izleyin.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
   
 <a name="BKMK_Why"></a>   
-## <a name="why-use-business-process-flows"></a>İş süreci akışları neden kullanılır?  
-İş süreci akışları, insanların işlerini yapmaları için bir kılavuz sağlar. Kullanıcılara, kuruluşlarının bir sonuca ulaşmak için ihtiyaç duyduğu etkileşimler için tanımladığı süreçler içinde öncülük eden, kolaylaştırılmış bir kullanıcı deneyimi sağlar. Bu kullanıcı deneyimi, farklı güvenlik rollerine sahip kişilerin, yaptıkları işe en iyi uyan deneyime sahip olabilmeleri için uygun hale getirilebilir.  
+## <a name="why-use-business-process-flows"></a>İş süreci akışları neden kullanılmalıdır?  
+İş süreci akışları, kullanıcıların işleri almasını sağlayan bir kılavuz sağlar. Bu kişiler, kendilerine ait oldukları işlemlerin bir süre sonunda ileri düzey olması gereken etkileşimler için tanımladığı, kolaylaştırılmış bir kullanıcı deneyimi sağlar. Bu Kullanıcı deneyimi, farklı güvenlik rollerine sahip kişilerin yaptıkları işi en iyi şekilde sunan bir deneyimle karşılaşabilmesi için uyarlanabilir.  
   
- Kişilerin, kendilerini istenen sonuca götürmek için takip edecekleri bir adım kümesi tanımlamak için iş süreci akışlarını kullanın. Bu adımlar, insanlara iş sürecinde nerede olduklarını söyleyen görsel bir gösterge sağlar. Yeni kullanıcılar hangi varlığı kullanacaklarına odaklanmak zorunda olmadığı için, iş süreci akışları eğitime olan ihtiyacı azaltır. Sürecin kendilerine kılavuzluk etmesine izin verebilirler. Satış gruplarınızın daha iyi sonuçlar elde etmesine yardımcı olabilecek genel satış yöntemlerini desteklemek için iş süreci akışlarını yapılandırabilirsiniz. Hizmet grupları için, iş süreci akışları yeni personelin gelişmelerden daha çabuk haberdar olmasına yardımcı olabilir ve memnuniyetsiz müşterilere yol açabilecek hatalardan kaçınabilir.  
+ Kişilerin istedikleri sonuca gelmesi için takip etmek üzere bir adım kümesi tanımlamak için iş süreci akışlarını kullanın. Bu adımlar, kullanıcılara iş sürecinde oldukları yerleri söyleyen bir görsel gösterge sağlar. İş süreci akışları, yeni kullanıcıların kullanılması gereken varlığa odaklanmaları gerekmiyorsa eğitim gereksinimini azaltır. Bu işlemler, işlem kılavuzuna izin verebilir. İş süreci akışlarını, satış gruplarınızı daha iyi sonuçlar elde etmenize yardımcı olabilecek ortak satış yöntemlerini destekleyecek şekilde yapılandırabilirsiniz. İş süreci akışları, hizmet grupları için yeni personelin daha hızlı bir şekilde daha hızlı ulaşmasını ve memnun olmayan müşterilere neden olabilecek hatalardan kaçınmanıza yardımcı olabilir.  
   
 <a name="BKMK_What"></a>   
-## <a name="what-can-business-process-flows-do"></a>İş süreci akışları neler yapabilir?  
- İş süreci akışları ile, daha sonra formun en üstünde yer alan bir denetimde görüntülenecek bir *aşama* ve *adım* kümesi tanımlarsınız.  
+## <a name="what-can-business-process-flows-do"></a>İş süreci akışları ne yapabilir?  
+ İş süreci akışlarıyla, daha sonra formun en üstündeki bir denetimde görüntülenen bir dizi *aşama* ve *adım* tanımlarsınız.  
   
- ![Aşamalı iş süreçleri](media/business-process-stages.png "Aşamalı iş süreçleri")  
+ ![Aşamalarla iş süreci](media/business-process-stages.png "Aşamalarla iş süreci")  
   
- Her aşama bir adım grubu içerir. Her adım verilerin girilebileceği bir alanı temsil eder. Kişiler, **Sonraki Aşama** düğmesini kullanarak bir sonraki aşamaya ilerler. İnsanların bir sonraki aşamaya geçmeden önce ilgili alana veri girmesi için gerekli bir adım atabilirsiniz. Buna genellikle “aşama geçişi” adı verilir.  
+ Her aşama bir adım grubunu içerir. Her adım, verilerin girilebileceği bir alanı temsil eder. Kullanıcılar **sonraki aşama** düğmesini kullanarak sonraki aşamaya geçer. Kullanıcıların bir sonraki aşamaya geçebilmesi için ilgili alana veri girmesi gereken bir adım yapabilirsiniz. Bu genellikle "aşama geçişi" olarak adlandırılır.  
   
- İş süreci akışları diğer veri türlerine kıyasla nispeten basit görünürler, çünkü veri girişi ve aşamalara girişin denetlenmesi için kolaylaştırılmış bir deneyim sağlamanın ötesinde, herhangi bir koşullu iş mantığı veya otomasyonu sağlamazlar. Ancak, bunları diğer süreçler ve özelleştirmelerle birleştirdiğinizde insanlara zaman kazandırma, eğitim maliyetlerini azaltma ve kullanıcı benimsemesini artırmada önemli bir rol oynayabilirler.  
+ İş süreci akışları, veri girişi için kolaylaştırılmış deneyim sağlamaktan daha fazla koşullu iş mantığı veya Otomasyonu sağlamadıklarından, diğer işlem türleri görece şekilde oldukça basit görünür. Bununla birlikte, bunları diğer işlemlerle ve özelleştirmelerle birleştirdiğinizde, kişi zaman kaydederek önemli bir rol oynatabilir, eğitim maliyetlerini azaltabilir ve Kullanıcı benimseme işlemini artırır.  
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
-### <a name="business-process-flows-integrated-with-other-customizations"></a>Diğer özelleştirmelerle tümleşik iş süreci akışları  
- Siz veya kullanıcınız iş süreci akışlarını kullanarak veriye girdiğinizde, veri değişimleri, iş kuralları veya form betikleri tarafından sağlanan herhangi bir otomasyonun hemen uygulanabilmesi için alanlar oluşturmak için de uygulanır. Formda bulunmayan alanların değerlerini ayarlayan adımlar eklenebilir ve bu alanlar form betikleri için kullanılan `Xrm.Page` nesne modeline eklenir. Bir iş süreci akışına dahil edilen alanlarda yapılan değişikliklerle başlatılan tüm iş akışları, formdaki veriler kaydedildiğinde uygulanır. Otomasyon gerçek zamanlı bir iş akışı tarafından uygulanırsa, formdaki veriler kayıt kaydedildikten sonra yenilendiğinde, kullanıcıya hemen görünür.  
+### <a name="business-process-flows-integrated-with-other-customizations"></a>Diğer özelleştirmelerle tümleştirilmiş iş süreci akışları  
+ Siz veya kullanıcınız iş süreci akışlarını kullanarak veri girdiğinde, iş kuralları veya form betikleri tarafından sunulan tüm otomasyon hemen uygulanabilmesi için veri değişiklikleri form alanlarına da uygulanır. Formda mevcut olmayan alanlar için değerler ayarlanan adımlar eklenebilir ve bu alanlar, form betikleri için kullanılan `Xrm.Page` nesne modeline eklenecektir. Bir iş süreci akışına dahil edilen alanlarda yapılan değişiklikler tarafından başlatılan tüm iş akışları, formdaki veriler kaydedildiğinde uygulanır. Otomasyon gerçek zamanlı bir iş akışı tarafından uygulanırsa, form verileri kayıt kaydedildikten sonra yenilendiğinde, değişiklikler kullanıcıya anında görünür olur.  
   
- Formdaki iş süreci akış denetimi herhangi bir doğrudan istemci tarafı programlanabilirliği sağlamamasına rağmen, iş kuralları veya form betikleri tarafından uygulanan değişiklikler, iş süreci akış denetimlerine otomatik olarak uygulanır. Bir formdaki bir alanı gizlerseniz, bu alan iş süreci akış denetiminde de gizlenir. İş kuralları veya form betikleri kullanarak bir değer ayarlarsanız, bu değer iş süreci akışında ayarlanır.  
+ Form içindeki iş süreci akışı denetimi doğrudan istemci tarafı programlamasına sahip olmasa da, iş kuralları veya form betikleri tarafından uygulanan değişiklikler otomatik olarak iş süreci akış denetimlerine uygulanır. Formdaki bir alanı gizlerseniz, bu alan aynı zamanda iş süreci akış denetiminde de gizlenir. İş kuralları veya form betikleri kullanarak bir değer ayarlarsanız, bu değer iş süreci akışı içinde ayarlanır.  
   
-### <a name="concurrent-process-flows"></a>Eş zamanlı süreç akışları  
- Eş zamanlı iş süreci akışları, özelleştiricilerin birden çok iş süreci yapılandırmasını sağlar ve bunları aynı başlangıç kaydıyla ilişkilendirir. Kullanıcılar eş zamanlı çalışan birden çok iş süreci arasında geçiş yapabilir ve çalışmalarını devam ettikleri süreçteki aşamada devam ettirebilir.  
+### <a name="concurrent-process-flows"></a>Eşzamanlı işlem akışları  
+ Eşzamanlı iş süreci akışları, özelleştiricilerin birden çok iş işlemini yapılandırmalarına ve aynı başlangıç kaydıyla ilişkilendirilmesine izin verir. Kullanıcılar, eşzamanlı olarak çalışan birden fazla iş işlemi arasında geçiş yapabilir ve işlerini açık oldukları işlemde aşamada sürdürür.  
   
 <a name="BKMK_SystemBPF"></a>   
 ### <a name="system-business-process-flows"></a>Sistem iş süreci akışları  
- Aşağıdaki iş süreci akışları dahildir. İş süreci akışlarının nasıl işlediğini anlamak için, şu sistem iş süreci akışlarını inceleyin:  
+ Aşağıdaki iş süreci akışları dahildir. İş süreci akışlarının nasıl çalıştığını anlamak için, bu sistem iş süreci akışlarını gözden geçirin:  
   
--   Fırsat Satış Sürecine Yol Açma  
+-   Fırsat satışı sürecine lider  
   
--   Fırsat Satış Süreci  
+-   Fırsat satışı süreci  
   
--   Servis Talebi İşleme Telefonu  
+-   Telefonla servis talebi Işleme  
   
 <a name="BKMK_multipleEntities"></a>   
 ## <a name="multiple-entities-in-business-process-flows"></a>İş süreci akışlarında birden çok varlık  
- Tek bir varlık için bir iş süreci akışı kullanabilir veya birden çok varlığa yayabilirsiniz. Örneğin; bir fırsatla başlayan, ardından teklifi kapatmak için geri dönmeden önce teklif, sipariş ve faturaya devam eden bir sürece sahip olabilirsiniz.  
+ Bir iş süreci akışını tek bir varlık için veya birden çok varlığı yayan kullanabilirsiniz. Örneğin, bir fırsatla başlayan bir işleminiz olabilir, ardından bir teklife, siparişe ve sonra bir faturaya devam etmeden önce, fırsatı kapatmak üzere döndürmeden önce bir işlem yapabilirsiniz.  
   
- Uygulamayı kullanan kişilerin, üzerinde çalışmakta oldukları varlık yerine kendi süreçlerinin akışına odaklanabilmesi için, en fazla beş farklı varlığın kayıtlarını varlığa tek bir süreçle birleştiren iş süreci akışları tasarlayabilirsiniz. İlgili varlık kayıtları arasında daha kolay gezinebilirler.  
+ En fazla beş farklı varlık için kayıtları tek bir işlem halinde bağlayan iş süreci akışları tasarlayabilmeniz için, uygulamayı kullanan kişilerin üzerinde çalıştıkları varlık yerine kendi işlem akışına odaklanabilmesi adına. İlgili varlık kayıtları arasında daha kolay gezinebilirler.  
   
 <a name="BKMK_MultipleBPF"></a>   
-## <a name="multiple-business-process-flows-are-available-per-entity"></a>Varlık başına birden çok iş süreci akışı bulunur  
- Bir kuruluştaki her kullanıcı aynı süreci takip edemez ve farklı koşullar farklı bir sürecin uygulanmasını gerektirebilir. Farklı durumlar için uygun süreçleri sağlamak üzere, varlık başına en fazla 10 aktif iş süreci akışına sahip olabilirsiniz.  
+## <a name="multiple-business-process-flows-are-available-per-entity"></a>Varlık başına birden çok iş süreci akışı kullanılabilir  
+ Bir kuruluştaki her kullanıcı aynı işlemi takip edebilir ve farklı koşullar farklı bir işlemin uygulanmasını gerektirebilir. Farklı durumlara uygun işlemler sağlamak için varlık başına en fazla 10 etkin iş süreci olabilir.  
   
 <a name="BPF_controlsWhichBPF"></a>   
-### <a name="control-which-business-process-flow-will-be-applied"></a>Hangi iş süreci akışının uygulanacağını denetleyin  
- Yalnızca o güvenlik rollerine sahip kişilerin görebilmesi veya kullanabilmesi için, iş süreci akışlarını güvenlik rolleriyle ilişkilendirebilirsiniz. Hangi iş süreci akışının varsayılan olarak ayarlanacağını denetleyebilmek için, iş süreci akışlarının sırasını da ayarlayabilirsiniz. Bu, bir varlık için birden çok formun tanımlandığı gibi işler.  
+### <a name="control-which-business-process-flow-will-be-applied"></a>Hangi iş süreci akışının uygulanacağını denetleme  
+ İş süreci akışlarını güvenlik rolleriyle ilişkilendirebilmeniz için, yalnızca bu güvenlik rollerine sahip kişilerin bunları görmesini veya kullanmasını sağlayabilirsiniz. Ayrıca, iş süreci akışlarının sırasını, varsayılan olarak hangi iş süreci akışının ayarlanacağını denetleyebilmeniz için de ayarlayabilirsiniz. Bu, bir varlık için birden çok form tanımlananla aynı şekilde kullanılır.  
   
- Biri yeni bir varlık kaydı oluşturduğunda, kullanılabilir etkin iş süreci tanımı listesi kullanıcının güvenlik rolüyle filtrelenir. İşlem sırası listesine göre kullanıcının güvenlik rolü için kullanabilir olan, etkinleştirilmiş ilk iş süreci tanımı varsayılan olarak uygulanır. Birden fazla etkin iş süreci tanımlaması bulunuyorsa, kullanıcılar Süreci Değiştir iletişim kutusundan başka bir tane yükleyebilir. Süreçler her değiştirildiğinde, o anda işlenmiş süreç arka plana gider ve seçili olanla değiştirilir, ancak durumunu korur ve tekrar değiştirilebilir. Her kaydın birden çok ilişkili süreç örneği olabilir (her biri farklı bir iş süreci akış tanımlaması için, en fazla 10 tane). Form yüklemede yalnızca bir iş süreci akışı işlenir. Herhangi bir kullanıcı farklı bir süreç uyguladığında, o süreç yalnızca o kullanıcı için varsayılan olarak yüklenebilir.  
+ Birisi yeni bir varlık kaydı oluşturduğunda, kullanılabilir etkin iş süreci tanımının listesi kullanıcının güvenlik rolüne göre filtrelenir. Kullanıcının güvenlik rolü için, işlem sırası listesine göre kullanılabilir olan ilk etkinleştirilen iş süreci tanımı, varsayılan olarak uygulanan bir işlemdir. Birden fazla etkin iş süreci tanımı varsa, kullanıcılar, Işlemi Değiştir iletişim kutusundan bir tane yükleyebilir. Her geçen işlem, şu anda işlenmiş olan arka plana gider ve seçili bir şekilde değişir, ancak durumunu korur ve geri dönebilir. Her kayıt için birden çok işlem örneği (her biri farklı bir iş işlemi akış tanımı için, toplam 10 ' a kadar) olabilir. Form yükleme sırasında yalnızca bir iş süreci akışı işlenir. Herhangi bir kullanıcı farklı bir işlem uygularsa, bu işlem yalnızca söz konusu Kullanıcı için varsayılan olarak yüklenebilir.  
   
- Bir iş sürecinin tüm kullanıcılar için varsayılan olarak yüklendiğinden emin olmak için (süreci “sabitlemeye” eşdeğer davranış) form yüklemede, özellikle iş süreci tanımı kimliğini temel alan mevcut bir iş süreci örneğini yükleyen özel bir İstemci API komut dosyası (web kaynağı) eklenebilir. 
+ Bir iş sürecinin tüm kullanıcılar için varsayılan olarak yüklendiğinden emin olmak için (işlemi "sabitleme" davranışı ile eşdeğer), bir özel Istemci API betiği (Web kaynağı), işletmeden, mevcut bir iş süreci örneğini özel olarak yükleyen form yüküne eklenebilir işlem tanımı KIMLIĞI. 
  
   
 <a name="BKMK_Considerations"></a>   
-## <a name="business-process-flow-considerations"></a>İş süreci akışında dikkat edilmesi gerekenler  
- İş süreci akışlarını yalnızca kendilerini destekleyen varlıklar için tanımlayabilirsiniz. Eklenebilecek süreç, aşama ve adım sayısı sınırlarının da farkında olmanız gerekir.  
+## <a name="business-process-flow-considerations"></a>İş süreci akışı konuları  
+ İş süreci akışlarını yalnızca bunları destekleyen varlıklar için tanımlayabilirsiniz. Ayrıca, eklenebilecek işlem, aşama ve adımların sayısı için sınırlara dikkat etmeniz gerekir.  
   
-### <a name="business-process-flows-that-call-a-workflow"></a>Bir iş akışını çağıran iş süreci akışları  
- İsteğe bağlı iş akışlarını bir iş süreci akışının içinden çağırabilirsiniz. Bunu, bir iş akışı bileşenini bir süreç aşamasına veya Genel İş Akışları bölümüne sürükleyerek yeni iş süreci akış tasarımcısından yapılandırabilirsiniz. İş süreci akışı akışlarında iş akışlarını kullanma hakkında daha fazla bilgi için bkz. [Blog: Dynamics 365’te iş süreci akış otomasyonu](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+### <a name="business-process-flows-that-call-a-workflow"></a>İş akışını çağıran iş süreci akışları  
+ İsteğe bağlı iş akışlarını iş süreci akışının içinden çağırabilirsiniz. Bunu yeni iş süreci akış Tasarımcısı 'ndan bir iş akışı bileşenini bir işlem aşamasına veya küresel Iş akışları bölümüne sürükleyerek yapılandırabilirsiniz. İş süreci akışlarında iş akışlarını kullanma hakkında daha fazla bilgi için, bkz. [Blog: Dynamics 365 ' de iş süreci akışı Otomasyonu](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
- İş süreci akışınıza, bir aşamanın Aşama Çıkışı'nda tetiklemek istediğiniz bir iş akışı dahil etiğinizde ve bu aşama akıştaki son aşama olduğunda, tasarımcı o aşama tamamlandığında iş akışının tetikleneceği izlenimini verir. Ancak, bir aşama geçişi gerçekleşmediği için iş akışı tetiklenmez. İş akışını aşamaya dahil etmenizi engelleyen bir uyarı veya hata almazsınız. Bir kullanıcı iş süreci akışıyla etkileşime girdiğinde, işlemi bitirmek veya bırakmak aşama geçişiyle sonuçlanmaz ve bu nedenle iş akışı tetiklenmez. Aşağıdaki örnekleri dikkate alın:  
+ İş süreci akışınızda bir aşamanın aşamasına çıkmak istediğiniz bir iş akışını dahil ettiğinizde ve bu aşama akıştaki son aşamayken, tasarımcı iş akışının bu aşama tamamlandığında tetikleyeceği izlenimi verir. Ancak, bir aşama geçişi gerçekleşmediğinden iş akışı tetiklenmeyecektir. İş akışını aşamasına dahil etmek için bir uyarı veya hata almazsınız. Bir kullanıcı iş süreci akışıyla etkileşime geçtiğinde, işlemin tamamlanması veya geri olmaması bir aşama geçişine neden olmaz ve bu nedenle iş akışı tetiklenmez. Aşağıdaki örnekleri göz önünde bulundurun:  
   
--   İki aşamalı bir iş süreci akışı oluşturursunuz, S1, S2 aşamasındaki bir iş akışıyla S2’ye bağlanır ve tetiği **Aşama Çıkışı**’na ayarlarsınız.  
+-   İki aşamaya sahip bir iş süreci akışı oluşturursunuz. S1, S2 ' de bir iş akışı ile S2 'ye bağlanır ve tetikleyiciyi **aşama çıkış**olarak ayarlar.  
   
--   Üç aşamalı bir iş süreci akışı oluşturursunuz, S1, S2’ye bağlanır, ardından S2, S3’e dal oluşturur. S2’ye bir iş akışı dahil edersiniz ve tetiği **Aşama Çıkışı**’na ayarlarsınız.  
+-   Üç aşamadan oluşan bir iş süreci akışı oluşturursunuz, S1, S2 'ye bağlanır ve S2, S3 'e dallandırır. S2 'ye bir iş akışı ekleyin ve tetikleyiciyi **aşama çıkış**olarak ayarlayın.  
   
- İş akışı, her iki durumda da tetiklenmez. Bu sorunu geçici olarak çözmek için Genel İş Akışı ekleyebilir ve iş akışının, sürecin bir aşaması yerine iş süreci için tetiklenmesi için, tetiklemek istediğiniz iş akışını buna ekleyebilirsiniz. Bir kullanıcı iş sürecini bıraktığında veya tamamladığında, Bırakılan Sürecin veya Tamamlanan Sürecin iş akışının tetiklenmesine yol açması için Genel iş akışının tetiklenmesini ayarlayabilirsiniz.  
+ İş akışı her iki durumda da tetiklemez. Bu sorunu geçici olarak çözmek için, genel bir Iş akışı ekleyebilir ve tetiklemeyi istediğiniz iş akışını, iş akışının işlemin bir aşaması yerine iş süreci için tetiklenmesi için ekleyebilirsiniz. Bir kullanıcı iş sürecini tamamladıktan veya tamamlandığında iş akışının tetiklenmesine neden olmak için, bir genel iş akışı için tetikleyiciyi durdurulmuş veya Işlem tamamlandı olarak ayarlayabilirsiniz.  
   
 <a name="BKMK_Entities"></a>   
-### <a name="entities-that-can-use-business-process-flows"></a>İş süreci akışlarını kullanabilen varlıklar  
- Tüm özel varlıklar iş süreci akışlarını kullanabilir. Aşağıdaki standart varlıklar da iş süreci akışlarını kullanabilir:  
+### <a name="entities-that-can-use-business-process-flows"></a>İş süreci akışlarını kullanan varlıklar  
+ Tüm özel varlıklar, iş süreci akışlarını kullanabilir. Aşağıdaki standart varlıklar iş süreci akışlarını da kullanabilir:  
   
--   Hesap  
--   Randevu  
--   Kampanya  
--   Kampanya Etkinliği  
--   Kampanya Yanıtı  
--   Rakip  
--   İletişim  
+-   Hesabı  
+-   Randevusundaki  
+-   Kampanyadan  
+-   Kampanya etkinliği  
+-   Kampanya yanıtı  
+-   Oluşturma  
+-   İrtibata  
 -   E-posta  
--   Destek Hakkı  
+-   Verme  
 -   Faks  
--   Servis Talebi  
--   Fatura  
--   Müşteri Adayı  
--   Mektup  
--   Pazarlama Listesi  
--   Fırsat  
--   Telefon Araması  
--   Ürün  
--   Fiyat Listesi Kalemi  
--   Teklif  
--   Yinelenen Randevu  
--   Satış Belgesi  
--   Sosyal Etkinlik  
--   Sıra  
--   Kullanıcı  
--   Görev  
+-   Harflerini  
+-   Faturalayabilirsiniz  
+-   Neden  
+-   Harfin  
+-   Pazarlama listesi  
+-   Fırsatta  
+-   Telefon araması  
+-   Ürünüyle  
+-   Fiyat listesi öğesi  
+-   Tırnak  
+-   Yinelenen randevu  
+-   Satış belgeleri  
+-   Sosyal etkinlik  
+-   Siparişi  
+-   Kullanıcısını  
+-   Görevinin  
 -   Takım  
   
- İş süreci akışları için özel bir varlık etkinleştirmek için, varlık tanımındaki **İş süreci akışları (alanlar oluşturulacak)** onay kutusunu seçin. Bu eylemi geri alamayacağınızı unutmayın.  
+ İş süreci akışları için özel bir varlığı etkinleştirmek üzere varlık tanımında **iş süreci akışlarını (alanları oluşturulacak alanlar)** onay kutusunu seçin. Bu eylemi geri alamazsınız.  
   
 > [!NOTE]
->  `Social Activity` varlığı içeren iş süreci akış aşamasına gidip **Sonraki Aşama** düğmesini seçerseniz **Oluştur** seçeneğini görürsünüz. **Oluştur**’u seçtiğinizde, **Sosyal Etkinlik** formu yüklenir. Ancak `Social Activity` uygulama kullanıcısı arabiriminden `Create` için geçerli olmadığından, formu kaydedemezsiniz ve şu hata iletisini görürsünüz: “Beklenmeyen hata”.  
+>  `Social Activity` varlığını içeren iş süreci akış aşamasına gidebilir ve **sonraki aşama** düğmesini seçtiğinizde, **Oluştur** seçeneğini görürsünüz. **Oluştur**' u seçtiğinizde **sosyal etkinlik** formu yüklenir. Ancak, uygulama kullanıcı arabiriminden `Create` için `Social Activity` geçerli olmadığından, formu kaydedemeyeceksiniz ve şu hata iletisini görürsünüz: "beklenmeyen hata".  
   
 <a name="BPF_MaxNumbers"></a>   
-### <a name="maximum-number-of-processes-stages-and-steps"></a>Süreç, aşama ve adım sayısı üst sınırı  
- Kabul edilebilir performans ve kullanıcı arabiriminin kullanılabilirliğini sağlamak için, iş süreci akışlarını kullanmayı planladığınızda dikkat etmeniz gereken bazı sınırlamalar vardır:  
+### <a name="maximum-number-of-processes-stages-and-steps"></a>En fazla işlem, aşama ve adım sayısı  
+ Kullanıcı arabiriminin kabul edilebilir performansını ve kullanılabilirliğini sağlamak için, iş süreci akışlarını kullanmayı planlarken dikkat etmeniz gereken bazı sınırlamalar vardır:  
   
--   Varlık başına 10’dan fazla etkinleştirilmiş iş akış süreci olamaz.  
+-   Varlık başına en fazla 10 etkin iş süreci akışı işlemi olabilir.  
   
--   Her süreç en fazla 30 aşama içerebilir.  
+-   Her işlem 30 ' dan fazla aşama içerebilir.  
   
--   Çoklu varlık süreçleri en fazla beş varlık içerebilir.
+-   Çoklu varlık işlemlerinde en fazla beş varlık bulunabilir.
   
-## <a name="business-process-flow-entity-customization-support"></a>İş süreci akış varlığı özelleştirme desteği 
+## <a name="business-process-flow-entity-customization-support"></a>İş süreci akışı varlık özelleştirme desteği 
 
-Varlık kaydı verileri kılavuzlarda, görünümlerde, grafiklerde ve panolarda kullanılabilmesi için, Dynamics 365 (çevrimiçi) sürüm 9.0 güncelleştirmesinde sunulan iş süreci akış varlıkları sistemde görünebilir. 
+Dynamics 365 (çevrimiçi), sürüm 9,0 güncelleştirmesinde tanıtılan iş süreci akış varlıkları sistemde görünebilir, böylece varlık kaydı verileri kılavuzlar, görünümler, grafikler ve panolarda kullanılabilir hale getirilebilir. 
 
-### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>İş süreci akış varlığı kayıtlarını kılavuzlar, görünümler, grafikler ve panolarla kullanma
+### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Kılavuzlar, görünümler, grafikler ve panolar ile iş süreci akışı varlık kayıtlarını kullanma
 
-İş süreci akışlarının bir varlık olarak kullanılabilir olmasıyla, bir müşteri adayı veya fırsat gibi belli bir varlığın iş süreci akış verilerinden kaynaklanan gelişmiş aramalar, görünümler, grafikler ve panolar kullanabilirsiniz. Sistem yöneticileri ve özelleştiriciler, başka bir varlık ile oluşturulanlara benzeyen özel iş süreci akış kılavuzları, görünümler, grafikler ve panolar oluşturabilir.
+Bir varlık olarak kullanılabilen iş süreçleriyle birlikte, bir müşteri adayı veya fırsat gibi belirli bir varlık için iş süreci akış verilerinden kaynaklanan gelişmiş bulma, görünümler, grafikler ve panoları kullanabilirsiniz. Sistem yöneticileri ve özelleştiriciler, başka bir varlıkla oluşturulanlara benzer özel iş süreci akış kılavuzları, görünümler, grafikler ve panolar oluşturabilir.
 
-**Müşteri Adayından Fırsat Satışına Geçiş Süreci** gibi iş süreci akışları, çözüm gezgininde özelleştirilebilir bir varlık olarak görünür.
+**Fırsat satışları Için müşteri adayı süreci**gibi iş süreci akışları, Çözüm Gezgini 'nde özelleştirilebilir bir varlık olarak görünür.
 
-![Müşteri adayından fırsat satışına geçiş sürecine sahip Çözüm Gezgini](media/bpf-lead-solution-explorer.png)
+![Müşteri adayı-fırsat işlem varlığıyla Çözüm Gezgini](media/bpf-lead-solution-explorer.png)
 
-Varsayılan bir iş süreci akış görünümüne erişmek için, çözüm gezginini açın, **Varlıklar**’ı genişletin > **Müşteri Adayından Fırsat Satışına Geçiş Süreci** gibi istediğiniz süreci genişletin,  **Görünümler**’i seçin ve ardından istediğiniz görünümü seçin.
+Varsayılan bir iş süreci akışı görünümüne erişmek için Çözüm Gezgini ' ni açın, **varlıklar** ' ı genişletin > istediğiniz işlemi genişletin, örneğin **fırsat satışları süreci**, **Görünümler**' i seçin ve ardından istediğiniz görünümü seçin.
 
-**Etkin Fırsat Satışı Süreci** görünümü gibi bir grafik olarak görüntüleyebileceğiniz bazı varsayılan görünümler bulunmaktadır. 
+**Etkin fırsat satış süreci** görünümü gibi bir grafik olarak görüntüleyebileceğiniz çeşitli varsayılan görünümler vardır. 
 
-![Etkin Fırsat Satışı Süreci görünümü](media/bpf-default-view.png)
+![Etkin fırsat satışları Işlem görünümü](media/bpf-default-view.png)
 
-### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Bir iş akışından, iş süreci akış varlığıyla etkileşime girme
-Bir iş akışından, iş süreci akış varlıklarıyla da etkileşime girebilirsiniz. Örneğin, Fırsat varlığı kaydındaki bir alan güncelleştirildiğinde, Etkin Aşama'yı değiştirmek için İş Süreci Akışı varlık kaydı için bir iş akışı oluşturabilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için, bkz. [İş akışlarını kullanarak iş süreci akış aşamalarını otomatikleştirme](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
+### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Bir iş akışından iş süreci akışı varlığıyla etkileşim kurma
+İş süreci akışı varlıklarıyla bir iş akışından de etkileşim kurabilirsiniz. Örneğin, fırsat varlık kaydındaki bir alan güncelleştirilirken etkin aşamayı değiştirmek üzere Iş süreci akışı varlık kaydı için bir iş akışı oluşturabilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. iş [akışlarını kullanarak iş süreci akışı aşamalarını otomatikleştirme](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
 
-### <a name="limitations-of-using-business-process-flow-entities"></a>İş süreci akış varlıklarını kullanma sınırlamaları
+### <a name="limitations-of-using-business-process-flow-entities"></a>İş süreci akışı varlıklarını kullanma sınırlamaları
 
-- Şu anda bir iş süreci akışını temel alan varlıklar için özel formlar oluşturamazsınız.
-- Bir çözüm, bir iş süreci akış varlığı içeriyorsa, dışarı aktarmadan önce, iş süreci akış varlığını çözüme el ile eklemeniz gerekir. Tersi durumda, iş süreci akış varlığı çözüm paketine dahil edilmez. Daha fazla bilgi: [Çözüm bileşenleri ekleme](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Şu anda, iş süreci akışına göre varlıklar için özel formlar oluşturamazsınız.
+- Bir çözüm iş süreci akışı varlığı içeriyorsa, iş süreci akış varlığının dışarı aktarmadan önce çözüme el ile eklenmesi gerekir. Aksi takdirde, iş süreci akış varlığı çözüm paketine dahil edilmez. Daha fazla bilgi: [çözüm bileşenleri ekleme](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 
 ### <a name="next-steps"></a>Sonraki adımlar  
  [İş süreci akışları hakkında kısa bir video (4:49) izleyin](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [İş süreci akışı oluşturma](create-business-process-flow.md)   
- [Dal oluşturma ile iş süreci akışlarını geliştirme](enhance-business-process-flows-branching.md) <br/>
- [Teknik İnceleme: Dynamics 365 ile İşlem Etkinleştirme](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Dalla iş süreci akışlarını geliştirin](enhance-business-process-flows-branching.md) <br/>
+ [Teknik İnceleme: Dynamics 365 ile Işlem etkinleştirme](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

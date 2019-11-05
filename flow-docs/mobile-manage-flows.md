@@ -1,6 +1,6 @@
 ---
-title: Akışları telefonunuzdan yönetme | Microsoft Docs
-description: Akışlar listenizi görüntüleme, akışları etkinleştirme veya devre dışı bırakma ve her bir akışa ilişkin olayları, eylemleri ve çalıştırma geçmişini görüntüleme
+title: Telefonlarınızdan akışları yönetin | Microsoft Docs
+description: Akışlarınızın listesini görüntüleyin, bunları etkinleştirin veya devre dışı bırakın ve her akışın olay/s, eylem/sn ve çalıştırma geçmişini görüntüleyin
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,50 +20,51 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 6f452f52d654d6f03a3262de8888c68cb2480704
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64467693"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548628"
 ---
-# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Microsoft Flow'daki akışları telefonunuzdan yönetme
-Oluşturduğunuz tüm akışların listesini görüntülemenin ve akışları etkinleştirip devre dışı bırakmanın yanı sıra her bir akışa ilişkin olayları, eylemleri ve çalıştırma geçmişini görüntüleyin.
+# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Telefonunuzdaki Microsoft Flow akışlarını yönetme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Oluşturduğunuz tüm akışların bir listesini görüntüleyin, her akış için olay ve eylemleri görüntüleyin, bunu etkinleştirin veya devre dışı bırakın ve çalıştırma geçmişini bulun.
 
-**Önkoşullar**
+**Kaynakları**
 
-* [Desteklenen bir cihazda](getting-started.md#use-the-mobile-app) [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamasını yükleyin. Bu konu başlığında kullanılan grafikler, uygulamanın iPhone sürümünden alınmıştır ancak Android ve Windows Phone için de benzer grafikler sunulur.
-* Akışınız yoksa [Microsoft Flow'un web sitesinde](https://flow.microsoft.com/) bir akış oluşturun. Daha kolay test edebilmek için, bir dış olay beklemek yerine kendi kendinize tetikleyebileceğiniz bir akış kullanın.
+* [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)veya [Windows Phone](https://aka.ms/flowmobilewindows) için Microsoft Flow mobil uygulamayı [desteklenen bir cihaza](getting-started.md#use-the-mobile-app)yükler. Bu konudaki grafikler uygulamanın iPhone sürümünü yansıtır, ancak Android ve Windows Phone grafikleri de benzer şekilde görünür.
+* Zaten bir akışınız yoksa, [Microsoft Flow web sitesinde](https://flow.microsoft.com/)bir tane oluşturun. Daha kolay test için, bir dış olay beklemek yerine kendi kendinize tetikleyebileceğiniz bir tane kullanın.
 
 Bu öğreticideki akış, belirli bir adresten e-posta aldığınızda çalıştırılır:
 
-![Belirli adreslerden e-posta alındığında akış tetikleme](./media/mobile-manage-flows/create-trigger.png)
+![Belirli bir adresten posta alındığında akış Tetikle](./media/mobile-manage-flows/create-trigger.png)
 
-Bu tür bir akışı; test etme amaçlı olarak kişisel e-posta adresinizle ve akış hazır olduğunda gerçek kullanım için farklı bir adresle (örneğin, yöneticinizin adresi) yapılandırabilirsiniz.
+Bu tür bir akışı, test için kişisel e-posta adresiniz ve bir akış, gerçek kullanıma hazırlandığınızda farklı bir adres (örneğin, yöneticinizin) ile yapılandırabilirsiniz.
 
-Akış çalıştırıldığında telefonunuza şu söz diziminin bulunduğu özel bir anında iletme bildirimi gönderilir:
+Akış çalıştırıldığında, telefonunuza bu söz dizimi ile özel bir anında iletme bildirimi gönderilir:
 
-![Slack'e ileti gönderme](./media/mobile-manage-flows/create-event.png)
+![Bolluğu bir ileti gönder](./media/mobile-manage-flows/create-event.png)
 
-**Not**: Ayrıca [akış etkinliğini izleme](mobile-monitor-activity.md) mobil uygulamadan alınan.
+**Note**: mobil uygulamadaki [Flow etkinliğini de izleyebilirsiniz](mobile-monitor-activity.md) .
 
-## <a name="manage-a-flow"></a>Akışı yönetme
-1. Mobil uygulamayı açın ve ardından tüm akışlarınızı listelemek için ekranın altındaki **Akışlarım**'a dokunun.
+## <a name="manage-a-flow"></a>Akış yönetme
+1. Mobil uygulamayı açın ve ardından tüm akışlarınızın listesini listelemek için ekranın altındaki **Akışlarım** ' a dokunun.
    
-    Her bir girişte akışın adı, akışın olaylarına ve eylemlerine ilişkin simgeler ve akışın son çalıştırma zamanının yanı sıra son çalıştırmanın başarılı olup olmadığını belirten bir simge gösterilir.
+    Her girişte akışın adı, olayları ve eylemleri için simgeler, en son çalıştırıldığı zaman ve en son çalıştırmanın başarılı olup olmadığını gösteren bir simge gösterilir.
    
     ![Akışlar listesi](./media/mobile-manage-flows/flow-list.png)
-2. Yönetme seçeneklerini görüntülemek için bir akışa dokunun.
+2. Bir akışa dokunarak yönetme seçeneklerini gösterin.
    
-    ![Akışları yönetme seçenekleri](./media/mobile-manage-flows/flow-details.png)
-3. Akışı etkinleştirmek veya devre dışı bırakmak için iki durumlu **Enable flow** (Akışı etkinleştir) düğmesine dokunun.
-4. Bu akışın olay ve eylemlerini görüntülemek için **See flow** (Akışı gör) düğmesine dokunun. Genişletmek için ise her bir olaya veya eyleme dokunun ve ardından **Geri**'ye dokunun.
+    ![Akışı yönetme seçenekleri](./media/mobile-manage-flows/flow-details.png)
+3. Akışı etkinleştirmek veya devre dışı bırakmak için **akışı etkinleştir** ' e dokunun.
+4. **Akışı gör** ' e dokunarak bu akışa ait olayları ve eylemleri görüntüleyin, her bir olaya veya genişletmek için bir eyleme dokunun ve ardından **geri**' ye dokunun.
    
-    ![Bir akışa ilişkin olaylar ve eylemler](./media/mobile-manage-flows/flow-event-action.png)
-5. Akışın başarılı olduğu zamanları, başarısız olduğu zamanları veya her ikisini birden görüntülemek için **Run history**'ye (Çalıştırma geçmişi) dokunun.
+    ![Bir akış için olaylar ve eylemler](./media/mobile-manage-flows/flow-event-action.png)
+5. Akışın başarıları, başarısızlıklarını veya her ikisini de göstermek için **çalıştırma geçmişi** ' ne dokunun.
    
-    ![Çalıştırma listesi](./media/mobile-manage-flows/history-mixed.png)
-6. Her bir olay ve eylemin başarılı olup olmadığını ve başarılı olmuşsa ne kadar sürdüğünü (saniye cinsinden) göstermek için bir çalıştırmaya dokunun.
+    ![Çalıştırmalar listesi](./media/mobile-manage-flows/history-mixed.png)
+6. Bir çalıştırmaya dokunarak her bir olay ve eylemin başarılı olup olmadığını ve ne kadar süre (saniye cinsinden) sürdüğünü görüntüleyin.
    
     ![Çalıştırma ayrıntıları](./media/mobile-manage-flows/flow-run.png)
 

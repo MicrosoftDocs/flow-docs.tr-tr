@@ -1,6 +1,6 @@
 ---
 title: Microsoft Flow ortamları hakkında bilgi edinin | Microsoft Docs
-description: Akışlarınıza yalıtım uygulamak için ortamları kullanmayı öğrenin
+description: Akışlarını yalıtmak için ortamları nasıl kullanacağınızı öğrenin
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,78 +20,79 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0e6b410f75f28ba13357878a5cda178bc66b69ff
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8890e621d14fb0f2d00af4cdf767f05ddeab9f21
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460850"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547950"
 ---
 # <a name="choosing-an-environment"></a>Ortam seçme
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bu makalede akışlarınızı, ağ geçitlerinizi, bağlantılarınızı ve diğer kaynaklarınızı oluşturabileceğiniz ve güvenli bir şekilde yalıtabileceğiniz Microsoft Flow **ortamları** hakkında bilgi verilmektedir.
+Bu makalede, akışları, ağ geçitlerini, bağlantılarınızı ve diğer kaynaklarınızı oluşturabileceğiniz ve güvenli bir şekilde ayırabilmeniz için kullanabileceğiniz **ortamlar** Microsoft Flow açıklanır.
 
-Şu öğeler hakkında bilgi edineceksiniz:
+Şunları öğreneceksiniz:
 
-* Ortamların sunduğu özellikler.
+* Ortamların sağladığı özellikler.
 * Ortamlar arasında geçiş yapma.
-* Akışı doğru ortamda oluşturma.
+* Doğru ortamda akış oluşturma.
 
 ## <a name="environments-overview"></a>Ortamlara genel bakış
 
-Bir akış oluştururken, akışı barındıracak ortamı ve bu akışın kullanacağı kaynakları seçersiniz. Farklı senaryolar için ayrı ortamlar kullanabilirsiniz.
+Bir akış oluşturduğunuzda, akışı barındıracak bir ortam ve akışın kullandığı kaynakları seçersiniz. Farklı senaryolar için ayrı ortamlar kullanabilirsiniz.
 
-## <a name="here-are-a-few-scenarios-for-using-environments"></a>Aşağıda bazı ortam kullanma senaryolarına yer verilmiştir
+## <a name="here-are-a-few-scenarios-for-using-environments"></a>Ortamları kullanmaya yönelik bazı senaryolar aşağıda verilmiştir
 
-Senaryo|Öneri
+Senaryon|Önerilen
 -----|-----
-Microsoft Common Data Service bağlantısı kullanan bir akış oluşturmak istiyorsunuz.|Akış ve Common Data Service verilerinizi aynı ortamda barındırın. Bu, tüm verilerin bu ortamda yalıtılmasını sağlar (yalıtım sınırı).
-İnsan Kaynakları departmanınız için bir akış oluşturuyorsunuz. Yalnızca İnsan Kaynakları departmanınızdaki kullanıcıların bu akışa erişebilmesini sağlamak istiyorsunuz.|Bir ortam oluşturun ve yalnızca İK kullanıcılarını ekleyin. Akışı ve akışın kullandığı diğer kaynakları bu ortama yerleştirin.
-Avrupa'da SharePoint verilerini göstermek için akış kullanan kullanıcılar mevcuttur.|Akışı ve SharePoint bağlantısını barındırmak üzere Avrupa'da bulunan bir ortam oluşturun. Bu Avrupa ortamı, tüm kaynaklar Avrupa'da bulunduğu için (yerel veri konumu) Avrupa'daki kullanıcılara en iyi performansı sunar.
+Microsoft Common Data Service bağlantısını kullanan bir akış oluşturmak istiyorsunuz.|Akışınızı ve Common Data Service aynı ortama yerleştirin. Bu, tüm verilerin bu ortam içinde yalıtılması (yalıtım sınırı) sağlar.
+Insan kaynakları departmanınız için bir akış oluşturuyorsunuz. Yalnızca Insan kaynakları departmanınızdaki kullanıcıların akışa erişimi olduğundan emin olmak istiyorsunuz.|Bir ortam oluşturun ve yalnızca ık kullanıcıları ekleyin. Akışı ve akışın kullandığı diğer kaynakları bu ortama yerleştirin.
+Avrupa 'da SharePoint verilerini göstermek için akış kullanan kullanıcılar vardır.|Avrupa 'da bir ortam oluşturun ve ardından akışınızdan SharePoint bağlantısını oluşturun. Bu Avrupa ortamı, tüm kaynaklar Avrupa 'Da (veri konumu) yerel olduğundan Avrupa kullanıcılarına en iyi performansı verir.
 
-Ortam oluşturmak için Microsoft Flow yöneticisi olmanız gerekir. Ortam erişimlerini yöneticiler denetleyebilir. Ortam oluşturma ve yönetme hakkında ayrıntılı bilgi için bkz. [Ortamları yönetme](environments-overview-admin.md).
+Ortamları oluşturmak için bir Microsoft Flow yöneticisi olmanız gerekir. Ortamlara kimin erişimi olduğunu denetleyen yöneticiler. Ortamları oluşturma ve yönetme hakkında ayrıntılı bilgi için [ortamları yönetme](environments-overview-admin.md) konusuna bakın.
 
-## <a name="switching-environments"></a>Ortamlar arasında geçiş yapma
+## <a name="switching-environments"></a>Ortamları değiştirme
 
-Microsoft Flow, ortamlar arasında geçiş yapmayı kolaylaştırır. Ortamlar arasında geçiş yaptığınızda yalnızca belirli bir ortamda oluşturulmuş olan öğeleri görürsünüz. Diğer ortamlardaki öğeleri göremez ve bunlara erişemezsiniz.
+Microsoft Flow ortamlar arasında geçiş yapmayı kolaylaştırır. Ortamları değiştirdiğinizde yalnızca ilgili ortamda oluşturulan öğeleri görürsünüz; başka bir ortamdaki öğelere yönelik olarak görmezsiniz veya erişiminiz yok.
 
-İşte bir örnek:
+İşte bir örnek.
 
-*İnsan Kaynakları* ortamında *YeniÇalışan* adında bir akış oluşturdunuz. [Microsoft Flow](https://flow.microsoft.com)'da *Satış* ortamını açarsınız. *YeniÇalışan* akışı listelenmez. *YeniÇalışan* akışını görmek için *İnsan Kaynakları* ortamını açın. Bu kuralların bağlantılar, ağ geçitleri, akışlar gibi ortamda oluşturduğunuz diğer tüm öğeler için geçerli olacağını unutmayın.
+*Insan kaynakları* ortamında *yeniçalışan* adlı bir akış oluşturdunuz. [Microsoft Flow](https://flow.microsoft.com), *Satış* ortamını açarsınız. *Yeniçalışan* akışı listelenmez. *Yeniçalışan* akışını görmek Için *insan kaynakları* ortamını açın. Aynı kuralların bağlantılar, ağ geçitleri, akışlar ve daha fazlası dahil olmak üzere, ortamda oluşturduğunuz diğer tüm öğeler için de uygulandığını unutmayın.
 
-Ortamlar arasında geçiş yapmak için aşağıdaki adımları izleyin:
+Ortamları değiştirmek için şu adımları izleyin:
 
-1. [Microsoft Flow](https://flow.microsoft.com)'da oturum açın.
-1. Sağ üst köşede profilinizi gösteren bir resim göreceksiniz.
+1. [Microsoft Flow](https://flow.microsoft.com)oturum açın.
+1. Sağ üst köşede, profilinizi temsil eden bir görüntü görürsünüz.
 
    ![profil resmi](./media/environments-overview-maker/default-environment.png)
 
-1. Görüntüyü seçin. Açılır listede, kullanabileceğiniz tüm ortamlar görüntülenir. Oturum açmış olduğunuz ortamın yanında onay işareti bulunur:
+1. Görüntüyü seçin. Açılan listede, size sunulan tüm ortamlar görüntülenir. Şu anda oturum açtığınız ortam işaretlendi:
 
-   ![ortam listesi görüntüsü](./media/environments-overview-maker/all-environments.png)
-1. Farklı bir ortama geçmek için listeden o ortamı seçin:
+   ![ortam görüntüsü listesi](./media/environments-overview-maker/all-environments.png)
+1. Başka bir ortama geçiş yapmak için listeden bu ortamı seçin:
 
-   ![geçiş yapmak istediğiniz ortamı seçin](./media/environments-overview-maker/select-europe.png)
-1. Microsoft Flow yeni ortama geçer.
+   ![geçiş yapmak için bir ortam seçin](./media/environments-overview-maker/select-europe.png)
+1. Microsoft Flow yeni ortama geçiş yapar.
 
-## <a name="create-flows-in-the-right-environment"></a>Akışı doğru ortamda oluşturma
+## <a name="create-flows-in-the-right-environment"></a>Doğru ortamda akış oluşturma
 
-Akış oluşturduğunuz için akışı ve kaynaklarını ekleyeceğiniz ortamı seçmeniz gerekir.
-
-> [!NOTE]
-> Akışı yanlış bir ortamda oluşturduysanız silip doğru ortamda tekrar oluşturmanız gerekir.
-
-Akışlarınızın barındırılacağı ortamı seçerken aşağıdaki unsurları göz önünde bulundurun:
-
-* Yalnızca varsayılan ortamda ağ geçidi oluşturabilirsiniz. Bu nedenle şirket içi verilerinize bağlanmak için bir ağ geçidi kullanmak isterseniz varsayılan ortamı kullanmanız gerekir.
-* Microsoft Common Data Service veritabanları belirli bir ortama bağlıdır. Bu nedenle Common Data Service kullanan bir akış oluşturmak isterseniz akışı, veritabanını barındıran ortamda oluşturmanız gerekir.
-* İçindeki kaynakları düzenleyebileceğiniz tüm ortamları görürsünüz. Ancak yöneticinizden sizi akış oluşturmak istediğiniz tüm ortamlara üretici olarak eklemesini istemeniz gerekir.
+Bir akış oluşturmadan önce, akışını ve kaynaklarını ekleyeceğiniz ortamı seçin.
 
 > [!NOTE]
-> Varsayılan ortamda akış oluşturmak için herhangi bir ek izne ihtiyacınız yoktur.
+> Yanlış ortamda bir akış oluşturursanız, onu silmeniz ve ardından doğru ortamda oluşturmanız gerekir.
+
+Akışlarınızı barındırmak için bir ortam seçerken aşağıdaki faktörleri göz önünde bulundurun:
+
+* Yalnızca varsayılan ortamda ağ geçitleri oluşturabilirsiniz. Bu nedenle, akışınızı şirket içi verilere bağlamak üzere bir ağ geçidi kullanmak istiyorsanız, varsayılan ortamı kullanmanız gerekir.
+* Microsoft Common Data Service veritabanları belirli bir ortama bağlıdır. Bu nedenle, Common Data Service kullanan bir akış oluşturmak istiyorsanız, akışı veritabanını barındıran ortamda oluşturmanız gerekir.
+* Kaynakları düzenleyebileceğiniz tüm ortamları görürsünüz. Ancak, bir yöneticiden akışları oluşturmak istediğiniz tüm ortamlara bir Oluşturucu olarak eklemesini istemeniz gerekir.
+
+> [!NOTE]
+> Her zaman varsayılan ortamda akış oluşturabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 * [Şablondan akış oluşturma](get-started-logic-template.md)
 * [Akış oluşturma](get-started-logic-flow.md)
-* [Yöneticiler için ortamlara genel bakış](environments-overview-admin.md)
+* [Yöneticiler için ortama genel bakış](environments-overview-admin.md)

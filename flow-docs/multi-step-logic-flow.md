@@ -1,6 +1,6 @@
 ---
-title: Gelişmiş seçenek ve birden fazla eylem ekleme | Microsoft Docs
-description: Akışı, gelişmiş bir seçenek içerecek şekilde (e-postayı yüksek öncelikli olarak ayarlamak gibi) genişletin ve aynı etkinlik için farklı bir eylem ekleyin.
+title: Gelişmiş seçenek ve birden çok eylem ekleme | Microsoft Docs
+description: Bir akışı, e-postayı yüksek öncelikli olarak ayarlama ve aynı olay için başka bir eylem ekleme gibi gelişmiş bir seçeneğe dahil etmek için genişletin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,74 +20,89 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 668e69b1c8f1781cf5720443af8e48409f43d322
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64466474"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548604"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Akışa birden fazla eylem ve gelişmiş seçenek ekleme
-Aynı tetikleyici için bir veya daha fazla gelişmiş seçenek ve birden fazla eylem ekleyerek akışı özelleştirin. Örneğin, bir e-posta iletisini yüksek öncelikli olarak gönderen gelişmiş bir seçenek ekleyin. SharePoint listesine bir öğe eklendiğinde e-posta göndermeye ek olarak Dropbox'ta aynı bilgileri içeren bir dosya oluşturun.
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Aynı tetikleyici için bir veya daha fazla gelişmiş seçenek ve birden çok eylem ekleyerek bir akışı özelleştirin. Örneğin, bir e-posta iletisini yüksek öncelikli olarak gönderen gelişmiş bir seçenek ekleyin. Bir SharePoint listesine öğe eklendiğinde e-posta göndermeye ek olarak Dropbox 'ta aynı bilgileri içeren bir dosya oluşturun.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Kaynakları
 * [Akış oluşturma](get-started-logic-flow.md)
 
-## <a name="add-another-action"></a>Farklı bir eylem ekleme
-Bu yordamda, akışın ortasına bir eylem ekleyeceksiniz. Bu eylem, listedeki öğeyi arşivleyerek Dropbox hesabınıza bir dosya kaydeder.
+## <a name="add-another-action"></a>Başka eylem ekleme
+Bu yordamda, akışın ortasına bir eylem ekleyeceksiniz. Bu eylem, Dropbox 'inizdeki bir dosyayı kaydeder ve listedeki öğeyi arşivlemesini ister.
 
-1. [flow.microsoft.com](https://flow.microsoft.com)'da, üst gezinti çubuğunda bulunan **Akışlarım**'ı seçin.
-2. Akış listesinde, düzenlemek istediğiniz akışı seçin.
-3. **Yeni adım**'ı ve ardından **Eylem ekle**'yi seçin.
+1. [Flow.Microsoft.com](https://flow.microsoft.com)' de, üst gezinti çubuğunda **Akışlarım** ' ı seçin.
+2. Akışlar listesinde, düzenlemek istediğiniz akışı seçin.
+3. **Yeni adım**' ı seçin ve ardından **Eylem Ekle**' yi seçin.
    
     ![Daraltılmış ekleme](./media/multi-step-logic-flow/add-action.png)
-4. Olası eylemler listesinde, **Dosya oluştur**'u arayın ve ardından **Dropbox - Dosya oluştur**'u seçin.
+4. Olası Eylemler listesinde, **dosya oluştur**' u arayın ve ardından **Dropbox-dosya oluştur**' u seçin.
    
-    ![Dosya oluştur seçeneğini arayın](./media/multi-step-logic-flow/create-file-search.png)
-5. İstenirse Dropbox kimlik bilgilerinizi sağlayın.
+    ![dosya oluştur ara](./media/multi-step-logic-flow/create-file-search.png)
+5. İstenirse Dropbox kimlik bilgilerinizi girin.
 6. **Klasör yolu** kutusunun sağ tarafındaki klasör simgesini seçin.
 7. Yeni dosyayı yerleştirmek istediğiniz klasörü bulun ve seçin.
    
-    ![Dosya oluştur seçeneğini arayın](./media/multi-step-logic-flow/create-file-folder.png)
-8. Yeni dosyanın adını **Dosya adı** kutusuna girin. Dosya adına ".txt" gibi bir uzantı eklemeyi unutmayın. Burada dosyaların benzersiz olduğundan emin olmak için dosya adına **TweetId** yazalım. **TweetId** belirtecini bulmak için **Daha fazla görüntüle**'yi seçmeniz gerekebilir.
-9. Dosyanın içermesini istediğiniz metni **Dosya içeriği** kutusuna yazın. **Dosya içeriği** kutusuna belirteç de ekleyebilirsiniz.
+    ![dosya oluştur ara](./media/multi-step-logic-flow/create-file-folder.png)
+8. **Dosya adı** kutusuna yeni dosyanın adını girin. Dosya adına ". txt" gibi bir uzantı eklemediğinizden emin olun. Burada, dosyaların benzersizliğini sağlamak için dosyanın adı içindeki **Boyut** /gün sayısını kullanalım. Kesilebilir **Etıd** belirtecini bulmak için **daha fazla görüntüle** ' yi seçmeniz gerekebilir.
+9. Dosya **içeriği** kutusuna yazarak dosyanın içermesini istediğiniz metni ekleyin. **Dosya içeriği** kutusuna belirteçler de ekleyebilirsiniz.
    
-    ![Dosya adı ve içeriği](./media/multi-step-logic-flow/create-file-name-and-contents.png)
+    ![dosya adı ve içeriği](./media/multi-step-logic-flow/create-file-name-and-contents.png)
    
    > [!IMPORTANT]
-   > Dosyaya var olan dosyalardan (seçilen klasördeki) birinin adını verirseniz var olan dosyanın üzerine yazılır.
+   > Dosyaya varolan bir dosyanın adıyla (seçili klasörde) eşleşen bir ad verirseniz, var olan dosyanın üzerine yazılır.
    > 
    > 
-10. Ekranın üst tarafındaki menüde yer alan **Akışı güncelleştir**'i seçin.
+10. Ekranın üst kısmındaki menüde bulunan **akışı Güncelleştir**' i seçin.
 11. Belirttiğiniz anahtar sözcüğü içeren bir tweet gönderin.
     
      Bir dakika içinde Dropbox hesabınızda bir dosya oluşturulur.
 
-## <a name="reorder-or-delete-an-action"></a>Eylemi yeniden sıralama ve silme
-* Dropbox'ta dosya oluşturulduktan sonra e-posta almak için, başlık çubuğunu e-posta eyleminin üzerine sürükleyerek Dropbox eylemini taşıyın. Dropbox eylemini tetikleyici (**Yeni bir tweet gönderildiğinde**) ile e-posta eylemi arasındaki okun üzerinde bırakın. (İmleç, eylemin doğru yerleştirilip yerleştirilmediğini belirtir.)
+## <a name="reorder-or-delete-an-action"></a>Bir eylemi yeniden sıralama veya silme
+* Dropbox 'ta Dosya oluşturulduktan sonra e-posta almak için, başlık çubuğunu e-posta eyleminin üzerine sürükleyerek Dropbox eylemini taşıyın. Dropbox eylemini tetikleyici (**Yeni bir tweet**gönderildiğinde) ve e-posta eylemi arasındaki ok üzerinde serbest bırakın. (İmleç, eylemin doğru şekilde konumlandırılıp yerleştirilmediğini gösterir.)
   
   > [!NOTE]
-  > Bir adımdaki çıkışı kullanıyorsanız bu adımı başka bir adımın önüne taşıyamazsınız.
+  > Bu adımdan herhangi bir çıkış kullanıyorsanız, bir adımı başka bir şekilde taşıyamazsınız.
   > 
   > 
   
-    ![Menüyü silme](./media/multi-step-logic-flow/draggingaction.png)
-* Bir eylemi silmek için, silmek istediğiniz eyleme ait başlık çubuğunun sağ tarafında bulunan üç noktayı (...) seçip **Sil**'e tıklayın ve ardından **Tamam**'ı seçin.
+    ![Menüyü Sil](./media/multi-step-logic-flow/draggingaction.png)
+* Bir eylemi silmek için, silmek istediğiniz eylem için başlık çubuğunun sağ kenarının yanındaki üç nokta (...) simgesini seçin, **Sil**' i seçin ve ardından **Tamam**' ı seçin.
   
-    ![Menüyü silme](./media/multi-step-logic-flow/deletemenu.png)
+    ![Menüyü Sil](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Not:** Akışın herhangi bir yerindeki ait herhangi bir çıkışı kullanıyorsanız, bir eylemi silemezsiniz. İlk olarak bu çıkışları alanlardan kaldırdıktan sonra eylemi silebilirsiniz.
+     **Note:** Akıştaki herhangi bir yerden çıkış kullanıyorsanız, bir eylemi silemezsiniz. İlk olarak, bu çıktıları alanlardan kaldırın ve sonra eylemi silebilirsiniz.
 
-## <a name="add-advanced-options"></a>Gelişmiş seçenekleri ekleme
-**E-posta gönder** eylemine sahip bir akışla başlayın.
 
-1. **E-posta gönder** kartının en altında yer alan **Gelişmiş seçenekleri göster**'i seçin.
+## <a name="copy-and-paste-actions"></a>Kopyalama ve yapıştırma eylemleri
+
+Bir akış tasarlarken eylemleri yinelemek istiyorsanız, bunları kopyalayabilir ve yapıştırabilirsiniz. Örneğin, bir koşul oluşturuyorsanız ve her iki eylemi de sıfırdan oluşturmak yerine, **Eğer Evet** tarafında ve **varsa** benzer eylemler istiyorsanız, ilk eylemi bir tarafta oluşturup diğer tarafa kopyalayabilirsiniz.
+
+
+### <a name="to-copy-an-action"></a>Bir eylemi kopyalamak için
+1. Eylem menüsünü (...) seçin. , eylemin sağ üst kısmında).
+1. **Panonuzun Kopyala**' yı seçin. 
+1. Eylemin gitmesini istediğiniz **yeni adım** ' u seçin. 
+
+     Kopyaladığınız tüm eylemlerden seçim yapmanızı sağlayan **panonuzun** sekmesine dikkat edin.
+1. Yapıştırmak istediğiniz öğeyi seçin.
+
+## <a name="add-advanced-options"></a>Gelişmiş Seçenekler Ekle
+**E-posta gönder** eylemine sahip bir akış ile başlayın.
+
+1. **E-posta gönder** kartının altında bulunan **Gelişmiş seçenekleri göster**' i seçin.
    
-     E-posta gönderimiyle ilgili gelişmiş seçenekleri göreceksiniz.
+     Daha sonra e-posta göndermek için gelişmiş seçenekleri görürsünüz.
    
-    ![SharePoint tetikleyicileri](./media/multi-step-logic-flow/advanced.png)
-2. **Önem** listesinden **Yüksek** seçeneğini belirledikten sonra gelişmiş seçenekleri gizlemek için **Gelişmiş seçenekleri gizle**'yi seçin.
-3. Ekranın üst tarafındaki menüde yer alan **Akışı güncelleştir**'i seçin.
+    ![SharePoint Tetikleyicileri](./media/multi-step-logic-flow/advanced.png)
+2. **Önem** listesinden **yüksek** ' ı seçin ve gelişmiş seçenekleri gizlemek için **Gelişmiş seçenekleri gizle** ' yi seçin.
+3. Ekranın üst kısmındaki menüde bulunan **akışı Güncelleştir**' i seçin.
    
-     Bu adımla yaptığınız değişiklikler kaydedilir.
+     Bu adım değişikliklerinizi kaydeder.
 

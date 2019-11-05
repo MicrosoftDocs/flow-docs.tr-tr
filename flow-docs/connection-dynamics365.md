@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 ile bir akış oluşturma (çevrimiçi) | Microsoft Docs
-description: Bir Dynamics 365 bağlantısı ve Microsoft Flow kullanarak faydalı iş akışları oluşturma
+title: Dynamics 365 ile akış oluşturma (çevrimiçi) | Microsoft Docs
+description: Dynamics 365 bağlantısı kullanarak faydalı iş akışları oluşturun ve Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,151 +20,152 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c3a138cef3761b188998766a60ceb84619ae5f0a
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457062"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546909"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Dynamics 365 kullanarak akış oluşturma (çevrimiçi)
-Bir Dynamics 365 bağlayıcısı kullanarak, Dynamics 365 veya başka bir hizmette bir olay gerçekleştiğinde başlatılan ve Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Dynamics 365 bağlayıcısını kullanarak Dynamics 365 ' de bir olay gerçekleştiğinde veya başka bir hizmette, daha sonra Dynamics 365 veya başka bir hizmette eylem gerçekleştiren akışlar oluşturabilirsiniz. 
 
-Microsoft Flow’da dosyaları eşitlemek, bildirimler almak, veri toplamak ve daha fazlası için, sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Flow kullanmaya başlama](getting-started.md).
+Microsoft Flow, dosyaları eşitlemeniz, bildirimler almak, veri toplamak ve daha fazlası için sık kullandığınız uygulamalar ve hizmetler arasında otomatik iş akışları oluşturabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Flow kullanmaya başlama](getting-started.md).
 
 > [!IMPORTANT] 
-> Akış tetikleyicisini çağırmak için, akış ile kullanılan Dynamics 365 müşteri etkileşimi varlığında **Değişiklik İzleme** özelliği etkin olmalıdır. Daha fazla bilgi: [Veri eşitlemesini denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> Bir akış tetikleyicisi çağırmak için akışta kullanılan Common Data Service varlığının **değişiklik izleme** etkinleştirilmiş olması gerekir. Daha fazla bilgi: [veri eşitlemeyi denetlemek için değişiklik Izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Şablondan akış oluşturma
-Aşağıdaki örneklere benzer çok sayıda şablondan birini kullanarak akış oluşturabilirsiniz:
+Aşağıdaki örnekler gibi birçok şablondan birini kullanarak akış oluşturabilirsiniz:
 
-* Dynamics 365’te bir nesne oluşturulduğunda, SharePoint’te bir liste öğesi oluşturun.
+* Dynamics 365 ' de bir nesne oluşturulduğunda, SharePoint 'te bir liste öğesi oluşturun.
 * Bir Excel tablosundan Dynamics 365 müşteri adayı kayıtları oluşturun.
-* Dynamics 365 hesaplarını Dynamics 365 for Operations’taki müşterilere kopyalayın.
+* Dynamics 365 hesaplarını, Işlemler için Dynamics 365 ' de müşterilere kopyalayın.
 
-Bir şablondan akış oluşturmak için, bu adımları izleyin.
+Bir şablondan akış oluşturmak için aşağıdaki adımları izleyin.
 
-1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/) oturum açın.
-2. **Hizmetler**’e ve sonra **Dynamics 365**’e tıklayın veya dokunun.
-3. Çeşitli şablonlar kullanılabilir. Başlamak için, istediğiniz şablonu seçin.
+1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/)oturum açın.
+2. **Hizmetler**' e tıklayın veya dokunun ve ardından **Dynamics 365**' e tıklayın veya dokunun.
+3. Çeşitli şablonlar var. Başlamak için istediğiniz şablonu seçin.
 
-## <a name="create-a-task-from-a-lead"></a>Bir müşteri adayından görev oluşturma
-İhtiyacınız olan akış için bir şablon yoksa, sıfırdan bir akış oluşturun. Bu kılavuzda, Dynamics 365’te bir müşteri adayı oluşturulduğunda Dynamics 365’te bir görevin nasıl oluşturulacağı gösterilmektedir.
+## <a name="create-a-task-from-a-lead"></a>Bir müşteri adayının görevi oluşturma
+İhtiyacınız olan bir şablon yoksa sıfırdan bir akış oluşturun. Bu izlenecek yol, Dynamics 365 ' de bir müşteri adayı oluşturulduğunda Dynamics 365 ' de bir görevin nasıl oluşturulacağını gösterir.
 
-1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/) oturum açın.
-2. **Akışlarım**’a tıklayın veya dokunun ve sonra **Boş akış oluştur**’a tıklayın veya dokunun.
-3. Akış tetikleyicileri listesinde, **Dynamics 365 - Bir kayıt oluşturulduğunda** seçeneğine tıklayın veya dokunun.
-4. İstenirse Dynamics 365’te oturum açın.
-5. **Kuruluş Adı** altında, akışın dinlemesini istediğiniz Dynamics 365 örneğini seçin.
-6. **Varlık Adı** altında, dinlemek istediğiniz varlığı seçin. Bu varlık, akışı başlatan tetikleyici olarak davranır.
+1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/)oturum açın.
+2. **Akışlarım**' a tıklayın veya dokunun ve ardından **boş oluştur**' a tıklayın veya dokunun.
+3. Akış Tetikleyicileri listesinde, **bir kayıt oluşturulduğunda Dynamics 365-** ' ya tıklayın veya dokunun.
+4. İstenirse Dynamics 365 ' de oturum açın.
+5. **Kuruluş adı**altında, akışın dinlemesini istediğiniz Dynamics 365 örneğini seçin.
+6. **Varlık adı**altında, dinlemek istediğiniz varlığı seçin. Bu işlem, akışı Başlatan bir tetikleyici olarak davranır.
    
-     Bu kılavuz için, **Müşteri Adayları**’nı seçin.
+     Bu izlenecek yol için **müşteri adayları**' nı seçin.
    
     ![Akış ayrıntıları](./media/connection-dynamics365/flow-details.png)
-    > [ÖNEMLİ] Akışın Dynamics 365 varlığı üzerinde tetiklenmesi için varlık tanımında **Değişiklik İzleme** özelliğinin etkinleştirilmiş olması gerekir. Daha fazla bilgi için bkz. [Veri senkronizasyonunu denetlemek için değişiklik izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > ÖNEMLI Flow 'un Dynamics 365 varlığında tetiklenmesi için varlık tanımında **değişiklik izleme** etkinleştirilmiş olması gerekir. Bkz. [veri eşitlemeyi denetlemek için değişiklik Izlemeyi etkinleştirme](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
-7. **Yeni adım**'a ve ardından **Eylem ekle**'ye tıklayın veya dokunun.
-8. **Dynamics 365 – Yeni kayıt oluştur**’a tıklayın veya dokunun.
-9. **Kuruluş Adı** altında, akışın kaydı oluşturmasını istediğiniz Dynamics 365 örneğini seçin. Olayın tetiklendiği örnek ile aynı örnek olmasının gerekmediğine dikkat edin.
-10. **Varlık Adı** altında, olay gerçekleştiğinde bir kayıt oluşturacak olan varlığı seçin.
+7. **Yeni adım**' a ve ardından **Eylem Ekle**' ye tıklayın veya dokunun.
+8. **Dynamics 365 – yeni bir kayıt oluştur**' a tıklayın veya dokunun.
+9. **Kuruluş adı**altında, akışın kayıt oluşturmasını istediğiniz Dynamics 365 örneğini seçin. Olayın tetiklendiğine benzer bir örnek olması gerekmez.
+10. **Varlık adı**altında, olay gerçekleştiğinde bir kayıt oluşturacak varlığı seçin.
     
-     Bu kılavuz için, **Görevler**’i seçin.
-11. Bir **Konu** kutusu görüntülenir. Tıkladığınızda veya dokunduğunuzda, bu alanlardan birini seçebileceğiniz bir dinamik içerik bölmesi görüntülenir.
+     Bu izlenecek yol için **Görevler**' i seçin.
+11. **Konu** kutusu görüntülenir. Bu alana tıkladığınızda veya dokunduğunuzda, bu alanlardan birini seçebileceğiniz bir dinamik içerik bölmesi görüntülenir.
     
-    * **Soyadı**. Bu alanı seçerseniz, görev oluşturulduğunda müşteri adayının soyadı görevin **Konu** alanına eklenir.
-    * **Konu başlığı**. Bu alanı seçerseniz, görev oluşturulduğunda müşteri adayı için **Konu başlığı** alanı görevin **Konu** alanına eklenir.
+    * **Soyadı**. Bu alanı seçerseniz, müşteri adayının soyadı, oluşturulduğu sırada görevin **Konu** alanına eklenir.
+    * **Konusuna bakın**. Bu alanı seçerseniz, müşteri adayının **Konu** alanı oluşturulduğunda görevin **Konu** alanına eklenecektir.
     
-    Bu kılavuz için, **Konu başlığı**’nı seçin.
+    Bu izlenecek yol için **Konu**' yı seçin.
     
-    ![Akış konu başlığı ekleme](./media/connection-dynamics365/flow-addtopic.png)
+    ![Flow konu ekle](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **İpucu:** Dinamik içerik bölmesinde, varlıkla ilişkili daha fazla alan görüntülemek için **Daha fazla**’ya tıklayın veya dokunun. Örneğin, görevin **Konu** alanını müşteri adayının **Şirket Adı**, **Müşteri**, **Açıklama** veya **E-posta** alanı ile doldurabilirsiniz.
+    > **İpucu:** Varlıkla ilişkili daha fazla alan görüntülemek için dinamik içerik bölmesinde **daha fazla gör** ' e tıklayın veya dokunun. Örneğin, görevin **Konu** alanını da müşteri adayının **Şirket adı**, **Müşteri**, **Açıklama**veya **e-posta** alanıyla doldurabilirsiniz.
     > 
     > 
-12. **Akış oluştur**'a tıklayın veya dokunun.
+12. **Akış oluştur**' a tıklayın veya dokunun.
 
-## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Bİr Dynamics 365 görevinden Wunderlist görevi oluşturma
-Bu kılavuzda, Dynamics 365’te bir görev oluşturulduğunda [Wunderlist](https://www.wunderlist.com)’te bir görevin nasıl oluşturulacağı gösterilmektedir. Wunderlist yapılacaklar listeleri oluşturmak, anımsatıcılar eklemek veya günlük işleri izlemek için kullanabileceğiniz İnternet tabanlı bir hizmettir.
+## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Dynamics 365 görevinden bir Wunderlist görevi oluşturma
+Bu izlenecek yol, Dynamics 365 ' de bir görev oluşturulduğunda [Wunderlist](https://www.wunderlist.com) 'te bir görev oluşturmayı gösterir. Wunderlist, Yapılacaklar listeleri oluşturmak, anımsatıcılar eklemek veya Errand 'leri izlemek için kullanabileceğiniz bir Internet tabanlı hizmettir.
 
-1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/) oturum açın.
-2. **Akışlarım**’a tıklayın veya dokunun ve sonra **Boş akış oluştur**’a tıklayın veya dokunun.
-3. Akış tetikleyicileri listesinde, **Dynamics 365 - Bir kayıt oluşturulduğunda** seçeneğine tıklayın veya dokunun.
-4. **Kuruluş Adı** altında, akışın dinlemesini istediğiniz Dynamics 365 örneğini seçin.
-5. **Varlık Adı** altında, dinlemek istediğiniz varlığı seçin. Bu varlık, akışı başlatmak için tetikleyici olarak davranır.
+1. [Microsoft Flow web sitesinde](https://flow.microsoft.com/)oturum açın.
+2. **Akışlarım**' a tıklayın veya dokunun ve ardından **boş oluştur**' a tıklayın veya dokunun.
+3. Akış Tetikleyicileri listesinde, **bir kayıt oluşturulduğunda Dynamics 365-** ' ya tıklayın veya dokunun.
+4. **Kuruluş adı**altında, akışın dinlemesini istediğiniz Dynamics 365 örneğini seçin.
+5. **Varlık adı**altında, dinlemek istediğiniz varlığı seçin. Bu, akışı başlatmak için bir tetikleyici görevi görür.
    
-    Bu kılavuz için, **Görevler**’i seçin.
-6. **Yeni adım**'a ve ardından **Eylem ekle**'ye tıklayın veya dokunun.
-7. *Görev oluştur* yazın ve sonra **Wunderlist – Görev oluştur**’a tıklayın veya dokunun.
-8. **Liste kimliği** altında, **gelen kutusu** seçeneğini belirleyin.
-9. **Başlık** altında, dinamik içerik bölmesinden **Konu**’yu seçin.
-10. **Akış oluştur**'a tıklayın veya dokunun.  
+    Bu izlenecek yol için **Görevler**' i seçin.
+6. **Yeni adım**' a ve ardından **Eylem Ekle**' ye tıklayın veya dokunun.
+7. *Bir görev oluşturun*yazın ve ardından **Wunderlist – görev oluştur**' a tıklayın veya dokunun.
+8. **LISTE kimliği**altında **gelen kutusu**' nu seçin.
+9. **Başlık**altında, dinamik Içerik bölmesinde **Konu** ' yı seçin.
+10. **Akış oluştur**' a tıklayın veya dokunun.  
 
-## <a name="trigger-based-logic"></a>Tetikleyici tabanlı mantık
-**Bir kayıt oluşturulduğunda**, **Kayıt güncelleştirildiğinde** ve **Kayıt silindiğinde** gibi tetikleyiciler, olay oluştuktan sonra birkaç dakika içinde akışınızı başlatır.  Nadir de olsa bazı durumlarda akışın tetiklenmesi 2 saate kadar sürebilir.
+## <a name="trigger-based-logic"></a>Tetikleme tabanlı mantık
+Bir kayıt **oluşturulduğunda**, **bir kayıt**güncelleştirilirken ve **bir kayıt silindiğinde** , olay gerçekleşen birkaç dakika içinde akışınızı başlatmak gibi tetikler.  Nadir durumlarda, akışınız tetiklemenin 2 saate kadar sürebilir.
 
-Tetikleyici oluştuğunda akış bir bildirim alır, ancak akış, işlem çalıştırıldığı anda mevcut olan veriler üzerinde çalıştırılır.  Örneğin, yeni bir kayıt oluşturulduğunda akışınız tetiklenirse ve akış çalıştırılmadan önce kaydı iki defa güncelleştirirseniz akışınız en son verilerle yalnızca bir defa çalıştırılır.
+Tetikleyici gerçekleştiğinde, akış bir bildirim alır, ancak akış, eylem çalıştığı sırada mevcut veriler üzerinde çalışır.  Örneğin, akışınız yeni bir kayıt oluşturulduğunda tetiklenir ve akışı çalıştırılmadan önce iki kez kaydı güncelleştirirseniz, akışınız en son verilerle yalnızca bir kez çalışır.
 
-## <a name="specify-advanced-options"></a>Gelişmiş seçenekleri belirtme
-Bir akışa adım eklediğinizde, verilerin akışta nasıl filtreleneceğini denetleyen bir filtre veya sıralama sorgusu eklemek için **Gelişmiş seçenekleri göster**’e tıklayabilir veya dokunabilirsiniz.
+## <a name="specify-advanced-options"></a>Gelişmiş seçenekleri belirtin
+Bir akışa adım eklediğinizde, verilerin akışta nasıl filtreleneceğini denetleyen bir filtre veya bir sorgu eklemek için **Gelişmiş seçenekleri göster** ' e tıklayabilirsiniz veya dokunun.
 
-Örneğin, yalnızca etkin kişileri almak için bir filtre sorgusu kullanabilir ve bu kişileri soyadına göre sıralayabilirsiniz. Bunu yapmak için, **statuscode eq 1** OData filtre sorgusunu girin ve dinamik içerik bölmesinden **Soyadı**’nı seçin. Filtre ve sıralama ölçütü sorguları hakkında daha fazla bilgi için, bkz. [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) ve [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+Örneğin, yalnızca etkin kişileri almak için bir filtre sorgusu kullanabilirsiniz ve bunları son ada göre sıralayabileceğiniz şekilde düzenleyebilirsiniz. Bunu yapmak için, bkz. OData filtre sorgusu **StatusCode EQ 1** ve dinamik Içerik bölmesinden **Soyadı** ' nı seçin. Sorgulara göre filtre ve sıralama hakkında daha fazla bilgi için bkz. [MSDN: $Filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) ve [MSDN: $OrderBy](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
-  ![Akış sıralama ölçütü sorgusu](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Akış orderby sorgusu](./media/connection-dynamics365/flow-orderby-query.png)
 
-### <a name="best-practices-when-using-advanced-options"></a>Gelişmiş seçenekleri kullanırken en iyi yöntemler
-Bir alana değer eklediğinizde, bir değer yazarken veya dinamik içerik bölmesinden değer seçerken alan türüne uymanız gerekir.
+### <a name="best-practices-when-using-advanced-options"></a>Gelişmiş seçenekleri kullanırken en iyi uygulamalar
+Bir alana bir değer eklediğinizde, bir değer yazarken veya dinamik içerik bölmesinden birini seçerek alan türüyle aynı olmalıdır.
 
-| Alan türü | Nasıl kullanılır? | Nerede bulunur? | Ad | Veri türü |
+| Alan türü | Nasıl kullanılır | Nerede bulunacak | Ada | Veri türü |
 | --- | --- | --- | --- | --- |
-| Metin alanları |Metin alanı tek satırlık bir metin veya bir metin tür alanı olan dinamik içerik gerektirir. Örnekler arasında **Kategori** ve **Alt Kategori** alanları bulunur. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Görev** > **Alanlar** |**kategori** |**Tek Satırlık Metin** |
-| Tamsayı alanları |Bazı alanlar tamsayı veya bir tamsayı tür alanı olan dinamik içerik gerektirir. Örnekler arasında **Tamamlanma Yüzdesi** ve **Süre** bulunur. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Görev** > **Alanlar** |**tamamlanma yüzdesi** |**Tamsayı** |
-| Tarih alanları |Bazı alanlar aa/gg/yyyy biçiminde girilen bir tarih veya bir tarih tür alanı olan dinamik içerik gerektirir. Örnekler arasında **Oluşturulma Tarihi**, **Başlangıç Tarihi**, **Gerçek Başlangıç**, **Son Bekletme Zamanı**, **Gerçek Bitiş** ve **Son Tarih** bulunur. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Görev** > **Alanlar** |**oluşturulma tarihi** |**Tarih ve Saat** |
-| Kayıt kimliği ve arama türü gerektiren alanlar |Başka bir varlık kaydına başvuran bazı alanlar kayıt kimliğini ve arama türünü gerektirir. |**Ayarlar** > **Özelleştirmeler** > **Sistemi Özelleştir** > **Varlıklar** > **Hesap** > **Alanlar** |**hesap kimliği** |**Birincil Anahtar** |
-|Seçenek Kümesi|Seçenek Kümesi alanları, bu tür bir alana geçirilmek üzere bilinen bir tamsayı değeri gerektirir.  Dynamics 365 özelleştirme alanında, ilgili etiketiyle birlikte tamsayı alanını destekleyen seçenek kümelerini görebilirsiniz.|Ayarlar > Özelleştirme > Sistemi Özelleştir > Varlıklar > Hesap > Alanlar | Tercih Edilen İletişim Yöntemi| Tamsayı|
+| Metin alanları |Metin alanları, tek satırlık bir metin veya metin türü alanı olan dinamik içerik gerektirir. Örnek olarak **Kategori** ve **alt kategori** alanları bulunur. |**Ayarlar** > **özelleştirmeler** > **System** > **varlıklarını** özelleştirme > **görev** > **alanları** |**alan** |**Tek satırlık metin** |
+| Tamsayı alanları |Bazı alanlar tamsayı türünde bir alan tamsayı veya dinamik içerik gerektirir. Örnek olarak tamamlanma **yüzdesi** ve **süre**dahildir. |**Ayarlar** > **özelleştirmeler** > **System** > **varlıklarını** özelleştirme > **görev** > **alanları** |**tamamlanmatamam** |**Tam sayı** |
+| Tarih alanları |Bazı alanlar aa/gg/yyyy biçiminde girilmiş bir tarih veya bir tarih türü alanı olan dinamik içerik gerektirir. Örnek olarak **Oluşturulma**, **Başlangıç tarihi**, **gerçek başlangıç**, **son bekleme süresi**, **gerçek bitiş**ve son **Tarih**sayılabilir. |**Ayarlar** > **özelleştirmeler** > **System** > **varlıklarını** özelleştirme > **görev** > **alanları** |**createdon** |**Tarih ve saat** |
+| Kayıt KIMLIĞI ve arama türü gerektiren alanlar |Başka bir varlık kaydına başvuruda bulunan bazı alanlar, hem kayıt KIMLIĞI hem de arama türü gerektirir. |**Ayarlar** > **özelleştirmeler** > **System** > **varlıklarını** > **Hesap** > **alanları** özelleştirme |**Accoun** |**Birincil anahtar** |
+|Seçenek kümesi|Seçenek kümesi alanları, bu alan türüne geçirilecek bilinen bir tamsayı değeri gerektirir.  Dynamics 365 özelleştirme alanında, ilgili etiketle birlikte tamsayı ve yedekleme seçeneğini ayarlar.|Ayarlar > Özelleştirme > System > varlıklarını > Hesap > alanları özelleştirme | Tercih edilen Iletişim yöntemi| Tam sayı|
 
-### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Kayıt kimliği ve arama türü gerektiren alanlara daha fazla örnek
-Önceki tabloya ek olarak, aşağıda dinamik içerik listesinden seçilen değerler ile çalışmayan alanlara daha fazla örnek verilmiştir. Bunun yerine, bu alanlar PowerApps alanlarına kayıt kimliğinin ve arama türünün girilmesini gerektirir.
+### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Kayıt KIMLIĞI ve arama türü gerektiren alanlara daha fazla örnek
+Önceki tabloda genişleyen, dinamik içerik listesinden seçilen değerlerle çalışmayan alanlara daha fazla örnek verilmiştir. Bunun yerine, bu alanlar PowerApps 'teki alanlara girilen bir kayıt KIMLIĞI ve arama türü gerektirir.
 
-* **Sahip** ve **Sahip Türü**.
+* **Sahip** ve **sahip türü**.
   
-  * **Sahip** alanı geçerli bir kullanıcı veya takım kaydı kimliği olmalıdır.
-  * **Sahip Türü**, **sistem kullanıcıları** veya **takımlar** olmalıdır.
-* **Müşteri** ve **Müşteri Türü**.
+  * **Sahip** alanı geçerli bir kullanıcı veya takım kayıt kimliği olmalıdır.
+  * **Sahip türü** **systemusers** veya **takımlar**olmalıdır.
+* **Müşteri** ve **Müşteri türü**.
   
-  * **Müşteri** alanı geçerli bir hesap veya ilgili kişi kaydı kimliği olmalıdır.
-  * **Müşteri Türü**, **hesaplar** veya **ilgili kişiler** olmalıdır.
-* **İlgili** ve **İlgili Türü**.
+  * **Müşteri** alanı geçerli bir hesap veya ilgili kışı kaydı kimliği olmalıdır.
+  * **Müşteri türü** , **Hesap** veya **kişi**olmalıdır.
+* **Ve** ilgili **türü**.
   
-  * **İlgili** alanı bir hesap veya ilgili kişi kaydı kimliği gibi geçerli bir kayıt kimliği olmalıdır.
-  * **İlgili Türü** kayıt için arama türü olmalıdır (örneğin, **hesaplar** veya **ilgili kişiler**).
+  * **İlgili** alan, hesap veya ilgili kışı kaydı kimliği gibi geçerli BIR kayıt kimliği olmalıdır.
+  * **Ilgili tür** , kayıt için **Hesap** veya **kişi**gibi arama türü olmalıdır.
 
-Bu örnek, kayıt kimliğine karşılık gelen bir hesap kaydı ekleyerek bunu görevin **İlgili** alanına ekler.
+Bu örnek, kayıt KIMLIĞINE karşılık gelen bir hesap kaydını ekleyerek görevin **ilgili** alanına ekler.
 
-  ![Akış kayıt kimliği ve tür hesabı](./media/connection-dynamics365/flow-recordid-account.png)
+  ![Flow recordID ve tür hesabı](./media/connection-dynamics365/flow-recordid-account.png)
 
-Bu örnek ayrıca görevi kullanıcının kayıt kimliğine dayalı olarak belirli bir kullanıcıya atar.
+Bu örnek ayrıca, kullanıcının kayıt KIMLIĞINE göre görevi belirli bir kullanıcıya atar.
 
-  ![Akış kayıt kimliği ve tür kullanıcısı](./media/connection-dynamics365/flow-recordid-user.png)
+  ![Flow kayıt kimliği ve Kullanıcı türü](./media/connection-dynamics365/flow-recordid-user.png)
 
-Bir kaydın kimliğini bulmak için, bu konudaki [Kayıt kimliğini bulma](#find-the-records-id) bölümüne bakın.
+Bir kaydın KIMLIĞINI bulmak için, bu konunun ilerleyen kısımlarında [kayıt kimliğini bulma](#find-the-records-id) bölümüne bakın.
 
-> **Önemli:** Alanlar "Yalnızca iç kullanım için" açıklamasına sahipse bir değer içermemelidir. Bu alanlar **Geçiş yapılan yol**, **Ek Parametreler** ve **Saat Dilimi Kuralı Sürüm Numarası**’nı içerir.
+> **Önemli:** "Yalnızca iç kullanım Için" açıklaması varsa alanlar bir değer içermemelidir. Bu alanlar, **çapraz yol**, **ek parametreler**ve **saat dilimi kuralı sürüm numarasını içerir.**
 > 
 > 
 
-## <a name="find-the-records-id"></a>Kaydın kimliğini bulma
+## <a name="find-the-records-id"></a>Kaydın KIMLIĞINI bulun
 1. Dynamics 365 web uygulamasında, hesap kaydı gibi bir kayıt açın.
-2. Eylemler araç çubuğunda, **Öne Çıkar**
-   ![kaydı öne çıkar](./media/connection-dynamics365/popout.png)’a tıklayın veya dokunun (veya tam URL’yi varsayılan e-posta programınıza kopyalamak için **E-POSTA İLE BAĞLANTI GÖNDER**’e tıklayın veya dokunun).
+2. Eylemler araç çubuğunda, **açılan** ![
+   öne kaydı](./media/connection-dynamics365/popout.png) ' na tıklayın veya dokunun (veya tam URL 'yi varsayılan e-posta programınıza kopyalamak için **bir bağlantıya** tıklayın veya dokunun).
    
-    Web tarayıcısının adres çubuğundaki URL, %7b ile %7d kodlama karakterleri arasında kayıt kimliğini içerir.
+    Web tarayıcısının adres çubuğunda URL,% 7B ve% 7d kodlama karakterleri arasındaki kayıt KIMLIĞINI içerir.
    
    ![Kayıt kimliği](./media/connection-dynamics365/recordid.png)
 
 ## <a name="related-topics"></a>İlgili konular
-[Bir akışla ilgili sorunları giderme](fix-flow-failures.md)
+[Flow sorunlarını giderme](fix-flow-failures.md)
 
-[Kuruluşunuzda Flow ile ilgili soru-cevap](organization-q-and-a.md)
+[Kuruluşunuzda akış Q &](organization-q-and-a.md)
 
 [Sık sorulan sorular](frequently-asked-questions.md)
 

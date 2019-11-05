@@ -1,6 +1,6 @@
 ---
 title: Çözüm kullanan akışları kaldırmayı veya silmeyi öğrenin | Microsoft Docs
-description: Çözüm kullanan akışları kaldırmayı veya silmeyi öğrenin.
+description: Çözüm kullanan akışların nasıl kaldırılacağını veya silineceğini öğrenin.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,35 +20,36 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 120689bce2100c383297f95371387f9b41559ffe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e4bab1f20abb01682836dcf832abcb65d315334c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465091"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548485"
 ---
-# <a name="remove-a-solution-aware-flow"></a>Çözüm kullanan bir akışı kaldırma
+# <a name="remove-a-solution-aware-flow"></a>Çözümle uyumlu akışı kaldırma
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bir akışı çözümden kaldırabilirsiniz veya akışı ortamdan tamamen silebilirsiniz.
+Bir çözümden akışı kaldırabilir ya da bir ortamdan akışı tamamen silebilirsiniz.
 
-Eylem|Sonuç
+Ön|Kaynaklanan
 ------|-----------
-Bu çözümden kaldır|Akış seçili çözümden kaldırılır ancak ortamın bir parçası olmaya devam eder. Akışı daha sonra ortamdaki diğer çözümlerde kullanabilirsiniz.
-Bu ortamdan sil|Akış silinir ve ortamda kullanılamaz.
+Bu çözümden kaldır|Akış seçili çözümden kaldırılır, ancak ortamda kalır. Akışı daha sonraki bir tarihte ortamda diğer çözümlerde kullanabilirsiniz.
+Bu ortamdan Sil|Akış silinir; ortamda kullanılamaz.
 
-1. Microsoft Flow’da oturum açın ve gezinti çubuğundan **Çözümler**’i seçin.
+1. Microsoft Flow oturum açın ve ardından Gezinti çubuğundan **çözümler** ' i seçin.
 1. Silmek istediğiniz akışı içeren çözümü seçin.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
    
-1. Akışınız için **...** (Diğer Komutlar) seçeneğini belirleyin, **Kaldır**’ı seçin ve ardından **Bu çözümden kaldır** veya **Bu ortamdan sil** seçeneklerinden birini belirleyin.
+1. Akışınız için **...** (daha fazla komut) seçeneğini belirleyin, **Kaldır**' ı seçin ve bu **çözümden kaldır** ' ı seçin ya da **Bu ortamdan silin**.
 
    ![](./media/remove-solution-aware-flow/delete-flow-from-solution-options.png)
 
-## <a name="learn-more"></a>Daha fazla bilgi
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 - [Çözüm oluşturma](./overview-solution-flows.md)
 - [Çözümde akış oluşturma](./create-flow-solution.md)
-- [Çözümü dışarı aktarma](./export-flow-solution.md)
-- [Çözümü içeri aktarma](./import-flow-solution.md)
-- [Çözüm kullanan bir akışı düzenleme](./edit-solution-aware-flow.md)
+- [Bir çözümü dışarı aktarma](./export-flow-solution.md)
+- [Bir çözümü içeri aktarma](./import-flow-solution.md)
+- [Çözüm kullanan akışı düzenleme](./edit-solution-aware-flow.md)

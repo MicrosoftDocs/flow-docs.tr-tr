@@ -1,6 +1,6 @@
 ---
 title: Özel bağlayıcı içerik bağlantıları | Microsoft Docs
-description: Özel bağlayıcılar oluşturma, kullanma, paylaşma ve onaylama içeriklerinin bağlantıları.
+description: Özel Bağlayıcılar oluşturma, kullanma, paylaşma ve onaylama için içerik bağlantıları.
 services: ''
 suite: flow
 documentationcenter: ''
@@ -18,29 +18,30 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: b274da0bf638e338d2e566d9f6a3b133fc45f9fe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 286e42498b65f8aac376c567224651f0a1b44812
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455882"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547684"
 ---
-# <a name="custom-connectors-in-microsoft-flow"></a>Microsoft Flow’da özel bağlayıcılar
+# <a name="custom-connectors-in-microsoft-flow"></a>Microsoft Flow özel bağlayıcılar
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) ve [PowerApps](https://powerapps.microsoft.com) ile herhangi bir kod yazmadan iş akışları ve uygulamalar derleyebilirsiniz. Veri ve iş süreçlerinizi tümleştirmeye yardımcı olmak üzere, bu hizmetler Microsoft hizmet ve ürünlerinin yanı sıra GitHub, Salesforce, Twitter gibi diğer hizmetler için [180’den fazla bağlayıcı](https://docs.microsoft.com/connectors/) sunar. 
+Hiçbir kod yazmadan, [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com)ve [PowerApps](https://powerapps.microsoft.com)ile iş akışları ve uygulamalar oluşturabilirsiniz. Veri ve iş süreçlerinizi tümleştirmenize yardımcı olmak için, bu hizmetler Microsoft Hizmetleri ve ürünleri için (GitHub, Salesforce, Twitter ve daha fazlası gibi diğer hizmetler) [180 + bağlayıcı](https://docs.microsoft.com/connectors/) sunar. 
 
-Ancak bazen önceden derlenmiş bağlayıcılar halinde kullanılamayan API'leri, hizmetleri ve sistemleri çağırmak isteyebilirsiniz. Daha fazla uyarlanmış senaryoyu desteklemek için, kendi tetikleyici ve eylemlerine sahip *özel bağlayıcılar* derleyebilirsiniz. Bağlayıcı belgeleri sitesinde özel bağlayıcılara ilişkin temel ve gelişmiş öğreticileri eksiksiz olarak sunuyoruz. İlk olarak [özel bağlayıcıya genel bakış](https://docs.microsoft.com/connectors/custom-connectors/) öğreticisi ile başlamanız önerilir, ancak belirli bir alana ilişkin ayrıntılar için doğrudan aşağıdaki konulara da gidebilirsiniz:
+Yine de, önceden oluşturulmuş bağlayıcılar olarak kullanılamayan API 'Leri, hizmetleri ve sistemleri çağırmak isteyebilirsiniz. Daha özel senaryolar desteklemek için kendi tetikleyicilerine ve eylemlerine sahip *özel bağlayıcılar* oluşturabilirsiniz. Bağlayıcılar belge sitesinde özel bağlayıcılar için temel ve gelişmiş öğreticilerin tamamına sahip olduğumuz bir dizi. [Özel bağlayıcıya genel bakış](https://docs.microsoft.com/connectors/custom-connectors/)ile başlamanız önerilir, ancak belirli bir alanla ilgili ayrıntılar için de doğrudan aşağıdaki konulara gidebilirsiniz:
 
-* [Bir OpenAPI tanımından özel bağlayıcı oluşturma](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition)
+* [Openapı tanımından özel bağlayıcı oluşturma](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition)
 
-* [Bir Postman koleksiyonundan özel bağlayıcı oluşturma](https://docs.microsoft.com/connectors/custom-connectors/define-postman-collection)
+* [Postman koleksiyonundan özel bağlayıcı oluşturma](https://docs.microsoft.com/connectors/custom-connectors/define-postman-collection)
 
 * [Sıfırdan özel bağlayıcı oluşturma](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
-* [Bir akıştaki özel bağlayıcıyı kullanma](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-flow)
+* [Akıştan özel bağlayıcı kullanma](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-flow)
 
-* [Kuruluşunuzda özel bağlayıcıları paylaşma](https://docs.microsoft.com/connectors/custom-connectors/share)
+* [Kuruluşunuzda özel bağlayıcılar paylaşma](https://docs.microsoft.com/connectors/custom-connectors/share)
 
 * [Bağlayıcılarınızı Microsoft sertifikası için gönderme](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-* [Özel bağlayıcı SSS](https://docs.microsoft.com/connectors/custom-connectors/faq)
+* [Özel bağlayıcı hakkında SSS](https://docs.microsoft.com/connectors/custom-connectors/faq)
