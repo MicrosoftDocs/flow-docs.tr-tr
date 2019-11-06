@@ -66,6 +66,28 @@
       href: enhance-business-process-flows-branching.md
     - name: İş süreci akış öznitelikleri için en iyi uygulamalar
       href: best-practices-entity-attributes.md
+- name: UI akışları (Önizleme)
+  items:
+    - name: UI akışlarına giriş
+      href: ./ui-flows/overview.md
+    - name: UI akışlarını ayarlama
+      href: ./ui-flows/setup.md
+    - name: Masaüstü UI akışlarını oluşturma ve test etme
+      href: ./ui-flows/create-desktop.md
+    - name: Masaüstü UI akışlarını düzenleme
+      href: ./ui-flows/edit-desktop.md
+    - name: Masaüstü UI akışlarında girişleri ve çıkışları kullanma
+      href: ./ui-flows/inputs-outputs-desktop.md
+    - name: Web UI akışlarını oluşturma ve test etme
+      href: ./ui-flows/create-web.md
+    - name: Web UI akışlarını düzenleme
+      href: ./ui-flows/edit-web.md
+    - name: Web UI akışlarında girişleri ve çıkışları kullanma
+      href: ./ui-flows/inputs-outputs-web.md
+    - name: UI akışlarını çalıştırma
+      href: ./ui-flows/run-ui-flow.md
+    - name: UI akışlarını yönetme
+      href: ./ui-flows/manage.md
 - name: Çözümler
   items:
     - name: Genel bakış
