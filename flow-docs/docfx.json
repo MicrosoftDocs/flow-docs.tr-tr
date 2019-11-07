@@ -43,9 +43,9 @@
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "searchScope": [
-        "Flow"
+        "Power Automate"
       ],
-      "titleSuffix": "Microsoft Flow",
+      "titleSuffix": "Power Automate",
       "search.appverid": "met150",
       "toc_preview": true
     },
