@@ -2,10 +2,14 @@
   href: /
   topicHref: /
   items:
-    - name: Flow
-      tocHref: /flow/
-      topicHref: /flow/
+    - name: Power Platform
+      href: /power-platform/
+      topicHref: /power-platform/
       items:
-        - name: Kılavuzlu Öğrenme
-          tocHref: /flow/guided-learning/
-          topicHref: /flow/guided-learning/
+        - name: Power Automate
+          tocHref: /flow/
+          topicHref: /flow/
+          items:
+            - name: Kılavuzlu Öğrenme
+              tocHref: /flow/guided-learning/
+              topicHref: /flow/guided-learning/
